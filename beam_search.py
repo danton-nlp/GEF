@@ -5,58 +5,124 @@ from transformers import (
     Constraint,
     LogitsProcessor,
     LogitsProcessorList,
-    PhrasalConstraint,
-    Seq2SeqTrainingArguments,
-    Seq2SeqTrainer,
-    DataCollatorForSeq2Seq,
 )
 from datasets import load_dataset
 import argparse
 import torch
 from collections import defaultdict
 
-class FactualLogitsProcessor(LogitsProcessor):
+from beam_validator import DictionaryValidator, WordValidator
+
+SPLIT_WORD_TOKENS = {
+    ' ',
+    '.',
+    ',',
+    '_',
+    '?',
+    '!',
+}
+
+def should_backtrack(subword: str):
+    return not subword.startswith(" ")
+
+def is_subword_ending(subword: str):
+    return subword.startswith(" ") or subword.endswith(" ")
+class WordLogitsProcessor(LogitsProcessor):
     r"""
-    [`FactualLogitsProcessor`] enforcing dynamic constraints on logits
+    [`WordLogitsProcessor`] enforcing constraints on words during beam search
+
     Args:
-        min_length (`int`):
-            The minimum length below which the score of `eos_token_id` is set to `-float("Inf")`.
-        eos_token_id (`int`):
-            The id of the *end-of-sequence* token.
+        tokenizer (`AutoTokenizer`):
+            The model's tokenizer
+        num_beams (`int`):
+            Number of beams.
+        word_validator (`WordValidator`):
+            Responsible for checking whether the word is valid.
     """
 
-    def __init__(self, tokenizer, num_beams, banned_token_ids=set()):
+    def __init__(self, tokenizer, num_beams, word_validator: WordValidator):
         self.tokenizer = tokenizer
-        self.banned_token_ids = banned_token_ids
-        self.unfactual_tokens_by_seq_idx = defaultdict(lambda: [])
+        self.word_validator = word_validator
+        self.excluded_beams_by_seq_idx = defaultdict(lambda: [])
         self.num_beams = num_beams
+        self.words_to_check = defaultdict(lambda: 0)
 
-    def is_factual_token(
+    def is_valid_beam(
         self,
+        doc_idx, # doc idx being summarized
         sequence,  # sequence generated so far
-        token_id,  # next token to be generated
-        token_probability,  # probability of token to be generated
+        token_id,  # next token to be generated (argmax of beam_scores)
+        beam_scores # probability of all tokens to be generated
     ):
-        if token_id in self.banned_token_ids:
-            return False
+        """
+            Check whether beam is valid according to the passed validators.
+
+            To enable validating on a word-level, this method backtracks
+            to collect the predicted word when it detects that the predicted
+            subword (token) is a word ending.
+        """
+        # Token-level checks
+        # if token_id in self.banned_token_ids:
+        #     return False
+
+        # Word-level checks
+        current_subword = self.tokenizer.decode(token_id)
+        backtrack_word = ""
+        is_subword_ending = False
+        for char in current_subword:
+            if char in SPLIT_WORD_TOKENS:
+                is_subword_ending = True
+                break
+            else:
+                backtrack_word += char
+
+        # if the predicted subword indicates a word ending
+        # backtrack to collect the predicted word
+        backtrack_done = False
+        if is_subword_ending:
+            prev_subword_idx = len(sequence) - 1
+            while prev_subword_idx != 0 and not backtrack_done:
+                prev_token_id = sequence[prev_subword_idx]
+                prev_subword = self.tokenizer.decode(prev_token_id)
+                prev_char_idx = len(prev_subword) - 1
+                while prev_char_idx >= 0:
+                    prev_char = prev_subword[prev_char_idx]
+                    if prev_char not in SPLIT_WORD_TOKENS:
+                        backtrack_word = prev_char + backtrack_word
+                    else:
+                        backtrack_done = True
+                        break 
+                    prev_char_idx -= 1
+                prev_subword_idx -= 1
+            self.words_to_check[backtrack_word] += 1
+            # Call validator to check whether the word is valid
+            if not self.word_validator.is_valid_word(
+                doc_idx, 
+                backtrack_word,
+                sequence, 
+                beam_scores
+            ):
+                return False
         return True
 
     def __call__(
         self, input_ids: torch.LongTensor, scores: torch.FloatTensor
     ) -> torch.FloatTensor:
+        
         # for every beam (partially generated sentence)
         for beam_idx, (beam_input_ids, beam_scores) in enumerate(
             zip(input_ids, scores)
         ):
-            # get the last token of this beam
-            # last_word = self.tokenizer.decode(beam_input_ids[-1])
-            top_k = beam_scores.topk(k=5)
+            top_k = beam_scores.topk(k=1)
             for prob, idx in zip(top_k[0], top_k[1]):
-                if not self.is_factual_token(
-                    beam_input_ids[-1], idx.item(), prob.item()
+                if not self.is_valid_beam(
+                    beam_idx // self.num_beams,
+                    beam_input_ids, 
+                    idx.item(), 
+                    scores[beam_idx]
                 ):
-                    scores[beam_idx, idx] = -float("inf")
-                    self.unfactual_tokens_by_seq_idx[beam_idx % self.num_beams].append((
+                    scores[beam_idx, :] = -float("inf")
+                    self.excluded_beams_by_seq_idx[beam_idx % self.num_beams].append((
                         len(beam_input_ids),
                         idx.item(),
                         prob.item(),
@@ -95,10 +161,20 @@ def generate_summaries_with_constraints(
         padding=True,
     )
     input_token_ids = inputs.input_ids.to(device)
-    factuality_enforcer = FactualLogitsProcessor(tokenizer, num_beams, banned_token_ids={
-        5295,  # ' Wales'
-        9652,  # ' Edinburgh'
-    })
+
+    factuality_enforcer = WordLogitsProcessor(
+        tokenizer, 
+        num_beams, 
+        DictionaryValidator({
+            "Edinburgh",
+            "Wales",
+            "prison",
+            "charity",
+            "homeless",
+            "man",
+            "a"
+        })
+    )
     model_output = model.generate(
         input_token_ids,
         num_beams=num_beams,
@@ -123,6 +199,7 @@ def generate_summaries_with_constraints(
         .reshape(len(model_output.scores), len(generated_summaries), num_beams, -1)
         .permute(1, 0, 2, 3)
     )
+    
     # Collect Beam Search Metadata
     beams_metadata = []
     if model_output.beam_indices is not None:
@@ -131,7 +208,7 @@ def generate_summaries_with_constraints(
             seq_beams = {
                 "beams": [list() for _ in range(num_beams)],
                 "selected_beam_indices": top_beam_indices,
-                "dropped_seqs": factuality_enforcer.unfactual_tokens_by_seq_idx[seq_idx]
+                "dropped_seqs": factuality_enforcer.excluded_beams_by_seq_idx[seq_idx]
             }
             beams_metadata.append(seq_beams)
 
@@ -149,7 +226,6 @@ def generate_summaries_with_constraints(
                                 "probability": v.item(),
                             }
                         )
-                    # print("appending at", beam_idx)
                     seq_beams["beams"][beam_idx].append(
                         {
                             "top_tokens": beam_top_alternatives,
