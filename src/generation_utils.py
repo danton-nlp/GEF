@@ -51,10 +51,17 @@ def generate_summaries(
         ),
     )
     generated_summaries = [
-        tokenizer.decode(
-            id, skip_special_tokens=True, clean_up_tokenization_spaces=False
+        (
+            tokenizer.decode(
+                ids, skip_special_tokens=True, clean_up_tokenization_spaces=False
+            )
+            if (
+                word_logits_processor is None
+                or idx not in word_logits_processor.failed_sequences
+            )
+            else "<Failed generation: blocked all beams>"
         )
-        for id in model_output.sequences
+        for idx, ids in enumerate(model_output.sequences)
     ]
 
     if not return_beam_metadata:
@@ -76,8 +83,12 @@ def generate_summaries(
                 "score": model_output.sequences_scores[seq_idx].item(),
                 "beams": [list() for _ in range(num_beams)],
                 "selected_beam_indices": top_beam_indices,
-                "dropped_seqs": word_logits_processor.excluded_beams_by_input_idx[seq_idx],
-                "n_words_checked": word_logits_processor.words_to_check_by_input_idx[seq_idx],
+                "dropped_seqs": word_logits_processor.excluded_beams_by_input_idx[
+                    seq_idx
+                ],
+                "n_words_checked": word_logits_processor.words_to_check_by_input_idx[
+                    seq_idx
+                ],
             }
             beams_metadata.append(seq_beams)
 

@@ -37,6 +37,7 @@ class WordLogitsProcessor(LogitsProcessor):
         self.num_beams = num_beams
         self.excluded_beams_by_input_idx = defaultdict(list)
         self.words_to_check_by_input_idx = defaultdict(lambda: 0)
+        self.failed_sequences = set()
 
     def is_valid_beam(
         self,
@@ -99,7 +100,7 @@ class WordLogitsProcessor(LogitsProcessor):
     def __call__(
         self, input_ids: torch.LongTensor, scores: torch.FloatTensor
     ) -> torch.FloatTensor:
-        
+        blocked_beams_by_input_idx = defaultdict(lambda: 0)
         # for every beam (partially generated sentence)
         for beam_idx, (beam_input_ids, beam_scores) in enumerate(
             zip(input_ids, scores)
@@ -119,5 +120,10 @@ class WordLogitsProcessor(LogitsProcessor):
                         idx.item(),
                         prob.item(),
                     ))
-                    
+                    blocked_beams_by_input_idx[input_idx] += 1
+        
+        for input_idx, n_blocked in blocked_beams_by_input_idx.items():
+            if n_blocked == self.num_beams:
+                self.failed_sequences.add(input_idx)
+        
         return scores

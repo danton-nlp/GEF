@@ -34,7 +34,7 @@ def test_with_constraints(bart_xsum, docs_to_summarize):
         tokenizer,
         num_beams,
         DictionaryValidator(
-            {"Edinburgh", "Wales", "prison", "charity", "homeless", "man", "a"}
+            {"Wales", "prison", "charity", "homeless", "man", "a"}
         ),
     )
 
@@ -43,3 +43,49 @@ def test_with_constraints(bart_xsum, docs_to_summarize):
     )[0]
 
     assert "Wales" not in summary
+
+def test_failed_generation_one_beam(bart_xsum, docs_to_summarize):
+    model, tokenizer = bart_xsum
+    num_beams = 1
+
+    factuality_enforcer = WordLogitsProcessor(
+        tokenizer,
+        num_beams,
+        DictionaryValidator(
+            {"prison"}
+        ),
+    )
+
+    summary = generate_summaries(
+        model, tokenizer, docs_to_summarize, factuality_enforcer, num_beams
+    )[0]
+
+    assert summary == "<Failed generation: blocked all beams>"
+    assert(0 in factuality_enforcer.failed_sequences)
+
+def test_failed_generation_multiple_beams(bart_xsum, docs_to_summarize):
+    model, tokenizer = bart_xsum
+    num_beams = 4
+
+    factuality_enforcer = WordLogitsProcessor(
+        tokenizer,
+        num_beams,
+        DictionaryValidator(
+            {
+                "Wales", 
+                "prison", 
+                "accommodation", 
+                "charity", 
+                "housing", 
+                "former", 
+                "more"
+            }
+        ),
+    )
+
+    summary = generate_summaries(
+        model, tokenizer, docs_to_summarize, factuality_enforcer, num_beams
+    )[0]
+
+    assert summary == "<Failed generation: blocked all beams>"
+    assert(0 in factuality_enforcer.failed_sequences)

@@ -13,10 +13,9 @@ def cached_model_and_tokenizer():
 
 
 @st.experimental_memo
-def cached_generate_summaries(docs_to_summarize, excluded_dictionary):
+def cached_generate_summaries(docs_to_summarize, excluded_dictionary, num_beams):
     model, tokenizer = cached_model_and_tokenizer()
 
-    num_beams = 4
     return generate_summaries(
         model,
         tokenizer,
@@ -25,6 +24,7 @@ def cached_generate_summaries(docs_to_summarize, excluded_dictionary):
             tokenizer, num_beams, DictionaryValidator(excluded_dictionary)
         ),
         return_beam_metadata=True,
+        num_beams=num_beams
     )
 
 
@@ -46,11 +46,12 @@ The first two xsum articles are summarized.
 
     model, tokenizer = cached_model_and_tokenizer()
     xsum_test = load_dataset("xsum")["test"]
+    num_beams = st.number_input("Number of beams", value=4)
 
     if st.button("Generate summaries"):
 
         st.subheader("Without constraints")
-        summaries, beam_metadata = cached_generate_summaries(xsum_test["document"][:2], {})
+        summaries, beam_metadata = cached_generate_summaries(xsum_test["document"][:2], {}, num_beams)
         data = []
         for i, summary in enumerate(summaries):
             data.append((
@@ -69,7 +70,7 @@ The first two xsum articles are summarized.
             ])
         )
         st.subheader("With constraints")
-        summaries, beam_metadata = cached_generate_summaries(xsum_test["document"][:2], excluded_dictionary)
+        summaries, beam_metadata = cached_generate_summaries(xsum_test["document"][:2], excluded_dictionary, num_beams)
         data = []
         for i, summary in enumerate(summaries):
             data.append((
