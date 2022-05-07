@@ -1,6 +1,6 @@
 from typing import List
 import torch
-from transformers import AutoModelForCausalLM, AutoModelForSeq2SeqLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoModelForMaskedLM, AutoModelForSeq2SeqLM, AutoTokenizer
 import torch
 import torch.nn.functional as F
 
@@ -11,34 +11,36 @@ def prior_masked_probability(model, tokenizer, masked_input: str, mask_target: s
 
         # remove end of sentence special token...seems to lead to higher probs.
         masked_input_tokenized = masked_input_tokenized[:, :-1]
-
-        logits = model(masked_input_tokenized).logits
-        masked_prob_distrib = logits[0, -1].softmax(dim=0)
-
-        probs = []
-        true_tokens_idx = bart_tokenizer.encode(
-            f" {mask_target}", add_special_tokens=False
+        collected_probs = []
+        target_token_ids = tokenizer.encode(
+            mask_target, add_special_tokens=False
         )
 
         # can prob remove this clone
         running_tokens = masked_input_tokenized.clone()
 
-        for token_idx in true_tokens_idx:
-            probs.append(masked_prob_distrib[token_idx])
+        preds = []
 
-            running_tokens[0, -1] = int(token_idx)
+        for target_token in target_token_ids:
             running_tokens = torch.hstack(
-                (running_tokens, torch.Tensor([[bart_tokenizer.mask_token_id]]))
+                (running_tokens, torch.IntTensor([[tokenizer.mask_token_id]]))
             )
-            running_tokens = running_tokens.type("torch.IntTensor")
 
             logits = model(running_tokens).logits
-            masked_prob_distrib = logits[0, -1].softmax(dim=0)
+            dist = logits[0].softmax(dim=1)
+            preds.append({
+                "masked_prob": dist[-1][target_token],
+                "input": tokenizer.decode(running_tokens[0]),
+                "top_probs": [tokenizer.decode(tok) for tok in dist[-1].topk(k=10).indices]
+            })
 
-    probs = torch.Tensor(probs)
-    joint_prob = probs.prod(dim=0)
+            # "teacher-forcing"
+            running_tokens[0, -1] = target_token
+            # running_tokens = running_tokens[:, :-1]
 
-    return probs, joint_prob
+    joint_prob = torch.tensor([x["masked_prob"] for x in preds]).prod(dim=0)
+
+    return preds, joint_prob
 
 
 def prior_causal_probability(
@@ -113,8 +115,17 @@ if __name__ == "__main__":
     from transformers import AutoModelForCausalLM, AutoTokenizer, AutoModel
 
     bart_tokenizer = AutoTokenizer.from_pretrained("facebook/bart-large")
-    causal_prior_model = AutoModelForCausalLM.from_pretrained("facebook/bart-large")
-    bart_model = AutoModel.from_pretrained("facebook/bart-large")
+    bart_masked = AutoModelForMaskedLM.from_pretrained("facebook/bart-large")
     prior_masked_probability(
-        bart_model, bart_tokenizer, "Sydney has marked the", " first"
-    )   
+        bart_masked, 
+        bart_tokenizer, 
+        "Sydney has marked the first anniversary of the siege at the", 
+        " Waverley"
+    ) 
+
+    # causal_prior_model = AutoModelForCausalLM.from_pretrained("facebook/bart-large")
+    # prior_causal_probability(
+    #     causal_prior_model,
+    #     bart_tokenizer,
+    #     "Sydney has marked the first anniversary of the siege at the Waverley cafe in which two women were killed by a gunman in the Australian city."
+    # )
