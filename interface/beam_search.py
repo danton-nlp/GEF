@@ -1,6 +1,6 @@
 from datasets import load_dataset
 import streamlit as st
-from src.beam_validators import DictionaryValidator
+from src.beam_validators import BannedWords
 from src.word_logits_processor import WordLogitsProcessor
 from src.generation_utils import generate_summaries, load_model_and_tokenizer
 import pandas as pd
@@ -21,7 +21,7 @@ def cached_generate_summaries(docs_to_summarize, excluded_dictionary, num_beams)
         tokenizer,
         docs_to_summarize,
         WordLogitsProcessor(
-            tokenizer, num_beams, DictionaryValidator(excluded_dictionary)
+            tokenizer, num_beams, BannedWords(excluded_dictionary)
         ),
         return_beam_metadata=True,
         num_beams=num_beams

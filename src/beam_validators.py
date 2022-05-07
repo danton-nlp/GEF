@@ -15,7 +15,7 @@ class WordValidator(ABC):
         )
 
 
-class DictionaryValidator(WordValidator):
+class BannedWords(WordValidator):
     def __init__(self, dictionary):
         self.dictionary = dictionary
 

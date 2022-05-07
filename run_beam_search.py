@@ -1,7 +1,7 @@
 from datasets import load_dataset
 import argparse
 from src.generation_utils import generate_summaries, load_model_and_tokenizer
-from src.beam_validators import DictionaryValidator
+from src.beam_validators import BannedWords
 from src.word_logits_processor import WordLogitsProcessor
 
 
@@ -20,7 +20,7 @@ if __name__ == "__main__":
     factuality_enforcer = WordLogitsProcessor(
         tokenizer, 
         num_beams, 
-        DictionaryValidator({
+        BannedWords({
             "Edinburgh",
             "Wales",
             "prison",

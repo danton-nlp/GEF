@@ -1,7 +1,7 @@
 from datasets import load_dataset
 import pytest
 from src.word_logits_processor import WordLogitsProcessor
-from src.beam_validators import DictionaryValidator
+from src.beam_validators import BannedWords
 from src.generation_utils import generate_summaries, load_model_and_tokenizer
 
 
@@ -33,7 +33,7 @@ def test_with_constraints(bart_xsum, docs_to_summarize):
     factuality_enforcer = WordLogitsProcessor(
         tokenizer,
         num_beams,
-        DictionaryValidator(
+        BannedWords(
             {"Wales", "prison", "charity", "homeless", "man", "a"}
         ),
     )
@@ -51,7 +51,7 @@ def test_failed_generation_one_beam(bart_xsum, docs_to_summarize):
     factuality_enforcer = WordLogitsProcessor(
         tokenizer,
         num_beams,
-        DictionaryValidator(
+        BannedWords(
             {"prison"}
         ),
     )
@@ -70,7 +70,7 @@ def test_failed_generation_multiple_beams(bart_xsum, docs_to_summarize):
     factuality_enforcer = WordLogitsProcessor(
         tokenizer,
         num_beams,
-        DictionaryValidator(
+        BannedWords(
             {
                 "Wales", 
                 "prison", 
