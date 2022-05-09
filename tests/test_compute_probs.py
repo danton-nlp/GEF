@@ -59,8 +59,8 @@ def example_inputs_and_target_for_named_entity():
 
 # mask prob should the prob of all the tokens combined
 def test_compute_prior_probs_returns_the_join_prob(bart_large, example_inputs_and_target_for_named_entity):
-    inputs, targets = example_inputs_and_target_for_named_entity
+    inputs, targets, entities = example_inputs_and_target_for_named_entity
 
-    ne_probs = compute_prior_probs(inputs, targets, bart_large)
+    _, ne_probs = compute_prior_probs(inputs, targets, entities, bart_large)
 
-    assert ne_probs == [[0.4591749906539917 * 0.9699639678001404 * 0.9490254521369934]]
+    assert ne_probs == [(0.4591749906539917 * 0.9699639678001404 * 0.9490254521369934)]
