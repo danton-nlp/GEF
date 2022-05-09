@@ -25,7 +25,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--output_file", 
         type=str, 
-        default="data/bart-large-xsum/test_annotations_constrained.json"
+        default="data/bart-large-xsum/test_annotations_constrained-10-beams.json"
     )
     args = parser.parse_args()
 
@@ -46,7 +46,7 @@ if __name__ == "__main__":
             word for word in annotation["non_factual_hallucinations"]
         }
 
-    num_beams = 4
+    num_beams = 10
     factuality_enforcer = WordLogitsProcessor(
         tokenizer,
         num_beams,
