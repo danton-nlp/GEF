@@ -2,7 +2,7 @@ from datasets import load_dataset
 import argparse
 from src.generation_utils import load_model_and_tokenizer, generate_summaries
 import json
-from src.beam_validators import BannedPhrase
+from src.beam_validators import BannedPhrases
 from src.word_logits_processor import WordLogitsProcessor
 
 
@@ -17,15 +17,11 @@ def write_results(fname, results):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model_path", type=str, default="facebook/bart-large-xsum")
+    parser.add_argument("--num_beams", type=int, default=4)
     parser.add_argument(
         "--oracle_data", 
         type=str, 
         default="data/bart-large-xsum/test_annotations.json"
-    )
-    parser.add_argument(
-        "--output_file", 
-        type=str, 
-        default="data/bart-large-xsum/test_annotations_constrained-10-beams.json"
     )
     args = parser.parse_args()
 
@@ -46,18 +42,17 @@ if __name__ == "__main__":
             word for word in annotation["non_factual_hallucinations"]
         }
 
-    num_beams = 10
     factuality_enforcer = WordLogitsProcessor(
         tokenizer,
-        num_beams,
-        BannedPhrase(banned_phrases_by_input_idx=banned_phrases_by_input_idx),
+        args.num_beams,
+        BannedPhrases(banned_phrases_by_input_idx=banned_phrases_by_input_idx),
     )
     summaries, metadata = generate_summaries(
         model, 
         tokenizer, 
         docs_to_summarize, 
         factuality_enforcer,
-        num_beams=num_beams,
+        num_beams=args.num_beams,
         return_beam_metadata=True
     )
 
@@ -73,8 +68,10 @@ if __name__ == "__main__":
                 ]
             } 
         }
-
+    output_file = args.oracle_data.replace(
+        ".json", ""
+    ) + f"_constrained-{args.num_beams}beams.json"
     write_results(
-        args.output_file,
+        output_file,
         results
     )

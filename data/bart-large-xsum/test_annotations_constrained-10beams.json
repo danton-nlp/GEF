@@ -17,10 +17,17 @@
     },
     "36456002": {
         "original_summary": "Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final World Cup warm-up.",
-        "corrected_summary": "Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final World Cup warm-up.",
+        "corrected_summary": "Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final Euro 2016 warm-up game.",
         "search_metadata": {
-            "n_words_checked": 226,
-            "dropped_seqs": []
+            "n_words_checked": 239,
+            "dropped_seqs": [
+                "</s>Eden Hazard scored twice as Belgium came from behind to beat Norway in their final World Cup",
+                "</s>Eden Hazard scored twice as Belgium came from behind to beat Norway 3-2 in their final World Cup",
+                "</s>Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final World Cup",
+                "</s>Romelu Lukaku and Eden Hazard scored twice as Belgium came from behind to beat Norway in their final World Cup",
+                "</s>Romelu Lukaku and Eden Hazard both scored as Belgium came from behind to beat Norway in their final World Cup",
+                "</s>Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway 3-2 in their final World Cup"
+            ]
         }
     },
     "24403775": {
@@ -38,18 +45,30 @@
     },
     "32112735": {
         "original_summary": "Liam Payne and Niall Horan have confirmed they're staying in One Direction.",
-        "corrected_summary": "Liam Payne and Niall Horan have confirmed they're staying in One Direction.",
+        "corrected_summary": "One Direction have confirmed that they're staying together.",
         "search_metadata": {
-            "n_words_checked": 212,
-            "dropped_seqs": []
+            "n_words_checked": 230,
+            "dropped_seqs": [
+                "</s>Liam Payne and Niall Horan",
+                "</s>Liam Payne and Louis Tomlinson",
+                "</s>Liam Payne, Louis Tomlinson",
+                "</s>One Direction members Liam Payne and Louis Tomlinson"
+            ]
         }
     },
     "36203675": {
         "original_summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol.",
-        "corrected_summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol.",
+        "corrected_summary": "A mobile game designed to help people with dementia is to be used by researchers in the UK.",
         "search_metadata": {
-            "n_words_checked": 245,
-            "dropped_seqs": []
+            "n_words_checked": 253,
+            "dropped_seqs": [
+                "</s>Researchers at the University of",
+                "</s>A mobile game designed to help people with dementia is being used by researchers at the University of",
+                "</s>A mobile game designed to help people with dementia is being developed by researchers at the University of",
+                "</s>A mobile game designed to help people with dementia is to be used by researchers in the US",
+                "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of",
+                "</s>A mobile game designed to help people with dementia is to be used by scientists at the University of"
+            ]
         }
     },
     "17996567": {
