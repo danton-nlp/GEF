@@ -74,8 +74,8 @@ def build_causal_masked_inputs_and_targets(
 
 
 if __name__ == "__main__":
-    tokenizer = BartTokenizer.from_pretrained("facebook/bart-base")
-    model = BartForConditionalGeneration.from_pretrained("facebook/bart-base")
+    tokenizer = BartTokenizer.from_pretrained("facebook/bart-large")
+    model = BartForConditionalGeneration.from_pretrained("facebook/bart-large")
 
     dataset = load_xent("test")
 
