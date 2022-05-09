@@ -1,0 +1,64 @@
+{
+    "34361828": {
+        "original_summary": "A search is under way for the remains of a Pembrokeshire village which was wiped out by storms in the 1970s.",
+        "corrected_summary": "A search is under way to find the remains of a Gower village which was destroyed by storms more than 100 years ago.",
+        "search_metadata": {
+            "n_words_checked": 88,
+            "dropped_seqs": [
+                "</s>A search is under way for the remains of a Gwynedd",
+                "</s>A search is under way for the remains of a Pembrokeshire"
+            ]
+        }
+    },
+    "36456002": {
+        "original_summary": "Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final World Cup warm-up.",
+        "corrected_summary": "Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final World Cup warm-up.",
+        "search_metadata": {
+            "n_words_checked": 86,
+            "dropped_seqs": []
+        }
+    },
+    "24403775": {
+        "original_summary": "Villagers in Shropshire are calling for the reopening of a dual carriageway next to Stonehenge.",
+        "corrected_summary": "A campaign has been launched to get Stonehenge Bottom's main road re-opened after it was closed to traffic.",
+        "search_metadata": {
+            "n_words_checked": 82,
+            "dropped_seqs": [
+                "</s>Villagers in Shropshire",
+                "</s>Villagers in Shrewsbury"
+            ]
+        }
+    },
+    "32112735": {
+        "original_summary": "Liam Payne and Niall Horan have confirmed they're staying in One Direction.",
+        "corrected_summary": "Liam Payne and Niall Horan have confirmed they're staying in One Direction.",
+        "search_metadata": {
+            "n_words_checked": 87,
+            "dropped_seqs": []
+        }
+    },
+    "36203675": {
+        "original_summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol.",
+        "corrected_summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol.",
+        "search_metadata": {
+            "n_words_checked": 100,
+            "dropped_seqs": []
+        }
+    },
+    "17996567": {
+        "original_summary": "Plans to cut home-to-school transport subsidies in Gloucestershire have been put on hold.",
+        "corrected_summary": "<Failed generation: blocked all beams>",
+        "search_metadata": {
+            "n_words_checked": 79,
+            "dropped_seqs": [
+                "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
+                "</s>Plans to cut home-to-school transport subsidies for children in Flintshire",
+                "</s>Plans to cut home-to-school transport subsidies for children in Staffordshire",
+                "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire",
+                "</s>Plans to cut home-to-school transport subsidies for children in Gloucesterse",
+                "</s>Plans to cut home-to-school transport subsidies for children in Gloucestersfield",
+                "</s>Plans to cut home-to-school transport subsidies for children in Gloucestersshire"
+            ]
+        }
+    }
+}
