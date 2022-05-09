@@ -82,8 +82,14 @@ class WordLogitsProcessor(LogitsProcessor):
                     if prev_char not in SPLIT_WORD_TOKENS:
                         backtrack_word = prev_char + backtrack_word
                     else:
-                        backtrack_done = True
-                        break 
+                        if self.word_validator.is_maybe_invalid_phrase_ending(
+                            prev_char + backtrack_word,
+                            input_idx
+                        ):
+                            backtrack_word = prev_char + backtrack_word
+                        else:
+                            backtrack_done = True
+                            break 
                     prev_char_idx -= 1
                 prev_subword_idx -= 1
             self.words_to_check_by_input_idx[input_idx] += 1

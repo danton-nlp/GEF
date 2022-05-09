@@ -2,7 +2,7 @@ from datasets import load_dataset
 import argparse
 from src.generation_utils import load_model_and_tokenizer, generate_summaries
 import json
-from src.beam_validators import BannedWords
+from src.beam_validators import BannedPhrase
 from src.word_logits_processor import WordLogitsProcessor
 
 
@@ -37,12 +37,12 @@ if __name__ == "__main__":
     oracle_annotations = load_annotations(args.oracle_data)
 
     docs_to_summarize = []
-    banned_words_by_input_idx = {}
+    banned_phrases_by_input_idx = {}
     for j, (xsum_id, annotation) in enumerate(oracle_annotations.items()):
         docs_to_summarize.append(
             xsum_test_by_id[xsum_id]["document"]
         )
-        banned_words_by_input_idx[j] = {
+        banned_phrases_by_input_idx[j] = {
             word for word in annotation["non_factual_hallucinations"]
         }
 
@@ -50,7 +50,7 @@ if __name__ == "__main__":
     factuality_enforcer = WordLogitsProcessor(
         tokenizer,
         num_beams,
-        BannedWords(banned_words_by_input_idx=banned_words_by_input_idx),
+        BannedPhrase(banned_phrases_by_input_idx=banned_phrases_by_input_idx),
     )
     summaries, metadata = generate_summaries(
         model, 
