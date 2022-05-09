@@ -1,4 +1,6 @@
 from abc import ABC, abstractmethod
+from collections import defaultdict
+from typing import Dict
 
 
 class WordValidator(ABC):
@@ -16,11 +18,18 @@ class WordValidator(ABC):
 
 
 class BannedWords(WordValidator):
-    def __init__(self, dictionary):
-        self.dictionary = dictionary
+    def __init__(
+        self, 
+        banned_words=set(), 
+        banned_words_by_input_idx: Dict[int, set] = {}
+    ):
+        self.banned_words = defaultdict(
+            lambda: banned_words,
+            banned_words_by_input_idx
+        )
 
     def is_valid_word(self, word, input_idx, beam_sequence, beam_scores):
-        return word not in self.dictionary
+        return word not in self.banned_words[input_idx]
 
 
 class OverlapValidator(WordValidator):
