@@ -16,20 +16,34 @@ class WordValidator(ABC):
             f"{self.__class__} is an abstract class. Only classes inheriting this class can be called."
         )
 
+    @abstractmethod
+    def is_maybe_invalid_phrase_ending(self, word, input_idx):
+        """
+        TODO
+        """
+        raise NotImplementedError(
+            f"{self.__class__} is an abstract class. Only classes inheriting this class can be called."
+        )
 
-class BannedWords(WordValidator):
+
+class BannedPhrases(WordValidator):
     def __init__(
         self, 
-        banned_words=set(), 
-        banned_words_by_input_idx: Dict[int, set] = {}
+        banned_phrases=set(), 
+        banned_phrases_by_input_idx: Dict[int, set] = {}
     ):
-        self.banned_words = defaultdict(
-            lambda: banned_words,
-            banned_words_by_input_idx
+        self.banned_phrases_by_idx = defaultdict(
+            lambda: banned_phrases,
+            banned_phrases_by_input_idx
         )
 
     def is_valid_word(self, word, input_idx, beam_sequence, beam_scores):
-        return word not in self.banned_words[input_idx]
+        return word not in self.banned_phrases_by_idx[input_idx]
+
+    def is_maybe_invalid_phrase_ending(self, ending, input_idx):
+        for phrase in self.banned_phrases_by_idx[input_idx]:
+            if phrase.endswith(ending):
+                return True
 
 
 class OverlapValidator(WordValidator):
