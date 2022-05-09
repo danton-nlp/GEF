@@ -120,5 +120,5 @@ if __name__ == "__main__":
     dataset = load_xent("test")
 
     for idx, example in enumerate(dataset):
-        inputs, targets = build_causal_masked_inputs_and_targets(example)
-        prior_probs = compute_prior_probs(inputs, targets, (model, tokenizer))
+        inputs, targets, entities = build_causal_masked_inputs_and_targets(example)
+        prior_probs = compute_prior_probs(inputs, targets, entities, (model, tokenizer))
