@@ -22,13 +22,22 @@
     "32112735": {
         "summary": "Liam Payne and Niall Horan have confirmed they're staying in One Direction.",
         "non_factual_hallucinations": [
-            "Niall Horan"
+            "Niall Horan",
+            "Louis Tomlinson"
         ]
     },
     "36203675": {
         "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol.",
         "non_factual_hallucinations": [
-            "the University of Bristol"
+            "the University of Bristol",
+            "the US",
+            "University of Oxford",
+            "University of Cambridge",
+            "University of Manchester",
+            "University of California, Los Angeles",
+            "University of California, Berkeley",
+            "University of Aberdeen",
+            "University of"
         ]
     },
     "17996567": {
