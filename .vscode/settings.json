@@ -4,5 +4,9 @@
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
-    "python.formatting.provider": "black"
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": ["--ignore=N801, E203, E266, E501, W503, F812, E741, N803, N802, N806"],
+    "python.analysis.typeCheckingMode": "basic"
 }
