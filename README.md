@@ -12,3 +12,4 @@ pytests tests
 ## Scripts
 - `batch_detect_ner.py <sumtool-model>`: batch detect NER & write to sumtool metadata
 - `oracle_experiment.py`: run oracle experiment, writes & reads from `/data/oracle-experiment`
+- `persist_xent_annotations.py`: persits xent annotations in `gold` sumtool index for easy access by ID
