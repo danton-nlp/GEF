@@ -8,3 +8,7 @@ conda activate factual-beam-search
 ```
 pytests tests
 ```
+
+## Scripts
+- `batch_detect_ner.py <sumtool-model>`: batch detect NER & write to sumtool metadata
+- `oracle_experiment.py`: run oracle experiment, writes & reads from `/data/oracle-experiment`
