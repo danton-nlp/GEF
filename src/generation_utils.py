@@ -3,6 +3,9 @@ from transformers import AutoModelForSeq2SeqLM, AutoTokenizer, LogitsProcessorLi
 from src.word_logits_processor import WordLogitsProcessor
 
 
+SUMMARY_FAILED_GENERATION = "<Failed generation: blocked all beams>"
+
+
 def entropy(p_dist: torch.Tensor) -> float:
     """ "
     Calculates Shannon entropy for a probability distribution
@@ -59,7 +62,7 @@ def generate_summaries(
                 word_logits_processor is None
                 or idx not in word_logits_processor.failed_sequences
             )
-            else "<Failed generation: blocked all beams>"
+            else SUMMARY_FAILED_GENERATION
         )
         for idx, ids in enumerate(model_output.sequences)
     ]

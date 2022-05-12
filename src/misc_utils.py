@@ -8,6 +8,7 @@ class Timer(object):
         self.message = message
 
     def __enter__(self):
+        print(f"[Timer]: {self.message}...")
         self.start_time = time.time()
 
     def __exit__(self, etype, value, traceback):
