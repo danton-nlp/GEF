@@ -7,7 +7,10 @@ from src.beam_validators import BannedPhrases
 from src.word_logits_processor import WordLogitsProcessor
 from src.detect_entities import MarkedEntity, detect_entities, is_entity_contained
 from sumtool.storage import get_summary_metrics, store_summary_metrics
-from src.misc_utils import Timer
+from src.misc_utils import Timer, get_new_log_path
+import json
+import time
+
 
 ANNOTATION_LABELS = {
     "Non-factual": "Non-factual Hallucination",
@@ -146,6 +149,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
     print("Loading model...")
     model, tokenizer = load_model_and_tokenizer(args.model_path)
+    iteration_log = []
+    logging_path = get_new_log_path("logs-iterative") + ".json"
 
     xsum_test = load_xsum_dict("test")
     num_beams = 4
@@ -255,8 +260,7 @@ if __name__ == "__main__":
 
         # Labeling
         unknown_entities = filter_entities(
-            lambda x: x["label"] == ANNOTATION_LABELS["Unknown"],
-            all_labeled_entities
+            lambda x: x["label"] == ANNOTATION_LABELS["Unknown"], all_labeled_entities
         )
         if should_prompt_labeling and count_entities(unknown_entities) > 0:
             if input("Would you like to label unknown entities? (y/n)\n") == "y":
@@ -286,8 +290,29 @@ if __name__ == "__main__":
 
         print()
         print()
-        # 6) Save results
-        pass
+        iteration_log.append(
+            {
+                sum_id: {
+                    "summary": gen_summaries_by_id[sum_id],
+                    "generation_metadata": {
+                        "score": generation_metadata[id_to_idx[sum_id]]["score"],
+                        "dropped_seqs": [
+                            tokenizer.decode(dropped_seq[0])
+                            for dropped_seq in generation_metadata[id_to_idx[sum_id]]["dropped_seqs"]
+                        ],
+                        "n_words_checked": generation_metadata[id_to_idx[sum_id]]["n_words_checked"],
+                    },
+                    "labeled_entities": all_labeled_entities[sum_id],
+                }
+                for sum_id in gen_summaries_by_id.keys()
+            }
+        )
+        with open(logging_path, "w") as f:
+            json.dump({
+                "timestamp": time.time(),
+                "args": vars(args),
+                "iterations": iteration_log
+            }, f, indent=2)
 
     # Persist results
     pass
