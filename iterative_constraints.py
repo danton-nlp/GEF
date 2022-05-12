@@ -1,11 +1,12 @@
 from collections import defaultdict
 import argparse
-from typing import Callable, Dict, List, Literal, TypedDict
+from typing import Dict, List
 from src.data_utils import XSumDoc, load_xsum_dict
+from src.detect_entities import detect_entities, is_entity_contained
+from src.entity_utils import LabeledEntity, LabeledEntityLookup, MarkedEntityLookup, count_entities, filter_entities
 from src.generation_utils import generate_summaries, load_model_and_tokenizer
 from src.beam_validators import BannedPhrases
 from src.word_logits_processor import WordLogitsProcessor
-from src.detect_entities import MarkedEntity, detect_entities, is_entity_contained
 from sumtool.storage import get_summary_metrics, store_summary_metrics
 from src.misc_utils import Timer, get_new_log_path
 import json
@@ -19,35 +20,9 @@ ANNOTATION_LABELS = {
     "Unknown": "Unknown",
 }
 
-LabeledEntity = TypedDict(
-    "LabeledEntity",
-    {
-        "ent": str,
-        "type": str,
-        "start": int,
-        "end": int,
-        "in_source": bool,
-        "label": str,
-    },
-)
-LabeledEntityLookup = Dict[str, List[LabeledEntity]]
-
-
-def count_entities(entity_lookup: LabeledEntityLookup):
-    return sum([len(x) for x in entity_lookup.values()])
-
-
-def filter_entities(
-    predicate_fn: Callable[[LabeledEntity], bool], entity_lookup: LabeledEntityLookup
-) -> LabeledEntityLookup:
-    return {
-        sum_id: [x for x in labeled_entities if predicate_fn(x)]
-        for sum_id, labeled_entities in entity_lookup.items()
-    }
-
 
 def oracle_classify_entities(
-    summary_entities: Dict[str, List[MarkedEntity]],
+    summary_entities: MarkedEntityLookup,
     annotations: LabeledEntityLookup,
 ) -> LabeledEntityLookup:
     labeled_entities: LabeledEntityLookup = {}
@@ -138,13 +113,44 @@ def get_entity_annotations(metadata, sum_id):
             annots += metadata[sum_id][key]
     return annots
 
+def persist_iteration(
+    logging_path,
+    parser_args,
+    iteration_log, 
+    gen_summaries_by_id,
+    all_labeled_entities,
+    generation_metadata,
+):
+    iteration_log.append(
+        {
+            sum_id: {
+                "summary": gen_summaries_by_id[sum_id],
+                "generation_metadata": {
+                    "score": generation_metadata[id_to_idx[sum_id]]["score"],
+                    "dropped_seqs": [
+                        tokenizer.decode(dropped_seq[0])
+                        for dropped_seq in generation_metadata[id_to_idx[sum_id]]["dropped_seqs"]
+                    ],
+                    "n_words_checked": generation_metadata[id_to_idx[sum_id]]["n_words_checked"],
+                },
+                "labeled_entities": all_labeled_entities[sum_id],
+            }
+            for sum_id in gen_summaries_by_id.keys()
+        }
+    )
+    with open(logging_path, "w") as f:
+        json.dump({
+            "timestamp": time.time(),
+            "args": vars(parser_args),
+            "iterations": iteration_log
+        }, f, indent=2)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model_path", type=str, default="facebook/bart-large-xsum")
     parser.add_argument("--max_iterations", type=int, default=5)
     parser.add_argument("--annotate", type=bool, default=False)
-    # parser.add_argument("--sumtool_path", type=str, default="")
+    parser.add_argument("--verbose", type=bool, default=False)
     # parser.add_argument("--data_subset", type=int, default=0)
     args = parser.parse_args()
     print("Loading model...")
@@ -175,7 +181,7 @@ if __name__ == "__main__":
     n_iterations = 0
     while n_iterations < args.max_iterations:
         print(f"-- Iteration {n_iterations} --")
-        # ) Generate
+        # Generate summaries
         factuality_enforcer = WordLogitsProcessor(
             tokenizer,
             num_beams,
@@ -201,6 +207,8 @@ if __name__ == "__main__":
         gen_summaries_by_id = {
             bbc_id: gen_summaries[input_idx] for bbc_id, input_idx in id_to_idx.items()
         }
+
+        #  Detect & classify entities
         with Timer("Detecting & classifying entities..."):
             summary_entities = {}
             for bbc_id, input_idx in id_to_idx.items():
@@ -217,7 +225,7 @@ if __name__ == "__main__":
                 },
             )
 
-        # 5) Add constraints
+        # Process entity labels
         new_constraints = 0
         unknown_ents = defaultdict(lambda: set())
         factual_ents = defaultdict(lambda: set())
@@ -239,7 +247,6 @@ if __name__ == "__main__":
                 elif ent["label"] == ANNOTATION_LABELS["Non-hallucinated"]:
                     non_hallucinated_ents[sum_id].add(ent["ent"])
 
-        # OUTPUT, verbose
         print(
             f"""
 [Summary Entity Stats]
@@ -249,16 +256,17 @@ if __name__ == "__main__":
 - Unknown: {len(unknown_ents)}
 """
         )
-        for sum_id, summary in gen_summaries_by_id.items():
-            print(f"[{sum_id}]: {summary}")
-            print(
-                f"- non-factual (constraints): {banned_phrases_by_input_idx[id_to_idx[sum_id]]}"
-            )
-            print(f"- factual: {factual_ents[sum_id]}")
-            print(f"- non-hallucinated: {non_hallucinated_ents[sum_id]}")
-            print(f"- unknown: {unknown_ents[sum_id]}")
+        if args.verbose:
+            for sum_id, summary in gen_summaries_by_id.items():
+                print(f"[{sum_id}]: {summary}")
+                print(
+                    f"- non-factual (constraints): {banned_phrases_by_input_idx[id_to_idx[sum_id]]}"
+                )
+                print(f"- factual: {factual_ents[sum_id]}")
+                print(f"- non-hallucinated: {non_hallucinated_ents[sum_id]}")
+                print(f"- unknown: {unknown_ents[sum_id]}")
 
-        # Labeling
+        # Manual annotation
         unknown_entities = filter_entities(
             lambda x: x["label"] == ANNOTATION_LABELS["Unknown"], all_labeled_entities
         )
@@ -280,6 +288,16 @@ if __name__ == "__main__":
                             )
             else:
                 should_prompt_labeling = False
+
+        persist_iteration(
+            logging_path,
+            args,
+            iteration_log,
+            gen_summaries_by_id,
+            all_labeled_entities,
+            generation_metadata
+        )
+
         # break if no new constriants
         if new_constraints == 0:
             print("No new constraints found, done...")
@@ -290,29 +308,6 @@ if __name__ == "__main__":
 
         print()
         print()
-        iteration_log.append(
-            {
-                sum_id: {
-                    "summary": gen_summaries_by_id[sum_id],
-                    "generation_metadata": {
-                        "score": generation_metadata[id_to_idx[sum_id]]["score"],
-                        "dropped_seqs": [
-                            tokenizer.decode(dropped_seq[0])
-                            for dropped_seq in generation_metadata[id_to_idx[sum_id]]["dropped_seqs"]
-                        ],
-                        "n_words_checked": generation_metadata[id_to_idx[sum_id]]["n_words_checked"],
-                    },
-                    "labeled_entities": all_labeled_entities[sum_id],
-                }
-                for sum_id in gen_summaries_by_id.keys()
-            }
-        )
-        with open(logging_path, "w") as f:
-            json.dump({
-                "timestamp": time.time(),
-                "args": vars(args),
-                "iterations": iteration_log
-            }, f, indent=2)
 
     # Persist results
     pass

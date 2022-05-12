@@ -1,18 +1,9 @@
 from typing import List, TypedDict
 import spacy
-import re
+from src.entity_utils import MarkedEntity, is_entity_contained
 
 
 nlp = spacy.load("en_core_web_lg")
-
-MarkedEntity = TypedDict(
-    "MarkedEntity",
-    {"ent": str, "type": str, "start": int, "end": int, "in_source": bool},
-)
-
-
-def is_entity_contained(entity, text):
-    return re.search(re.escape(entity), text, re.IGNORECASE) is not None
 
 
 def detect_entities(summary: str, source: str) -> List[MarkedEntity]:
