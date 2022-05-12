@@ -8,13 +8,13 @@ def test_ner_detection():
 
     assert len(entities) == 2
 
-    assert entities[0]["text"] == "Pembrokeshire"
+    assert entities[0]["ent"] == "Pembrokeshire"
     assert entities[0]["type"] == "GPE"
     assert entities[0]["in_source"]
-    assert summary[entities[0]["start"] : entities[0]["end"]] == entities[0]["text"]
+    assert summary[entities[0]["start"] : entities[0]["end"]] == entities[0]["ent"]
 
-    assert entities[1]["text"] == "the 1970s"
+    assert entities[1]["ent"] == "the 1970s"
     assert entities[1]["type"] == "DATE"
     assert not entities[1]["in_source"]
-    assert summary[entities[1]["start"] : entities[1]["end"]] == entities[1]["text"]
+    assert summary[entities[1]["start"] : entities[1]["end"]] == entities[1]["ent"]
 22
