@@ -10,7 +10,11 @@ from src.entity_utils import (
     count_entities,
     filter_entities,
 )
-from src.generation_utils import SUMMARY_FAILED_GENERATION, generate_summaries, load_model_and_tokenizer
+from src.generation_utils import (
+    SUMMARY_FAILED_GENERATION,
+    generate_summaries,
+    load_model_and_tokenizer,
+)
 from src.beam_validators import BannedPhrases
 from src.word_logits_processor import WordLogitsProcessor
 from sumtool.storage import get_summary_metrics, store_summary_metrics
@@ -173,7 +177,7 @@ if __name__ == "__main__":
     parser.add_argument("--annotate", type=bool, default=False)
     parser.add_argument("--verbose", type=bool, default=False)
     parser.add_argument(
-        "--data_subset", type=str, default="debug", help="debug|x-ent|all"
+        "--data_subset", type=str, default="debug", help="debug|xent|full"
     )
     args = parser.parse_args()
     print("Loading model...")
@@ -198,14 +202,27 @@ if __name__ == "__main__":
                 xsum_test["39368095"],
             ]
         }
-    elif args.data_subset == "x-ent":
+    elif args.data_subset == "xent":
         docs_to_summarize = {
             sum_id: x["document"]
             for sum_id, x in xsum_test.items()
-            if "x-ent" in summary_gold_metadata[sum_id]
+            if "xent" in summary_gold_metadata[sum_id]
         }
-    else:
+    elif args.data_subset == "xent-15":
+        docs_to_summarize = {
+            k: v
+            for k, v in list(
+                {
+                    sum_id: x["document"]
+                    for sum_id, x in xsum_test.items()
+                    if "xent" in summary_gold_metadata[sum_id]
+                }.items()
+            )[:15]
+        }
+    elif args.data_subset == "full":
         docs_to_summarize = {sum_id: x["document"] for sum_id, x in xsum_test.items()}
+    else:
+        raise argparse.ArgumentError(args.data_subset, message="Invalid argument")
 
     # initialize with no constraints
     banned_phrases_by_sum_id = defaultdict(lambda: set())
@@ -220,6 +237,7 @@ if __name__ == "__main__":
     # ...until convergence / max iterations
     n_iterations = 0
     while n_iterations < args.max_iterations:
+        prev_banned_phrases_by_sum_id = banned_phrases_by_sum_id.copy()
         print(f"-- Iteration {n_iterations} --")
         # Generate summaries
         id_to_idx = {}
@@ -260,7 +278,7 @@ if __name__ == "__main__":
                     gen_summaries[input_idx], model_input[input_idx]
                 )
 
-            # 4) See if NER is factual according to model (oracle / classification)
+            # See if NER is factual according to model (oracle / classification)
             all_labeled_entities = oracle_classify_entities(
                 summary_entities,
                 {
@@ -344,38 +362,40 @@ if __name__ == "__main__":
             gen_summaries_by_id,
             all_labeled_entities,
             generation_metadata,
-            banned_phrases_by_sum_id,
+            prev_banned_phrases_by_sum_id,
         )
 
-        n_failed = len([
-            1
-            for summary in gen_summaries_by_id.values()
-            if summary == SUMMARY_FAILED_GENERATION
-        ])
+        n_failed = len(
+            [
+                1
+                for summary in gen_summaries_by_id.values()
+                if summary == SUMMARY_FAILED_GENERATION
+            ]
+        )
+        n_unknown = sum([1 for x in unknown_ents_by_sum_id.values() if len(x) > 0])
         n_incomplete = len(incomplete_sum_ids)
         n_total = len(docs_to_summarize)
-        n_converged = n_total - n_incomplete - n_failed
+        n_factual = n_total - n_incomplete - n_failed - n_unknown
         print(
             f"""
 [Summary Stats]
-- Factual: {n_converged} ({n_converged/n_total:.2%})
+- Factual: {n_factual} ({n_factual/n_total:.2%})
 - Non-factual: {n_incomplete} ({n_incomplete/n_total:.2%})
 - Failed: {n_failed} ({n_failed/n_total:.2%})
-- Unknown: {sum([1 for x in unknown_ents_by_sum_id.values() if len(x) > 0])}
+- Unknown: {n_unknown} ({n_factual/n_total:.2%})
 """
         )
         # break if no new constriants
         if new_constraints == 0:
             print("No new constraints found, done...")
             break
-        else:
-            print(f"Added {new_constraints} constraints!")
+
         n_iterations += 1
 
-        print()
-        print()
+        if n_iterations > args.max_iterations:
+            print(f"Reached max iterations!")
+        else:
+            print(f"Added {new_constraints} constraints!")
 
-    # Persist results
-    pass
-    # Evaluate?
-    pass
+        print()
+        print()

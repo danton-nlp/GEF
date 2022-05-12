@@ -16,7 +16,7 @@ pytests tests
 
 ### Iterative pipeline (`iterative_constraints.py`)
 ```
-python iterative_constraints.py --data_subset debug|x-ent|all
+python iterative_constraints.py --data_subset debug|xent|full
 ```
 
 #### with annotation
