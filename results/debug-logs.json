@@ -1,934 +1,1080 @@
 {
-  "timestamp": 1652399308.565988,
+  "timestamp": 1652452085.749608,
   "args": {
     "model_path": "facebook/bart-large-xsum",
     "max_iterations": 5,
     "annotate": false,
-    "verbose": false,
-    "batch_size": 2,
+    "verbose": true,
+    "batch_size": 4,
     "data_subset": "debug"
   },
   "iterations": {
-    "0": [
-      {
-        "batch-idx": 0,
-        "summaries": {
-          "34361828": {
-            "banned_phrases": [],
-            "summary": "A search is under way for the remains of a Pembrokeshire village which was wiped out by storms in the 1970s.",
-            "generation_metadata": {
-              "score": -0.692768931388855,
-              "dropped_seqs": [],
-              "n_words_checked": 95
-            },
-            "labeled_entities": [
-              {
-                "ent": "Pembrokeshire",
-                "type": "GPE",
-                "start": 43,
-                "end": 56,
-                "in_source": false,
-                "label": "Non-factual Hallucination"
-              },
-              {
-                "ent": "the 1970s",
-                "type": "DATE",
-                "start": 98,
-                "end": 107,
-                "in_source": false,
-                "label": "Unknown"
-              }
-            ]
+    "0": {
+      "summaries": {
+        "34361828": {
+          "banned_phrases": [],
+          "summary": "A search is under way for the remains of a Pembrokeshire village which was wiped out by storms in the 1970s.",
+          "generation_metadata": {
+            "score": -0.692768931388855,
+            "dropped_seqs": [],
+            "n_words_checked": 95
           },
-          "36456002": {
-            "banned_phrases": [],
-            "summary": "Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final World Cup warm-up.",
-            "generation_metadata": {
-              "score": -0.36631321907043457,
-              "dropped_seqs": [],
-              "n_words_checked": 89
+          "labeled_entities": [
+            {
+              "ent": "Pembrokeshire",
+              "type": "GPE",
+              "start": 43,
+              "end": 56,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
             },
-            "labeled_entities": [
-              {
-                "ent": "Romelu Lukaku",
-                "type": "PERSON",
-                "start": 0,
-                "end": 13,
-                "in_source": true,
-                "label": "Non-hallucinated"
-              },
-              {
-                "ent": "Belgium",
-                "type": "GPE",
-                "start": 40,
-                "end": 47,
-                "in_source": true,
-                "label": "Non-hallucinated"
-              },
-              {
-                "ent": "Norway",
-                "type": "GPE",
-                "start": 73,
-                "end": 79,
-                "in_source": true,
-                "label": "Non-hallucinated"
-              },
-              {
-                "ent": "World Cup",
-                "type": "EVENT",
-                "start": 95,
-                "end": 104,
-                "in_source": false,
-                "label": "Non-factual Hallucination"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "batch-idx": 1,
-        "summaries": {
-          "24403775": {
-            "banned_phrases": [],
-            "summary": "Villagers in Shropshire are calling for the reopening of a dual carriageway next to Stonehenge.",
-            "generation_metadata": {
-              "score": -0.5598415732383728,
-              "dropped_seqs": [],
-              "n_words_checked": 80
-            },
-            "labeled_entities": [
-              {
-                "ent": "Shropshire",
-                "type": "GPE",
-                "start": 13,
-                "end": 23,
-                "in_source": false,
-                "label": "Non-factual Hallucination"
-              },
-              {
-                "ent": "Stonehenge",
-                "type": "FAC",
-                "start": 84,
-                "end": 94,
-                "in_source": true,
-                "label": "Factual Hallucination"
-              }
-            ]
+            {
+              "ent": "the 1970s",
+              "type": "DATE",
+              "start": 98,
+              "end": 107,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "36456002": {
+          "banned_phrases": [],
+          "summary": "Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final World Cup warm-up.",
+          "generation_metadata": {
+            "score": -0.36631321907043457,
+            "dropped_seqs": [],
+            "n_words_checked": 89
           },
-          "32112735": {
-            "banned_phrases": [],
-            "summary": "Liam Payne and Niall Horan have confirmed they're staying in One Direction.",
-            "generation_metadata": {
-              "score": -0.482986718416214,
-              "dropped_seqs": [],
-              "n_words_checked": 79
+          "labeled_entities": [
+            {
+              "ent": "Romelu Lukaku",
+              "type": "PERSON",
+              "start": 0,
+              "end": 13,
+              "in_source": true,
+              "label": "Non-hallucinated"
             },
-            "labeled_entities": [
-              {
-                "ent": "Liam Payne",
-                "type": "PERSON",
-                "start": 0,
-                "end": 10,
-                "in_source": true,
-                "label": "Non-hallucinated"
-              },
-              {
-                "ent": "Niall Horan",
-                "type": "PERSON",
-                "start": 15,
-                "end": 26,
-                "in_source": false,
-                "label": "Non-factual Hallucination"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "batch-idx": 2,
-        "summaries": {
-          "36203675": {
-            "banned_phrases": [],
-            "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol.",
-            "generation_metadata": {
-              "score": -0.8142673969268799,
-              "dropped_seqs": [],
-              "n_words_checked": 96
+            {
+              "ent": "Belgium",
+              "type": "GPE",
+              "start": 40,
+              "end": 47,
+              "in_source": true,
+              "label": "Non-hallucinated"
             },
-            "labeled_entities": [
-              {
-                "ent": "the University of Bristol",
-                "type": "ORG",
-                "start": 84,
-                "end": 109,
-                "in_source": false,
-                "label": "Non-factual Hallucination"
-              }
-            ]
+            {
+              "ent": "Norway",
+              "type": "GPE",
+              "start": 73,
+              "end": 79,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "World Cup",
+              "type": "EVENT",
+              "start": 95,
+              "end": 104,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "24403775": {
+          "banned_phrases": [],
+          "summary": "Villagers in Shropshire are calling for the reopening of a dual carriageway next to Stonehenge.",
+          "generation_metadata": {
+            "score": -0.5598416924476624,
+            "dropped_seqs": [],
+            "n_words_checked": 88
           },
-          "17996567": {
-            "banned_phrases": [],
-            "summary": "Plans to cut home-to-school transport subsidies in Gloucestershire have been put on hold.",
-            "generation_metadata": {
-              "score": -0.5601837038993835,
-              "dropped_seqs": [],
-              "n_words_checked": 78
+          "labeled_entities": [
+            {
+              "ent": "Shropshire",
+              "type": "GPE",
+              "start": 13,
+              "end": 23,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
             },
-            "labeled_entities": [
-              {
-                "ent": "Gloucestershire",
-                "type": "GPE",
-                "start": 51,
-                "end": 66,
-                "in_source": false,
-                "label": "Non-factual Hallucination"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "batch-idx": 3,
-        "summaries": {
-          "36396523": {
-            "banned_phrases": [],
-            "summary": "Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America.",
-            "generation_metadata": {
-              "score": -0.45060160756111145,
-              "dropped_seqs": [],
-              "n_words_checked": 72
-            },
-            "labeled_entities": [
-              {
-                "ent": "Brazil",
-                "type": "GPE",
-                "start": 0,
-                "end": 6,
-                "in_source": true,
-                "label": "Non-hallucinated"
-              },
-              {
-                "ent": "Kaka",
-                "type": "PERSON",
-                "start": 18,
-                "end": 22,
-                "in_source": true,
-                "label": "Non-hallucinated"
-              },
-              {
-                "ent": "next month's",
-                "type": "DATE",
-                "start": 42,
-                "end": 54,
-                "in_source": false,
-                "label": "Factual Hallucination"
-              },
-              {
-                "ent": "World Cup",
-                "type": "EVENT",
-                "start": 64,
-                "end": 73,
-                "in_source": false,
-                "label": "Non-factual Hallucination"
-              },
-              {
-                "ent": "South America",
-                "type": "LOC",
-                "start": 77,
-                "end": 90,
-                "in_source": false,
-                "label": "Non-factual Hallucination"
-              }
-            ]
+            {
+              "ent": "Stonehenge",
+              "type": "FAC",
+              "start": 84,
+              "end": 94,
+              "in_source": true,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "32112735": {
+          "banned_phrases": [],
+          "summary": "Liam Payne and Niall Horan have confirmed they're staying in One Direction.",
+          "generation_metadata": {
+            "score": -0.4829868674278259,
+            "dropped_seqs": [],
+            "n_words_checked": 89
           },
-          "39368095": {
-            "banned_phrases": [],
-            "summary": "Abertay University in Dundee has been named the best university in the world for its graduate courses in computer games design.",
-            "generation_metadata": {
-              "score": -0.5155394673347473,
-              "dropped_seqs": [],
-              "n_words_checked": 87
+          "labeled_entities": [
+            {
+              "ent": "Liam Payne",
+              "type": "PERSON",
+              "start": 0,
+              "end": 10,
+              "in_source": true,
+              "label": "Non-hallucinated"
             },
-            "labeled_entities": [
-              {
-                "ent": "Dundee",
-                "type": "GPE",
-                "start": 22,
-                "end": 28,
-                "in_source": false,
-                "label": "Factual Hallucination"
-              }
-            ]
-          }
+            {
+              "ent": "Niall Horan",
+              "type": "PERSON",
+              "start": 15,
+              "end": 26,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36203675": {
+          "banned_phrases": [],
+          "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol.",
+          "generation_metadata": {
+            "score": -0.8142673969268799,
+            "dropped_seqs": [],
+            "n_words_checked": 96
+          },
+          "labeled_entities": [
+            {
+              "ent": "the University of Bristol",
+              "type": "ORG",
+              "start": 84,
+              "end": 109,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "17996567": {
+          "banned_phrases": [],
+          "summary": "Plans to cut home-to-school transport subsidies in Gloucestershire have been put on hold.",
+          "generation_metadata": {
+            "score": -0.5601837635040283,
+            "dropped_seqs": [],
+            "n_words_checked": 78
+          },
+          "labeled_entities": [
+            {
+              "ent": "Gloucestershire",
+              "type": "GPE",
+              "start": 51,
+              "end": 66,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36396523": {
+          "banned_phrases": [],
+          "summary": "Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America.",
+          "generation_metadata": {
+            "score": -0.4506017863750458,
+            "dropped_seqs": [],
+            "n_words_checked": 77
+          },
+          "labeled_entities": [
+            {
+              "ent": "Brazil",
+              "type": "GPE",
+              "start": 0,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kaka",
+              "type": "PERSON",
+              "start": 18,
+              "end": 22,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "next month's",
+              "type": "DATE",
+              "start": 42,
+              "end": 54,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "World Cup",
+              "type": "EVENT",
+              "start": 64,
+              "end": 73,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "South America",
+              "type": "LOC",
+              "start": 77,
+              "end": 90,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "39368095": {
+          "banned_phrases": [],
+          "summary": "Abertay University in Dundee has been named the best university in the world for its graduate courses in computer games design.",
+          "generation_metadata": {
+            "score": -0.5155395865440369,
+            "dropped_seqs": [],
+            "n_words_checked": 87
+          },
+          "labeled_entities": [
+            {
+              "ent": "Dundee",
+              "type": "GPE",
+              "start": 22,
+              "end": 28,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "37066389": {
+          "banned_phrases": [],
+          "summary": "Colombia's Omar Martinez lost to Kazakhstan's Islam Dusmatov in the Olympic men's flyweight final in Rio.",
+          "generation_metadata": {
+            "score": -0.6497074365615845,
+            "dropped_seqs": [],
+            "n_words_checked": 81
+          },
+          "labeled_entities": [
+            {
+              "ent": "Colombia",
+              "type": "GPE",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Omar Martinez",
+              "type": "PERSON",
+              "start": 11,
+              "end": 24,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Kazakhstan",
+              "type": "GPE",
+              "start": 33,
+              "end": 43,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Rio",
+              "type": "GPE",
+              "start": 101,
+              "end": 104,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "37615223": {
+          "banned_phrases": [],
+          "summary": "Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium.",
+          "generation_metadata": {
+            "score": -0.5099020600318909,
+            "dropped_seqs": [],
+            "n_words_checked": 90
+          },
+          "labeled_entities": [
+            {
+              "ent": "Sam Baldock's",
+              "type": "PERSON",
+              "start": 0,
+              "end": 13,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "first-half",
+              "type": "DATE",
+              "start": 14,
+              "end": 24,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Brighton",
+              "type": "GPE",
+              "start": 51,
+              "end": 59,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the Amex Stadium",
+              "type": "FAC",
+              "start": 83,
+              "end": 99,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
         }
       }
-    ],
-    "1": [
-      {
-        "batch-idx": 0,
-        "summaries": {
-          "34361828": {
-            "banned_phrases": [
-              "Pembrokeshire"
+    },
+    "1": {
+      "summaries": {
+        "34361828": {
+          "banned_phrases": [
+            "Pembrokeshire"
+          ],
+          "summary": "A search is under way for the remains of a Gwynedd village which was wiped out by storms in the 1970s.",
+          "generation_metadata": {
+            "score": -0.7416432499885559,
+            "dropped_seqs": [
+              "</s>A search is under way for the remains of a Pembrokeshire"
             ],
-            "summary": "A search is under way for the remains of a Gwynedd village which was wiped out by storms in the 1970s.",
-            "generation_metadata": {
-              "score": -0.7416432499885559,
-              "dropped_seqs": [
-                "</s>A search is under way for the remains of a Pembrokeshire"
-              ],
-              "n_words_checked": 86
-            },
-            "labeled_entities": [
-              {
-                "ent": "Gwynedd village",
-                "type": "GPE",
-                "start": 43,
-                "end": 58,
-                "in_source": false,
-                "label": "Non-factual Hallucination"
-              },
-              {
-                "ent": "the 1970s",
-                "type": "DATE",
-                "start": 92,
-                "end": 101,
-                "in_source": false,
-                "label": "Unknown"
-              }
-            ]
+            "n_words_checked": 86
           },
-          "36456002": {
-            "banned_phrases": [
-              "World Cup"
-            ],
-            "summary": "Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final Euro 2016 warm-up game.",
-            "generation_metadata": {
-              "score": -0.37551578879356384,
-              "dropped_seqs": [
-                "</s>Eden Hazard scored twice as Belgium came from behind to beat Norway in their final World Cup",
-                "</s>Eden Hazard scored twice as Belgium came from behind to beat Norway 3-2 in their final World Cup",
-                "</s>Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final World Cup"
-              ],
-              "n_words_checked": 94
+          "labeled_entities": [
+            {
+              "ent": "Gwynedd village",
+              "type": "GPE",
+              "start": 43,
+              "end": 58,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
             },
-            "labeled_entities": [
-              {
-                "ent": "Romelu Lukaku",
-                "type": "PERSON",
-                "start": 0,
-                "end": 13,
-                "in_source": true,
-                "label": "Non-hallucinated"
-              },
-              {
-                "ent": "Belgium",
-                "type": "GPE",
-                "start": 40,
-                "end": 47,
-                "in_source": true,
-                "label": "Non-hallucinated"
-              },
-              {
-                "ent": "Norway",
-                "type": "GPE",
-                "start": 73,
-                "end": 79,
-                "in_source": true,
-                "label": "Non-hallucinated"
-              },
-              {
-                "ent": "2016",
-                "type": "DATE",
-                "start": 100,
-                "end": 104,
-                "in_source": true,
-                "label": "Non-hallucinated"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "batch-idx": 1,
-        "summaries": {
-          "24403775": {
-            "banned_phrases": [
-              "Shropshire"
+            {
+              "ent": "the 1970s",
+              "type": "DATE",
+              "start": 92,
+              "end": 101,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "36456002": {
+          "banned_phrases": [
+            "World Cup"
+          ],
+          "summary": "Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final Euro 2016 warm-up game.",
+          "generation_metadata": {
+            "score": -0.37551578879356384,
+            "dropped_seqs": [
+              "</s>Eden Hazard scored twice as Belgium came from behind to beat Norway in their final World Cup",
+              "</s>Eden Hazard scored twice as Belgium came from behind to beat Norway 3-2 in their final World Cup",
+              "</s>Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final World Cup"
             ],
-            "summary": "Villagers in Shrewsbury are calling for the reopening of a dual carriageway next to Stonehenge.",
-            "generation_metadata": {
-              "score": -0.5977227687835693,
-              "dropped_seqs": [
-                "</s>Villagers in Shropshire"
-              ],
-              "n_words_checked": 87
-            },
-            "labeled_entities": [
-              {
-                "ent": "Shrewsbury",
-                "type": "GPE",
-                "start": 13,
-                "end": 23,
-                "in_source": false,
-                "label": "Non-factual Hallucination"
-              },
-              {
-                "ent": "Stonehenge",
-                "type": "FAC",
-                "start": 84,
-                "end": 94,
-                "in_source": true,
-                "label": "Factual Hallucination"
-              }
-            ]
+            "n_words_checked": 94
           },
-          "32112735": {
-            "banned_phrases": [
-              "Niall Horan"
-            ],
-            "summary": "Liam Payne and Louis Tomlinson have confirmed they're staying in One Direction.",
-            "generation_metadata": {
-              "score": -0.5388208627700806,
-              "dropped_seqs": [
-                "</s>Liam Payne and Niall Horan"
-              ],
-              "n_words_checked": 82
+          "labeled_entities": [
+            {
+              "ent": "Romelu Lukaku",
+              "type": "PERSON",
+              "start": 0,
+              "end": 13,
+              "in_source": true,
+              "label": "Non-hallucinated"
             },
-            "labeled_entities": [
-              {
-                "ent": "Liam Payne",
-                "type": "PERSON",
-                "start": 0,
-                "end": 10,
-                "in_source": true,
-                "label": "Non-hallucinated"
-              },
-              {
-                "ent": "Louis Tomlinson",
-                "type": "PERSON",
-                "start": 15,
-                "end": 30,
-                "in_source": false,
-                "label": "Non-factual Hallucination"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "batch-idx": 2,
-        "summaries": {
-          "36203675": {
-            "banned_phrases": [
-              "the University of Bristol"
-            ],
-            "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford.",
-            "generation_metadata": {
-              "score": -0.8211338520050049,
-              "dropped_seqs": [
-                "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
-                "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol"
-              ],
-              "n_words_checked": 108
+            {
+              "ent": "Belgium",
+              "type": "GPE",
+              "start": 40,
+              "end": 47,
+              "in_source": true,
+              "label": "Non-hallucinated"
             },
-            "labeled_entities": [
-              {
-                "ent": "the University of Oxford",
-                "type": "ORG",
-                "start": 84,
-                "end": 108,
-                "in_source": false,
-                "label": "Non-factual Hallucination"
-              }
-            ]
+            {
+              "ent": "Norway",
+              "type": "GPE",
+              "start": 73,
+              "end": 79,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "2016",
+              "type": "DATE",
+              "start": 100,
+              "end": 104,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "24403775": {
+          "banned_phrases": [
+            "Shropshire"
+          ],
+          "summary": "Villagers in Shrewsbury are calling for the reopening of a dual carriageway next to Stonehenge.",
+          "generation_metadata": {
+            "score": -0.5977228879928589,
+            "dropped_seqs": [
+              "</s>Villagers in Shropshire"
+            ],
+            "n_words_checked": 87
           },
-          "17996567": {
-            "banned_phrases": [
-              "Gloucestershire"
-            ],
-            "summary": "Plans to cut home-to-school transport subsidies for children in Flintshire have been put on hold.",
-            "generation_metadata": {
-              "score": -0.6140730381011963,
-              "dropped_seqs": [
-                "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
-                "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
-              ],
-              "n_words_checked": 93
+          "labeled_entities": [
+            {
+              "ent": "Shrewsbury",
+              "type": "GPE",
+              "start": 13,
+              "end": 23,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
             },
-            "labeled_entities": [
-              {
-                "ent": "Flintshire",
-                "type": "PERSON",
-                "start": 64,
-                "end": 74,
-                "in_source": false,
-                "label": "Non-factual Hallucination"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "batch-idx": 3,
-        "summaries": {
-          "36396523": {
-            "banned_phrases": [
-              "South America",
-              "World Cup"
+            {
+              "ent": "Stonehenge",
+              "type": "FAC",
+              "start": 84,
+              "end": 94,
+              "in_source": true,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "32112735": {
+          "banned_phrases": [
+            "Niall Horan"
+          ],
+          "summary": "Liam Payne and Louis Tomlinson have confirmed they're staying in One Direction.",
+          "generation_metadata": {
+            "score": -0.5388206243515015,
+            "dropped_seqs": [
+              "</s>Liam Payne and Niall Horan"
             ],
-            "summary": "Brazil have added Kaka to their squad for next month's Copa America in Chile.",
-            "generation_metadata": {
-              "score": -0.49014559388160706,
-              "dropped_seqs": [
-                "</s>Brazil have added Kaka to their squad for the Under-20 World Cup",
-                "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup",
-                "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup"
-              ],
-              "n_words_checked": 63
+            "n_words_checked": 84
+          },
+          "labeled_entities": [
+            {
+              "ent": "Liam Payne",
+              "type": "PERSON",
+              "start": 0,
+              "end": 10,
+              "in_source": true,
+              "label": "Non-hallucinated"
             },
-            "labeled_entities": [
-              {
-                "ent": "Brazil",
-                "type": "GPE",
-                "start": 0,
-                "end": 6,
-                "in_source": true,
-                "label": "Non-hallucinated"
-              },
-              {
-                "ent": "Kaka",
-                "type": "PERSON",
-                "start": 18,
-                "end": 22,
-                "in_source": true,
-                "label": "Non-hallucinated"
-              },
-              {
-                "ent": "next month's",
-                "type": "DATE",
-                "start": 42,
-                "end": 54,
-                "in_source": false,
-                "label": "Factual Hallucination"
-              },
-              {
-                "ent": "Copa America",
-                "type": "FAC",
-                "start": 55,
-                "end": 67,
-                "in_source": false,
-                "label": "Factual Hallucination"
-              },
-              {
-                "ent": "Chile",
-                "type": "GPE",
-                "start": 71,
-                "end": 76,
-                "in_source": false,
-                "label": "Non-factual Hallucination"
-              }
-            ]
-          }
+            {
+              "ent": "Louis Tomlinson",
+              "type": "PERSON",
+              "start": 15,
+              "end": 30,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36203675": {
+          "banned_phrases": [
+            "the University of Bristol"
+          ],
+          "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford.",
+          "generation_metadata": {
+            "score": -0.8211338520050049,
+            "dropped_seqs": [
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol"
+            ],
+            "n_words_checked": 112
+          },
+          "labeled_entities": [
+            {
+              "ent": "the University of Oxford",
+              "type": "ORG",
+              "start": 84,
+              "end": 108,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "17996567": {
+          "banned_phrases": [
+            "Gloucestershire"
+          ],
+          "summary": "Plans to cut home-to-school transport subsidies for children in Flintshire have been put on hold.",
+          "generation_metadata": {
+            "score": -0.6140730977058411,
+            "dropped_seqs": [
+              "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
+            ],
+            "n_words_checked": 93
+          },
+          "labeled_entities": [
+            {
+              "ent": "Flintshire",
+              "type": "PERSON",
+              "start": 64,
+              "end": 74,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36396523": {
+          "banned_phrases": [
+            "South America",
+            "World Cup"
+          ],
+          "summary": "Brazil have added Kaka to their squad for next month's Copa America in Chile.",
+          "generation_metadata": {
+            "score": -0.49014562368392944,
+            "dropped_seqs": [
+              "</s>Brazil have added Kaka to their squad for the Under-20 World Cup",
+              "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup",
+              "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup"
+            ],
+            "n_words_checked": 96
+          },
+          "labeled_entities": [
+            {
+              "ent": "Brazil",
+              "type": "GPE",
+              "start": 0,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kaka",
+              "type": "PERSON",
+              "start": 18,
+              "end": 22,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "next month's",
+              "type": "DATE",
+              "start": 42,
+              "end": 54,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Copa America",
+              "type": "FAC",
+              "start": 55,
+              "end": 67,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Chile",
+              "type": "GPE",
+              "start": 71,
+              "end": 76,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "37066389": {
+          "banned_phrases": [
+            "Kazakhstan"
+          ],
+          "summary": "Colombia's Omar Martinez has been knocked out in the Olympic men's flyweight final by Uzbekistan's Islam Dusmatov in Rio.",
+          "generation_metadata": {
+            "score": -0.6973502039909363,
+            "dropped_seqs": [
+              "</s>The Kazakhstan",
+              "</s>Colombia's Omar Martinez lost to Kazakhstan",
+              "</s>Colombia's Carlos Martinez lost to Kazakhstan",
+              "</s>Colombia's Omar Martinez has been beaten by Kazakhstan",
+              "</s>Colombia's Omar Martinez has been beaten in the Olympic men's flyweight final by Kazakhstan",
+              "</s>Colombia's Omar Martinez has been knocked out in the Olympic men's flyweight final by Kazakhstan",
+              "</s>Colombia's Omar Martinez has been knocked out of the Olympic men's flyweight final by Kazakhstan",
+              "</s>Colombia's Omar Martinez has been knocked out of the Olympic boxing men's flyweight final by Kazakhstan"
+            ],
+            "n_words_checked": 93
+          },
+          "labeled_entities": [
+            {
+              "ent": "Colombia",
+              "type": "GPE",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Omar Martinez",
+              "type": "PERSON",
+              "start": 11,
+              "end": 24,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Uzbekistan",
+              "type": "GPE",
+              "start": 86,
+              "end": 96,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Rio",
+              "type": "GPE",
+              "start": 117,
+              "end": 120,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "37615223": {
+          "banned_phrases": [
+            "the Amex Stadium"
+          ],
+          "summary": "Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to third in the Championship.",
+          "generation_metadata": {
+            "score": -0.5327222347259521,
+            "dropped_seqs": [
+              "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves at the Amex Stadium",
+              "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium"
+            ],
+            "n_words_checked": 83
+          },
+          "labeled_entities": [
+            {
+              "ent": "Sam Baldock",
+              "type": "PERSON",
+              "start": 0,
+              "end": 11,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "third",
+              "type": "ORDINAL",
+              "start": 83,
+              "end": 88,
+              "in_source": true,
+              "label": "Non-factual Hallucination"
+            }
+          ]
         }
       }
-    ],
-    "2": [
-      {
-        "batch-idx": 0,
-        "summaries": {
-          "34361828": {
-            "banned_phrases": [
-              "Pembrokeshire",
-              "Gwynedd village"
+    },
+    "2": {
+      "summaries": {
+        "34361828": {
+          "banned_phrases": [
+            "Gwynedd village",
+            "Pembrokeshire"
+          ],
+          "summary": "A search is under way to find the remains of a Gower village which was destroyed by storms in the 1950s.",
+          "generation_metadata": {
+            "score": -0.7637211680412292,
+            "dropped_seqs": [
+              "</s>A search is under way for the remains of a Gwynedd village",
+              "</s>A search is under way for the remains of a Pembrokeshire"
             ],
-            "summary": "A search is under way to find the remains of a Gower village which was destroyed by storms in the 1950s.",
-            "generation_metadata": {
-              "score": -0.7637211680412292,
-              "dropped_seqs": [
-                "</s>A search is under way for the remains of a Gwynedd village",
-                "</s>A search is under way for the remains of a Pembrokeshire"
-              ],
-              "n_words_checked": 79
-            },
-            "labeled_entities": [
-              {
-                "ent": "Gower",
-                "type": "GPE",
-                "start": 47,
-                "end": 52,
-                "in_source": true,
-                "label": "Non-hallucinated"
-              },
-              {
-                "ent": "the 1950s",
-                "type": "DATE",
-                "start": 94,
-                "end": 103,
-                "in_source": false,
-                "label": "Unknown"
-              }
-            ]
+            "n_words_checked": 91
           },
-          "24403775": {
-            "banned_phrases": [
-              "Shrewsbury",
-              "Shropshire"
-            ],
-            "summary": "A campaign has been launched to get Stonehenge Bottom's main road re-opened after it was closed to traffic.",
-            "generation_metadata": {
-              "score": -0.7396910786628723,
-              "dropped_seqs": [
-                "</s>Villagers in Shropshire",
-                "</s>Villagers in Shrewsbury"
-              ],
-              "n_words_checked": 78
+          "labeled_entities": [
+            {
+              "ent": "Gower",
+              "type": "GPE",
+              "start": 47,
+              "end": 52,
+              "in_source": true,
+              "label": "Non-hallucinated"
             },
-            "labeled_entities": [
-              {
-                "ent": "Stonehenge Bottom's",
-                "type": "FAC",
-                "start": 36,
-                "end": 55,
-                "in_source": false,
-                "label": "Factual Hallucination"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "batch-idx": 1,
-        "summaries": {
-          "32112735": {
-            "banned_phrases": [
-              "Niall Horan",
-              "Louis Tomlinson"
+            {
+              "ent": "the 1950s",
+              "type": "DATE",
+              "start": 94,
+              "end": 103,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "24403775": {
+          "banned_phrases": [
+            "Shrewsbury",
+            "Shropshire"
+          ],
+          "summary": "A campaign has been launched to get Stonehenge Bottom's main road re-opened after it was closed to traffic.",
+          "generation_metadata": {
+            "score": -0.7396911382675171,
+            "dropped_seqs": [
+              "</s>Villagers in Shropshire",
+              "</s>Villagers in Shrewsbury"
             ],
-            "summary": "One Direction have confirmed they will continue to perform together.",
-            "generation_metadata": {
-              "score": -0.7836668491363525,
-              "dropped_seqs": [
-                "</s>Liam Payne and Niall Horan",
-                "</s>Liam Payne and Louis Tomlinson"
-              ],
-              "n_words_checked": 66
-            },
-            "labeled_entities": [
-              {
-                "ent": "One",
-                "type": "CARDINAL",
-                "start": 0,
-                "end": 3,
-                "in_source": true,
-                "label": "Non-hallucinated"
-              }
-            ]
+            "n_words_checked": 91
           },
-          "36203675": {
-            "banned_phrases": [
-              "the University of Oxford",
-              "the University of Bristol"
+          "labeled_entities": [
+            {
+              "ent": "Stonehenge Bottom's",
+              "type": "FAC",
+              "start": 36,
+              "end": 55,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "32112735": {
+          "banned_phrases": [
+            "Niall Horan",
+            "Louis Tomlinson"
+          ],
+          "summary": "One Direction have confirmed they will continue to perform together.",
+          "generation_metadata": {
+            "score": -0.7836668491363525,
+            "dropped_seqs": [
+              "</s>Liam Payne and Niall Horan",
+              "</s>Liam Payne and Louis Tomlinson"
             ],
-            "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge.",
-            "generation_metadata": {
-              "score": -0.8350398540496826,
-              "dropped_seqs": [
-                "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
-                "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Oxford",
-                "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol",
-                "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford"
-              ],
-              "n_words_checked": 108
-            },
-            "labeled_entities": [
-              {
-                "ent": "the University of Cambridge",
-                "type": "ORG",
-                "start": 84,
-                "end": 111,
-                "in_source": false,
-                "label": "Non-factual Hallucination"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "batch-idx": 2,
-        "summaries": {
-          "17996567": {
-            "banned_phrases": [
-              "Gloucestershire",
-              "Flintshire"
-            ],
-            "summary": "Plans to cut home-to-school transport subsidies for children in Staffordshire have been put on hold.",
-            "generation_metadata": {
-              "score": -0.6207175254821777,
-              "dropped_seqs": [
-                "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
-                "</s>Plans to cut home-to-school transport subsidies for children in Flintshire",
-                "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
-              ],
-              "n_words_checked": 70
-            },
-            "labeled_entities": [
-              {
-                "ent": "Staffordshire",
-                "type": "GPE",
-                "start": 64,
-                "end": 77,
-                "in_source": false,
-                "label": "Non-factual Hallucination"
-              }
-            ]
+            "n_words_checked": 88
           },
-          "36396523": {
-            "banned_phrases": [
-              "South America",
-              "World Cup",
-              "Chile"
+          "labeled_entities": [
+            {
+              "ent": "One",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 3,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "36203675": {
+          "banned_phrases": [
+            "the University of Bristol",
+            "the University of Oxford"
+          ],
+          "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge.",
+          "generation_metadata": {
+            "score": -0.8350398540496826,
+            "dropped_seqs": [
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Oxford",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford"
             ],
-            "summary": "Brazil have added Kaka to their squad for next month's Copa America in the Dominican Republic.",
-            "generation_metadata": {
-              "score": -0.5017631649971008,
-              "dropped_seqs": [
-                "</s>Brazil have added Kaka to their squad for the Under-20 World Cup",
-                "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup",
-                "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup",
-                "</s>Brazil have added Kaka to their squad for next month's Copa America in Chile"
-              ],
-              "n_words_checked": 70
+            "n_words_checked": 110
+          },
+          "labeled_entities": [
+            {
+              "ent": "the University of Cambridge",
+              "type": "ORG",
+              "start": 84,
+              "end": 111,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "17996567": {
+          "banned_phrases": [
+            "Gloucestershire",
+            "Flintshire"
+          ],
+          "summary": "Plans to cut home-to-school transport subsidies for children in Staffordshire have been put on hold.",
+          "generation_metadata": {
+            "score": -0.6207174062728882,
+            "dropped_seqs": [
+              "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Flintshire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
+            ],
+            "n_words_checked": 73
+          },
+          "labeled_entities": [
+            {
+              "ent": "Staffordshire",
+              "type": "GPE",
+              "start": 64,
+              "end": 77,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36396523": {
+          "banned_phrases": [
+            "Chile",
+            "South America",
+            "World Cup"
+          ],
+          "summary": "Brazil have added Kaka to their squad for next month's Copa America in the Dominican Republic.",
+          "generation_metadata": {
+            "score": -0.5017631649971008,
+            "dropped_seqs": [
+              "</s>Brazil have added Kaka to their squad for the Under-20 World Cup",
+              "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup",
+              "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup",
+              "</s>Brazil have added Kaka to their squad for next month's Copa America in Chile"
+            ],
+            "n_words_checked": 75
+          },
+          "labeled_entities": [
+            {
+              "ent": "Brazil",
+              "type": "GPE",
+              "start": 0,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
             },
-            "labeled_entities": [
-              {
-                "ent": "Brazil",
-                "type": "GPE",
-                "start": 0,
-                "end": 6,
-                "in_source": true,
-                "label": "Non-hallucinated"
-              },
-              {
-                "ent": "Kaka",
-                "type": "PERSON",
-                "start": 18,
-                "end": 22,
-                "in_source": true,
-                "label": "Non-hallucinated"
-              },
-              {
-                "ent": "next month's",
-                "type": "DATE",
-                "start": 42,
-                "end": 54,
-                "in_source": false,
-                "label": "Factual Hallucination"
-              },
-              {
-                "ent": "Copa America",
-                "type": "FAC",
-                "start": 55,
-                "end": 67,
-                "in_source": false,
-                "label": "Factual Hallucination"
-              },
-              {
-                "ent": "the Dominican Republic",
-                "type": "GPE",
-                "start": 71,
-                "end": 93,
-                "in_source": false,
-                "label": "Non-factual Hallucination"
-              }
-            ]
-          }
+            {
+              "ent": "Kaka",
+              "type": "PERSON",
+              "start": 18,
+              "end": 22,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "next month's",
+              "type": "DATE",
+              "start": 42,
+              "end": 54,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Copa America",
+              "type": "FAC",
+              "start": 55,
+              "end": 67,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "the Dominican Republic",
+              "type": "GPE",
+              "start": 71,
+              "end": 93,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "37615223": {
+          "banned_phrases": [
+            "third",
+            "the Amex Stadium"
+          ],
+          "summary": "Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to fourth in the Championship.",
+          "generation_metadata": {
+            "score": -0.53695148229599,
+            "dropped_seqs": [
+              "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves at the Amex Stadium",
+              "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to third",
+              "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium"
+            ],
+            "n_words_checked": 81
+          },
+          "labeled_entities": [
+            {
+              "ent": "Sam Baldock",
+              "type": "PERSON",
+              "start": 0,
+              "end": 11,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "fourth",
+              "type": "ORDINAL",
+              "start": 83,
+              "end": 89,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
         }
       }
-    ],
-    "3": [
-      {
-        "batch-idx": 0,
-        "summaries": {
-          "36203675": {
-            "banned_phrases": [
-              "the University of Cambridge",
-              "the University of Oxford",
-              "the University of Bristol"
+    },
+    "3": {
+      "summaries": {
+        "36203675": {
+          "banned_phrases": [
+            "the University of Bristol",
+            "the University of Oxford",
+            "the University of Cambridge"
+          ],
+          "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Manchester.",
+          "generation_metadata": {
+            "score": -0.842137336730957,
+            "dropped_seqs": [
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Oxford",
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Cambridge",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge"
             ],
-            "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Manchester.",
-            "generation_metadata": {
-              "score": -0.842137336730957,
-              "dropped_seqs": [
-                "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
-                "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Oxford",
-                "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Cambridge",
-                "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol",
-                "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford",
-                "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge"
-              ],
-              "n_words_checked": 103
-            },
-            "labeled_entities": [
-              {
-                "ent": "the University of Manchester",
-                "type": "ORG",
-                "start": 84,
-                "end": 112,
-                "in_source": false,
-                "label": "Non-factual Hallucination"
-              }
-            ]
+            "n_words_checked": 104
           },
-          "17996567": {
-            "banned_phrases": [
-              "Gloucestershire",
-              "Flintshire",
-              "Staffordshire"
+          "labeled_entities": [
+            {
+              "ent": "the University of Manchester",
+              "type": "ORG",
+              "start": 84,
+              "end": 112,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "17996567": {
+          "banned_phrases": [
+            "Gloucestershire",
+            "Flintshire",
+            "Staffordshire"
+          ],
+          "summary": "Plans to cut home-to-school transport subsidies for children in Gloucesterse have been put on hold.",
+          "generation_metadata": {
+            "score": -0.8472769260406494,
+            "dropped_seqs": [
+              "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Flintshire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Staffordshire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
-            "summary": "Plans to cut home-to-school transport subsidies for children in Gloucesterse have been put on hold.",
-            "generation_metadata": {
-              "score": -0.8472769260406494,
-              "dropped_seqs": [
-                "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
-                "</s>Plans to cut home-to-school transport subsidies for children in Flintshire",
-                "</s>Plans to cut home-to-school transport subsidies for children in Staffordshire",
-                "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
-              ],
-              "n_words_checked": 80
-            },
-            "labeled_entities": [
-              {
-                "ent": "Gloucesterse",
-                "type": "ORG",
-                "start": 64,
-                "end": 76,
-                "in_source": false,
-                "label": "Non-factual Hallucination"
-              }
-            ]
-          }
-        }
-      },
-      {
-        "batch-idx": 1,
-        "summaries": {
-          "36396523": {
-            "banned_phrases": [
-              "South America",
-              "the Dominican Republic",
-              "Chile",
-              "World Cup"
+            "n_words_checked": 80
+          },
+          "labeled_entities": [
+            {
+              "ent": "Gloucesterse",
+              "type": "ORG",
+              "start": 64,
+              "end": 76,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36396523": {
+          "banned_phrases": [
+            "Chile",
+            "the Dominican Republic",
+            "South America",
+            "World Cup"
+          ],
+          "summary": "Brazil have added Kaka to their squad for next month's Copa America.",
+          "generation_metadata": {
+            "score": -0.5284164547920227,
+            "dropped_seqs": [
+              "</s>Brazil have added Kaka to their squad for the Under-20 World Cup",
+              "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup",
+              "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup",
+              "</s>Brazil have added Kaka to their squad for next month's Copa America in Chile",
+              "</s>Brazil have added Kaka to their squad for next month's Copa America in the Dominican Republic"
             ],
-            "summary": "Brazil have added Kaka to their squad for next month's Copa America.",
-            "generation_metadata": {
-              "score": -0.5284164547920227,
-              "dropped_seqs": [
-                "</s>Brazil have added Kaka to their squad for the Under-20 World Cup",
-                "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup",
-                "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup",
-                "</s>Brazil have added Kaka to their squad for next month's Copa America in Chile",
-                "</s>Brazil have added Kaka to their squad for next month's Copa America in the Dominican Republic"
-              ],
-              "n_words_checked": 63
+            "n_words_checked": 84
+          },
+          "labeled_entities": [
+            {
+              "ent": "Brazil",
+              "type": "GPE",
+              "start": 0,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
             },
-            "labeled_entities": [
-              {
-                "ent": "Brazil",
-                "type": "GPE",
-                "start": 0,
-                "end": 6,
-                "in_source": true,
-                "label": "Non-hallucinated"
-              },
-              {
-                "ent": "Kaka",
-                "type": "PERSON",
-                "start": 18,
-                "end": 22,
-                "in_source": true,
-                "label": "Non-hallucinated"
-              },
-              {
-                "ent": "next month's",
-                "type": "DATE",
-                "start": 42,
-                "end": 54,
-                "in_source": false,
-                "label": "Factual Hallucination"
-              },
-              {
-                "ent": "Copa America",
-                "type": "FAC",
-                "start": 55,
-                "end": 67,
-                "in_source": false,
-                "label": "Factual Hallucination"
-              }
-            ]
-          }
+            {
+              "ent": "Kaka",
+              "type": "PERSON",
+              "start": 18,
+              "end": 22,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "next month's",
+              "type": "DATE",
+              "start": 42,
+              "end": 54,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Copa America",
+              "type": "FAC",
+              "start": 55,
+              "end": 67,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
         }
       }
-    ],
-    "4": [
-      {
-        "batch-idx": 0,
-        "summaries": {
-          "36203675": {
-            "banned_phrases": [
-              "the University of Cambridge",
-              "the University of Oxford",
-              "the University of Manchester",
-              "the University of Bristol"
+    },
+    "4": {
+      "summaries": {
+        "36203675": {
+          "banned_phrases": [
+            "the University of Manchester",
+            "the University of Bristol",
+            "the University of Oxford",
+            "the University of Cambridge"
+          ],
+          "summary": "<Failed generation: blocked all beams>",
+          "generation_metadata": {
+            "score": -Infinity,
+            "dropped_seqs": [
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Oxford",
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Cambridge",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Manchester"
             ],
-            "summary": "<Failed generation: blocked all beams>",
-            "generation_metadata": {
-              "score": -Infinity,
-              "dropped_seqs": [
-                "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
-                "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Oxford",
-                "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Cambridge",
-                "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol",
-                "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford",
-                "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge",
-                "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Manchester"
-              ],
-              "n_words_checked": 96
-            },
-            "labeled_entities": []
+            "n_words_checked": 96
           },
-          "17996567": {
-            "banned_phrases": [
-              "Gloucestershire",
-              "Flintshire",
-              "Gloucesterse",
-              "Staffordshire"
+          "labeled_entities": []
+        },
+        "17996567": {
+          "banned_phrases": [
+            "Gloucestershire",
+            "Flintshire",
+            "Staffordshire",
+            "Gloucesterse"
+          ],
+          "summary": "Plans to cut home-to-school transport subsidies for children in Gloucestersfield have been put on hold.",
+          "generation_metadata": {
+            "score": -0.8587636351585388,
+            "dropped_seqs": [
+              "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Flintshire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Staffordshire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Gloucesterse"
             ],
-            "summary": "Plans to cut home-to-school transport subsidies for children in Gloucestersfield have been put on hold.",
-            "generation_metadata": {
-              "score": -0.8587636351585388,
-              "dropped_seqs": [
-                "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
-                "</s>Plans to cut home-to-school transport subsidies for children in Flintshire",
-                "</s>Plans to cut home-to-school transport subsidies for children in Staffordshire",
-                "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire",
-                "</s>Plans to cut home-to-school transport subsidies for children in Gloucesterse"
-              ],
-              "n_words_checked": 76
-            },
-            "labeled_entities": [
-              {
-                "ent": "Gloucestersfield",
-                "type": "PERSON",
-                "start": 64,
-                "end": 80,
-                "in_source": false,
-                "label": "Non-factual Hallucination"
-              }
-            ]
-          }
+            "n_words_checked": 76
+          },
+          "labeled_entities": [
+            {
+              "ent": "Gloucestersfield",
+              "type": "PERSON",
+              "start": 64,
+              "end": 80,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
         }
       }
-    ]
+    }
   }
 }

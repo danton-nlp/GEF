@@ -130,40 +130,33 @@ def persist_iteration(
     parser_args,
     iteration_log,
     iteration_idx,
-    batch_idx,
+    tokenizer,
     id_to_idx,
     gen_summaries_by_id,
-    all_labeled_entities,
+    oracle_labeled_entities,
     generation_metadata,
     banned_phrases_by_sum_id,
 ):
     if iteration_idx not in iteration_log:
-        iteration_log[iteration_idx] = []
-    iteration_log[iteration_idx].append(
-        {
-            "batch-idx": batch_idx,
-            "summaries": {
-                sum_id: {
-                    "banned_phrases": list(banned_phrases_by_sum_id[sum_id]),
-                    "summary": gen_summaries_by_id[sum_id],
-                    "generation_metadata": {
-                        "score": generation_metadata[id_to_idx[sum_id]]["score"],
-                        "dropped_seqs": [
-                            tokenizer.decode(dropped_seq[0])
-                            for dropped_seq in generation_metadata[id_to_idx[sum_id]][
-                                "dropped_seqs"
-                            ]
-                        ],
-                        "n_words_checked": generation_metadata[id_to_idx[sum_id]][
-                            "n_words_checked"
-                        ],
-                    },
-                    "labeled_entities": all_labeled_entities[sum_id],
-                }
-                for sum_id in gen_summaries_by_id.keys()
+        iteration_log[iteration_idx] = {"summaries": {}}
+    for sum_id in gen_summaries_by_id.keys():
+        iteration_log[iteration_idx]["summaries"][sum_id] = {
+            "banned_phrases": list(banned_phrases_by_sum_id[sum_id]),
+            "summary": gen_summaries_by_id[sum_id],
+            "generation_metadata": {
+                "score": generation_metadata[id_to_idx[sum_id]]["score"],
+                "dropped_seqs": [
+                    tokenizer.decode(dropped_seq[0])
+                    for dropped_seq in generation_metadata[id_to_idx[sum_id]][
+                        "dropped_seqs"
+                    ]
+                ],
+                "n_words_checked": generation_metadata[id_to_idx[sum_id]][
+                    "n_words_checked"
+                ],
             },
+            "labeled_entities": oracle_labeled_entities[sum_id],
         }
-    )
     with open(logging_path, "w") as f:
         json.dump(
             {
@@ -173,6 +166,74 @@ def persist_iteration(
             },
             f,
             indent=2,
+        )
+
+
+def compute_stats(results_by_sum_id):
+    summary_stats = {
+        "completed": 0,
+        "total": len(results_by_sum_id),
+        "factual": 0,
+        "non_factual": 0,
+        "failed": 0,
+        "unknown": 0,
+    }
+    entity_stats = {
+        ANNOTATION_LABELS["Non-factual"]: 0,
+        ANNOTATION_LABELS["Factual"]: 0,
+        ANNOTATION_LABELS["Unknown"]: 0,
+        ANNOTATION_LABELS["Non-hallucinated"]: 0
+    }
+    for results in results_by_sum_id.values():
+        if results["completed"]:
+            summary_stats["completed"] += 1
+        ents_non_factual = len(results[ANNOTATION_LABELS["Non-factual"]])
+        ents_factual = len(results[ANNOTATION_LABELS["Factual"]])
+        ents_non_hallucinated = len(results[ANNOTATION_LABELS["Non-hallucinated"]])
+        ents_unknown = len(results[ANNOTATION_LABELS["Unknown"]])
+
+        if results["failed"]:
+            summary_stats["failed"] += 1
+        elif ents_non_factual > 0:
+            summary_stats["non_factual"] += 1
+        elif ents_unknown > 0:
+            summary_stats["unknown"] += 1
+        else:
+            summary_stats["factual"] += 1
+
+        entity_stats[ANNOTATION_LABELS["Non-factual"]] += ents_non_factual
+        entity_stats[ANNOTATION_LABELS["Factual"]] += ents_factual
+        entity_stats[ANNOTATION_LABELS["Unknown"]] += ents_unknown
+        entity_stats[ANNOTATION_LABELS["Non-hallucinated"]] += ents_non_hallucinated
+
+    return {
+        "summary": summary_stats,
+        "entity": entity_stats,
+    }
+
+
+def print_results(label, results_by_sum_id, type="summary"):
+    if type == "summary":
+        stats = compute_stats(results_by_sum_id)["summary"]
+        print(
+            f"""
+        [{label}]
+        - Factual: {stats['factual']} ({stats['factual']/stats['total']:.2%})
+        - Non-factual: {stats['non_factual']} ({stats['non_factual']/stats['total']:.2%})
+        - Failed: {stats['failed']} ({stats['failed']/stats['total']:.2%})
+        - Unknown: {stats['unknown']} ({stats['unknown']/stats['total']:.2%})
+        """
+        )
+    elif type == "entity":
+        stats = compute_stats(results_by_sum_id)["entity"]
+        print(
+            f"""
+        [{label}]
+        - Non-factual: {stats[ANNOTATION_LABELS['Non-factual']]}
+        - Factual: {stats[ANNOTATION_LABELS['Factual']]}
+        - Non-hallucinated: {stats[ANNOTATION_LABELS['Non-hallucinated']]}
+        - Unknown: {stats[ANNOTATION_LABELS['Unknown']]}
+        """
         )
 
 
@@ -213,6 +274,8 @@ if __name__ == "__main__":
                 xsum_test["17996567"],
                 xsum_test["36396523"],
                 xsum_test["39368095"],
+                xsum_test["37066389"],  # "Omar Martinez"
+                xsum_test["37615223"],
             ]
         }
     elif args.data_subset == "xent":
@@ -242,42 +305,42 @@ if __name__ == "__main__":
 
     should_prompt_labeling = args.annotate
 
-    completed_sum_ids = set()
-
     # ...until convergence / max iterations
     n_iterations = 0
-    total_factual = 0
-    total_failed = 0
+    results_by_sum_id = {}
+    for sum_id in docs_to_summarize.keys():
+        results_by_sum_id[sum_id] = {
+            "completed": False,
+            "failed": False,
+            ANNOTATION_LABELS["Factual"]: [],
+            ANNOTATION_LABELS["Non-factual"]: [],
+            ANNOTATION_LABELS["Unknown"]: [],
+            ANNOTATION_LABELS["Non-hallucinated"]: [],
+        }
+
     while n_iterations < args.max_iterations:
         prev_banned_phrases_by_sum_id = deepcopy(banned_phrases_by_sum_id)
         new_constraints = 0
-        iter_unknown = 0
-        iter_non_factual = 0
         incomplete_docs = [
             (sum_id, summary)
             for sum_id, summary in docs_to_summarize.items()
-            if sum_id not in completed_sum_ids
+            if not results_by_sum_id[sum_id]["completed"]
         ]
-        unknown_ents_by_sum_id = defaultdict(lambda: set())
         batches = list(split_batches(incomplete_docs, args.batch_size))
         with Timer(f"Iteration {n_iterations}, {len(incomplete_docs)} docs"):
             for batch_idx, batch_sums in enumerate(batches):
-                factual_ents_by_sum_id = defaultdict(lambda: set())
-                non_factual_ents_by_sum_id = defaultdict(lambda: set())
-                non_hallucinated_ents_by_sum_id = defaultdict(lambda: set())
                 print(f"Batch {batch_idx+1}/{len(batches)}")
                 # Generate summaries
                 id_to_idx = {}
                 model_input = []
                 banned_phrases_by_input_idx = {}
                 for sum_id, summary in batch_sums:
-                    if sum_id not in completed_sum_ids:
-                        input_idx = len(model_input)
-                        id_to_idx[sum_id] = input_idx
-                        model_input.append(summary)
-                        banned_phrases_by_input_idx[
-                            input_idx
-                        ] = banned_phrases_by_sum_id[sum_id]
+                    input_idx = len(model_input)
+                    id_to_idx[sum_id] = input_idx
+                    model_input.append(summary)
+                    banned_phrases_by_input_idx[input_idx] = banned_phrases_by_sum_id[
+                        sum_id
+                    ]
 
                 factuality_enforcer = WordLogitsProcessor(
                     tokenizer,
@@ -309,7 +372,7 @@ if __name__ == "__main__":
                         )
 
                     # See if NER is factual according to model (oracle / classification)
-                    all_labeled_entities = oracle_classify_entities(
+                    oracle_labeled_entities = oracle_classify_entities(
                         summary_entities,
                         {
                             sum_id: get_entity_annotations(
@@ -319,56 +382,59 @@ if __name__ == "__main__":
                         },
                     )
 
-                # Process entity labels
-                n_completed = 0
-                for sum_id, labeled_entities in all_labeled_entities.items():
+                # Update results based on oracle labels
+                for sum_id, labeled_entities in oracle_labeled_entities.items():
                     banned_phrases = banned_phrases_by_sum_id[sum_id]
-                    complete = True
-                    unknown_ents_by_sum_id[sum_id] = set()
+                    no_constraints = True
+                    # reset results
+                    for label in ANNOTATION_LABELS.values():
+                        results_by_sum_id[sum_id][label] = []
                     for ent in labeled_entities:
-                        if (
-                            ent["label"] == ANNOTATION_LABELS["Non-factual"]
-                            and ent["ent"] not in banned_phrases
-                        ):
-                            banned_phrases.add(ent["ent"])
-                            new_constraints += 1
-                            complete = False
-                            non_factual_ents_by_sum_id[sum_id].add(ent["ent"])
-                        elif ent["label"] == "Unknown":
-                            unknown_ents_by_sum_id[sum_id].add(ent["ent"])
-                        elif ent["label"] == ANNOTATION_LABELS["Factual"]:
-                            factual_ents_by_sum_id[sum_id].add(ent["ent"])
-                        elif ent["label"] == ANNOTATION_LABELS["Non-hallucinated"]:
-                            non_hallucinated_ents_by_sum_id[sum_id].add(ent["ent"])
+                        results_by_sum_id[sum_id][ent["label"]].append(ent)
+                        if ent["label"] == ANNOTATION_LABELS["Non-factual"]:
+                            no_constraints = False
+                            if ent["ent"] not in banned_phrases:
+                                new_constraints += 1
+                                banned_phrases.add(ent["ent"])
 
-                    if complete:
-                        n_completed += 1
-                        completed_sum_ids.add(sum_id)
+                    if no_constraints:
+                        results_by_sum_id[sum_id]["completed"] = True
+
+                    if gen_summaries_by_id[sum_id] == SUMMARY_FAILED_GENERATION:
+                        results_by_sum_id[sum_id]["failed"] = True
+
                 if args.verbose:
-                    print(
-                        f"""
-                    [Batch  Entity Stats]
-                    - Non-factual: {sum([len(x) for x in non_factual_ents_by_sum_id.values()])}
-                    - Factual: {sum([len(x) for x in factual_ents_by_sum_id.values()])}
-                    - Non-hallucinated: {sum([len(x) for x in non_hallucinated_ents_by_sum_id.values()])}
-                    - Unknown: {sum([len(x) for x in unknown_ents_by_sum_id.values()])}
-                    """
-                    )
+                    # TODO
+                    # print_results(
+                    #     "Batch Entity Stats",
+                    #     [
+                    #         x
+                    #         for x in results_by_sum_id.values()
+                    #         if x in gen_summaries_by_id
+                    #     ],
+                    # )
                     for sum_id, summary in gen_summaries_by_id.items():
                         print(f"[{sum_id}]: {summary}")
                         print(
-                            f"- non-factual (constraints): {list(banned_phrases_by_sum_id[sum_id])}"
+                            f"- constraints: {list(prev_banned_phrases_by_sum_id[sum_id])}"
                         )
-                        print(f"- factual: {list(factual_ents_by_sum_id[sum_id])}")
                         print(
-                            f"- non-hallucinated: {list(non_hallucinated_ents_by_sum_id[sum_id])}"
+                            f"- non-factual: {[ent['ent'] for ent in results_by_sum_id[sum_id][ANNOTATION_LABELS['Non-factual']]]}"
                         )
-                        print(f"- unknown: {list(unknown_ents_by_sum_id[sum_id])}")
+                        print(
+                            f"- factual: {[ent['ent'] for ent in results_by_sum_id[sum_id][ANNOTATION_LABELS['Factual']]]}"
+                        )
+                        print(
+                            f"- non-hallucinated: {[ent['ent'] for ent in results_by_sum_id[sum_id][ANNOTATION_LABELS['Non-hallucinated']]]}"
+                        )
+                        print(
+                            f"- unknown: {[ent['ent'] for ent in results_by_sum_id[sum_id][ANNOTATION_LABELS['Unknown']]]}"
+                        )
 
                 # Manual annotation
                 unknown_entities = filter_entities(
                     lambda x: x["label"] == ANNOTATION_LABELS["Unknown"],
-                    all_labeled_entities,
+                    oracle_labeled_entities,
                 )
                 if should_prompt_labeling and count_entities(unknown_entities) > 0:
                     if (
@@ -396,54 +462,25 @@ if __name__ == "__main__":
                     args,
                     iteration_log,
                     n_iterations,
-                    batch_idx,
+                    tokenizer,
                     id_to_idx,
                     gen_summaries_by_id,
-                    all_labeled_entities,
+                    oracle_labeled_entities,
                     generation_metadata,
                     prev_banned_phrases_by_sum_id,
                 )
 
-                n_failed = len(
-                    [
-                        1
-                        for summary in gen_summaries_by_id.values()
-                        if summary == SUMMARY_FAILED_GENERATION
-                    ]
-                )
-                n_unknown = sum(
-                    [1 for x in unknown_ents_by_sum_id.values() if len(x) > 0]
-                )
-                n_non_factual = sum(
-                    [1 for x in non_factual_ents_by_sum_id.values() if len(x) > 0]
-                )
-                n_total = len(batch_sums)
-                n_non_factual = n_non_factual
-                n_factual = n_completed - n_failed
-                iter_unknown += n_unknown
-                iter_non_factual += n_non_factual
-                total_factual += n_factual
-                total_failed += n_failed
-                print(
-                    f"""
-        [Batch Summary Stats]
-        - Factual: {n_factual} ({n_factual/n_total:.2%})
-        - Non-factual: {n_non_factual} ({n_non_factual/n_total:.2%})
-        - Failed: {n_failed} ({n_failed/n_total:.2%})
-        - Unknown: {n_unknown} ({n_unknown/n_total:.2%})
-        """
+                print_results(
+                    "Batch Summary Stats",
+                    {
+                        k: v
+                        for k, v in results_by_sum_id.items()
+                        if k in gen_summaries_by_id
+                    },
                 )
 
             iter_total = len(docs_to_summarize)
-            print(
-                f"""
-    [Iteration Summary Stats]
-    - Factual: {total_factual} ({total_factual/iter_total:.2%})
-    - Non-factual: {iter_non_factual} ({iter_non_factual/iter_total:.2%})
-    - Failed: {total_failed} ({total_failed/iter_total:.2%})
-    - Unknown: {iter_unknown} ({iter_unknown/iter_total:.2%})
-                """
-            )
+            print_results("Iteration Summary Stats", results_by_sum_id)
 
             # break if no new constriants
             if new_constraints == 0:
@@ -452,7 +489,7 @@ if __name__ == "__main__":
 
             n_iterations += 1
 
-            if n_iterations > args.max_iterations:
+            if n_iterations + 1 > args.max_iterations:
                 print("Reached max iterations!")
                 break
             else:
