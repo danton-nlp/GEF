@@ -11,6 +11,7 @@ SPLIT_WORD_TOKENS = {
     '_',
     '?',
     '!',
+    '\''
 }
 
 def should_backtrack(subword: str):
