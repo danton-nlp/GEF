@@ -1,0 +1,4010 @@
+{
+  "timestamp": 1652458326.199713,
+  "args": {
+    "model_path": "facebook/bart-large-xsum",
+    "max_iterations": 5,
+    "annotate": false,
+    "verbose": false,
+    "batch_size": 4,
+    "data_subset": "xent-100"
+  },
+  "iterations": {
+    "0": {
+      "summaries": {
+        "38781058": {
+          "banned_phrases": [],
+          "summary": "Former world number one Tiger Woods missed the cut at the Farmers Insurance Open as England's Justin Rose took a one-shot lead into the final round.",
+          "generation_metadata": {
+            "score": -0.36491310596466064,
+            "dropped_seqs": [],
+            "n_words_checked": 107
+          },
+          "labeled_entities": [
+            {
+              "ent": "one",
+              "type": "CARDINAL",
+              "start": 20,
+              "end": 23,
+              "in_source": true,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Tiger Woods",
+              "type": "PERSON",
+              "start": 24,
+              "end": 35,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "the Farmers Insurance Open",
+              "type": "ORG",
+              "start": 54,
+              "end": 80,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "England",
+              "type": "GPE",
+              "start": 84,
+              "end": 91,
+              "in_source": true,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Justin Rose",
+              "type": "PERSON",
+              "start": 94,
+              "end": 105,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "one",
+              "type": "CARDINAL",
+              "start": 113,
+              "end": 116,
+              "in_source": true,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "33144298": {
+          "banned_phrases": [],
+          "summary": "The White House has confirmed that President Barack Obama and First Lady Michelle Obama attended a party in New York.",
+          "generation_metadata": {
+            "score": -0.6459218859672546,
+            "dropped_seqs": [],
+            "n_words_checked": 107
+          },
+          "labeled_entities": [
+            {
+              "ent": "The White House",
+              "type": "ORG",
+              "start": 0,
+              "end": 15,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Barack Obama",
+              "type": "PERSON",
+              "start": 45,
+              "end": 57,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Michelle Obama",
+              "type": "PERSON",
+              "start": 73,
+              "end": 87,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "New York",
+              "type": "GPE",
+              "start": 108,
+              "end": 116,
+              "in_source": true,
+              "label": "Intrinsic Hallucination"
+            }
+          ]
+        },
+        "33682768": {
+          "banned_phrases": [],
+          "summary": "An inquiry into undercover policing in England and Wales is likely to expose \"creditable and discreditable conduct\", Lord Justice Pitchford has said.",
+          "generation_metadata": {
+            "score": -0.4072631895542145,
+            "dropped_seqs": [],
+            "n_words_checked": 98
+          },
+          "labeled_entities": [
+            {
+              "ent": "England",
+              "type": "GPE",
+              "start": 39,
+              "end": 46,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Wales",
+              "type": "GPE",
+              "start": 51,
+              "end": 56,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Pitchford",
+              "type": "PERSON",
+              "start": 130,
+              "end": 139,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "32719212": {
+          "banned_phrases": [],
+          "summary": "The National Trust is using radar to help improve the condition of the world's tallest obelisk.",
+          "generation_metadata": {
+            "score": -0.7579192519187927,
+            "dropped_seqs": [],
+            "n_words_checked": 106
+          },
+          "labeled_entities": [
+            {
+              "ent": "The National Trust",
+              "type": "ORG",
+              "start": 0,
+              "end": 18,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35485785": {
+          "banned_phrases": [],
+          "summary": "Plans to set up forest reserves in Liberia and the Democratic Republic of Congo could lead to the displacement of millions of people, according to a new report.",
+          "generation_metadata": {
+            "score": -0.5586107969284058,
+            "dropped_seqs": [],
+            "n_words_checked": 116
+          },
+          "labeled_entities": [
+            {
+              "ent": "Liberia",
+              "type": "GPE",
+              "start": 35,
+              "end": 42,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the Democratic Republic of Congo",
+              "type": "GPE",
+              "start": 47,
+              "end": 79,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "millions",
+              "type": "CARDINAL",
+              "start": 114,
+              "end": 122,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37066389": {
+          "banned_phrases": [],
+          "summary": "Colombia's Omar Martinez lost to Kazakhstan's Islam Dusmatov in the Olympic men's flyweight final in Rio.",
+          "generation_metadata": {
+            "score": -0.6497074365615845,
+            "dropped_seqs": [],
+            "n_words_checked": 99
+          },
+          "labeled_entities": [
+            {
+              "ent": "Colombia",
+              "type": "GPE",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Omar Martinez",
+              "type": "PERSON",
+              "start": 11,
+              "end": 24,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Kazakhstan",
+              "type": "GPE",
+              "start": 33,
+              "end": 43,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Rio",
+              "type": "GPE",
+              "start": 101,
+              "end": 104,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "36369346": {
+          "banned_phrases": [],
+          "summary": "University staff in England are to stage a one-day strike on Wednesday in a dispute over pay.",
+          "generation_metadata": {
+            "score": -0.5499235987663269,
+            "dropped_seqs": [],
+            "n_words_checked": 110
+          },
+          "labeled_entities": [
+            {
+              "ent": "England",
+              "type": "GPE",
+              "start": 20,
+              "end": 27,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "one-day",
+              "type": "DATE",
+              "start": 43,
+              "end": 50,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Wednesday",
+              "type": "DATE",
+              "start": 61,
+              "end": 70,
+              "in_source": true,
+              "label": "Intrinsic Hallucination"
+            }
+          ]
+        },
+        "36211762": {
+          "banned_phrases": [],
+          "summary": "Sale Sharks forward Tom Easter will leave the Premiership club at the end of the season to become a teacher.",
+          "generation_metadata": {
+            "score": -0.5926266312599182,
+            "dropped_seqs": [],
+            "n_words_checked": 109
+          },
+          "labeled_entities": [
+            {
+              "ent": "Tom Easter",
+              "type": "PERSON",
+              "start": 20,
+              "end": 30,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Premiership",
+              "type": "ORG",
+              "start": 46,
+              "end": 57,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "the end of the season",
+              "type": "DATE",
+              "start": 66,
+              "end": 87,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "30931494": {
+          "banned_phrases": [],
+          "summary": "Two-time Olympic gold medallist Hope Solo has been suspended for two matches by the United States Women after being arrested on suspicion of drink-driving.",
+          "generation_metadata": {
+            "score": -0.5390385985374451,
+            "dropped_seqs": [],
+            "n_words_checked": 112
+          },
+          "labeled_entities": [
+            {
+              "ent": "Two",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 3,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Olympic",
+              "type": "EVENT",
+              "start": 9,
+              "end": 16,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "two",
+              "type": "CARDINAL",
+              "start": 65,
+              "end": 68,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the United States Women",
+              "type": "ORG",
+              "start": 80,
+              "end": 103,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "35926534": {
+          "banned_phrases": [],
+          "summary": "Oxford United midfielder Callum Kenny has signed a new one-year contract with the League One club.",
+          "generation_metadata": {
+            "score": -0.5165578722953796,
+            "dropped_seqs": [],
+            "n_words_checked": 98
+          },
+          "labeled_entities": [
+            {
+              "ent": "Oxford United",
+              "type": "ORG",
+              "start": 0,
+              "end": 13,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Callum Kenny",
+              "type": "PERSON",
+              "start": 25,
+              "end": 37,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "one-year",
+              "type": "DATE",
+              "start": 55,
+              "end": 63,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "League One",
+              "type": "ORG",
+              "start": 82,
+              "end": 92,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "32856926": {
+          "banned_phrases": [],
+          "summary": "The US has accused Egypt and other Arab countries of setting \"unrealistic and unworkable conditions\" for talks on nuclear disarmament.",
+          "generation_metadata": {
+            "score": -0.5372418165206909,
+            "dropped_seqs": [],
+            "n_words_checked": 101
+          },
+          "labeled_entities": [
+            {
+              "ent": "US",
+              "type": "GPE",
+              "start": 4,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Egypt",
+              "type": "GPE",
+              "start": 19,
+              "end": 24,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Arab",
+              "type": "NORP",
+              "start": 35,
+              "end": 39,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37250267": {
+          "banned_phrases": [],
+          "summary": "A buzzard has been rescued after becoming stuck in a fence in County Durham.",
+          "generation_metadata": {
+            "score": -0.6245847344398499,
+            "dropped_seqs": [],
+            "n_words_checked": 116
+          },
+          "labeled_entities": [
+            {
+              "ent": "County Durham",
+              "type": "GPE",
+              "start": 62,
+              "end": 75,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "27209454": {
+          "banned_phrases": [],
+          "summary": "Harry Pincher was one of Britain's best-known and most influential journalists.",
+          "generation_metadata": {
+            "score": -0.6796714663505554,
+            "dropped_seqs": [],
+            "n_words_checked": 92
+          },
+          "labeled_entities": [
+            {
+              "ent": "Harry Pincher",
+              "type": "PERSON",
+              "start": 0,
+              "end": 13,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Britain",
+              "type": "GPE",
+              "start": 25,
+              "end": 32,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37037060": {
+          "banned_phrases": [],
+          "summary": "Birmingham City have completed the signing of Dundee striker Scott Stewart for an undisclosed fee on a three-year deal.",
+          "generation_metadata": {
+            "score": -0.4644574820995331,
+            "dropped_seqs": [],
+            "n_words_checked": 78
+          },
+          "labeled_entities": [
+            {
+              "ent": "Birmingham City",
+              "type": "GPE",
+              "start": 0,
+              "end": 15,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Dundee",
+              "type": "GPE",
+              "start": 46,
+              "end": 52,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Scott Stewart",
+              "type": "PERSON",
+              "start": 61,
+              "end": 74,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "three-year",
+              "type": "DATE",
+              "start": 103,
+              "end": 113,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "40354917": {
+          "banned_phrases": [],
+          "summary": "Power has been restored to the remaining 10,000 properties left without electricity after a substation in Lancashire went offline.",
+          "generation_metadata": {
+            "score": -0.602074384689331,
+            "dropped_seqs": [],
+            "n_words_checked": 87
+          },
+          "labeled_entities": [
+            {
+              "ent": "10,000",
+              "type": "CARDINAL",
+              "start": 41,
+              "end": 47,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Lancashire",
+              "type": "GPE",
+              "start": 106,
+              "end": 116,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "33425853": {
+          "banned_phrases": [],
+          "summary": "The City of Edinburgh Council has confirmed that the email addresses of more than 1,000 people have been accessed in a cyber attack.",
+          "generation_metadata": {
+            "score": -0.7139415740966797,
+            "dropped_seqs": [],
+            "n_words_checked": 91
+          },
+          "labeled_entities": [
+            {
+              "ent": "The City of Edinburgh Council",
+              "type": "GPE",
+              "start": 0,
+              "end": 29,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "more than 1,000",
+              "type": "CARDINAL",
+              "start": 72,
+              "end": 87,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "40714975": {
+          "banned_phrases": [],
+          "summary": "Southend United striker Nile Ranger will miss the start of the season after being jailed for fraud.",
+          "generation_metadata": {
+            "score": -0.44578805565834045,
+            "dropped_seqs": [],
+            "n_words_checked": 95
+          },
+          "labeled_entities": [
+            {
+              "ent": "Southend United",
+              "type": "GPE",
+              "start": 0,
+              "end": 15,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Nile Ranger",
+              "type": "ORG",
+              "start": 24,
+              "end": 35,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "the start of the season",
+              "type": "DATE",
+              "start": 46,
+              "end": 69,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "38049486": {
+          "banned_phrases": [],
+          "summary": "Harry Potter spin-off Fantastic Beasts and Where to Find Them has topped the UK and Ireland box office on its opening weekend.",
+          "generation_metadata": {
+            "score": -0.32747316360473633,
+            "dropped_seqs": [],
+            "n_words_checked": 96
+          },
+          "labeled_entities": [
+            {
+              "ent": "Harry Potter",
+              "type": "PERSON",
+              "start": 0,
+              "end": 12,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "UK",
+              "type": "GPE",
+              "start": 77,
+              "end": 79,
+              "in_source": true,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Ireland",
+              "type": "GPE",
+              "start": 84,
+              "end": 91,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "39106827": {
+          "banned_phrases": [],
+          "summary": "Sale Sharks have signed Scotland forward Josh Strauss from Glasgow Warriors on a two-year deal.",
+          "generation_metadata": {
+            "score": -0.40181249380111694,
+            "dropped_seqs": [],
+            "n_words_checked": 81
+          },
+          "labeled_entities": [
+            {
+              "ent": "Scotland",
+              "type": "GPE",
+              "start": 24,
+              "end": 32,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Josh Strauss",
+              "type": "PERSON",
+              "start": 41,
+              "end": 53,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "two-year",
+              "type": "DATE",
+              "start": 81,
+              "end": 89,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "35104859": {
+          "banned_phrases": [],
+          "summary": "Jockey Richard Hannon says he would be \"amazed\" if Richard Marquand became a champion jockey like Ryan Moore.",
+          "generation_metadata": {
+            "score": -0.5949172377586365,
+            "dropped_seqs": [],
+            "n_words_checked": 87
+          },
+          "labeled_entities": [
+            {
+              "ent": "Richard Hannon",
+              "type": "PERSON",
+              "start": 7,
+              "end": 21,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Richard Marquand",
+              "type": "PERSON",
+              "start": 51,
+              "end": 67,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Ryan Moore",
+              "type": "PERSON",
+              "start": 98,
+              "end": 108,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "33750803": {
+          "banned_phrases": [],
+          "summary": "At least six people have been killed and more than 30 injured in a suicide bombing in northern Turkey, the army says.",
+          "generation_metadata": {
+            "score": -0.7456413507461548,
+            "dropped_seqs": [],
+            "n_words_checked": 96
+          },
+          "labeled_entities": [
+            {
+              "ent": "At least six",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 12,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "more than 30",
+              "type": "CARDINAL",
+              "start": 41,
+              "end": 53,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Turkey",
+              "type": "GPE",
+              "start": 95,
+              "end": 101,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "36555197": {
+          "banned_phrases": [],
+          "summary": "Northern Ireland captain Gareth McAuley says his side's 2-0 Euro 2016 win over Ukraine was a \"special moment\" for the team.",
+          "generation_metadata": {
+            "score": -0.5471647381782532,
+            "dropped_seqs": [],
+            "n_words_checked": 98
+          },
+          "labeled_entities": [
+            {
+              "ent": "Northern Ireland",
+              "type": "GPE",
+              "start": 0,
+              "end": 16,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Gareth McAuley",
+              "type": "PERSON",
+              "start": 25,
+              "end": 39,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "2",
+              "type": "CARDINAL",
+              "start": 56,
+              "end": 57,
+              "in_source": true,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "2016",
+              "type": "DATE",
+              "start": 65,
+              "end": 69,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Ukraine",
+              "type": "GPE",
+              "start": 79,
+              "end": 86,
+              "in_source": true,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "37152397": {
+          "banned_phrases": [],
+          "summary": "A Labour MP has accused Jeremy Corbyn of trying to \" isolate and ostracise\" him from his family.",
+          "generation_metadata": {
+            "score": -0.5034346580505371,
+            "dropped_seqs": [],
+            "n_words_checked": 97
+          },
+          "labeled_entities": [
+            {
+              "ent": "Jeremy Corbyn",
+              "type": "PERSON",
+              "start": 24,
+              "end": 37,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "27050394": {
+          "banned_phrases": [],
+          "summary": "Teachers have called on schools to openly discuss female genital mutilation (FGM) with parents and scrutinise holiday requests from communities that practise the procedure.",
+          "generation_metadata": {
+            "score": -0.5177111625671387,
+            "dropped_seqs": [],
+            "n_words_checked": 94
+          },
+          "labeled_entities": [
+            {
+              "ent": "FGM",
+              "type": "ORG",
+              "start": 77,
+              "end": 80,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "34217549": {
+          "banned_phrases": [],
+          "summary": "The European Court of Justice has ruled that employees should be paid for the time they spend travelling between jobs.",
+          "generation_metadata": {
+            "score": -0.508586585521698,
+            "dropped_seqs": [],
+            "n_words_checked": 105
+          },
+          "labeled_entities": [
+            {
+              "ent": "The European Court of Justice",
+              "type": "ORG",
+              "start": 0,
+              "end": 29,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "40617914": {
+          "banned_phrases": [],
+          "summary": "Dundee United have signed Southampton goalkeeper Harry Lewis for an undisclosed fee.",
+          "generation_metadata": {
+            "score": -0.27610865235328674,
+            "dropped_seqs": [],
+            "n_words_checked": 96
+          },
+          "labeled_entities": [
+            {
+              "ent": "Dundee United",
+              "type": "GPE",
+              "start": 0,
+              "end": 13,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Southampton",
+              "type": "GPE",
+              "start": 26,
+              "end": 37,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Harry Lewis",
+              "type": "PERSON",
+              "start": 49,
+              "end": 60,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "39291943": {
+          "banned_phrases": [],
+          "summary": "A man who caused the deaths of two men in a crash while being chased by police has been jailed for seven years.",
+          "generation_metadata": {
+            "score": -0.5060339570045471,
+            "dropped_seqs": [],
+            "n_words_checked": 107
+          },
+          "labeled_entities": [
+            {
+              "ent": "two",
+              "type": "CARDINAL",
+              "start": 31,
+              "end": 34,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "seven years",
+              "type": "DATE",
+              "start": 99,
+              "end": 110,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "33665939": {
+          "banned_phrases": [],
+          "summary": "Shetland was left cut off from the rest of the UK after a fault at a radio transmitter in Orkney.",
+          "generation_metadata": {
+            "score": -0.8028287887573242,
+            "dropped_seqs": [],
+            "n_words_checked": 97
+          },
+          "labeled_entities": [
+            {
+              "ent": "Shetland",
+              "type": "NORP",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "UK",
+              "type": "GPE",
+              "start": 47,
+              "end": 49,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Orkney",
+              "type": "LOC",
+              "start": 90,
+              "end": 96,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "30194628": {
+          "banned_phrases": [],
+          "summary": "Samantha Peake is the latest member of the International Space Station (ISS).",
+          "generation_metadata": {
+            "score": -0.6235764026641846,
+            "dropped_seqs": [],
+            "n_words_checked": 94
+          },
+          "labeled_entities": [
+            {
+              "ent": "Samantha Peake",
+              "type": "PERSON",
+              "start": 0,
+              "end": 14,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "the International Space Station",
+              "type": "ORG",
+              "start": 39,
+              "end": 70,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "32788950": {
+          "banned_phrases": [],
+          "summary": "England Test batsman Joe Root has praised coach Peter Moores after being named player of the year.",
+          "generation_metadata": {
+            "score": -0.5058521628379822,
+            "dropped_seqs": [],
+            "n_words_checked": 99
+          },
+          "labeled_entities": [
+            {
+              "ent": "England Test",
+              "type": "ORG",
+              "start": 0,
+              "end": 12,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Joe Root",
+              "type": "PERSON",
+              "start": 21,
+              "end": 29,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Peter Moores",
+              "type": "PERSON",
+              "start": 48,
+              "end": 60,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the year",
+              "type": "DATE",
+              "start": 89,
+              "end": 97,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35346992": {
+          "banned_phrases": [],
+          "summary": "A man who barricaded himself into his girlfriend's home and caused \u00a31,000 worth of damage has been jailed for six months.",
+          "generation_metadata": {
+            "score": -0.6155270338058472,
+            "dropped_seqs": [],
+            "n_words_checked": 95
+          },
+          "labeled_entities": [
+            {
+              "ent": "1,000",
+              "type": "MONEY",
+              "start": 68,
+              "end": 73,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "six months",
+              "type": "DATE",
+              "start": 110,
+              "end": 120,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "36388070": {
+          "banned_phrases": [],
+          "summary": "Leicester Tigers have extended the loan of England back-row Ellis Genge from Bristol until the end of the season.",
+          "generation_metadata": {
+            "score": -0.4194256663322449,
+            "dropped_seqs": [],
+            "n_words_checked": 79
+          },
+          "labeled_entities": [
+            {
+              "ent": "Leicester Tigers",
+              "type": "ORG",
+              "start": 0,
+              "end": 16,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "England",
+              "type": "GPE",
+              "start": 43,
+              "end": 50,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Ellis Genge",
+              "type": "PERSON",
+              "start": 60,
+              "end": 71,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Bristol",
+              "type": "GPE",
+              "start": 77,
+              "end": 84,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the end of the season",
+              "type": "DATE",
+              "start": 91,
+              "end": 112,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "38016521": {
+          "banned_phrases": [],
+          "summary": "Three teenagers jailed for the murder of a teenager who was stabbed to death in a street attack have had their sentences increased.",
+          "generation_metadata": {
+            "score": -0.5570294260978699,
+            "dropped_seqs": [],
+            "n_words_checked": 98
+          },
+          "labeled_entities": [
+            {
+              "ent": "Three",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 5,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "40810771": {
+          "banned_phrases": [],
+          "summary": "John Dingledine does not look like the kind of person who would complain about his own work.",
+          "generation_metadata": {
+            "score": -0.9605752825737,
+            "dropped_seqs": [],
+            "n_words_checked": 90
+          },
+          "labeled_entities": [
+            {
+              "ent": "John Dingledine",
+              "type": "PERSON",
+              "start": 0,
+              "end": 15,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "40213181": {
+          "banned_phrases": [],
+          "summary": "The general election has taken place in Wales, with the Labour Party making history by winning a record 26th consecutive general election.",
+          "generation_metadata": {
+            "score": -0.8162642121315002,
+            "dropped_seqs": [],
+            "n_words_checked": 105
+          },
+          "labeled_entities": [
+            {
+              "ent": "Wales",
+              "type": "GPE",
+              "start": 40,
+              "end": 45,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the Labour Party",
+              "type": "ORG",
+              "start": 52,
+              "end": 68,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "26th",
+              "type": "ORDINAL",
+              "start": 104,
+              "end": 108,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "19962775": {
+          "banned_phrases": [],
+          "summary": "The UK government has set out its vision for the future of renewable energy, which includes bioenergy crops such as miscanthus.",
+          "generation_metadata": {
+            "score": -0.7542935609817505,
+            "dropped_seqs": [],
+            "n_words_checked": 92
+          },
+          "labeled_entities": [
+            {
+              "ent": "UK",
+              "type": "GPE",
+              "start": 4,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "32120583": {
+          "banned_phrases": [],
+          "summary": "Requiring schools to promote \"fundamental British values\" could have \"unintended consequences\", a teachers' union has warned.",
+          "generation_metadata": {
+            "score": -0.33994606137275696,
+            "dropped_seqs": [],
+            "n_words_checked": 102
+          },
+          "labeled_entities": [
+            {
+              "ent": "British",
+              "type": "NORP",
+              "start": 42,
+              "end": 49,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "22064354": {
+          "banned_phrases": [],
+          "summary": "Margaret Thatcher's time as prime minister was marked by a series of economic reforms.",
+          "generation_metadata": {
+            "score": -0.8025784492492676,
+            "dropped_seqs": [],
+            "n_words_checked": 119
+          },
+          "labeled_entities": [
+            {
+              "ent": "Margaret Thatcher's",
+              "type": "PERSON",
+              "start": 0,
+              "end": 19,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "34188521": {
+          "banned_phrases": [],
+          "summary": "Red Bull say they are no longer interested in engine supply from Mercedes.",
+          "generation_metadata": {
+            "score": -0.5790473222732544,
+            "dropped_seqs": [],
+            "n_words_checked": 117
+          },
+          "labeled_entities": [
+            {
+              "ent": "Red Bull",
+              "type": "ORG",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Mercedes",
+              "type": "ORG",
+              "start": 65,
+              "end": 73,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "27591562": {
+          "banned_phrases": [],
+          "summary": "Actor Sir Christopher Lee has released a new album, Metal Knight, which includes three original songs.",
+          "generation_metadata": {
+            "score": -0.7718751430511475,
+            "dropped_seqs": [],
+            "n_words_checked": 120
+          },
+          "labeled_entities": [
+            {
+              "ent": "Christopher Lee",
+              "type": "PERSON",
+              "start": 10,
+              "end": 25,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Metal Knight",
+              "type": "PERSON",
+              "start": 52,
+              "end": 64,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "three",
+              "type": "CARDINAL",
+              "start": 81,
+              "end": 86,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "35359543": {
+          "banned_phrases": [],
+          "summary": "Former Scottish Open champion Jamie Fleming says anyone found guilty of match-fixing should be banned from the sport.",
+          "generation_metadata": {
+            "score": -0.489989310503006,
+            "dropped_seqs": [],
+            "n_words_checked": 80
+          },
+          "labeled_entities": [
+            {
+              "ent": "Scottish",
+              "type": "NORP",
+              "start": 7,
+              "end": 15,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Jamie Fleming",
+              "type": "PERSON",
+              "start": 30,
+              "end": 43,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "35748919": {
+          "banned_phrases": [],
+          "summary": "A woman has been given a suspended jail sentence for defrauding a charity set up in memory of a Cumbrian teenager who died from cancer.",
+          "generation_metadata": {
+            "score": -0.47965627908706665,
+            "dropped_seqs": [],
+            "n_words_checked": 101
+          },
+          "labeled_entities": [
+            {
+              "ent": "Cumbrian",
+              "type": "NORP",
+              "start": 96,
+              "end": 104,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "36266180": {
+          "banned_phrases": [],
+          "summary": "More than 1,500 savings rate cuts have been made by banks in the past year, the BBC has learned.",
+          "generation_metadata": {
+            "score": -0.6549718976020813,
+            "dropped_seqs": [],
+            "n_words_checked": 93
+          },
+          "labeled_entities": [
+            {
+              "ent": "More than 1,500",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 15,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "the past year",
+              "type": "DATE",
+              "start": 61,
+              "end": 74,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "BBC",
+              "type": "ORG",
+              "start": 80,
+              "end": 83,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "25655664": {
+          "banned_phrases": [],
+          "summary": "Antarctic emperor penguins have been found to be more adaptable than previously thought to cope with changing conditions.",
+          "generation_metadata": {
+            "score": -0.7000154852867126,
+            "dropped_seqs": [],
+            "n_words_checked": 105
+          },
+          "labeled_entities": []
+        },
+        "39190540": {
+          "banned_phrases": [],
+          "summary": "A 19-year-old man has been arrested in Germany on suspicion of murdering a 15-month-old boy whose body was found on the dark web, police say.",
+          "generation_metadata": {
+            "score": -0.6208353638648987,
+            "dropped_seqs": [],
+            "n_words_checked": 120
+          },
+          "labeled_entities": [
+            {
+              "ent": "19-year-old",
+              "type": "DATE",
+              "start": 2,
+              "end": 13,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Germany",
+              "type": "GPE",
+              "start": 39,
+              "end": 46,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "15-month-old",
+              "type": "DATE",
+              "start": 75,
+              "end": 87,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "35564269": {
+          "banned_phrases": [],
+          "summary": "Milly Dowler's killer Levi Bellfield has denied making a confession to police.",
+          "generation_metadata": {
+            "score": -0.5937685370445251,
+            "dropped_seqs": [],
+            "n_words_checked": 119
+          },
+          "labeled_entities": [
+            {
+              "ent": "Milly Dowler's",
+              "type": "PERSON",
+              "start": 0,
+              "end": 14,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Levi Bellfield",
+              "type": "PERSON",
+              "start": 22,
+              "end": 36,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "37257537": {
+          "banned_phrases": [],
+          "summary": "Uzbekistan's President Islam Karimov has died at the age of 90.",
+          "generation_metadata": {
+            "score": -0.4528941512107849,
+            "dropped_seqs": [],
+            "n_words_checked": 124
+          },
+          "labeled_entities": [
+            {
+              "ent": "Uzbekistan",
+              "type": "GPE",
+              "start": 0,
+              "end": 10,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Islam Karimov",
+              "type": "PERSON",
+              "start": 23,
+              "end": 36,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "the age of 90",
+              "type": "DATE",
+              "start": 49,
+              "end": 62,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "34060675": {
+          "banned_phrases": [],
+          "summary": "The father of a schoolgirl who escaped unhurt in a coach crash in Belgium has said his daughter is still \"emotionally not quite right\".",
+          "generation_metadata": {
+            "score": -0.45031577348709106,
+            "dropped_seqs": [],
+            "n_words_checked": 113
+          },
+          "labeled_entities": [
+            {
+              "ent": "Belgium",
+              "type": "GPE",
+              "start": 66,
+              "end": 73,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "34439145": {
+          "banned_phrases": [],
+          "summary": "A man who drove a Porsche around Beijing in under three minutes has been arrested, Chinese state media report.",
+          "generation_metadata": {
+            "score": -0.6240849494934082,
+            "dropped_seqs": [],
+            "n_words_checked": 101
+          },
+          "labeled_entities": [
+            {
+              "ent": "Porsche",
+              "type": "ORG",
+              "start": 18,
+              "end": 25,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Beijing",
+              "type": "GPE",
+              "start": 33,
+              "end": 40,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "under three minutes",
+              "type": "TIME",
+              "start": 44,
+              "end": 63,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Chinese",
+              "type": "NORP",
+              "start": 83,
+              "end": 90,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "34193568": {
+          "banned_phrases": [],
+          "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis.",
+          "generation_metadata": {
+            "score": -0.42435598373413086,
+            "dropped_seqs": [],
+            "n_words_checked": 88
+          },
+          "labeled_entities": [
+            {
+              "ent": "European Commission",
+              "type": "ORG",
+              "start": 0,
+              "end": 19,
+              "in_source": true,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Jean-Claude Juncker",
+              "type": "PERSON",
+              "start": 30,
+              "end": 49,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "38617103": {
+          "banned_phrases": [],
+          "summary": "Haiti's former police chief, Guy Philippe, has appeared in court in the US on charges of drug trafficking and money laundering.",
+          "generation_metadata": {
+            "score": -0.46023887395858765,
+            "dropped_seqs": [],
+            "n_words_checked": 100
+          },
+          "labeled_entities": [
+            {
+              "ent": "Haiti",
+              "type": "GPE",
+              "start": 0,
+              "end": 5,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Guy Philippe",
+              "type": "PERSON",
+              "start": 29,
+              "end": 41,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "US",
+              "type": "GPE",
+              "start": 72,
+              "end": 74,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37248976": {
+          "banned_phrases": [],
+          "summary": "A health trust is offering free accommodation to new nurses to help them find somewhere to live.",
+          "generation_metadata": {
+            "score": -0.7545373439788818,
+            "dropped_seqs": [],
+            "n_words_checked": 90
+          },
+          "labeled_entities": []
+        },
+        "38063377": {
+          "banned_phrases": [],
+          "summary": "German airline Lufthansa has launched a fresh legal challenge against a pilots' strike due to start on Tuesday.",
+          "generation_metadata": {
+            "score": -0.6047975420951843,
+            "dropped_seqs": [],
+            "n_words_checked": 98
+          },
+          "labeled_entities": [
+            {
+              "ent": "German",
+              "type": "NORP",
+              "start": 0,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Lufthansa",
+              "type": "ORG",
+              "start": 15,
+              "end": 24,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Tuesday",
+              "type": "DATE",
+              "start": 103,
+              "end": 110,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35681475": {
+          "banned_phrases": [],
+          "summary": "The government should set a new target for world-beating broadband speeds by 2030, the Institute of Directors (IoD) has said.",
+          "generation_metadata": {
+            "score": -0.39674440026283264,
+            "dropped_seqs": [],
+            "n_words_checked": 86
+          },
+          "labeled_entities": [
+            {
+              "ent": "2030",
+              "type": "DATE",
+              "start": 77,
+              "end": 81,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the Institute of Directors",
+              "type": "ORG",
+              "start": 83,
+              "end": 109,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "19626825": {
+          "banned_phrases": [],
+          "summary": "Hundreds of people have attended a public meeting in Flintshire to discuss plans to close a community hospital.",
+          "generation_metadata": {
+            "score": -0.5380803942680359,
+            "dropped_seqs": [],
+            "n_words_checked": 95
+          },
+          "labeled_entities": [
+            {
+              "ent": "Hundreds",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 8,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Flintshire",
+              "type": "GPE",
+              "start": 53,
+              "end": 63,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "36338244": {
+          "banned_phrases": [],
+          "summary": "Celtic have appointed Brendan Rodgers as their new manager.",
+          "generation_metadata": {
+            "score": -0.2718510329723358,
+            "dropped_seqs": [],
+            "n_words_checked": 83
+          },
+          "labeled_entities": [
+            {
+              "ent": "Celtic",
+              "type": "NORP",
+              "start": 0,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Brendan Rodgers",
+              "type": "PERSON",
+              "start": 22,
+              "end": 37,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "19303869": {
+          "banned_phrases": [],
+          "summary": "The Burmese government has set up a commission to investigate the violence that erupted in the western state of Rakhine in June, killing more than 50 people.",
+          "generation_metadata": {
+            "score": -0.5218818783760071,
+            "dropped_seqs": [],
+            "n_words_checked": 118
+          },
+          "labeled_entities": [
+            {
+              "ent": "Burmese",
+              "type": "NORP",
+              "start": 4,
+              "end": 11,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Rakhine",
+              "type": "GPE",
+              "start": 112,
+              "end": 119,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "June",
+              "type": "DATE",
+              "start": 123,
+              "end": 127,
+              "in_source": true,
+              "label": "Intrinsic Hallucination"
+            },
+            {
+              "ent": "more than 50",
+              "type": "CARDINAL",
+              "start": 137,
+              "end": 149,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "33641648": {
+          "banned_phrases": [],
+          "summary": "The US space agency (Nasa) has confirmed the existence of a new planet similar in size to Earth.",
+          "generation_metadata": {
+            "score": -0.5990947484970093,
+            "dropped_seqs": [],
+            "n_words_checked": 121
+          },
+          "labeled_entities": [
+            {
+              "ent": "US",
+              "type": "GPE",
+              "start": 4,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Nasa",
+              "type": "ORG",
+              "start": 21,
+              "end": 25,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Earth",
+              "type": "LOC",
+              "start": 90,
+              "end": 95,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "33825206": {
+          "banned_phrases": [],
+          "summary": "Two nursing home workers have been given a 12-month community order for the \"grossly negligent\" neglect of an elderly patient in Birmingham.",
+          "generation_metadata": {
+            "score": -0.5704604387283325,
+            "dropped_seqs": [],
+            "n_words_checked": 119
+          },
+          "labeled_entities": [
+            {
+              "ent": "Two",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 3,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "12-month",
+              "type": "DATE",
+              "start": 43,
+              "end": 51,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Birmingham",
+              "type": "GPE",
+              "start": 129,
+              "end": 139,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35905461": {
+          "banned_phrases": [],
+          "summary": "Security has been stepped up in Berlin ahead of Saturday's friendly between Germany and the Netherlands.",
+          "generation_metadata": {
+            "score": -0.5084398984909058,
+            "dropped_seqs": [],
+            "n_words_checked": 128
+          },
+          "labeled_entities": [
+            {
+              "ent": "Berlin",
+              "type": "GPE",
+              "start": 32,
+              "end": 38,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Saturday",
+              "type": "DATE",
+              "start": 48,
+              "end": 56,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Germany",
+              "type": "GPE",
+              "start": 76,
+              "end": 83,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Netherlands",
+              "type": "GPE",
+              "start": 92,
+              "end": 103,
+              "in_source": true,
+              "label": "Intrinsic Hallucination"
+            }
+          ]
+        },
+        "18021144": {
+          "banned_phrases": [],
+          "summary": "The regulator Ofcom has announced the first areas to be considered for a new local TV network.",
+          "generation_metadata": {
+            "score": -0.695396363735199,
+            "dropped_seqs": [],
+            "n_words_checked": 108
+          },
+          "labeled_entities": [
+            {
+              "ent": "Ofcom",
+              "type": "ORG",
+              "start": 14,
+              "end": 19,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "first",
+              "type": "ORDINAL",
+              "start": 38,
+              "end": 43,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "37615223": {
+          "banned_phrases": [],
+          "summary": "Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium.",
+          "generation_metadata": {
+            "score": -0.5099020004272461,
+            "dropped_seqs": [],
+            "n_words_checked": 106
+          },
+          "labeled_entities": [
+            {
+              "ent": "Sam Baldock's",
+              "type": "PERSON",
+              "start": 0,
+              "end": 13,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "first-half",
+              "type": "DATE",
+              "start": 14,
+              "end": 24,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Brighton",
+              "type": "GPE",
+              "start": 51,
+              "end": 59,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the Amex Stadium",
+              "type": "FAC",
+              "start": 83,
+              "end": 99,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "19956639": {
+          "banned_phrases": [],
+          "summary": "Five men accused of being involved in the 9/11 attacks, including Khalid Sheikh Mohammed, have appeared before a US military court for the first time.",
+          "generation_metadata": {
+            "score": -0.5296860933303833,
+            "dropped_seqs": [],
+            "n_words_checked": 110
+          },
+          "labeled_entities": [
+            {
+              "ent": "Five",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 4,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Khalid Sheikh Mohammed",
+              "type": "PERSON",
+              "start": 66,
+              "end": 88,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "US",
+              "type": "GPE",
+              "start": 113,
+              "end": 115,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "first",
+              "type": "ORDINAL",
+              "start": 139,
+              "end": 144,
+              "in_source": false,
+              "label": "Intrinsic Hallucination"
+            }
+          ]
+        },
+        "35444523": {
+          "banned_phrases": [],
+          "summary": "Stevenage have signed Shrewsbury Town defender Luke Caton on loan until the end of the season.",
+          "generation_metadata": {
+            "score": -0.535683274269104,
+            "dropped_seqs": [],
+            "n_words_checked": 82
+          },
+          "labeled_entities": [
+            {
+              "ent": "Stevenage",
+              "type": "ORG",
+              "start": 0,
+              "end": 9,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Shrewsbury Town",
+              "type": "GPE",
+              "start": 22,
+              "end": 37,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Luke Caton",
+              "type": "PERSON",
+              "start": 47,
+              "end": 57,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "the end of the season",
+              "type": "DATE",
+              "start": 72,
+              "end": 93,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "32527550": {
+          "banned_phrases": [],
+          "summary": "Asian shares headed lower on Wednesday after the US economy grew at its slowest pace in more than two years.",
+          "generation_metadata": {
+            "score": -0.7044662237167358,
+            "dropped_seqs": [],
+            "n_words_checked": 125
+          },
+          "labeled_entities": [
+            {
+              "ent": "Asian",
+              "type": "NORP",
+              "start": 0,
+              "end": 5,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Wednesday",
+              "type": "DATE",
+              "start": 29,
+              "end": 38,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "US",
+              "type": "GPE",
+              "start": 49,
+              "end": 51,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "more than two years",
+              "type": "DATE",
+              "start": 88,
+              "end": 107,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "39938168": {
+          "banned_phrases": [],
+          "summary": "A man has appealed for the identity of a photographer who took the last photo of his wife before she died.",
+          "generation_metadata": {
+            "score": -0.6242617964744568,
+            "dropped_seqs": [],
+            "n_words_checked": 119
+          },
+          "labeled_entities": []
+        },
+        "30768958": {
+          "banned_phrases": [],
+          "summary": "A road in Stafford town centre is to be closed as part of a \u00a31m project to replace water pipes.",
+          "generation_metadata": {
+            "score": -0.7097939848899841,
+            "dropped_seqs": [],
+            "n_words_checked": 111
+          },
+          "labeled_entities": [
+            {
+              "ent": "Stafford",
+              "type": "GPE",
+              "start": 10,
+              "end": 18,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "\u00a31m",
+              "type": "MONEY",
+              "start": 60,
+              "end": 63,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "33276276": {
+          "banned_phrases": [],
+          "summary": "The Football Association stands by its decision not to call up some of England's best players for the Under-21 World Cup, says performance director John Ashworth.",
+          "generation_metadata": {
+            "score": -0.5829722881317139,
+            "dropped_seqs": [],
+            "n_words_checked": 110
+          },
+          "labeled_entities": [
+            {
+              "ent": "The Football Association",
+              "type": "ORG",
+              "start": 0,
+              "end": 24,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "England",
+              "type": "GPE",
+              "start": 71,
+              "end": 78,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "World Cup",
+              "type": "EVENT",
+              "start": 111,
+              "end": 120,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "John Ashworth",
+              "type": "PERSON",
+              "start": 148,
+              "end": 161,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "36091575": {
+          "banned_phrases": [],
+          "summary": "Widnes Vikings head coach Ian Betts says his side have not lost momentum despite their recent poor form in Super League.",
+          "generation_metadata": {
+            "score": -0.5748031735420227,
+            "dropped_seqs": [],
+            "n_words_checked": 89
+          },
+          "labeled_entities": [
+            {
+              "ent": "Widnes Vikings",
+              "type": "ORG",
+              "start": 0,
+              "end": 14,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Ian Betts",
+              "type": "PERSON",
+              "start": 26,
+              "end": 35,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Super League",
+              "type": "ORG",
+              "start": 107,
+              "end": 119,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "40143450": {
+          "banned_phrases": [],
+          "summary": "The number of suspected cases of child sexual exploitation (CSE) in West Yorkshire has more than doubled in the past year.",
+          "generation_metadata": {
+            "score": -0.4768577814102173,
+            "dropped_seqs": [],
+            "n_words_checked": 95
+          },
+          "labeled_entities": [
+            {
+              "ent": "CSE",
+              "type": "ORG",
+              "start": 60,
+              "end": 63,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "West Yorkshire",
+              "type": "GPE",
+              "start": 68,
+              "end": 82,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the past year",
+              "type": "DATE",
+              "start": 108,
+              "end": 121,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "38156376": {
+          "banned_phrases": [],
+          "summary": "Police investigating the disappearance of a woman in Inverclyde have launched a new appeal for information.",
+          "generation_metadata": {
+            "score": -0.6249094009399414,
+            "dropped_seqs": [],
+            "n_words_checked": 85
+          },
+          "labeled_entities": [
+            {
+              "ent": "Inverclyde",
+              "type": "GPE",
+              "start": 53,
+              "end": 63,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "38839537": {
+          "banned_phrases": [],
+          "summary": "A man who was sexually abused as a child at a boarding school has criticised the Scottish government's inquiry into child abuse.",
+          "generation_metadata": {
+            "score": -0.5008863806724548,
+            "dropped_seqs": [],
+            "n_words_checked": 90
+          },
+          "labeled_entities": [
+            {
+              "ent": "Scottish",
+              "type": "NORP",
+              "start": 81,
+              "end": 89,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37536845": {
+          "banned_phrases": [],
+          "summary": "Mexican Sergio Perez has decided to stay with Force India for 2017.",
+          "generation_metadata": {
+            "score": -0.4821823537349701,
+            "dropped_seqs": [],
+            "n_words_checked": 79
+          },
+          "labeled_entities": [
+            {
+              "ent": "Mexican",
+              "type": "NORP",
+              "start": 0,
+              "end": 7,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Sergio Perez",
+              "type": "PERSON",
+              "start": 8,
+              "end": 20,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Force India",
+              "type": "ORG",
+              "start": 46,
+              "end": 57,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "2017",
+              "type": "DATE",
+              "start": 62,
+              "end": 66,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "27424318": {
+          "banned_phrases": [],
+          "summary": "Scientists at IBM have discovered a new class of plastic that can be recycled and used again.",
+          "generation_metadata": {
+            "score": -0.7690601944923401,
+            "dropped_seqs": [],
+            "n_words_checked": 87
+          },
+          "labeled_entities": [
+            {
+              "ent": "IBM",
+              "type": "ORG",
+              "start": 14,
+              "end": 17,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "39569664": {
+          "banned_phrases": [],
+          "summary": "A man has been charged in the US state of Michigan for allegedly forcing a student with a severe peanut allergy to eat peanut butter.",
+          "generation_metadata": {
+            "score": -0.427175372838974,
+            "dropped_seqs": [],
+            "n_words_checked": 99
+          },
+          "labeled_entities": [
+            {
+              "ent": "US",
+              "type": "GPE",
+              "start": 30,
+              "end": 32,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Michigan",
+              "type": "GPE",
+              "start": 42,
+              "end": 50,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "39351493": {
+          "banned_phrases": [],
+          "summary": "US Secretary of State Rex Tillerson has said his wife convinced him to take up the post.",
+          "generation_metadata": {
+            "score": -0.4940261244773865,
+            "dropped_seqs": [],
+            "n_words_checked": 94
+          },
+          "labeled_entities": [
+            {
+              "ent": "US",
+              "type": "GPE",
+              "start": 0,
+              "end": 2,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "State",
+              "type": "ORG",
+              "start": 16,
+              "end": 21,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Rex Tillerson",
+              "type": "PERSON",
+              "start": 22,
+              "end": 35,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "32495927": {
+          "banned_phrases": [],
+          "summary": "A 23-year-old woman who admitted killing a poker player in a \"pitiless and wicked\" attack has been jailed for 20 years.",
+          "generation_metadata": {
+            "score": -0.6202231049537659,
+            "dropped_seqs": [],
+            "n_words_checked": 97
+          },
+          "labeled_entities": [
+            {
+              "ent": "23-year-old",
+              "type": "DATE",
+              "start": 2,
+              "end": 13,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "20 years",
+              "type": "DATE",
+              "start": 110,
+              "end": 118,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "35880610": {
+          "banned_phrases": [],
+          "summary": "Three hospitals in the US have been hit by a ransomware attack that encrypted files and demanded a fee to unlock them.",
+          "generation_metadata": {
+            "score": -0.5913054347038269,
+            "dropped_seqs": [],
+            "n_words_checked": 100
+          },
+          "labeled_entities": [
+            {
+              "ent": "Three",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 5,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "US",
+              "type": "GPE",
+              "start": 23,
+              "end": 25,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "39084080": {
+          "banned_phrases": [],
+          "summary": "Michael Horan has been elected as the new president of the Gaelic Athletic Association.",
+          "generation_metadata": {
+            "score": -0.44230541586875916,
+            "dropped_seqs": [],
+            "n_words_checked": 96
+          },
+          "labeled_entities": [
+            {
+              "ent": "Michael Horan",
+              "type": "PERSON",
+              "start": 0,
+              "end": 13,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "the Gaelic Athletic Association",
+              "type": "ORG",
+              "start": 55,
+              "end": 86,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "27453471": {
+          "banned_phrases": [],
+          "summary": "A giant gorilla made entirely of spoons has been unveiled by comedian Uri Geller in Shropshire.",
+          "generation_metadata": {
+            "score": -0.326715886592865,
+            "dropped_seqs": [],
+            "n_words_checked": 89
+          },
+          "labeled_entities": [
+            {
+              "ent": "Uri Geller",
+              "type": "PERSON",
+              "start": 70,
+              "end": 80,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Shropshire",
+              "type": "GPE",
+              "start": 84,
+              "end": 94,
+              "in_source": true,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "35625669": {
+          "banned_phrases": [],
+          "summary": "Boris Johnson is one of the UK's most colourful and controversial politicians.",
+          "generation_metadata": {
+            "score": -0.7495773434638977,
+            "dropped_seqs": [],
+            "n_words_checked": 102
+          },
+          "labeled_entities": [
+            {
+              "ent": "Boris Johnson",
+              "type": "PERSON",
+              "start": 0,
+              "end": 13,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "UK",
+              "type": "GPE",
+              "start": 28,
+              "end": 30,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "33112680": {
+          "banned_phrases": [],
+          "summary": "A British tourist who was jailed in Malaysia for stripping off in public has left the country.",
+          "generation_metadata": {
+            "score": -0.5775713920593262,
+            "dropped_seqs": [],
+            "n_words_checked": 107
+          },
+          "labeled_entities": [
+            {
+              "ent": "British",
+              "type": "NORP",
+              "start": 2,
+              "end": 9,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Malaysia",
+              "type": "GPE",
+              "start": 36,
+              "end": 44,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "34965953": {
+          "banned_phrases": [],
+          "summary": "League Two side Northampton Town have been placed into administration.",
+          "generation_metadata": {
+            "score": -0.4309726059436798,
+            "dropped_seqs": [],
+            "n_words_checked": 81
+          },
+          "labeled_entities": [
+            {
+              "ent": "Two",
+              "type": "CARDINAL",
+              "start": 7,
+              "end": 10,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Northampton Town",
+              "type": "GPE",
+              "start": 16,
+              "end": 32,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "37863033": {
+          "banned_phrases": [],
+          "summary": "The number of lesbian, gay, bisexual and transgender (LGBT) characters on US television has risen to a record high, according to a new report.",
+          "generation_metadata": {
+            "score": -0.4095642864704132,
+            "dropped_seqs": [],
+            "n_words_checked": 111
+          },
+          "labeled_entities": [
+            {
+              "ent": "LGBT",
+              "type": "NORP",
+              "start": 54,
+              "end": 58,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "US",
+              "type": "GPE",
+              "start": 74,
+              "end": 76,
+              "in_source": true,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "27460784": {
+          "banned_phrases": [],
+          "summary": "A Catholic bishop in Northern Ireland has said the church is \"not up to pace\" with the debate on same-sex marriage.",
+          "generation_metadata": {
+            "score": -0.4351682662963867,
+            "dropped_seqs": [],
+            "n_words_checked": 105
+          },
+          "labeled_entities": [
+            {
+              "ent": "Catholic",
+              "type": "NORP",
+              "start": 2,
+              "end": 10,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Northern Ireland",
+              "type": "GPE",
+              "start": 21,
+              "end": 37,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "21459240": {
+          "banned_phrases": [],
+          "summary": "Oscar Pistorius, the double-amputee Paralympic champion from South Africa, has been charged with murder after his girlfriend was shot dead at his home.",
+          "generation_metadata": {
+            "score": -0.43908601999282837,
+            "dropped_seqs": [],
+            "n_words_checked": 112
+          },
+          "labeled_entities": [
+            {
+              "ent": "Oscar Pistorius",
+              "type": "PERSON",
+              "start": 0,
+              "end": 15,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Paralympic",
+              "type": "NORP",
+              "start": 36,
+              "end": 46,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "South Africa",
+              "type": "GPE",
+              "start": 61,
+              "end": 73,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "18172208": {
+          "banned_phrases": [],
+          "summary": "A book about the death of a Welsh Guards soldier in Afghanistan has won the Man Booker Prize.",
+          "generation_metadata": {
+            "score": -0.602874755859375,
+            "dropped_seqs": [],
+            "n_words_checked": 112
+          },
+          "labeled_entities": [
+            {
+              "ent": "Afghanistan",
+              "type": "GPE",
+              "start": 52,
+              "end": 63,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the Man Booker Prize",
+              "type": "WORK_OF_ART",
+              "start": 72,
+              "end": 92,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "35856814": {
+          "banned_phrases": [],
+          "summary": "Eddie Izzard has completed a gruelling 27-marathon challenge in South Africa to raise money for charity.",
+          "generation_metadata": {
+            "score": -0.4709949791431427,
+            "dropped_seqs": [],
+            "n_words_checked": 98
+          },
+          "labeled_entities": [
+            {
+              "ent": "Eddie Izzard",
+              "type": "PERSON",
+              "start": 0,
+              "end": 12,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "27",
+              "type": "CARDINAL",
+              "start": 39,
+              "end": 41,
+              "in_source": true,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "South Africa",
+              "type": "GPE",
+              "start": 64,
+              "end": 76,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "31163006": {
+          "banned_phrases": [],
+          "summary": "A cross-Solent ferry service between the Isle of Wight and Portsmouth has been provisionally agreed by Hovertravel.",
+          "generation_metadata": {
+            "score": -0.4382658004760742,
+            "dropped_seqs": [],
+            "n_words_checked": 89
+          },
+          "labeled_entities": [
+            {
+              "ent": "the Isle of Wight",
+              "type": "LOC",
+              "start": 37,
+              "end": 54,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Portsmouth",
+              "type": "GPE",
+              "start": 59,
+              "end": 69,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Hovertravel",
+              "type": "ORG",
+              "start": 103,
+              "end": 114,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "38039499": {
+          "banned_phrases": [],
+          "summary": "The man in charge of Titanic Belfast's visitors' centre has said Northern Ireland needs to be \"mature enough\" to take advantage of its attractions.",
+          "generation_metadata": {
+            "score": -0.612085223197937,
+            "dropped_seqs": [],
+            "n_words_checked": 108
+          },
+          "labeled_entities": [
+            {
+              "ent": "Titanic Belfast's",
+              "type": "GPE",
+              "start": 21,
+              "end": 38,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Northern Ireland",
+              "type": "GPE",
+              "start": 65,
+              "end": 81,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "36016171": {
+          "banned_phrases": [],
+          "summary": "A boxer has been jailed for 26 weeks after being found guilty of assaulting his girlfriend.",
+          "generation_metadata": {
+            "score": -0.48529455065727234,
+            "dropped_seqs": [],
+            "n_words_checked": 95
+          },
+          "labeled_entities": [
+            {
+              "ent": "26 weeks",
+              "type": "DATE",
+              "start": 28,
+              "end": 36,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "38784439": {
+          "banned_phrases": [],
+          "summary": "South Africa are to begin the search for a new head coach ahead of next month's tour of England.",
+          "generation_metadata": {
+            "score": -0.5668194890022278,
+            "dropped_seqs": [],
+            "n_words_checked": 88
+          },
+          "labeled_entities": [
+            {
+              "ent": "South Africa",
+              "type": "GPE",
+              "start": 0,
+              "end": 12,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "next month's",
+              "type": "DATE",
+              "start": 67,
+              "end": 79,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "England",
+              "type": "GPE",
+              "start": 88,
+              "end": 95,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "28807278": {
+          "banned_phrases": [],
+          "summary": "Plans for a new film and television studio in Aberdeen have been given the go-ahead by the Scottish government.",
+          "generation_metadata": {
+            "score": -0.6387487053871155,
+            "dropped_seqs": [],
+            "n_words_checked": 81
+          },
+          "labeled_entities": [
+            {
+              "ent": "Aberdeen",
+              "type": "GPE",
+              "start": 46,
+              "end": 54,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Scottish",
+              "type": "NORP",
+              "start": 91,
+              "end": 99,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "40886859": {
+          "banned_phrases": [],
+          "summary": "Gillingham manager Keith Pennock says the club need to sign more players to improve their squad.",
+          "generation_metadata": {
+            "score": -0.5952335596084595,
+            "dropped_seqs": [],
+            "n_words_checked": 80
+          },
+          "labeled_entities": [
+            {
+              "ent": "Gillingham",
+              "type": "ORG",
+              "start": 0,
+              "end": 10,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Keith Pennock",
+              "type": "PERSON",
+              "start": 19,
+              "end": 32,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "35194695": {
+          "banned_phrases": [],
+          "summary": "The white police officer accused of killing a black teenager in Chicago in 2014 has pleaded not guilty.",
+          "generation_metadata": {
+            "score": -0.49924588203430176,
+            "dropped_seqs": [],
+            "n_words_checked": 85
+          },
+          "labeled_entities": [
+            {
+              "ent": "Chicago",
+              "type": "GPE",
+              "start": 64,
+              "end": 71,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "2014",
+              "type": "DATE",
+              "start": 75,
+              "end": 79,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "38946148": {
+          "banned_phrases": [],
+          "summary": "Tottenham boss Mauricio Pochettino says his side were \"not ready to fight for the Premier League\" in their 2-0 defeat by Liverpool.",
+          "generation_metadata": {
+            "score": -0.39036762714385986,
+            "dropped_seqs": [],
+            "n_words_checked": 92
+          },
+          "labeled_entities": [
+            {
+              "ent": "Tottenham",
+              "type": "GPE",
+              "start": 0,
+              "end": 9,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Mauricio Pochettino",
+              "type": "PERSON",
+              "start": 15,
+              "end": 34,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "2",
+              "type": "CARDINAL",
+              "start": 107,
+              "end": 108,
+              "in_source": true,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Liverpool",
+              "type": "GPE",
+              "start": 121,
+              "end": 130,
+              "in_source": true,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "35953447": {
+          "banned_phrases": [],
+          "summary": "Premier League football clubs have denied doping claims made by the Sunday Times.",
+          "generation_metadata": {
+            "score": -0.5374571681022644,
+            "dropped_seqs": [],
+            "n_words_checked": 95
+          },
+          "labeled_entities": [
+            {
+              "ent": "Premier League",
+              "type": "ORG",
+              "start": 0,
+              "end": 14,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Sunday",
+              "type": "DATE",
+              "start": 68,
+              "end": 74,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37063763": {
+          "banned_phrases": [],
+          "summary": "A campaign to elect a directly-elected mayor for Cardiff has failed to reach its target, a councillor has claimed.",
+          "generation_metadata": {
+            "score": -0.5159382224082947,
+            "dropped_seqs": [],
+            "n_words_checked": 97
+          },
+          "labeled_entities": [
+            {
+              "ent": "Cardiff",
+              "type": "GPE",
+              "start": 49,
+              "end": 56,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37911504": {
+          "banned_phrases": [],
+          "summary": "The closure of two Royal Navy bases in Hampshire will have a \"devastating\" impact on the local economy, a council has said.",
+          "generation_metadata": {
+            "score": -0.6274471879005432,
+            "dropped_seqs": [],
+            "n_words_checked": 96
+          },
+          "labeled_entities": [
+            {
+              "ent": "two",
+              "type": "CARDINAL",
+              "start": 15,
+              "end": 18,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Royal Navy",
+              "type": "ORG",
+              "start": 19,
+              "end": 29,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Hampshire",
+              "type": "GPE",
+              "start": 39,
+              "end": 48,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "37977230": {
+          "banned_phrases": [],
+          "summary": "Ten men have been arrested in a raid on a suspected illegal cigarette factory in Birmingham.",
+          "generation_metadata": {
+            "score": -0.6430051326751709,
+            "dropped_seqs": [],
+            "n_words_checked": 82
+          },
+          "labeled_entities": [
+            {
+              "ent": "Ten",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 3,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Birmingham",
+              "type": "GPE",
+              "start": 81,
+              "end": 91,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 86,
+          "total": 100,
+          "factual": 42,
+          "non_factual": 14,
+          "failed": 0,
+          "unknown": 44
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 17,
+            "Factual Hallucination": 32,
+            "Unknown": 70,
+            "Non-hallucinated": 124
+          },
+          "type": {
+            "CARDINAL": {
+              "total": 24,
+              "Non-factual Hallucination": 4,
+              "Factual Hallucination": 5,
+              "Unknown": 3,
+              "Non-hallucinated": 12
+            },
+            "ORG": {
+              "total": 36,
+              "Non-factual Hallucination": 2,
+              "Factual Hallucination": 8,
+              "Unknown": 8,
+              "Non-hallucinated": 18
+            },
+            "GPE": {
+              "total": 76,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 12,
+              "Unknown": 10,
+              "Non-hallucinated": 53
+            },
+            "PERSON": {
+              "total": 47,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 35,
+              "Non-hallucinated": 11
+            },
+            "DATE": {
+              "total": 31,
+              "Non-factual Hallucination": 8,
+              "Factual Hallucination": 4,
+              "Unknown": 7,
+              "Non-hallucinated": 12
+            },
+            "EVENT": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2
+            },
+            "NORP": {
+              "total": 17,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 2,
+              "Unknown": 2,
+              "Non-hallucinated": 13
+            },
+            "LOC": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 3
+            },
+            "MONEY": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 2,
+              "Non-hallucinated": 0
+            },
+            "ORDINAL": {
+              "total": 2,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            },
+            "TIME": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            },
+            "FAC": {
+              "total": 1,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 0
+            },
+            "WORK_OF_ART": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            }
+          }
+        }
+      }
+    },
+    "1": {
+      "summaries": {
+        "37066389": {
+          "banned_phrases": [
+            "Kazakhstan"
+          ],
+          "summary": "Colombia's Omar Martinez has been knocked out in the Olympic men's flyweight final by Uzbekistan's Islam Dusmatov in Rio.",
+          "generation_metadata": {
+            "score": -0.6973502039909363,
+            "dropped_seqs": [
+              "</s>The Kazakhstan",
+              "</s>Colombia's Omar Martinez lost to Kazakhstan",
+              "</s>Colombia's Carlos Martinez lost to Kazakhstan",
+              "</s>Colombia's Omar Martinez has been beaten by Kazakhstan",
+              "</s>Colombia's Omar Martinez has been beaten in the Olympic men's flyweight final by Kazakhstan",
+              "</s>Colombia's Omar Martinez has been knocked out in the Olympic men's flyweight final by Kazakhstan",
+              "</s>Colombia's Omar Martinez has been knocked out of the Olympic men's flyweight final by Kazakhstan",
+              "</s>Colombia's Omar Martinez has been knocked out of the Olympic boxing men's flyweight final by Kazakhstan"
+            ],
+            "n_words_checked": 93
+          },
+          "labeled_entities": [
+            {
+              "ent": "Colombia",
+              "type": "GPE",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Omar Martinez",
+              "type": "PERSON",
+              "start": 11,
+              "end": 24,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Uzbekistan",
+              "type": "GPE",
+              "start": 86,
+              "end": 96,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Rio",
+              "type": "GPE",
+              "start": 117,
+              "end": 120,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "36369346": {
+          "banned_phrases": [
+            "one-day"
+          ],
+          "summary": "Universities in England and Wales are to stage a 24-hour strike on Wednesday in a dispute over pay.",
+          "generation_metadata": {
+            "score": -0.6504320502281189,
+            "dropped_seqs": [
+              "</s>University staff in England are to stage a one-day",
+              "</s>Universities in England are to stage a one-day",
+              "</s>Universities in England are set to stage a one-day",
+              "</s>Universities in England and Wales are to stage a one-day"
+            ],
+            "n_words_checked": 95
+          },
+          "labeled_entities": [
+            {
+              "ent": "England",
+              "type": "GPE",
+              "start": 16,
+              "end": 23,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Wales",
+              "type": "GPE",
+              "start": 28,
+              "end": 33,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "24-hour",
+              "type": "TIME",
+              "start": 49,
+              "end": 56,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Wednesday",
+              "type": "DATE",
+              "start": 67,
+              "end": 76,
+              "in_source": true,
+              "label": "Intrinsic Hallucination"
+            }
+          ]
+        },
+        "35926534": {
+          "banned_phrases": [
+            "League One",
+            "one-year"
+          ],
+          "summary": "<Failed generation: blocked all beams>",
+          "generation_metadata": {
+            "score": -Infinity,
+            "dropped_seqs": [
+              "</s>League One",
+              "</s>Oxford United midfielder Joe Kenny has signed a new one-year",
+              "</s>Oxford United midfielder Callum Kenny has signed a new one-year",
+              "</s>Oxford United midfielder Callum Kenny has signed a new two-year contract with the League One",
+              "</s>Oxford United midfielder Callum Kenny has signed a new three-year contract with the League One",
+              "</s>Oxford United midfielder Callum Kenny has signed a new two-year deal with the League One",
+              "</s>Oxford United midfielder Callum Kenny has signed a new three-year deal with the League One"
+            ],
+            "n_words_checked": 97
+          },
+          "labeled_entities": []
+        },
+        "33425853": {
+          "banned_phrases": [
+            "more than 1,000"
+          ],
+          "summary": "The City of Edinburgh Council has apologised after more than 100,000 email addresses were accessed in a cyber attack.",
+          "generation_metadata": {
+            "score": -0.7291600704193115,
+            "dropped_seqs": [
+              "</s>The City of Edinburgh Council has confirmed that the email addresses of more than 1,000",
+              "</s>The City of Edinburgh Council has apologised after the personal details of more than 1,000"
+            ],
+            "n_words_checked": 103
+          },
+          "labeled_entities": [
+            {
+              "ent": "The City of Edinburgh Council",
+              "type": "GPE",
+              "start": 0,
+              "end": 29,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "more than 100,000",
+              "type": "CARDINAL",
+              "start": 51,
+              "end": 68,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "39106827": {
+          "banned_phrases": [
+            "two-year"
+          ],
+          "summary": "Sale Sharks have signed Scotland forward Josh Strauss from Glasgow Warriors for the 2015-16 Premiership season.",
+          "generation_metadata": {
+            "score": -0.46272119879722595,
+            "dropped_seqs": [
+              "</s>Sale Sharks have signed Scotland forward Josh Strauss on a two-year",
+              "</s>Sale Sharks have signed Scotland forward Josh Strauss from Glasgow Warriors on a two-year",
+              "</s>Sale Sharks have signed Scotland international Josh Strauss from Glasgow Warriors on a two-year"
+            ],
+            "n_words_checked": 68
+          },
+          "labeled_entities": [
+            {
+              "ent": "Scotland",
+              "type": "GPE",
+              "start": 24,
+              "end": 32,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Josh Strauss",
+              "type": "PERSON",
+              "start": 41,
+              "end": 53,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "the 2015-16 Premiership season",
+              "type": "DATE",
+              "start": 80,
+              "end": 110,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "36388070": {
+          "banned_phrases": [
+            "the end of the season"
+          ],
+          "summary": "Leicester Tigers have re-signed England back-row Ellis Genge on a season-long loan from Bristol.",
+          "generation_metadata": {
+            "score": -0.4925697147846222,
+            "dropped_seqs": [
+              "</s>Leicester Tigers have extended the loan of England back-row Ellis Genge from Bristol until the end of the season"
+            ],
+            "n_words_checked": 83
+          },
+          "labeled_entities": [
+            {
+              "ent": "Leicester Tigers",
+              "type": "ORG",
+              "start": 0,
+              "end": 16,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "England",
+              "type": "GPE",
+              "start": 32,
+              "end": 39,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Ellis Genge",
+              "type": "PERSON",
+              "start": 49,
+              "end": 60,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "season-long",
+              "type": "DATE",
+              "start": 66,
+              "end": 77,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Bristol",
+              "type": "ORG",
+              "start": 88,
+              "end": 95,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "36266180": {
+          "banned_phrases": [
+            "More than 1,500"
+          ],
+          "summary": "More than 1,400 savings rate cuts have been made by banks in the past year, according to a new report.",
+          "generation_metadata": {
+            "score": -0.7045803070068359,
+            "dropped_seqs": [
+              "</s>More than 1,500"
+            ],
+            "n_words_checked": 94
+          },
+          "labeled_entities": [
+            {
+              "ent": "More than 1,400",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 15,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "the past year",
+              "type": "DATE",
+              "start": 61,
+              "end": 74,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "39190540": {
+          "banned_phrases": [
+            "15-month-old"
+          ],
+          "summary": "A 19-year-old man has been arrested in Germany on suspicion of murdering a 13-month-old boy whose body was found in a cellar after it was found on the dark web.",
+          "generation_metadata": {
+            "score": -0.6490725874900818,
+            "dropped_seqs": [
+              "</s>A 19-year-old man has been arrested in Germany on suspicion of murdering a 15-month-old"
+            ],
+            "n_words_checked": 135
+          },
+          "labeled_entities": [
+            {
+              "ent": "19-year-old",
+              "type": "DATE",
+              "start": 2,
+              "end": 13,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Germany",
+              "type": "GPE",
+              "start": 39,
+              "end": 46,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "13-month-old",
+              "type": "DATE",
+              "start": 75,
+              "end": 87,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "19303869": {
+          "banned_phrases": [
+            "more than 50"
+          ],
+          "summary": "The Burmese government has set up a commission to investigate the violence that erupted in the western state of Rakhine in June.",
+          "generation_metadata": {
+            "score": -0.5366491675376892,
+            "dropped_seqs": [
+              "</s>The Burmese government has set up a commission to investigate the violence that erupted in the western state of Rakhine in June, killing more than 50",
+              "</s>The Burmese government has set up a commission to investigate the violence that erupted in June in the western state of Rakhine, killing more than 50",
+              "</s>The Burmese government has set up a commission of inquiry into the violence that erupted in the western state of Rakhine in June, killing more than 50"
+            ],
+            "n_words_checked": 121
+          },
+          "labeled_entities": [
+            {
+              "ent": "Burmese",
+              "type": "NORP",
+              "start": 4,
+              "end": 11,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Rakhine",
+              "type": "GPE",
+              "start": 112,
+              "end": 119,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "June",
+              "type": "DATE",
+              "start": 123,
+              "end": 127,
+              "in_source": true,
+              "label": "Intrinsic Hallucination"
+            }
+          ]
+        },
+        "18021144": {
+          "banned_phrases": [
+            "first"
+          ],
+          "summary": "The regulator Ofcom has announced the areas that will benefit from a new local TV network in the UK.",
+          "generation_metadata": {
+            "score": -0.7635640501976013,
+            "dropped_seqs": [
+              "</s>The regulator Ofcom has announced the first"
+            ],
+            "n_words_checked": 123
+          },
+          "labeled_entities": [
+            {
+              "ent": "Ofcom",
+              "type": "ORG",
+              "start": 14,
+              "end": 19,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "UK",
+              "type": "GPE",
+              "start": 97,
+              "end": 99,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37615223": {
+          "banned_phrases": [
+            "the Amex Stadium"
+          ],
+          "summary": "Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to third in the Championship.",
+          "generation_metadata": {
+            "score": -0.5327222347259521,
+            "dropped_seqs": [
+              "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves at the Amex Stadium",
+              "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium"
+            ],
+            "n_words_checked": 117
+          },
+          "labeled_entities": [
+            {
+              "ent": "Sam Baldock",
+              "type": "PERSON",
+              "start": 0,
+              "end": 11,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "third",
+              "type": "ORDINAL",
+              "start": 83,
+              "end": 88,
+              "in_source": true,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "32527550": {
+          "banned_phrases": [
+            "Wednesday",
+            "more than two years"
+          ],
+          "summary": "Asian shares headed lower on Thursday after the US economy grew at its slowest pace in more than three years.",
+          "generation_metadata": {
+            "score": -0.7307614684104919,
+            "dropped_seqs": [
+              "</s>Asian shares headed lower on Wednesday",
+              "</s>Shares in Asia fell on Wednesday",
+              "</s>Markets in Asia were lower on Wednesday",
+              "</s>Asian shares headed lower on Thursday after the US economy grew at its slowest pace in more than two years"
+            ],
+            "n_words_checked": 124
+          },
+          "labeled_entities": [
+            {
+              "ent": "Asian",
+              "type": "NORP",
+              "start": 0,
+              "end": 5,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Thursday",
+              "type": "DATE",
+              "start": 29,
+              "end": 37,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "US",
+              "type": "GPE",
+              "start": 48,
+              "end": 50,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "more than three years",
+              "type": "DATE",
+              "start": 87,
+              "end": 108,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "32495927": {
+          "banned_phrases": [
+            "20 years"
+          ],
+          "summary": "A 23-year-old woman who admitted killing a poker player in a \"pitiless and wicked\" attack has been jailed for 15 years.",
+          "generation_metadata": {
+            "score": -0.6210893988609314,
+            "dropped_seqs": [
+              "</s>A 23-year-old woman who admitted killing a poker player in a \"pitiless and wicked\" attack has been jailed for 20 years"
+            ],
+            "n_words_checked": 106
+          },
+          "labeled_entities": [
+            {
+              "ent": "23-year-old",
+              "type": "DATE",
+              "start": 2,
+              "end": 13,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "15 years",
+              "type": "DATE",
+              "start": 110,
+              "end": 118,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "37911504": {
+          "banned_phrases": [
+            "two",
+            "Royal Navy"
+          ],
+          "summary": "Hundreds of jobs are to be lost in a Hampshire town as part of a shake-up of military sites.",
+          "generation_metadata": {
+            "score": -0.8443014621734619,
+            "dropped_seqs": [
+              "</s>The closure of two",
+              "</s>The closure of a Royal Navy",
+              "</s>The majority of jobs at two",
+              "</s>Hundreds of jobs are at risk after two",
+              "</s>Hundreds of jobs are at risk as two",
+              "</s>Hundreds of jobs are at risk after the closure of two",
+              "</s>Hundreds of jobs are to be lost in a Hampshire town as two",
+              "</s>Hundreds of jobs are to be lost in a Hampshire town when two",
+              "</s>Hundreds of jobs are to be lost in a Hampshire seaside town as two",
+              "</s>Hundreds of jobs are to be lost in a Hampshire seaside town after two",
+              "</s>Hundreds of jobs are to be lost in a Hampshire seaside town with the closure of two"
+            ],
+            "n_words_checked": 114
+          },
+          "labeled_entities": [
+            {
+              "ent": "Hundreds",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 8,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Hampshire",
+              "type": "GPE",
+              "start": 37,
+              "end": 46,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 99,
+          "total": 100,
+          "factual": 44,
+          "non_factual": 1,
+          "failed": 1,
+          "unknown": 54
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 1,
+            "Factual Hallucination": 32,
+            "Unknown": 78,
+            "Non-hallucinated": 124
+          },
+          "type": {
+            "CARDINAL": {
+              "total": 23,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 5,
+              "Unknown": 6,
+              "Non-hallucinated": 12
+            },
+            "ORG": {
+              "total": 33,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 7,
+              "Unknown": 8,
+              "Non-hallucinated": 18
+            },
+            "GPE": {
+              "total": 76,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 13,
+              "Unknown": 11,
+              "Non-hallucinated": 52
+            },
+            "PERSON": {
+              "total": 46,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 33,
+              "Non-hallucinated": 12
+            },
+            "TIME": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 2,
+              "Non-hallucinated": 0
+            },
+            "DATE": {
+              "total": 28,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 4,
+              "Unknown": 12,
+              "Non-hallucinated": 12
+            },
+            "EVENT": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2
+            },
+            "NORP": {
+              "total": 17,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 2,
+              "Unknown": 2,
+              "Non-hallucinated": 13
+            },
+            "LOC": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 3
+            },
+            "MONEY": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 2,
+              "Non-hallucinated": 0
+            },
+            "ORDINAL": {
+              "total": 2,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            },
+            "WORK_OF_ART": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            }
+          }
+        }
+      }
+    },
+    "2": {
+      "summaries": {
+        "37615223": {
+          "banned_phrases": [
+            "the Amex Stadium",
+            "third"
+          ],
+          "summary": "Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to fourth in the Championship.",
+          "generation_metadata": {
+            "score": -0.53695148229599,
+            "dropped_seqs": [
+              "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves at the Amex Stadium",
+              "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to third",
+              "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium"
+            ],
+            "n_words_checked": 81
+          },
+          "labeled_entities": [
+            {
+              "ent": "Sam Baldock",
+              "type": "PERSON",
+              "start": 0,
+              "end": 11,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "fourth",
+              "type": "ORDINAL",
+              "start": 83,
+              "end": 89,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 100,
+          "total": 100,
+          "factual": 44,
+          "non_factual": 0,
+          "failed": 1,
+          "unknown": 55
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 0,
+            "Factual Hallucination": 32,
+            "Unknown": 79,
+            "Non-hallucinated": 124
+          },
+          "type": {
+            "CARDINAL": {
+              "total": 23,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 5,
+              "Unknown": 6,
+              "Non-hallucinated": 12
+            },
+            "ORG": {
+              "total": 33,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 7,
+              "Unknown": 8,
+              "Non-hallucinated": 18
+            },
+            "GPE": {
+              "total": 76,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 13,
+              "Unknown": 11,
+              "Non-hallucinated": 52
+            },
+            "PERSON": {
+              "total": 46,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 33,
+              "Non-hallucinated": 12
+            },
+            "TIME": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 2,
+              "Non-hallucinated": 0
+            },
+            "DATE": {
+              "total": 28,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 4,
+              "Unknown": 12,
+              "Non-hallucinated": 12
+            },
+            "EVENT": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2
+            },
+            "NORP": {
+              "total": 17,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 2,
+              "Unknown": 2,
+              "Non-hallucinated": 13
+            },
+            "LOC": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 3
+            },
+            "MONEY": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 2,
+              "Non-hallucinated": 0
+            },
+            "ORDINAL": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 2,
+              "Non-hallucinated": 0
+            },
+            "WORK_OF_ART": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}
