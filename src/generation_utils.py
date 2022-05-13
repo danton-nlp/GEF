@@ -35,7 +35,9 @@ def generate_summaries(
     word_logits_processor: WordLogitsProcessor,
     num_beams=4,
     return_beam_metadata=False,
+    device=torch.device("cuda" if torch.cuda.is_available() else "cpu")
 ):
+    model.to(device)
     inputs = tokenizer(
         docs_to_summarize,
         max_length=1024,
@@ -44,7 +46,7 @@ def generate_summaries(
         padding=True,
     )
     model_output = model.generate(
-        inputs.input_ids,
+        inputs.input_ids.to(device),
         num_beams=num_beams,
         early_stopping=True,
         return_dict_in_generate=True,
