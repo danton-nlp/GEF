@@ -1,11 +1,11 @@
 {
-  "timestamp": 1652457285.9780962,
+  "timestamp": 1652472388.904782,
   "args": {
     "model_path": "facebook/bart-large-xsum",
     "max_iterations": 5,
-    "annotate": false,
-    "verbose": false,
-    "batch_size": 4,
+    "annotate": true,
+    "verbose": true,
+    "batch_size": 2,
     "data_subset": "debug"
   },
   "iterations": {
@@ -48,9 +48,17 @@
           },
           "labeled_entities": [
             {
-              "ent": "Romelu Lukaku",
+              "ent": "Romelu",
               "type": "PERSON",
               "start": 0,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Lukaku",
+              "type": "PERSON",
+              "start": 7,
               "end": 13,
               "in_source": true,
               "label": "Non-hallucinated"
@@ -85,9 +93,9 @@
           "banned_phrases": [],
           "summary": "Villagers in Shropshire are calling for the reopening of a dual carriageway next to Stonehenge.",
           "generation_metadata": {
-            "score": -0.5598416924476624,
+            "score": -0.5598415732383728,
             "dropped_seqs": [],
-            "n_words_checked": 88
+            "n_words_checked": 80
           },
           "labeled_entities": [
             {
@@ -112,23 +120,39 @@
           "banned_phrases": [],
           "summary": "Liam Payne and Niall Horan have confirmed they're staying in One Direction.",
           "generation_metadata": {
-            "score": -0.4829868674278259,
+            "score": -0.482986718416214,
             "dropped_seqs": [],
-            "n_words_checked": 89
+            "n_words_checked": 85
           },
           "labeled_entities": [
             {
-              "ent": "Liam Payne",
+              "ent": "Liam",
               "type": "PERSON",
               "start": 0,
+              "end": 4,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Payne",
+              "type": "PERSON",
+              "start": 5,
               "end": 10,
               "in_source": true,
               "label": "Non-hallucinated"
             },
             {
-              "ent": "Niall Horan",
+              "ent": "Niall",
               "type": "PERSON",
               "start": 15,
+              "end": 20,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Horan",
+              "type": "PERSON",
+              "start": 21,
               "end": 26,
               "in_source": false,
               "label": "Non-factual Hallucination"
@@ -158,7 +182,7 @@
           "banned_phrases": [],
           "summary": "Plans to cut home-to-school transport subsidies in Gloucestershire have been put on hold.",
           "generation_metadata": {
-            "score": -0.5601837635040283,
+            "score": -0.5601837038993835,
             "dropped_seqs": [],
             "n_words_checked": 78
           },
@@ -177,9 +201,9 @@
           "banned_phrases": [],
           "summary": "Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America.",
           "generation_metadata": {
-            "score": -0.4506017863750458,
+            "score": -0.45060160756111145,
             "dropped_seqs": [],
-            "n_words_checked": 77
+            "n_words_checked": 73
           },
           "labeled_entities": [
             {
@@ -228,7 +252,7 @@
           "banned_phrases": [],
           "summary": "Abertay University in Dundee has been named the best university in the world for its graduate courses in computer games design.",
           "generation_metadata": {
-            "score": -0.5155395865440369,
+            "score": -0.5155394673347473,
             "dropped_seqs": [],
             "n_words_checked": 87
           },
@@ -261,12 +285,20 @@
               "label": "Non-hallucinated"
             },
             {
-              "ent": "Omar Martinez",
+              "ent": "Omar",
               "type": "PERSON",
               "start": 11,
-              "end": 24,
+              "end": 15,
               "in_source": false,
               "label": "Unknown"
+            },
+            {
+              "ent": "Martinez",
+              "type": "PERSON",
+              "start": 16,
+              "end": 24,
+              "in_source": true,
+              "label": "Non-hallucinated"
             },
             {
               "ent": "Kazakhstan",
@@ -296,12 +328,20 @@
           },
           "labeled_entities": [
             {
-              "ent": "Sam Baldock's",
+              "ent": "Sam",
               "type": "PERSON",
               "start": 0,
-              "end": 13,
-              "in_source": false,
-              "label": "Unknown"
+              "end": 3,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Baldock",
+              "type": "PERSON",
+              "start": 4,
+              "end": 11,
+              "in_source": true,
+              "label": "Non-hallucinated"
             },
             {
               "ent": "first-half",
@@ -341,10 +381,10 @@
         },
         "entity": {
           "label": {
-            "Non-factual Hallucination": 10,
+            "Non-factual Hallucination": 11,
             "Factual Hallucination": 4,
-            "Unknown": 4,
-            "Non-hallucinated": 8
+            "Unknown": 3,
+            "Non-hallucinated": 13
           },
           "type": {
             "GPE": {
@@ -369,11 +409,11 @@
               "Non-hallucinated": 0
             },
             "PERSON": {
-              "total": 6,
-              "Non-factual Hallucination": 1,
+              "total": 11,
+              "Non-factual Hallucination": 2,
               "Factual Hallucination": 0,
-              "Unknown": 2,
-              "Non-hallucinated": 3
+              "Unknown": 1,
+              "Non-hallucinated": 8
             },
             "FAC": {
               "total": 2,
@@ -404,13 +444,16 @@
       "summaries": {
         "34361828": {
           "banned_phrases": [
-            "Pembrokeshire"
+            "Pembrokeshire",
+            "the 1970s"
           ],
-          "summary": "A search is under way for the remains of a Gwynedd village which was wiped out by storms in the 1970s.",
+          "summary": "A search is under way for the remains of a Gwynedd village which was wiped out by storms in the 1950s.",
           "generation_metadata": {
-            "score": -0.7416432499885559,
+            "score": -0.7429369688034058,
             "dropped_seqs": [
-              "</s>A search is under way for the remains of a Pembrokeshire"
+              "</s>A search is under way for the remains of a Pembrokeshire",
+              "</s>A search is under way for the remains of a Gwynedd village which was wiped out by storms in the 1970s",
+              "</s>A search is under way for the remains of a Gwynedd village which was wiped out by Storm Desmond in the 1970s"
             ],
             "n_words_checked": 86
           },
@@ -424,7 +467,7 @@
               "label": "Non-factual Hallucination"
             },
             {
-              "ent": "the 1970s",
+              "ent": "the 1950s",
               "type": "DATE",
               "start": 92,
               "end": 101,
@@ -449,9 +492,17 @@
           },
           "labeled_entities": [
             {
-              "ent": "Romelu Lukaku",
+              "ent": "Romelu",
               "type": "PERSON",
               "start": 0,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Lukaku",
+              "type": "PERSON",
+              "start": 7,
               "end": 13,
               "in_source": true,
               "label": "Non-hallucinated"
@@ -488,7 +539,7 @@
           ],
           "summary": "Villagers in Shrewsbury are calling for the reopening of a dual carriageway next to Stonehenge.",
           "generation_metadata": {
-            "score": -0.5977228879928589,
+            "score": -0.5977227687835693,
             "dropped_seqs": [
               "</s>Villagers in Shropshire"
             ],
@@ -515,29 +566,46 @@
         },
         "32112735": {
           "banned_phrases": [
-            "Niall Horan"
+            "Niall",
+            "Horan"
           ],
           "summary": "Liam Payne and Louis Tomlinson have confirmed they're staying in One Direction.",
           "generation_metadata": {
-            "score": -0.5388206243515015,
+            "score": -0.5388208627700806,
             "dropped_seqs": [
-              "</s>Liam Payne and Niall Horan"
+              "</s>Liam Payne and Niall"
             ],
-            "n_words_checked": 84
+            "n_words_checked": 89
           },
           "labeled_entities": [
             {
-              "ent": "Liam Payne",
+              "ent": "Liam",
               "type": "PERSON",
               "start": 0,
+              "end": 4,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Payne",
+              "type": "PERSON",
+              "start": 5,
               "end": 10,
               "in_source": true,
               "label": "Non-hallucinated"
             },
             {
-              "ent": "Louis Tomlinson",
+              "ent": "Louis",
               "type": "PERSON",
               "start": 15,
+              "end": 20,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Tomlinson",
+              "type": "PERSON",
+              "start": 21,
               "end": 30,
               "in_source": false,
               "label": "Non-factual Hallucination"
@@ -555,7 +623,7 @@
               "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol"
             ],
-            "n_words_checked": 112
+            "n_words_checked": 110
           },
           "labeled_entities": [
             {
@@ -574,7 +642,7 @@
           ],
           "summary": "Plans to cut home-to-school transport subsidies for children in Flintshire have been put on hold.",
           "generation_metadata": {
-            "score": -0.6140730977058411,
+            "score": -0.6140730381011963,
             "dropped_seqs": [
               "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
@@ -594,18 +662,18 @@
         },
         "36396523": {
           "banned_phrases": [
-            "South America",
-            "World Cup"
+            "World Cup",
+            "South America"
           ],
           "summary": "Brazil have added Kaka to their squad for next month's Copa America in Chile.",
           "generation_metadata": {
-            "score": -0.49014562368392944,
+            "score": -0.49014559388160706,
             "dropped_seqs": [
               "</s>Brazil have added Kaka to their squad for the Under-20 World Cup",
               "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup",
               "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup"
             ],
-            "n_words_checked": 96
+            "n_words_checked": 100
           },
           "labeled_entities": [
             {
@@ -652,22 +720,21 @@
         },
         "37066389": {
           "banned_phrases": [
+            "Omar",
             "Kazakhstan"
           ],
-          "summary": "Colombia's Omar Martinez has been knocked out in the Olympic men's flyweight final by Uzbekistan's Islam Dusmatov in Rio.",
+          "summary": "Colombia's Carlos Martinez has been beaten in the Olympic men's flyweight final by Uzbekistan's Islam Dusmatov.",
           "generation_metadata": {
-            "score": -0.6973502039909363,
+            "score": -0.6965235471725464,
             "dropped_seqs": [
               "</s>The Kazakhstan",
-              "</s>Colombia's Omar Martinez lost to Kazakhstan",
+              "</s>Colombia's Omar",
               "</s>Colombia's Carlos Martinez lost to Kazakhstan",
-              "</s>Colombia's Omar Martinez has been beaten by Kazakhstan",
-              "</s>Colombia's Omar Martinez has been beaten in the Olympic men's flyweight final by Kazakhstan",
-              "</s>Colombia's Omar Martinez has been knocked out in the Olympic men's flyweight final by Kazakhstan",
-              "</s>Colombia's Omar Martinez has been knocked out of the Olympic men's flyweight final by Kazakhstan",
-              "</s>Colombia's Omar Martinez has been knocked out of the Olympic boxing men's flyweight final by Kazakhstan"
+              "</s>Colombia's Carlos Martinez lost in the Olympic men's flyweight final to Kazakhstan",
+              "</s>Colombia's Carlos Martinez has been beaten in the Olympic men's flyweight final by Kazakhstan",
+              "</s>Colombia's Carlos Martinez has been knocked out of the Olympic men's flyweight final by Kazakhstan"
             ],
-            "n_words_checked": 93
+            "n_words_checked": 85
           },
           "labeled_entities": [
             {
@@ -679,28 +746,28 @@
               "label": "Non-hallucinated"
             },
             {
-              "ent": "Omar Martinez",
+              "ent": "Carlos",
               "type": "PERSON",
               "start": 11,
-              "end": 24,
+              "end": 17,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Martinez",
+              "type": "PERSON",
+              "start": 18,
+              "end": 26,
+              "in_source": true,
+              "label": "Non-hallucinated"
             },
             {
               "ent": "Uzbekistan",
               "type": "GPE",
-              "start": 86,
-              "end": 96,
+              "start": 83,
+              "end": 93,
               "in_source": false,
               "label": "Unknown"
-            },
-            {
-              "ent": "Rio",
-              "type": "GPE",
-              "start": 117,
-              "end": 120,
-              "in_source": false,
-              "label": "Factual Hallucination"
             }
           ]
         },
@@ -719,9 +786,17 @@
           },
           "labeled_entities": [
             {
-              "ent": "Sam Baldock",
+              "ent": "Sam",
               "type": "PERSON",
               "start": 0,
+              "end": 3,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Baldock",
+              "type": "PERSON",
+              "start": 4,
               "end": 11,
               "in_source": true,
               "label": "Non-hallucinated"
@@ -739,25 +814,25 @@
       },
       "stats": {
         "summary": {
-          "completed": 3,
+          "completed": 2,
           "total": 10,
           "factual": 2,
-          "non_factual": 7,
+          "non_factual": 8,
           "failed": 0,
-          "unknown": 1
+          "unknown": 0
         },
         "entity": {
           "label": {
-            "Non-factual Hallucination": 7,
-            "Factual Hallucination": 5,
-            "Unknown": 3,
-            "Non-hallucinated": 9
+            "Non-factual Hallucination": 9,
+            "Factual Hallucination": 4,
+            "Unknown": 2,
+            "Non-hallucinated": 13
           },
           "type": {
             "GPE": {
-              "total": 10,
+              "total": 9,
               "Non-factual Hallucination": 3,
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 1,
               "Unknown": 1,
               "Non-hallucinated": 4
             },
@@ -769,11 +844,11 @@
               "Non-hallucinated": 1
             },
             "PERSON": {
-              "total": 7,
-              "Non-factual Hallucination": 2,
+              "total": 12,
+              "Non-factual Hallucination": 4,
               "Factual Hallucination": 0,
-              "Unknown": 1,
-              "Non-hallucinated": 4
+              "Unknown": 0,
+              "Non-hallucinated": 8
             },
             "FAC": {
               "total": 2,
@@ -804,17 +879,19 @@
       "summaries": {
         "34361828": {
           "banned_phrases": [
-            "Gwynedd village",
-            "Pembrokeshire"
+            "Pembrokeshire",
+            "the 1970s",
+            "Gwynedd village"
           ],
           "summary": "A search is under way to find the remains of a Gower village which was destroyed by storms in the 1950s.",
           "generation_metadata": {
             "score": -0.7637211680412292,
             "dropped_seqs": [
               "</s>A search is under way for the remains of a Gwynedd village",
-              "</s>A search is under way for the remains of a Pembrokeshire"
+              "</s>A search is under way for the remains of a Pembrokeshire",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by storms in the 1970s"
             ],
-            "n_words_checked": 91
+            "n_words_checked": 83
           },
           "labeled_entities": [
             {
@@ -837,17 +914,17 @@
         },
         "24403775": {
           "banned_phrases": [
-            "Shrewsbury",
-            "Shropshire"
+            "Shropshire",
+            "Shrewsbury"
           ],
           "summary": "A campaign has been launched to get Stonehenge Bottom's main road re-opened after it was closed to traffic.",
           "generation_metadata": {
-            "score": -0.7396911382675171,
+            "score": -0.7396910786628723,
             "dropped_seqs": [
               "</s>Villagers in Shropshire",
               "</s>Villagers in Shrewsbury"
             ],
-            "n_words_checked": 91
+            "n_words_checked": 83
           },
           "labeled_entities": [
             {
@@ -855,24 +932,27 @@
               "type": "FAC",
               "start": 36,
               "end": 55,
-              "in_source": false,
+              "in_source": true,
               "label": "Factual Hallucination"
             }
           ]
         },
         "32112735": {
           "banned_phrases": [
-            "Niall Horan",
-            "Louis Tomlinson"
+            "Louis",
+            "Niall",
+            "Horan",
+            "Tomlinson"
           ],
-          "summary": "One Direction have confirmed they will continue to perform together.",
+          "summary": "One Direction have confirmed they're staying in the band.",
           "generation_metadata": {
-            "score": -0.7836668491363525,
+            "score": -0.7054998874664307,
             "dropped_seqs": [
-              "</s>Liam Payne and Niall Horan",
-              "</s>Liam Payne and Louis Tomlinson"
+              "</s>Liam Payne and Louis",
+              "</s>Liam Payne, Louis",
+              "</s>Liam Payne and Niall"
             ],
-            "n_words_checked": 88
+            "n_words_checked": 70
           },
           "labeled_entities": [
             {
@@ -919,13 +999,13 @@
           ],
           "summary": "Plans to cut home-to-school transport subsidies for children in Staffordshire have been put on hold.",
           "generation_metadata": {
-            "score": -0.6207174062728882,
+            "score": -0.6207175254821777,
             "dropped_seqs": [
               "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
               "</s>Plans to cut home-to-school transport subsidies for children in Flintshire",
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
-            "n_words_checked": 73
+            "n_words_checked": 70
           },
           "labeled_entities": [
             {
@@ -940,9 +1020,9 @@
         },
         "36396523": {
           "banned_phrases": [
-            "South America",
+            "World Cup",
             "Chile",
-            "World Cup"
+            "South America"
           ],
           "summary": "Brazil have added Kaka to their squad for next month's Copa America in the Dominican Republic.",
           "generation_metadata": {
@@ -953,7 +1033,7 @@
               "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup",
               "</s>Brazil have added Kaka to their squad for next month's Copa America in Chile"
             ],
-            "n_words_checked": 75
+            "n_words_checked": 71
           },
           "labeled_entities": [
             {
@@ -998,26 +1078,90 @@
             }
           ]
         },
+        "37066389": {
+          "banned_phrases": [
+            "Omar",
+            "Carlos",
+            "Kazakhstan"
+          ],
+          "summary": "Colombia's Gabriel Martinez has been beaten in the Olympic men's flyweight final by Uzbekistan's Islam Dusmatov.",
+          "generation_metadata": {
+            "score": -0.7325229048728943,
+            "dropped_seqs": [
+              "</s>The Kazakhstan",
+              "</s>Colombia's Omar",
+              "</s>Colombia's Carlos",
+              "</s>Colombia's Jose Carlos",
+              "</s>Colombia's Gabriel Martinez lost to Kazakhstan",
+              "</s>Colombia's Gabriel Martinez lost in the Olympic men's flyweight final to Kazakhstan",
+              "</s>Colombia's Gabriel Martinez has been beaten in the Olympic men's flyweight final by Kazakhstan",
+              "</s>Colombia's Gabriel Martinez has been knocked out of the Olympic men's flyweight final by Kazakhstan"
+            ],
+            "n_words_checked": 86
+          },
+          "labeled_entities": [
+            {
+              "ent": "Colombia",
+              "type": "GPE",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Gabriel",
+              "type": "PERSON",
+              "start": 11,
+              "end": 18,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Martinez",
+              "type": "PERSON",
+              "start": 19,
+              "end": 27,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Uzbekistan",
+              "type": "GPE",
+              "start": 84,
+              "end": 94,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
         "37615223": {
           "banned_phrases": [
-            "the Amex Stadium",
-            "third"
+            "third",
+            "the Amex Stadium"
           ],
           "summary": "Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to fourth in the Championship.",
           "generation_metadata": {
-            "score": -0.53695148229599,
+            "score": -0.5369516015052795,
             "dropped_seqs": [
               "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves at the Amex Stadium",
               "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to third",
               "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium"
             ],
-            "n_words_checked": 81
+            "n_words_checked": 96
           },
           "labeled_entities": [
             {
-              "ent": "Sam Baldock",
+              "ent": "Sam",
               "type": "PERSON",
               "start": 0,
+              "end": 3,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Baldock",
+              "type": "PERSON",
+              "start": 4,
               "end": 11,
               "in_source": true,
               "label": "Non-hallucinated"
@@ -1046,15 +1190,15 @@
           "label": {
             "Non-factual Hallucination": 3,
             "Factual Hallucination": 5,
-            "Unknown": 4,
-            "Non-hallucinated": 10
+            "Unknown": 3,
+            "Non-hallucinated": 13
           },
           "type": {
             "GPE": {
-              "total": 10,
+              "total": 9,
               "Non-factual Hallucination": 2,
               "Factual Hallucination": 2,
-              "Unknown": 1,
+              "Unknown": 0,
               "Non-hallucinated": 5
             },
             "DATE": {
@@ -1065,11 +1209,11 @@
               "Non-hallucinated": 1
             },
             "PERSON": {
-              "total": 4,
+              "total": 7,
               "Non-factual Hallucination": 0,
               "Factual Hallucination": 0,
               "Unknown": 1,
-              "Non-hallucinated": 3
+              "Non-hallucinated": 6
             },
             "FAC": {
               "total": 2,
@@ -1165,10 +1309,10 @@
         },
         "36396523": {
           "banned_phrases": [
-            "South America",
             "World Cup",
             "the Dominican Republic",
-            "Chile"
+            "Chile",
+            "South America"
           ],
           "summary": "Brazil have added Kaka to their squad for next month's Copa America.",
           "generation_metadata": {
@@ -1180,7 +1324,7 @@
               "</s>Brazil have added Kaka to their squad for next month's Copa America in Chile",
               "</s>Brazil have added Kaka to their squad for next month's Copa America in the Dominican Republic"
             ],
-            "n_words_checked": 84
+            "n_words_checked": 64
           },
           "labeled_entities": [
             {
@@ -1231,15 +1375,15 @@
           "label": {
             "Non-factual Hallucination": 2,
             "Factual Hallucination": 5,
-            "Unknown": 4,
-            "Non-hallucinated": 10
+            "Unknown": 3,
+            "Non-hallucinated": 13
           },
           "type": {
             "GPE": {
-              "total": 8,
+              "total": 7,
               "Non-factual Hallucination": 0,
               "Factual Hallucination": 2,
-              "Unknown": 1,
+              "Unknown": 0,
               "Non-hallucinated": 5
             },
             "DATE": {
@@ -1250,11 +1394,11 @@
               "Non-hallucinated": 1
             },
             "PERSON": {
-              "total": 4,
+              "total": 7,
               "Non-factual Hallucination": 0,
               "Factual Hallucination": 0,
               "Unknown": 1,
-              "Non-hallucinated": 3
+              "Non-hallucinated": 6
             },
             "FAC": {
               "total": 2,
@@ -1292,8 +1436,8 @@
       "summaries": {
         "36203675": {
           "banned_phrases": [
-            "the University of Manchester",
             "the University of Bristol",
+            "the University of Manchester",
             "the University of Oxford",
             "the University of Cambridge"
           ],
@@ -1315,10 +1459,10 @@
         },
         "17996567": {
           "banned_phrases": [
-            "Gloucesterse",
             "Staffordshire",
             "Flintshire",
-            "Gloucestershire"
+            "Gloucestershire",
+            "Gloucesterse"
           ],
           "summary": "Plans to cut home-to-school transport subsidies for children in Gloucestersfield have been put on hold.",
           "generation_metadata": {
@@ -1357,15 +1501,15 @@
           "label": {
             "Non-factual Hallucination": 1,
             "Factual Hallucination": 5,
-            "Unknown": 4,
-            "Non-hallucinated": 10
+            "Unknown": 3,
+            "Non-hallucinated": 13
           },
           "type": {
             "GPE": {
-              "total": 8,
+              "total": 7,
               "Non-factual Hallucination": 0,
               "Factual Hallucination": 2,
-              "Unknown": 1,
+              "Unknown": 0,
               "Non-hallucinated": 5
             },
             "DATE": {
@@ -1376,11 +1520,11 @@
               "Non-hallucinated": 1
             },
             "PERSON": {
-              "total": 5,
+              "total": 8,
               "Non-factual Hallucination": 1,
               "Factual Hallucination": 0,
               "Unknown": 1,
-              "Non-hallucinated": 3
+              "Non-hallucinated": 6
             },
             "FAC": {
               "total": 2,
