@@ -6,7 +6,7 @@ import pandas as pd
 
 def st_select_results(folder="results"):
     return os.path.join(
-        "results", st.selectbox("Select run", options=os.listdir(folder))
+        "results", st.selectbox("Select run", options=sorted(os.listdir(folder)))
     )
 
 
@@ -36,6 +36,8 @@ def render_explore_results():
                 "non_factual": stats["summary"]["non_factual"],
                 "unknown": stats["summary"]["unknown"],
                 "failed": stats["summary"]["failed"],
+                "completed": stats["summary"]["completed"],
+                "total": stats["summary"]["total"],
             }
         )
         entity_stats.append(
@@ -64,7 +66,22 @@ def render_explore_results():
             )
 
     st.subheader("Summary-level stats")
-    st.dataframe(pd.DataFrame(summary_stats).set_index("iteration"))
+    df_summary = pd.DataFrame(summary_stats).set_index("iteration")
+    first_iter = df_summary.iloc[0]
+    last_iter = df_summary.iloc[-1]
+    n_summaries_corrected = sum([1 for x in results["iterations"]["1"]["summaries"].values() if len(x["banned_phrases"]) > 0])
+    st.markdown(
+f"""
+Summaries corrected: {n_summaries_corrected} ({n_summaries_corrected/first_iter.total:.2%})
+
+**Factual:** {first_iter.factual/first_iter.total:.2%} --> {last_iter.factual/last_iter.total:.2%}  \\
+**Non-factual:** {first_iter.non_factual/first_iter.total:.2%} --> {last_iter.non_factual/last_iter.total:.2%}  \\
+**Unknown:** {first_iter.unknown/first_iter.total:.2%} --> {last_iter.unknown/last_iter.total:.2%} \\
+**Failed:** {first_iter.failed/first_iter.total:.2%} --> {last_iter.failed/last_iter.total:.2%}
+"""
+    )
+
+    st.dataframe(df_summary)
 
     st.subheader("Entity-level stats")
     df_entity = pd.DataFrame(entity_stats).set_index("iteration")
