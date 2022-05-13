@@ -35,6 +35,7 @@ def filter_entities(
     }
 
 
-
 def is_entity_contained(entity, text):
+    if entity.endswith("'s"):
+        entity = entity.replace("'s", "")
     return re.search(re.escape(entity), text, re.IGNORECASE) is not None
