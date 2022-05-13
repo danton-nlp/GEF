@@ -136,9 +136,11 @@ def persist_iteration(
     oracle_labeled_entities,
     generation_metadata,
     banned_phrases_by_sum_id,
+    iteration_stats
 ):
     if iteration_idx not in iteration_log:
         iteration_log[iteration_idx] = {"summaries": {}}
+    iteration_log[iteration_idx]["stats"] = iteration_stats
     for sum_id in gen_summaries_by_id.keys():
         iteration_log[iteration_idx]["summaries"][sum_id] = {
             "banned_phrases": list(banned_phrases_by_sum_id[sum_id]),
@@ -179,17 +181,18 @@ def compute_stats(results_by_sum_id):
         "unknown": 0,
     }
     entity_stats = {
-        ANNOTATION_LABELS["Non-factual"]: 0,
-        ANNOTATION_LABELS["Factual"]: 0,
-        ANNOTATION_LABELS["Unknown"]: 0,
-        ANNOTATION_LABELS["Non-hallucinated"]: 0
+        "label": {
+            ANNOTATION_LABELS["Non-factual"]: 0,
+            ANNOTATION_LABELS["Factual"]: 0,
+            ANNOTATION_LABELS["Unknown"]: 0,
+            ANNOTATION_LABELS["Non-hallucinated"]: 0
+        },
+        "type": {}
     }
     for results in results_by_sum_id.values():
         if results["completed"]:
             summary_stats["completed"] += 1
         ents_non_factual = len(results[ANNOTATION_LABELS["Non-factual"]])
-        ents_factual = len(results[ANNOTATION_LABELS["Factual"]])
-        ents_non_hallucinated = len(results[ANNOTATION_LABELS["Non-hallucinated"]])
         ents_unknown = len(results[ANNOTATION_LABELS["Unknown"]])
 
         if results["failed"]:
@@ -201,10 +204,20 @@ def compute_stats(results_by_sum_id):
         else:
             summary_stats["factual"] += 1
 
-        entity_stats[ANNOTATION_LABELS["Non-factual"]] += ents_non_factual
-        entity_stats[ANNOTATION_LABELS["Factual"]] += ents_factual
-        entity_stats[ANNOTATION_LABELS["Unknown"]] += ents_unknown
-        entity_stats[ANNOTATION_LABELS["Non-hallucinated"]] += ents_non_hallucinated
+        for label in ANNOTATION_LABELS.values():
+            label_results = results[label]
+            entity_stats["label"][label] += len(label_results)
+            for ent in label_results:
+                if ent["type"] not in entity_stats["type"]:
+                    entity_stats["type"][ent["type"]] = {
+                        "total": 0,
+                        ANNOTATION_LABELS["Non-factual"]: 0,
+                        ANNOTATION_LABELS["Factual"]: 0,
+                        ANNOTATION_LABELS["Unknown"]: 0,
+                        ANNOTATION_LABELS["Non-hallucinated"]: 0
+                    }
+                entity_stats["type"][ent["type"]]["total"] += 1
+                entity_stats["type"][ent["type"]][label] += 1
 
     return {
         "summary": summary_stats,
@@ -470,6 +483,7 @@ if __name__ == "__main__":
                     oracle_labeled_entities,
                     generation_metadata,
                     prev_banned_phrases_by_sum_id,
+                    compute_stats(results_by_sum_id)
                 )
 
                 print_results(

@@ -1,10 +1,10 @@
 {
-  "timestamp": 1652452085.749608,
+  "timestamp": 1652457285.9780962,
   "args": {
     "model_path": "facebook/bart-large-xsum",
     "max_iterations": 5,
     "annotate": false,
-    "verbose": true,
+    "verbose": false,
     "batch_size": 4,
     "data_subset": "debug"
   },
@@ -328,6 +328,75 @@
               "label": "Non-factual Hallucination"
             }
           ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 1,
+          "total": 10,
+          "factual": 1,
+          "non_factual": 9,
+          "failed": 0,
+          "unknown": 0
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 10,
+            "Factual Hallucination": 4,
+            "Unknown": 4,
+            "Non-hallucinated": 8
+          },
+          "type": {
+            "GPE": {
+              "total": 11,
+              "Non-factual Hallucination": 4,
+              "Factual Hallucination": 2,
+              "Unknown": 0,
+              "Non-hallucinated": 5
+            },
+            "DATE": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 2,
+              "Non-hallucinated": 0
+            },
+            "EVENT": {
+              "total": 2,
+              "Non-factual Hallucination": 2,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 0
+            },
+            "PERSON": {
+              "total": 6,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 2,
+              "Non-hallucinated": 3
+            },
+            "FAC": {
+              "total": 2,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0
+            },
+            "ORG": {
+              "total": 1,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 0
+            },
+            "LOC": {
+              "total": 1,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 0
+            }
+          }
         }
       }
     },
@@ -667,6 +736,68 @@
             }
           ]
         }
+      },
+      "stats": {
+        "summary": {
+          "completed": 3,
+          "total": 10,
+          "factual": 2,
+          "non_factual": 7,
+          "failed": 0,
+          "unknown": 1
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 7,
+            "Factual Hallucination": 5,
+            "Unknown": 3,
+            "Non-hallucinated": 9
+          },
+          "type": {
+            "GPE": {
+              "total": 10,
+              "Non-factual Hallucination": 3,
+              "Factual Hallucination": 2,
+              "Unknown": 1,
+              "Non-hallucinated": 4
+            },
+            "DATE": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 1,
+              "Non-hallucinated": 1
+            },
+            "PERSON": {
+              "total": 7,
+              "Non-factual Hallucination": 2,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 4
+            },
+            "FAC": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 2,
+              "Unknown": 0,
+              "Non-hallucinated": 0
+            },
+            "ORG": {
+              "total": 1,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 0
+            },
+            "ORDINAL": {
+              "total": 1,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 0
+            }
+          }
+        }
       }
     },
     "2": {
@@ -783,8 +914,8 @@
         },
         "17996567": {
           "banned_phrases": [
-            "Gloucestershire",
-            "Flintshire"
+            "Flintshire",
+            "Gloucestershire"
           ],
           "summary": "Plans to cut home-to-school transport subsidies for children in Staffordshire have been put on hold.",
           "generation_metadata": {
@@ -809,8 +940,8 @@
         },
         "36396523": {
           "banned_phrases": [
-            "Chile",
             "South America",
+            "Chile",
             "World Cup"
           ],
           "summary": "Brazil have added Kaka to their squad for next month's Copa America in the Dominican Republic.",
@@ -869,8 +1000,8 @@
         },
         "37615223": {
           "banned_phrases": [
-            "third",
-            "the Amex Stadium"
+            "the Amex Stadium",
+            "third"
           ],
           "summary": "Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to fourth in the Championship.",
           "generation_metadata": {
@@ -900,6 +1031,75 @@
               "label": "Unknown"
             }
           ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 7,
+          "total": 10,
+          "factual": 4,
+          "non_factual": 3,
+          "failed": 0,
+          "unknown": 3
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 3,
+            "Factual Hallucination": 5,
+            "Unknown": 4,
+            "Non-hallucinated": 10
+          },
+          "type": {
+            "GPE": {
+              "total": 10,
+              "Non-factual Hallucination": 2,
+              "Factual Hallucination": 2,
+              "Unknown": 1,
+              "Non-hallucinated": 5
+            },
+            "DATE": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 1,
+              "Non-hallucinated": 1
+            },
+            "PERSON": {
+              "total": 4,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 3
+            },
+            "FAC": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 2,
+              "Unknown": 0,
+              "Non-hallucinated": 0
+            },
+            "CARDINAL": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1
+            },
+            "ORG": {
+              "total": 1,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 0
+            },
+            "ORDINAL": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            }
+          }
         }
       }
     },
@@ -937,9 +1137,9 @@
         },
         "17996567": {
           "banned_phrases": [
-            "Gloucestershire",
+            "Staffordshire",
             "Flintshire",
-            "Staffordshire"
+            "Gloucestershire"
           ],
           "summary": "Plans to cut home-to-school transport subsidies for children in Gloucesterse have been put on hold.",
           "generation_metadata": {
@@ -965,10 +1165,10 @@
         },
         "36396523": {
           "banned_phrases": [
-            "Chile",
-            "the Dominican Republic",
             "South America",
-            "World Cup"
+            "World Cup",
+            "the Dominican Republic",
+            "Chile"
           ],
           "summary": "Brazil have added Kaka to their squad for next month's Copa America.",
           "generation_metadata": {
@@ -1017,6 +1217,75 @@
             }
           ]
         }
+      },
+      "stats": {
+        "summary": {
+          "completed": 8,
+          "total": 10,
+          "factual": 5,
+          "non_factual": 2,
+          "failed": 0,
+          "unknown": 3
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 2,
+            "Factual Hallucination": 5,
+            "Unknown": 4,
+            "Non-hallucinated": 10
+          },
+          "type": {
+            "GPE": {
+              "total": 8,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 2,
+              "Unknown": 1,
+              "Non-hallucinated": 5
+            },
+            "DATE": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 1,
+              "Non-hallucinated": 1
+            },
+            "PERSON": {
+              "total": 4,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 3
+            },
+            "FAC": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 2,
+              "Unknown": 0,
+              "Non-hallucinated": 0
+            },
+            "CARDINAL": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1
+            },
+            "ORG": {
+              "total": 2,
+              "Non-factual Hallucination": 2,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 0
+            },
+            "ORDINAL": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            }
+          }
+        }
       }
     },
     "4": {
@@ -1046,10 +1315,10 @@
         },
         "17996567": {
           "banned_phrases": [
-            "Gloucestershire",
-            "Flintshire",
+            "Gloucesterse",
             "Staffordshire",
-            "Gloucesterse"
+            "Flintshire",
+            "Gloucestershire"
           ],
           "summary": "Plans to cut home-to-school transport subsidies for children in Gloucestersfield have been put on hold.",
           "generation_metadata": {
@@ -1073,6 +1342,68 @@
               "label": "Non-factual Hallucination"
             }
           ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 9,
+          "total": 10,
+          "factual": 5,
+          "non_factual": 1,
+          "failed": 1,
+          "unknown": 3
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 1,
+            "Factual Hallucination": 5,
+            "Unknown": 4,
+            "Non-hallucinated": 10
+          },
+          "type": {
+            "GPE": {
+              "total": 8,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 2,
+              "Unknown": 1,
+              "Non-hallucinated": 5
+            },
+            "DATE": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 1,
+              "Non-hallucinated": 1
+            },
+            "PERSON": {
+              "total": 5,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 3
+            },
+            "FAC": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 2,
+              "Unknown": 0,
+              "Non-hallucinated": 0
+            },
+            "CARDINAL": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1
+            },
+            "ORDINAL": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            }
+          }
         }
       }
     }
