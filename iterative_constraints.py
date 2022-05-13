@@ -390,7 +390,9 @@ if __name__ == "__main__":
                     for label in ANNOTATION_LABELS.values():
                         results_by_sum_id[sum_id][label] = []
                     for ent in labeled_entities:
-                        results_by_sum_id[sum_id][ent["label"]].append(ent)
+                        # TODO: handle?
+                        if ent["label"] != "Intrinsic Hallucination":
+                            results_by_sum_id[sum_id][ent["label"]].append(ent)
                         if ent["label"] == ANNOTATION_LABELS["Non-factual"]:
                             no_constraints = False
                             if ent["ent"] not in banned_phrases:
