@@ -1,0 +1,1455 @@
+{
+  "timestamp": 1652564731.699327,
+  "args": {
+    "pickled_classifier": "",
+    "model_path": "facebook/bart-large-xsum",
+    "max_iterations": 5,
+    "annotate": false,
+    "verbose": false,
+    "batch_size": 4,
+    "data_subset": "test-daniel"
+  },
+  "iterations": {
+    "0": {
+      "summaries": {
+        "37228816": {
+          "banned_phrases": [],
+          "summary": "The second group of Syrian refugees have arrived in Londonderry.",
+          "generation_metadata": {
+            "score": -0.46760889887809753,
+            "dropped_seqs": [],
+            "n_words_checked": 86
+          },
+          "labeled_entities": [
+            {
+              "ent": "second",
+              "type": "ORDINAL",
+              "start": 4,
+              "end": 10,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Syrian",
+              "type": "NORP",
+              "start": 20,
+              "end": 26,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Londonderry",
+              "type": "GPE",
+              "start": 52,
+              "end": 63,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "38063377": {
+          "banned_phrases": [],
+          "summary": "German airline Lufthansa has launched a fresh legal challenge against a pilots' strike due to start on Tuesday.",
+          "generation_metadata": {
+            "score": -0.6047974228858948,
+            "dropped_seqs": [],
+            "n_words_checked": 86
+          },
+          "labeled_entities": [
+            {
+              "ent": "German",
+              "type": "NORP",
+              "start": 0,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Lufthansa",
+              "type": "ORG",
+              "start": 15,
+              "end": 24,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Tuesday",
+              "type": "DATE",
+              "start": 103,
+              "end": 110,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "39563495": {
+          "banned_phrases": [],
+          "summary": "India has condemned Pakistan's decision to sentence an Indian navy officer to death for spying.",
+          "generation_metadata": {
+            "score": -0.5448533892631531,
+            "dropped_seqs": [],
+            "n_words_checked": 86
+          },
+          "labeled_entities": [
+            {
+              "ent": "India",
+              "type": "GPE",
+              "start": 0,
+              "end": 5,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Pakistan",
+              "type": "GPE",
+              "start": 20,
+              "end": 28,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Indian",
+              "type": "NORP",
+              "start": 55,
+              "end": 61,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "33312430": {
+          "banned_phrases": [],
+          "summary": "Tributes have been paid to British student Joel Richards, who was killed in the Tunisia beach attack.",
+          "generation_metadata": {
+            "score": -0.4130733013153076,
+            "dropped_seqs": [],
+            "n_words_checked": 93
+          },
+          "labeled_entities": [
+            {
+              "ent": "British",
+              "type": "NORP",
+              "start": 27,
+              "end": 34,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Joel",
+              "type": "PERSON",
+              "start": 43,
+              "end": 47,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Richards",
+              "type": "PERSON",
+              "start": 48,
+              "end": 56,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Tunisia",
+              "type": "GPE",
+              "start": 80,
+              "end": 87,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "33303440": {
+          "banned_phrases": [],
+          "summary": "A motorcyclist has been killed in a crash in South Yorkshire.",
+          "generation_metadata": {
+            "score": -0.39829957485198975,
+            "dropped_seqs": [],
+            "n_words_checked": 94
+          },
+          "labeled_entities": [
+            {
+              "ent": "South Yorkshire",
+              "type": "GPE",
+              "start": 45,
+              "end": 60,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35194695": {
+          "banned_phrases": [],
+          "summary": "The white police officer accused of killing a black teenager in Chicago in 2014 has pleaded not guilty.",
+          "generation_metadata": {
+            "score": -0.49924570322036743,
+            "dropped_seqs": [],
+            "n_words_checked": 89
+          },
+          "labeled_entities": [
+            {
+              "ent": "Chicago",
+              "type": "GPE",
+              "start": 64,
+              "end": 71,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "2014",
+              "type": "DATE",
+              "start": 75,
+              "end": 79,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "33750803": {
+          "banned_phrases": [],
+          "summary": "At least six people have been killed and more than 30 injured in a suicide bombing in northern Turkey, the army says.",
+          "generation_metadata": {
+            "score": -0.7456413507461548,
+            "dropped_seqs": [],
+            "n_words_checked": 96
+          },
+          "labeled_entities": [
+            {
+              "ent": "At least six",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 12,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "more than 30",
+              "type": "CARDINAL",
+              "start": 41,
+              "end": 53,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Turkey",
+              "type": "GPE",
+              "start": 95,
+              "end": 101,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35491792": {
+          "banned_phrases": [],
+          "summary": "For a man who grew up on a potato farm in Herefordshire, David Chase has a knack for telling stories.",
+          "generation_metadata": {
+            "score": -0.8192601799964905,
+            "dropped_seqs": [],
+            "n_words_checked": 96
+          },
+          "labeled_entities": [
+            {
+              "ent": "Herefordshire",
+              "type": "GPE",
+              "start": 42,
+              "end": 55,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "David",
+              "type": "PERSON",
+              "start": 57,
+              "end": 62,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Chase",
+              "type": "PERSON",
+              "start": 63,
+              "end": 68,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "40617914": {
+          "banned_phrases": [],
+          "summary": "Dundee United have signed Southampton goalkeeper Harry Lewis for an undisclosed fee.",
+          "generation_metadata": {
+            "score": -0.27610865235328674,
+            "dropped_seqs": [],
+            "n_words_checked": 96
+          },
+          "labeled_entities": [
+            {
+              "ent": "Dundee United",
+              "type": "GPE",
+              "start": 0,
+              "end": 13,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Southampton",
+              "type": "GPE",
+              "start": 26,
+              "end": 37,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Harry",
+              "type": "PERSON",
+              "start": 49,
+              "end": 54,
+              "in_source": true,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Lewis",
+              "type": "PERSON",
+              "start": 55,
+              "end": 60,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35604495": {
+          "banned_phrases": [],
+          "summary": "Former Bolton striker Chris Holdsworth has agreed to buy the club, BBC Radio Manchester understands.",
+          "generation_metadata": {
+            "score": -0.525452196598053,
+            "dropped_seqs": [],
+            "n_words_checked": 91
+          },
+          "labeled_entities": [
+            {
+              "ent": "Bolton",
+              "type": "PERSON",
+              "start": 7,
+              "end": 13,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Chris",
+              "type": "PERSON",
+              "start": 22,
+              "end": 27,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Holdsworth",
+              "type": "PERSON",
+              "start": 28,
+              "end": 38,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "BBC Radio Manchester",
+              "type": "ORG",
+              "start": 67,
+              "end": 87,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "27424318": {
+          "banned_phrases": [],
+          "summary": "Scientists at IBM have discovered a new class of plastic that can be recycled and used again.",
+          "generation_metadata": {
+            "score": -0.7690600752830505,
+            "dropped_seqs": [],
+            "n_words_checked": 115
+          },
+          "labeled_entities": [
+            {
+              "ent": "IBM",
+              "type": "ORG",
+              "start": 14,
+              "end": 17,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "21958547": {
+          "banned_phrases": [],
+          "summary": "The UK's Department for Environment, Food and Rural Affairs (Defra) has called for more research into the impact of pesticides on honey bees.",
+          "generation_metadata": {
+            "score": -0.5085051655769348,
+            "dropped_seqs": [],
+            "n_words_checked": 110
+          },
+          "labeled_entities": [
+            {
+              "ent": "UK",
+              "type": "GPE",
+              "start": 4,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Department for Environment, Food and Rural Affairs",
+              "type": "ORG",
+              "start": 9,
+              "end": 59,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Defra",
+              "type": "ORG",
+              "start": 61,
+              "end": 66,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37989821": {
+          "banned_phrases": [],
+          "summary": "The UK has a unique opportunity to bring the US and Europe together, not take sides.",
+          "generation_metadata": {
+            "score": -0.4453117847442627,
+            "dropped_seqs": [],
+            "n_words_checked": 126
+          },
+          "labeled_entities": [
+            {
+              "ent": "UK",
+              "type": "GPE",
+              "start": 4,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "US",
+              "type": "GPE",
+              "start": 45,
+              "end": 47,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Europe",
+              "type": "LOC",
+              "start": 52,
+              "end": 58,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "27319850": {
+          "banned_phrases": [],
+          "summary": "New fathers are often diagnosed with post-traumatic stress disorder (PTSD), a condition that can lead to depression and anxiety.",
+          "generation_metadata": {
+            "score": -0.7857015132904053,
+            "dropped_seqs": [],
+            "n_words_checked": 108
+          },
+          "labeled_entities": []
+        },
+        "37406842": {
+          "banned_phrases": [],
+          "summary": "Work has been suspended at a recycling plant in Bridgend county after a large fire broke out.",
+          "generation_metadata": {
+            "score": -0.6341364979743958,
+            "dropped_seqs": [],
+            "n_words_checked": 101
+          },
+          "labeled_entities": [
+            {
+              "ent": "Bridgend county",
+              "type": "GPE",
+              "start": 48,
+              "end": 63,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "33235610": {
+          "banned_phrases": [],
+          "summary": "(Close): The pound rose against the euro and the dollar on Tuesday, after the Bank of England raised its interest rate to 0.5%.",
+          "generation_metadata": {
+            "score": -0.7489053010940552,
+            "dropped_seqs": [],
+            "n_words_checked": 121
+          },
+          "labeled_entities": [
+            {
+              "ent": "Tuesday",
+              "type": "DATE",
+              "start": 59,
+              "end": 66,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "the Bank of England",
+              "type": "ORG",
+              "start": 74,
+              "end": 93,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "0.5%",
+              "type": "PERCENT",
+              "start": 122,
+              "end": 126,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "38797571": {
+          "banned_phrases": [],
+          "summary": "Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat by MK Dons.",
+          "generation_metadata": {
+            "score": -0.7016133069992065,
+            "dropped_seqs": [],
+            "n_words_checked": 121
+          },
+          "labeled_entities": [
+            {
+              "ent": "Coventry City's",
+              "type": "GPE",
+              "start": 0,
+              "end": 15,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Supporters' Trust",
+              "type": "ORG",
+              "start": 16,
+              "end": 33,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Saturday",
+              "type": "DATE",
+              "start": 128,
+              "end": 136,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "MK",
+              "type": "PERSON",
+              "start": 160,
+              "end": 162,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Dons",
+              "type": "PERSON",
+              "start": 163,
+              "end": 167,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "34524083": {
+          "banned_phrases": [],
+          "summary": "Former NBA star Lamar Odom has been taken to hospital after being found unconscious in a Nevada brothel.",
+          "generation_metadata": {
+            "score": -0.4064476191997528,
+            "dropped_seqs": [],
+            "n_words_checked": 125
+          },
+          "labeled_entities": [
+            {
+              "ent": "NBA",
+              "type": "ORG",
+              "start": 7,
+              "end": 10,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Lamar",
+              "type": "PERSON",
+              "start": 16,
+              "end": 21,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Odom",
+              "type": "PERSON",
+              "start": 22,
+              "end": 26,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Nevada",
+              "type": "GPE",
+              "start": 89,
+              "end": 95,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "32788950": {
+          "banned_phrases": [],
+          "summary": "England Test batsman Joe Root has praised coach Peter Moores after being named player of the year.",
+          "generation_metadata": {
+            "score": -0.5058521628379822,
+            "dropped_seqs": [],
+            "n_words_checked": 131
+          },
+          "labeled_entities": [
+            {
+              "ent": "England Test",
+              "type": "ORG",
+              "start": 0,
+              "end": 12,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Joe",
+              "type": "PERSON",
+              "start": 21,
+              "end": 24,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Root",
+              "type": "PERSON",
+              "start": 25,
+              "end": 29,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Peter",
+              "type": "PERSON",
+              "start": 48,
+              "end": 53,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Moores",
+              "type": "PERSON",
+              "start": 54,
+              "end": 60,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the year",
+              "type": "DATE",
+              "start": 89,
+              "end": 97,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "32112735": {
+          "banned_phrases": [],
+          "summary": "Liam Payne and Niall Horan have confirmed they're staying in One Direction.",
+          "generation_metadata": {
+            "score": -0.4829868674278259,
+            "dropped_seqs": [],
+            "n_words_checked": 129
+          },
+          "labeled_entities": [
+            {
+              "ent": "Liam",
+              "type": "PERSON",
+              "start": 0,
+              "end": 4,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Payne",
+              "type": "PERSON",
+              "start": 5,
+              "end": 10,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Niall",
+              "type": "PERSON",
+              "start": 15,
+              "end": 20,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Horan",
+              "type": "PERSON",
+              "start": 21,
+              "end": 26,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "25526847": {
+          "banned_phrases": [],
+          "summary": "Neil Gaiman's novel The Ocean at the End of the Lane has been named the UK's Book of the Year.",
+          "generation_metadata": {
+            "score": -0.3441280722618103,
+            "dropped_seqs": [],
+            "n_words_checked": 94
+          },
+          "labeled_entities": [
+            {
+              "ent": "Neil",
+              "type": "PERSON",
+              "start": 0,
+              "end": 4,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Gaiman",
+              "type": "PERSON",
+              "start": 5,
+              "end": 11,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "The Ocean",
+              "type": "WORK_OF_ART",
+              "start": 20,
+              "end": 29,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Lane",
+              "type": "FAC",
+              "start": 48,
+              "end": 52,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "UK",
+              "type": "GPE",
+              "start": 72,
+              "end": 74,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Book of the Year",
+              "type": "WORK_OF_ART",
+              "start": 77,
+              "end": 93,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "38722314": {
+          "banned_phrases": [],
+          "summary": "Liverpool boss Jurgen Klopp says Steven Gerrard has a \"bright future\" as a manager.",
+          "generation_metadata": {
+            "score": -0.3049295246601105,
+            "dropped_seqs": [],
+            "n_words_checked": 85
+          },
+          "labeled_entities": [
+            {
+              "ent": "Liverpool",
+              "type": "GPE",
+              "start": 0,
+              "end": 9,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Jurgen",
+              "type": "PERSON",
+              "start": 15,
+              "end": 21,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Klopp",
+              "type": "PERSON",
+              "start": 22,
+              "end": 27,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Steven",
+              "type": "PERSON",
+              "start": 33,
+              "end": 39,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Gerrard",
+              "type": "PERSON",
+              "start": 40,
+              "end": 47,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "19626825": {
+          "banned_phrases": [],
+          "summary": "Hundreds of people have attended a public meeting in Flintshire to discuss plans to close a community hospital.",
+          "generation_metadata": {
+            "score": -0.5380803942680359,
+            "dropped_seqs": [],
+            "n_words_checked": 87
+          },
+          "labeled_entities": [
+            {
+              "ent": "Hundreds",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 8,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Flintshire",
+              "type": "GPE",
+              "start": 53,
+              "end": 63,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "13810760": {
+          "banned_phrases": [],
+          "summary": "Former Ospreys scrum-half Mike Phillips has been suspended from the Wales squad after an incident in Cardiff city centre.",
+          "generation_metadata": {
+            "score": -0.46403568983078003,
+            "dropped_seqs": [],
+            "n_words_checked": 80
+          },
+          "labeled_entities": [
+            {
+              "ent": "Mike",
+              "type": "PERSON",
+              "start": 26,
+              "end": 30,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Phillips",
+              "type": "PERSON",
+              "start": 31,
+              "end": 39,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Wales",
+              "type": "GPE",
+              "start": 68,
+              "end": 73,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Cardiff city",
+              "type": "GPE",
+              "start": 101,
+              "end": 113,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "28258697": {
+          "banned_phrases": [],
+          "summary": "The Orange Order is \"stepping up to the mark\" in its response to the Crumlin Road ruling, the organisation's chief executive has said.",
+          "generation_metadata": {
+            "score": -0.5091783404350281,
+            "dropped_seqs": [],
+            "n_words_checked": 113
+          },
+          "labeled_entities": [
+            {
+              "ent": "The Orange Order",
+              "type": "ORG",
+              "start": 0,
+              "end": 16,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Crumlin Road",
+              "type": "FAC",
+              "start": 69,
+              "end": 81,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 20,
+          "total": 25,
+          "factual": 13,
+          "non_factual": 5,
+          "failed": 0,
+          "unknown": 7
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 7,
+            "Factual Hallucination": 8,
+            "Unknown": 9,
+            "Non-hallucinated": 55
+          },
+          "type": {
+            "NORP": {
+              "total": 4,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 3
+            },
+            "GPE": {
+              "total": 21,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 3,
+              "Non-hallucinated": 18
+            },
+            "ORDINAL": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            },
+            "ORG": {
+              "total": 10,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 1,
+              "Unknown": 2,
+              "Non-hallucinated": 6
+            },
+            "DATE": {
+              "total": 5,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 3,
+              "Unknown": 0,
+              "Non-hallucinated": 2
+            },
+            "PERSON": {
+              "total": 29,
+              "Non-factual Hallucination": 6,
+              "Factual Hallucination": 3,
+              "Unknown": 0,
+              "Non-hallucinated": 20
+            },
+            "CARDINAL": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 2,
+              "Non-hallucinated": 1
+            },
+            "LOC": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1
+            },
+            "PERCENT": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            },
+            "WORK_OF_ART": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2
+            },
+            "FAC": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2
+            }
+          }
+        }
+      }
+    },
+    "1": {
+      "summaries": {
+        "35491792": {
+          "banned_phrases": [
+            "David"
+          ],
+          "summary": "For a man who grew up on a potato farm in Herefordshire, Peter Chase has a natural knack for telling stories.",
+          "generation_metadata": {
+            "score": -0.843143105506897,
+            "dropped_seqs": [
+              "</s>As a potato farmer, David",
+              "</s>For a man who grew up on a potato farm, David",
+              "</s>For a man who grew up on a Herefordshire potato farm, David",
+              "</s>For a man who grew up on a potato farm in Herefordshire, David"
+            ],
+            "n_words_checked": 105
+          },
+          "labeled_entities": [
+            {
+              "ent": "Herefordshire",
+              "type": "GPE",
+              "start": 42,
+              "end": 55,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Peter",
+              "type": "PERSON",
+              "start": 57,
+              "end": 62,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Chase",
+              "type": "PERSON",
+              "start": 63,
+              "end": 68,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35604495": {
+          "banned_phrases": [
+            "Chris"
+          ],
+          "summary": "Bolton Wanderers have agreed a deal to sell the club to ex-Trotters striker Paul Holdsworth, BBC Radio Manchester understands.",
+          "generation_metadata": {
+            "score": -0.6109501719474792,
+            "dropped_seqs": [
+              "</s>Former Bolton striker Chris",
+              "</s>Bolton Wanderers have agreed a deal to sell the club to ex-Trotters striker Chris"
+            ],
+            "n_words_checked": 93
+          },
+          "labeled_entities": [
+            {
+              "ent": "Bolton Wanderers",
+              "type": "ORG",
+              "start": 0,
+              "end": 16,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Paul",
+              "type": "PERSON",
+              "start": 76,
+              "end": 80,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Holdsworth",
+              "type": "PERSON",
+              "start": 81,
+              "end": 91,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "BBC Radio Manchester",
+              "type": "ORG",
+              "start": 93,
+              "end": 113,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "33235610": {
+          "banned_phrases": [
+            "the Bank of England"
+          ],
+          "summary": "(Close): The pound rose against the euro and the dollar on Tuesday, following Monday's sharp gains.",
+          "generation_metadata": {
+            "score": -0.7613140344619751,
+            "dropped_seqs": [
+              "</s>(Close): The pound rose against the euro and the dollar on Tuesday, after the Bank of England",
+              "</s>(Close): The pound rose against the euro and the dollar on Tuesday, as investors digested the news that the Bank of England"
+            ],
+            "n_words_checked": 137
+          },
+          "labeled_entities": [
+            {
+              "ent": "Tuesday",
+              "type": "DATE",
+              "start": 59,
+              "end": 66,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Monday",
+              "type": "DATE",
+              "start": 78,
+              "end": 84,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "38797571": {
+          "banned_phrases": [
+            "MK",
+            "Dons"
+          ],
+          "summary": "Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat by Rochdale.",
+          "generation_metadata": {
+            "score": -0.704332172870636,
+            "dropped_seqs": [
+              "</s>Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat by MK"
+            ],
+            "n_words_checked": 124
+          },
+          "labeled_entities": [
+            {
+              "ent": "Coventry City's",
+              "type": "GPE",
+              "start": 0,
+              "end": 15,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Supporters' Trust",
+              "type": "ORG",
+              "start": 16,
+              "end": 33,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Saturday",
+              "type": "DATE",
+              "start": 128,
+              "end": 136,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Rochdale",
+              "type": "GPE",
+              "start": 160,
+              "end": 168,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "32112735": {
+          "banned_phrases": [
+            "Horan",
+            "Niall"
+          ],
+          "summary": "Liam Payne and Louis Tomlinson have confirmed they're staying in One Direction.",
+          "generation_metadata": {
+            "score": -0.5388208627700806,
+            "dropped_seqs": [
+              "</s>Liam Payne and Niall"
+            ],
+            "n_words_checked": 63
+          },
+          "labeled_entities": [
+            {
+              "ent": "Liam",
+              "type": "PERSON",
+              "start": 0,
+              "end": 4,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Payne",
+              "type": "PERSON",
+              "start": 5,
+              "end": 10,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Louis",
+              "type": "PERSON",
+              "start": 15,
+              "end": 20,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Tomlinson",
+              "type": "PERSON",
+              "start": 21,
+              "end": 30,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 24,
+          "total": 25,
+          "factual": 14,
+          "non_factual": 1,
+          "failed": 0,
+          "unknown": 10
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 2,
+            "Factual Hallucination": 8,
+            "Unknown": 11,
+            "Non-hallucinated": 56
+          },
+          "type": {
+            "NORP": {
+              "total": 4,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 3
+            },
+            "GPE": {
+              "total": 22,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 4,
+              "Non-hallucinated": 18
+            },
+            "ORDINAL": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            },
+            "ORG": {
+              "total": 10,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 2,
+              "Non-hallucinated": 7
+            },
+            "DATE": {
+              "total": 6,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 3,
+              "Unknown": 0,
+              "Non-hallucinated": 3
+            },
+            "PERSON": {
+              "total": 26,
+              "Non-factual Hallucination": 2,
+              "Factual Hallucination": 3,
+              "Unknown": 2,
+              "Non-hallucinated": 19
+            },
+            "CARDINAL": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 2,
+              "Non-hallucinated": 1
+            },
+            "LOC": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1
+            },
+            "WORK_OF_ART": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2
+            },
+            "FAC": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2
+            }
+          }
+        }
+      }
+    },
+    "2": {
+      "summaries": {
+        "32112735": {
+          "banned_phrases": [
+            "Tomlinson",
+            "Niall",
+            "Horan",
+            "Louis"
+          ],
+          "summary": "One Direction have confirmed they're staying in the band.",
+          "generation_metadata": {
+            "score": -0.7054998874664307,
+            "dropped_seqs": [
+              "</s>Liam Payne and Louis",
+              "</s>Liam Payne, Louis",
+              "</s>Liam Payne and Niall"
+            ],
+            "n_words_checked": 38
+          },
+          "labeled_entities": [
+            {
+              "ent": "One",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 3,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 25,
+          "total": 25,
+          "factual": 15,
+          "non_factual": 0,
+          "failed": 0,
+          "unknown": 10
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 0,
+            "Factual Hallucination": 8,
+            "Unknown": 11,
+            "Non-hallucinated": 55
+          },
+          "type": {
+            "NORP": {
+              "total": 4,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 3
+            },
+            "GPE": {
+              "total": 22,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 4,
+              "Non-hallucinated": 18
+            },
+            "ORDINAL": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            },
+            "ORG": {
+              "total": 10,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 2,
+              "Non-hallucinated": 7
+            },
+            "DATE": {
+              "total": 6,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 3,
+              "Unknown": 0,
+              "Non-hallucinated": 3
+            },
+            "PERSON": {
+              "total": 22,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 3,
+              "Unknown": 2,
+              "Non-hallucinated": 17
+            },
+            "CARDINAL": {
+              "total": 4,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 2,
+              "Non-hallucinated": 2
+            },
+            "LOC": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1
+            },
+            "WORK_OF_ART": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2
+            },
+            "FAC": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2
+            }
+          }
+        }
+      }
+    }
+  }
+}

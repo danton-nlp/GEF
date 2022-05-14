@@ -19,24 +19,26 @@ if __name__ == "__main__":
     xsum_by_source = {x["document"].replace("\n", " "): x for x in xsum_test.values()}
     xsum_by_gt = {x["summary"].replace("\n", " "): x for x in xsum_test.values()}
 
-    summary_annotations = {}
 
-    missing = 0
-    for entfa_sum in EntFA_train + EntFA_test:
-        if entfa_sum["source"] in xsum_by_source:
-            xsum_doc = xsum_by_source[entfa_sum["source"]]
-        elif entfa_sum["reference"] in xsum_by_gt:
-            xsum_doc = xsum_by_gt[entfa_sum["reference"]]
-        else:
-            missing += 1
-            continue
-        xsum_id = xsum_doc["id"]
-        summary_annotations[xsum_id] = {
-            "xent": {
-                entfa_sum["prediction"]: entfa_sum["entities"]
+    for (dataset, data_label) in [(EntFA_train, "xent-train"), (EntFA_test, "xent-test")]:
+        summary_annotations = {}
+        missing = 0
+        for entfa_sum in dataset:
+            if entfa_sum["source"] in xsum_by_source:
+                xsum_doc = xsum_by_source[entfa_sum["source"]]
+            elif entfa_sum["reference"] in xsum_by_gt:
+                xsum_doc = xsum_by_gt[entfa_sum["reference"]]
+            else:
+                missing += 1
+                continue
+            xsum_id = xsum_doc["id"]
+            summary_annotations[xsum_id] = {
+                "xent": "",
+                data_label: {
+                    entfa_sum["prediction"]: entfa_sum["entities"]
+                }
             }
-        }
-
-    print(summary_annotations)
-    print(f"Missing {missing}, persisted: {len(summary_annotations)}")
-    store_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL, summary_annotations)
+        
+        print(data_label)
+        print(f"Missing {missing}, persisted: {len(summary_annotations)}")
+        store_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL, summary_annotations)

@@ -1,7 +1,7 @@
 from collections import defaultdict
 import argparse
 from typing import Dict
-from src.data_utils import XSumDoc, load_xsum_dict
+from src.data_utils import XSumDoc, load_debug_subset, load_test_set, load_xsum_dict
 from src.detect_entities import detect_entities, is_entity_contained
 from copy import deepcopy
 from src.entity_utils import (
@@ -117,7 +117,7 @@ def persist_updated_annotations(old_metadata, updated_annotations, summaries_by_
 
 def get_entity_annotations(metadata, sum_id):
     annots = []
-    for key in ["xent", "our_annotations"]:
+    for key in ["xent-train", "xent-test", "our_annotations"]:
         if key in metadata[sum_id]:
             for ents in metadata[sum_id][key].values():
                 annots += ents
@@ -280,39 +280,34 @@ if __name__ == "__main__":
     else:
         clf_factuality = None
 
+    xent_test_summaries = {
+        sum_id: x["document"]
+        for sum_id, x in xsum_test.items()
+        if "xent-test" in summary_gold_metadata[sum_id]
+    }
+
     if args.data_subset == "debug":
-        docs_to_summarize = {
-            x["id"]: x["document"]
-            for x in [
-                xsum_test["34361828"],
-                xsum_test["36456002"],
-                xsum_test["24403775"],
-                xsum_test["32112735"],  # One direction split
-                xsum_test["36203675"],  # Dementia mobile game researchers
-                xsum_test["17996567"],
-                xsum_test["36396523"],
-                xsum_test["39368095"],
-                xsum_test["37066389"],  # "Omar Martinez"
-                xsum_test["37615223"],
-            ]
-        }
-    elif args.data_subset == "xent":
-        docs_to_summarize = {
-            sum_id: x["document"]
-            for sum_id, x in xsum_test.items()
-            if "xent" in summary_gold_metadata[sum_id]
-        }
-    elif "xent-" in args.data_subset:
+        docs_to_summarize = load_debug_subset(xsum_test)
+    elif args.data_subset == "xent-test":
+        docs_to_summarize = xent_test_summaries
+    elif "xent-test-" in args.data_subset:
         docs_to_summarize = {
             k: v
-            for k, v in list(
-                {
-                    sum_id: x["document"]
-                    for sum_id, x in xsum_test.items()
-                    if "xent" in summary_gold_metadata[sum_id]
-                }.items()
-            )[: int(args.data_subset.split("-")[1])]
+            for k, v in list(xent_test_summaries.items())[
+                : int(args.data_subset.split("-")[-1])
+            ]
         }
+    elif args.data_subset in ["test-anton", "test-daniel", "test"]:
+        test_set = load_test_set(xsum_test, summary_gold_metadata)
+        if "anton" in args.data_subset:
+            print("Loaded Anton's test subset")
+            test_set = test_set[:25]
+        elif "daniel" in args.data_subset:
+            print("Loaded Daniel's test subset")
+            test_set = test_set[25:50]
+        else:
+            print("Loaded full test set")
+        docs_to_summarize = {k: v for (k, v) in test_set}
     elif args.data_subset == "full":
         docs_to_summarize = {sum_id: x["document"] for sum_id, x in xsum_test.items()}
     else:
@@ -328,6 +323,7 @@ if __name__ == "__main__":
     results_by_sum_id = {}
     for sum_id in docs_to_summarize.keys():
         results_by_sum_id[sum_id] = {
+            "summary": "",
             "completed": False,
             "failed": False,
             ANNOTATION_LABELS["Factual"]: [],
@@ -380,6 +376,8 @@ if __name__ == "__main__":
                     bbc_id: gen_summaries[input_idx]
                     for bbc_id, input_idx in id_to_idx.items()
                 }
+                for sum_id, summary in gen_summaries_by_id.items():
+                    results_by_sum_id[sum_id]["summary"] = summary
 
                 #  Detect & classify entities
                 with Timer("Detecting & classifying entities"):
