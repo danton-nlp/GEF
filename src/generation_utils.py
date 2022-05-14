@@ -28,6 +28,13 @@ def load_model_and_tokenizer(path):
     )
 
 
+def load_xsum_with_mask_in_vocab():
+    model = AutoModelForSeq2SeqLM.from_pretrained("model-checkpoints/entfa-cmlm")
+    tokenizer = AutoTokenizer.from_pretrained("facebook/bart-large-xsum", mask_token="###")
+
+    return model, tokenizer
+
+
 def generate_summaries(
     model,
     tokenizer,

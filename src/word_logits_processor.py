@@ -90,15 +90,15 @@ class WordLogitsProcessor(LogitsProcessor):
                             backtrack_word = prev_char + backtrack_word
                         else:
                             backtrack_done = True
-                            break 
+                            break
                     prev_char_idx -= 1
                 prev_subword_idx -= 1
             self.words_to_check_by_input_idx[input_idx] += 1
             # Call validator to check whether the word is valid
             if not self.word_validator.is_valid_word(
                 backtrack_word,
-                input_idx, 
-                sequence, 
+                input_idx,
+                sequence,
                 beam_scores
             ):
                 return False
@@ -117,8 +117,8 @@ class WordLogitsProcessor(LogitsProcessor):
                 input_idx = beam_idx // self.num_beams
                 if not self.is_valid_beam(
                     input_idx,
-                    beam_input_ids, 
-                    idx.item(), 
+                    beam_input_ids,
+                    idx.item(),
                     scores[beam_idx]
                 ):
                     scores[beam_idx, :] = -float("inf")
@@ -128,9 +128,9 @@ class WordLogitsProcessor(LogitsProcessor):
                         prob.item(),
                     ))
                     blocked_beams_by_input_idx[input_idx] += 1
-        
+
         for input_idx, n_blocked in blocked_beams_by_input_idx.items():
             if n_blocked == self.num_beams:
                 self.failed_sequences.add(input_idx)
-        
+
         return scores
