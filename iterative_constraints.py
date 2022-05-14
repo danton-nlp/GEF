@@ -411,8 +411,7 @@ if __name__ == "__main__":
                         },
                     )
 
-                # Update results based on oracle labels
-                # TODO: leverage predicted labels
+                # Update results based on oracle labels & banned words based on predictions
                 for sum_id, labeled_entities in oracle_labeled_entities.items():
                     banned_phrases = banned_phrases_by_sum_id[sum_id]
                     no_constraints = True
@@ -420,8 +419,14 @@ if __name__ == "__main__":
                     for label in ANNOTATION_LABELS.values():
                         results_by_sum_id[sum_id][label] = []
                     for ent in labeled_entities:
-                        results_by_sum_id[sum_id][ent["label"]].append(ent)
-                        if ent["label"] == ANNOTATION_LABELS["Non-factual"]:
+                        # Use classifier label if classifier is loaded, otherwise use the oracle
+                        label = (
+                            ent["predicted_label"]
+                            if clf_factuality is not None
+                            else ent["label"]
+                        )
+                        results_by_sum_id[sum_id][label].append(ent)
+                        if label == ANNOTATION_LABELS["Non-factual"]:
                             no_constraints = False
                             if ent["ent"] not in banned_phrases:
                                 new_constraints += 1
@@ -434,15 +439,6 @@ if __name__ == "__main__":
                         results_by_sum_id[sum_id]["failed"] = True
 
                 if args.verbose:
-                    # TODO
-                    # print_results(
-                    #     "Batch Entity Stats",
-                    #     [
-                    #         x
-                    #         for x in results_by_sum_id.values()
-                    #         if x in gen_summaries_by_id
-                    #     ],
-                    # )
                     for sum_id, summary in gen_summaries_by_id.items():
                         print(f"[{sum_id}]: {summary}")
                         print(
