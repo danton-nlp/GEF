@@ -144,7 +144,6 @@ def compute_entitity_probability(
     return torch.prod(probs_of_entity_tokens).item()
 
 
-
 if __name__ == "__main__":
     dataset = load_xent("test")
 

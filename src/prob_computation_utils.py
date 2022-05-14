@@ -1,11 +1,5 @@
-from typing import Dict, List, Tuple, TypedDict
-
-
-class XEntExample(TypedDict):
-    source: str
-    reference: str
-    prediction: str
-    entities: List[Dict]
+from typing import List, Tuple
+from src.data_utils import XEntExample
 
 
 def build_causal_masked_inputs_and_targets(
