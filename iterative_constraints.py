@@ -72,9 +72,9 @@ def prompt_labeling(
                     f"What is the label of '{entity['ent']} (pos {entity['start']}:{entity['end']})?"
                 )
                 user_input = ""
-                while user_input not in ["0", "1", "U", "S"]:
+                while user_input not in ["0", "1", "I", "U", "S"]:
                     user_input = input(
-                        "Non-factual (0), Factual (1), Unknown (U) or Skip & save annotations (S)\n"
+                        "Non-factual (0), Factual (1), Intrinsic (I), Unknown (U) or Skip & save annotations (S)\n"
                     )
 
                 if user_input == "S":
@@ -82,6 +82,10 @@ def prompt_labeling(
                 elif user_input == "1":
                     annotation = entity.copy()
                     annotation["label"] = ANNOTATION_LABELS["Factual"]
+                    updated_annotations[sum_id].append(annotation)
+                elif user_input == "I":
+                    annotation = entity.copy()
+                    annotation["label"] = ANNOTATION_LABELS["Intrinsic"]
                     updated_annotations[sum_id].append(annotation)
                 elif user_input == "0":
                     annotation = entity.copy()
@@ -185,6 +189,7 @@ def compute_stats(results_by_sum_id):
             ANNOTATION_LABELS["Factual"]: 0,
             ANNOTATION_LABELS["Unknown"]: 0,
             ANNOTATION_LABELS["Non-hallucinated"]: 0,
+            ANNOTATION_LABELS["Intrinsic"]: 0,
         },
         "type": {},
     }
@@ -214,6 +219,7 @@ def compute_stats(results_by_sum_id):
                         ANNOTATION_LABELS["Factual"]: 0,
                         ANNOTATION_LABELS["Unknown"]: 0,
                         ANNOTATION_LABELS["Non-hallucinated"]: 0,
+                        ANNOTATION_LABELS["Intrinsic"]: 0,
                     }
                 entity_stats["type"][ent["type"]]["total"] += 1
                 entity_stats["type"][ent["type"]][label] += 1
@@ -330,6 +336,7 @@ if __name__ == "__main__":
             ANNOTATION_LABELS["Non-factual"]: [],
             ANNOTATION_LABELS["Unknown"]: [],
             ANNOTATION_LABELS["Non-hallucinated"]: [],
+            ANNOTATION_LABELS["Intrinsic"]: [],
         }
 
     while n_iterations < args.max_iterations:
@@ -413,9 +420,7 @@ if __name__ == "__main__":
                     for label in ANNOTATION_LABELS.values():
                         results_by_sum_id[sum_id][label] = []
                     for ent in labeled_entities:
-                        # TODO: handle Intrinsic Hallucination?
-                        if ent["label"] != "Intrinsic Hallucination":
-                            results_by_sum_id[sum_id][ent["label"]].append(ent)
+                        results_by_sum_id[sum_id][ent["label"]].append(ent)
                         if ent["label"] == ANNOTATION_LABELS["Non-factual"]:
                             no_constraints = False
                             if ent["ent"] not in banned_phrases:
