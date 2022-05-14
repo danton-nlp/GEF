@@ -1,34 +1,30 @@
-from typing import Callable, Dict, List, TypedDict
+from typing import Callable, Dict, List, TypedDict, Union
 import re
 
 
 MarkedEntity = TypedDict(
     "MarkedEntity",
-    {"ent": str, "type": str, "start": int, "end": int, "in_source": bool},
-)
-
-LabeledEntity = TypedDict(
-    "LabeledEntity",
     {
-        "ent": str,
-        "type": str,
-        "start": int,
-        "end": int,
+        "ent": str, 
+        "type": str, 
+        "start": int, 
+        "end": int, 
         "in_source": bool,
-        "label": str,
+        "label": Union[str, None],
+        "predicted_label": Union[str, None]
     },
 )
+
 MarkedEntityLookup = Dict[str, List[MarkedEntity]]
-LabeledEntityLookup = Dict[str, List[LabeledEntity]]
 
 
-def count_entities(entity_lookup: LabeledEntityLookup):
+def count_entities(entity_lookup: MarkedEntityLookup):
     return sum([len(x) for x in entity_lookup.values()])
 
 
 def filter_entities(
-    predicate_fn: Callable[[LabeledEntity], bool], entity_lookup: LabeledEntityLookup
-) -> LabeledEntityLookup:
+    predicate_fn: Callable[[MarkedEntity], bool], entity_lookup: MarkedEntityLookup
+) -> MarkedEntityLookup:
     return {
         sum_id: [x for x in labeled_entities if predicate_fn(x)]
         for sum_id, labeled_entities in entity_lookup.items()
