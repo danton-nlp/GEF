@@ -32,9 +32,11 @@ if __name__ == "__main__":
             continue
         xsum_id = xsum_doc["id"]
         summary_annotations[xsum_id] = {
-            "xent": entfa_sum["entities"]
+            "xent": {
+                entfa_sum["prediction"]: entfa_sum["entities"]
+            }
         }
 
     print(summary_annotations)
-    print(f"Missing {missing}, total: {len(summary_annotations)}")
+    print(f"Missing {missing}, persisted: {len(summary_annotations)}")
     store_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL, summary_annotations)
