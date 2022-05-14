@@ -1,12 +1,11 @@
 import pprint
-from functools import reduce
-from operator import mul
 from typing import Dict, List, Tuple, TypedDict
 
 import torch
 from transformers import BartForConditionalGeneration, BartTokenizer
 
-from data_utils import load_xent
+from src.data_utils import load_xent
+from src.generation_utils import load_model_and_tokenizer, load_xsum_with_mask_in_vocab
 
 
 class XEntExample(TypedDict):
@@ -20,7 +19,7 @@ class XEntExample(TypedDict):
 def compute_prior_probs(
     masked_inputs: List[str],
     targets: List[str],
-    entities: List[dict],
+    entities: List[str],
     prior_model_and_tokenizer: Tuple,
     verbose: bool = False,
 ) -> List[float]:
@@ -107,7 +106,7 @@ def compute_prior_and_posterior_probs(
     masked_inputs: List[str],
     targets: List[str],
     sources: List[str],
-    entities: List[dict],
+    entities: List[str],
     prior_model_and_tokenizer: Tuple[BartForConditionalGeneration, BartTokenizer],
     posterior_model_and_tokenizer: Tuple[BartForConditionalGeneration, BartTokenizer],
     verbose: bool = False,
@@ -133,22 +132,30 @@ def compute_prior_and_posterior_probs(
             print(f"{masked_input=}")
             print(f"{target=}")
 
-        prior_input_tokenized = prior_model_and_tokenizer[1].encode(
-            masked_input, return_tensors="pt"
-        ).squeeze(0)
-        posterior_input_tokenized = posterior_model_and_tokenizer[1].encode(
-            masked_input,
-            text_pair=source,
-            return_tensors="pt",
-        ).squeeze(0)
+        prior_input_tokenized = (
+            prior_model_and_tokenizer[1]
+            .encode(masked_input, return_tensors="pt")
+            .squeeze(0)
+        )
+        posterior_input_tokenized = (
+            posterior_model_and_tokenizer[1]
+            .encode(
+                masked_input,
+                text_pair=source,
+                return_tensors="pt",
+            )
+            .squeeze(0)
+        )
 
         with torch.no_grad():
             prior_entity_prob = compute_entitity_probability(
                 input_tokenized=prior_input_tokenized,
-                target_tokenized=prior_model_and_tokenizer[1].encode(target, return_tensors="pt").squeeze(0),
-                entity_tokenized=prior_model_and_tokenizer[1].encode(
-                    f" {entity}", return_tensors="pt", add_special_tokens=False
-                ).squeeze(0),
+                target_tokenized=prior_model_and_tokenizer[1]
+                .encode(target, return_tensors="pt")
+                .squeeze(0),
+                entity_tokenized=prior_model_and_tokenizer[1]
+                .encode(f" {entity}", return_tensors="pt", add_special_tokens=False)
+                .squeeze(0),
                 model=prior_model_and_tokenizer[0],
                 tokenizer=prior_model_and_tokenizer[1],
                 verbose=verbose,
@@ -156,10 +163,12 @@ def compute_prior_and_posterior_probs(
 
             posterior_entity_prob = compute_entitity_probability(
                 input_tokenized=posterior_input_tokenized,
-                target_tokenized=posterior_model_and_tokenizer[1].encode(target, return_tensors="pt").squeeze(0),
-                entity_tokenized=posterior_model_and_tokenizer[1].encode(
-                    f" {entity}", return_tensors="pt", add_special_tokens=False
-                ).squeeze(0),
+                target_tokenized=posterior_model_and_tokenizer[1]
+                .encode(target, return_tensors="pt")
+                .squeeze(0),
+                entity_tokenized=posterior_model_and_tokenizer[1]
+                .encode(f" {entity}", return_tensors="pt", add_special_tokens=False)
+                .squeeze(0),
                 model=posterior_model_and_tokenizer[0],
                 tokenizer=posterior_model_and_tokenizer[1],
                 verbose=verbose,
@@ -174,7 +183,7 @@ def compute_entitity_probability(
     target_tokenized: torch.Tensor,
     entity_tokenized: torch.Tensor,
     model: BartForConditionalGeneration,
-    tokenizer = BartTokenizer,
+    tokenizer=BartTokenizer,
     verbose: bool = False,
 ) -> float:
     def prefix_allowed_tokens_fn(_batch_id, input_ids):
@@ -246,7 +255,7 @@ def build_causal_masked_inputs_and_targets(
 
 def build_masked_inputs_and_targets(
     example: XEntExample,
-) -> Tuple[List[str], List[str], List[str]]:
+) -> Tuple[List[str], List[str], List[str], List[str]]:
     """
     For a given example from the XEnt dataset, return a tuple of 4 lists:
     - list of non-causal masked inputs
@@ -278,11 +287,22 @@ def build_masked_inputs_and_targets(
 
 
 if __name__ == "__main__":
-    tokenizer = BartTokenizer.from_pretrained("facebook/bart-large")
-    model = BartForConditionalGeneration.from_pretrained("facebook/bart-large")
-
     dataset = load_xent("test")
 
+    example_entity_probs = {}
     for idx, example in enumerate(dataset):
-        inputs, targets, entities = build_causal_masked_inputs_and_targets(example)
-        prior_probs = compute_prior_probs(inputs, targets, entities, (model, tokenizer))
+        if idx == 3:
+            break
+        inputs, targets, entities, sources = build_masked_inputs_and_targets(example)
+
+        entity_probs = compute_prior_and_posterior_probs(
+            masked_inputs=inputs,
+            targets=targets,
+            sources=sources,
+            entities=entities,
+            prior_model_and_tokenizer=load_model_and_tokenizer('facebook/bart-large'),
+            posterior_model_and_tokenizer=load_xsum_with_mask_in_vocab(),
+            verbose=True,
+        )
+
+        # prior_probs = compute_prior_probs(inputs, targets, entities, (model, tokenizer))
