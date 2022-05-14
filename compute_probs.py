@@ -10,7 +10,7 @@ from src.generation_utils import load_model_and_tokenizer, load_xsum_with_mask_i
 from src.prob_computation_utils import build_masked_inputs_and_targets
 
 
-def compute_prior_and_posterior_probs(
+def compute_probs_for_summary(
     masked_inputs: List[str],
     targets: List[str],
     sources: List[str],
@@ -18,6 +18,7 @@ def compute_prior_and_posterior_probs(
     prior_model_and_tokenizer: Tuple[BartForConditionalGeneration, BartTokenizer],
     posterior_model_and_tokenizer: Tuple[BartForConditionalGeneration, BartTokenizer],
     verbose: bool = False,
+    device=torch.device("cuda" if torch.cuda.is_available() else "cpu"),
 ) -> List[List[float]]:
     """
     Compute the joint prior and posterior probabilities of an masked entity, given
@@ -29,12 +30,15 @@ def compute_prior_and_posterior_probs(
     2. The joint prior probability of all tokens in the masked out entity.
     2. The joint posterior probability of all tokens in the masked out entity.
     """
+
     if len(masked_inputs) != len(targets):
         raise ValueError("number of inputs is not the same as the number of targets")
 
     entity_probs: List[List[float]] = []
 
+    # TODO: batch here...
     needed_data = zip(masked_inputs, targets, sources, entities)
+
     for masked_input, target, source, entity in needed_data:
         if verbose:
             print(f"{masked_input=}")
@@ -44,7 +48,9 @@ def compute_prior_and_posterior_probs(
             prior_model_and_tokenizer[1]
             .encode(masked_input, return_tensors="pt")
             .squeeze(0)  # type: ignore
+            .to(device)
         )
+
         posterior_input_tokenized = (
             posterior_model_and_tokenizer[1]
             .encode(
@@ -54,21 +60,41 @@ def compute_prior_and_posterior_probs(
                 return_tensors="pt",
             )
             .squeeze(0)  # type: ignore
+            .to(device)
+        )
+
+        prior_target_tokenized = (
+            prior_model_and_tokenizer[1]
+            .encode(target, return_tensors="pt")
+            .squeeze(0)  # type: ignore
+            .to(device)
+        )
+
+        posterior_target_tokenized = (
+            posterior_model_and_tokenizer[1]
+            .encode(target, return_tensors="pt")
+            .squeeze(0)  # type: ignore
+            .to(device)
+        )
+
+        prior_entity_tokenized = (
+            prior_model_and_tokenizer[1]
+            .encode(f" {entity}", return_tensors="pt", add_special_tokens=False)
+            .squeeze(0)  # type: ignore
+            .to(device)
+        )
+        posterior_entity_tokenized = (
+            posterior_model_and_tokenizer[1]
+            .encode(f" {entity}", return_tensors="pt", add_special_tokens=False)
+            .squeeze(0)  # type: ignore
+            .to(device)
         )
 
         with torch.no_grad():
             prior_entity_prob = compute_entitity_probability(
                 input_tokenized=prior_input_tokenized,
-                target_tokenized=(
-                    prior_model_and_tokenizer[1]
-                    .encode(target, return_tensors="pt")
-                    .squeeze(0)  # type: ignore
-                ),
-                entity_tokenized=(
-                    prior_model_and_tokenizer[1]
-                    .encode(f" {entity}", return_tensors="pt", add_special_tokens=False)
-                    .squeeze(0)  # type: ignore
-                ),
+                target_tokenized=prior_target_tokenized,
+                entity_tokenized=prior_entity_tokenized,
                 model=prior_model_and_tokenizer[0],
                 tokenizer=prior_model_and_tokenizer[1],
                 verbose=verbose,
@@ -76,20 +102,13 @@ def compute_prior_and_posterior_probs(
 
             posterior_entity_prob = compute_entitity_probability(
                 input_tokenized=posterior_input_tokenized,
-                target_tokenized=(
-                    posterior_model_and_tokenizer[1]
-                    .encode(target, return_tensors="pt")
-                    .squeeze(0)  # type: ignore
-                ),
-                entity_tokenized=(
-                    posterior_model_and_tokenizer[1]
-                    .encode(f" {entity}", return_tensors="pt", add_special_tokens=False)
-                    .squeeze(0)  # type: ignore
-                ),
+                target_tokenized=posterior_target_tokenized,
+                entity_tokenized=posterior_entity_tokenized,
                 model=posterior_model_and_tokenizer[0],
                 tokenizer=posterior_model_and_tokenizer[1],  # type: ignore
                 verbose=verbose,
             )
+
         entity_probs.append([prior_entity_prob, posterior_entity_prob])
 
     return entity_probs
@@ -157,7 +176,7 @@ if __name__ == "__main__":
             entity_labels,
         ) = build_masked_inputs_and_targets(example)
 
-        entity_probs = compute_prior_and_posterior_probs(
+        entity_probs = compute_probs_for_summary(
             masked_inputs=inputs,
             targets=targets,
             sources=sources,
