@@ -141,8 +141,8 @@ def compute_prior_and_posterior_probs(
         posterior_input_tokenized = (
             posterior_model_and_tokenizer[1]
             .encode(
-                masked_input,
-                text_pair=source,
+                "<s>" + masked_input.replace("<mask>", "###") + "</s>" + source,
+                add_special_tokens=False,
                 truncation=True,
                 return_tensors="pt",
             )
