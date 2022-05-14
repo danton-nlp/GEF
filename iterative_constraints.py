@@ -1,6 +1,6 @@
 from collections import defaultdict
 import argparse
-from typing import Dict, List
+from typing import Dict
 from src.data_utils import XSumDoc, load_xsum_dict
 from src.detect_entities import detect_entities, is_entity_contained
 from copy import deepcopy
@@ -94,18 +94,22 @@ SUMTOOL_DATASET = "xsum"
 SUMTOOL_MODEL_GOLD = "gold"
 
 
-def persist_updated_annotations(old_metadata, updated_annotations):
+def persist_updated_annotations(old_metadata, updated_annotations, summaries_by_id):
     updated_metadata = old_metadata.copy()
     for sum_id, new_annotations in updated_annotations.items():
         if sum_id in old_metadata:
-            old_annotations = (
+            summary = summaries_by_id[sum_id]
+            our_annotations = (
                 updated_metadata[sum_id]["our_annotations"]
                 if "our_annotations" in updated_metadata[sum_id]
-                else []
+                else {}
             )
-            updated_metadata[sum_id]["our_annotations"] = (
-                old_annotations + new_annotations
-            )
+            if summary not in our_annotations:
+                our_annotations[summary] = []
+
+            for annot in new_annotations:
+                our_annotations[summary].append(annot)
+            updated_metadata[sum_id]["our_annotations"] = our_annotations
 
     store_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD, updated_metadata)
     return updated_metadata
@@ -115,7 +119,8 @@ def get_entity_annotations(metadata, sum_id):
     annots = []
     for key in ["xent", "our_annotations"]:
         if key in metadata[sum_id]:
-            annots += metadata[sum_id][key]
+            for ents in metadata[sum_id][key].values():
+                annots += ents
     return annots
 
 
@@ -410,7 +415,7 @@ if __name__ == "__main__":
                     for label in ANNOTATION_LABELS.values():
                         results_by_sum_id[sum_id][label] = []
                     for ent in labeled_entities:
-                        # TODO: handle?
+                        # TODO: handle Intrinsic Hallucination?
                         if ent["label"] != "Intrinsic Hallucination":
                             results_by_sum_id[sum_id][ent["label"]].append(ent)
                         if ent["label"] == ANNOTATION_LABELS["Non-factual"]:
@@ -467,7 +472,9 @@ if __name__ == "__main__":
                             unknown_entities, xsum_test, gen_summaries_by_id
                         )
                         summary_gold_metadata = persist_updated_annotations(
-                            summary_gold_metadata, updated_annotations
+                            summary_gold_metadata,
+                            updated_annotations,
+                            gen_summaries_by_id,
                         )
                         if args.verbose:
                             print("Updated annotations:", dict(updated_annotations))
@@ -476,6 +483,7 @@ if __name__ == "__main__":
                                 if annot["label"] == ANNOTATION_LABELS["Non-factual"]:
                                     new_constraints += 1
                                     banned_phrases_by_sum_id[sum_id].add(annot["ent"])
+                                    results_by_sum_id[sum_id]["completed"] = False
                     else:
                         should_prompt_labeling = False
 
