@@ -7,7 +7,7 @@ from compute_probs import (
     compute_prior_probs,
 )
 
-from src.generation_utils import load_model_and_tokenizer
+from src.generation_utils import load_model_and_tokenizer, load_xsum_with_mask_in_vocab
 from transformers import BartConfig
 
 
@@ -19,12 +19,7 @@ def bart_large():
 
 @pytest.fixture(scope="session")
 def bart_large_xsum():
-    print("Loading model...")
-    model, tokenizer = load_model_and_tokenizer("facebook/bart-large-xsum")
-
-    # adding a mask token to the xsum fine-tuned model
-    model.resize_token_embeddings(50264+1)
-    return model, tokenizer
+    return load_xsum_with_mask_in_vocab()
 
 
 @pytest.fixture(scope="module")
@@ -404,7 +399,7 @@ def test_prior_and_posterior_masked(
     bart_large_xsum,
     evaluation_repro_data
 ):
-    inputs, targets, entities, sources = evaluation_repro_data
+    inputs, targets, entities, sources, _ = evaluation_repro_data
 
     entity_probs = compute_prior_and_posterior_probs(
         masked_inputs=inputs,
