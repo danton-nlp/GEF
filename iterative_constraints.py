@@ -5,11 +5,13 @@ from src.data_utils import XSumDoc, load_xsum_dict
 from src.detect_entities import detect_entities, is_entity_contained
 from copy import deepcopy
 from src.entity_utils import (
-    LabeledEntity,
-    LabeledEntityLookup,
     MarkedEntityLookup,
     count_entities,
     filter_entities,
+)
+from src.entity_factuality import (
+    EntityFactualityClassifier,
+    ANNOTATION_LABELS,
 )
 from src.generation_utils import (
     SUMMARY_FAILED_GENERATION,
@@ -24,21 +26,13 @@ import json
 import time
 
 
-ANNOTATION_LABELS = {
-    "Non-factual": "Non-factual Hallucination",
-    "Factual": "Factual Hallucination",
-    "Non-hallucinated": "Non-hallucinated",
-    "Unknown": "Unknown",
-}
-
-
-def oracle_classify_entities(
+def oracle_label_entities(
     summary_entities: MarkedEntityLookup,
-    annotations: LabeledEntityLookup,
-) -> LabeledEntityLookup:
-    labeled_entities: LabeledEntityLookup = {}
+    annotations: MarkedEntityLookup,
+) -> MarkedEntityLookup:
+    labeled_entities: MarkedEntityLookup = {}
     for bbc_id, marked_entities in summary_entities.items():
-        to_be_labeled: List[LabeledEntity] = [x.copy() for x in marked_entities]
+        to_be_labeled = [x.copy() for x in marked_entities]
         for x in to_be_labeled:
             x["label"] = (
                 "Unknown"
@@ -56,10 +50,10 @@ def oracle_classify_entities(
 
 
 def prompt_labeling(
-    entity_lookup: LabeledEntityLookup,
+    entity_lookup: MarkedEntityLookup,
     xsum_test: Dict[str, XSumDoc],
     generated_summaries: Dict[str, str],
-) -> LabeledEntityLookup:
+) -> MarkedEntityLookup:
     updated_annotations = defaultdict(lambda: list())
     for sum_id, labeled_entities in entity_lookup.items():
         printed_sum = False
@@ -136,7 +130,7 @@ def persist_iteration(
     oracle_labeled_entities,
     generation_metadata,
     banned_phrases_by_sum_id,
-    iteration_stats
+    iteration_stats,
 ):
     if iteration_idx not in iteration_log:
         iteration_log[iteration_idx] = {"summaries": {}}
@@ -185,9 +179,9 @@ def compute_stats(results_by_sum_id):
             ANNOTATION_LABELS["Non-factual"]: 0,
             ANNOTATION_LABELS["Factual"]: 0,
             ANNOTATION_LABELS["Unknown"]: 0,
-            ANNOTATION_LABELS["Non-hallucinated"]: 0
+            ANNOTATION_LABELS["Non-hallucinated"]: 0,
         },
-        "type": {}
+        "type": {},
     }
     for results in results_by_sum_id.values():
         if results["completed"]:
@@ -214,7 +208,7 @@ def compute_stats(results_by_sum_id):
                         ANNOTATION_LABELS["Non-factual"]: 0,
                         ANNOTATION_LABELS["Factual"]: 0,
                         ANNOTATION_LABELS["Unknown"]: 0,
-                        ANNOTATION_LABELS["Non-hallucinated"]: 0
+                        ANNOTATION_LABELS["Non-hallucinated"]: 0,
                     }
                 entity_stats["type"][ent["type"]]["total"] += 1
                 entity_stats["type"][ent["type"]][label] += 1
@@ -258,6 +252,7 @@ def split_batches(lst, size):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument("--pickled_classifier", type=str, default="")
     parser.add_argument("--model_path", type=str, default="facebook/bart-large-xsum")
     parser.add_argument("--max_iterations", type=int, default=5)
     parser.add_argument("--annotate", type=bool, default=False)
@@ -274,6 +269,11 @@ if __name__ == "__main__":
     summary_gold_metadata = get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD)
     xsum_test = load_xsum_dict("test")
     num_beams = 4
+
+    if args.pickled_classifier != "":
+        clf_factuality = EntityFactualityClassifier(args.pickled_classifier)
+    else:
+        clf_factuality = None
 
     if args.data_subset == "debug":
         docs_to_summarize = {
@@ -384,8 +384,14 @@ if __name__ == "__main__":
                             gen_summaries[input_idx], model_input[input_idx]
                         )
 
-                    # See if NER is factual according to model (oracle / classification)
-                    oracle_labeled_entities = oracle_classify_entities(
+                    # Set predicted labels from classifier
+                    if clf_factuality is not None:
+                        summary_entities = clf_factuality.classify_entities(
+                            summary_entities, gen_summaries_by_id
+                        )
+
+                    # Set labels from oracle
+                    oracle_labeled_entities = oracle_label_entities(
                         summary_entities,
                         {
                             sum_id: get_entity_annotations(
@@ -396,6 +402,7 @@ if __name__ == "__main__":
                     )
 
                 # Update results based on oracle labels
+                # TODO: leverage predicted labels
                 for sum_id, labeled_entities in oracle_labeled_entities.items():
                     banned_phrases = banned_phrases_by_sum_id[sum_id]
                     no_constraints = True
@@ -483,7 +490,7 @@ if __name__ == "__main__":
                     oracle_labeled_entities,
                     generation_metadata,
                     prev_banned_phrases_by_sum_id,
-                    compute_stats(results_by_sum_id)
+                    compute_stats(results_by_sum_id),
                 )
 
                 print_results(
