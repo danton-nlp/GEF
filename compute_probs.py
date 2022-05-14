@@ -1,5 +1,6 @@
 import pprint
 from typing import Dict, List, Tuple, TypedDict
+from tqdm import tqdm
 
 import torch
 from transformers import BartForConditionalGeneration, BartTokenizer
@@ -110,7 +111,7 @@ def compute_prior_and_posterior_probs(
     prior_model_and_tokenizer: Tuple[BartForConditionalGeneration, BartTokenizer],
     posterior_model_and_tokenizer: Tuple[BartForConditionalGeneration, BartTokenizer],
     verbose: bool = False,
-) -> Tuple[List[float], List[float]]:
+) -> List[List[float]]:
     """
     Compute the joint prior and posterior probabilities of an masked entity, given
     a possible causal (left context only) or non-causal (left and right
@@ -124,7 +125,7 @@ def compute_prior_and_posterior_probs(
     if len(masked_inputs) != len(targets):
         raise ValueError("number of inputs is not the same as the number of targets")
 
-    entity_probs = []
+    entity_probs: List[List[float]] = []
 
     needed_data = zip(masked_inputs, targets, sources, entities)
     for masked_input, target, source, entity in needed_data:
@@ -264,13 +265,14 @@ def build_causal_masked_inputs_and_targets(
 
 def build_masked_inputs_and_targets(
     example: XEntExample,
-) -> Tuple[List[str], List[str], List[str], List[str]]:
+) -> Tuple[List[str], List[str], List[str], List[str], List[str]]:
     """
     For a given example from the XEnt dataset, return a tuple of 4 lists:
     - list of non-causal masked inputs
     - list of targets (summary with masked filled in)
     - list of masked entities
     - list of source articles for each summary
+    - list of entity labels
 
     Example output:
     (
@@ -280,7 +282,7 @@ def build_masked_inputs_and_targets(
 
     """
 
-    inputs, targets, entities, sources = [], [], [], []
+    inputs, targets, entities, sources, labels = [], [], [], [], []
     prediction = example["prediction"]
 
     for entity in example["entities"]:
@@ -291,18 +293,23 @@ def build_masked_inputs_and_targets(
         targets.append(prediction)
         entities.append(entity["ent"])
         sources.append(example["source"])
+        labels.append(entity["label"])
 
-    return inputs, targets, entities, sources
+    return inputs, targets, entities, sources, labels
 
 
 if __name__ == "__main__":
     dataset = load_xent("test")
 
     example_entity_probs = {}
-    for idx, example in enumerate(dataset):
-        if idx == 3:
-            break
-        inputs, targets, entities, sources = build_masked_inputs_and_targets(example)
+    for idx, example in enumerate(tqdm(dataset[3:10])):
+        (
+            inputs,
+            targets,
+            entities,
+            sources,
+            entity_labels,
+        ) = build_masked_inputs_and_targets(example)
 
         entity_probs = compute_prior_and_posterior_probs(
             masked_inputs=inputs,
@@ -311,7 +318,11 @@ if __name__ == "__main__":
             entities=entities,
             prior_model_and_tokenizer=load_model_and_tokenizer("facebook/bart-large"),
             posterior_model_and_tokenizer=load_xsum_with_mask_in_vocab(),
-            verbose=True,
+            # verbose=True,
+        )
+
+        pprint.PrettyPrinter(indent=4).pprint(
+            list(zip(entities, entity_labels, entity_probs))
         )
 
         # prior_probs = compute_prior_probs(inputs, targets, entities, (model, tokenizer))
