@@ -1,5 +1,5 @@
 import pprint
-from typing import Dict, List, Tuple, TypedDict
+from typing import List, Tuple
 from tqdm import tqdm
 
 import torch
@@ -7,13 +7,7 @@ from transformers import BartForConditionalGeneration, BartTokenizer
 
 from src.data_utils import load_xent
 from src.generation_utils import load_model_and_tokenizer, load_xsum_with_mask_in_vocab
-
-
-class XEntExample(TypedDict):
-    source: str
-    reference: str
-    prediction: str
-    entities: List[Dict]
+from src.prob_computation_utils import build_masked_inputs_and_targets
 
 
 def compute_prior_and_posterior_probs(
@@ -150,66 +144,6 @@ def compute_entitity_probability(
     return torch.prod(probs_of_entity_tokens).item()
 
 
-def build_causal_masked_inputs_and_targets(
-    example: XEntExample,
-) -> Tuple[List[str], List[str], List[str]]:
-    """
-    For a given example from the XEnt dataset, return a tuple of 2 lists:
-    a list of features and targets respectively for a causal mask filling task.
-
-    Example output:
-    (
-        ['Sydney has marked the first anniversary of the siege at the <mask>'],
-        ['Sydney has marked the first anniversary of the siege at the Waverley']
-    )
-
-    """
-
-    inputs, targets, entities = [], [], []
-    prediction = example["prediction"]
-
-    for entity in example["entities"]:
-        inputs.append(prediction[0 : entity["start"]] + "<mask>")
-        targets.append(prediction[: entity["end"]])
-        entities.append(entity["ent"])
-
-    return inputs, targets, entities
-
-
-def build_masked_inputs_and_targets(
-    example: XEntExample,
-) -> Tuple[List[str], List[str], List[str], List[str], List[str]]:
-    """
-    For a given example from the XEnt dataset, return a tuple of 4 lists:
-    - list of non-causal masked inputs
-    - list of targets (summary with masked filled in)
-    - list of masked entities
-    - list of source articles for each summary
-    - list of entity labels
-
-    Example output:
-    (
-        ['Sydney has marked the first anniversary of the siege at the <mask>'],
-        ['Sydney has marked the first anniversary of the siege at the Waverley']
-    )
-
-    """
-
-    inputs, targets, entities, sources, labels = [], [], [], [], []
-    prediction = example["prediction"]
-
-    for entity in example["entities"]:
-        masked_input = (
-            prediction[0 : entity["start"]] + "<mask>" + prediction[entity["end"] :]
-        )
-        inputs.append(masked_input)
-        targets.append(prediction)
-        entities.append(entity["ent"])
-        sources.append(example["source"])
-        labels.append(entity["label"])
-
-    return inputs, targets, entities, sources, labels
-
 
 if __name__ == "__main__":
     dataset = load_xent("test")
@@ -231,11 +165,8 @@ if __name__ == "__main__":
             entities=entities,
             prior_model_and_tokenizer=load_model_and_tokenizer("facebook/bart-large"),
             posterior_model_and_tokenizer=load_xsum_with_mask_in_vocab(),
-            # verbose=True,
         )
 
         pprint.PrettyPrinter(indent=4).pprint(
             list(zip(entities, entity_labels, entity_probs))
         )
-
-        # prior_probs = compute_prior_probs(inputs, targets, entities, (model, tokenizer))
