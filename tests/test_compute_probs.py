@@ -1,6 +1,6 @@
 import pytest
 
-from src.compute_probs import (
+from compute_probs import (
     build_causal_masked_inputs_and_targets,
     build_masked_inputs_and_targets,
     compute_prior_and_posterior_probs,

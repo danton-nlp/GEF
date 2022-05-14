@@ -135,27 +135,32 @@ def compute_prior_and_posterior_probs(
         prior_input_tokenized = (
             prior_model_and_tokenizer[1]
             .encode(masked_input, return_tensors="pt")
-            .squeeze(0)
+            .squeeze(0)  # type: ignore
         )
         posterior_input_tokenized = (
             posterior_model_and_tokenizer[1]
             .encode(
                 masked_input,
                 text_pair=source,
+                truncation=True,
                 return_tensors="pt",
             )
-            .squeeze(0)
+            .squeeze(0)  # type: ignore
         )
 
         with torch.no_grad():
             prior_entity_prob = compute_entitity_probability(
                 input_tokenized=prior_input_tokenized,
-                target_tokenized=prior_model_and_tokenizer[1]
-                .encode(target, return_tensors="pt")
-                .squeeze(0),
-                entity_tokenized=prior_model_and_tokenizer[1]
-                .encode(f" {entity}", return_tensors="pt", add_special_tokens=False)
-                .squeeze(0),
+                target_tokenized=(
+                    prior_model_and_tokenizer[1]
+                    .encode(target, return_tensors="pt")
+                    .squeeze(0)  # type: ignore
+                ),
+                entity_tokenized=(
+                    prior_model_and_tokenizer[1]
+                    .encode(f" {entity}", return_tensors="pt", add_special_tokens=False)
+                    .squeeze(0)  # type: ignore
+                ),
                 model=prior_model_and_tokenizer[0],
                 tokenizer=prior_model_and_tokenizer[1],
                 verbose=verbose,
@@ -163,14 +168,18 @@ def compute_prior_and_posterior_probs(
 
             posterior_entity_prob = compute_entitity_probability(
                 input_tokenized=posterior_input_tokenized,
-                target_tokenized=posterior_model_and_tokenizer[1]
-                .encode(target, return_tensors="pt")
-                .squeeze(0),
-                entity_tokenized=posterior_model_and_tokenizer[1]
-                .encode(f" {entity}", return_tensors="pt", add_special_tokens=False)
-                .squeeze(0),
+                target_tokenized=(
+                    posterior_model_and_tokenizer[1]
+                    .encode(target, return_tensors="pt")
+                    .squeeze(0)  # type: ignore
+                ),
+                entity_tokenized=(
+                    posterior_model_and_tokenizer[1]
+                    .encode(f" {entity}", return_tensors="pt", add_special_tokens=False)
+                    .squeeze(0)  # type: ignore
+                ),
                 model=posterior_model_and_tokenizer[0],
-                tokenizer=posterior_model_and_tokenizer[1],
+                tokenizer=posterior_model_and_tokenizer[1],  # type: ignore
                 verbose=verbose,
             )
         entity_probs.append([prior_entity_prob, posterior_entity_prob])
@@ -300,7 +309,7 @@ if __name__ == "__main__":
             targets=targets,
             sources=sources,
             entities=entities,
-            prior_model_and_tokenizer=load_model_and_tokenizer('facebook/bart-large'),
+            prior_model_and_tokenizer=load_model_and_tokenizer("facebook/bart-large"),
             posterior_model_and_tokenizer=load_xsum_with_mask_in_vocab(),
             verbose=True,
         )

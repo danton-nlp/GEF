@@ -28,6 +28,15 @@ def load_model_and_tokenizer(path):
     )
 
 
+def load_xsum_with_mask_in_vocab():
+    model, tokenizer = load_model_and_tokenizer("facebook/bart-large-xsum")
+
+    # adding a mask token to the xsum fine-tuned model
+    model.resize_token_embeddings(model.config.vocab_size + 1)
+
+    return model, tokenizer
+
+
 def generate_summaries(
     model,
     tokenizer,
