@@ -1,0 +1,4037 @@
+{
+  "timestamp": 1652565363.0762188,
+  "args": {
+    "pickled_classifier": "",
+    "model_path": "facebook/bart-large-xsum",
+    "max_iterations": 5,
+    "annotate": false,
+    "verbose": false,
+    "batch_size": 4,
+    "data_subset": "test"
+  },
+  "iterations": {
+    "0": {
+      "summaries": {
+        "34320852": {
+          "banned_phrases": [],
+          "summary": "The Scottish Football Association (SFA) is considering the future of its performance school programme, according to chief executive Martin McClair.",
+          "generation_metadata": {
+            "score": -0.6979170441627502,
+            "dropped_seqs": [],
+            "n_words_checked": 97
+          },
+          "labeled_entities": [
+            {
+              "ent": "The Scottish Football Association",
+              "type": "ORG",
+              "start": 0,
+              "end": 33,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "SFA",
+              "type": "ORG",
+              "start": 35,
+              "end": 38,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Martin",
+              "type": "PERSON",
+              "start": 132,
+              "end": 138,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "McClair",
+              "type": "PERSON",
+              "start": 139,
+              "end": 146,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "36396523": {
+          "banned_phrases": [],
+          "summary": "Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America.",
+          "generation_metadata": {
+            "score": -0.45060160756111145,
+            "dropped_seqs": [],
+            "n_words_checked": 85
+          },
+          "labeled_entities": [
+            {
+              "ent": "Brazil",
+              "type": "GPE",
+              "start": 0,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kaka",
+              "type": "PERSON",
+              "start": 18,
+              "end": 22,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "next month's",
+              "type": "DATE",
+              "start": 42,
+              "end": 54,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "World Cup",
+              "type": "EVENT",
+              "start": 64,
+              "end": 73,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "South America",
+              "type": "LOC",
+              "start": 77,
+              "end": 90,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "32997697": {
+          "banned_phrases": [],
+          "summary": "An extra \u00a31.1bn will be needed to provide the same level of care for older and disabled people this year, a survey suggests.",
+          "generation_metadata": {
+            "score": -0.5613412857055664,
+            "dropped_seqs": [],
+            "n_words_checked": 106
+          },
+          "labeled_entities": [
+            {
+              "ent": "this year",
+              "type": "DATE",
+              "start": 95,
+              "end": 104,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "24403775": {
+          "banned_phrases": [],
+          "summary": "Villagers in Shropshire are calling for the reopening of a dual carriageway next to Stonehenge.",
+          "generation_metadata": {
+            "score": -0.5598416924476624,
+            "dropped_seqs": [],
+            "n_words_checked": 84
+          },
+          "labeled_entities": [
+            {
+              "ent": "Shropshire",
+              "type": "GPE",
+              "start": 13,
+              "end": 23,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Stonehenge",
+              "type": "FAC",
+              "start": 84,
+              "end": 94,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "32603596": {
+          "banned_phrases": [],
+          "summary": "A court in India has begun hearing the case against Bollywood star Salman Khan over the death of a policeman in a hit-and-run crash.",
+          "generation_metadata": {
+            "score": -0.4454796612262726,
+            "dropped_seqs": [],
+            "n_words_checked": 108
+          },
+          "labeled_entities": [
+            {
+              "ent": "India",
+              "type": "GPE",
+              "start": 11,
+              "end": 16,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Bollywood",
+              "type": "ORG",
+              "start": 52,
+              "end": 61,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Salman",
+              "type": "PERSON",
+              "start": 67,
+              "end": 73,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Khan",
+              "type": "PERSON",
+              "start": 74,
+              "end": 78,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "38916990": {
+          "banned_phrases": [],
+          "summary": "The brother of one of the victims of Bloody Sunday has criticised plans for a march by former soldiers.",
+          "generation_metadata": {
+            "score": -0.5626024007797241,
+            "dropped_seqs": [],
+            "n_words_checked": 105
+          },
+          "labeled_entities": [
+            {
+              "ent": "one",
+              "type": "CARDINAL",
+              "start": 15,
+              "end": 18,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Sunday",
+              "type": "DATE",
+              "start": 44,
+              "end": 50,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "33262593": {
+          "banned_phrases": [],
+          "summary": "A World War Two fighter jet that was used in the Gulf War has been put up for sale by two ex-RAF engineers.",
+          "generation_metadata": {
+            "score": -0.6056541800498962,
+            "dropped_seqs": [],
+            "n_words_checked": 109
+          },
+          "labeled_entities": [
+            {
+              "ent": "World War Two",
+              "type": "EVENT",
+              "start": 2,
+              "end": 15,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "the Gulf War",
+              "type": "EVENT",
+              "start": 45,
+              "end": 57,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "two",
+              "type": "CARDINAL",
+              "start": 86,
+              "end": 89,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "RAF",
+              "type": "ORG",
+              "start": 93,
+              "end": 96,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "36456002": {
+          "banned_phrases": [],
+          "summary": "Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final World Cup warm-up.",
+          "generation_metadata": {
+            "score": -0.36631321907043457,
+            "dropped_seqs": [],
+            "n_words_checked": 97
+          },
+          "labeled_entities": [
+            {
+              "ent": "Romelu",
+              "type": "PERSON",
+              "start": 0,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Lukaku",
+              "type": "PERSON",
+              "start": 7,
+              "end": 13,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Belgium",
+              "type": "GPE",
+              "start": 40,
+              "end": 47,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Norway",
+              "type": "GPE",
+              "start": 73,
+              "end": 79,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "World Cup",
+              "type": "EVENT",
+              "start": 95,
+              "end": 104,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "26483783": {
+          "banned_phrases": [],
+          "summary": "Volunteers on the Isle of Man are being urged to help clean up the island's beaches.",
+          "generation_metadata": {
+            "score": -0.46318766474723816,
+            "dropped_seqs": [],
+            "n_words_checked": 82
+          },
+          "labeled_entities": []
+        },
+        "37628523": {
+          "banned_phrases": [],
+          "summary": "Three Syrian refugees who overpowered a suspected terror suspect in the German city of Leipzig are being hailed as heroes by the country's media.",
+          "generation_metadata": {
+            "score": -0.6006825566291809,
+            "dropped_seqs": [],
+            "n_words_checked": 99
+          },
+          "labeled_entities": [
+            {
+              "ent": "Three",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 5,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Syrian",
+              "type": "NORP",
+              "start": 6,
+              "end": 12,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "German",
+              "type": "NORP",
+              "start": 72,
+              "end": 78,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Leipzig",
+              "type": "GPE",
+              "start": 87,
+              "end": 94,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35516899": {
+          "banned_phrases": [],
+          "summary": "David Cameron's EU reform deal could lead to a \"surge\" in migrants coming to the UK, a leading Eurosceptic has warned.",
+          "generation_metadata": {
+            "score": -0.5664501786231995,
+            "dropped_seqs": [],
+            "n_words_checked": 96
+          },
+          "labeled_entities": [
+            {
+              "ent": "David",
+              "type": "PERSON",
+              "start": 0,
+              "end": 5,
+              "in_source": true,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Cameron",
+              "type": "PERSON",
+              "start": 6,
+              "end": 13,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "EU",
+              "type": "ORG",
+              "start": 16,
+              "end": 18,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "UK",
+              "type": "GPE",
+              "start": 81,
+              "end": 83,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Eurosceptic",
+              "type": "NORP",
+              "start": 95,
+              "end": 106,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "40366573": {
+          "banned_phrases": [],
+          "summary": "Northumbria's three urgent care centres are to remain closed overnight for a further three months.",
+          "generation_metadata": {
+            "score": -0.7764931321144104,
+            "dropped_seqs": [],
+            "n_words_checked": 83
+          },
+          "labeled_entities": [
+            {
+              "ent": "Northumbria",
+              "type": "GPE",
+              "start": 0,
+              "end": 11,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "three",
+              "type": "CARDINAL",
+              "start": 14,
+              "end": 19,
+              "in_source": true,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "overnight",
+              "type": "TIME",
+              "start": 61,
+              "end": 70,
+              "in_source": true,
+              "label": "Intrinsic Hallucination"
+            },
+            {
+              "ent": "a further",
+              "type": "DATE",
+              "start": 75,
+              "end": 84,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "three months",
+              "type": "DATE",
+              "start": 85,
+              "end": 97,
+              "in_source": true,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "32112735": {
+          "banned_phrases": [],
+          "summary": "Liam Payne and Niall Horan have confirmed they're staying in One Direction.",
+          "generation_metadata": {
+            "score": -0.4829868674278259,
+            "dropped_seqs": [],
+            "n_words_checked": 65
+          },
+          "labeled_entities": [
+            {
+              "ent": "Liam",
+              "type": "PERSON",
+              "start": 0,
+              "end": 4,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Payne",
+              "type": "PERSON",
+              "start": 5,
+              "end": 10,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Niall",
+              "type": "PERSON",
+              "start": 15,
+              "end": 20,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Horan",
+              "type": "PERSON",
+              "start": 21,
+              "end": 26,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36516057": {
+          "banned_phrases": [],
+          "summary": "The Conjuring 2 has topped the US and Canada box office for the second weekend in a row.",
+          "generation_metadata": {
+            "score": -0.4647581875324249,
+            "dropped_seqs": [],
+            "n_words_checked": 101
+          },
+          "labeled_entities": [
+            {
+              "ent": "The Conjuring 2",
+              "type": "PRODUCT",
+              "start": 0,
+              "end": 15,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "US",
+              "type": "GPE",
+              "start": 31,
+              "end": 33,
+              "in_source": true,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Canada",
+              "type": "GPE",
+              "start": 38,
+              "end": 44,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "the second weekend in a row",
+              "type": "DATE",
+              "start": 60,
+              "end": 87,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "40502878": {
+          "banned_phrases": [],
+          "summary": "Royal Dutch Shell has apologised after a cardboard cutout of a female employee appeared in one of its adverts in Malaysia.",
+          "generation_metadata": {
+            "score": -0.6190965175628662,
+            "dropped_seqs": [],
+            "n_words_checked": 99
+          },
+          "labeled_entities": [
+            {
+              "ent": "Royal Dutch Shell",
+              "type": "ORG",
+              "start": 0,
+              "end": 17,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "one",
+              "type": "CARDINAL",
+              "start": 91,
+              "end": 94,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Malaysia",
+              "type": "GPE",
+              "start": 113,
+              "end": 121,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "27939799": {
+          "banned_phrases": [],
+          "summary": "The creator of the \"yo\" messaging app has said he is \"taking this very seriously\" after a security flaw was found in the app.",
+          "generation_metadata": {
+            "score": -0.6474547982215881,
+            "dropped_seqs": [],
+            "n_words_checked": 99
+          },
+          "labeled_entities": []
+        },
+        "32390814": {
+          "banned_phrases": [],
+          "summary": "A woman in the US state of Utah has been sentenced to at least 30 years in prison for murdering six of her children.",
+          "generation_metadata": {
+            "score": -0.334248811006546,
+            "dropped_seqs": [],
+            "n_words_checked": 98
+          },
+          "labeled_entities": [
+            {
+              "ent": "US",
+              "type": "GPE",
+              "start": 15,
+              "end": 17,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Utah",
+              "type": "GPE",
+              "start": 27,
+              "end": 31,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "at least 30 years",
+              "type": "DATE",
+              "start": 54,
+              "end": 71,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "six",
+              "type": "CARDINAL",
+              "start": 96,
+              "end": 99,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "32527550": {
+          "banned_phrases": [],
+          "summary": "Asian shares headed lower on Wednesday after the US economy grew at its slowest pace in more than two years.",
+          "generation_metadata": {
+            "score": -0.7044662237167358,
+            "dropped_seqs": [],
+            "n_words_checked": 93
+          },
+          "labeled_entities": [
+            {
+              "ent": "Asian",
+              "type": "NORP",
+              "start": 0,
+              "end": 5,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Wednesday",
+              "type": "DATE",
+              "start": 29,
+              "end": 38,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "US",
+              "type": "GPE",
+              "start": 49,
+              "end": 51,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "more than two years",
+              "type": "DATE",
+              "start": 88,
+              "end": 107,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36974483": {
+          "banned_phrases": [],
+          "summary": "Edinburgh's annual arts festival is getting under way.",
+          "generation_metadata": {
+            "score": -0.7719847559928894,
+            "dropped_seqs": [],
+            "n_words_checked": 90
+          },
+          "labeled_entities": [
+            {
+              "ent": "Edinburgh",
+              "type": "GPE",
+              "start": 0,
+              "end": 9,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37876851": {
+          "banned_phrases": [],
+          "summary": "Prime Minister Theresa May has said she would like to call an early general election.",
+          "generation_metadata": {
+            "score": -0.5566275715827942,
+            "dropped_seqs": [],
+            "n_words_checked": 91
+          },
+          "labeled_entities": [
+            {
+              "ent": "Theresa",
+              "type": "PERSON",
+              "start": 15,
+              "end": 22,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "May",
+              "type": "PERSON",
+              "start": 23,
+              "end": 26,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "38196591": {
+          "banned_phrases": [],
+          "summary": "A man has been airlifted to hospital after being injured in a fall in Snowdonia.",
+          "generation_metadata": {
+            "score": -0.5078821778297424,
+            "dropped_seqs": [],
+            "n_words_checked": 80
+          },
+          "labeled_entities": [
+            {
+              "ent": "Snowdonia",
+              "type": "GPE",
+              "start": 70,
+              "end": 79,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "17996567": {
+          "banned_phrases": [],
+          "summary": "Plans to cut home-to-school transport subsidies in Gloucestershire have been put on hold.",
+          "generation_metadata": {
+            "score": -0.5601833462715149,
+            "dropped_seqs": [],
+            "n_words_checked": 93
+          },
+          "labeled_entities": [
+            {
+              "ent": "Gloucestershire",
+              "type": "GPE",
+              "start": 51,
+              "end": 66,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "34361828": {
+          "banned_phrases": [],
+          "summary": "A search is under way for the remains of a Pembrokeshire village which was wiped out by storms in the 1970s.",
+          "generation_metadata": {
+            "score": -0.692768931388855,
+            "dropped_seqs": [],
+            "n_words_checked": 95
+          },
+          "labeled_entities": [
+            {
+              "ent": "Pembrokeshire",
+              "type": "GPE",
+              "start": 43,
+              "end": 56,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "the 1970s",
+              "type": "DATE",
+              "start": 98,
+              "end": 107,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "35842214": {
+          "banned_phrases": [],
+          "summary": "Arsenal manager Arsene Wenger says he is not interested in signing Zlatan Ibrahimovic.",
+          "generation_metadata": {
+            "score": -0.27818942070007324,
+            "dropped_seqs": [],
+            "n_words_checked": 63
+          },
+          "labeled_entities": [
+            {
+              "ent": "Arsene",
+              "type": "PERSON",
+              "start": 16,
+              "end": 22,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Wenger",
+              "type": "PERSON",
+              "start": 23,
+              "end": 29,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Zlatan",
+              "type": "PERSON",
+              "start": 67,
+              "end": 73,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Ibrahimovic",
+              "type": "PERSON",
+              "start": 74,
+              "end": 85,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37749695": {
+          "banned_phrases": [],
+          "summary": "Tottenham midfielder Moussa Sissoko has been banned for four games for an elbow to the face of Stoke's Harry Arter.",
+          "generation_metadata": {
+            "score": -0.39949145913124084,
+            "dropped_seqs": [],
+            "n_words_checked": 85
+          },
+          "labeled_entities": [
+            {
+              "ent": "Tottenham",
+              "type": "ORG",
+              "start": 0,
+              "end": 9,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Moussa",
+              "type": "PERSON",
+              "start": 21,
+              "end": 27,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Sissoko",
+              "type": "PERSON",
+              "start": 28,
+              "end": 35,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "four",
+              "type": "CARDINAL",
+              "start": 56,
+              "end": 60,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Stoke",
+              "type": "GPE",
+              "start": 95,
+              "end": 100,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Harry",
+              "type": "PERSON",
+              "start": 103,
+              "end": 108,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Arter",
+              "type": "PERSON",
+              "start": 109,
+              "end": 114,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37228816": {
+          "banned_phrases": [],
+          "summary": "The second group of Syrian refugees have arrived in Londonderry.",
+          "generation_metadata": {
+            "score": -0.46760889887809753,
+            "dropped_seqs": [],
+            "n_words_checked": 90
+          },
+          "labeled_entities": [
+            {
+              "ent": "second",
+              "type": "ORDINAL",
+              "start": 4,
+              "end": 10,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Syrian",
+              "type": "NORP",
+              "start": 20,
+              "end": 26,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Londonderry",
+              "type": "GPE",
+              "start": 52,
+              "end": 63,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "38063377": {
+          "banned_phrases": [],
+          "summary": "German airline Lufthansa has launched a fresh legal challenge against a pilots' strike due to start on Tuesday.",
+          "generation_metadata": {
+            "score": -0.6047974228858948,
+            "dropped_seqs": [],
+            "n_words_checked": 90
+          },
+          "labeled_entities": [
+            {
+              "ent": "German",
+              "type": "NORP",
+              "start": 0,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Lufthansa",
+              "type": "ORG",
+              "start": 15,
+              "end": 24,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Tuesday",
+              "type": "DATE",
+              "start": 103,
+              "end": 110,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "39563495": {
+          "banned_phrases": [],
+          "summary": "India has condemned Pakistan's decision to sentence an Indian navy officer to death for spying.",
+          "generation_metadata": {
+            "score": -0.5448533892631531,
+            "dropped_seqs": [],
+            "n_words_checked": 94
+          },
+          "labeled_entities": [
+            {
+              "ent": "India",
+              "type": "GPE",
+              "start": 0,
+              "end": 5,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Pakistan",
+              "type": "GPE",
+              "start": 20,
+              "end": 28,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Indian",
+              "type": "NORP",
+              "start": 55,
+              "end": 61,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "33312430": {
+          "banned_phrases": [],
+          "summary": "Tributes have been paid to British student Joel Richards, who was killed in the Tunisia beach attack.",
+          "generation_metadata": {
+            "score": -0.4130733013153076,
+            "dropped_seqs": [],
+            "n_words_checked": 89
+          },
+          "labeled_entities": [
+            {
+              "ent": "British",
+              "type": "NORP",
+              "start": 27,
+              "end": 34,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Joel",
+              "type": "PERSON",
+              "start": 43,
+              "end": 47,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Richards",
+              "type": "PERSON",
+              "start": 48,
+              "end": 56,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Tunisia",
+              "type": "GPE",
+              "start": 80,
+              "end": 87,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "33303440": {
+          "banned_phrases": [],
+          "summary": "A motorcyclist has been killed in a crash in South Yorkshire.",
+          "generation_metadata": {
+            "score": -0.39829957485198975,
+            "dropped_seqs": [],
+            "n_words_checked": 82
+          },
+          "labeled_entities": [
+            {
+              "ent": "South Yorkshire",
+              "type": "GPE",
+              "start": 45,
+              "end": 60,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35194695": {
+          "banned_phrases": [],
+          "summary": "The white police officer accused of killing a black teenager in Chicago in 2014 has pleaded not guilty.",
+          "generation_metadata": {
+            "score": -0.49924570322036743,
+            "dropped_seqs": [],
+            "n_words_checked": 89
+          },
+          "labeled_entities": [
+            {
+              "ent": "Chicago",
+              "type": "GPE",
+              "start": 64,
+              "end": 71,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "2014",
+              "type": "DATE",
+              "start": 75,
+              "end": 79,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "33750803": {
+          "banned_phrases": [],
+          "summary": "At least six people have been killed and more than 30 injured in a suicide bombing in northern Turkey, the army says.",
+          "generation_metadata": {
+            "score": -0.7456414699554443,
+            "dropped_seqs": [],
+            "n_words_checked": 92
+          },
+          "labeled_entities": [
+            {
+              "ent": "At least six",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 12,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "more than 30",
+              "type": "CARDINAL",
+              "start": 41,
+              "end": 53,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Turkey",
+              "type": "GPE",
+              "start": 95,
+              "end": 101,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35491792": {
+          "banned_phrases": [],
+          "summary": "For a man who grew up on a potato farm in Herefordshire, David Chase has a knack for telling stories.",
+          "generation_metadata": {
+            "score": -0.8192601799964905,
+            "dropped_seqs": [],
+            "n_words_checked": 102
+          },
+          "labeled_entities": [
+            {
+              "ent": "Herefordshire",
+              "type": "GPE",
+              "start": 42,
+              "end": 55,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "David",
+              "type": "PERSON",
+              "start": 57,
+              "end": 62,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Chase",
+              "type": "PERSON",
+              "start": 63,
+              "end": 68,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "40617914": {
+          "banned_phrases": [],
+          "summary": "Dundee United have signed Southampton goalkeeper Harry Lewis for an undisclosed fee.",
+          "generation_metadata": {
+            "score": -0.27610865235328674,
+            "dropped_seqs": [],
+            "n_words_checked": 84
+          },
+          "labeled_entities": [
+            {
+              "ent": "Dundee United",
+              "type": "GPE",
+              "start": 0,
+              "end": 13,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Southampton",
+              "type": "GPE",
+              "start": 26,
+              "end": 37,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Harry",
+              "type": "PERSON",
+              "start": 49,
+              "end": 54,
+              "in_source": true,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Lewis",
+              "type": "PERSON",
+              "start": 55,
+              "end": 60,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35604495": {
+          "banned_phrases": [],
+          "summary": "Former Bolton striker Chris Holdsworth has agreed to buy the club, BBC Radio Manchester understands.",
+          "generation_metadata": {
+            "score": -0.525452196598053,
+            "dropped_seqs": [],
+            "n_words_checked": 91
+          },
+          "labeled_entities": [
+            {
+              "ent": "Bolton",
+              "type": "PERSON",
+              "start": 7,
+              "end": 13,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Chris",
+              "type": "PERSON",
+              "start": 22,
+              "end": 27,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Holdsworth",
+              "type": "PERSON",
+              "start": 28,
+              "end": 38,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "BBC Radio Manchester",
+              "type": "ORG",
+              "start": 67,
+              "end": 87,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "27424318": {
+          "banned_phrases": [],
+          "summary": "Scientists at IBM have discovered a new class of plastic that can be recycled and used again.",
+          "generation_metadata": {
+            "score": -0.7690600752830505,
+            "dropped_seqs": [],
+            "n_words_checked": 95
+          },
+          "labeled_entities": [
+            {
+              "ent": "IBM",
+              "type": "ORG",
+              "start": 14,
+              "end": 17,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "21958547": {
+          "banned_phrases": [],
+          "summary": "The UK's Department for Environment, Food and Rural Affairs (Defra) has called for more research into the impact of pesticides on honey bees.",
+          "generation_metadata": {
+            "score": -0.5085050463676453,
+            "dropped_seqs": [],
+            "n_words_checked": 110
+          },
+          "labeled_entities": [
+            {
+              "ent": "UK",
+              "type": "GPE",
+              "start": 4,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Department for Environment, Food and Rural Affairs",
+              "type": "ORG",
+              "start": 9,
+              "end": 59,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Defra",
+              "type": "ORG",
+              "start": 61,
+              "end": 66,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37989821": {
+          "banned_phrases": [],
+          "summary": "The UK has a unique opportunity to bring the US and Europe together, not take sides.",
+          "generation_metadata": {
+            "score": -0.4453117847442627,
+            "dropped_seqs": [],
+            "n_words_checked": 110
+          },
+          "labeled_entities": [
+            {
+              "ent": "UK",
+              "type": "GPE",
+              "start": 4,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "US",
+              "type": "GPE",
+              "start": 45,
+              "end": 47,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Europe",
+              "type": "LOC",
+              "start": 52,
+              "end": 58,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "27319850": {
+          "banned_phrases": [],
+          "summary": "New fathers are often diagnosed with post-traumatic stress disorder (PTSD), a condition that can lead to depression and anxiety.",
+          "generation_metadata": {
+            "score": -0.7857015132904053,
+            "dropped_seqs": [],
+            "n_words_checked": 100
+          },
+          "labeled_entities": []
+        },
+        "37406842": {
+          "banned_phrases": [],
+          "summary": "Work has been suspended at a recycling plant in Bridgend county after a large fire broke out.",
+          "generation_metadata": {
+            "score": -0.6341364979743958,
+            "dropped_seqs": [],
+            "n_words_checked": 101
+          },
+          "labeled_entities": [
+            {
+              "ent": "Bridgend county",
+              "type": "GPE",
+              "start": 48,
+              "end": 63,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "33235610": {
+          "banned_phrases": [],
+          "summary": "(Close): The pound rose against the euro and the dollar on Tuesday, after the Bank of England raised its interest rate to 0.5%.",
+          "generation_metadata": {
+            "score": -0.7489058375358582,
+            "dropped_seqs": [],
+            "n_words_checked": 125
+          },
+          "labeled_entities": [
+            {
+              "ent": "Tuesday",
+              "type": "DATE",
+              "start": 59,
+              "end": 66,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "the Bank of England",
+              "type": "ORG",
+              "start": 74,
+              "end": 93,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "0.5%",
+              "type": "PERCENT",
+              "start": 122,
+              "end": 126,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "38797571": {
+          "banned_phrases": [],
+          "summary": "Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat by MK Dons.",
+          "generation_metadata": {
+            "score": -0.7016133069992065,
+            "dropped_seqs": [],
+            "n_words_checked": 121
+          },
+          "labeled_entities": [
+            {
+              "ent": "Coventry City's",
+              "type": "GPE",
+              "start": 0,
+              "end": 15,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Supporters' Trust",
+              "type": "ORG",
+              "start": 16,
+              "end": 33,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Saturday",
+              "type": "DATE",
+              "start": 128,
+              "end": 136,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "MK",
+              "type": "PERSON",
+              "start": 160,
+              "end": 162,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Dons",
+              "type": "PERSON",
+              "start": 163,
+              "end": 167,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "34524083": {
+          "banned_phrases": [],
+          "summary": "Former NBA star Lamar Odom has been taken to hospital after being found unconscious in a Nevada brothel.",
+          "generation_metadata": {
+            "score": -0.4064476191997528,
+            "dropped_seqs": [],
+            "n_words_checked": 113
+          },
+          "labeled_entities": [
+            {
+              "ent": "NBA",
+              "type": "ORG",
+              "start": 7,
+              "end": 10,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Lamar",
+              "type": "PERSON",
+              "start": 16,
+              "end": 21,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Odom",
+              "type": "PERSON",
+              "start": 22,
+              "end": 26,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Nevada",
+              "type": "GPE",
+              "start": 89,
+              "end": 95,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "32788950": {
+          "banned_phrases": [],
+          "summary": "England Test batsman Joe Root has praised coach Peter Moores after being named player of the year.",
+          "generation_metadata": {
+            "score": -0.5058521628379822,
+            "dropped_seqs": [],
+            "n_words_checked": 123
+          },
+          "labeled_entities": [
+            {
+              "ent": "England Test",
+              "type": "ORG",
+              "start": 0,
+              "end": 12,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Joe",
+              "type": "PERSON",
+              "start": 21,
+              "end": 24,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Root",
+              "type": "PERSON",
+              "start": 25,
+              "end": 29,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Peter",
+              "type": "PERSON",
+              "start": 48,
+              "end": 53,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Moores",
+              "type": "PERSON",
+              "start": 54,
+              "end": 60,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the year",
+              "type": "DATE",
+              "start": 89,
+              "end": 97,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "36203675": {
+          "banned_phrases": [],
+          "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol.",
+          "generation_metadata": {
+            "score": -0.8142673969268799,
+            "dropped_seqs": [],
+            "n_words_checked": 100
+          },
+          "labeled_entities": [
+            {
+              "ent": "the University of Bristol",
+              "type": "ORG",
+              "start": 84,
+              "end": 109,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "25526847": {
+          "banned_phrases": [],
+          "summary": "Neil Gaiman's novel The Ocean at the End of the Lane has been named the UK's Book of the Year.",
+          "generation_metadata": {
+            "score": -0.3441280722618103,
+            "dropped_seqs": [],
+            "n_words_checked": 94
+          },
+          "labeled_entities": [
+            {
+              "ent": "Neil",
+              "type": "PERSON",
+              "start": 0,
+              "end": 4,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Gaiman",
+              "type": "PERSON",
+              "start": 5,
+              "end": 11,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "The Ocean",
+              "type": "WORK_OF_ART",
+              "start": 20,
+              "end": 29,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Lane",
+              "type": "FAC",
+              "start": 48,
+              "end": 52,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "UK",
+              "type": "GPE",
+              "start": 72,
+              "end": 74,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Book of the Year",
+              "type": "WORK_OF_ART",
+              "start": 77,
+              "end": 93,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "38722314": {
+          "banned_phrases": [],
+          "summary": "Liverpool boss Jurgen Klopp says Steven Gerrard has a \"bright future\" as a manager.",
+          "generation_metadata": {
+            "score": -0.3049295246601105,
+            "dropped_seqs": [],
+            "n_words_checked": 85
+          },
+          "labeled_entities": [
+            {
+              "ent": "Liverpool",
+              "type": "GPE",
+              "start": 0,
+              "end": 9,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Jurgen",
+              "type": "PERSON",
+              "start": 15,
+              "end": 21,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Klopp",
+              "type": "PERSON",
+              "start": 22,
+              "end": 27,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Steven",
+              "type": "PERSON",
+              "start": 33,
+              "end": 39,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Gerrard",
+              "type": "PERSON",
+              "start": 40,
+              "end": 47,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "19626825": {
+          "banned_phrases": [],
+          "summary": "Hundreds of people have attended a public meeting in Flintshire to discuss plans to close a community hospital.",
+          "generation_metadata": {
+            "score": -0.5380803942680359,
+            "dropped_seqs": [],
+            "n_words_checked": 87
+          },
+          "labeled_entities": [
+            {
+              "ent": "Hundreds",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 8,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Flintshire",
+              "type": "GPE",
+              "start": 53,
+              "end": 63,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "13810760": {
+          "banned_phrases": [],
+          "summary": "Former Ospreys scrum-half Mike Phillips has been suspended from the Wales squad after an incident in Cardiff city centre.",
+          "generation_metadata": {
+            "score": -0.46403563022613525,
+            "dropped_seqs": [],
+            "n_words_checked": 103
+          },
+          "labeled_entities": [
+            {
+              "ent": "Mike",
+              "type": "PERSON",
+              "start": 26,
+              "end": 30,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Phillips",
+              "type": "PERSON",
+              "start": 31,
+              "end": 39,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Wales",
+              "type": "GPE",
+              "start": 68,
+              "end": 73,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Cardiff city",
+              "type": "GPE",
+              "start": 101,
+              "end": 113,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "28258697": {
+          "banned_phrases": [],
+          "summary": "The Orange Order is \"stepping up to the mark\" in its response to the Crumlin Road ruling, the organisation's chief executive has said.",
+          "generation_metadata": {
+            "score": -0.5091782212257385,
+            "dropped_seqs": [],
+            "n_words_checked": 113
+          },
+          "labeled_entities": [
+            {
+              "ent": "The Orange Order",
+              "type": "ORG",
+              "start": 0,
+              "end": 16,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Crumlin Road",
+              "type": "FAC",
+              "start": 69,
+              "end": 81,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "36091575": {
+          "banned_phrases": [],
+          "summary": "Widnes Vikings head coach Ian Betts says his side have not lost momentum despite their recent poor form in Super League.",
+          "generation_metadata": {
+            "score": -0.5748031735420227,
+            "dropped_seqs": [],
+            "n_words_checked": 105
+          },
+          "labeled_entities": [
+            {
+              "ent": "Widnes Vikings",
+              "type": "ORG",
+              "start": 0,
+              "end": 14,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Ian",
+              "type": "PERSON",
+              "start": 26,
+              "end": 29,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Betts",
+              "type": "PERSON",
+              "start": 30,
+              "end": 35,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Super League",
+              "type": "ORG",
+              "start": 107,
+              "end": 119,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "38742702": {
+          "banned_phrases": [],
+          "summary": "Belfast's transport minister, David Hazzard, has announced plans to extend the opening hours of bus lanes in the city.",
+          "generation_metadata": {
+            "score": -0.6035037636756897,
+            "dropped_seqs": [],
+            "n_words_checked": 110
+          },
+          "labeled_entities": [
+            {
+              "ent": "Belfast",
+              "type": "GPE",
+              "start": 0,
+              "end": 7,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "David",
+              "type": "PERSON",
+              "start": 30,
+              "end": 35,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Hazzard",
+              "type": "PERSON",
+              "start": 36,
+              "end": 43,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the opening hours",
+              "type": "TIME",
+              "start": 75,
+              "end": 92,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "34833842": {
+          "banned_phrases": [],
+          "summary": "A man has died following an incident at a house in south-east London.",
+          "generation_metadata": {
+            "score": -0.48945173621177673,
+            "dropped_seqs": [],
+            "n_words_checked": 74
+          },
+          "labeled_entities": [
+            {
+              "ent": "London",
+              "type": "GPE",
+              "start": 62,
+              "end": 68,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37066389": {
+          "banned_phrases": [],
+          "summary": "Colombia's Omar Martinez lost to Kazakhstan's Islam Dusmatov in the Olympic men's flyweight final in Rio.",
+          "generation_metadata": {
+            "score": -0.6497074365615845,
+            "dropped_seqs": [],
+            "n_words_checked": 81
+          },
+          "labeled_entities": [
+            {
+              "ent": "Colombia",
+              "type": "GPE",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Omar",
+              "type": "PERSON",
+              "start": 11,
+              "end": 15,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Martinez",
+              "type": "PERSON",
+              "start": 16,
+              "end": 24,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kazakhstan",
+              "type": "GPE",
+              "start": 33,
+              "end": 43,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Rio",
+              "type": "GPE",
+              "start": 101,
+              "end": 104,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "32486188": {
+          "banned_phrases": [],
+          "summary": "A nurse who secretly filmed himself raping patients has been jailed for 12 years.",
+          "generation_metadata": {
+            "score": -0.556416928768158,
+            "dropped_seqs": [],
+            "n_words_checked": 64
+          },
+          "labeled_entities": [
+            {
+              "ent": "12 years",
+              "type": "DATE",
+              "start": 72,
+              "end": 80,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "39786257": {
+          "banned_phrases": [],
+          "summary": "A Porto-based football player has been banned for four years for attacking a referee during a match.",
+          "generation_metadata": {
+            "score": -0.5914223194122314,
+            "dropped_seqs": [],
+            "n_words_checked": 90
+          },
+          "labeled_entities": [
+            {
+              "ent": "Porto",
+              "type": "GPE",
+              "start": 2,
+              "end": 7,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "four years",
+              "type": "DATE",
+              "start": 50,
+              "end": 60,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "21152677": {
+          "banned_phrases": [],
+          "summary": "The police ombudsman is to resume investigations into more than 100 historical complaints against the PSNI.",
+          "generation_metadata": {
+            "score": -0.5553901195526123,
+            "dropped_seqs": [],
+            "n_words_checked": 87
+          },
+          "labeled_entities": [
+            {
+              "ent": "more than 100",
+              "type": "CARDINAL",
+              "start": 54,
+              "end": 67,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "PSNI",
+              "type": "ORG",
+              "start": 102,
+              "end": 106,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 39,
+          "total": 57,
+          "factual": 27,
+          "non_factual": 18,
+          "failed": 0,
+          "unknown": 12
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 26,
+            "Factual Hallucination": 21,
+            "Unknown": 17,
+            "Non-hallucinated": 108
+          },
+          "type": {
+            "PERSON": {
+              "total": 54,
+              "Non-factual Hallucination": 8,
+              "Factual Hallucination": 8,
+              "Unknown": 2,
+              "Non-hallucinated": 36
+            },
+            "ORG": {
+              "total": 21,
+              "Non-factual Hallucination": 2,
+              "Factual Hallucination": 4,
+              "Unknown": 4,
+              "Non-hallucinated": 11
+            },
+            "DATE": {
+              "total": 17,
+              "Non-factual Hallucination": 6,
+              "Factual Hallucination": 3,
+              "Unknown": 1,
+              "Non-hallucinated": 7
+            },
+            "EVENT": {
+              "total": 4,
+              "Non-factual Hallucination": 2,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 1
+            },
+            "LOC": {
+              "total": 2,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1
+            },
+            "GPE": {
+              "total": 46,
+              "Non-factual Hallucination": 4,
+              "Factual Hallucination": 4,
+              "Unknown": 4,
+              "Non-hallucinated": 34
+            },
+            "FAC": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 3
+            },
+            "CARDINAL": {
+              "total": 11,
+              "Non-factual Hallucination": 3,
+              "Factual Hallucination": 0,
+              "Unknown": 2,
+              "Non-hallucinated": 6
+            },
+            "NORP": {
+              "total": 8,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 2,
+              "Unknown": 0,
+              "Non-hallucinated": 6
+            },
+            "PRODUCT": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1
+            },
+            "ORDINAL": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            },
+            "PERCENT": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            },
+            "WORK_OF_ART": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2
+            },
+            "TIME": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            }
+          }
+        }
+      }
+    },
+    "1": {
+      "summaries": {
+        "34320852": {
+          "banned_phrases": [
+            "Martin"
+          ],
+          "summary": "The Scottish Football Association (SFA) is considering the future of its performance school programme.",
+          "generation_metadata": {
+            "score": -0.7280750870704651,
+            "dropped_seqs": [
+              "</s>The Scottish Football Association (SFA) is considering the future of its performance school programme, according to chief executive Martin",
+              "</s>The Scottish Football Association (SFA) is considering the future of its performance school programme, according to new chief executive Martin",
+              "</s>The Scottish Football Association (SFA) is looking at the future of its performance school programme, according to new chief executive Martin"
+            ],
+            "n_words_checked": 105
+          },
+          "labeled_entities": [
+            {
+              "ent": "The Scottish Football Association",
+              "type": "ORG",
+              "start": 0,
+              "end": 33,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "SFA",
+              "type": "ORG",
+              "start": 35,
+              "end": 38,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "36396523": {
+          "banned_phrases": [
+            "World Cup",
+            "South America",
+            "next month's"
+          ],
+          "summary": "Kaka has been called up to the Brazil squad for the Copa America next month.",
+          "generation_metadata": {
+            "score": -0.5828986167907715,
+            "dropped_seqs": [
+              "</s>Brazil have added Kaka to their squad for next month's",
+              "</s>Brazil have added Kaka to their squad for the Under-20 World Cup",
+              "</s>Brazil have called up Kaka to their squad for the Under-20 World Cup",
+              "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup"
+            ],
+            "n_words_checked": 92
+          },
+          "labeled_entities": [
+            {
+              "ent": "Kaka",
+              "type": "PERSON",
+              "start": 0,
+              "end": 4,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Brazil",
+              "type": "GPE",
+              "start": 31,
+              "end": 37,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the Copa America",
+              "type": "ORG",
+              "start": 48,
+              "end": 64,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "next month",
+              "type": "DATE",
+              "start": 65,
+              "end": 75,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "24403775": {
+          "banned_phrases": [
+            "Shropshire"
+          ],
+          "summary": "Villagers in Shrewsbury are calling for the reopening of a dual carriageway next to Stonehenge.",
+          "generation_metadata": {
+            "score": -0.5977228879928589,
+            "dropped_seqs": [
+              "</s>Villagers in Shropshire"
+            ],
+            "n_words_checked": 87
+          },
+          "labeled_entities": [
+            {
+              "ent": "Shrewsbury",
+              "type": "GPE",
+              "start": 13,
+              "end": 23,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Stonehenge",
+              "type": "FAC",
+              "start": 84,
+              "end": 94,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "36456002": {
+          "banned_phrases": [
+            "World Cup"
+          ],
+          "summary": "Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final Euro 2016 warm-up game.",
+          "generation_metadata": {
+            "score": -0.37551578879356384,
+            "dropped_seqs": [
+              "</s>Eden Hazard scored twice as Belgium came from behind to beat Norway in their final World Cup",
+              "</s>Eden Hazard scored twice as Belgium came from behind to beat Norway 3-2 in their final World Cup",
+              "</s>Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final World Cup"
+            ],
+            "n_words_checked": 94
+          },
+          "labeled_entities": [
+            {
+              "ent": "Romelu",
+              "type": "PERSON",
+              "start": 0,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Lukaku",
+              "type": "PERSON",
+              "start": 7,
+              "end": 13,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Belgium",
+              "type": "GPE",
+              "start": 40,
+              "end": 47,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Norway",
+              "type": "GPE",
+              "start": 73,
+              "end": 79,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "2016",
+              "type": "DATE",
+              "start": 100,
+              "end": 104,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "40366573": {
+          "banned_phrases": [
+            "three months",
+            "three"
+          ],
+          "summary": "Three urgent care centres in Northumberland are to remain closed overnight for a further month, the NHS has said.",
+          "generation_metadata": {
+            "score": -0.9350157380104065,
+            "dropped_seqs": [
+              "</s>The closure of three",
+              "</s>Northumbria's three",
+              "</s>Three hospital urgent care centres have been temporarily closed for a further three",
+              "</s>Three urgent care centres in Northumberland have been closed for a further three",
+              "</s>Three urgent care centres in Northumberland are to remain closed overnight for a further three",
+              "</s>Three urgent care centres in Northumberland are to remain closed at night for a further three"
+            ],
+            "n_words_checked": 81
+          },
+          "labeled_entities": [
+            {
+              "ent": "Three",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 5,
+              "in_source": true,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Northumberland",
+              "type": "GPE",
+              "start": 29,
+              "end": 43,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "overnight",
+              "type": "TIME",
+              "start": 65,
+              "end": 74,
+              "in_source": true,
+              "label": "Intrinsic Hallucination"
+            },
+            {
+              "ent": "a further month",
+              "type": "DATE",
+              "start": 79,
+              "end": 94,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "NHS",
+              "type": "ORG",
+              "start": 100,
+              "end": 103,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "32112735": {
+          "banned_phrases": [
+            "Niall",
+            "Horan"
+          ],
+          "summary": "Liam Payne and Louis Tomlinson have confirmed they're staying in One Direction.",
+          "generation_metadata": {
+            "score": -0.5388206243515015,
+            "dropped_seqs": [
+              "</s>Liam Payne and Niall"
+            ],
+            "n_words_checked": 77
+          },
+          "labeled_entities": [
+            {
+              "ent": "Liam",
+              "type": "PERSON",
+              "start": 0,
+              "end": 4,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Payne",
+              "type": "PERSON",
+              "start": 5,
+              "end": 10,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Louis",
+              "type": "PERSON",
+              "start": 15,
+              "end": 20,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Tomlinson",
+              "type": "PERSON",
+              "start": 21,
+              "end": 30,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "32527550": {
+          "banned_phrases": [
+            "Wednesday",
+            "more than two years"
+          ],
+          "summary": "Asian shares headed lower on Thursday after the US economy grew at its slowest pace in more than three years.",
+          "generation_metadata": {
+            "score": -0.7307614088058472,
+            "dropped_seqs": [
+              "</s>Asian shares headed lower on Wednesday",
+              "</s>Shares in Asia fell on Wednesday",
+              "</s>Markets in Asia were lower on Wednesday",
+              "</s>Asian shares headed lower on Thursday after the US economy grew at its slowest pace in more than two years"
+            ],
+            "n_words_checked": 84
+          },
+          "labeled_entities": [
+            {
+              "ent": "Asian",
+              "type": "NORP",
+              "start": 0,
+              "end": 5,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Thursday",
+              "type": "DATE",
+              "start": 29,
+              "end": 37,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "US",
+              "type": "GPE",
+              "start": 48,
+              "end": 50,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "more than three years",
+              "type": "DATE",
+              "start": 87,
+              "end": 108,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "17996567": {
+          "banned_phrases": [
+            "Gloucestershire"
+          ],
+          "summary": "Plans to cut home-to-school transport subsidies for children in Flintshire have been put on hold.",
+          "generation_metadata": {
+            "score": -0.6140730977058411,
+            "dropped_seqs": [
+              "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
+            ],
+            "n_words_checked": 69
+          },
+          "labeled_entities": [
+            {
+              "ent": "Flintshire",
+              "type": "PERSON",
+              "start": 64,
+              "end": 74,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "34361828": {
+          "banned_phrases": [
+            "the 1970s",
+            "Pembrokeshire"
+          ],
+          "summary": "A search is under way for the remains of a Gwynedd village which was wiped out by storms in the 1950s.",
+          "generation_metadata": {
+            "score": -0.7429369688034058,
+            "dropped_seqs": [
+              "</s>A search is under way for the remains of a Pembrokeshire",
+              "</s>A search is under way for the remains of a Gwynedd village which was wiped out by storms in the 1970s",
+              "</s>A search is under way for the remains of a Gwynedd village which was wiped out by Storm Desmond in the 1970s"
+            ],
+            "n_words_checked": 88
+          },
+          "labeled_entities": [
+            {
+              "ent": "Gwynedd village",
+              "type": "GPE",
+              "start": 43,
+              "end": 58,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "the 1950s",
+              "type": "DATE",
+              "start": 92,
+              "end": 101,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "37749695": {
+          "banned_phrases": [
+            "four"
+          ],
+          "summary": "Tottenham midfielder Moussa Sissoko has been banned for three games for an elbow to the face of Stoke's Harry Arter.",
+          "generation_metadata": {
+            "score": -0.4016093611717224,
+            "dropped_seqs": [
+              "</s>Tottenham midfielder Moussa Sissoko has been banned for four",
+              "</s>Tottenham's Moussa Sissoko has been banned for four"
+            ],
+            "n_words_checked": 91
+          },
+          "labeled_entities": [
+            {
+              "ent": "Tottenham",
+              "type": "ORG",
+              "start": 0,
+              "end": 9,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Moussa",
+              "type": "PERSON",
+              "start": 21,
+              "end": 27,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Sissoko",
+              "type": "PERSON",
+              "start": 28,
+              "end": 35,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "three",
+              "type": "CARDINAL",
+              "start": 56,
+              "end": 61,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Stoke",
+              "type": "GPE",
+              "start": 96,
+              "end": 101,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Harry",
+              "type": "PERSON",
+              "start": 104,
+              "end": 109,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Arter",
+              "type": "PERSON",
+              "start": 110,
+              "end": 115,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35491792": {
+          "banned_phrases": [
+            "David"
+          ],
+          "summary": "For a man who grew up on a potato farm in Herefordshire, Peter Chase has a natural knack for telling stories.",
+          "generation_metadata": {
+            "score": -0.843143105506897,
+            "dropped_seqs": [
+              "</s>As a potato farmer, David",
+              "</s>For a man who grew up on a potato farm, David",
+              "</s>For a man who grew up on a Herefordshire potato farm, David",
+              "</s>For a man who grew up on a potato farm in Herefordshire, David"
+            ],
+            "n_words_checked": 105
+          },
+          "labeled_entities": [
+            {
+              "ent": "Herefordshire",
+              "type": "GPE",
+              "start": 42,
+              "end": 55,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Peter",
+              "type": "PERSON",
+              "start": 57,
+              "end": 62,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Chase",
+              "type": "PERSON",
+              "start": 63,
+              "end": 68,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35604495": {
+          "banned_phrases": [
+            "Chris"
+          ],
+          "summary": "Bolton Wanderers have agreed a deal to sell the club to ex-Trotters striker Paul Holdsworth, BBC Radio Manchester understands.",
+          "generation_metadata": {
+            "score": -0.6109501719474792,
+            "dropped_seqs": [
+              "</s>Former Bolton striker Chris",
+              "</s>Bolton Wanderers have agreed a deal to sell the club to ex-Trotters striker Chris"
+            ],
+            "n_words_checked": 92
+          },
+          "labeled_entities": [
+            {
+              "ent": "Bolton Wanderers",
+              "type": "ORG",
+              "start": 0,
+              "end": 16,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Paul",
+              "type": "PERSON",
+              "start": 76,
+              "end": 80,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Holdsworth",
+              "type": "PERSON",
+              "start": 81,
+              "end": 91,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "BBC Radio Manchester",
+              "type": "ORG",
+              "start": 93,
+              "end": 113,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "33235610": {
+          "banned_phrases": [
+            "the Bank of England"
+          ],
+          "summary": "(Close): The pound rose against the euro and the dollar on Tuesday, following Monday's sharp gains.",
+          "generation_metadata": {
+            "score": -0.7613140344619751,
+            "dropped_seqs": [
+              "</s>(Close): The pound rose against the euro and the dollar on Tuesday, after the Bank of England",
+              "</s>(Close): The pound rose against the euro and the dollar on Tuesday, as investors digested the news that the Bank of England"
+            ],
+            "n_words_checked": 137
+          },
+          "labeled_entities": [
+            {
+              "ent": "Tuesday",
+              "type": "DATE",
+              "start": 59,
+              "end": 66,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Monday",
+              "type": "DATE",
+              "start": 78,
+              "end": 84,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "38797571": {
+          "banned_phrases": [
+            "Dons",
+            "MK"
+          ],
+          "summary": "Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat by Rochdale.",
+          "generation_metadata": {
+            "score": -0.7043319940567017,
+            "dropped_seqs": [
+              "</s>Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat by MK"
+            ],
+            "n_words_checked": 124
+          },
+          "labeled_entities": [
+            {
+              "ent": "Coventry City's",
+              "type": "GPE",
+              "start": 0,
+              "end": 15,
+              "in_source": false,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Supporters' Trust",
+              "type": "ORG",
+              "start": 16,
+              "end": 33,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Saturday",
+              "type": "DATE",
+              "start": 128,
+              "end": 136,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Rochdale",
+              "type": "GPE",
+              "start": 160,
+              "end": 168,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "36203675": {
+          "banned_phrases": [
+            "the University of Bristol"
+          ],
+          "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford.",
+          "generation_metadata": {
+            "score": -0.8211338520050049,
+            "dropped_seqs": [
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol"
+            ],
+            "n_words_checked": 136
+          },
+          "labeled_entities": [
+            {
+              "ent": "the University of Oxford",
+              "type": "ORG",
+              "start": 84,
+              "end": 108,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "37066389": {
+          "banned_phrases": [
+            "Omar",
+            "Kazakhstan"
+          ],
+          "summary": "Colombia's Carlos Martinez has been beaten in the Olympic men's flyweight final by Uzbekistan's Islam Dusmatov.",
+          "generation_metadata": {
+            "score": -0.6965238451957703,
+            "dropped_seqs": [
+              "</s>The Kazakhstan",
+              "</s>Colombia's Omar",
+              "</s>Colombia's Carlos Martinez lost to Kazakhstan",
+              "</s>Colombia's Carlos Martinez lost in the Olympic men's flyweight final to Kazakhstan",
+              "</s>Colombia's Carlos Martinez has been beaten in the Olympic men's flyweight final by Kazakhstan",
+              "</s>Colombia's Carlos Martinez has been knocked out of the Olympic men's flyweight final by Kazakhstan"
+            ],
+            "n_words_checked": 112
+          },
+          "labeled_entities": [
+            {
+              "ent": "Colombia",
+              "type": "GPE",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Carlos",
+              "type": "PERSON",
+              "start": 11,
+              "end": 17,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Martinez",
+              "type": "PERSON",
+              "start": 18,
+              "end": 26,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Uzbekistan",
+              "type": "GPE",
+              "start": 83,
+              "end": 93,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "32486188": {
+          "banned_phrases": [
+            "12 years"
+          ],
+          "summary": "A nurse who secretly filmed himself raping patients has been jailed for eight years.",
+          "generation_metadata": {
+            "score": -0.5606048703193665,
+            "dropped_seqs": [
+              "</s>A nurse who secretly filmed himself raping patients has been jailed for 12 years"
+            ],
+            "n_words_checked": 61
+          },
+          "labeled_entities": [
+            {
+              "ent": "eight years",
+              "type": "DATE",
+              "start": 72,
+              "end": 83,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "21152677": {
+          "banned_phrases": [
+            "more than 100"
+          ],
+          "summary": "The police ombudsman's office is to resume investigations into more than 150 historical complaints against the PSNI.",
+          "generation_metadata": {
+            "score": -0.585609495639801,
+            "dropped_seqs": [
+              "</s>The police ombudsman is to resume investigations into more than 100",
+              "</s>The police ombudsman's office is to resume investigations into more than 100",
+              "</s>Police ombudsman Michael Maguire has said he is pleased to be able to resume investigations into more than 100"
+            ],
+            "n_words_checked": 89
+          },
+          "labeled_entities": [
+            {
+              "ent": "more than 150",
+              "type": "CARDINAL",
+              "start": 63,
+              "end": 76,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "PSNI",
+              "type": "ORG",
+              "start": 111,
+              "end": 115,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 49,
+          "total": 57,
+          "factual": 31,
+          "non_factual": 8,
+          "failed": 0,
+          "unknown": 18
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 10,
+            "Factual Hallucination": 22,
+            "Unknown": 24,
+            "Non-hallucinated": 110
+          },
+          "type": {
+            "ORG": {
+              "total": 23,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 5,
+              "Unknown": 4,
+              "Non-hallucinated": 13
+            },
+            "DATE": {
+              "total": 18,
+              "Non-factual Hallucination": 2,
+              "Factual Hallucination": 3,
+              "Unknown": 5,
+              "Non-hallucinated": 8
+            },
+            "PERSON": {
+              "total": 50,
+              "Non-factual Hallucination": 4,
+              "Factual Hallucination": 8,
+              "Unknown": 4,
+              "Non-hallucinated": 34
+            },
+            "GPE": {
+              "total": 45,
+              "Non-factual Hallucination": 2,
+              "Factual Hallucination": 4,
+              "Unknown": 5,
+              "Non-hallucinated": 34
+            },
+            "FAC": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 3
+            },
+            "CARDINAL": {
+              "total": 11,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 3,
+              "Non-hallucinated": 7
+            },
+            "EVENT": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 1
+            },
+            "NORP": {
+              "total": 8,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 2,
+              "Unknown": 0,
+              "Non-hallucinated": 6
+            },
+            "PRODUCT": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1
+            },
+            "ORDINAL": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            },
+            "LOC": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1
+            },
+            "WORK_OF_ART": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2
+            },
+            "TIME": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            }
+          }
+        }
+      }
+    },
+    "2": {
+      "summaries": {
+        "36396523": {
+          "banned_phrases": [
+            "World Cup",
+            "South America",
+            "next month",
+            "next month's"
+          ],
+          "summary": "Kaka has been called up to the Brazil squad for the Copa America in Chile in June.",
+          "generation_metadata": {
+            "score": -0.6230841875076294,
+            "dropped_seqs": [
+              "</s>Brazil have added Kaka to their squad for next month",
+              "</s>Brazil have added Kaka to their squad for the Under-20 World Cup",
+              "</s>Brazil have called up Kaka to their squad for the Under-20 World Cup",
+              "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup",
+              "</s>Kaka has been called up to the Brazil squad for the Copa America next month",
+              "</s>Kaka has been called up to the Brazil squad for the Copa America in Chile next month"
+            ],
+            "n_words_checked": 89
+          },
+          "labeled_entities": [
+            {
+              "ent": "Kaka",
+              "type": "PERSON",
+              "start": 0,
+              "end": 4,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Brazil",
+              "type": "GPE",
+              "start": 31,
+              "end": 37,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the Copa America",
+              "type": "ORG",
+              "start": 48,
+              "end": 64,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Chile",
+              "type": "GPE",
+              "start": 68,
+              "end": 73,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "June",
+              "type": "DATE",
+              "start": 77,
+              "end": 81,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "24403775": {
+          "banned_phrases": [
+            "Shropshire",
+            "Shrewsbury"
+          ],
+          "summary": "A campaign has been launched to get Stonehenge Bottom's main road re-opened after it was closed to traffic.",
+          "generation_metadata": {
+            "score": -0.7396909594535828,
+            "dropped_seqs": [
+              "</s>Villagers in Shropshire",
+              "</s>Villagers in Shrewsbury"
+            ],
+            "n_words_checked": 83
+          },
+          "labeled_entities": [
+            {
+              "ent": "Stonehenge Bottom's",
+              "type": "FAC",
+              "start": 36,
+              "end": 55,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "40366573": {
+          "banned_phrases": [
+            "three months",
+            "three",
+            "Three"
+          ],
+          "summary": "Northumbria's urgent care centres are to remain closed overnight for a further six months, the NHS has said.",
+          "generation_metadata": {
+            "score": -0.9136632084846497,
+            "dropped_seqs": [
+              "</s>Three",
+              "</s>The closure of three",
+              "</s>Emergency units at three",
+              "</s>Emergency services at three",
+              "</s>Northumbria's three",
+              "</s>Northumbria's emergency units are to remain closed overnight for a further three",
+              "</s>Northumbria's urgent care centres are to remain closed overnight for a further three",
+              "</s>Northumbria's urgent care centres are to remain closed at night for a further three"
+            ],
+            "n_words_checked": 94
+          },
+          "labeled_entities": [
+            {
+              "ent": "Northumbria",
+              "type": "GPE",
+              "start": 0,
+              "end": 11,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "overnight",
+              "type": "TIME",
+              "start": 55,
+              "end": 64,
+              "in_source": true,
+              "label": "Intrinsic Hallucination"
+            },
+            {
+              "ent": "a further six months",
+              "type": "DATE",
+              "start": 69,
+              "end": 89,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "NHS",
+              "type": "ORG",
+              "start": 95,
+              "end": 98,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "32112735": {
+          "banned_phrases": [
+            "Tomlinson",
+            "Niall",
+            "Louis",
+            "Horan"
+          ],
+          "summary": "One Direction have confirmed they're staying in the band.",
+          "generation_metadata": {
+            "score": -0.7054994702339172,
+            "dropped_seqs": [
+              "</s>Liam Payne and Louis",
+              "</s>Liam Payne, Louis",
+              "</s>Liam Payne and Niall"
+            ],
+            "n_words_checked": 90
+          },
+          "labeled_entities": [
+            {
+              "ent": "One",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 3,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "17996567": {
+          "banned_phrases": [
+            "Gloucestershire",
+            "Flintshire"
+          ],
+          "summary": "Plans to cut home-to-school transport subsidies for children in Staffordshire have been put on hold.",
+          "generation_metadata": {
+            "score": -0.6207175254821777,
+            "dropped_seqs": [
+              "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Flintshire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
+            ],
+            "n_words_checked": 73
+          },
+          "labeled_entities": [
+            {
+              "ent": "Staffordshire",
+              "type": "GPE",
+              "start": 64,
+              "end": 77,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "34361828": {
+          "banned_phrases": [
+            "Gwynedd village",
+            "the 1950s",
+            "the 1970s",
+            "Pembrokeshire"
+          ],
+          "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
+          "generation_metadata": {
+            "score": -1.00760817527771,
+            "dropped_seqs": [
+              "</s>A search is under way for the remains of a Gwynedd village",
+              "</s>A search is under way for the remains of a Pembrokeshire",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by storms in the 1950s",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by storms in the 1970s",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950s",
+              "</s>A search is under way to find the remains of a Gower village that was destroyed by the sea in the 1950s"
+            ],
+            "n_words_checked": 85
+          },
+          "labeled_entities": [
+            {
+              "ent": "Gower",
+              "type": "GPE",
+              "start": 47,
+              "end": 52,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "1950",
+              "type": "DATE",
+              "start": 99,
+              "end": 103,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36203675": {
+          "banned_phrases": [
+            "the University of Bristol",
+            "the University of Oxford"
+          ],
+          "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge.",
+          "generation_metadata": {
+            "score": -0.8350398540496826,
+            "dropped_seqs": [
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Oxford",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford"
+            ],
+            "n_words_checked": 110
+          },
+          "labeled_entities": [
+            {
+              "ent": "the University of Cambridge",
+              "type": "ORG",
+              "start": 84,
+              "end": 111,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "37066389": {
+          "banned_phrases": [
+            "Omar",
+            "Kazakhstan",
+            "Carlos"
+          ],
+          "summary": "Colombia's Gabriel Martinez has been beaten in the Olympic men's flyweight final by Uzbekistan's Islam Dusmatov.",
+          "generation_metadata": {
+            "score": -0.7325229048728943,
+            "dropped_seqs": [
+              "</s>The Kazakhstan",
+              "</s>Colombia's Omar",
+              "</s>Colombia's Carlos",
+              "</s>Colombia's Jose Carlos",
+              "</s>Colombia's Gabriel Martinez lost to Kazakhstan",
+              "</s>Colombia's Gabriel Martinez lost in the Olympic men's flyweight final to Kazakhstan",
+              "</s>Colombia's Gabriel Martinez has been beaten in the Olympic men's flyweight final by Kazakhstan",
+              "</s>Colombia's Gabriel Martinez has been knocked out of the Olympic men's flyweight final by Kazakhstan"
+            ],
+            "n_words_checked": 86
+          },
+          "labeled_entities": [
+            {
+              "ent": "Colombia",
+              "type": "GPE",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Gabriel",
+              "type": "PERSON",
+              "start": 11,
+              "end": 18,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Martinez",
+              "type": "PERSON",
+              "start": 19,
+              "end": 27,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Uzbekistan",
+              "type": "GPE",
+              "start": 84,
+              "end": 94,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 52,
+          "total": 57,
+          "factual": 33,
+          "non_factual": 5,
+          "failed": 0,
+          "unknown": 19
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 5,
+            "Factual Hallucination": 23,
+            "Unknown": 24,
+            "Non-hallucinated": 110
+          },
+          "type": {
+            "ORG": {
+              "total": 23,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 5,
+              "Unknown": 4,
+              "Non-hallucinated": 13
+            },
+            "GPE": {
+              "total": 46,
+              "Non-factual Hallucination": 2,
+              "Factual Hallucination": 4,
+              "Unknown": 5,
+              "Non-hallucinated": 35
+            },
+            "DATE": {
+              "total": 18,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 4,
+              "Unknown": 5,
+              "Non-hallucinated": 8
+            },
+            "PERSON": {
+              "total": 45,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 8,
+              "Unknown": 4,
+              "Non-hallucinated": 32
+            },
+            "FAC": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 3
+            },
+            "CARDINAL": {
+              "total": 11,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 3,
+              "Non-hallucinated": 8
+            },
+            "EVENT": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 1
+            },
+            "NORP": {
+              "total": 8,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 2,
+              "Unknown": 0,
+              "Non-hallucinated": 6
+            },
+            "PRODUCT": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1
+            },
+            "ORDINAL": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            },
+            "LOC": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1
+            },
+            "WORK_OF_ART": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2
+            },
+            "TIME": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            }
+          }
+        }
+      }
+    },
+    "3": {
+      "summaries": {
+        "36396523": {
+          "banned_phrases": [
+            "World Cup",
+            "Chile",
+            "South America",
+            "next month's",
+            "next month"
+          ],
+          "summary": "Kaka has been called up to the Brazil squad for the Copa America in Brazil in June.",
+          "generation_metadata": {
+            "score": -0.663553774356842,
+            "dropped_seqs": [
+              "</s>Brazil have added Kaka to their squad for next month",
+              "</s>Brazil have added Kaka to their squad for the Under-20 World Cup",
+              "</s>Brazil have called up Kaka to their squad for the Under-20 World Cup",
+              "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup",
+              "</s>Kaka has been called up to the Brazil squad for the Copa America in Chile",
+              "</s>Kaka has been called up to the Brazil squad for the Copa America next month",
+              "</s>Kaka has been called up to the Brazil squad for the Copa America in Brazil next month"
+            ],
+            "n_words_checked": 97
+          },
+          "labeled_entities": [
+            {
+              "ent": "Kaka",
+              "type": "PERSON",
+              "start": 0,
+              "end": 4,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Brazil",
+              "type": "GPE",
+              "start": 31,
+              "end": 37,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the Copa America",
+              "type": "ORG",
+              "start": 48,
+              "end": 64,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Brazil",
+              "type": "GPE",
+              "start": 68,
+              "end": 74,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "June",
+              "type": "DATE",
+              "start": 78,
+              "end": 82,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "17996567": {
+          "banned_phrases": [
+            "Gloucestershire",
+            "Staffordshire",
+            "Flintshire"
+          ],
+          "summary": "Plans to cut home-to-school transport subsidies for children in Gloucesterse have been put on hold.",
+          "generation_metadata": {
+            "score": -0.8472769260406494,
+            "dropped_seqs": [
+              "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Flintshire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Staffordshire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
+            ],
+            "n_words_checked": 88
+          },
+          "labeled_entities": [
+            {
+              "ent": "Gloucesterse",
+              "type": "ORG",
+              "start": 64,
+              "end": 76,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "34361828": {
+          "banned_phrases": [
+            "Gwynedd village",
+            "Pembrokeshire",
+            "the 1970s",
+            "1950",
+            "the 1950s"
+          ],
+          "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
+          "generation_metadata": {
+            "score": -1.00760817527771,
+            "dropped_seqs": [
+              "</s>A search is under way for the remains of a Gwynedd village",
+              "</s>A search is under way for the remains of a Pembrokeshire",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by storms in the 1950s",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by storms in the 1970s",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950s",
+              "</s>A search is under way to find the remains of a Gower village that was destroyed by the sea in the 1950s"
+            ],
+            "n_words_checked": 85
+          },
+          "labeled_entities": [
+            {
+              "ent": "Gower",
+              "type": "GPE",
+              "start": 47,
+              "end": 52,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "1950",
+              "type": "DATE",
+              "start": 99,
+              "end": 103,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36203675": {
+          "banned_phrases": [
+            "the University of Bristol",
+            "the University of Oxford",
+            "the University of Cambridge"
+          ],
+          "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Manchester.",
+          "generation_metadata": {
+            "score": -0.842137336730957,
+            "dropped_seqs": [
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Oxford",
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Cambridge",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge"
+            ],
+            "n_words_checked": 107
+          },
+          "labeled_entities": [
+            {
+              "ent": "the University of Manchester",
+              "type": "ORG",
+              "start": 84,
+              "end": 112,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "37066389": {
+          "banned_phrases": [
+            "Gabriel",
+            "Omar",
+            "Kazakhstan",
+            "Carlos"
+          ],
+          "summary": "Colombia's Jose Luis Martinez has been beaten in the Olympic men's flyweight final by Uzbekistan's Islam Dusmatov.",
+          "generation_metadata": {
+            "score": -0.780331552028656,
+            "dropped_seqs": [
+              "</s>The Kazakhstan",
+              "</s>Colombia's Omar",
+              "</s>Colombia's Carlos",
+              "</s>Colombia's Gabriel",
+              "</s>Colombia's Jose Carlos",
+              "</s>Colombia's Jose Luis Martinez lost to Kazakhstan",
+              "</s>Colombia's Jose Angel Martinez lost to Kazakhstan",
+              "</s>Colombia's Jose Luis Martinez has been beaten by Kazakhstan",
+              "</s>Colombia's Jose Luis Martinez has been beaten in the Olympic men's flyweight final by Kazakhstan",
+              "</s>Colombia's Jose Luis Martinez has been knocked out in the Olympic men's flyweight final by Kazakhstan",
+              "</s>Colombia's Jose Luis Martinez has been knocked out of the Olympic men's flyweight final by Kazakhstan"
+            ],
+            "n_words_checked": 90
+          },
+          "labeled_entities": [
+            {
+              "ent": "Colombia",
+              "type": "GPE",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Jose",
+              "type": "PERSON",
+              "start": 11,
+              "end": 15,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Luis",
+              "type": "PERSON",
+              "start": 16,
+              "end": 20,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Martinez",
+              "type": "PERSON",
+              "start": 21,
+              "end": 29,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Uzbekistan",
+              "type": "GPE",
+              "start": 86,
+              "end": 96,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 53,
+          "total": 57,
+          "factual": 34,
+          "non_factual": 4,
+          "failed": 0,
+          "unknown": 19
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 5,
+            "Factual Hallucination": 23,
+            "Unknown": 24,
+            "Non-hallucinated": 111
+          },
+          "type": {
+            "ORG": {
+              "total": 24,
+              "Non-factual Hallucination": 2,
+              "Factual Hallucination": 5,
+              "Unknown": 4,
+              "Non-hallucinated": 13
+            },
+            "DATE": {
+              "total": 18,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 4,
+              "Unknown": 5,
+              "Non-hallucinated": 8
+            },
+            "PERSON": {
+              "total": 46,
+              "Non-factual Hallucination": 2,
+              "Factual Hallucination": 8,
+              "Unknown": 4,
+              "Non-hallucinated": 32
+            },
+            "GPE": {
+              "total": 45,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 4,
+              "Unknown": 5,
+              "Non-hallucinated": 36
+            },
+            "FAC": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 3
+            },
+            "CARDINAL": {
+              "total": 11,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 3,
+              "Non-hallucinated": 8
+            },
+            "EVENT": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 1
+            },
+            "NORP": {
+              "total": 8,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 2,
+              "Unknown": 0,
+              "Non-hallucinated": 6
+            },
+            "PRODUCT": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1
+            },
+            "ORDINAL": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            },
+            "LOC": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1
+            },
+            "WORK_OF_ART": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2
+            },
+            "TIME": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            }
+          }
+        }
+      }
+    },
+    "4": {
+      "summaries": {
+        "17996567": {
+          "banned_phrases": [
+            "Gloucesterse",
+            "Gloucestershire",
+            "Staffordshire",
+            "Flintshire"
+          ],
+          "summary": "Plans to cut home-to-school transport subsidies for children in Gloucestersfield have been put on hold.",
+          "generation_metadata": {
+            "score": -0.8587635159492493,
+            "dropped_seqs": [
+              "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Flintshire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Staffordshire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Gloucesterse"
+            ],
+            "n_words_checked": 79
+          },
+          "labeled_entities": [
+            {
+              "ent": "Gloucestersfield",
+              "type": "PERSON",
+              "start": 64,
+              "end": 80,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "34361828": {
+          "banned_phrases": [
+            "Gwynedd village",
+            "Pembrokeshire",
+            "the 1970s",
+            "1950",
+            "the 1950s"
+          ],
+          "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
+          "generation_metadata": {
+            "score": -1.00760817527771,
+            "dropped_seqs": [
+              "</s>A search is under way for the remains of a Gwynedd village",
+              "</s>A search is under way for the remains of a Pembrokeshire",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by storms in the 1950s",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by storms in the 1970s",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950s",
+              "</s>A search is under way to find the remains of a Gower village that was destroyed by the sea in the 1950s"
+            ],
+            "n_words_checked": 85
+          },
+          "labeled_entities": [
+            {
+              "ent": "Gower",
+              "type": "GPE",
+              "start": 47,
+              "end": 52,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "1950",
+              "type": "DATE",
+              "start": 99,
+              "end": 103,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36203675": {
+          "banned_phrases": [
+            "the University of Bristol",
+            "the University of Oxford",
+            "the University of Cambridge",
+            "the University of Manchester"
+          ],
+          "summary": "<Failed generation: blocked all beams>",
+          "generation_metadata": {
+            "score": -Infinity,
+            "dropped_seqs": [
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Oxford",
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Cambridge",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Manchester"
+            ],
+            "n_words_checked": 96
+          },
+          "labeled_entities": []
+        },
+        "37066389": {
+          "banned_phrases": [
+            "Jose",
+            "Omar",
+            "Kazakhstan",
+            "Gabriel",
+            "Luis",
+            "Carlos"
+          ],
+          "summary": "<Failed generation: blocked all beams>",
+          "generation_metadata": {
+            "score": -Infinity,
+            "dropped_seqs": [
+              "</s>The Kazakhstan",
+              "</s>Colombia's Omar",
+              "</s>Colombia's Carlos",
+              "</s>Colombia's Jose",
+              "</s>Colombia's Gabriel"
+            ],
+            "n_words_checked": 95
+          },
+          "labeled_entities": []
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 55,
+          "total": 57,
+          "factual": 34,
+          "non_factual": 2,
+          "failed": 2,
+          "unknown": 19
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 2,
+            "Factual Hallucination": 22,
+            "Unknown": 24,
+            "Non-hallucinated": 109
+          },
+          "type": {
+            "ORG": {
+              "total": 22,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 5,
+              "Unknown": 4,
+              "Non-hallucinated": 13
+            },
+            "DATE": {
+              "total": 18,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 4,
+              "Unknown": 5,
+              "Non-hallucinated": 8
+            },
+            "PERSON": {
+              "total": 44,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 8,
+              "Unknown": 4,
+              "Non-hallucinated": 31
+            },
+            "GPE": {
+              "total": 43,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 3,
+              "Unknown": 5,
+              "Non-hallucinated": 35
+            },
+            "FAC": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 3
+            },
+            "CARDINAL": {
+              "total": 11,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 3,
+              "Non-hallucinated": 8
+            },
+            "EVENT": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 1
+            },
+            "NORP": {
+              "total": 8,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 2,
+              "Unknown": 0,
+              "Non-hallucinated": 6
+            },
+            "PRODUCT": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1
+            },
+            "ORDINAL": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            },
+            "LOC": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1
+            },
+            "WORK_OF_ART": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2
+            },
+            "TIME": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}
