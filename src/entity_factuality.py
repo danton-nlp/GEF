@@ -13,6 +13,7 @@ ANNOTATION_LABELS = {
     "Factual": "Factual Hallucination",
     "Non-hallucinated": "Non-hallucinated",
     "Unknown": "Unknown",
+    "Intrinsic": "Intrinsic Hallucination"
 }
 
 PickledClassifier = KNeighborsClassifier
