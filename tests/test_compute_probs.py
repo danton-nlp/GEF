@@ -3,9 +3,12 @@ import pytest
 from src.compute_probs import (
     build_causal_masked_inputs_and_targets,
     build_masked_inputs_and_targets,
-    compute_prior_probs
+    compute_prior_and_posterior_probs,
+    compute_prior_probs,
 )
+
 from src.generation_utils import load_model_and_tokenizer
+from transformers import BartConfig
 
 
 @pytest.fixture(scope="session")
@@ -14,53 +17,69 @@ def bart_large():
     model, tokenizer = load_model_and_tokenizer("facebook/bart-large")
     return model, tokenizer
 
+@pytest.fixture(scope="session")
+def bart_large_xsum():
+    print("Loading model...")
+    model, tokenizer = load_model_and_tokenizer("facebook/bart-large-xsum")
+
+    # adding a mask token to the xsum fine-tuned model
+    model.resize_token_embeddings(50264+1)
+    return model, tokenizer
+
+
 @pytest.fixture(scope="module")
 def single_causal_entity_data():
-    return build_causal_masked_inputs_and_targets({
-        "source": "The 58-year-old spent three months in charge of the Addicks at the end of the 2013-14 campaign, keeping the club in the Championship. Since leaving The Valley the Belgian has spent time in charge of Blackpool, Standard Liege and Metz. Riga replaces compatriot Karel Fraeye, who was sacked from his post as interim head coach on Wednesday. Charlton are currently 23rd in the Championship table, three points from safety, and are on a run of 10 games without a win in all competitions. Fraeye was appointed in late October following the departure of Guy Luzon, but only won two of his 14 matches in charge of the first team. In a statement on the club website, Addicks owner Roland Duchatelet admitted the club had made errors in player recruitment and said the board of directors accepted responsibility for \"a disappointing season\". \"It was crucial we dealt with the position of the head coach,\" the Belgian businessman added. \"Jose did an excellent job in his short period with Charlton two seasons ago. He was very popular with supporters and I believe that he will get us back on track.\" Riga won seven of his 16 games during his stint at The Valley in 2014 but left the south-east London club when his contract was not renewed that summer and joined Blackpool. BBC Radio London's Andy Rowley. Charlton fans are increasingly angry with how the club is being run by Roland Duchatelet, who is now onto his sixth head coach since taking over the club in January 2014. There have been a number of recent protests at The Valley aimed at Duchatelet and chief executive Katrien Meire from supporters, who have now come together to form a group called \"Coalition Against Roland Duchatelet\" in an attempt to bring about a sale of the club. Riga has far more managerial experience than his predecessor Karel Fraeye but, given his previous links to Duchatelet and the antipathy towards the board of directors, the appointment could only serve to fan the flames for further supporter unrest.",
-        "reference": "Championship strugglers Charlton Athletic have reappointed Jose Riga as head coach on an 18-month deal.",
-        "prediction": "Charlton Athletic have appointed Jose Riga as their new head coach on a two-year contract.",
-        "entities": [
-            # {
-            #     "start": 33,
-            #     "end": 42,
-            #     "label": "Non-hallucinated",
-            #     "type": "GPE",
-            #     "ent": "Jose Riga"
-            # },
-            {
-                "start": 72,
-                "end": 80,
-                "label": "Non-factual Hallucination",
-                "type": "DATE",
-                "ent": "two-year"
-            }
-        ]
-    })
+    return build_causal_masked_inputs_and_targets(
+        {
+            "source": 'The 58-year-old spent three months in charge of the Addicks at the end of the 2013-14 campaign, keeping the club in the Championship. Since leaving The Valley the Belgian has spent time in charge of Blackpool, Standard Liege and Metz. Riga replaces compatriot Karel Fraeye, who was sacked from his post as interim head coach on Wednesday. Charlton are currently 23rd in the Championship table, three points from safety, and are on a run of 10 games without a win in all competitions. Fraeye was appointed in late October following the departure of Guy Luzon, but only won two of his 14 matches in charge of the first team. In a statement on the club website, Addicks owner Roland Duchatelet admitted the club had made errors in player recruitment and said the board of directors accepted responsibility for "a disappointing season". "It was crucial we dealt with the position of the head coach," the Belgian businessman added. "Jose did an excellent job in his short period with Charlton two seasons ago. He was very popular with supporters and I believe that he will get us back on track." Riga won seven of his 16 games during his stint at The Valley in 2014 but left the south-east London club when his contract was not renewed that summer and joined Blackpool. BBC Radio London\'s Andy Rowley. Charlton fans are increasingly angry with how the club is being run by Roland Duchatelet, who is now onto his sixth head coach since taking over the club in January 2014. There have been a number of recent protests at The Valley aimed at Duchatelet and chief executive Katrien Meire from supporters, who have now come together to form a group called "Coalition Against Roland Duchatelet" in an attempt to bring about a sale of the club. Riga has far more managerial experience than his predecessor Karel Fraeye but, given his previous links to Duchatelet and the antipathy towards the board of directors, the appointment could only serve to fan the flames for further supporter unrest.',
+            "reference": "Championship strugglers Charlton Athletic have reappointed Jose Riga as head coach on an 18-month deal.",
+            "prediction": "Charlton Athletic have appointed Jose Riga as their new head coach on a two-year contract.",
+            "entities": [
+                # {
+                #     "start": 33,
+                #     "end": 42,
+                #     "label": "Non-hallucinated",
+                #     "type": "GPE",
+                #     "ent": "Jose Riga"
+                # },
+                {
+                    "start": 72,
+                    "end": 80,
+                    "label": "Non-factual Hallucination",
+                    "type": "DATE",
+                    "ent": "two-year",
+                }
+            ],
+        }
+    )
+
 
 @pytest.fixture(scope="module")
 def single_masked_entity_data():
-    return build_masked_inputs_and_targets({
-        "source": "The 58-year-old spent three months in charge of the Addicks at the end of the 2013-14 campaign, keeping the club in the Championship. Since leaving The Valley the Belgian has spent time in charge of Blackpool, Standard Liege and Metz. Riga replaces compatriot Karel Fraeye, who was sacked from his post as interim head coach on Wednesday. Charlton are currently 23rd in the Championship table, three points from safety, and are on a run of 10 games without a win in all competitions. Fraeye was appointed in late October following the departure of Guy Luzon, but only won two of his 14 matches in charge of the first team. In a statement on the club website, Addicks owner Roland Duchatelet admitted the club had made errors in player recruitment and said the board of directors accepted responsibility for \"a disappointing season\". \"It was crucial we dealt with the position of the head coach,\" the Belgian businessman added. \"Jose did an excellent job in his short period with Charlton two seasons ago. He was very popular with supporters and I believe that he will get us back on track.\" Riga won seven of his 16 games during his stint at The Valley in 2014 but left the south-east London club when his contract was not renewed that summer and joined Blackpool. BBC Radio London's Andy Rowley. Charlton fans are increasingly angry with how the club is being run by Roland Duchatelet, who is now onto his sixth head coach since taking over the club in January 2014. There have been a number of recent protests at The Valley aimed at Duchatelet and chief executive Katrien Meire from supporters, who have now come together to form a group called \"Coalition Against Roland Duchatelet\" in an attempt to bring about a sale of the club. Riga has far more managerial experience than his predecessor Karel Fraeye but, given his previous links to Duchatelet and the antipathy towards the board of directors, the appointment could only serve to fan the flames for further supporter unrest.",
-        "reference": "Championship strugglers Charlton Athletic have reappointed Jose Riga as head coach on an 18-month deal.",
-        "prediction": "Charlton Athletic have appointed Jose Riga as their new head coach on a two-year contract.",
-        "entities": [
-            # {
-            #     "start": 33,
-            #     "end": 42,
-            #     "label": "Non-hallucinated",
-            #     "type": "GPE",
-            #     "ent": "Jose Riga"
-            # },
-            {
-                "start": 72,
-                "end": 80,
-                "label": "Non-factual Hallucination",
-                "type": "DATE",
-                "ent": "two-year"
-            }
-        ]
-    })
+    return build_masked_inputs_and_targets(
+        {
+            "source": 'The 58-year-old spent three months in charge of the Addicks at the end of the 2013-14 campaign, keeping the club in the Championship. Since leaving The Valley the Belgian has spent time in charge of Blackpool, Standard Liege and Metz. Riga replaces compatriot Karel Fraeye, who was sacked from his post as interim head coach on Wednesday. Charlton are currently 23rd in the Championship table, three points from safety, and are on a run of 10 games without a win in all competitions. Fraeye was appointed in late October following the departure of Guy Luzon, but only won two of his 14 matches in charge of the first team. In a statement on the club website, Addicks owner Roland Duchatelet admitted the club had made errors in player recruitment and said the board of directors accepted responsibility for "a disappointing season". "It was crucial we dealt with the position of the head coach," the Belgian businessman added. "Jose did an excellent job in his short period with Charlton two seasons ago. He was very popular with supporters and I believe that he will get us back on track." Riga won seven of his 16 games during his stint at The Valley in 2014 but left the south-east London club when his contract was not renewed that summer and joined Blackpool. BBC Radio London\'s Andy Rowley. Charlton fans are increasingly angry with how the club is being run by Roland Duchatelet, who is now onto his sixth head coach since taking over the club in January 2014. There have been a number of recent protests at The Valley aimed at Duchatelet and chief executive Katrien Meire from supporters, who have now come together to form a group called "Coalition Against Roland Duchatelet" in an attempt to bring about a sale of the club. Riga has far more managerial experience than his predecessor Karel Fraeye but, given his previous links to Duchatelet and the antipathy towards the board of directors, the appointment could only serve to fan the flames for further supporter unrest.',
+            "reference": "Championship strugglers Charlton Athletic have reappointed Jose Riga as head coach on an 18-month deal.",
+            "prediction": "Charlton Athletic have appointed Jose Riga as their new head coach on a two-year contract.",
+            "entities": [
+                # {
+                #     "start": 33,
+                #     "end": 42,
+                #     "label": "Non-hallucinated",
+                #     "type": "GPE",
+                #     "ent": "Jose Riga"
+                # },
+                {
+                    "start": 72,
+                    "end": 80,
+                    "label": "Non-factual Hallucination",
+                    "type": "DATE",
+                    "ent": "two-year",
+                }
+            ],
+        }
+    )
+
 
 @pytest.fixture(scope="module")
 def long_entity_data():
@@ -75,58 +94,113 @@ def long_entity_data():
                     "end": 128,
                     "label": "Non-hallucinated",
                     "type": "GPE",
-                    "ent": "France"
+                    "ent": "France",
                 }
-            ]
-        })
+            ],
+        }
+    )
+
 
 @pytest.fixture(scope="module")
 def causal_multiple_entity_data():
-    return build_causal_masked_inputs_and_targets({
-        "source": "The 58-year-old spent three months in charge of the Addicks at the end of the 2013-14 campaign, keeping the club in the Championship. Since leaving The Valley the Belgian has spent time in charge of Blackpool, Standard Liege and Metz. Riga replaces compatriot Karel Fraeye, who was sacked from his post as interim head coach on Wednesday. Charlton are currently 23rd in the Championship table, three points from safety, and are on a run of 10 games without a win in all competitions. Fraeye was appointed in late October following the departure of Guy Luzon, but only won two of his 14 matches in charge of the first team. In a statement on the club website, Addicks owner Roland Duchatelet admitted the club had made errors in player recruitment and said the board of directors accepted responsibility for \"a disappointing season\". \"It was crucial we dealt with the position of the head coach,\" the Belgian businessman added. \"Jose did an excellent job in his short period with Charlton two seasons ago. He was very popular with supporters and I believe that he will get us back on track.\" Riga won seven of his 16 games during his stint at The Valley in 2014 but left the south-east London club when his contract was not renewed that summer and joined Blackpool. BBC Radio London's Andy Rowley. Charlton fans are increasingly angry with how the club is being run by Roland Duchatelet, who is now onto his sixth head coach since taking over the club in January 2014. There have been a number of recent protests at The Valley aimed at Duchatelet and chief executive Katrien Meire from supporters, who have now come together to form a group called \"Coalition Against Roland Duchatelet\" in an attempt to bring about a sale of the club. Riga has far more managerial experience than his predecessor Karel Fraeye but, given his previous links to Duchatelet and the antipathy towards the board of directors, the appointment could only serve to fan the flames for further supporter unrest.",
-        "reference": "Championship strugglers Charlton Athletic have reappointed Jose Riga as head coach on an 18-month deal.",
-        "prediction": "Charlton Athletic have appointed Jose Riga as their new head coach on a two-year contract.",
-        "entities": [
-            {
-                "start": 33,
-                "end": 42,
-                "label": "Non-hallucinated",
-                "type": "GPE",
-                "ent": "Jose Riga"
-            },
-            {
-                "start": 72,
-                "end": 80,
-                "label": "Non-factual Hallucination",
-                "type": "DATE",
-                "ent": "two-year"
-            }
-        ]
-    })
+    return build_causal_masked_inputs_and_targets(
+        {
+            "source": 'The 58-year-old spent three months in charge of the Addicks at the end of the 2013-14 campaign, keeping the club in the Championship. Since leaving The Valley the Belgian has spent time in charge of Blackpool, Standard Liege and Metz. Riga replaces compatriot Karel Fraeye, who was sacked from his post as interim head coach on Wednesday. Charlton are currently 23rd in the Championship table, three points from safety, and are on a run of 10 games without a win in all competitions. Fraeye was appointed in late October following the departure of Guy Luzon, but only won two of his 14 matches in charge of the first team. In a statement on the club website, Addicks owner Roland Duchatelet admitted the club had made errors in player recruitment and said the board of directors accepted responsibility for "a disappointing season". "It was crucial we dealt with the position of the head coach," the Belgian businessman added. "Jose did an excellent job in his short period with Charlton two seasons ago. He was very popular with supporters and I believe that he will get us back on track." Riga won seven of his 16 games during his stint at The Valley in 2014 but left the south-east London club when his contract was not renewed that summer and joined Blackpool. BBC Radio London\'s Andy Rowley. Charlton fans are increasingly angry with how the club is being run by Roland Duchatelet, who is now onto his sixth head coach since taking over the club in January 2014. There have been a number of recent protests at The Valley aimed at Duchatelet and chief executive Katrien Meire from supporters, who have now come together to form a group called "Coalition Against Roland Duchatelet" in an attempt to bring about a sale of the club. Riga has far more managerial experience than his predecessor Karel Fraeye but, given his previous links to Duchatelet and the antipathy towards the board of directors, the appointment could only serve to fan the flames for further supporter unrest.',
+            "reference": "Championship strugglers Charlton Athletic have reappointed Jose Riga as head coach on an 18-month deal.",
+            "prediction": "Charlton Athletic have appointed Jose Riga as their new head coach on a two-year contract.",
+            "entities": [
+                {
+                    "start": 33,
+                    "end": 42,
+                    "label": "Non-hallucinated",
+                    "type": "GPE",
+                    "ent": "Jose Riga",
+                },
+                {
+                    "start": 72,
+                    "end": 80,
+                    "label": "Non-factual Hallucination",
+                    "type": "DATE",
+                    "ent": "two-year",
+                },
+            ],
+        }
+    )
+
 
 @pytest.fixture(scope="module")
 def masked_multiple_entity_data():
-    return build_masked_inputs_and_targets({
-        "source": "The 58-year-old spent three months in charge of the Addicks at the end of the 2013-14 campaign, keeping the club in the Championship. Since leaving The Valley the Belgian has spent time in charge of Blackpool, Standard Liege and Metz. Riga replaces compatriot Karel Fraeye, who was sacked from his post as interim head coach on Wednesday. Charlton are currently 23rd in the Championship table, three points from safety, and are on a run of 10 games without a win in all competitions. Fraeye was appointed in late October following the departure of Guy Luzon, but only won two of his 14 matches in charge of the first team. In a statement on the club website, Addicks owner Roland Duchatelet admitted the club had made errors in player recruitment and said the board of directors accepted responsibility for \"a disappointing season\". \"It was crucial we dealt with the position of the head coach,\" the Belgian businessman added. \"Jose did an excellent job in his short period with Charlton two seasons ago. He was very popular with supporters and I believe that he will get us back on track.\" Riga won seven of his 16 games during his stint at The Valley in 2014 but left the south-east London club when his contract was not renewed that summer and joined Blackpool. BBC Radio London's Andy Rowley. Charlton fans are increasingly angry with how the club is being run by Roland Duchatelet, who is now onto his sixth head coach since taking over the club in January 2014. There have been a number of recent protests at The Valley aimed at Duchatelet and chief executive Katrien Meire from supporters, who have now come together to form a group called \"Coalition Against Roland Duchatelet\" in an attempt to bring about a sale of the club. Riga has far more managerial experience than his predecessor Karel Fraeye but, given his previous links to Duchatelet and the antipathy towards the board of directors, the appointment could only serve to fan the flames for further supporter unrest.",
-        "reference": "Championship strugglers Charlton Athletic have reappointed Jose Riga as head coach on an 18-month deal.",
-        "prediction": "Charlton Athletic have appointed Jose Riga as their new head coach on a two-year contract.",
-        "entities": [
-            {
-                "start": 33,
-                "end": 42,
-                "label": "Non-hallucinated",
-                "type": "GPE",
-                "ent": "Jose Riga"
-            },
-            {
-                "start": 72,
-                "end": 80,
-                "label": "Non-factual Hallucination",
-                "type": "DATE",
-                "ent": "two-year"
-            }
-        ]
-    })
+    return build_masked_inputs_and_targets(
+        {
+            "source": 'The 58-year-old spent three months in charge of the Addicks at the end of the 2013-14 campaign, keeping the club in the Championship. Since leaving The Valley the Belgian has spent time in charge of Blackpool, Standard Liege and Metz. Riga replaces compatriot Karel Fraeye, who was sacked from his post as interim head coach on Wednesday. Charlton are currently 23rd in the Championship table, three points from safety, and are on a run of 10 games without a win in all competitions. Fraeye was appointed in late October following the departure of Guy Luzon, but only won two of his 14 matches in charge of the first team. In a statement on the club website, Addicks owner Roland Duchatelet admitted the club had made errors in player recruitment and said the board of directors accepted responsibility for "a disappointing season". "It was crucial we dealt with the position of the head coach," the Belgian businessman added. "Jose did an excellent job in his short period with Charlton two seasons ago. He was very popular with supporters and I believe that he will get us back on track." Riga won seven of his 16 games during his stint at The Valley in 2014 but left the south-east London club when his contract was not renewed that summer and joined Blackpool. BBC Radio London\'s Andy Rowley. Charlton fans are increasingly angry with how the club is being run by Roland Duchatelet, who is now onto his sixth head coach since taking over the club in January 2014. There have been a number of recent protests at The Valley aimed at Duchatelet and chief executive Katrien Meire from supporters, who have now come together to form a group called "Coalition Against Roland Duchatelet" in an attempt to bring about a sale of the club. Riga has far more managerial experience than his predecessor Karel Fraeye but, given his previous links to Duchatelet and the antipathy towards the board of directors, the appointment could only serve to fan the flames for further supporter unrest.',
+            "reference": "Championship strugglers Charlton Athletic have reappointed Jose Riga as head coach on an 18-month deal.",
+            "prediction": "Charlton Athletic have appointed Jose Riga as their new head coach on a two-year contract.",
+            "entities": [
+                {
+                    "start": 33,
+                    "end": 42,
+                    "label": "Non-hallucinated",
+                    "type": "GPE",
+                    "ent": "Jose Riga",
+                },
+                {
+                    "start": 72,
+                    "end": 80,
+                    "label": "Non-factual Hallucination",
+                    "type": "DATE",
+                    "ent": "two-year",
+                },
+            ],
+        }
+    )
+
+
+@pytest.fixture(scope="module")
+def evaluation_repro_data():
+    return build_masked_inputs_and_targets(
+        {
+            "source": 'The city was brought to a standstill on 15 December last year when a gunman held 18 hostages for 17 hours. Family members of victims Tori Johnson and Katrina Dawson were in attendance. Images of the floral tributes that filled the city centre in the wake of the siege were projected on to the cafe and surrounding buildings in an emotional twilight ceremony. Prime Minister Malcolm Turnbull gave an address saying a "whole nation resolved to answer hatred with love". "Testament to the spirit of Australians is that with such unnecessary, thoughtless tragedy, an amazing birth of mateship, unity and love occurs. Proud to be Australian," he said. How the Sydney siege unfolded. New South Wales Premier Mike Baird has also announced plans for a permanent memorial to be built into the pavement in Martin Place. Clear cubes containing flowers will be embedded into the concrete and will shine with specialised lighting. It is a project inspired by the massive floral tributes that were left in the days after the siege. "Something remarkable happened here. As a city we were drawn to Martin Place. We came in shock and in sorrow but every step we took was with purpose," he said on Tuesday.',
+            "reference": "Crowds have gathered in Sydney's Martin Place to honour the victims of the Lindt cafe siege, one year on.",
+            "prediction": "Sydney has marked the first anniversary of the siege at the Waverley cafe in which two women were killed by a gunman in the Australian city.",
+            "entities": [
+                {
+                    "start": 0,
+                    "end": 6,
+                    "label": "Non-hallucinated",
+                    "type": "ORG",
+                    "ent": "Sydney",
+                },
+                {
+                    "start": 22,
+                    "end": 27,
+                    "label": "Non-hallucinated",
+                    "type": "ORDINAL",
+                    "ent": "first",
+                },
+                {
+                    "start": 60,
+                    "end": 68,
+                    "label": "Non-factual Hallucination",
+                    "type": "ORG",
+                    "ent": "Waverley",
+                },
+                {
+                    "start": 83,
+                    "end": 86,
+                    "label": "Non-hallucinated",
+                    "type": "CARDINAL",
+                    "ent": "two",
+                },
+                {
+                    "start": 124,
+                    "end": 134,
+                    "label": "Non-hallucinated",
+                    "type": "NORP",
+                    "ent": "Australian",
+                },
+            ],
+        }
+    )
 
 
 # masked_input='Charlton Athletic have appointed Jose Riga as their new head coach on a <mask>'
@@ -164,6 +238,7 @@ def test_compute_causal_prior_probs(bart_large, single_causal_entity_data):
 
     assert ne_probs == [(0.4591749906539917 * 0.9699639678001404 * 0.9490254521369934)]
 
+
 # masked_input='Charlton Athletic have appointed Jose Riga as their new head coach on a <mask> contract.'
 # target='Charlton Athletic have appointed Jose Riga as their new head coach on a two-year contract.'
 # masked_input_tokenized=tensor([    0, 33193,  1054,  8899,    33,  3873,  3071,   248, 11742,    25,
@@ -194,12 +269,13 @@ def test_compute_causal_prior_probs(bart_large, single_causal_entity_data):
 #     ['.', 0.9139174818992615],
 #     ['</s>', 0.9738051891326904]]
 def test_compute_masked_prior_probs(bart_large, single_masked_entity_data):
-    inputs, targets, entities = single_masked_entity_data
+    inputs, targets, entities, _sources = single_masked_entity_data
 
     ne_probs = compute_prior_probs(inputs, targets, entities, bart_large, verbose=True)
     print(ne_probs)
 
     assert ne_probs == [0.4322648048400879 * 0.9040818810462952 * 0.6585601568222046]
+
 
 # masked_input='Charlton Athletic have appointed <mask>'
 # target='Charlton Athletic have appointed Jose Riga'
@@ -242,8 +318,9 @@ def test_causal_many_entities(bart_large, causal_multiple_entity_data):
 
     assert ne_probs == [
         (0.000604625849518925 * 0.014603929594159126 * 0.14980721473693848),
-        (0.4591749906539917 * 0.9699639678001404 * 0.9490254521369934)
+        (0.4591749906539917 * 0.9699639678001404 * 0.9490254521369934),
     ]
+
 
 # masked_input='Charlton Athletic have appointed <mask> as their new head coach on a two-year contract.'
 # target='Charlton Athletic have appointed Jose Riga as their new head coach on a two-year contract.'
@@ -311,11 +388,37 @@ def test_masked_many_entities(bart_large, masked_multiple_entity_data):
 
     assert ne_probs == [
         (0.000811865902505815 * 0.022413266822695732 * 0.2136993259191513),
-        (0.4322648048400879 * 0.9040818810462952 * 0.6585601568222046)
+        (0.4322648048400879 * 0.9040818810462952 * 0.6585601568222046),
     ]
+
 
 def test_long_entity(bart_large, long_entity_data):
     inputs, targets, entities = long_entity_data
 
     ne_probs = compute_prior_probs(inputs, targets, entities, bart_large, verbose=True)
     print(ne_probs)
+
+
+def test_prior_and_posterior_masked(
+    bart_large,
+    bart_large_xsum,
+    evaluation_repro_data
+):
+    inputs, targets, entities, sources = evaluation_repro_data
+
+    entity_probs = compute_prior_and_posterior_probs(
+        masked_inputs=inputs,
+        targets=targets,
+        sources=sources,
+        entities=entities,
+        prior_model_and_tokenizer=bart_large,
+        posterior_model_and_tokenizer=bart_large_xsum,
+        verbose=True,
+    )
+
+    print(entity_probs)
+
+    for i, entitity in enumerate(entities):
+        prior_prob = str(entity_probs[i][0])
+        posterior_prob = str(entity_probs[i][1])
+        print(','.join([entitity, prior_prob, posterior_prob]))
