@@ -69,7 +69,7 @@ def load_debug_subset(xsum_test):
     }
 
 
-def load_test_set(xsum_test, gold_metadata, N=50):
+def load_test_set(xsum_test, gold_metadata, N=50, include_debug=False):
     """
     Construct test set from xent test.
     Also add debug_ids.
@@ -87,10 +87,10 @@ def load_test_set(xsum_test, gold_metadata, N=50):
             list(xent_test_summaries.items()), len(xent_test_summaries)
         )[:N]
     }
-
-    for sum_id in DEBUG_IDS:
-        if sum_id not in test_set and "xent-train" not in gold_metadata[sum_id]:
-            test_set[sum_id] = xsum_test[sum_id]["document"]
+    if include_debug:
+        for sum_id in DEBUG_IDS:
+            if sum_id not in test_set and "xent-train" not in gold_metadata[sum_id]:
+                test_set[sum_id] = xsum_test[sum_id]["document"]
 
     return rng_data_split.sample(list(test_set.items()), len(test_set))
 

@@ -155,24 +155,24 @@ if __name__ == "__main__":
     print(f"Test results for {len(test_set_ids)} summaries")
 
     MODEL_RESULTS = {
-        "Debug FBS w/ oracle, i=5": load_summaries_from_logs(
-            "results/debug-oracle.json", max_iterations=5
-        ),
-        "Debug FBS w/ classifier, i=5": load_summaries_from_logs(
-            "results/debug-classifier.json", max_iterations=5
-        ),
+        # "Debug FBS w/ oracle, i=5": load_summaries_from_logs(
+        #     "results/debug-oracle.json", max_iterations=5
+        # ),
+        # "Debug FBS w/ classifier, i=5": load_summaries_from_logs(
+        #     "results/debug-classifier.json", max_iterations=5
+        # ),
         "Test FBS w/ oracle, i=2": load_summaries_from_logs(
-            "results/test-oracle.json", max_iterations=2
+            "results/xent-test-oracle.json", max_iterations=2
         ),
         "Test FBS w/ oracle, i=5": load_summaries_from_logs(
-            "results/test-oracle.json", max_iterations=5
+            "results/xent-test-oracle.json", max_iterations=5
         ),
         "Test FBS w/ classifier, i=5": load_summaries_from_logs(
-            "results/test-classifier.json", max_iterations=5
+            "results/xent-test-classifier.json", max_iterations=5
         ),
-        "Test FBS w/ bad classifier, i=5": load_summaries_from_logs(
-            "results/test-bad-classifier.json", max_iterations=5
-        ),
+        # "Test FBS w/ bad classifier, i=5": load_summaries_from_logs(
+        #     "results/test-bad-classifier.json", max_iterations=5
+        # ),
     }
     for sumtool_name in [
         "facebook-bart-large-xsum",  # Baseline
@@ -181,16 +181,17 @@ if __name__ == "__main__":
     ]:
         dataset = get_summaries(SUMTOOL_DATASET, sumtool_name)
         MODEL_RESULTS[sumtool_name] = {
-            sum_id: x["summary"]
-            for sum_id, x in dataset.items()
-            if sum_id in test_set_ids
+            sum_id: x["summary"] for sum_id, x in dataset.items()
         }
 
     metrics = {}
     for label, sums_by_id in MODEL_RESULTS.items():
+        filtered_sums_by_id = {
+            sum_id: x for sum_id, x in sums_by_id.items() if sum_id in test_set_ids
+        }
         print(f"Model: {label}")
         pp.pprint(
             compute_metrics(
-                sums_by_id, gold_sums, gold_metadata, xsum_test, args.annotate
+                filtered_sums_by_id, gold_sums, gold_metadata, xsum_test, args.annotate
             )[0]
         )
