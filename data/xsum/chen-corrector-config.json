@@ -1,0 +1,6 @@
+{
+  "Github": "https://github.com/CogComp/faithful_summarization",
+  "Paper": "https://www.seas.upenn.edu/~sihaoc/static/pdf/CZSR21.pdf",
+  "Title": "Improving Faithfulness in Abstractive Summarization with Contrast Candidate Generation and Selection",
+  "sumtool_model": "chen-corrector"
+}

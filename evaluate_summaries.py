@@ -10,13 +10,14 @@ from src.metrics import rouge
 import argparse
 import json
 import numpy as np
+import pprint
 
 
 SUMTOOL_DATASET = "xsum"
 SUMTOOL_MODEL_GOLD = "gold"
 
 
-def get_labeled_entities(sums_by_id, gold_metadata, xsum_test):
+def get_labeled_entities(sums_by_id, gold_metadata, xsum_test, should_annotate):
     summary_entities = {}
     for sum_id, summary in sums_by_id.items():
         summary_entities[sum_id] = detect_entities(
@@ -31,7 +32,7 @@ def get_labeled_entities(sums_by_id, gold_metadata, xsum_test):
         labeled_ents,
     )
 
-    if count_entities(unknown_entities) > 0:
+    if should_annotate and count_entities(unknown_entities) > 0:
         result = prompt_annotation_flow(
             unknown_entities,
             xsum_test,
@@ -46,17 +47,23 @@ def get_labeled_entities(sums_by_id, gold_metadata, xsum_test):
     return labeled_ents
 
 
-def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test):
-    labeled_ents = get_labeled_entities(sums_by_id, gold_metadata, xsum_test)
+def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test, should_annotate):
+    labeled_ents = get_labeled_entities(
+        sums_by_id, gold_metadata, xsum_test, should_annotate
+    )
     summary_results = {}
     counters = {
         "factual": 0,
         "non_factual": 0,
         "unknown": 0,
+        "entities": 0,
+        "failed": 0,
         "rouge1": [],
         "rouge2": [],
         "rougeL": [],
     }
+    for value in ANNOTATION_LABELS.values():
+        counters[value] = 0
 
     for sum_id, summary in sums_by_id.items():
         source = xsum_test[sum_id]["document"]
@@ -72,11 +79,12 @@ def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test):
 
         if summary == SUMMARY_FAILED_GENERATION:
             non_factual = True
+            counters["failed"] += 1
 
         for ent in labeled_ents[sum_id]:
-            if ent["label"] in [
-                ANNOTATION_LABELS["Non-factual"],
-            ]:
+            counters["entities"] += 1
+            counters[ent["label"]] += 1
+            if ent["label"] == ANNOTATION_LABELS["Non-factual"]:
                 non_factual = True
             elif ent["label"] == "Unknown":
                 has_unknown = True
@@ -89,13 +97,22 @@ def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test):
             counters["factual"] += 1
 
     metrics = {
-        "factual": counters["factual"] / len(sums_by_id),
-        "non_factual": counters["non_factual"] / len(sums_by_id),
-        "unknown": counters["unknown"] / len(sums_by_id),
+        "summaries": {
+            "total": len(sums_by_id),
+            "factual": counters["factual"] / len(sums_by_id),
+            "non_factual": counters["non_factual"] / len(sums_by_id),
+            "unknown": counters["unknown"] / len(sums_by_id),
+            "failed": counters["failed"]
+        },
+        "entities": {
+            "total": counters["entities"],
+        },
         "rouge1": np.mean(counters["rouge1"]),
         "rouge2": np.mean(counters["rouge2"]),
         "rougeL": np.mean(counters["rougeL"]),
     }
+    for value in ANNOTATION_LABELS.values():
+        metrics["entities"][value] = counters[value]
 
     return metrics, summary_results
 
@@ -115,20 +132,26 @@ def load_summaries_from_logs(path):
 
 
 if __name__ == "__main__":
+    pp = pprint.PrettyPrinter(indent=2)
     parser = argparse.ArgumentParser()
+    parser.add_argument("--annotate", type=bool, default=False)
     args = parser.parse_args()
 
     gold_metadata = get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD)
     gold_sums = get_summaries(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD)
     xsum_test = load_xsum_dict("test")
-    test_set_ids = {k for (k, v) in load_test_set(xsum_test, gold_metadata, 500)}
+    test_set_ids = {k for (k, v) in load_test_set(xsum_test, gold_metadata, 50)}
 
     print(f"Test results for {len(test_set_ids)} summaries")
 
     MODEL_RESULTS = {
         "Constrained oracle": load_summaries_from_logs("results/test.json"),
     }
-    for sumtool_name in ["facebook-bart-large-xsum", "entity-filter-v2"]:
+    for sumtool_name in [
+        "facebook-bart-large-xsum",  # Baseline
+        "chen-corrector",  # Chen. et al replication project
+        "entity-filter-v2",  # Nan. et al
+    ]:
         dataset = get_summaries(SUMTOOL_DATASET, sumtool_name)
         MODEL_RESULTS[sumtool_name] = {
             sum_id: x["summary"]
@@ -139,4 +162,8 @@ if __name__ == "__main__":
     metrics = {}
     for label, sums_by_id in MODEL_RESULTS.items():
         print(f"Model: {label}")
-        print(compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test))
+        pp.pprint(
+            compute_metrics(
+                sums_by_id, gold_sums, gold_metadata, xsum_test, args.annotate
+            )[0]
+        )
