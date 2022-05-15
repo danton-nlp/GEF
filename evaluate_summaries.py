@@ -135,12 +135,13 @@ if __name__ == "__main__":
     pp = pprint.PrettyPrinter(indent=2)
     parser = argparse.ArgumentParser()
     parser.add_argument("--annotate", type=bool, default=False)
+    parser.add_argument("--test_size", type=int, default=50)
     args = parser.parse_args()
 
     gold_metadata = get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD)
     gold_sums = get_summaries(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD)
     xsum_test = load_xsum_dict("test")
-    test_set_ids = {k for (k, v) in load_test_set(xsum_test, gold_metadata, 50)}
+    test_set_ids = {k for (k, v) in load_test_set(xsum_test, gold_metadata, args.test_size)}
 
     print(f"Test results for {len(test_set_ids)} summaries")
 
