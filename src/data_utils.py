@@ -1,4 +1,4 @@
-from typing import Dict, List, TypedDict
+from typing import Dict, List, Tuple, TypedDict
 import json
 from datasets import load_dataset
 import random
@@ -26,6 +26,27 @@ def load_xent(split: str) -> List[XEntExample]:
         raise ValueError("must be test or train")
     with open(f"./data/xent/{split}.json", "r") as f:
         return json.load(f)
+
+
+def persist_example_with_probs(
+    output_filepath: str,
+    output_dataset: List[dict],
+    output_dataset_idx: int,
+    example: XEntExample,
+    entity_texts: List[str],
+    entity_probs: List[Tuple[float]],
+):
+    xent_example_with_probs = example.copy()
+    entity_probs_with_names = dict(zip(entity_texts, entity_probs))
+
+    for entity in xent_example_with_probs["entities"]:
+        prior, posterior = entity_probs_with_names[entity["ent"]]
+        entity["prior_prob"] = prior
+        entity["posterior_prob"] = posterior
+
+    output_dataset[output_dataset_idx] = xent_example_with_probs
+    with open(output_filepath, "w") as f:
+        json.dump(output_dataset, f, indent=2)
 
 
 DEBUG_IDS = {
