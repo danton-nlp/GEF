@@ -23,3 +23,12 @@ python iterative_constraints.py --data_subset debug|xent|full
 ```
 python iterative_constraints.py --annotate 1
 ```
+
+### Prior and Posterior Named Entity Probability Computation
+
+To create dataset of prior and posterior probabilities of Xent named entities,
+run compute_probs.py. For example, to run on train
+
+```bash
+python compute_probs.py --xent_split train --output_filepath data/xent-probs/train.json
+```
