@@ -23,7 +23,7 @@ if __name__ == "__main__":
                     "prediction": gen_summary,
                     "entities": entities,
                 }
-                n_sums +=1
+                n_sums += 1
                 n_ents += len(entities)
                 persisted.append(sum_object)
     with open(f"./data/xent-extended/test.json", "w") as f:
