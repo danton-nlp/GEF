@@ -28,7 +28,7 @@ def load_model_and_tokenizer(path: str, device=torch.device("cuda" if torch.cuda
     )
 
 
-def load_xsum_with_mask_in_vocab(device=torch.device("cuda" if torch.cuda.is_available() else "cpu")):
+def load_bart_xsum_cmlm(device=torch.device("cuda" if torch.cuda.is_available() else "cpu")):
     model = AutoModelForSeq2SeqLM.from_pretrained("model-checkpoints/entfa-cmlm").to(device)
     tokenizer = AutoTokenizer.from_pretrained("facebook/bart-large-xsum", mask_token="###")
 

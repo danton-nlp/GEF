@@ -5,7 +5,7 @@ from compute_probs import (
     build_masked_inputs_and_targets,
     compute_probs_for_summary,
 )
-from src.generation_utils import load_model_and_tokenizer, load_xsum_with_mask_in_vocab
+from src.generation_utils import load_model_and_tokenizer, load_bart_xsum_cmlm
 
 
 @pytest.fixture(scope="session")
@@ -17,7 +17,7 @@ def bart_large():
 
 @pytest.fixture(scope="session")
 def bart_large_xsum():
-    return load_xsum_with_mask_in_vocab()
+    return load_bart_xsum_cmlm()
 
 
 @pytest.fixture(scope="module")
