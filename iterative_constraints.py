@@ -1,6 +1,11 @@
 from collections import defaultdict
 import argparse
-from src.data_utils import load_debug_subset, load_test_set, load_xsum_dict
+from src.data_utils import (
+    load_debug_subset,
+    load_test_set,
+    load_xsum_dict,
+    split_batches,
+)
 from src.detect_entities import detect_entities
 from copy import deepcopy
 from src.entity_utils import (
@@ -159,34 +164,32 @@ def print_results(label, results_by_sum_id, type="summary"):
         )
 
 
-def split_batches(lst, size):
-    """Yield successive chunks from lst."""
-    for i in range(0, len(lst), size):
-        yield lst[i : i + size]
-
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--pickled_classifier", type=str, default="")
+    parser.add_argument("--pickled_classifier", type=str, default="factuality-classifiers/v0-knn.pickle")
+    parser.add_argument("--classifier_batch_size", type=int, default=4)
     parser.add_argument("--model_path", type=str, default="facebook/bart-large-xsum")
     parser.add_argument("--max_iterations", type=int, default=5)
     parser.add_argument("--annotate", type=bool, default=False)
     parser.add_argument("--verbose", type=bool, default=False)
-    parser.add_argument("--batch_size", type=int, default=8)
+    parser.add_argument("--batch_size", type=int, default=2)
     parser.add_argument(
         "--data_subset", type=str, default="debug", help="debug|xent|full"
     )
     args = parser.parse_args()
-    print("Loading model...")
-    model, tokenizer = load_model_and_tokenizer(args.model_path)
-    iteration_log = {}
-    logging_path = get_new_log_path("logs-iterative") + ".json"
-    summary_gold_metadata = get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD)
-    xsum_test = load_xsum_dict("test")
     num_beams = 4
+    with Timer("Loading summarization model & dataset"):
+        model, tokenizer = load_model_and_tokenizer(args.model_path)
+        iteration_log = {}
+        logging_path = get_new_log_path("logs-iterative") + ".json"
+        summary_gold_metadata = get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD)
+        xsum_test = load_xsum_dict("test")
 
     if args.pickled_classifier != "":
-        clf_factuality = EntityFactualityClassifier(args.pickled_classifier)
+        clf_factuality = EntityFactualityClassifier(
+            args.pickled_classifier,
+            args.classifier_batch_size
+        )
     else:
         clf_factuality = None
 
@@ -253,16 +256,16 @@ if __name__ == "__main__":
         ]
         batches = list(split_batches(incomplete_docs, args.batch_size))
         with Timer(f"Iteration {n_iterations}, {len(incomplete_docs)} docs"):
-            for batch_idx, batch_sums in enumerate(batches):
+            for batch_idx, batch_sources in enumerate(batches):
                 print(f"Batch {batch_idx+1}/{len(batches)}")
                 # Generate summaries
                 id_to_idx = {}
                 model_input = []
                 banned_phrases_by_input_idx = {}
-                for sum_id, summary in batch_sums:
+                for sum_id, source in batch_sources:
                     input_idx = len(model_input)
                     id_to_idx[sum_id] = input_idx
-                    model_input.append(summary)
+                    model_input.append(source)
                     banned_phrases_by_input_idx[input_idx] = banned_phrases_by_sum_id[
                         sum_id
                     ]
@@ -301,7 +304,9 @@ if __name__ == "__main__":
                     # Set predicted labels from classifier
                     if clf_factuality is not None:
                         summary_entities = clf_factuality.classify_entities(
-                            summary_entities, gen_summaries_by_id
+                            summary_entities,
+                            gen_summaries_by_id,
+                            {k: v for k, v in batch_sources},
                         )
 
                     # Set labels from oracle

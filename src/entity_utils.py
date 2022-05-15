@@ -5,13 +5,13 @@ import re
 MarkedEntity = TypedDict(
     "MarkedEntity",
     {
-        "ent": str, 
-        "type": str, 
-        "start": int, 
-        "end": int, 
+        "ent": str,
+        "type": str,
+        "start": int,
+        "end": int,
         "in_source": bool,
         "label": Union[str, None],
-        "predicted_label": Union[str, None]
+        "predicted_label": Union[str, None],
     },
 )
 

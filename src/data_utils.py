@@ -93,3 +93,9 @@ def load_test_set(xsum_test, gold_metadata, N=50):
             test_set[sum_id] = xsum_test[sum_id]["document"]
 
     return rng_data_split.sample(list(test_set.items()), len(test_set))
+
+
+def split_batches(lst, size):
+    """Yield successive chunks from lst."""
+    for i in range(0, len(lst), size):
+        yield lst[i : i + size]

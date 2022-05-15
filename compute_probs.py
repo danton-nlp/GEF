@@ -1,12 +1,13 @@
 import argparse
 from typing import List, Tuple
 from tqdm import tqdm
-
 import torch
 from transformers.tokenization_utils_base import BatchEncoding
-from iterative_constraints import split_batches
-
-from src.data_utils import load_xent, persist_example_with_probs
+from src.data_utils import (
+    load_xent, 
+    persist_example_with_probs,
+    split_batches
+)
 from src.generation_utils import load_model_and_tokenizer, load_bart_xsum_cmlm
 from src.prob_computation_utils import build_masked_inputs_and_targets
 
