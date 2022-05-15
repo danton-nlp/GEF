@@ -65,6 +65,7 @@ def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test):
         non_factual = False
         has_unknown = False
 
+        # TODO: handle rogue score computation for failed gen
         counters["rouge1"].append(rouge_scores["rouge1"]["f1"])
         counters["rouge2"].append(rouge_scores["rouge2"]["f1"])
         counters["rougeL"].append(rouge_scores["rougeL"]["f1"])
