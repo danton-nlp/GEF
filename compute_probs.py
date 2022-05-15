@@ -6,7 +6,7 @@ import torch
 from transformers.tokenization_utils_base import BatchEncoding
 from iterative_constraints import split_batches
 
-from src.data_utils import load_xent
+from src.data_utils import load_xent, persist_example_with_probs
 from src.generation_utils import load_model_and_tokenizer, load_bart_xsum_cmlm
 from src.prob_computation_utils import build_masked_inputs_and_targets
 
@@ -184,7 +184,7 @@ if __name__ == "__main__":
     parser.add_argument("--verbose", type=bool, default=False)
     parser.add_argument("--batch_size", type=int, default=8)
     parser.add_argument(
-        "--max_examples",
+        "--num_examples",
         type=int,
         default=None,
         help="debug: max number of examples to process",
@@ -192,10 +192,21 @@ if __name__ == "__main__":
     parser.add_argument(
         "--xent_split", type=str, default="test", choices=["test", "train"]
     )
-    args = parser.parse_args()
-    dataset = load_xent(args.xent_split)
 
-    for idx, example in enumerate(tqdm(dataset[: args.max_examples])):
+    parser.add_argument(
+        "--input_filepath",
+        type=str,
+        help="filepath to read existing prob output from",
+    )
+    parser.add_argument(
+        "--output_filepath",
+        type=str,
+        help="filepath to write prob output to",
+    )
+    args = parser.parse_args()
+    dataset = load_xent(args.xent_split)[: args.num_examples]
+
+    for idx, example in enumerate(tqdm(dataset)):
         (
             inputs,
             targets,
@@ -212,6 +223,15 @@ if __name__ == "__main__":
             batch_size=args.batch_size,
             prior_model_and_tokenizer=load_model_and_tokenizer("facebook/bart-large"),
             posterior_model_and_tokenizer=load_bart_xsum_cmlm(),
+        )
+
+        persist_example_with_probs(
+            output_filepath=args.output_filepath,
+            output_dataset=dataset,
+            output_dataset_idx=idx,
+            example=example,
+            entity_texts=entities,
+            entity_probs=entity_probs,
         )
 
         # pprint.PrettyPrinter(indent=4).pprint(
