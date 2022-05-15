@@ -1,5 +1,20 @@
 [
   {
+    "source": "Ogwen Valley Mountain Rescue team was called to Yr Elen, in the Carneddau range, at about 14:00 GMT on Saturday.\nThe man, who had rib and back injuries, was flown to hospital in a rescue helicopter.",
+    "reference": "A man in his 60s has been airlifted to hospital after falling while walking in Snowdonia.",
+    "prediction": "A man has been airlifted to hospital after falling from a cliff in Gwynedd.",
+    "entities": [
+      {
+        "ent": "Gwynedd",
+        "type": "GPE",
+        "start": 67,
+        "end": 74,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
     "source": "Media playback is not supported on this device\nDusmatov, 23, was awarded a unanimous points victory - two judges scoring the fight 30-27, and one 29-28.\nMartinez, 24, is the first Olympic boxing finalist from Colombia.\nThe United States' Nico Hernandez, 20, and 19-year-old Cuban world champion Joahnys Argilagos took bronze after losing in the semi-finals.\nFind out how to get into boxing with our special guide.\nSubscribe to the BBC Sport newsletter to get our pick of news, features and video sent to your inbox.",
     "reference": "Uzbekistan's Hasanboy Dusmatov won Olympic gold in the men's light-flyweight with victory over Colombian Yuberjen Herney Martinez.",
     "prediction": "Colombia's Omar Martinez lost to Kazakhstan's Islam Dusmatov in the Olympic men's flyweight final in Rio.",
@@ -62,6 +77,29 @@
         "type": "PERSON",
         "start": 16,
         "end": 20,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "Media playback is not supported on this device\nDusmatov, 23, was awarded a unanimous points victory - two judges scoring the fight 30-27, and one 29-28.\nMartinez, 24, is the first Olympic boxing finalist from Colombia.\nThe United States' Nico Hernandez, 20, and 19-year-old Cuban world champion Joahnys Argilagos took bronze after losing in the semi-finals.\nFind out how to get into boxing with our special guide.\nSubscribe to the BBC Sport newsletter to get our pick of news, features and video sent to your inbox.",
+    "reference": "Uzbekistan's Hasanboy Dusmatov won Olympic gold in the men's light-flyweight with victory over Colombian Yuberjen Herney Martinez.",
+    "prediction": "Colombia's Juan Carlos Martinez won his first Olympic gold medal with a unanimous decision over Uzbekistan's Artur Dusmatov in the men's bantamweight final.",
+    "entities": [
+      {
+        "ent": "Juan",
+        "type": "PERSON",
+        "start": 11,
+        "end": 15,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      },
+      {
+        "ent": "Artur",
+        "type": "PERSON",
+        "start": 109,
+        "end": 114,
         "in_source": false,
         "label": "Non-factual Hallucination"
       }
@@ -287,6 +325,21 @@
     ]
   },
   {
+    "source": "Flint Community Hospital could be closed under plans by Betsi Cadwaladr University Health Board (BCUHB) to reorganise its services in north Wales.\nCampaigners joined a protest march from the hospital to attend the public meeting at the town hall.\nIn a statement BCUHB said retaining the status quo was \"not an option\".\nThe health board, which predicts a financial shortfall of \u00c2\u00a364.6m this year, revealed details of its proposed shake-up in July.\nUnder plans being considered Blaenau Ffestiniog community hospital could also close and minor injury accident departments may shut at other locations.\nNeo-natal intensive care may also be transferred over the border to England as part of the proposed shake-up.\nShortly after the plans were made public GPs in the area revealed their concerns about the effects of proposed cuts on community services.\nMark Scriven, the health board's medical director, said there was sound reasoning behind the proposals to close Flint hospital.\n\"The thinking generally about the problems we're trying to address in these proposals with community hospitals is that some of them are very old, and they have poor fabric,\" he told BBC Radio Wales.\nHe said it was not just the furnishings that were not up to scratch, the physical space did not suit modern health care.\n\"A lot of them, and the services they provide, are underused, and certainly the minor injuries unit at Flint hospital is underused, which is important because it doesn't allow the nurses running it to maintain their experience according to their professional bodies,\" added Mr Scriven.\nIn response, Jack Reece, chairman of the Save Our Cottage Hospital Campaign, said Flint hospital was well used.\nSpeaking at Tuesday protest, he added: \"They've closed us, they took beds away from us. We've had 18 going down to 14, going down to 12, 10.\n\"They're taking away our clinics from there. They have systematically dropped the services from this town.\"\nMr Reece described BCUHB's plans as a new version of old proposals by the Flintshire Health Board which had already been rejected by the Welsh government.\nExplaining the reasons behind its proposed shake-up, BCUHB said it was clear that it could not afford to stand still.\n\"The status quo is not an option,\" the board said.\n\"The proposals we are now making are intended to change the way in which services are provided and where they are provided to ensure patient safety and meet quality standards.\n\"The proposals will allow us to attract and retain the professional clinical staff we need and control our costs when public finances are decreasing.\"\nBCUHB said its consultation exercise would run until 28 October, and it would also take account of the views of the community health council and any views they have heard from the public before making decisions.\nAny changes would start in early 2013, it said.",
+    "reference": "More than 1,000 campaigners trying to save a north Wales community hospital from closure have marched to a health board consultation meeting.",
+    "prediction": "More than 100 people have attended a public meeting in Wales to discuss plans to close a community hospital.",
+    "entities": [
+      {
+        "ent": "More than 100",
+        "type": "CARDINAL",
+        "start": 0,
+        "end": 13,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
     "source": "The A344 next to the monument was shut in June to \"restore the dignity\" of the stone circle as part of a \u00c2\u00a327m project.\nResidents of villages including Shrewton and Orcheston say their lanes have become \"rat runs\" for drivers avoiding congestion on the A303.\nCampaigners will collect signatures for a petition this weekend.\nJanice Hassett, from the Shrewton Traffic Action Group (Stag), said: \"The A344 should not have been closed before the A303 was dualled.\n\"The A303 at Stonehenge Bottom was bad before, but it's a nightmare now.\n\"Traffic is stupidly backing up to Thruxton on a holiday weekend.\n\"Sat-navs are sending people right through our villages. There's going to be an accident.\"\nThe petition is asking for \"urgent action\" to be taken to tackle high volumes of non-local traffic using the B3086 through Shrewton, a 20mph speed limit to be introduced and better signage to be installed.",
     "reference": "People concerned with traffic congestion in villages near Stonehenge are stepping up a campaign for \"urgent action\" to be taken.",
     "prediction": "Villagers in Shropshire are calling for the reopening of a dual carriageway next to Stonehenge.",
@@ -370,6 +423,36 @@
     ]
   },
   {
+    "source": "The US economy grew at an annual rate of 0.2% in the first three months of the year, far lower than forecasts.\nThe Federal Reserve also kept interest rates at a record low, blaming the slower growth on \"transitory factors\".\nJapan's Nikkei 225 was down 2.7% to 19,520.21, its biggest loss in nearly four months.\nThe market extended losses after Bank of Japan left its monetary policy unchanged, while lacklustre company earnings also had their impact on the benchmark index.\nShares in Honda fell 6.7% after it announced a fall in profit for the fiscal year to March, as it deals with recalls following exploding air-bags.\nDrug maker Takeda shares fell 3% after it warned it would make a loss because of a $2.4bn US legal settlement linked to its Actos diabetes drug.\nChinese shares headed lower with Hong Kong's Hang Seng index falling 0.9% to 28,157.71, while the Shanghai Composite was 0.6% lower at 4,449.17.\nShares of AAC Technologies in Hong Kong fell 5.2% after a report in the Wall Street Journal that the Apple Watch had defective component, which was supplied by the Chinese company.\nIn Australia, the benchmark S&P/ASX 200 ended down 0.8% at 5,790.\nSouth Korea's benchmark Kospi index closed down 0.7% at 2,127.17 - marking its fifth consecutive day of losses.\nGovernment data showed that the country's industrial output fell by a seasonally adjusted 0.4% in March from February - missing market expectations.",
+    "reference": "Asian markets traded lower on Thursday with investor sentiment dented by a weaker than expected first quarter growth figure in the US.",
+    "prediction": "Chinese shares headed lower on Friday, following Wall Street lower after the latest US economic growth figures.",
+    "entities": [
+      {
+        "ent": "Friday",
+        "type": "DATE",
+        "start": 31,
+        "end": 37,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The US economy grew at an annual rate of 0.2% in the first three months of the year, far lower than forecasts.\nThe Federal Reserve also kept interest rates at a record low, blaming the slower growth on \"transitory factors\".\nJapan's Nikkei 225 was down 2.7% to 19,520.21, its biggest loss in nearly four months.\nThe market extended losses after Bank of Japan left its monetary policy unchanged, while lacklustre company earnings also had their impact on the benchmark index.\nShares in Honda fell 6.7% after it announced a fall in profit for the fiscal year to March, as it deals with recalls following exploding air-bags.\nDrug maker Takeda shares fell 3% after it warned it would make a loss because of a $2.4bn US legal settlement linked to its Actos diabetes drug.\nChinese shares headed lower with Hong Kong's Hang Seng index falling 0.9% to 28,157.71, while the Shanghai Composite was 0.6% lower at 4,449.17.\nShares of AAC Technologies in Hong Kong fell 5.2% after a report in the Wall Street Journal that the Apple Watch had defective component, which was supplied by the Chinese company.\nIn Australia, the benchmark S&P/ASX 200 ended down 0.8% at 5,790.\nSouth Korea's benchmark Kospi index closed down 0.7% at 2,127.17 - marking its fifth consecutive day of losses.\nGovernment data showed that the country's industrial output fell by a seasonally adjusted 0.4% in March from February - missing market expectations.",
+    "reference": "Asian markets traded lower on Thursday with investor sentiment dented by a weaker than expected first quarter growth figure in the US.",
+    "prediction": "(Close): Shares in Japan and China fell sharply on Wednesday, as investors weighed down by disappointing US economic growth data.",
+    "entities": [
+      {
+        "ent": "China",
+        "type": "GPE",
+        "start": 29,
+        "end": 34,
+        "in_source": false,
+        "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
     "source": "The water pipes in the town are old and prone to leaks and bursts, Severn Trent Water said.\nPart of Milford Road is expected to be closed until the summer as a metal water pipe is replaced. Diversions will be in place.\nThe road is \"just too narrow\" in parts to be kept open as large machinery will be used, a spokesman said.\nMore than 12 miles (20km) of new water pipes are being laid from the Shugborough area into Stafford town centre.\nIn the first phase, which began in September, pipes were installed on Tixall Road for a new housing development nearby.",
     "reference": "The second phase of a \u00a315m project to upgrade the water and sewer pipes in Stafford is under way.",
     "prediction": "A road in Stafford town centre is to be closed as part of a \u00a31m project to replace water pipes.",
@@ -417,6 +500,21 @@
         "type": "PERSON",
         "start": 26,
         "end": 30,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The Vikings led the table after winning six of their first seven games but slipped from the top after losing to Warrington on 25 March.\nBetts' side currently lie in fifth place in the table and face league leaders Warrington again on Friday.\n\"I don't see our form being that bad, we've just lost some games,\" Betts told BBC Radio Merseyside.\n\"We've lost some momentum to look at the table, but internally we're still doing some good things.\"\nAfter conceding 108 points in their opening seven matches, Widnes' fortunes have changed of late, with the Vikings conceding 103 points in their last four games.\n\"It's about doing the little things well, keeping the confidence high and doing the things we did at the beginning of the year with the same kind of determination,\" he added.\n\"We know we've got to get moving back in the league but Warrington are saying the same thing and there are guys who are fighting to get some momentum in their league positions.\"",
+    "reference": "Head coach Denis Betts is not worried about Widnes' recent form despite four consecutive Super League defeats.",
+    "prediction": "Widnes Vikings head coach Justin Betts says his side have not lost momentum despite their recent poor form in Super League.",
+    "entities": [
+      {
+        "ent": "Justin",
+        "type": "PERSON",
+        "start": 26,
+        "end": 32,
         "in_source": false,
         "label": "Non-factual Hallucination"
       }
@@ -489,6 +587,21 @@
     "entities": [
       {
         "ent": "eight years",
+        "type": "DATE",
+        "start": 72,
+        "end": 83,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "Andrew Hutchinson, from Abingdon, Oxfordshire, pleaded guilty to rape, sexual assault and voyeurism committed from 2011 to 2013.\nThe 29-year-old filmed himself raping two patients at the John Radcliffe Hospital in Oxford, where he worked.\nHe also attacked women who had passed out while he was on duty at a music festival, Oxford Crown Court heard.\nHutchinson targeted women who had lost consciousness through drinking too much and they were unaware they had been assaulted until contacted by Thames Valley Police.\nThe court heard the women he raped in the A&E department at the Oxford hospital had to view parts of Hutchinson's recordings in order to identify themselves.\nOne victim, an 18-year-old, was raped in October 2011 and a 35-year-old was raped in February 2012.\nHe also attacked two women in their 20s while volunteering as a medic at the Wilderness Festival in Cornbury Park, Oxfordshire, in August 2013.\nHis was tending the women when he committed the crimes, one in a medical tent and the other in a nearby ambulance.\nOfficers initially arrested him for secretly filming girls as young as nine in changing rooms at the White Horse Leisure Centre in Abingdon in November 2013.\nFollowing a search of his home, police found footage of sex attacks on his computer and mobile phone.\nThe court was told Hutchinson also had hundreds of other voyeuristic images, including \"up skirt\" pictures taken on the London Underground while he was  volunteering at the 2012 Olympics.\nVictims were also filmed at John Radcliffe Hospital and at a gym in Batley, West Yorkshire where he had previously worked.\nAt a hearing on 30 March, he also pleaded guilty to outraging public decency, making indecent images of children, theft of a hospital camera used for internal examinations and possession of the class B drug ketamine.\nThe victims of his crimes were aged between nine and 35, although many were unidentifiable due to the nature of the footage.\nCatherine Stoddart, chief nurse at Oxford University Hospitals NHS Trust, said: \"I am shocked and horrified by the way in which Andrew Hutchinson has betrayed the patients he was entrusted to care for and his colleagues, who also trusted him.\"\nShe said the hospital will be carrying out an internal review to see if Hutchinson could have been prevented from committing his crimes.\nHutchinson was suspended by the trust in November 2013 following allegations he stole medical equipment.\nIt also informed the Nursing and Midwifery Council and launched an internal investigation, which led to his dismissal.\nJudge Ian Pringle QC described Hutchinson's crimes as \"despicable\".\nHe said: \"When they were unconscious requiring your help and your assistance as their nurse, you raped them and you filmed it.\n\"It is impossible to conceive of a greater breach of trust in our society.\"\nIn a statement read out in court, one of the victims said: \"I think that what he has done is much worse that doing it in the street because I had no idea what was happening, so I had no opportunity to fight back.\"\nSenior investigating officer, Det Ch Insp Mark Johns of Thames Valley Police, said: \"This has been a particularly complicated, unusual and sensitive case as the victims were not aware that offences took place because they were not conscious.\n\"I would like to thank the victims for the great courage and dignity they have shown during our investigation.\"\nPolice said all victims who can be identified have been contacted.\nAnyone with concerns can contact police on 101, quoting Operation Bream.",
+    "reference": "A former nurse has been jailed for 18 years for raping and sexually assaulting unconscious women.",
+    "prediction": "A nurse who secretly filmed himself raping patients has been jailed for seven years.",
+    "entities": [
+      {
+        "ent": "seven years",
         "type": "DATE",
         "start": 72,
         "end": 83,
@@ -921,6 +1034,51 @@
     ]
   },
   {
+    "source": "The pound jumped by 0.85%, or more than one euro cent, to \u00e2\u201a\u00ac1.4072, although against the dollar the pound was down 0.26% at $1.5783.\nOn the stock market, the FTSE 100 was 16.93 points higher at 6,842.60, adding to the sharp gains seen on Monday.\nHowever, the FTSE was lagging gains elsewhere, with Germany's Dax and France's Cac 40 both up more than 1%.\nShares in business supplies distributor Bunzl dropped 1.6% - the biggest faller in the FTSE 100 - after it said organic revenue growth had slowed in the first half of its financial year.\nBunzl also announced it had bought four businesses in the US, Colombia, Canada and France.\nHowever, the most eye-catching move was in the FTSE 250, where shares in Ladbrokes jumped 16% after it said it was in merger talks with Gala Coral.",
+    "reference": "(Noon): The pound hit a four-week high against the euro as the single currency weakened on Tuesday.",
+    "prediction": "(Close): The pound rose against the euro and the dollar on Tuesday, after the Bank of England raised its interest rate to 0.5%.",
+    "entities": [
+      {
+        "ent": "0.5%",
+        "type": "PERCENT",
+        "start": 122,
+        "end": 126,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The pound jumped by 0.85%, or more than one euro cent, to \u00e2\u201a\u00ac1.4072, although against the dollar the pound was down 0.26% at $1.5783.\nOn the stock market, the FTSE 100 was 16.93 points higher at 6,842.60, adding to the sharp gains seen on Monday.\nHowever, the FTSE was lagging gains elsewhere, with Germany's Dax and France's Cac 40 both up more than 1%.\nShares in business supplies distributor Bunzl dropped 1.6% - the biggest faller in the FTSE 100 - after it said organic revenue growth had slowed in the first half of its financial year.\nBunzl also announced it had bought four businesses in the US, Colombia, Canada and France.\nHowever, the most eye-catching move was in the FTSE 250, where shares in Ladbrokes jumped 16% after it said it was in merger talks with Gala Coral.",
+    "reference": "(Noon): The pound hit a four-week high against the euro as the single currency weakened on Tuesday.",
+    "prediction": "The pound hit a fresh seven-year high against the euro on Monday, after the Bank of England raised interest rates.",
+    "entities": [
+      {
+        "ent": "seven-year",
+        "type": "DATE",
+        "start": 22,
+        "end": 32,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "A referendum on the UK's membership of the EU is to be held later this year.\nThe survey indicates that only 11% of of the chamber's members in Northern Ireland support a British exit (Brexit).\nThat compares to 30% of those surveyed in the rest of the UK.\nThe Chamber of Commerce has about 1,200 members in Northern Ireland.\nAbout 250 of those responded to the poll.\nMore than half of the respondents (60%) said that Prime Minister David Cameron's renegotiated EU deal is unlikely to change how they will vote.\nThe results come on the eve of crunch Brussels talks, which are expected to result in a deal.\nEighty-four per cent of those surveyed in Northern Ireland  also say that there has been no impact on their sales and orders as of yet, due to the uncertainty of Britain's future within the EU.\nCommenting on the results, President of Northern Ireland Chamber of Commerce Stephen McCully said the findings suggest that \"the renegotiation is having little impact on day-to-day business - or the vote of the business community\".\nHe said that this was because many made up their minds before knowing the outcome of negotiations, effectively discounting them as irrelevant.\n\"For businesspeople, this is a question of in or out,\" he said.\n\"Those within Northern Ireland who are firmly wedded to the EU have said that Brexit will leave us stranded outside the EU, and coping with the re-emergence of a land border with the Republic of Ireland.\n\"Emotion has a part in all decision making and it will do so here, but there is a duty to ensure decisions are as well informed as they can be.\"\nClarification: An earlier version of this article omitted the number of respondents to the Chamber of Commerce survey.",
+    "reference": "A survey of Chamber of Commerce members in Northern Ireland suggests that 81% will vote for the UK to remain in the European Union (EU).",
+    "prediction": "The Northern Ireland Chamber of Commerce has said that the renegotiation of the UK's EU deal will have little impact on day-to-day business.",
+    "entities": [
+      {
+        "ent": "The Northern Ireland Chamber of Commerce",
+        "type": "ORG",
+        "start": 0,
+        "end": 40,
+        "in_source": false,
+        "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
     "source": "The units in North Tyneside and Northumberland have been shut between midnight and 08:00 since December.\nOvernight emergencies have been diverted to the recently-opened Northumbria Hospital in Cramlington.\nThe closures at North Tyneside, Hexham and Wansbeck hospitals, will continue for a further three months.\nThe Northumbria Healthcare NHS Foundation Trust said the impact on patients had been minimal as the units were underused at night.\nStaff from the units have been moved to the Northumbria Specialist Emergency Care Hospital, in Cramlington, which opened in 2015, to deal with a \"very high demand\" in day-time admissions.\nA spokesman said it would be \"inappropriate\" to deploy staff back to the urgent care centres overnight at the current time.\nHe added: \"This is to ensure best use of precious staffing resources to deliver patient care where it is needed most.\"\nThe trust said since opening the Northumbria hospital in June 2015, activity overnight at the urgent care centres had been \"minimal\" with, on average, less than 10 overnight attendances a day across all three centres.\nThe spokesman added: \"We'd like to assure residents that this decision to temporarily extend the current arrangements at our urgent care centres has not been taken lightly.\n\"It was entirely correct for us to put in place the interim changes in the wake of services being extremely busy across the NHS. They have helped us successfully meet the high demand we continue to see, even now during the summer.\n\"As a result, it would simply not be the best use of our staff's time and expertise to deploy them back now.\"",
     "reference": "Three emergency care units are to remain closed to overnight patients in an effort to keep \"precious staffing resources\" focused on daytime care.",
     "prediction": "Three urgent care centres in Northumberland are to remain closed overnight for a further month, the NHS has said.",
@@ -1214,6 +1372,21 @@
     ]
   },
   {
+    "source": "The fire started at South Wales Wood Recycling in Heol Llan, Coity, just before 03:30 BST on Monday.\nFirefighters from Pencoed and Bridgend have isolated the burning material and they will resume work on Tuesday.\nSouth Wales Wood Recycling said they were working around the clock to help stop the blaze.\nIn a statement the company said the blaze had affected an estimated 1,000-2,000 tonnes of recycled wood chip.\nThe cause of the fire is not yet know, but the company said the \"circumstances were suspicious\".\nNatural Resources Wales officials are also at the scene in case of any environmental impact.",
+    "reference": "Firefighters have been battling a blaze at a recycling business in Bridgend after about 2,000 tonnes of wood chips set on fire.",
+    "prediction": "About 1,000 tonnes of wood chip has been destroyed in a fire at a recycling plant in Bridgend county.",
+    "entities": [
+      {
+        "ent": "About 1,000 tonnes",
+        "type": "QUANTITY",
+        "start": 0,
+        "end": 18,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
     "source": "The France midfielder has accepted a violent conduct charge for the incident during Saturday's goalless draw.\nSissoko, 27, apologised but was charged by the Football Association. Spurs will not appeal against the decision.\nHis suspension will include Tuesday's EFL Cup tie at Liverpool, plus league games against Leicester and Arsenal.\nThe FA said the incident was missed by match officials.\n\"I need to say the elbow was in the face of Arter and it is clear,\" Spurs manager Mauricio Pochettino said on Monday.\n\"We are in a period where we need all the squad, all the players to compete. It's difficult now because he is a player who was in our plans to play tomorrow, so we have to change a little bit.\"\nSpeaking to Match of the Day after Saturday's game, Arter said he was happy to accept Sissoko's explanation that the contact was accidental.\nHe said: \"I never want to see a player get into trouble if they didn't mean to. Sissoko apologised. I'm happy to move on from it.\"\nMedia playback is not supported on this device",
     "reference": "Tottenham's Moussa Sissoko will be banned for three matches for elbowing Bournemouth's Harry Arter, missing the north London derby with Arsenal.",
     "prediction": "Tottenham midfielder Moussa Sissoko has been banned for four games for an elbow to the face of Stoke's Harry Arter.",
@@ -1240,6 +1413,21 @@
         "end": 61,
         "in_source": false,
         "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The France midfielder has accepted a violent conduct charge for the incident during Saturday's goalless draw.\nSissoko, 27, apologised but was charged by the Football Association. Spurs will not appeal against the decision.\nHis suspension will include Tuesday's EFL Cup tie at Liverpool, plus league games against Leicester and Arsenal.\nThe FA said the incident was missed by match officials.\n\"I need to say the elbow was in the face of Arter and it is clear,\" Spurs manager Mauricio Pochettino said on Monday.\n\"We are in a period where we need all the squad, all the players to compete. It's difficult now because he is a player who was in our plans to play tomorrow, so we have to change a little bit.\"\nSpeaking to Match of the Day after Saturday's game, Arter said he was happy to accept Sissoko's explanation that the contact was accidental.\nHe said: \"I never want to see a player get into trouble if they didn't mean to. Sissoko apologised. I'm happy to move on from it.\"\nMedia playback is not supported on this device",
+    "reference": "Tottenham's Moussa Sissoko will be banned for three matches for elbowing Bournemouth's Harry Arter, missing the north London derby with Arsenal.",
+    "prediction": "Tottenham midfielder Moussa Sissoko has been banned for six games for an elbow to Harry Arter's face.",
+    "entities": [
+      {
+        "ent": "six",
+        "type": "CARDINAL",
+        "start": 56,
+        "end": 59,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
       }
     ]
   },
@@ -1342,6 +1530,21 @@
     ]
   },
   {
+    "source": "Nine men were arrested over a pitch invasion and flares being thrown during City's 3-0 loss at Sixfields.\nThe club has said that the \"repeated disruptions\" were \"unacceptable\".\nA Sky Blue Trust statement said: \"We do not condone anti-social and illegal acts such as the throwing of smoke bombs and multiple pitch invasions.\"\nThe statement continued: \"We do understand, however, that it was entirely the result of frustration and desperation and that many supporters are simply at the end of their tethers feeling powerless and ignored.\n\"While peaceful protests and petitions have attracted national attention and sympathy, they have seemingly been ignored by Sisu and [chairman] Tim Fisher and this once great club is in now in total disarray and turmoil.\n\"The scenes were ugly but borne of desperation and passion. The Trust urges all fans to keep any protests lawful and ensure these scenes are not be repeated.\"\nCoventry fans have held a number of protests against the club's owners this season, with December's EFL Trophy second round win over Crawley attracting a record-low home crowd.\nThe Sky Blues are without a League One victory since 1 November and have only won four times all season.",
+    "reference": "A Coventry City fans' trust says disruption at Saturday's defeat by Northampton was caused by \"desperation\" with the club's owners, Sisu.",
+    "prediction": "Coventry City's fans' trust has said it does not condone anti-social and illegal acts, following disturbances at this season's League One match against Leyton Orient.",
+    "entities": [
+      {
+        "ent": "Leyton Orient",
+        "type": "ORG",
+        "start": 152,
+        "end": 165,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
     "source": "Gaiman's fantasy novel beat fellow National Book Award winners including Kate Atkinson and David Walliams.\nThe tale about a man returning to his childhood home for a funeral won the public vote from a shortlist of this year's 10 National Book Award winners.\nThe graphic novelist said he was \"amazed and thrilled\".\n\"I've never written a book before that was so close to my own heart - a story about memory and magic and the fear and danger of being a child,\" said Gaiman.\n\"I wasn't sure that anyone else would like it.\n\"I'm amazed and thrilled that so many other people have read it, loved it, and made their friends read it too.\n\"Winning a National Book Award was thrilling; discovering that the public have made The Ocean at the End of the Lane their Book of the Year is somewhere out beyond wonderful. Thank you to everyone who voted.\"\n'Dedication'\nGaiman's novel had already won in the Audiobook of the Year category.\nThe book secured the public vote from a shortlist including Gillian Flynn's bestseller Gone Girl, David Jason's My Life and schoolgirl Malala Yousafzai's I Am Malala to win the Book of the Year title.\nOnline voting for the title, the only book award chosen by readers, closed on 19 December.\nLast year's winner was EL James' raunchy blockbuster Fifty Shades of Grey, while Caitlin Moran's How To Be A Woman and David Nicholls' romantic novel One Day have also taken the prize.\nDame Mary Perkins, founder of the award's sponsors Specsavers, congratulated Gaiman on \"this fantastic award\".\n\"The competition was tough but to be chosen by members of the public as well as your industry peers truly is a tribute to hard work, dedication and creativity,\" she said.\nGaiman made his name writing graphic novels including The Sandman series and Coraline. He has penned two recent Doctor Who episodes featuring Matt Smith and is currently writing a prequel to The Sandman. A TV series of his book American Gods is in development.",
     "reference": "Neil Gaiman's The Ocean at the End of the Lane has been voted 2013's Book of the Year, winning the public vote \"by a considerable margin\".",
     "prediction": "Neil Gaiman's novel The Ocean at the End of the Lane has been named the UK's Book of the Year.",
@@ -1357,6 +1560,21 @@
     ]
   },
   {
+    "source": "Gaiman's fantasy novel beat fellow National Book Award winners including Kate Atkinson and David Walliams.\nThe tale about a man returning to his childhood home for a funeral won the public vote from a shortlist of this year's 10 National Book Award winners.\nThe graphic novelist said he was \"amazed and thrilled\".\n\"I've never written a book before that was so close to my own heart - a story about memory and magic and the fear and danger of being a child,\" said Gaiman.\n\"I wasn't sure that anyone else would like it.\n\"I'm amazed and thrilled that so many other people have read it, loved it, and made their friends read it too.\n\"Winning a National Book Award was thrilling; discovering that the public have made The Ocean at the End of the Lane their Book of the Year is somewhere out beyond wonderful. Thank you to everyone who voted.\"\n'Dedication'\nGaiman's novel had already won in the Audiobook of the Year category.\nThe book secured the public vote from a shortlist including Gillian Flynn's bestseller Gone Girl, David Jason's My Life and schoolgirl Malala Yousafzai's I Am Malala to win the Book of the Year title.\nOnline voting for the title, the only book award chosen by readers, closed on 19 December.\nLast year's winner was EL James' raunchy blockbuster Fifty Shades of Grey, while Caitlin Moran's How To Be A Woman and David Nicholls' romantic novel One Day have also taken the prize.\nDame Mary Perkins, founder of the award's sponsors Specsavers, congratulated Gaiman on \"this fantastic award\".\n\"The competition was tough but to be chosen by members of the public as well as your industry peers truly is a tribute to hard work, dedication and creativity,\" she said.\nGaiman made his name writing graphic novels including The Sandman series and Coraline. He has penned two recent Doctor Who episodes featuring Matt Smith and is currently writing a prequel to The Sandman. A TV series of his book American Gods is in development.",
+    "reference": "Neil Gaiman's The Ocean at the End of the Lane has been voted 2013's Book of the Year, winning the public vote \"by a considerable margin\".",
+    "prediction": "Neil Gaiman's The Ocean at the End of the Lane has won the National Book of the Year award.",
+    "entities": [
+      {
+        "ent": "the National Book of the Year",
+        "type": "WORK_OF_ART",
+        "start": 55,
+        "end": 84,
+        "in_source": false,
+        "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
     "source": "Holdsworth, 47, beat takeover offers from banker Roger Tamraz and Bolton Wanderers Supporters' Trust.\nThe club, owned by Eddie Davies, are \u00a3172.9m in debt and have been trying to find a buyer for a number of months.\nThe Championship strugglers are scheduled in the High Court on Monday over a \u00a33m unpaid tax bill.\nIt is hoped the takeover will soon be completed as Wanderers must let the High Court know by 19 February if they are going to enter administration, and also prove they have funds to continue trading.\nFormer Wimbledon and Brentford forward Holdsworth spent six seasons at Bolton, scoring 52 goals in 188 appearances.\nBBC Radio Manchester also understands the sale of the Trotters' training ground at Euxton has yet to be finalised, with League One side Wigan making an approach.",
     "reference": "Bolton Wanderers have given preferred bidder status to former striker Dean Holdsworth's Sports Shield consortium, reports BBC Radio Manchester.",
     "prediction": "Bolton Wanderers have agreed a deal to sell the club to ex-Trotters striker Paul Holdsworth, BBC Radio Manchester understands.",
@@ -1366,6 +1584,36 @@
         "type": "PERSON",
         "start": 76,
         "end": 80,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "Holdsworth, 47, beat takeover offers from banker Roger Tamraz and Bolton Wanderers Supporters' Trust.\nThe club, owned by Eddie Davies, are \u00a3172.9m in debt and have been trying to find a buyer for a number of months.\nThe Championship strugglers are scheduled in the High Court on Monday over a \u00a33m unpaid tax bill.\nIt is hoped the takeover will soon be completed as Wanderers must let the High Court know by 19 February if they are going to enter administration, and also prove they have funds to continue trading.\nFormer Wimbledon and Brentford forward Holdsworth spent six seasons at Bolton, scoring 52 goals in 188 appearances.\nBBC Radio Manchester also understands the sale of the Trotters' training ground at Euxton has yet to be finalised, with League One side Wigan making an approach.",
+    "reference": "Bolton Wanderers have given preferred bidder status to former striker Dean Holdsworth's Sports Shield consortium, reports BBC Radio Manchester.",
+    "prediction": "Bolton Wanderers have agreed a deal to sell the club to ex-Trotters striker Gary Holdsworth, BBC Radio Manchester understands.",
+    "entities": [
+      {
+        "ent": "Gary",
+        "type": "PERSON",
+        "start": 76,
+        "end": 80,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "Holdsworth, 47, beat takeover offers from banker Roger Tamraz and Bolton Wanderers Supporters' Trust.\nThe club, owned by Eddie Davies, are \u00a3172.9m in debt and have been trying to find a buyer for a number of months.\nThe Championship strugglers are scheduled in the High Court on Monday over a \u00a33m unpaid tax bill.\nIt is hoped the takeover will soon be completed as Wanderers must let the High Court know by 19 February if they are going to enter administration, and also prove they have funds to continue trading.\nFormer Wimbledon and Brentford forward Holdsworth spent six seasons at Bolton, scoring 52 goals in 188 appearances.\nBBC Radio Manchester also understands the sale of the Trotters' training ground at Euxton has yet to be finalised, with League One side Wigan making an approach.",
+    "reference": "Bolton Wanderers have given preferred bidder status to former striker Dean Holdsworth's Sports Shield consortium, reports BBC Radio Manchester.",
+    "prediction": "Bolton Wanderers have agreed a deal to sell the club to former striker Graham Holdsworth, BBC Radio Manchester understands.",
+    "entities": [
+      {
+        "ent": "Graham",
+        "type": "PERSON",
+        "start": 71,
+        "end": 77,
         "in_source": false,
         "label": "Non-factual Hallucination"
       }
@@ -1432,12 +1680,42 @@
     ]
   },
   {
+    "source": "The horror starring Vera Farmiga and Patrick Wilson as paranormal investigators made $40.4m (\u00a328.5m).\nVideo game adaptation Warcraft came in second with $24.4m (\u00a317.2m) and crime caper Now You See Me 2 was at three, taking $23m (\u00a316.2m).\nTeenage Mutant Ninja Turtles dropped to four with $14.8m (\u00a310.4m).\nFollowing a spate of poor performing sequels such as The Huntsman: Winter's War, Alice Through the Looking Glass and Ride Along 2, The Conjuring 2 opened nearly on par with its 2013 original.\n\"There's seemingly been a spell cast over the second instalments and The Conjuring, I think, broke that spell,\" said Paul Dergarabedian, senior media analyst for Comscore.\n\"Just the overall quality won over the audience in a genre that's generally looked down upon from a critical perspective.''\nBig budget CGI extravaganza Warcraft, taken from the hit video game franchise, reportedly cost $160m (\u00a3112.8m) to make, so effectively bombed in the US financially as well as critically.\nHowever, it was a phenomenal success overseas, particularly in China where it made $156m (\u00a3110m) in its first five days, surpassing 2015's Avengers: Age of Ultron to set a new record for the biggest debut for a foreign release.\nThe game is particularly popular there, even spawning a theme park.\nThe magician crime caper Now You See Me 2, starring Jesse Eisenberg, Mark Ruffalo and Woody Harrelson, followed the disappointing trajectory of most recent sequels, dropping from its 2013 original opening debut of $29.4m (\u00a320.8) to $23m (\u00a316.2m).\nThe fifth Teenage Mutant Ninja Turtles movie, Out of the Shadows, fell to number four in only its second weekend.\nThe last movie in the franchise grossed nearly double in its opening weekend box office.\nRounding off the top five was X-Men: Apocalypse, taking $10m (\u00a37m) in a troubling third weekend.\nNext week sees the release of Pixar's Finding Nemo sequel, Finding Dory.",
+    "reference": "The Conjuring 2 has topped the North American box office chart in its first week of release, breaking a recent slump in success for movie sequels.",
+    "prediction": "The Conjuring 2 has topped the US and US box office for a second weekend, ending a run of disappointing sequels.",
+    "entities": [
+      {
+        "ent": "a second weekend",
+        "type": "DATE",
+        "start": 56,
+        "end": 72,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
     "source": "It is a talent that helped him move from being bankrupt, aged 32, to becoming a multimillionaire by the time he was 48.\nAlong the way he created and sold best-selling upmarket crisps brand Tyrrells, and won a high-profile battle against supermarket giant Tesco.\nNow 56, and the founder and owner of Chase Vodka, a luxury version of the spirit made from potatoes grown on his farm, the serial entrepreneur says: \"People love stories, the real stories behind things.\n\"And the media was very important to me from the first days of Tyrrells.\n\"I was a guy who had been beaten up by the supermarkets, and people love to support the underdog.\"\nThe son of potato farmers who lived near the Herefordshire town of Leominster, Mr Chase bought the family farm from his dad when he was 20 after he \"managed to find a bank manager brave enough to lend me \u00a3200,000\".\nAs the cost of potatoes can rise and fall sharply, business was up and down for the next 12 years, until torrential rain in 1992 meant he couldn't harvest his crop, which he had to leave to rot in the fields.\nOverextended financially, the business collapsed, and Mr Chase had to file for bankruptcy. He says: \"I was very ashamed and embarrassed.\"\nAfter \"running away to Australia\" for a few months, he returned to Herefordshire, and was able to borrow funds to buy back the farm from the receivers, and start up in business again.\nThis time, to make extra money, he became a potato trader, buying spuds from a number of farms, and then selling them on to supermarkets.\nYet while he got himself back on his feet financially, Mr Chase says he became increasingly frustrated that supermarkets would reject potatoes that weren't \"cosmetically perfect\".\nHe adds: \"I'd send off 10 loads of spuds every day, and I'd be getting five back. It was very painful how the supermarkets were treating us farmers.\"\nMr Chase's life-changing moment came in 2002 when he found out that rejected potatoes were being bought up by the UK operation of US crisp-maker Kettle.\nAt the time Kettle was one of new companies making so-called \"posh crisps\", potato crisps which were cut a little thicker than the mass-market brands, and fried by hand.\nDespite having no crisp-making experience or knowledge, Mr Chase was convinced he could set up his own upmarket crisps brand.\nSo he phoned a few UK crisp-makers to ask if he could see how they did things, and all said \"no\". Undeterred, he flew out to the US and visited facilities in Pennsylvania and Colorado.\nReturning to the UK, he built a crisp-making facility at the family farm, and Tyrrells [taking its name from the property] was up and running six months later.\nQuick to tell his story to local newspapers to build up publicity, Mr Chase hit the road to spend two weeks visiting independent food shops across the UK with samples of his crisps.\nHe says: \"Tyrrells grew and grew very quickly, and it was a brilliant cash cow. We'd sell the bags to shops for \u00a31 and they would retail them for \u00a32. For us the net profit was 35%.\"\nSupermarkets such as Waitrose soon followed suit, but Mr Chase was adamant that he would not sell to the largest - Tesco - because he didn't like what he saw as the pressure it put on farmers to lower their prices.\nThen one day in 2006 a friend told him that Tesco was selling Tyrrells' crisps. It transpired that Tesco had been buying them on the grey market, and selling them below the recommended retail price.\nAn incensed Mr Chase demanded that Tesco stop selling them. After the supermarket refused, Mr Chase started a media campaign that included an appearance on BBC Radio 4's Today programme. Tesco then did back down.\nWith sales of Tyrrells crisps continuing to grow over the next few years, and annual turnover hitting \u00a314m, Mr Chase borrowed money from his bank to expand production. The condition the bank set was that he had to bring in a management team to help him run the business.\nMr Chase, who had previously been very hands on, and liked to help out with all parts of the business, says that bringing in new managers ultimately changed the business - to its detriment.\n\"We got to a stage where I didn't like where the business was going,\" he says. \"We were employing corporate people who were arranging meetings about more meetings.\"\nUnhappy with Tyrrells' new big business ethos, and going through a \"messy divorce\", Mr Chase - who was the sole shareholder - decided to sell up in 2008 to a private capital business for almost \u00a340m.\nLooking for a new business venture, and with the new owners of Tyrrells choosing to buy their potatoes from elsewhere, Mr Chase came up with the idea of turning his spuds into premium vodka.\nSo with money no longer a problem, he bought a distillation system, and Chase Vodka was born.\nAimed at the luxury end of the market, it retails for \u00a335 a bottle.\nWhile Mr Chase admits it isn't anywhere near as profitable as selling crisps, it appears to be very much a labour of love. And focused very much on exports, he spends a lot of time travelling the world to build up sales.\nAnd showing that he has lost little of his public relations skills, every year he flies influential barmen and women from around the world to visit his farm in Herefordshire to see how the potatoes are grown, and vodka is made.\nAlso now making a gin and a whisky, the Chase Distillery sells 10,000 bottles a week.\nMr Chase says: \"You have to tell people your story if you want to build your brand. But there has to be real DNA behind it if you want to be successful.\"",
     "reference": "For a Herefordshire potato farmer, William Chase is impressively savvy about the need for positive publicity, and the importance of telling a good story.",
     "prediction": "For a man who grew up on a potato farm in Herefordshire, Peter Chase has a natural knack for telling stories.",
     "entities": [
       {
         "ent": "Peter",
+        "type": "PERSON",
+        "start": 57,
+        "end": 62,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "It is a talent that helped him move from being bankrupt, aged 32, to becoming a multimillionaire by the time he was 48.\nAlong the way he created and sold best-selling upmarket crisps brand Tyrrells, and won a high-profile battle against supermarket giant Tesco.\nNow 56, and the founder and owner of Chase Vodka, a luxury version of the spirit made from potatoes grown on his farm, the serial entrepreneur says: \"People love stories, the real stories behind things.\n\"And the media was very important to me from the first days of Tyrrells.\n\"I was a guy who had been beaten up by the supermarkets, and people love to support the underdog.\"\nThe son of potato farmers who lived near the Herefordshire town of Leominster, Mr Chase bought the family farm from his dad when he was 20 after he \"managed to find a bank manager brave enough to lend me \u00a3200,000\".\nAs the cost of potatoes can rise and fall sharply, business was up and down for the next 12 years, until torrential rain in 1992 meant he couldn't harvest his crop, which he had to leave to rot in the fields.\nOverextended financially, the business collapsed, and Mr Chase had to file for bankruptcy. He says: \"I was very ashamed and embarrassed.\"\nAfter \"running away to Australia\" for a few months, he returned to Herefordshire, and was able to borrow funds to buy back the farm from the receivers, and start up in business again.\nThis time, to make extra money, he became a potato trader, buying spuds from a number of farms, and then selling them on to supermarkets.\nYet while he got himself back on his feet financially, Mr Chase says he became increasingly frustrated that supermarkets would reject potatoes that weren't \"cosmetically perfect\".\nHe adds: \"I'd send off 10 loads of spuds every day, and I'd be getting five back. It was very painful how the supermarkets were treating us farmers.\"\nMr Chase's life-changing moment came in 2002 when he found out that rejected potatoes were being bought up by the UK operation of US crisp-maker Kettle.\nAt the time Kettle was one of new companies making so-called \"posh crisps\", potato crisps which were cut a little thicker than the mass-market brands, and fried by hand.\nDespite having no crisp-making experience or knowledge, Mr Chase was convinced he could set up his own upmarket crisps brand.\nSo he phoned a few UK crisp-makers to ask if he could see how they did things, and all said \"no\". Undeterred, he flew out to the US and visited facilities in Pennsylvania and Colorado.\nReturning to the UK, he built a crisp-making facility at the family farm, and Tyrrells [taking its name from the property] was up and running six months later.\nQuick to tell his story to local newspapers to build up publicity, Mr Chase hit the road to spend two weeks visiting independent food shops across the UK with samples of his crisps.\nHe says: \"Tyrrells grew and grew very quickly, and it was a brilliant cash cow. We'd sell the bags to shops for \u00a31 and they would retail them for \u00a32. For us the net profit was 35%.\"\nSupermarkets such as Waitrose soon followed suit, but Mr Chase was adamant that he would not sell to the largest - Tesco - because he didn't like what he saw as the pressure it put on farmers to lower their prices.\nThen one day in 2006 a friend told him that Tesco was selling Tyrrells' crisps. It transpired that Tesco had been buying them on the grey market, and selling them below the recommended retail price.\nAn incensed Mr Chase demanded that Tesco stop selling them. After the supermarket refused, Mr Chase started a media campaign that included an appearance on BBC Radio 4's Today programme. Tesco then did back down.\nWith sales of Tyrrells crisps continuing to grow over the next few years, and annual turnover hitting \u00a314m, Mr Chase borrowed money from his bank to expand production. The condition the bank set was that he had to bring in a management team to help him run the business.\nMr Chase, who had previously been very hands on, and liked to help out with all parts of the business, says that bringing in new managers ultimately changed the business - to its detriment.\n\"We got to a stage where I didn't like where the business was going,\" he says. \"We were employing corporate people who were arranging meetings about more meetings.\"\nUnhappy with Tyrrells' new big business ethos, and going through a \"messy divorce\", Mr Chase - who was the sole shareholder - decided to sell up in 2008 to a private capital business for almost \u00a340m.\nLooking for a new business venture, and with the new owners of Tyrrells choosing to buy their potatoes from elsewhere, Mr Chase came up with the idea of turning his spuds into premium vodka.\nSo with money no longer a problem, he bought a distillation system, and Chase Vodka was born.\nAimed at the luxury end of the market, it retails for \u00a335 a bottle.\nWhile Mr Chase admits it isn't anywhere near as profitable as selling crisps, it appears to be very much a labour of love. And focused very much on exports, he spends a lot of time travelling the world to build up sales.\nAnd showing that he has lost little of his public relations skills, every year he flies influential barmen and women from around the world to visit his farm in Herefordshire to see how the potatoes are grown, and vodka is made.\nAlso now making a gin and a whisky, the Chase Distillery sells 10,000 bottles a week.\nMr Chase says: \"You have to tell people your story if you want to build your brand. But there has to be real DNA behind it if you want to be successful.\"",
+    "reference": "For a Herefordshire potato farmer, William Chase is impressively savvy about the need for positive publicity, and the importance of telling a good story.",
+    "prediction": "For a man who grew up on a potato farm in Herefordshire, Steve Chase has a lot of talent.",
+    "entities": [
+      {
+        "ent": "Steve",
         "type": "PERSON",
         "start": 57,
         "end": 62,
@@ -1504,6 +1782,21 @@
         "end": 115,
         "in_source": false,
         "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The proposal concerns routes that make up the Belfast Rapid Transit (BRT) plan.\nCurrently bus lanes in Belfast run from 07:30 until 09:30 and from 15:30 until 18:30. Under the proposals this would be extended from 07:00 to 19:00.\nThe project is due to come into operation in September 2018.\n\"We should remember in 2012 the business case for the Belfast Rapid Transit was built upon the concept that these would be 12-hour, seven-to-seven bus lane priorities,\" said Mr Hazzard.\n\"That is so we can have maximum compliance and avoid confusion.\"\nWest Belfast\nEast Belfast\nTitanic Quarter\nMr Hazzard said there would be two rounds of consultation on the proposals and said there could be some room for flexibility.\n\"What we can do and looking at other cities - Dublin for example - we may have loading and unloading windows and drop-off and pick-up times, where you have windows into that,\" he said.\n\"This is through consultation with those commuters, with those stakeholders and the community along the route so we can design our proposals and then go to a formal consultation period after.\"\nHe added: \"These buses and vehicles will be coming across every seven minutes in and out of the city, it's so, so important that we get this right.\"",
+    "reference": "Transport Minister Chris Hazzard is proposing to extend the times of bus lanes on some of Belfast's busiest commuting routes.",
+    "prediction": "Belfast's transport minister, Simon Hazzard, has announced plans to extend bus lanes in the city.",
+    "entities": [
+      {
+        "ent": "Simon",
+        "type": "PERSON",
+        "start": 30,
+        "end": 35,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
       }
     ]
   }
