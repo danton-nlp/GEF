@@ -1,6 +1,8 @@
+from src.annotation import prompt_annotation_flow
 from src.data_utils import load_test_set, load_xsum_dict
 from src.detect_entities import detect_entities
 from sumtool.storage import get_summary_metrics, get_summaries
+from src.entity_utils import count_entities, filter_entities
 from src.oracle import get_entity_annotations, oracle_label_entities
 from src.entity_factuality import ANNOTATION_LABELS
 from src.generation_utils import SUMMARY_FAILED_GENERATION
@@ -14,17 +16,7 @@ SUMTOOL_DATASET = "xsum"
 SUMTOOL_MODEL_GOLD = "gold"
 
 
-def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test):
-    summary_results = {}
-    counters = {
-        "factual": 0,
-        "non_factual": 0,
-        "unknown": 0,
-        "rouge1": [],
-        "rouge2": [],
-        "rougeL": [],
-    }
-
+def get_labeled_entities(sums_by_id, gold_metadata, xsum_test):
     summary_entities = {}
     for sum_id, summary in sums_by_id.items():
         summary_entities[sum_id] = detect_entities(
@@ -34,6 +26,37 @@ def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test):
         summary_entities,
         get_entity_annotations(summary_entities.keys(), gold_metadata),
     )
+    unknown_entities = filter_entities(
+        lambda x: x["label"] == ANNOTATION_LABELS["Unknown"],
+        labeled_ents,
+    )
+
+    if count_entities(unknown_entities) > 0:
+        result = prompt_annotation_flow(
+            unknown_entities,
+            xsum_test,
+            sums_by_id,
+            gold_metadata,
+        )
+        if result is not False:
+            labeled_ents = oracle_label_entities(
+                summary_entities,
+                get_entity_annotations(summary_entities.keys(), gold_metadata),
+            )
+    return labeled_ents
+
+
+def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test):
+    labeled_ents = get_labeled_entities(sums_by_id, gold_metadata, xsum_test)
+    summary_results = {}
+    counters = {
+        "factual": 0,
+        "non_factual": 0,
+        "unknown": 0,
+        "rouge1": [],
+        "rouge2": [],
+        "rougeL": [],
+    }
 
     for sum_id, summary in sums_by_id.items():
         source = xsum_test[sum_id]["document"]
@@ -100,21 +123,19 @@ if __name__ == "__main__":
     test_set_ids = {k for (k, v) in load_test_set(xsum_test, gold_metadata, 500)}
 
     print(f"Test results for {len(test_set_ids)} summaries")
-    metrics = {}
-    # Read from sumtool storage to get other summaries
-    sumtool_sums = ["facebook-bart-large-xsum", "entity-filter-v2"]
-    for sumtool_name in sumtool_sums:
+
+    MODEL_RESULTS = {
+        "Constrained oracle": load_summaries_from_logs("results/test.json"),
+    }
+    for sumtool_name in ["facebook-bart-large-xsum", "entity-filter-v2"]:
         dataset = get_summaries(SUMTOOL_DATASET, sumtool_name)
-        sums_by_id = {
+        MODEL_RESULTS[sumtool_name] = {
             sum_id: x["summary"]
             for sum_id, x in dataset.items()
             if sum_id in test_set_ids
         }
 
-        print(f"Model: {sumtool_name}")
+    metrics = {}
+    for label, sums_by_id in MODEL_RESULTS.items():
+        print(f"Model: {label}")
         print(compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test))
-
-    print("Constrained oracle")
-    sums_by_id = load_summaries_from_logs("results/test.json")
-    print(compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test))
-    # Read logs to get our results
