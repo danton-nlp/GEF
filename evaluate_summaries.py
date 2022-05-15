@@ -117,7 +117,7 @@ def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test, should_anno
     return metrics, summary_results
 
 
-def load_summaries_from_logs(path):
+def load_summaries_from_logs(path, max_iterations=5):
     with open(path, "r") as f:
         logs = json.load(f)
 
@@ -128,6 +128,8 @@ def load_summaries_from_logs(path):
         summaries = logs["iterations"][str(idx)]["summaries"]
         for sum_id, data in summaries.items():
             sums_by_id[sum_id] = data["summary"]
+        if idx + 1 == max_iterations:
+            break
     return sums_by_id
 
 
@@ -146,7 +148,9 @@ if __name__ == "__main__":
     print(f"Test results for {len(test_set_ids)} summaries")
 
     MODEL_RESULTS = {
-        "Constrained oracle": load_summaries_from_logs("results/test.json"),
+        "Constrained oracle, 1 iteration": load_summaries_from_logs("results/test.json", max_iterations=1),
+        "Constrained oracle, 3 iteration": load_summaries_from_logs("results/test.json", max_iterations=3),
+        "Constrained oracle, 5 iteration": load_summaries_from_logs("results/test.json", max_iterations=5),
     }
     for sumtool_name in [
         "facebook-bart-large-xsum",  # Baseline

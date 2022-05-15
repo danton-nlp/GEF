@@ -1071,6 +1071,51 @@
     ]
   },
   {
+    "source": "Anthony Scouler, 55, used seven bank accounts to hide profits of more than \u00c2\u00a3100,000, Exeter Crown Court heard.\nHe also used fake identities to get credit cards to pay for high-tech growing equipment.\nScouler of Barton Road in Bideford, Devon, admitted supply, production and personal possession of cannabis and having a shotgun without a certificate.\nHe denied money laundering but was found guilty of eight out of 14 counts by a jury at Exeter Crown Court in February.\nPolice raided his furniture shop in Boutport Street, Barnstaple, in 2012 and found 112 plants.\nRecorder Michael Fitton said Scouler had grown cannabis on a \"moderate but commercial scale...producing two or three crops a year\" from 2010.\n\"You had a significant role. It may be you had the guidance of others and were doing this at the invitation of others but it was your enterprise under your control,\" he said.\n\"I also have to have regard for the dishonesty, the abstraction of electricity, the fraud and the use of specialist equipment. I accept you were of good character and under financial pressure.\"\nMr Richard Crabb, defending, said Scouler had been drawn into growing drugs by others as the result of financial problems caused by his business failing during the recession.",
+    "reference": "A shop owner who turned his failing business into a cannabis factory has been jailed for four-and-a-half years.",
+    "prediction": "A furniture shop owner has been jailed for eight years for running a \"significant\" cannabis farm.",
+    "entities": [
+      {
+        "ent": "eight years",
+        "type": "DATE",
+        "start": 43,
+        "end": 54,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "Anthony Scouler, 55, used seven bank accounts to hide profits of more than \u00c2\u00a3100,000, Exeter Crown Court heard.\nHe also used fake identities to get credit cards to pay for high-tech growing equipment.\nScouler of Barton Road in Bideford, Devon, admitted supply, production and personal possession of cannabis and having a shotgun without a certificate.\nHe denied money laundering but was found guilty of eight out of 14 counts by a jury at Exeter Crown Court in February.\nPolice raided his furniture shop in Boutport Street, Barnstaple, in 2012 and found 112 plants.\nRecorder Michael Fitton said Scouler had grown cannabis on a \"moderate but commercial scale...producing two or three crops a year\" from 2010.\n\"You had a significant role. It may be you had the guidance of others and were doing this at the invitation of others but it was your enterprise under your control,\" he said.\n\"I also have to have regard for the dishonesty, the abstraction of electricity, the fraud and the use of specialist equipment. I accept you were of good character and under financial pressure.\"\nMr Richard Crabb, defending, said Scouler had been drawn into growing drugs by others as the result of financial problems caused by his business failing during the recession.",
+    "reference": "A shop owner who turned his failing business into a cannabis factory has been jailed for four-and-a-half years.",
+    "prediction": "A furniture shop owner has been jailed for seven years for running a \"significant\" cannabis farm.",
+    "entities": [
+      {
+        "ent": "seven years",
+        "type": "DATE",
+        "start": 43,
+        "end": 54,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "Anthony Scouler, 55, used seven bank accounts to hide profits of more than \u00c2\u00a3100,000, Exeter Crown Court heard.\nHe also used fake identities to get credit cards to pay for high-tech growing equipment.\nScouler of Barton Road in Bideford, Devon, admitted supply, production and personal possession of cannabis and having a shotgun without a certificate.\nHe denied money laundering but was found guilty of eight out of 14 counts by a jury at Exeter Crown Court in February.\nPolice raided his furniture shop in Boutport Street, Barnstaple, in 2012 and found 112 plants.\nRecorder Michael Fitton said Scouler had grown cannabis on a \"moderate but commercial scale...producing two or three crops a year\" from 2010.\n\"You had a significant role. It may be you had the guidance of others and were doing this at the invitation of others but it was your enterprise under your control,\" he said.\n\"I also have to have regard for the dishonesty, the abstraction of electricity, the fraud and the use of specialist equipment. I accept you were of good character and under financial pressure.\"\nMr Richard Crabb, defending, said Scouler had been drawn into growing drugs by others as the result of financial problems caused by his business failing during the recession.",
+    "reference": "A shop owner who turned his failing business into a cannabis factory has been jailed for four-and-a-half years.",
+    "prediction": "A furniture shop owner has been jailed for six years after being found guilty of money laundering and growing cannabis.",
+    "entities": [
+      {
+        "ent": "six years",
+        "type": "DATE",
+        "start": 43,
+        "end": 52,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
     "source": "The Orlando City midfielder, 34, will replace Bayern Munich's Douglas Costa, who was removed from the squad because of an injury to his left thigh.\nEx-AC Milan and Real Madrid player Kaka has been a regular in coach Dunga's squads, without getting much game time.\nHe has won 91 caps and scored 29 goals, but has only played 60 minutes for his country in three years.\nKaka is the second player to be added to the squad because of injury, with Benfica's Jonas replacing Santos striker Ricardo Oliveira.\nBrazil have been drawn in Group B with Ecuador, Haiti and Peru for the tournament, which is staging a special 100th anniversary edition.\nSubscribe to the BBC Sport newsletter to get our pick of news, features and video sent to your inbox.",
     "reference": "Kaka has been called up to the Brazil squad for next month's Copa America in the United States.",
     "prediction": "Kaka has been called up to the Brazil squad for the Copa America next month.",
@@ -1252,6 +1297,51 @@
     ]
   },
   {
+    "source": "Nine men were arrested over a pitch invasion and flares being thrown during City's 3-0 loss at Sixfields.\nThe club has said that the \"repeated disruptions\" were \"unacceptable\".\nA Sky Blue Trust statement said: \"We do not condone anti-social and illegal acts such as the throwing of smoke bombs and multiple pitch invasions.\"\nThe statement continued: \"We do understand, however, that it was entirely the result of frustration and desperation and that many supporters are simply at the end of their tethers feeling powerless and ignored.\n\"While peaceful protests and petitions have attracted national attention and sympathy, they have seemingly been ignored by Sisu and [chairman] Tim Fisher and this once great club is in now in total disarray and turmoil.\n\"The scenes were ugly but borne of desperation and passion. The Trust urges all fans to keep any protests lawful and ensure these scenes are not be repeated.\"\nCoventry fans have held a number of protests against the club's owners this season, with December's EFL Trophy second round win over Crawley attracting a record-low home crowd.\nThe Sky Blues are without a League One victory since 1 November and have only won four times all season.",
+    "reference": "A Coventry City fans' trust says disruption at Saturday's defeat by Northampton was caused by \"desperation\" with the club's owners, Sisu.",
+    "prediction": "Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat by Bristol Rovers.",
+    "entities": [
+      {
+        "ent": "Bristol Rovers",
+        "type": "ORG",
+        "start": 160,
+        "end": 174,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "Nine men were arrested over a pitch invasion and flares being thrown during City's 3-0 loss at Sixfields.\nThe club has said that the \"repeated disruptions\" were \"unacceptable\".\nA Sky Blue Trust statement said: \"We do not condone anti-social and illegal acts such as the throwing of smoke bombs and multiple pitch invasions.\"\nThe statement continued: \"We do understand, however, that it was entirely the result of frustration and desperation and that many supporters are simply at the end of their tethers feeling powerless and ignored.\n\"While peaceful protests and petitions have attracted national attention and sympathy, they have seemingly been ignored by Sisu and [chairman] Tim Fisher and this once great club is in now in total disarray and turmoil.\n\"The scenes were ugly but borne of desperation and passion. The Trust urges all fans to keep any protests lawful and ensure these scenes are not be repeated.\"\nCoventry fans have held a number of protests against the club's owners this season, with December's EFL Trophy second round win over Crawley attracting a record-low home crowd.\nThe Sky Blues are without a League One victory since 1 November and have only won four times all season.",
+    "reference": "A Coventry City fans' trust says disruption at Saturday's defeat by Northampton was caused by \"desperation\" with the club's owners, Sisu.",
+    "prediction": "Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat at Bristol City.",
+    "entities": [
+      {
+        "ent": "Bristol City",
+        "type": "GPE",
+        "start": 160,
+        "end": 172,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "Nine men were arrested over a pitch invasion and flares being thrown during City's 3-0 loss at Sixfields.\nThe club has said that the \"repeated disruptions\" were \"unacceptable\".\nA Sky Blue Trust statement said: \"We do not condone anti-social and illegal acts such as the throwing of smoke bombs and multiple pitch invasions.\"\nThe statement continued: \"We do understand, however, that it was entirely the result of frustration and desperation and that many supporters are simply at the end of their tethers feeling powerless and ignored.\n\"While peaceful protests and petitions have attracted national attention and sympathy, they have seemingly been ignored by Sisu and [chairman] Tim Fisher and this once great club is in now in total disarray and turmoil.\n\"The scenes were ugly but borne of desperation and passion. The Trust urges all fans to keep any protests lawful and ensure these scenes are not be repeated.\"\nCoventry fans have held a number of protests against the club's owners this season, with December's EFL Trophy second round win over Crawley attracting a record-low home crowd.\nThe Sky Blues are without a League One victory since 1 November and have only won four times all season.",
+    "reference": "A Coventry City fans' trust says disruption at Saturday's defeat by Northampton was caused by \"desperation\" with the club's owners, Sisu.",
+    "prediction": "Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat by Bristol Roosters.",
+    "entities": [
+      {
+        "ent": "Bristol Roosters",
+        "type": "ORG",
+        "start": 160,
+        "end": 176,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
     "source": "Gaiman's fantasy novel beat fellow National Book Award winners including Kate Atkinson and David Walliams.\nThe tale about a man returning to his childhood home for a funeral won the public vote from a shortlist of this year's 10 National Book Award winners.\nThe graphic novelist said he was \"amazed and thrilled\".\n\"I've never written a book before that was so close to my own heart - a story about memory and magic and the fear and danger of being a child,\" said Gaiman.\n\"I wasn't sure that anyone else would like it.\n\"I'm amazed and thrilled that so many other people have read it, loved it, and made their friends read it too.\n\"Winning a National Book Award was thrilling; discovering that the public have made The Ocean at the End of the Lane their Book of the Year is somewhere out beyond wonderful. Thank you to everyone who voted.\"\n'Dedication'\nGaiman's novel had already won in the Audiobook of the Year category.\nThe book secured the public vote from a shortlist including Gillian Flynn's bestseller Gone Girl, David Jason's My Life and schoolgirl Malala Yousafzai's I Am Malala to win the Book of the Year title.\nOnline voting for the title, the only book award chosen by readers, closed on 19 December.\nLast year's winner was EL James' raunchy blockbuster Fifty Shades of Grey, while Caitlin Moran's How To Be A Woman and David Nicholls' romantic novel One Day have also taken the prize.\nDame Mary Perkins, founder of the award's sponsors Specsavers, congratulated Gaiman on \"this fantastic award\".\n\"The competition was tough but to be chosen by members of the public as well as your industry peers truly is a tribute to hard work, dedication and creativity,\" she said.\nGaiman made his name writing graphic novels including The Sandman series and Coraline. He has penned two recent Doctor Who episodes featuring Matt Smith and is currently writing a prequel to The Sandman. A TV series of his book American Gods is in development.",
     "reference": "Neil Gaiman's The Ocean at the End of the Lane has been voted 2013's Book of the Year, winning the public vote \"by a considerable margin\".",
     "prediction": "Neil Gaiman's novel The Ocean at the End of the Lane has been named the UK's Book of the Year.",
@@ -1374,6 +1464,44 @@
         "type": "TIME",
         "start": 75,
         "end": 92,
+        "in_source": false,
+        "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The proposal concerns routes that make up the Belfast Rapid Transit (BRT) plan.\nCurrently bus lanes in Belfast run from 07:30 until 09:30 and from 15:30 until 18:30. Under the proposals this would be extended from 07:00 to 19:00.\nThe project is due to come into operation in September 2018.\n\"We should remember in 2012 the business case for the Belfast Rapid Transit was built upon the concept that these would be 12-hour, seven-to-seven bus lane priorities,\" said Mr Hazzard.\n\"That is so we can have maximum compliance and avoid confusion.\"\nWest Belfast\nEast Belfast\nTitanic Quarter\nMr Hazzard said there would be two rounds of consultation on the proposals and said there could be some room for flexibility.\n\"What we can do and looking at other cities - Dublin for example - we may have loading and unloading windows and drop-off and pick-up times, where you have windows into that,\" he said.\n\"This is through consultation with those commuters, with those stakeholders and the community along the route so we can design our proposals and then go to a formal consultation period after.\"\nHe added: \"These buses and vehicles will be coming across every seven minutes in and out of the city, it's so, so important that we get this right.\"",
+    "reference": "Transport Minister Chris Hazzard is proposing to extend the times of bus lanes on some of Belfast's busiest commuting routes.",
+    "prediction": "Belfast's transport minister, Jim Hazzard, has announced plans to extend the hours of bus lanes in the city.",
+    "entities": [
+      {
+        "ent": "the hours",
+        "type": "TIME",
+        "start": 73,
+        "end": 82,
+        "in_source": false,
+        "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The proposal concerns routes that make up the Belfast Rapid Transit (BRT) plan.\nCurrently bus lanes in Belfast run from 07:30 until 09:30 and from 15:30 until 18:30. Under the proposals this would be extended from 07:00 to 19:00.\nThe project is due to come into operation in September 2018.\n\"We should remember in 2012 the business case for the Belfast Rapid Transit was built upon the concept that these would be 12-hour, seven-to-seven bus lane priorities,\" said Mr Hazzard.\n\"That is so we can have maximum compliance and avoid confusion.\"\nWest Belfast\nEast Belfast\nTitanic Quarter\nMr Hazzard said there would be two rounds of consultation on the proposals and said there could be some room for flexibility.\n\"What we can do and looking at other cities - Dublin for example - we may have loading and unloading windows and drop-off and pick-up times, where you have windows into that,\" he said.\n\"This is through consultation with those commuters, with those stakeholders and the community along the route so we can design our proposals and then go to a formal consultation period after.\"\nHe added: \"These buses and vehicles will be coming across every seven minutes in and out of the city, it's so, so important that we get this right.\"",
+    "reference": "Transport Minister Chris Hazzard is proposing to extend the times of bus lanes on some of Belfast's busiest commuting routes.",
+    "prediction": "Plans to extend bus lanes in Belfast city centre from 07:30 to 19:00 have been unveiled by Transport Minister Chris Hazzard.",
+    "entities": [
+      {
+        "ent": "07:30 to 19:00",
+        "type": "TIME",
+        "start": 54,
+        "end": 68,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      },
+      {
+        "ent": "Chris",
+        "type": "PERSON",
+        "start": 110,
+        "end": 115,
         "in_source": false,
         "label": "Factual Hallucination"
       }
