@@ -68,14 +68,16 @@ def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test, should_anno
     for sum_id, summary in sums_by_id.items():
         source = xsum_test[sum_id]["document"]
         reference = gold_sums[sum_id]["summary"]
-        rouge_scores = rouge([summary], [reference])
+
         non_factual = False
         has_unknown = False
 
         # TODO: handle rogue score computation for failed gen
-        counters["rouge1"].append(rouge_scores["rouge1"]["f1"])
-        counters["rouge2"].append(rouge_scores["rouge2"]["f1"])
-        counters["rougeL"].append(rouge_scores["rougeL"]["f1"])
+        if summary != SUMMARY_FAILED_GENERATION:
+            rouge_scores = rouge([summary], [reference])
+            counters["rouge1"].append(rouge_scores["rouge1"]["f1"])
+            counters["rouge2"].append(rouge_scores["rouge2"]["f1"])
+            counters["rougeL"].append(rouge_scores["rougeL"]["f1"])
 
         if summary == SUMMARY_FAILED_GENERATION:
             non_factual = True
@@ -84,7 +86,10 @@ def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test, should_anno
         for ent in labeled_ents[sum_id]:
             counters["entities"] += 1
             counters[ent["label"]] += 1
-            if ent["label"] == ANNOTATION_LABELS["Non-factual"]:
+            if (
+                ent["label"] == ANNOTATION_LABELS["Non-factual"]
+                or ent["label"] == ANNOTATION_LABELS["Intrinsic"]
+            ):
                 non_factual = True
             elif ent["label"] == "Unknown":
                 has_unknown = True
@@ -102,7 +107,7 @@ def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test, should_anno
             "factual": counters["factual"] / len(sums_by_id),
             "non_factual": counters["non_factual"] / len(sums_by_id),
             "unknown": counters["unknown"] / len(sums_by_id),
-            "failed": counters["failed"]
+            "failed": counters["failed"],
         },
         "entities": {
             "total": counters["entities"],
@@ -137,23 +142,37 @@ if __name__ == "__main__":
     pp = pprint.PrettyPrinter(indent=2)
     parser = argparse.ArgumentParser()
     parser.add_argument("--annotate", type=bool, default=False)
-    parser.add_argument("--test_size", type=int, default=50)
+    parser.add_argument("--test_size", type=int, default=60)
     args = parser.parse_args()
 
     gold_metadata = get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD)
     gold_sums = get_summaries(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD)
     xsum_test = load_xsum_dict("test")
-    test_set_ids = {k for (k, v) in load_test_set(xsum_test, gold_metadata, args.test_size)}
+    test_set_ids = {
+        k for (k, v) in load_test_set(xsum_test, gold_metadata, args.test_size)
+    }
 
     print(f"Test results for {len(test_set_ids)} summaries")
 
     MODEL_RESULTS = {
-        "Debug FBS w/ oracle, i=5": load_summaries_from_logs("results/debug-oracle.json", max_iterations=5),
-        "Debug FBS w/ classifier, i=5": load_summaries_from_logs("results/debug-classifier.json", max_iterations=5),
-        "Test FBS w/ oracle, i=2": load_summaries_from_logs("results/test-oracle.json", max_iterations=2),
-        "Test FBS w/ oracle, i=5": load_summaries_from_logs("results/test-oracle.json", max_iterations=5),
-        "Test FBS w/ classifier, i=5": load_summaries_from_logs("results/test-classifier.json", max_iterations=5),
-        "Test FBS w/ bad classifier, i=5": load_summaries_from_logs("results/test-bad-classifier.json", max_iterations=5),
+        "Debug FBS w/ oracle, i=5": load_summaries_from_logs(
+            "results/debug-oracle.json", max_iterations=5
+        ),
+        "Debug FBS w/ classifier, i=5": load_summaries_from_logs(
+            "results/debug-classifier.json", max_iterations=5
+        ),
+        "Test FBS w/ oracle, i=2": load_summaries_from_logs(
+            "results/test-oracle.json", max_iterations=2
+        ),
+        "Test FBS w/ oracle, i=5": load_summaries_from_logs(
+            "results/test-oracle.json", max_iterations=5
+        ),
+        "Test FBS w/ classifier, i=5": load_summaries_from_logs(
+            "results/test-classifier.json", max_iterations=5
+        ),
+        "Test FBS w/ bad classifier, i=5": load_summaries_from_logs(
+            "results/test-bad-classifier.json", max_iterations=5
+        ),
     }
     for sumtool_name in [
         "facebook-bart-large-xsum",  # Baseline
