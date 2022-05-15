@@ -11,6 +11,6 @@ git+https://github.com/factula/sumtool#egg=sumtool
 wandb
 pandas
 nltk
-absl
+absl-py
 rouge_score
 bert_score
