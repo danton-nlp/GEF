@@ -1,11 +1,9 @@
 from collections import defaultdict
 import argparse
-from typing import Dict
-from src.data_utils import XSumDoc, load_debug_subset, load_test_set, load_xsum_dict
-from src.detect_entities import detect_entities, is_entity_contained
+from src.data_utils import load_debug_subset, load_test_set, load_xsum_dict
+from src.detect_entities import detect_entities
 from copy import deepcopy
 from src.entity_utils import (
-    MarkedEntityLookup,
     count_entities,
     filter_entities,
 )
@@ -20,112 +18,18 @@ from src.generation_utils import (
 )
 from src.beam_validators import BannedPhrases
 from src.word_logits_processor import WordLogitsProcessor
-from sumtool.storage import get_summary_metrics, store_summary_metrics
+from sumtool.storage import get_summary_metrics
 from src.misc_utils import Timer, get_new_log_path
 import json
 import time
-
-
-def oracle_label_entities(
-    summary_entities: MarkedEntityLookup,
-    annotations: MarkedEntityLookup,
-) -> MarkedEntityLookup:
-    labeled_entities: MarkedEntityLookup = {}
-    for bbc_id, marked_entities in summary_entities.items():
-        to_be_labeled = [x.copy() for x in marked_entities]
-        for x in to_be_labeled:
-            x["label"] = (
-                "Unknown"
-                if not x["in_source"]
-                else ANNOTATION_LABELS["Non-hallucinated"]
-            )
-        for unlabeled_entity in to_be_labeled:
-            for annotated_entity in annotations[bbc_id]:
-                if is_entity_contained(
-                    unlabeled_entity["ent"], annotated_entity["ent"]
-                ):
-                    unlabeled_entity["label"] = annotated_entity["label"]
-        labeled_entities[bbc_id] = to_be_labeled
-    return labeled_entities
-
-
-def prompt_labeling(
-    entity_lookup: MarkedEntityLookup,
-    xsum_test: Dict[str, XSumDoc],
-    generated_summaries: Dict[str, str],
-) -> MarkedEntityLookup:
-    updated_annotations = defaultdict(lambda: list())
-    for sum_id, labeled_entities in entity_lookup.items():
-        printed_sum = False
-        for entity in labeled_entities:
-            if entity["label"] == "Unknown":
-                if not printed_sum:
-                    print(f"----XSUM ID {sum_id}----")
-                    print(f"{xsum_test[sum_id]['document']}")
-                    print()
-                    print(f"GT summary: {xsum_test[sum_id]['summary']}")
-                    print("----")
-                    print(f"Generated summary: {generated_summaries[sum_id]}")
-                    printed_sum = True
-
-                print(
-                    f"What is the label of '{entity['ent']} (pos {entity['start']}:{entity['end']})?"
-                )
-                user_input = ""
-                while user_input not in ["0", "1", "I", "U", "S"]:
-                    user_input = input(
-                        "Non-factual (0), Factual (1), Intrinsic (I), Unknown (U) or Skip & save annotations (S)\n"
-                    )
-
-                if user_input == "S":
-                    return updated_annotations
-                elif user_input == "1":
-                    annotation = entity.copy()
-                    annotation["label"] = ANNOTATION_LABELS["Factual"]
-                    updated_annotations[sum_id].append(annotation)
-                elif user_input == "I":
-                    annotation = entity.copy()
-                    annotation["label"] = ANNOTATION_LABELS["Intrinsic"]
-                    updated_annotations[sum_id].append(annotation)
-                elif user_input == "0":
-                    annotation = entity.copy()
-                    annotation["label"] = ANNOTATION_LABELS["Non-factual"]
-                    updated_annotations[sum_id].append(annotation)
-    return updated_annotations
+from src.oracle import oracle_label_entities, get_entity_annotations
+from src.annotation import (
+    prompt_annotation_flow,
+)
 
 
 SUMTOOL_DATASET = "xsum"
 SUMTOOL_MODEL_GOLD = "gold"
-
-
-def persist_updated_annotations(old_metadata, updated_annotations, summaries_by_id):
-    updated_metadata = old_metadata.copy()
-    for sum_id, new_annotations in updated_annotations.items():
-        if sum_id in old_metadata:
-            summary = summaries_by_id[sum_id]
-            our_annotations = (
-                updated_metadata[sum_id]["our_annotations"]
-                if "our_annotations" in updated_metadata[sum_id]
-                else {}
-            )
-            if summary not in our_annotations:
-                our_annotations[summary] = []
-
-            for annot in new_annotations:
-                our_annotations[summary].append(annot)
-            updated_metadata[sum_id]["our_annotations"] = our_annotations
-
-    store_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD, updated_metadata)
-    return updated_metadata
-
-
-def get_entity_annotations(metadata, sum_id):
-    annots = []
-    for key in ["xent-train", "xent-test", "our_annotations"]:
-        if key in metadata[sum_id]:
-            for ents in metadata[sum_id][key].values():
-                annots += ents
-    return annots
 
 
 def persist_iteration(
@@ -403,12 +307,9 @@ if __name__ == "__main__":
                     # Set labels from oracle
                     oracle_labeled_entities = oracle_label_entities(
                         summary_entities,
-                        {
-                            sum_id: get_entity_annotations(
-                                summary_gold_metadata, sum_id
-                            )
-                            for sum_id in summary_entities.keys()
-                        },
+                        get_entity_annotations(
+                            summary_entities.keys(), summary_gold_metadata
+                        ),
                     )
 
                 # Update results based on oracle labels & banned words based on predictions
@@ -463,18 +364,16 @@ if __name__ == "__main__":
                     oracle_labeled_entities,
                 )
                 if should_prompt_labeling and count_entities(unknown_entities) > 0:
-                    if (
-                        input("Would you like to label unknown entities? (y/n)\n")
-                        == "y"
-                    ):
-                        updated_annotations = prompt_labeling(
-                            unknown_entities, xsum_test, gen_summaries_by_id
-                        )
-                        summary_gold_metadata = persist_updated_annotations(
-                            summary_gold_metadata,
-                            updated_annotations,
-                            gen_summaries_by_id,
-                        )
+                    result = prompt_annotation_flow(
+                        unknown_entities,
+                        xsum_test,
+                        gen_summaries_by_id,
+                        summary_gold_metadata,
+                    )
+                    if not result:
+                        should_prompt_labeling = False
+                    else:
+                        (updated_annotations, summary_gold_metadata) = result
                         if args.verbose:
                             print("Updated annotations:", dict(updated_annotations))
                         for sum_id, annotations in updated_annotations.items():
@@ -483,8 +382,6 @@ if __name__ == "__main__":
                                     new_constraints += 1
                                     banned_phrases_by_sum_id[sum_id].add(annot["ent"])
                                     results_by_sum_id[sum_id]["completed"] = False
-                    else:
-                        should_prompt_labeling = False
 
                 persist_iteration(
                     logging_path,
