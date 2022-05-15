@@ -238,6 +238,6 @@ if __name__ == "__main__":
             posterior_model_and_tokenizer=load_bart_xsum_cmlm(),
         )
 
-        pprint.PrettyPrinter(indent=4).pprint(
-            list(zip(entities, entity_labels, entity_probs))
-        )
+        # pprint.PrettyPrinter(indent=4).pprint(
+        #     list(zip(entities, entity_labels, entity_probs))
+        # )
