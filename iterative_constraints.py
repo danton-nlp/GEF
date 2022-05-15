@@ -208,13 +208,13 @@ if __name__ == "__main__":
             ]
         }
     elif args.data_subset in ["test-anton", "test-daniel", "test"]:
-        test_set = load_test_set(xsum_test, summary_gold_metadata)
+        test_set = load_test_set(xsum_test, summary_gold_metadata, N=60)
         if "anton" in args.data_subset:
             print("Loaded Anton's test subset")
-            test_set = test_set[:25]
+            test_set = test_set[: len(test_set) // 2]
         elif "daniel" in args.data_subset:
             print("Loaded Daniel's test subset")
-            test_set = test_set[25:50]
+            test_set = test_set[len(test_set) // 2 :]
         else:
             print("Loaded full test set")
         docs_to_summarize = {k: v for (k, v) in test_set}
