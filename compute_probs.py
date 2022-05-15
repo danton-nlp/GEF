@@ -206,6 +206,9 @@ if __name__ == "__main__":
     args = parser.parse_args()
     dataset = load_xent(args.xent_split)[: args.num_examples]
 
+    prior_model_and_tokenizer = load_model_and_tokenizer("facebook/bart-large")
+    posterior_model_and_tokenizer = load_bart_xsum_cmlm()
+
     for idx, example in enumerate(tqdm(dataset)):
         (
             inputs,
@@ -221,8 +224,8 @@ if __name__ == "__main__":
             sources=sources,
             entities=entities,
             batch_size=args.batch_size,
-            prior_model_and_tokenizer=load_model_and_tokenizer("facebook/bart-large"),
-            posterior_model_and_tokenizer=load_bart_xsum_cmlm(),
+            prior_model_and_tokenizer=prior_model_and_tokenizer,
+            posterior_model_and_tokenizer=posterior_model_and_tokenizer
         )
 
         persist_example_with_probs(
