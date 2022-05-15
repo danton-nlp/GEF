@@ -166,7 +166,7 @@ def print_results(label, results_by_sum_id, type="summary"):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--pickled_classifier", type=str, default="factuality-classifiers/v0-knn.pickle")
+    parser.add_argument("--pickled_classifier", type=str, default="")
     parser.add_argument("--classifier_batch_size", type=int, default=4)
     parser.add_argument("--model_path", type=str, default="facebook/bart-large-xsum")
     parser.add_argument("--max_iterations", type=int, default=5)
