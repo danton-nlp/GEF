@@ -3,9 +3,9 @@ import pandas as pd
 import pytest
 from compute_probs import (
     build_masked_inputs_and_targets,
-    compute_prior_and_posterior_probs,
+    compute_probs_for_summary,
 )
-from src.generation_utils import load_model_and_tokenizer, load_xsum_with_mask_in_vocab
+from src.generation_utils import load_model_and_tokenizer, load_bart_xsum_cmlm
 
 
 @pytest.fixture(scope="session")
@@ -17,7 +17,7 @@ def bart_large():
 
 @pytest.fixture(scope="session")
 def bart_large_xsum():
-    return load_xsum_with_mask_in_vocab()
+    return load_bart_xsum_cmlm()
 
 
 @pytest.fixture(scope="module")
@@ -176,7 +176,7 @@ def evaluation_repro_data():
 def test_masked_many_entities(bart_large, bart_large_xsum, masked_multiple_entity_data):
     inputs, targets, entities, sources, _labels = masked_multiple_entity_data
 
-    entity_probs = compute_prior_and_posterior_probs(
+    entity_probs = compute_probs_for_summary(
         masked_inputs=inputs,
         targets=targets,
         sources=sources,
@@ -198,7 +198,7 @@ def test_masked_many_entities(bart_large, bart_large_xsum, masked_multiple_entit
 def test_long_entity(bart_large, bart_large_xsum, long_entity_data):
     inputs, targets, entities, sources, _labels = long_entity_data
 
-    entity_probs = compute_prior_and_posterior_probs(
+    entity_probs = compute_probs_for_summary(
         masked_inputs=inputs,
         targets=targets,
         sources=sources,
@@ -220,7 +220,7 @@ def test_long_entity(bart_large, bart_large_xsum, long_entity_data):
 def test_prior_and_posterior_masked(bart_large, bart_large_xsum, evaluation_repro_data):
     inputs, targets, entities, sources, _labels = evaluation_repro_data
 
-    entity_probs = compute_prior_and_posterior_probs(
+    entity_probs = compute_probs_for_summary(
         masked_inputs=inputs,
         targets=targets,
         sources=sources,
