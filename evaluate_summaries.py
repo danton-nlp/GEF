@@ -148,9 +148,12 @@ if __name__ == "__main__":
     print(f"Test results for {len(test_set_ids)} summaries")
 
     MODEL_RESULTS = {
-        "Constrained oracle, i=2": load_summaries_from_logs("results/test.json", max_iterations=2),
-        "Constrained oracle, i=5": load_summaries_from_logs("results/test.json", max_iterations=5),
-        # "Constrained oracle, 5 iteration": load_summaries_from_logs("results/test.json", max_iterations=5),
+        "Debug FBS w/ oracle, i=5": load_summaries_from_logs("results/debug-oracle.json", max_iterations=5),
+        "Debug FBS w/ classifier, i=5": load_summaries_from_logs("results/debug-classifier.json", max_iterations=5),
+        "Test FBS w/ oracle, i=2": load_summaries_from_logs("results/test-oracle.json", max_iterations=2),
+        "Test FBS w/ oracle, i=5": load_summaries_from_logs("results/test-oracle.json", max_iterations=5),
+        "Test FBS w/ classifier, i=5": load_summaries_from_logs("results/test-classifier.json", max_iterations=5),
+        "Test FBS w/ bad classifier, i=5": load_summaries_from_logs("results/test-bad-classifier.json", max_iterations=5),
     }
     for sumtool_name in [
         "facebook-bart-large-xsum",  # Baseline

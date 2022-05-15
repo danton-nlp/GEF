@@ -1,0 +1,1616 @@
+{
+  "timestamp": 1652648533.8159683,
+  "args": {
+    "pickled_classifier": "factuality-classifiers/v0-knn.pickle",
+    "classifier_batch_size": 4,
+    "model_path": "facebook/bart-large-xsum",
+    "max_iterations": 5,
+    "annotate": false,
+    "verbose": false,
+    "batch_size": 4,
+    "data_subset": "debug"
+  },
+  "iterations": {
+    "0": {
+      "summaries": {
+        "37066389": {
+          "banned_phrases": [],
+          "summary": "Colombia's Omar Martinez lost to Kazakhstan's Islam Dusmatov in the Olympic men's flyweight final in Rio.",
+          "generation_metadata": {
+            "score": -0.6497118473052979,
+            "dropped_seqs": [],
+            "n_words_checked": 81
+          },
+          "labeled_entities": [
+            {
+              "ent": "Colombia",
+              "type": "GPE",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Omar",
+              "type": "PERSON",
+              "start": 11,
+              "end": 15,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Martinez",
+              "type": "PERSON",
+              "start": 16,
+              "end": 24,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kazakhstan",
+              "type": "GPE",
+              "start": 33,
+              "end": 43,
+              "in_source": false,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Rio",
+              "type": "GPE",
+              "start": 101,
+              "end": 104,
+              "in_source": false,
+              "predicted_label": "Factual Hallucination",
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "24403775": {
+          "banned_phrases": [],
+          "summary": "Villagers in Shropshire are calling for the reopening of a dual carriageway next to Stonehenge.",
+          "generation_metadata": {
+            "score": -0.5598481893539429,
+            "dropped_seqs": [],
+            "n_words_checked": 80
+          },
+          "labeled_entities": [
+            {
+              "ent": "Shropshire",
+              "type": "GPE",
+              "start": 13,
+              "end": 23,
+              "in_source": false,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Stonehenge",
+              "type": "FAC",
+              "start": 84,
+              "end": 94,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37615223": {
+          "banned_phrases": [],
+          "summary": "Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium.",
+          "generation_metadata": {
+            "score": -0.5099042057991028,
+            "dropped_seqs": [],
+            "n_words_checked": 90
+          },
+          "labeled_entities": [
+            {
+              "ent": "Sam",
+              "type": "PERSON",
+              "start": 0,
+              "end": 3,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Baldock",
+              "type": "PERSON",
+              "start": 4,
+              "end": 11,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "first-half",
+              "type": "DATE",
+              "start": 14,
+              "end": 24,
+              "in_source": false,
+              "predicted_label": "Factual Hallucination",
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Brighton",
+              "type": "GPE",
+              "start": 51,
+              "end": 59,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the Amex Stadium",
+              "type": "FAC",
+              "start": 83,
+              "end": 99,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "32112735": {
+          "banned_phrases": [],
+          "summary": "Liam Payne and Niall Horan have confirmed they're staying in One Direction.",
+          "generation_metadata": {
+            "score": -0.48299190402030945,
+            "dropped_seqs": [],
+            "n_words_checked": 89
+          },
+          "labeled_entities": [
+            {
+              "ent": "Liam",
+              "type": "PERSON",
+              "start": 0,
+              "end": 4,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Payne",
+              "type": "PERSON",
+              "start": 5,
+              "end": 10,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Niall",
+              "type": "PERSON",
+              "start": 15,
+              "end": 20,
+              "in_source": false,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Horan",
+              "type": "PERSON",
+              "start": 21,
+              "end": 26,
+              "in_source": false,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "34361828": {
+          "banned_phrases": [],
+          "summary": "A search is under way for the remains of a Pembrokeshire village which was wiped out by storms in the 1970s.",
+          "generation_metadata": {
+            "score": -0.6927704215049744,
+            "dropped_seqs": [],
+            "n_words_checked": 95
+          },
+          "labeled_entities": [
+            {
+              "ent": "Pembrokeshire",
+              "type": "GPE",
+              "start": 43,
+              "end": 56,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "the 1970s",
+              "type": "DATE",
+              "start": 98,
+              "end": 107,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "17996567": {
+          "banned_phrases": [],
+          "summary": "Plans to cut home-to-school transport subsidies in Gloucestershire have been put on hold.",
+          "generation_metadata": {
+            "score": -0.5601844191551208,
+            "dropped_seqs": [],
+            "n_words_checked": 89
+          },
+          "labeled_entities": [
+            {
+              "ent": "Gloucestershire",
+              "type": "GPE",
+              "start": 51,
+              "end": 66,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36456002": {
+          "banned_phrases": [],
+          "summary": "Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final World Cup warm-up.",
+          "generation_metadata": {
+            "score": -0.3663136959075928,
+            "dropped_seqs": [],
+            "n_words_checked": 89
+          },
+          "labeled_entities": [
+            {
+              "ent": "Romelu",
+              "type": "PERSON",
+              "start": 0,
+              "end": 6,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Lukaku",
+              "type": "PERSON",
+              "start": 7,
+              "end": 13,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Belgium",
+              "type": "GPE",
+              "start": 40,
+              "end": 47,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Norway",
+              "type": "GPE",
+              "start": 73,
+              "end": 79,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "World Cup",
+              "type": "EVENT",
+              "start": 95,
+              "end": 104,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36396523": {
+          "banned_phrases": [],
+          "summary": "Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America.",
+          "generation_metadata": {
+            "score": -0.45060282945632935,
+            "dropped_seqs": [],
+            "n_words_checked": 89
+          },
+          "labeled_entities": [
+            {
+              "ent": "Brazil",
+              "type": "GPE",
+              "start": 0,
+              "end": 6,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kaka",
+              "type": "PERSON",
+              "start": 18,
+              "end": 22,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "next month's",
+              "type": "DATE",
+              "start": 42,
+              "end": 54,
+              "in_source": false,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "World Cup",
+              "type": "EVENT",
+              "start": 64,
+              "end": 73,
+              "in_source": false,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "South America",
+              "type": "LOC",
+              "start": 77,
+              "end": 90,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36203675": {
+          "banned_phrases": [],
+          "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol.",
+          "generation_metadata": {
+            "score": -0.8142692446708679,
+            "dropped_seqs": [],
+            "n_words_checked": 96
+          },
+          "labeled_entities": [
+            {
+              "ent": "the University of Bristol",
+              "type": "ORG",
+              "start": 84,
+              "end": 109,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "39368095": {
+          "banned_phrases": [],
+          "summary": "Abertay University in Dundee has been named the best university in the world for its graduate courses in computer games design.",
+          "generation_metadata": {
+            "score": -0.515540361404419,
+            "dropped_seqs": [],
+            "n_words_checked": 87
+          },
+          "labeled_entities": [
+            {
+              "ent": "Dundee",
+              "type": "GPE",
+              "start": 22,
+              "end": 28,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Factual Hallucination"
+            }
+          ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 2,
+          "total": 10,
+          "factual": 2,
+          "non_factual": 8,
+          "failed": 0,
+          "unknown": 0
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 9,
+            "Factual Hallucination": 22,
+            "Unknown": 0,
+            "Non-hallucinated": 0,
+            "Intrinsic Hallucination": 0
+          },
+          "type": {
+            "PERSON": {
+              "total": 11,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 10,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "GPE": {
+              "total": 11,
+              "Non-factual Hallucination": 3,
+              "Factual Hallucination": 8,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "FAC": {
+              "total": 2,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "DATE": {
+              "total": 3,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 2,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "EVENT": {
+              "total": 2,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "LOC": {
+              "total": 1,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "ORG": {
+              "total": 1,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            }
+          }
+        }
+      }
+    },
+    "1": {
+      "summaries": {
+        "37066389": {
+          "banned_phrases": [
+            "Omar"
+          ],
+          "summary": "Colombia's Carlos Martinez has been beaten in the Olympic men's flyweight final by Kazakhstan's Islam Dusmatov.",
+          "generation_metadata": {
+            "score": -0.6692063808441162,
+            "dropped_seqs": [
+              "</s>Colombia's Omar"
+            ],
+            "n_words_checked": 85
+          },
+          "labeled_entities": [
+            {
+              "ent": "Colombia",
+              "type": "GPE",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Carlos",
+              "type": "PERSON",
+              "start": 11,
+              "end": 17,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Martinez",
+              "type": "PERSON",
+              "start": 18,
+              "end": 26,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kazakhstan",
+              "type": "GPE",
+              "start": 83,
+              "end": 93,
+              "in_source": false,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "37615223": {
+          "banned_phrases": [
+            "the Amex Stadium"
+          ],
+          "summary": "Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to third in the Championship.",
+          "generation_metadata": {
+            "score": -0.5327234268188477,
+            "dropped_seqs": [
+              "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves at the Amex Stadium",
+              "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium"
+            ],
+            "n_words_checked": 89
+          },
+          "labeled_entities": [
+            {
+              "ent": "Sam",
+              "type": "PERSON",
+              "start": 0,
+              "end": 3,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Baldock",
+              "type": "PERSON",
+              "start": 4,
+              "end": 11,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "third",
+              "type": "ORDINAL",
+              "start": 83,
+              "end": 88,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "34361828": {
+          "banned_phrases": [
+            "Pembrokeshire",
+            "the 1970s"
+          ],
+          "summary": "A search is under way for the remains of a Gwynedd village which was wiped out by storms in the 1950s.",
+          "generation_metadata": {
+            "score": -0.7429375052452087,
+            "dropped_seqs": [
+              "</s>A search is under way for the remains of a Pembrokeshire",
+              "</s>A search is under way for the remains of a Gwynedd village which was wiped out by storms in the 1970s",
+              "</s>A search is under way for the remains of a Gwynedd village which was wiped out by Storm Desmond in the 1970s"
+            ],
+            "n_words_checked": 86
+          },
+          "labeled_entities": [
+            {
+              "ent": "Gwynedd village",
+              "type": "GPE",
+              "start": 43,
+              "end": 58,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "the 1950s",
+              "type": "DATE",
+              "start": 92,
+              "end": 101,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "17996567": {
+          "banned_phrases": [
+            "Gloucestershire"
+          ],
+          "summary": "Plans to cut home-to-school transport subsidies for children in Flintshire have been put on hold.",
+          "generation_metadata": {
+            "score": -0.6140735745429993,
+            "dropped_seqs": [
+              "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
+            ],
+            "n_words_checked": 81
+          },
+          "labeled_entities": [
+            {
+              "ent": "Flintshire",
+              "type": "PERSON",
+              "start": 64,
+              "end": 74,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36456002": {
+          "banned_phrases": [
+            "World Cup"
+          ],
+          "summary": "Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final Euro 2016 warm-up game.",
+          "generation_metadata": {
+            "score": -0.37551575899124146,
+            "dropped_seqs": [
+              "</s>Eden Hazard scored twice as Belgium came from behind to beat Norway in their final World Cup",
+              "</s>Eden Hazard scored twice as Belgium came from behind to beat Norway 3-2 in their final World Cup",
+              "</s>Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final World Cup"
+            ],
+            "n_words_checked": 96
+          },
+          "labeled_entities": [
+            {
+              "ent": "Romelu",
+              "type": "PERSON",
+              "start": 0,
+              "end": 6,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Lukaku",
+              "type": "PERSON",
+              "start": 7,
+              "end": 13,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Belgium",
+              "type": "GPE",
+              "start": 40,
+              "end": 47,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Norway",
+              "type": "GPE",
+              "start": 73,
+              "end": 79,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "2016",
+              "type": "DATE",
+              "start": 100,
+              "end": 104,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "36396523": {
+          "banned_phrases": [
+            "South America"
+          ],
+          "summary": "Brazil have added Kaka to their squad for next month's Copa America in Chile.",
+          "generation_metadata": {
+            "score": -0.4901476800441742,
+            "dropped_seqs": [
+              "</s>Brazil have added Kaka to their squad for the Under-20 World Cup in South America",
+              "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America",
+              "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup in South America"
+            ],
+            "n_words_checked": 82
+          },
+          "labeled_entities": [
+            {
+              "ent": "Brazil",
+              "type": "GPE",
+              "start": 0,
+              "end": 6,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kaka",
+              "type": "PERSON",
+              "start": 18,
+              "end": 22,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "next month's",
+              "type": "DATE",
+              "start": 42,
+              "end": 54,
+              "in_source": false,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Copa America",
+              "type": "FAC",
+              "start": 55,
+              "end": 67,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Chile",
+              "type": "GPE",
+              "start": 71,
+              "end": 76,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36203675": {
+          "banned_phrases": [
+            "the University of Bristol"
+          ],
+          "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford.",
+          "generation_metadata": {
+            "score": -0.8211356997489929,
+            "dropped_seqs": [
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol"
+            ],
+            "n_words_checked": 110
+          },
+          "labeled_entities": [
+            {
+              "ent": "the University of Oxford",
+              "type": "ORG",
+              "start": 84,
+              "end": 108,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "39368095": {
+          "banned_phrases": [
+            "Dundee"
+          ],
+          "summary": "Abertay University has been named the best university in the world for its graduate courses in computer games design.",
+          "generation_metadata": {
+            "score": -0.5877705216407776,
+            "dropped_seqs": [
+              "</s>Abertay University in Dundee"
+            ],
+            "n_words_checked": 93
+          },
+          "labeled_entities": []
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 5,
+          "total": 10,
+          "factual": 5,
+          "non_factual": 5,
+          "failed": 0,
+          "unknown": 0
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 7,
+            "Factual Hallucination": 20,
+            "Unknown": 0,
+            "Non-hallucinated": 0,
+            "Intrinsic Hallucination": 0
+          },
+          "type": {
+            "PERSON": {
+              "total": 12,
+              "Non-factual Hallucination": 2,
+              "Factual Hallucination": 10,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "GPE": {
+              "total": 8,
+              "Non-factual Hallucination": 2,
+              "Factual Hallucination": 6,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "FAC": {
+              "total": 2,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "ORDINAL": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "DATE": {
+              "total": 3,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 2,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "ORG": {
+              "total": 1,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            }
+          }
+        }
+      }
+    },
+    "2": {
+      "summaries": {
+        "37066389": {
+          "banned_phrases": [
+            "Omar",
+            "Carlos"
+          ],
+          "summary": "Colombia's Gabriel Martinez has been beaten in the Olympic men's flyweight final by Kazakhstan's Islam Dusmatov.",
+          "generation_metadata": {
+            "score": -0.7071751952171326,
+            "dropped_seqs": [
+              "</s>Colombia's Omar",
+              "</s>Colombia's Carlos",
+              "</s>Colombia's Jose Carlos"
+            ],
+            "n_words_checked": 86
+          },
+          "labeled_entities": [
+            {
+              "ent": "Colombia",
+              "type": "GPE",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Gabriel",
+              "type": "PERSON",
+              "start": 11,
+              "end": 18,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Martinez",
+              "type": "PERSON",
+              "start": 19,
+              "end": 27,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kazakhstan",
+              "type": "GPE",
+              "start": 84,
+              "end": 94,
+              "in_source": false,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "34361828": {
+          "banned_phrases": [
+            "Pembrokeshire",
+            "Gwynedd village",
+            "the 1950s",
+            "the 1970s"
+          ],
+          "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
+          "generation_metadata": {
+            "score": -1.0076079368591309,
+            "dropped_seqs": [
+              "</s>A search is under way for the remains of a Gwynedd village",
+              "</s>A search is under way for the remains of a Pembrokeshire",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by storms in the 1950s",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by storms in the 1970s",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950s",
+              "</s>A search is under way to find the remains of a Gower village that was destroyed by the sea in the 1950s"
+            ],
+            "n_words_checked": 85
+          },
+          "labeled_entities": [
+            {
+              "ent": "Gower",
+              "type": "GPE",
+              "start": 47,
+              "end": 52,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "1950",
+              "type": "DATE",
+              "start": 99,
+              "end": 103,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "17996567": {
+          "banned_phrases": [
+            "Flintshire",
+            "Gloucestershire"
+          ],
+          "summary": "Plans to cut home-to-school transport subsidies for children in Staffordshire have been put on hold.",
+          "generation_metadata": {
+            "score": -0.6207178235054016,
+            "dropped_seqs": [
+              "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Flintshire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
+            ],
+            "n_words_checked": 81
+          },
+          "labeled_entities": [
+            {
+              "ent": "Staffordshire",
+              "type": "GPE",
+              "start": 64,
+              "end": 77,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36396523": {
+          "banned_phrases": [
+            "South America",
+            "Copa America",
+            "Chile"
+          ],
+          "summary": "Brazil have added Kaka to their squad for next month's Under-20 World Cup in South Africa.",
+          "generation_metadata": {
+            "score": -0.49668043851852417,
+            "dropped_seqs": [
+              "</s>Brazil have added Kaka to their squad for next month's Copa America",
+              "</s>Brazil have added Kaka to their squad for the Under-20 World Cup in Chile",
+              "</s>Brazil have added Kaka to their squad for the Under-20 World Cup in South America",
+              "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America",
+              "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup in South America"
+            ],
+            "n_words_checked": 79
+          },
+          "labeled_entities": [
+            {
+              "ent": "Brazil",
+              "type": "GPE",
+              "start": 0,
+              "end": 6,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kaka",
+              "type": "PERSON",
+              "start": 18,
+              "end": 22,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "next month's",
+              "type": "DATE",
+              "start": 42,
+              "end": 54,
+              "in_source": false,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "World Cup",
+              "type": "EVENT",
+              "start": 64,
+              "end": 73,
+              "in_source": false,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "South Africa",
+              "type": "GPE",
+              "start": 77,
+              "end": 89,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Unknown"
+            }
+          ]
+        },
+        "36203675": {
+          "banned_phrases": [
+            "the University of Bristol",
+            "the University of Oxford"
+          ],
+          "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge.",
+          "generation_metadata": {
+            "score": -0.8350410461425781,
+            "dropped_seqs": [
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Oxford",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford"
+            ],
+            "n_words_checked": 110
+          },
+          "labeled_entities": [
+            {
+              "ent": "the University of Cambridge",
+              "type": "ORG",
+              "start": 84,
+              "end": 111,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 5,
+          "total": 10,
+          "factual": 5,
+          "non_factual": 5,
+          "failed": 0,
+          "unknown": 0
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 5,
+            "Factual Hallucination": 22,
+            "Unknown": 0,
+            "Non-hallucinated": 0,
+            "Intrinsic Hallucination": 0
+          },
+          "type": {
+            "PERSON": {
+              "total": 11,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 10,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "GPE": {
+              "total": 9,
+              "Non-factual Hallucination": 2,
+              "Factual Hallucination": 7,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "FAC": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "ORDINAL": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "DATE": {
+              "total": 3,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 2,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "EVENT": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "ORG": {
+              "total": 1,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            }
+          }
+        }
+      }
+    },
+    "3": {
+      "summaries": {
+        "37066389": {
+          "banned_phrases": [
+            "Omar",
+            "Gabriel",
+            "Carlos"
+          ],
+          "summary": "Colombia's Jose Luis Martinez has been knocked out in the Olympic men's flyweight final by Kazakhstan's Ruslan Dusmatov.",
+          "generation_metadata": {
+            "score": -0.7542169094085693,
+            "dropped_seqs": [
+              "</s>Colombia's Omar",
+              "</s>Colombia's Carlos",
+              "</s>Colombia's Gabriel",
+              "</s>Colombia's Jose Carlos"
+            ],
+            "n_words_checked": 87
+          },
+          "labeled_entities": [
+            {
+              "ent": "Colombia",
+              "type": "GPE",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Jose",
+              "type": "PERSON",
+              "start": 11,
+              "end": 15,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Luis",
+              "type": "PERSON",
+              "start": 16,
+              "end": 20,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Martinez",
+              "type": "PERSON",
+              "start": 21,
+              "end": 29,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kazakhstan",
+              "type": "GPE",
+              "start": 91,
+              "end": 101,
+              "in_source": false,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Ruslan",
+              "type": "PERSON",
+              "start": 104,
+              "end": 110,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Unknown"
+            },
+            {
+              "ent": "Dusmatov",
+              "type": "PERSON",
+              "start": 111,
+              "end": 119,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "34361828": {
+          "banned_phrases": [
+            "Pembrokeshire",
+            "Gwynedd village",
+            "the 1970s",
+            "the 1950s",
+            "1950"
+          ],
+          "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
+          "generation_metadata": {
+            "score": -1.0076079368591309,
+            "dropped_seqs": [
+              "</s>A search is under way for the remains of a Gwynedd village",
+              "</s>A search is under way for the remains of a Pembrokeshire",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by storms in the 1950s",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by storms in the 1970s",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950s",
+              "</s>A search is under way to find the remains of a Gower village that was destroyed by the sea in the 1950s"
+            ],
+            "n_words_checked": 85
+          },
+          "labeled_entities": [
+            {
+              "ent": "Gower",
+              "type": "GPE",
+              "start": 47,
+              "end": 52,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "1950",
+              "type": "DATE",
+              "start": 99,
+              "end": 103,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "17996567": {
+          "banned_phrases": [
+            "Staffordshire",
+            "Flintshire",
+            "Gloucestershire"
+          ],
+          "summary": "Plans to cut home-to-school transport subsidies for children in Gloucesterse have been put on hold.",
+          "generation_metadata": {
+            "score": -0.8472778797149658,
+            "dropped_seqs": [
+              "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Flintshire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Staffordshire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
+            ],
+            "n_words_checked": 88
+          },
+          "labeled_entities": [
+            {
+              "ent": "Gloucesterse",
+              "type": "ORG",
+              "start": 64,
+              "end": 76,
+              "in_source": false,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36396523": {
+          "banned_phrases": [
+            "South America",
+            "Copa America",
+            "South Africa",
+            "Chile"
+          ],
+          "summary": "<Failed generation: blocked all beams>",
+          "generation_metadata": {
+            "score": -Infinity,
+            "dropped_seqs": [
+              "</s>Brazil have added Kaka to their squad for next month's Copa America",
+              "</s>Brazil have added Kaka to their squad for the Under-20 World Cup in Chile",
+              "</s>Brazil have added Kaka to their squad for the Under-20 World Cup in South America",
+              "</s>Brazil have added Kaka to their squad for the Under-20 World Cup in South Africa",
+              "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in Chile",
+              "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America",
+              "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup in South America",
+              "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup in South Africa",
+              "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South Africa"
+            ],
+            "n_words_checked": 89
+          },
+          "labeled_entities": []
+        },
+        "36203675": {
+          "banned_phrases": [
+            "the University of Bristol",
+            "the University of Oxford",
+            "the University of Cambridge"
+          ],
+          "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Manchester.",
+          "generation_metadata": {
+            "score": -0.8421388864517212,
+            "dropped_seqs": [
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Oxford",
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Cambridge",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge"
+            ],
+            "n_words_checked": 104
+          },
+          "labeled_entities": [
+            {
+              "ent": "the University of Manchester",
+              "type": "ORG",
+              "start": 84,
+              "end": 112,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 7,
+          "total": 10,
+          "factual": 6,
+          "non_factual": 3,
+          "failed": 1,
+          "unknown": 0
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 5,
+            "Factual Hallucination": 20,
+            "Unknown": 0,
+            "Non-hallucinated": 0,
+            "Intrinsic Hallucination": 0
+          },
+          "type": {
+            "PERSON": {
+              "total": 13,
+              "Non-factual Hallucination": 3,
+              "Factual Hallucination": 10,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "GPE": {
+              "total": 6,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 6,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "FAC": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "ORDINAL": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "DATE": {
+              "total": 2,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "ORG": {
+              "total": 2,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            }
+          }
+        }
+      }
+    },
+    "4": {
+      "summaries": {
+        "37066389": {
+          "banned_phrases": [
+            "Jose",
+            "Luis",
+            "Gabriel",
+            "Ruslan",
+            "Omar",
+            "Carlos"
+          ],
+          "summary": "<Failed generation: blocked all beams>",
+          "generation_metadata": {
+            "score": -Infinity,
+            "dropped_seqs": [
+              "</s>Colombia's Omar",
+              "</s>Colombia's Carlos",
+              "</s>Colombia's Jose",
+              "</s>Colombia's Gabriel"
+            ],
+            "n_words_checked": 75
+          },
+          "labeled_entities": []
+        },
+        "34361828": {
+          "banned_phrases": [
+            "Pembrokeshire",
+            "Gwynedd village",
+            "the 1970s",
+            "the 1950s",
+            "1950"
+          ],
+          "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
+          "generation_metadata": {
+            "score": -1.0076086521148682,
+            "dropped_seqs": [
+              "</s>A search is under way for the remains of a Gwynedd village",
+              "</s>A search is under way for the remains of a Pembrokeshire",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by storms in the 1950s",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by storms in the 1970s",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950s",
+              "</s>A search is under way to find the remains of a Gower village that was destroyed by the sea in the 1950s"
+            ],
+            "n_words_checked": 85
+          },
+          "labeled_entities": [
+            {
+              "ent": "Gower",
+              "type": "GPE",
+              "start": 47,
+              "end": 52,
+              "in_source": true,
+              "predicted_label": "Factual Hallucination",
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "1950",
+              "type": "DATE",
+              "start": 99,
+              "end": 103,
+              "in_source": false,
+              "predicted_label": "Non-factual Hallucination",
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36203675": {
+          "banned_phrases": [
+            "the University of Bristol",
+            "the University of Manchester",
+            "the University of Oxford",
+            "the University of Cambridge"
+          ],
+          "summary": "<Failed generation: blocked all beams>",
+          "generation_metadata": {
+            "score": -Infinity,
+            "dropped_seqs": [
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Oxford",
+              "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Cambridge",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Manchester"
+            ],
+            "n_words_checked": 92
+          },
+          "labeled_entities": []
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 9,
+          "total": 10,
+          "factual": 6,
+          "non_factual": 1,
+          "failed": 3,
+          "unknown": 0
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 1,
+            "Factual Hallucination": 16,
+            "Unknown": 0,
+            "Non-hallucinated": 0,
+            "Intrinsic Hallucination": 0
+          },
+          "type": {
+            "GPE": {
+              "total": 4,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 4,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "FAC": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "PERSON": {
+              "total": 8,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 8,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "ORDINAL": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "DATE": {
+              "total": 2,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "ORG": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

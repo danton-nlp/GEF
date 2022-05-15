@@ -5,8 +5,8 @@ from interface.explore_results import render_explore_results
 
 def render():
     pages = {
-        "Dictionary Constraints (word-level)": render_beam_search,
-        "Explore Results": render_explore_results
+        "Explore Results": render_explore_results,
+        "Dictionary Constraints (word-level)": render_beam_search
     }
 
     st.sidebar.title("Factual Beam Search")
