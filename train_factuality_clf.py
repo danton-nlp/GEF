@@ -106,8 +106,8 @@ if __name__ == "__main__":
     print(
         "Xent Test Results\n",
         classification_report(
-            model.predict(X_test),
             y_test,
+            model.predict(X_test),
             target_names=["Factual", "Non-Factual"],
             digits=4,
         )
