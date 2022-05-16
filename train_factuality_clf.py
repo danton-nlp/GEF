@@ -63,10 +63,23 @@ def to_nonfactual_label(example):
         return 0
 
 
-def build_features_and_targets(data, ignore_intrinsic: bool):
+def build_train_features_and_targets(data, ignore_intrinsic: bool):
     if ignore_intrinsic:
-        print('filling out intrinsic hallucinations')
-        data = data[data['entity_label'] != 'Intrinsic Hallucination']
+        data = data[data["entity_label"] != "Intrinsic Hallucination"]
+
+    targets = data.apply(to_nonfactual_label, axis=1)
+    features = data[["prior_prob", "posterior_prob", "overlaps_source"]]
+
+    return features, targets
+
+
+def build_test_features_and_targets(data, ignore_intrinsic: bool, test_only_on_hallucinated: bool):
+    if ignore_intrinsic:
+        data = data[data["entity_label"] != "Intrinsic Hallucination"]
+
+    if test_only_on_hallucinated:
+        print("\n -- Testing only on entities that are hallucinated -- \n")
+        data = data[data["entity_label"] != "Non-hallucinated"]
 
     targets = data.apply(to_nonfactual_label, axis=1)
     features = data[["prior_prob", "posterior_prob", "overlaps_source"]]
@@ -82,7 +95,14 @@ if __name__ == "__main__":
     parser.add_argument("--pickled_clf_path", type=str)
     parser.add_argument("--train_data_filepath", type=str)
     parser.add_argument("--test_data_filepath", type=str)
-    parser.add_argument("--ignore_intrinsic", default=False, action='store_true')
+    parser.add_argument("--ignore_intrinsic", default=True)
+    parser.add_argument(
+        "--test_only_on_hallucinated",
+        default=False,
+        action="store_true",
+        help="filter test set to only evaluate against hallucinated entitites."
+        + "Enables a more fair comparison against xent-extended",
+    )
     args = parser.parse_args()
 
     train_data = json.load(open(args.train_data_filepath))
@@ -91,8 +111,14 @@ if __name__ == "__main__":
     Xy_train = preprocess_data(train_data)
     Xy_test = preprocess_data(test_data)
 
-    X_train, y_train = build_features_and_targets(Xy_train, args.ignore_intrinsic)
-    X_test, y_test = build_features_and_targets(Xy_test, args.ignore_intrinsic)
+    print("\n -- Ignoring intrinsic hallucations in train and test data -- \n")
+
+    X_train, y_train = build_train_features_and_targets(Xy_train, args.ignore_intrinsic)
+    X_test, y_test = build_test_features_and_targets(
+        Xy_test,
+        args.ignore_intrinsic,
+        args.test_only_on_hallucinated
+    )
 
     model = Pipeline(
         [
@@ -104,13 +130,14 @@ if __name__ == "__main__":
     model.fit(X_train, y_train)
 
     print(
-        "Xent Test Results\n",
+        "Test Results\n",
+        f"test file: {args.test_data_filepath}\n",
         classification_report(
             y_test,
             model.predict(X_test),
             target_names=["Factual", "Non-Factual"],
             digits=4,
-        )
+        ),
     )
 
     if args.pickled_clf_path:
