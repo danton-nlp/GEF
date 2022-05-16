@@ -1,5 +1,5 @@
 {
-  "timestamp": 1652653481.1313438,
+  "timestamp": 1652733378.7723784,
   "args": {
     "pickled_classifier": "",
     "classifier_batch_size": 4,
@@ -2914,7 +2914,7 @@
               "start": 0,
               "end": 7,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Factual Hallucination"
             },
             {
               "ent": "Laura",
@@ -2946,7 +2946,7 @@
               "start": 55,
               "end": 71,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Factual Hallucination"
             },
             {
               "ent": "Sophie",
@@ -3043,7 +3043,7 @@
               "start": 122,
               "end": 126,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Non-factual Hallucination"
             }
           ]
         },
@@ -3081,7 +3081,7 @@
               "start": 0,
               "end": 40,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Factual Hallucination"
             },
             {
               "ent": "UK",
@@ -3339,7 +3339,7 @@
               "start": 97,
               "end": 119,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Factual Hallucination"
             }
           ]
         },
@@ -3611,7 +3611,7 @@
               "start": 50,
               "end": 56,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Non-factual Hallucination"
             }
           ]
         },
@@ -5082,7 +5082,7 @@
               "start": 110,
               "end": 127,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Non-factual Hallucination"
             }
           ]
         },
@@ -5736,7 +5736,7 @@
               "start": 84,
               "end": 108,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Non-factual Hallucination"
             }
           ]
         },
@@ -6593,7 +6593,7 @@
               "start": 38,
               "end": 50,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Non-factual Hallucination"
             },
             {
               "ent": "15-year-old",
@@ -6601,7 +6601,7 @@
               "start": 88,
               "end": 99,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Non-factual Hallucination"
             }
           ]
         },
@@ -7045,7 +7045,7 @@
               "start": 11,
               "end": 21,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Factual Hallucination"
             },
             {
               "ent": "Oldham Athletic",
@@ -7061,7 +7061,7 @@
               "start": 55,
               "end": 72,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Non-factual Hallucination"
             }
           ]
         },
@@ -7800,7 +7800,7 @@
               "start": 77,
               "end": 93,
               "in_source": true,
-              "label": "Non-hallucinated"
+              "label": "Factual Hallucination"
             }
           ]
         },
@@ -8468,35 +8468,35 @@
       },
       "stats": {
         "summary": {
-          "completed": 177,
+          "completed": 172,
           "total": 239,
-          "factual": 146,
-          "non_factual": 62,
+          "factual": 148,
+          "non_factual": 67,
           "failed": 0,
-          "unknown": 31
+          "unknown": 24
         },
         "entity": {
           "label": {
-            "Non-factual Hallucination": 83,
-            "Factual Hallucination": 108,
-            "Unknown": 57,
-            "Non-hallucinated": 474,
+            "Non-factual Hallucination": 90,
+            "Factual Hallucination": 114,
+            "Unknown": 45,
+            "Non-hallucinated": 473,
             "Intrinsic Hallucination": 7
           },
           "type": {
             "GPE": {
               "total": 174,
-              "Non-factual Hallucination": 13,
-              "Factual Hallucination": 24,
-              "Unknown": 8,
+              "Non-factual Hallucination": 14,
+              "Factual Hallucination": 25,
+              "Unknown": 6,
               "Non-hallucinated": 128,
               "Intrinsic Hallucination": 1
             },
             "CARDINAL": {
               "total": 48,
-              "Non-factual Hallucination": 8,
+              "Non-factual Hallucination": 9,
               "Factual Hallucination": 4,
-              "Unknown": 8,
+              "Unknown": 7,
               "Non-hallucinated": 27,
               "Intrinsic Hallucination": 1
             },
@@ -8510,25 +8510,25 @@
             },
             "ORG": {
               "total": 106,
-              "Non-factual Hallucination": 2,
-              "Factual Hallucination": 24,
-              "Unknown": 14,
+              "Non-factual Hallucination": 3,
+              "Factual Hallucination": 27,
+              "Unknown": 10,
               "Non-hallucinated": 66,
               "Intrinsic Hallucination": 0
             },
             "DATE": {
               "total": 76,
-              "Non-factual Hallucination": 23,
-              "Factual Hallucination": 8,
-              "Unknown": 13,
+              "Non-factual Hallucination": 24,
+              "Factual Hallucination": 9,
+              "Unknown": 11,
               "Non-hallucinated": 32,
               "Intrinsic Hallucination": 0
             },
             "MONEY": {
               "total": 6,
-              "Non-factual Hallucination": 2,
+              "Non-factual Hallucination": 3,
               "Factual Hallucination": 1,
-              "Unknown": 3,
+              "Unknown": 2,
               "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
@@ -8551,9 +8551,9 @@
             "WORK_OF_ART": {
               "total": 6,
               "Non-factual Hallucination": 1,
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Unknown": 0,
-              "Non-hallucinated": 5,
+              "Non-hallucinated": 4,
               "Intrinsic Hallucination": 0
             },
             "EVENT": {
@@ -8590,17 +8590,17 @@
             },
             "PERCENT": {
               "total": 4,
-              "Non-factual Hallucination": 1,
+              "Non-factual Hallucination": 2,
               "Factual Hallucination": 0,
-              "Unknown": 1,
+              "Unknown": 0,
               "Non-hallucinated": 1,
               "Intrinsic Hallucination": 1
             },
             "TIME": {
               "total": 3,
-              "Non-factual Hallucination": 0,
+              "Non-factual Hallucination": 1,
               "Factual Hallucination": 1,
-              "Unknown": 1,
+              "Unknown": 0,
               "Non-hallucinated": 0,
               "Intrinsic Hallucination": 1
             }
@@ -8778,8 +8778,8 @@
         },
         "35346992": {
           "banned_phrases": [
-            "six months",
-            "1,000"
+            "1,000",
+            "six months"
           ],
           "summary": "A man who barricaded himself into his girlfriend's home and caused \u00a31,000 worth of damage has been jailed for two years.",
           "generation_metadata": {
@@ -8933,7 +8933,7 @@
               "start": 0,
               "end": 15,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Factual Hallucination"
             },
             {
               "ent": "the past year",
@@ -9367,9 +9367,9 @@
         },
         "37498743": {
           "banned_phrases": [
-            "Joe",
+            "Stephen",
             "Michael",
-            "Stephen"
+            "Joe"
           ],
           "summary": "<Failed generation: blocked all beams>",
           "generation_metadata": {
@@ -9428,8 +9428,8 @@
         },
         "28129488": {
           "banned_phrases": [
-            "the Royal Victoria Hospital",
-            "two-year-old"
+            "two-year-old",
+            "the Royal Victoria Hospital"
           ],
           "summary": "A woman charged with the murder of her three-year-old daughter has been remanded in custody at Belfast's Royal Victoria Hospital.",
           "generation_metadata": {
@@ -9654,10 +9654,10 @@
         },
         "35575132": {
           "banned_phrases": [
-            "Sophie",
             "Robson",
-            "Waters",
-            "second"
+            "second",
+            "Sophie",
+            "Waters"
           ],
           "summary": "Britain's world number one Laura Trott beat compatriot and fellow Briton Kirsty Water in the final of the Women's National Squash Championship in Birmingham.",
           "generation_metadata": {
@@ -9685,7 +9685,7 @@
               "start": 0,
               "end": 7,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Factual Hallucination"
             },
             {
               "ent": "Laura",
@@ -9701,7 +9701,7 @@
               "start": 33,
               "end": 38,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Non-factual Hallucination"
             },
             {
               "ent": "Briton",
@@ -9717,7 +9717,7 @@
               "start": 73,
               "end": 79,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Non-factual Hallucination"
             },
             {
               "ent": "Water",
@@ -9762,7 +9762,8 @@
         },
         "33235610": {
           "banned_phrases": [
-            "the Bank of England"
+            "the Bank of England",
+            "0.5%"
           ],
           "summary": "(Close): The pound rose against the euro and the dollar on Tuesday, following Monday's sharp gains.",
           "generation_metadata": {
@@ -9840,9 +9841,9 @@
         },
         "40366573": {
           "banned_phrases": [
-            "a further",
+            "three",
             "three months",
-            "three"
+            "a further"
           ],
           "summary": "Three urgent care centres in Northumberland are to remain closed at night after the health trust said it would be \"inappropriate\" to reopen them.",
           "generation_metadata": {
@@ -9940,6 +9941,29 @@
             }
           ]
         },
+        "40092224": {
+          "banned_phrases": [
+            "Dundee"
+          ],
+          "summary": "Police have said the death of a man at a hotel in Edinburgh is not being treated as suspicious.",
+          "generation_metadata": {
+            "score": -0.36615854501724243,
+            "dropped_seqs": [
+              "</s>Police have said the death of a man at a hotel in Dundee"
+            ],
+            "n_words_checked": 96
+          },
+          "labeled_entities": [
+            {
+              "ent": "Edinburgh",
+              "type": "GPE",
+              "start": 50,
+              "end": 59,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
         "34320852": {
           "banned_phrases": [
             "Martin"
@@ -10005,7 +10029,7 @@
               "</s>A hotel chef has been given a suspended prison sentence for killing a feral cat in the kitchen of a Denbighshire",
               "</s>A former hotel chef has been given a suspended prison sentence for killing a feral cat in the kitchen of a Denbighshire"
             ],
-            "n_words_checked": 92
+            "n_words_checked": 220
           },
           "labeled_entities": []
         },
@@ -10019,7 +10043,7 @@
             "dropped_seqs": [
               "</s>Google's first-quarter"
             ],
-            "n_words_checked": 100
+            "n_words_checked": 168
           },
           "labeled_entities": [
             {
@@ -10074,8 +10098,8 @@
         },
         "36635078": {
           "banned_phrases": [
-            "Aberdeenshire",
-            "21-year-old"
+            "21-year-old",
+            "Aberdeenshire"
           ],
           "summary": "A 23-year-old man has died in a car crash in the Scottish Borders.",
           "generation_metadata": {
@@ -10085,7 +10109,7 @@
               "</s>A 23-year-old man who died in a car crash in Aberdeenshire",
               "</s>A 23-year-old man who died after his car crashed in Aberdeenshire"
             ],
-            "n_words_checked": 81
+            "n_words_checked": 213
           },
           "labeled_entities": [
             {
@@ -10094,7 +10118,7 @@
               "start": 2,
               "end": 13,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Non-factual Hallucination"
             },
             {
               "ent": "the Scottish Borders",
@@ -10102,7 +10126,7 @@
               "start": 45,
               "end": 65,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Non-factual Hallucination"
             }
           ]
         },
@@ -10116,7 +10140,7 @@
             "dropped_seqs": [
               "</s>A furniture shop owner has been jailed for five years"
             ],
-            "n_words_checked": 88
+            "n_words_checked": 220
           },
           "labeled_entities": [
             {
@@ -10129,10 +10153,65 @@
             }
           ]
         },
+        "36122985": {
+          "banned_phrases": [
+            "more than \u00a320,000"
+          ],
+          "summary": "A letter written by Princess Elizabeth describing her relationship with Prince Philip has sold at auction for more than \u00a315,000.",
+          "generation_metadata": {
+            "score": -0.4483506381511688,
+            "dropped_seqs": [
+              "</s>A letter written by Princess Elizabeth describing her relationship with Prince Philip has sold at auction for more than \u00a320,000"
+            ],
+            "n_words_checked": 221
+          },
+          "labeled_entities": [
+            {
+              "ent": "Princess",
+              "type": "PERSON",
+              "start": 20,
+              "end": 28,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Elizabeth",
+              "type": "PERSON",
+              "start": 29,
+              "end": 38,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Prince",
+              "type": "PERSON",
+              "start": 72,
+              "end": 78,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Philip",
+              "type": "PERSON",
+              "start": 79,
+              "end": 85,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "more than \u00a315,000",
+              "type": "MONEY",
+              "start": 110,
+              "end": 127,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
         "36396523": {
           "banned_phrases": [
-            "South America",
             "next month's",
+            "South America",
             "World Cup"
           ],
           "summary": "Kaka has been called up to the Brazil squad for the Copa America next month.",
@@ -10144,7 +10223,7 @@
               "</s>Brazil have called up Kaka to their squad for the Under-20 World Cup",
               "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup"
             ],
-            "n_words_checked": 84
+            "n_words_checked": 216
           },
           "labeled_entities": [
             {
@@ -10191,7 +10270,7 @@
             "dropped_seqs": [
               "</s>A man has been left with facial injuries after being attacked by a group of men in Londonderry"
             ],
-            "n_words_checked": 96
+            "n_words_checked": 228
           },
           "labeled_entities": [
             {
@@ -10216,7 +10295,7 @@
               "</s>The police ombudsman's office is to resume investigations into more than 100",
               "</s>Police ombudsman Michael Maguire has said he is pleased to be able to resume investigations into more than 100"
             ],
-            "n_words_checked": 91
+            "n_words_checked": 219
           },
           "labeled_entities": [
             {
@@ -10248,7 +10327,7 @@
               "</s>A man has been assaulted by a gang of men during a robbery at a house in Ballymena",
               "</s>A man has been assaulted by a gang of armed men during a robbery at a house in Ballymena"
             ],
-            "n_words_checked": 92
+            "n_words_checked": 216
           },
           "labeled_entities": [
             {
@@ -10258,6 +10337,45 @@
               "end": 90,
               "in_source": false,
               "label": "Unknown"
+            }
+          ]
+        },
+        "38300624": {
+          "banned_phrases": [
+            "up to an hour and a half"
+          ],
+          "summary": "Rail passengers on the Borders to Edinburgh line have been told to expect delays of up to an hour.",
+          "generation_metadata": {
+            "score": -0.8937436938285828,
+            "dropped_seqs": [
+              "</s>Rail passengers on the Borders to Edinburgh line have been told to expect delays of up to an hour and a half"
+            ],
+            "n_words_checked": 229
+          },
+          "labeled_entities": [
+            {
+              "ent": "Borders",
+              "type": "ORG",
+              "start": 23,
+              "end": 30,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Edinburgh",
+              "type": "GPE",
+              "start": 34,
+              "end": 43,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "up to an hour",
+              "type": "TIME",
+              "start": 84,
+              "end": 97,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
             }
           ]
         },
@@ -10277,7 +10395,7 @@
               "</s>India's first nuclear power station, at Kudankalum",
               "</s>India's first nuclear power station, at the Kudankalum"
             ],
-            "n_words_checked": 77
+            "n_words_checked": 201
           },
           "labeled_entities": [
             {
@@ -10342,7 +10460,7 @@
               "</s>Militants in northern Syria say they have captured the pilot of a jet that crashed on Sunday",
               "</s>Militants in northern Syria say they have captured the pilot of a military jet that crashed on Sunday"
             ],
-            "n_words_checked": 106
+            "n_words_checked": 222
           },
           "labeled_entities": [
             {
@@ -10374,7 +10492,7 @@
               "</s>Widnes Vikings can \"really turn this year around\" if they can end their seven-game winless run, says assistant coach Chris",
               "</s>Widnes Vikings can \"really turn this year around\" if they can end their seven-game winless run, according to assistant coach Chris"
             ],
-            "n_words_checked": 108
+            "n_words_checked": 212
           },
           "labeled_entities": [
             {
@@ -10429,7 +10547,7 @@
             "dropped_seqs": [
               "</s>Sydney has marked the first anniversary of the siege at the Waverley"
             ],
-            "n_words_checked": 99
+            "n_words_checked": 227
           },
           "labeled_entities": [
             {
@@ -10464,7 +10582,7 @@
           ],
           "summary": "A man from East Lothian has been jailed for two years for defrauding the tax authorities out of more than \u00a3500,000.",
           "generation_metadata": {
-            "score": -0.6882970333099365,
+            "score": -0.6882967352867126,
             "dropped_seqs": [
               "</s>A North Lanarkshire man has been jailed for six months",
               "</s>A man from East Lothian has been jailed for six months"
@@ -10504,12 +10622,12 @@
           ],
           "summary": "The number of homes repossessed in the second quarter of the year has fallen for the first time in two years, figures show.",
           "generation_metadata": {
-            "score": -0.5688284635543823,
+            "score": -0.5688282251358032,
             "dropped_seqs": [
               "</s>The number of homes repossessed in England and Wales fell by 5%",
               "</s>The number of homes repossessed by lenders in England and Wales fell by 5%"
             ],
-            "n_words_checked": 100
+            "n_words_checked": 108
           },
           "labeled_entities": [
             {
@@ -10545,7 +10663,7 @@
           ],
           "summary": "Tottenham midfielder Moussa Sissoko has been banned for three games for an elbow to the face of Harry Arter.",
           "generation_metadata": {
-            "score": -0.4775541126728058,
+            "score": -0.47755417227745056,
             "dropped_seqs": [
               "</s>Tottenham midfielder Moussa Sissoko has been banned for four",
               "</s>Tottenham's Moussa Sissoko has been banned for four",
@@ -10617,7 +10735,7 @@
               "</s>Chelsea have won the Premier League title for the first",
               "</s>Chelsea have won the Premier League for the fourth time in a row and the first"
             ],
-            "n_words_checked": 108
+            "n_words_checked": 112
           },
           "labeled_entities": [
             {
@@ -10654,6 +10772,56 @@
             }
           ]
         },
+        "36684643": {
+          "banned_phrases": [
+            "more than 30",
+            "15-year-old"
+          ],
+          "summary": "Police in Chad say they have arrested more than 20 men in connection with the rape of an 18-year-old woman last year.",
+          "generation_metadata": {
+            "score": -0.6453774571418762,
+            "dropped_seqs": [
+              "</s>Police in Chad have arrested more than 30",
+              "</s>Police in Chad say they have arrested more than 30",
+              "</s>Police in Chad say they have arrested more than 20 men in connection with the rape of a 15-year-old"
+            ],
+            "n_words_checked": 103
+          },
+          "labeled_entities": [
+            {
+              "ent": "Chad",
+              "type": "GPE",
+              "start": 10,
+              "end": 14,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "more than 20",
+              "type": "CARDINAL",
+              "start": 38,
+              "end": 50,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "18-year-old",
+              "type": "DATE",
+              "start": 89,
+              "end": 100,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "last year",
+              "type": "DATE",
+              "start": 107,
+              "end": 116,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
         "37228816": {
           "banned_phrases": [
             "second"
@@ -10664,7 +10832,7 @@
             "dropped_seqs": [
               "</s>The second"
             ],
-            "n_words_checked": 100
+            "n_words_checked": 108
           },
           "labeled_entities": [
             {
@@ -10697,7 +10865,7 @@
               "</s>Ireland all-rounder James",
               "</s>Ireland have re-signed all-rounder James"
             ],
-            "n_words_checked": 94
+            "n_words_checked": 102
           },
           "labeled_entities": [
             {
@@ -10814,6 +10982,53 @@
             }
           ]
         },
+        "35447474": {
+          "banned_phrases": [
+            "Wycombe Wanderers"
+          ],
+          "summary": "Saturday's League One game between Oldham Athletic and Rochdale has been postponed because of a waterlogged pitch.",
+          "generation_metadata": {
+            "score": -0.39555642008781433,
+            "dropped_seqs": [
+              "</s>Saturday's League One game between Oldham Athletic and Wycombe Wanderers"
+            ],
+            "n_words_checked": 83
+          },
+          "labeled_entities": [
+            {
+              "ent": "Saturday",
+              "type": "DATE",
+              "start": 0,
+              "end": 8,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "League One",
+              "type": "ORG",
+              "start": 11,
+              "end": 21,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Oldham Athletic",
+              "type": "ORG",
+              "start": 35,
+              "end": 50,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Rochdale",
+              "type": "GPE",
+              "start": 55,
+              "end": 63,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
         "35162070": {
           "banned_phrases": [
             "six years"
@@ -10826,7 +11041,7 @@
               "</s>A former nurse who downloaded hundreds of thousands of indecent images of children has been jailed for six years",
               "</s>A former NHS nurse who downloaded hundreds of thousands of indecent images of children has been jailed for six years"
             ],
-            "n_words_checked": 101
+            "n_words_checked": 113
           },
           "labeled_entities": [
             {
@@ -10849,8 +11064,8 @@
         },
         "38797571": {
           "banned_phrases": [
-            "MK",
-            "Dons"
+            "Dons",
+            "MK"
           ],
           "summary": "Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat by Rochdale.",
           "generation_metadata": {
@@ -10858,7 +11073,7 @@
             "dropped_seqs": [
               "</s>Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat by MK"
             ],
-            "n_words_checked": 124
+            "n_words_checked": 128
           },
           "labeled_entities": [
             {
@@ -10954,7 +11169,7 @@
               "</s>The Conjuring 2 has topped the US box office for the second weekend in a row",
               "</s>The Conjuring 2 has topped the US and Canada box office for the second weekend in a row"
             ],
-            "n_words_checked": 107
+            "n_words_checked": 119
           },
           "labeled_entities": [
             {
@@ -11003,7 +11218,7 @@
               "</s>David Miller and Jacques Rudolph both hit half-centuries as Glamorgan beat Gloucestershire by eight",
               "</s>Glamorgan's David Miller and Jacques Rudolph hit half-centuries as they beat Gloucestershire by eight"
             ],
-            "n_words_checked": 84
+            "n_words_checked": 92
           },
           "labeled_entities": [
             {
@@ -11132,7 +11347,7 @@
             "dropped_seqs": [
               "</s>Charlton Athletic have appointed Jose Riga as their new head coach on a two-year"
             ],
-            "n_words_checked": 80
+            "n_words_checked": 92
           },
           "labeled_entities": [
             {
@@ -11167,12 +11382,12 @@
           ],
           "summary": "A woman has found the final piece of treasure in a treasure hunt which saw a golden train and a golden shell hidden in Scunthorpe.",
           "generation_metadata": {
-            "score": -0.6867871284484863,
+            "score": -0.6867875456809998,
             "dropped_seqs": [
               "</s>A woman has found the final piece of treasure in a treasure hunt which saw a golden train and a gold shell hidden in Scunthorpe Arts Centre",
               "</s>A woman has found the final piece of treasure in a treasure hunt which saw a golden train and a golden shell hidden in Scunthorpe Arts Centre"
             ],
-            "n_words_checked": 114
+            "n_words_checked": 112
           },
           "labeled_entities": [
             {
@@ -11191,11 +11406,11 @@
           ],
           "summary": "A 19-year-old woman has been raped in Edinburgh's Meadows.",
           "generation_metadata": {
-            "score": -0.4590030610561371,
+            "score": -0.459002822637558,
             "dropped_seqs": [
               "</s>A 20-year-old"
             ],
-            "n_words_checked": 88
+            "n_words_checked": 104
           },
           "labeled_entities": [
             {
@@ -11234,7 +11449,7 @@
             "dropped_seqs": [
               "</s>Belfast's transport minister, David"
             ],
-            "n_words_checked": 99
+            "n_words_checked": 111
           },
           "labeled_entities": [
             {
@@ -11274,67 +11489,67 @@
       },
       "stats": {
         "summary": {
-          "completed": 215,
+          "completed": 210,
           "total": 239,
-          "factual": 156,
-          "non_factual": 24,
+          "factual": 160,
+          "non_factual": 29,
           "failed": 3,
-          "unknown": 56
+          "unknown": 47
         },
         "entity": {
           "label": {
-            "Non-factual Hallucination": 29,
-            "Factual Hallucination": 107,
-            "Unknown": 82,
-            "Non-hallucinated": 473,
+            "Non-factual Hallucination": 39,
+            "Factual Hallucination": 114,
+            "Unknown": 67,
+            "Non-hallucinated": 472,
             "Intrinsic Hallucination": 7
           },
           "type": {
             "GPE": {
-              "total": 167,
-              "Non-factual Hallucination": 4,
-              "Factual Hallucination": 23,
-              "Unknown": 11,
+              "total": 168,
+              "Non-factual Hallucination": 5,
+              "Factual Hallucination": 25,
+              "Unknown": 9,
               "Non-hallucinated": 128,
               "Intrinsic Hallucination": 1
             },
             "CARDINAL": {
               "total": 43,
-              "Non-factual Hallucination": 1,
-              "Factual Hallucination": 4,
-              "Unknown": 9,
+              "Non-factual Hallucination": 2,
+              "Factual Hallucination": 5,
+              "Unknown": 7,
               "Non-hallucinated": 28,
               "Intrinsic Hallucination": 1
             },
             "PERSON": {
               "total": 213,
-              "Non-factual Hallucination": 11,
+              "Non-factual Hallucination": 13,
               "Factual Hallucination": 34,
-              "Unknown": 10,
+              "Unknown": 8,
               "Non-hallucinated": 156,
               "Intrinsic Hallucination": 2
             },
             "ORG": {
-              "total": 105,
+              "total": 104,
               "Non-factual Hallucination": 1,
-              "Factual Hallucination": 24,
-              "Unknown": 13,
+              "Factual Hallucination": 26,
+              "Unknown": 10,
               "Non-hallucinated": 67,
               "Intrinsic Hallucination": 0
             },
             "DATE": {
-              "total": 76,
-              "Non-factual Hallucination": 7,
-              "Factual Hallucination": 8,
-              "Unknown": 28,
+              "total": 77,
+              "Non-factual Hallucination": 10,
+              "Factual Hallucination": 9,
+              "Unknown": 25,
               "Non-hallucinated": 33,
               "Intrinsic Hallucination": 0
             },
             "MONEY": {
               "total": 5,
-              "Non-factual Hallucination": 3,
+              "Non-factual Hallucination": 4,
               "Factual Hallucination": 1,
-              "Unknown": 1,
+              "Unknown": 0,
               "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
@@ -11357,9 +11572,9 @@
             "WORK_OF_ART": {
               "total": 6,
               "Non-factual Hallucination": 1,
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Unknown": 0,
-              "Non-hallucinated": 5,
+              "Non-hallucinated": 4,
               "Intrinsic Hallucination": 0
             },
             "EVENT": {
@@ -11380,9 +11595,9 @@
             },
             "LOC": {
               "total": 12,
-              "Non-factual Hallucination": 0,
+              "Non-factual Hallucination": 1,
               "Factual Hallucination": 3,
-              "Unknown": 5,
+              "Unknown": 4,
               "Non-hallucinated": 4,
               "Intrinsic Hallucination": 0
             },
@@ -11396,9 +11611,9 @@
             },
             "TIME": {
               "total": 3,
-              "Non-factual Hallucination": 0,
+              "Non-factual Hallucination": 1,
               "Factual Hallucination": 1,
-              "Unknown": 1,
+              "Unknown": 0,
               "Non-hallucinated": 0,
               "Intrinsic Hallucination": 1
             },
@@ -11435,7 +11650,7 @@
               "</s>Colombia's Gabriel Martinez has been beaten in the Olympic men's flyweight final by Kazakhstan",
               "</s>Colombia's Gabriel Martinez has been knocked out of the Olympic men's flyweight final by Kazakhstan"
             ],
-            "n_words_checked": 101
+            "n_words_checked": 109
           },
           "labeled_entities": [
             {
@@ -11475,8 +11690,8 @@
         "35346992": {
           "banned_phrases": [
             "two years",
-            "six months",
-            "1,000"
+            "1,000",
+            "six months"
           ],
           "summary": "A man who barricaded himself into his girlfriend's home and caused \u00a31,000 worth of damage has been jailed for three years.",
           "generation_metadata": {
@@ -11489,7 +11704,7 @@
               "</s>A man who barricaded himself into his girlfriend's home and caused \u00a31,000 worth of damage has been jailed for six months",
               "</s>A man who barricaded himself into his girlfriend's home and caused \u00a31,000 worth of damage has been jailed for two years"
             ],
-            "n_words_checked": 115
+            "n_words_checked": 123
           },
           "labeled_entities": [
             {
@@ -11513,8 +11728,8 @@
         "35359543": {
           "banned_phrases": [
             "Jamie",
-            "Scottish",
-            "Ian"
+            "Ian",
+            "Scottish"
           ],
           "summary": "Scotland's John Fleming has called for those found guilty of match-fixing to be banned from tennis.",
           "generation_metadata": {
@@ -11559,9 +11774,9 @@
         },
         "32527550": {
           "banned_phrases": [
+            "more than three years",
             "more than two years",
-            "Wednesday",
-            "more than three years"
+            "Wednesday"
           ],
           "summary": "Asian shares headed lower on Thursday after the US economy grew at its slowest pace in three years.",
           "generation_metadata": {
@@ -11573,7 +11788,7 @@
               "</s>Asian shares headed lower on Thursday after the US economy grew at its slowest pace in more than two years",
               "</s>Asian shares headed lower on Thursday after the US economy grew at its slowest pace in more than three years"
             ],
-            "n_words_checked": 105
+            "n_words_checked": 109
           },
           "labeled_entities": [
             {
@@ -11612,8 +11827,8 @@
         },
         "36091575": {
           "banned_phrases": [
-            "Darren",
-            "Ian"
+            "Ian",
+            "Darren"
           ],
           "summary": "Widnes Vikings head coach Justin Betts says his side have not lost momentum despite their recent poor form in Super League.",
           "generation_metadata": {
@@ -11641,7 +11856,7 @@
               "start": 26,
               "end": 32,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Non-factual Hallucination"
             },
             {
               "ent": "Betts",
@@ -11675,7 +11890,7 @@
               "</s>A book about the death of a Welsh Guards officer in Afghanistan has won the Man Booker Prize",
               "</s>A book about the death of a Welsh Guardsman in Afghanistan has won the Man Booker Prize"
             ],
-            "n_words_checked": 119
+            "n_words_checked": 131
           },
           "labeled_entities": [
             {
@@ -11706,9 +11921,9 @@
         },
         "32882386": {
           "banned_phrases": [
-            "Jonny",
             "Chris",
-            "Saturday"
+            "Saturday",
+            "Jonny"
           ],
           "summary": "Wales have called up uncapped midfielders Lee Chester and Jon Dummett for Sunday's Euro 2016 qualifier against Belgium in Cardiff.",
           "generation_metadata": {
@@ -11729,7 +11944,7 @@
               "</s>Wales have called up uncapped midfielders Lee Chester and Jon Dummett for Saturday",
               "</s>Wales have called up uncapped midfielders Lee Chester and Jon Dummett for their Euro 2016 qualifier against Belgium on Saturday"
             ],
-            "n_words_checked": 95
+            "n_words_checked": 99
           },
           "labeled_entities": [
             {
@@ -11800,8 +12015,8 @@
         },
         "32486188": {
           "banned_phrases": [
-            "eight years",
-            "12 years"
+            "12 years",
+            "eight years"
           ],
           "summary": "A nurse who secretly filmed himself raping patients has been jailed for seven years.",
           "generation_metadata": {
@@ -11819,16 +12034,16 @@
               "start": 72,
               "end": 83,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Non-factual Hallucination"
             }
           ]
         },
         "28129488": {
           "banned_phrases": [
-            "the Royal Victoria Hospital",
             "two-year-old",
             "three-year-old",
-            "Royal Victoria Hospital"
+            "Royal Victoria Hospital",
+            "the Royal Victoria Hospital"
           ],
           "summary": "A woman charged with the murder of her two-year old daughter has been remanded in custody at Belfast's Maghaberry Hospital.",
           "generation_metadata": {
@@ -11872,8 +12087,8 @@
         },
         "33538854": {
           "banned_phrases": [
-            "Jacques",
-            "Riki"
+            "Riki",
+            "Jacques"
           ],
           "summary": "Somerset have re-signed South Africa all-rounder Rilee van der Nerwe on a two-year deal.",
           "generation_metadata": {
@@ -11884,7 +12099,7 @@
               "</s>Somerset have re-signed South Africa batsman Riki",
               "</s>Somerset have re-signed South Africa all-rounder Riki"
             ],
-            "n_words_checked": 75
+            "n_words_checked": 79
           },
           "labeled_entities": [
             {
@@ -11947,8 +12162,8 @@
         },
         "17614190": {
           "banned_phrases": [
-            "Indian",
-            "India"
+            "India",
+            "Indian"
           ],
           "summary": "When the first World Cup was held in the country in 1954, it was hailed as a huge success for the country, which had been dominated by cricket.",
           "generation_metadata": {
@@ -11996,86 +12211,45 @@
         },
         "35575132": {
           "banned_phrases": [
-            "second",
-            "Briton",
-            "Sophie",
-            "Robson",
-            "Waters",
             "Birmingham",
-            "Water"
+            "Kirsty",
+            "Trott",
+            "Sophie",
+            "second",
+            "Waters",
+            "Water",
+            "Robson",
+            "Briton"
           ],
-          "summary": "Britain's world number one Laura Trott beat compatriot and world number two Kirsty waters to win the women's title at the British Squash Championships.",
+          "summary": "<Failed generation: blocked all beams>",
           "generation_metadata": {
-            "score": -1.231424331665039,
+            "score": -Infinity,
             "dropped_seqs": [
+              "</s>England's Kirsty",
               "</s>England's Laura Robson",
               "</s>British number one Laura Robson",
+              "</s>Britain's world number one Kirsty",
               "</s>Britain's world number one Laura Robson",
-              "</s>Britain's world number one Laura Trott won her second",
-              "</s>Britain's world number one Laura Trott beat compatriot Sophie",
-              "</s>Britain's world number one Laura Trott beat compatriot and fellow Briton",
-              "</s>Britain's world number one Laura Trott beat compatriot and compatriot Sophie",
-              "</s>Britain's world number one Laura Trott beat compatriot and world number two Laura Waters",
-              "</s>Britain's world number one Laura Trott beat compatriot and world number three Laura Waters",
-              "</s>Britain's world number one Laura Trott beat compatriot and world number two Sarah Waters",
-              "</s>Britain's world number one Laura Trott beat compatriot and world number two Kirsty Waters",
-              "</s>Britain's world number one Laura Trott beat compatriot and world number two Kirsty Water",
-              "</s>Britain's world number one Laura Trott beat compatriot and world number two Kirsty waters to win her second",
-              "</s>Britain's world number one Laura Trott beat compatriot and world number two Kirstywaters to win her second",
-              "</s>Britain's world number one Laura Trott beat compatriot and world number two Kirsty waters to win the British Women's Squash Championship in Birmingham",
-              "</s>Britain's world number one Laura Trott beat compatriot and world number two Kirsty waters to win the British Women's Squash Championships in Birmingham",
-              "</s>Britain's world number one Laura Trott beat compatriot and world number two Kirsty waters to win the women's title at the British Squash Championships in Birmingham"
+              "</s>Britain's world number one Laura Trott",
+              "</s>Britain's world number two Laura Robson",
+              "</s>Britain's world number one Laura Trotter won her second",
+              "</s>Britain's world number one Laura Trotter beat compatriot Sophie",
+              "</s>Britain's world number one Laura Trotter beat compatriot and fellow Briton",
+              "</s>Britain's world number one Laura Trotter beat compatriot and compatriot Sophie",
+              "</s>Britain's world number one Laura Trotter beat compatriot and world number two Laura Waters",
+              "</s>Britain's world number one Laura Trotter beat compatriot and world number three Laura Waters",
+              "</s>Britain's world number one Laura Trotter beat compatriot and world number two Kirsty",
+              "</s>Britain's world number one Laura Trotter beat compatriot and world number two Sarah Waters"
             ],
-            "n_words_checked": 121
+            "n_words_checked": 182
           },
-          "labeled_entities": [
-            {
-              "ent": "Britain",
-              "type": "GPE",
-              "start": 0,
-              "end": 7,
-              "in_source": false,
-              "label": "Unknown"
-            },
-            {
-              "ent": "Laura",
-              "type": "PERSON",
-              "start": 27,
-              "end": 32,
-              "in_source": false,
-              "label": "Non-hallucinated"
-            },
-            {
-              "ent": "Trott",
-              "type": "PERSON",
-              "start": 33,
-              "end": 38,
-              "in_source": false,
-              "label": "Unknown"
-            },
-            {
-              "ent": "two",
-              "type": "CARDINAL",
-              "start": 72,
-              "end": 75,
-              "in_source": false,
-              "label": "Unknown"
-            },
-            {
-              "ent": "Kirsty",
-              "type": "PERSON",
-              "start": 76,
-              "end": 82,
-              "in_source": false,
-              "label": "Unknown"
-            }
-          ]
+          "labeled_entities": []
         },
         "40366573": {
           "banned_phrases": [
-            "a further",
-            "three months",
             "three",
+            "three months",
+            "a further",
             "Three"
           ],
           "summary": "Northumbria's urgent care centres are to remain closed overnight for a third month, the NHS has confirmed.",
@@ -12091,7 +12265,7 @@
               "</s>Northumbria's urgent care centres are to remain closed overnight for a further",
               "</s>Northumbria's urgent care centres are to remain closed at night for a further"
             ],
-            "n_words_checked": 110
+            "n_words_checked": 114
           },
           "labeled_entities": [
             {
@@ -12192,6 +12366,36 @@
             }
           ]
         },
+        "36635078": {
+          "banned_phrases": [
+            "the Scottish Borders",
+            "21-year-old",
+            "23-year-old",
+            "Aberdeenshire"
+          ],
+          "summary": "A man who died after his car crashed into a tree in Cumbria has been named by police.",
+          "generation_metadata": {
+            "score": -0.6218984127044678,
+            "dropped_seqs": [
+              "</s>A 21-year-old",
+              "</s>A 23-year-old",
+              "</s>A man who died in a car crash in Aberdeenshire",
+              "</s>A man who died after his car crashed into a tree in the Scottish Borders",
+              "</s>A man who died after his car crashed into a tree in Aberdeenshire"
+            ],
+            "n_words_checked": 104
+          },
+          "labeled_entities": [
+            {
+              "ent": "Cumbria",
+              "type": "GPE",
+              "start": 52,
+              "end": 59,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
         "31932666": {
           "banned_phrases": [
             "five years",
@@ -12217,16 +12421,73 @@
             }
           ]
         },
+        "36122985": {
+          "banned_phrases": [
+            "more than \u00a320,000",
+            "more than \u00a315,000"
+          ],
+          "summary": "A letter written by Princess Elizabeth describing her relationship with Prince Philip has sold at auction for \u00a314,400.",
+          "generation_metadata": {
+            "score": -0.4568842053413391,
+            "dropped_seqs": [
+              "</s>A letter written by Princess Elizabeth describing her relationship with Prince Philip has sold at auction for more than \u00a320,000",
+              "</s>A letter written by Princess Elizabeth describing her relationship with Prince Philip has sold at auction for more than \u00a315,000"
+            ],
+            "n_words_checked": 106
+          },
+          "labeled_entities": [
+            {
+              "ent": "Princess",
+              "type": "PERSON",
+              "start": 20,
+              "end": 28,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Elizabeth",
+              "type": "PERSON",
+              "start": 29,
+              "end": 38,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Prince",
+              "type": "PERSON",
+              "start": 72,
+              "end": 78,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Philip",
+              "type": "PERSON",
+              "start": 79,
+              "end": 85,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "14,400",
+              "type": "MONEY",
+              "start": 111,
+              "end": 117,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
         "36396523": {
           "banned_phrases": [
-            "South America",
-            "next month",
             "next month's",
+            "next month",
+            "South America",
             "World Cup"
           ],
           "summary": "Kaka has been called up to the Brazil squad for the Copa America in Chile in June.",
           "generation_metadata": {
-            "score": -0.6230871081352234,
+            "score": -0.6230869293212891,
             "dropped_seqs": [
               "</s>Brazil have added Kaka to their squad for next month",
               "</s>Brazil have added Kaka to their squad for the Under-20 World Cup",
@@ -12235,7 +12496,7 @@
               "</s>Kaka has been called up to the Brazil squad for the Copa America next month",
               "</s>Kaka has been called up to the Brazil squad for the Copa America in Chile next month"
             ],
-            "n_words_checked": 97
+            "n_words_checked": 105
           },
           "labeled_entities": [
             {
@@ -12280,6 +12541,46 @@
             }
           ]
         },
+        "38300624": {
+          "banned_phrases": [
+            "up to an hour and a half",
+            "up to an hour"
+          ],
+          "summary": "Rail passengers on the Borders to Edinburgh line have been able to return to their homes after a day of disruption.",
+          "generation_metadata": {
+            "score": -0.9132324457168579,
+            "dropped_seqs": [
+              "</s>Rail passengers on the Borders to Edinburgh line have been told to expect delays of up to an hour"
+            ],
+            "n_words_checked": 118
+          },
+          "labeled_entities": [
+            {
+              "ent": "Borders",
+              "type": "ORG",
+              "start": 23,
+              "end": 30,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Edinburgh",
+              "type": "GPE",
+              "start": 34,
+              "end": 43,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "a day",
+              "type": "DATE",
+              "start": 95,
+              "end": 100,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
         "24619985": {
           "banned_phrases": [
             "Kudankalu",
@@ -12287,7 +12588,7 @@
           ],
           "summary": "India's first nuclear power station, at the Kudankalar plant in Tamil Nadu state, has started generating electricity, state media report.",
           "generation_metadata": {
-            "score": -0.8415237069129944,
+            "score": -0.8415229320526123,
             "dropped_seqs": [
               "</s>The Kudankalum",
               "</s>India's Kudankalum",
@@ -12299,7 +12600,7 @@
               "</s>India's first nuclear power station, at the Kudankalum",
               "</s>India's first nuclear power station, at the Kudankalu"
             ],
-            "n_words_checked": 82
+            "n_words_checked": 86
           },
           "labeled_entities": [
             {
@@ -12343,7 +12644,7 @@
           ],
           "summary": "A man from East Lothian has been jailed for two years for defrauding the tax authorities out of more than \u00a31m.",
           "generation_metadata": {
-            "score": -0.6976978778839111,
+            "score": -0.6976975798606873,
             "dropped_seqs": [
               "</s>A North Lanarkshire man has been jailed for six months",
               "</s>A man from East Lothian has been jailed for six months",
@@ -12378,15 +12679,113 @@
             }
           ]
         },
+        "36684643": {
+          "banned_phrases": [
+            "last year",
+            "more than 30",
+            "more than 20",
+            "15-year-old",
+            "18-year-old"
+          ],
+          "summary": "Police in Chad say they have arrested more than 100 men in connection with the rape of a young woman in February.",
+          "generation_metadata": {
+            "score": -0.7496747970581055,
+            "dropped_seqs": [
+              "</s>Police in Chad have arrested more than 30",
+              "</s>Police in Chad have arrested more than 20",
+              "</s>Police in Chad say they have arrested more than 30",
+              "</s>Police in Chad say they have arrested more than 20",
+              "</s>Police in Chad say they have arrested more than 100 men in connection with the rape of an 18-year-old",
+              "</s>Police in Chad say they have arrested more than 100 men in connection with the rape of a 15-year-old",
+              "</s>Police in Chad say they have arrested more than 100 men in connection with the gang rape of a young woman in February last year"
+            ],
+            "n_words_checked": 122
+          },
+          "labeled_entities": [
+            {
+              "ent": "Chad",
+              "type": "GPE",
+              "start": 10,
+              "end": 14,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "more than 100",
+              "type": "CARDINAL",
+              "start": 38,
+              "end": 51,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "February",
+              "type": "DATE",
+              "start": 104,
+              "end": 112,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35447474": {
+          "banned_phrases": [
+            "Wycombe Wanderers",
+            "Rochdale"
+          ],
+          "summary": "Saturday's League One game between Oldham Athletic and Barnsley has been postponed because of a waterlogged pitch.",
+          "generation_metadata": {
+            "score": -0.41405922174453735,
+            "dropped_seqs": [
+              "</s>Saturday's League One game between Oldham Athletic and Rochdale",
+              "</s>Saturday's League One game between Oldham Athletic and Wycombe Wanderers"
+            ],
+            "n_words_checked": 95
+          },
+          "labeled_entities": [
+            {
+              "ent": "Saturday",
+              "type": "DATE",
+              "start": 0,
+              "end": 8,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "League One",
+              "type": "ORG",
+              "start": 11,
+              "end": 21,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Oldham Athletic",
+              "type": "ORG",
+              "start": 35,
+              "end": 50,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Barnsley",
+              "type": "GPE",
+              "start": 55,
+              "end": 63,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
         "38797571": {
           "banned_phrases": [
+            "Dons",
             "MK",
-            "Rochdale",
-            "Dons"
+            "Rochdale"
           ],
           "summary": "Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat by Bristol Rovers.",
           "generation_metadata": {
-            "score": -0.7301884889602661,
+            "score": -0.7301883101463318,
             "dropped_seqs": [
               "</s>Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat by MK",
               "</s>Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat by Rochdale"
@@ -12435,7 +12834,7 @@
           ],
           "summary": "Bolton Wanderers have agreed a deal to sell the club to ex-Trotters striker Gary Holdsworth, BBC Radio Manchester understands.",
           "generation_metadata": {
-            "score": -0.6118593215942383,
+            "score": -0.6118584275245667,
             "dropped_seqs": [
               "</s>Former Bolton striker Chris",
               "</s>Bolton Wanderers have agreed a deal to sell the club to ex-Trotters striker Chris",
@@ -12458,7 +12857,7 @@
               "start": 76,
               "end": 80,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Non-factual Hallucination"
             },
             {
               "ent": "Holdsworth",
@@ -12480,18 +12879,18 @@
         },
         "36516057": {
           "banned_phrases": [
-            "the second week in a row",
-            "the second weekend in a row"
+            "the second weekend in a row",
+            "the second week in a row"
           ],
           "summary": "The Conjuring 2 has topped the US and Canada box office for the second time in three years.",
           "generation_metadata": {
-            "score": -0.559256911277771,
+            "score": -0.5592568516731262,
             "dropped_seqs": [
               "</s>The Conjuring 2 has topped the US box office for the second weekend in a row",
               "</s>The Conjuring 2 has topped the US and Canada box office for the second weekend in a row",
               "</s>The Conjuring 2 has topped the US and Canada box office for the second week in a row"
             ],
-            "n_words_checked": 108
+            "n_words_checked": 124
           },
           "labeled_entities": [
             {
@@ -12543,7 +12942,7 @@
           ],
           "summary": "For a man who grew up on a potato farm in Herefordshire, Steve Chase has a lot of talent.",
           "generation_metadata": {
-            "score": -0.8777341842651367,
+            "score": -0.8777337670326233,
             "dropped_seqs": [
               "</s>As a potato farmer, David",
               "</s>For a man who grew up on a potato farm, David",
@@ -12552,7 +12951,7 @@
               "</s>For a man who grew up on a potato farm in Herefordshire, David",
               "</s>For a man who grew up on a potato farm in Herefordshire, Peter"
             ],
-            "n_words_checked": 104
+            "n_words_checked": 112
           },
           "labeled_entities": [
             {
@@ -12569,7 +12968,7 @@
               "start": 57,
               "end": 62,
               "in_source": false,
-              "label": "Unknown"
+              "label": "Non-factual Hallucination"
             },
             {
               "ent": "Chase",
@@ -12588,7 +12987,7 @@
           ],
           "summary": "A woman has found the final piece of treasure in a treasure hunt which saw five artefacts hidden around a city centre.",
           "generation_metadata": {
-            "score": -0.7269966006278992,
+            "score": -0.726996898651123,
             "dropped_seqs": [
               "</s>A woman has found the final piece of treasure in a treasure hunt which saw a golden train and a golden shell hidden in Scunthorpe",
               "</s>A woman has found the final piece of treasure in a treasure hunt which saw a golden train and a gold shell hidden in Scunthorpe",
@@ -12615,7 +13014,7 @@
           ],
           "summary": "Plans to extend bus lanes in Belfast city centre from 07:30 to 19:00 have been unveiled by Transport Minister Chris Hazzard.",
           "generation_metadata": {
-            "score": -0.6792201995849609,
+            "score": -0.67922043800354,
             "dropped_seqs": [
               "</s>Belfast's transport minister, David",
               "</s>Belfast's transport minister, Jim",
@@ -12666,68 +13065,68 @@
       },
       "stats": {
         "summary": {
-          "completed": 228,
+          "completed": 221,
           "total": 239,
-          "factual": 157,
-          "non_factual": 11,
-          "failed": 3,
-          "unknown": 68
+          "factual": 163,
+          "non_factual": 18,
+          "failed": 4,
+          "unknown": 54
         },
         "entity": {
           "label": {
-            "Non-factual Hallucination": 12,
-            "Factual Hallucination": 108,
-            "Unknown": 95,
+            "Non-factual Hallucination": 19,
+            "Factual Hallucination": 115,
+            "Unknown": 75,
             "Non-hallucinated": 475,
             "Intrinsic Hallucination": 7
           },
           "type": {
             "GPE": {
-              "total": 163,
-              "Non-factual Hallucination": 1,
-              "Factual Hallucination": 23,
-              "Unknown": 10,
+              "total": 164,
+              "Non-factual Hallucination": 3,
+              "Factual Hallucination": 24,
+              "Unknown": 8,
               "Non-hallucinated": 128,
               "Intrinsic Hallucination": 1
             },
             "CARDINAL": {
-              "total": 44,
-              "Non-factual Hallucination": 0,
-              "Factual Hallucination": 4,
-              "Unknown": 10,
+              "total": 43,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 5,
+              "Unknown": 7,
               "Non-hallucinated": 29,
               "Intrinsic Hallucination": 1
             },
             "PERSON": {
-              "total": 211,
-              "Non-factual Hallucination": 2,
+              "total": 208,
+              "Non-factual Hallucination": 5,
               "Factual Hallucination": 35,
-              "Unknown": 16,
-              "Non-hallucinated": 156,
+              "Unknown": 11,
+              "Non-hallucinated": 155,
               "Intrinsic Hallucination": 2
             },
             "ORG": {
-              "total": 107,
+              "total": 106,
               "Non-factual Hallucination": 1,
-              "Factual Hallucination": 24,
-              "Unknown": 14,
+              "Factual Hallucination": 26,
+              "Unknown": 11,
               "Non-hallucinated": 68,
               "Intrinsic Hallucination": 0
             },
             "DATE": {
               "total": 77,
-              "Non-factual Hallucination": 3,
-              "Factual Hallucination": 9,
-              "Unknown": 32,
-              "Non-hallucinated": 33,
+              "Non-factual Hallucination": 4,
+              "Factual Hallucination": 11,
+              "Unknown": 28,
+              "Non-hallucinated": 34,
               "Intrinsic Hallucination": 0
             },
             "MONEY": {
               "total": 5,
               "Non-factual Hallucination": 2,
               "Factual Hallucination": 1,
-              "Unknown": 2,
-              "Non-hallucinated": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 1,
               "Intrinsic Hallucination": 0
             },
             "ORDINAL": {
@@ -12749,9 +13148,9 @@
             "WORK_OF_ART": {
               "total": 6,
               "Non-factual Hallucination": 1,
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Unknown": 0,
-              "Non-hallucinated": 5,
+              "Non-hallucinated": 4,
               "Intrinsic Hallucination": 0
             },
             "EVENT": {
@@ -12771,10 +13170,10 @@
               "Intrinsic Hallucination": 0
             },
             "LOC": {
-              "total": 13,
+              "total": 12,
               "Non-factual Hallucination": 0,
               "Factual Hallucination": 3,
-              "Unknown": 6,
+              "Unknown": 5,
               "Non-hallucinated": 4,
               "Intrinsic Hallucination": 0
             },
@@ -12787,10 +13186,10 @@
               "Intrinsic Hallucination": 1
             },
             "TIME": {
-              "total": 3,
+              "total": 2,
               "Non-factual Hallucination": 1,
               "Factual Hallucination": 0,
-              "Unknown": 1,
+              "Unknown": 0,
               "Non-hallucinated": 0,
               "Intrinsic Hallucination": 1
             },
@@ -12812,12 +13211,12 @@
           "banned_phrases": [
             "Kazakhstan",
             "Omar",
-            "Carlos",
-            "Gabriel"
+            "Gabriel",
+            "Carlos"
           ],
           "summary": "Colombia's Jose Luis Martinez has been beaten in the Olympic men's flyweight final by Uzbekistan's Islam Dusmatov.",
           "generation_metadata": {
-            "score": -0.7803343534469604,
+            "score": -0.7803344130516052,
             "dropped_seqs": [
               "</s>The Kazakhstan",
               "</s>Colombia's Omar",
@@ -12879,12 +13278,12 @@
         "35346992": {
           "banned_phrases": [
             "two years",
-            "six months",
-            "1,000"
+            "1,000",
+            "six months"
           ],
           "summary": "A man who barricaded himself into his girlfriend's home and caused \u00a31,000 worth of damage has been jailed for three years.",
           "generation_metadata": {
-            "score": -0.6391653418540955,
+            "score": -0.6391655206680298,
             "dropped_seqs": [
               "</s>A man has been jailed for six months",
               "</s>A man who broke into his girlfriend's home and threatened to kill her has been jailed for two years",
@@ -12916,14 +13315,14 @@
         },
         "32527550": {
           "banned_phrases": [
-            "more than two years",
+            "more than three years",
             "Wednesday",
-            "three years",
-            "more than three years"
+            "more than two years",
+            "three years"
           ],
           "summary": "Asian shares headed lower on Thursday after the US economy grew at its slowest pace in three years.",
           "generation_metadata": {
-            "score": -0.7567227482795715,
+            "score": -0.7567225694656372,
             "dropped_seqs": [
               "</s>Asian shares headed lower on Wednesday",
               "</s>Shares in Asia fell on Wednesday",
@@ -12968,6 +13367,59 @@
             }
           ]
         },
+        "36091575": {
+          "banned_phrases": [
+            "Ian",
+            "Darren",
+            "Justin"
+          ],
+          "summary": "Widnes Vikings head coach Chris Betts says the Super League side have not lost momentum despite their recent poor form.",
+          "generation_metadata": {
+            "score": -0.6589760780334473,
+            "dropped_seqs": [
+              "</s>Widnes head coach Ian",
+              "</s>Widnes Vikings coach Darren",
+              "</s>Widnes Vikings head coach Ian",
+              "</s>Widnes Vikings head coach Darren",
+              "</s>Widnes Vikings head coach Justin"
+            ],
+            "n_words_checked": 99
+          },
+          "labeled_entities": [
+            {
+              "ent": "Widnes Vikings",
+              "type": "ORG",
+              "start": 0,
+              "end": 14,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Chris",
+              "type": "PERSON",
+              "start": 26,
+              "end": 31,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Betts",
+              "type": "PERSON",
+              "start": 32,
+              "end": 37,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Super League",
+              "type": "ORG",
+              "start": 47,
+              "end": 59,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
         "18172208": {
           "banned_phrases": [
             "Man Booker Prize",
@@ -12975,7 +13427,7 @@
           ],
           "summary": "A book about the death of a Welsh Guards soldier in Afghanistan has won this year's Man Booker Prize.",
           "generation_metadata": {
-            "score": -0.5754215717315674,
+            "score": -0.5754221081733704,
             "dropped_seqs": [
               "</s>A book about a soldier killed in Afghanistan has won the Man Booker Prize",
               "</s>A book about the death of a Welsh Guards soldier in Afghanistan has won the Man Booker Prize",
@@ -13013,10 +13465,10 @@
         },
         "32882386": {
           "banned_phrases": [
-            "Jonny",
-            "Chris",
             "Jon",
-            "Saturday"
+            "Chris",
+            "Saturday",
+            "Jonny"
           ],
           "summary": "<Failed generation: blocked all beams>",
           "generation_metadata": {
@@ -13037,6 +13489,33 @@
           },
           "labeled_entities": []
         },
+        "32486188": {
+          "banned_phrases": [
+            "eight years",
+            "12 years",
+            "seven years"
+          ],
+          "summary": "A nurse who secretly filmed himself raping patients has been jailed for five years.",
+          "generation_metadata": {
+            "score": -0.5821059942245483,
+            "dropped_seqs": [
+              "</s>A nurse who secretly filmed himself raping patients has been jailed for 12 years",
+              "</s>A nurse who secretly filmed himself raping patients has been jailed for eight years",
+              "</s>A nurse who secretly filmed himself raping patients has been jailed for seven years"
+            ],
+            "n_words_checked": 103
+          },
+          "labeled_entities": [
+            {
+              "ent": "five years",
+              "type": "DATE",
+              "start": 72,
+              "end": 82,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
         "33557672": {
           "banned_phrases": [
             "first-quarter",
@@ -13044,7 +13523,7 @@
           ],
           "summary": "Google's profits for the three months to the end of September rose 11% to $5.3bn (\u00c2\u00a33.9bn), compared with the same period last year.",
           "generation_metadata": {
-            "score": -0.6326307058334351,
+            "score": -0.6326305270195007,
             "dropped_seqs": [
               "</s>Google's first-quarter"
             ],
@@ -13101,15 +13580,47 @@
             }
           ]
         },
+        "36635078": {
+          "banned_phrases": [
+            "Cumbria",
+            "Aberdeenshire",
+            "the Scottish Borders",
+            "23-year-old",
+            "21-year-old"
+          ],
+          "summary": "A man who died after his car crashed into a tree in the Borders has been named by police.",
+          "generation_metadata": {
+            "score": -0.6808022260665894,
+            "dropped_seqs": [
+              "</s>A 21-year-old",
+              "</s>A 23-year-old",
+              "</s>A man who died in a car crash in Aberdeenshire",
+              "</s>A man who died after his car crashed into a tree in Cumbria",
+              "</s>A man who died after his car crashed into a tree in the Scottish Borders",
+              "</s>A man who died after his car crashed into a tree in Aberdeenshire"
+            ],
+            "n_words_checked": 107
+          },
+          "labeled_entities": [
+            {
+              "ent": "Borders",
+              "type": "ORG",
+              "start": 56,
+              "end": 63,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
         "31932666": {
           "banned_phrases": [
-            "seven years",
             "five years",
-            "eight years"
+            "eight years",
+            "seven years"
           ],
           "summary": "A furniture shop owner has been jailed for six years after being found guilty of money laundering and growing cannabis.",
           "generation_metadata": {
-            "score": -0.6696368455886841,
+            "score": -0.669637143611908,
             "dropped_seqs": [
               "</s>A furniture shop owner has been jailed for five years",
               "</s>A furniture shop owner has been jailed for eight years",
@@ -13130,15 +13641,15 @@
         },
         "36396523": {
           "banned_phrases": [
-            "next month",
-            "World Cup",
             "South America",
-            "Chile",
-            "next month's"
+            "World Cup",
+            "next month",
+            "next month's",
+            "Chile"
           ],
           "summary": "Kaka has been called up to the Brazil squad for the Copa America in Brazil in June.",
           "generation_metadata": {
-            "score": -0.6635568141937256,
+            "score": -0.6635566353797913,
             "dropped_seqs": [
               "</s>Brazil have added Kaka to their squad for next month",
               "</s>Brazil have added Kaka to their squad for the Under-20 World Cup",
@@ -13193,16 +13704,118 @@
             }
           ]
         },
+        "36684643": {
+          "banned_phrases": [
+            "last year",
+            "more than 30",
+            "more than 20",
+            "15-year-old",
+            "18-year-old",
+            "more than 100"
+          ],
+          "summary": "Police in Chad say they have arrested more than 50 men in connection with the rape of a young woman in February.",
+          "generation_metadata": {
+            "score": -0.7550368309020996,
+            "dropped_seqs": [
+              "</s>Police in Chad have arrested more than 30",
+              "</s>Police in Chad have arrested more than 20",
+              "</s>Police in Chad have arrested more than 100",
+              "</s>Police in Chad say they have arrested more than 30",
+              "</s>Police in Chad say they have arrested more than 20",
+              "</s>Police in Chad say they have arrested more than 100",
+              "</s>Police in Chad say they have arrested more than 50 men in connection with the rape of an 18-year-old",
+              "</s>Police in Chad say they have arrested more than 50 men in connection with the rape of a 15-year-old"
+            ],
+            "n_words_checked": 130
+          },
+          "labeled_entities": [
+            {
+              "ent": "Chad",
+              "type": "GPE",
+              "start": 10,
+              "end": 14,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "more than 50",
+              "type": "CARDINAL",
+              "start": 38,
+              "end": 50,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "February",
+              "type": "DATE",
+              "start": 103,
+              "end": 111,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35447474": {
+          "banned_phrases": [
+            "Barnsley",
+            "Wycombe Wanderers",
+            "Rochdale"
+          ],
+          "summary": "Saturday's League One game between Oldham Athletic and Wigan Athletic has been postponed because of a waterlogged pitch.",
+          "generation_metadata": {
+            "score": -0.4440394639968872,
+            "dropped_seqs": [
+              "</s>Saturday's League One game between Oldham Athletic and Rochdale",
+              "</s>Saturday's League One game between Oldham Athletic and Barnsley",
+              "</s>Saturday's League One game between Oldham Athletic and Wycombe Wanderers"
+            ],
+            "n_words_checked": 84
+          },
+          "labeled_entities": [
+            {
+              "ent": "Saturday",
+              "type": "DATE",
+              "start": 0,
+              "end": 8,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "League One",
+              "type": "ORG",
+              "start": 11,
+              "end": 21,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Oldham Athletic",
+              "type": "ORG",
+              "start": 35,
+              "end": 50,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Wigan Athletic",
+              "type": "ORG",
+              "start": 55,
+              "end": 69,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
         "38797571": {
           "banned_phrases": [
-            "MK",
+            "Dons",
             "Bristol Rovers",
-            "Rochdale",
-            "Dons"
+            "MK",
+            "Rochdale"
           ],
           "summary": "Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat at Bristol City.",
           "generation_metadata": {
-            "score": -0.746251106262207,
+            "score": -0.7462512254714966,
             "dropped_seqs": [
               "</s>Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat by MK",
               "</s>Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat by Rochdale",
@@ -13245,16 +13858,69 @@
             }
           ]
         },
+        "35604495": {
+          "banned_phrases": [
+            "Chris",
+            "Gary",
+            "Paul"
+          ],
+          "summary": "Bolton Wanderers have agreed a deal to sell the club to ex-Trotters striker David Holdsworth, BBC Radio Manchester understands.",
+          "generation_metadata": {
+            "score": -0.6156706213951111,
+            "dropped_seqs": [
+              "</s>Former Bolton striker Chris",
+              "</s>Former Bolton striker Gary",
+              "</s>Bolton Wanderers have agreed a deal to sell the club to ex-Trotters striker Chris",
+              "</s>Bolton Wanderers have agreed a deal to sell the club to ex-Trotters striker Gary",
+              "</s>Bolton Wanderers have agreed a deal to sell the club to ex-Trotters striker Paul"
+            ],
+            "n_words_checked": 100
+          },
+          "labeled_entities": [
+            {
+              "ent": "Bolton Wanderers",
+              "type": "ORG",
+              "start": 0,
+              "end": 16,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "David",
+              "type": "PERSON",
+              "start": 76,
+              "end": 81,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Holdsworth",
+              "type": "PERSON",
+              "start": 82,
+              "end": 92,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "BBC Radio Manchester",
+              "type": "ORG",
+              "start": 94,
+              "end": 114,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
         "36516057": {
           "banned_phrases": [
-            "the second weekend in a row",
-            "three years",
             "the second week in a row",
-            "second"
+            "the second weekend in a row",
+            "second",
+            "three years"
           ],
           "summary": "The Conjuring 2 has topped the US and Canada box office for the third time in four years.",
           "generation_metadata": {
-            "score": -0.5919308662414551,
+            "score": -0.591931164264679,
             "dropped_seqs": [
               "</s>The second",
               "</s>The Conjuring 2 has topped the US box office for the second",
@@ -13309,11 +13975,58 @@
             }
           ]
         },
+        "35491792": {
+          "banned_phrases": [
+            "Steve",
+            "David",
+            "Peter"
+          ],
+          "summary": "For a man who grew up on a potato farm in Herefordshire, Kevin Chase has a natural knack for telling stories.",
+          "generation_metadata": {
+            "score": -0.8680713176727295,
+            "dropped_seqs": [
+              "</s>As a potato farmer, David",
+              "</s>For a man who grew up on a potato farm, David",
+              "</s>For a man who grew up on a Herefordshire potato farm, David",
+              "</s>For a man who grew up on a Herefordshire potato farm, Peter",
+              "</s>For a man who grew up on a potato farm in Herefordshire, David",
+              "</s>For a man who grew up on a potato farm in Herefordshire, Peter",
+              "</s>For a man who grew up on a potato farm in Herefordshire, Steve"
+            ],
+            "n_words_checked": 108
+          },
+          "labeled_entities": [
+            {
+              "ent": "Herefordshire",
+              "type": "GPE",
+              "start": 42,
+              "end": 55,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kevin",
+              "type": "PERSON",
+              "start": 57,
+              "end": 62,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Chase",
+              "type": "PERSON",
+              "start": 63,
+              "end": 68,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
         "38742702": {
           "banned_phrases": [
             "Jim",
-            "07:30 to 19:00",
-            "David"
+            "David",
+            "07:30 to 19:00"
           ],
           "summary": "Plans to extend bus lanes in Belfast from seven to seven hours a day have been unveiled by Transport Minister Chris Hazzard.",
           "generation_metadata": {
@@ -13326,7 +14039,7 @@
               "</s>Plans to extend bus lanes in Belfast city centre from 07:30 to 19:30 have been unveiled by Transport Minister David",
               "</s>Plans to extend bus lanes in Belfast city centre from 07:30 to 19:30 have been unveiled by the transport minister, David"
             ],
-            "n_words_checked": 103
+            "n_words_checked": 101
           },
           "labeled_entities": [
             {
@@ -13366,68 +14079,68 @@
       },
       "stats": {
         "summary": {
-          "completed": 231,
+          "completed": 225,
           "total": 239,
-          "factual": 159,
-          "non_factual": 8,
-          "failed": 4,
-          "unknown": 68
+          "factual": 165,
+          "non_factual": 14,
+          "failed": 5,
+          "unknown": 55
         },
         "entity": {
           "label": {
-            "Non-factual Hallucination": 9,
-            "Factual Hallucination": 108,
-            "Unknown": 93,
+            "Non-factual Hallucination": 15,
+            "Factual Hallucination": 115,
+            "Unknown": 74,
             "Non-hallucinated": 472,
             "Intrinsic Hallucination": 8
           },
           "type": {
             "GPE": {
-              "total": 161,
+              "total": 160,
               "Non-factual Hallucination": 1,
-              "Factual Hallucination": 23,
-              "Unknown": 10,
+              "Factual Hallucination": 24,
+              "Unknown": 8,
               "Non-hallucinated": 126,
               "Intrinsic Hallucination": 1
             },
             "CARDINAL": {
-              "total": 44,
-              "Non-factual Hallucination": 0,
-              "Factual Hallucination": 4,
-              "Unknown": 10,
+              "total": 43,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 5,
+              "Unknown": 7,
               "Non-hallucinated": 29,
               "Intrinsic Hallucination": 1
             },
             "PERSON": {
-              "total": 208,
-              "Non-factual Hallucination": 2,
+              "total": 205,
+              "Non-factual Hallucination": 5,
               "Factual Hallucination": 35,
-              "Unknown": 15,
-              "Non-hallucinated": 154,
+              "Unknown": 10,
+              "Non-hallucinated": 153,
               "Intrinsic Hallucination": 2
             },
             "ORG": {
-              "total": 106,
-              "Non-factual Hallucination": 0,
-              "Factual Hallucination": 24,
-              "Unknown": 14,
+              "total": 107,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 26,
+              "Unknown": 12,
               "Non-hallucinated": 68,
               "Intrinsic Hallucination": 0
             },
             "DATE": {
               "total": 76,
-              "Non-factual Hallucination": 3,
-              "Factual Hallucination": 9,
-              "Unknown": 31,
-              "Non-hallucinated": 33,
+              "Non-factual Hallucination": 4,
+              "Factual Hallucination": 11,
+              "Unknown": 27,
+              "Non-hallucinated": 34,
               "Intrinsic Hallucination": 0
             },
             "MONEY": {
               "total": 5,
               "Non-factual Hallucination": 2,
               "Factual Hallucination": 1,
-              "Unknown": 2,
-              "Non-hallucinated": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 1,
               "Intrinsic Hallucination": 0
             },
             "ORDINAL": {
@@ -13449,9 +14162,9 @@
             "WORK_OF_ART": {
               "total": 6,
               "Non-factual Hallucination": 1,
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Unknown": 0,
-              "Non-hallucinated": 5,
+              "Non-hallucinated": 4,
               "Intrinsic Hallucination": 0
             },
             "EVENT": {
@@ -13471,10 +14184,10 @@
               "Intrinsic Hallucination": 0
             },
             "LOC": {
-              "total": 13,
+              "total": 12,
               "Non-factual Hallucination": 0,
               "Factual Hallucination": 3,
-              "Unknown": 6,
+              "Unknown": 5,
               "Non-hallucinated": 4,
               "Intrinsic Hallucination": 0
             },
@@ -13487,10 +14200,10 @@
               "Intrinsic Hallucination": 1
             },
             "TIME": {
-              "total": 3,
+              "total": 2,
               "Non-factual Hallucination": 0,
               "Factual Hallucination": 0,
-              "Unknown": 1,
+              "Unknown": 0,
               "Non-hallucinated": 0,
               "Intrinsic Hallucination": 2
             },
@@ -13510,12 +14223,12 @@
       "summaries": {
         "37066389": {
           "banned_phrases": [
-            "Carlos",
-            "Gabriel",
-            "Kazakhstan",
-            "Omar",
             "Luis",
-            "Jose"
+            "Omar",
+            "Jose",
+            "Carlos",
+            "Kazakhstan",
+            "Gabriel"
           ],
           "summary": "<Failed generation: blocked all beams>",
           "generation_metadata": {
@@ -13527,19 +14240,19 @@
               "</s>Colombia's Jose",
               "</s>Colombia's Gabriel"
             ],
-            "n_words_checked": 75
+            "n_words_checked": 177
           },
           "labeled_entities": []
         },
         "35346992": {
           "banned_phrases": [
             "two years",
-            "six months",
-            "1,000"
+            "1,000",
+            "six months"
           ],
           "summary": "A man who barricaded himself into his girlfriend's home and caused \u00a31,000 worth of damage has been jailed for three years.",
           "generation_metadata": {
-            "score": -0.6391655206680298,
+            "score": -0.6391653418540955,
             "dropped_seqs": [
               "</s>A man has been jailed for six months",
               "</s>A man who broke into his girlfriend's home and threatened to kill her has been jailed for two years",
@@ -13548,7 +14261,7 @@
               "</s>A man who barricaded himself into his girlfriend's home and caused \u00a31,000 worth of damage has been jailed for six months",
               "</s>A man who barricaded himself into his girlfriend's home and caused \u00a31,000 worth of damage has been jailed for two years"
             ],
-            "n_words_checked": 107
+            "n_words_checked": 219
           },
           "labeled_entities": [
             {
@@ -13571,14 +14284,14 @@
         },
         "32527550": {
           "banned_phrases": [
-            "more than two years",
+            "more than three years",
             "Wednesday",
-            "three years",
-            "more than three years"
+            "more than two years",
+            "three years"
           ],
           "summary": "Asian shares headed lower on Thursday after the US economy grew at its slowest pace in three years.",
           "generation_metadata": {
-            "score": -0.7567232251167297,
+            "score": -0.7567225694656372,
             "dropped_seqs": [
               "</s>Asian shares headed lower on Wednesday",
               "</s>Shares in Asia fell on Wednesday",
@@ -13586,7 +14299,7 @@
               "</s>Asian shares headed lower on Thursday after the US economy grew at its slowest pace in more than two years",
               "</s>Asian shares headed lower on Thursday after the US economy grew at its slowest pace in more than three years"
             ],
-            "n_words_checked": 105
+            "n_words_checked": 221
           },
           "labeled_entities": [
             {
@@ -13623,6 +14336,28 @@
             }
           ]
         },
+        "36091575": {
+          "banned_phrases": [
+            "Ian",
+            "Chris",
+            "Darren",
+            "Justin"
+          ],
+          "summary": "<Failed generation: blocked all beams>",
+          "generation_metadata": {
+            "score": -Infinity,
+            "dropped_seqs": [
+              "</s>Widnes head coach Ian",
+              "</s>Widnes Vikings coach Darren",
+              "</s>Widnes Vikings head coach Ian",
+              "</s>Widnes Vikings head coach Darren",
+              "</s>Widnes Vikings head coach Justin",
+              "</s>Widnes Vikings head coach Chris"
+            ],
+            "n_words_checked": 180
+          },
+          "labeled_entities": []
+        },
         "18172208": {
           "banned_phrases": [
             "Man Booker Prize",
@@ -13630,14 +14365,14 @@
           ],
           "summary": "A book about the death of a Welsh Guards soldier in Afghanistan has won this year's Man Booker Prize.",
           "generation_metadata": {
-            "score": -0.5754226446151733,
+            "score": -0.5754217505455017,
             "dropped_seqs": [
               "</s>A book about a soldier killed in Afghanistan has won the Man Booker Prize",
               "</s>A book about the death of a Welsh Guards soldier in Afghanistan has won the Man Booker Prize",
               "</s>A book about the death of a Welsh Guards officer in Afghanistan has won the Man Booker Prize",
               "</s>A book about the death of a Welsh Guardsman in Afghanistan has won the Man Booker Prize"
             ],
-            "n_words_checked": 87
+            "n_words_checked": 227
           },
           "labeled_entities": [
             {
@@ -13666,6 +14401,26 @@
             }
           ]
         },
+        "32486188": {
+          "banned_phrases": [
+            "five years",
+            "eight years",
+            "12 years",
+            "seven years"
+          ],
+          "summary": "<Failed generation: blocked all beams>",
+          "generation_metadata": {
+            "score": -Infinity,
+            "dropped_seqs": [
+              "</s>A nurse who secretly filmed himself raping patients has been jailed for 12 years",
+              "</s>A nurse who secretly filmed himself raping patients has been jailed for eight years",
+              "</s>A nurse who secretly filmed himself raping patients has been jailed for seven years",
+              "</s>A nurse who secretly filmed himself raping patients has been jailed for five years"
+            ],
+            "n_words_checked": 187
+          },
+          "labeled_entities": []
+        },
         "33557672": {
           "banned_phrases": [
             "first-quarter",
@@ -13673,11 +14428,11 @@
           ],
           "summary": "Google's profits for the three months to the end of September rose 11% to $5.3bn (\u00c2\u00a33.9bn), compared with the same period last year.",
           "generation_metadata": {
-            "score": -0.6326304078102112,
+            "score": -0.6326305866241455,
             "dropped_seqs": [
               "</s>Google's first-quarter"
             ],
-            "n_words_checked": 100
+            "n_words_checked": 184
           },
           "labeled_entities": [
             {
@@ -13730,11 +14485,44 @@
             }
           ]
         },
+        "36635078": {
+          "banned_phrases": [
+            "Cumbria",
+            "Aberdeenshire",
+            "the Scottish Borders",
+            "23-year-old",
+            "Borders",
+            "21-year-old"
+          ],
+          "summary": "A man who died after his car crashed into a tree in the Borders has been named by police.",
+          "generation_metadata": {
+            "score": -0.6808022856712341,
+            "dropped_seqs": [
+              "</s>A 21-year-old",
+              "</s>A 23-year-old",
+              "</s>A man who died in a car crash in Aberdeenshire",
+              "</s>A man who died after his car crashed into a tree in Cumbria",
+              "</s>A man who died after his car crashed into a tree in the Scottish Borders",
+              "</s>A man who died after his car crashed into a tree in Aberdeenshire"
+            ],
+            "n_words_checked": 207
+          },
+          "labeled_entities": [
+            {
+              "ent": "Borders",
+              "type": "ORG",
+              "start": 56,
+              "end": 63,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
         "31932666": {
           "banned_phrases": [
-            "seven years",
             "five years",
             "eight years",
+            "seven years",
             "six years"
           ],
           "summary": "<Failed generation: blocked all beams>",
@@ -13746,21 +14534,47 @@
               "</s>A furniture shop owner has been jailed for seven years",
               "</s>A furniture shop owner has been jailed for six years"
             ],
-            "n_words_checked": 91
+            "n_words_checked": 186
+          },
+          "labeled_entities": []
+        },
+        "36684643": {
+          "banned_phrases": [
+            "last year",
+            "more than 50",
+            "more than 30",
+            "more than 20",
+            "15-year-old",
+            "18-year-old",
+            "more than 100"
+          ],
+          "summary": "<Failed generation: blocked all beams>",
+          "generation_metadata": {
+            "score": -Infinity,
+            "dropped_seqs": [
+              "</s>Police in Chad have arrested more than 30",
+              "</s>Police in Chad have arrested more than 20",
+              "</s>Police in Chad have arrested more than 100",
+              "</s>Police in Chad say they have arrested more than 30",
+              "</s>Police in Chad say they have arrested more than 20",
+              "</s>Police in Chad say they have arrested more than 100",
+              "</s>Police in Chad say they have arrested more than 50"
+            ],
+            "n_words_checked": 184
           },
           "labeled_entities": []
         },
         "38797571": {
           "banned_phrases": [
-            "Bristol Rovers",
+            "Dons",
             "Bristol City",
             "MK",
             "Rochdale",
-            "Dons"
+            "Bristol Rovers"
           ],
           "summary": "Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat by Bristol Roosters.",
           "generation_metadata": {
-            "score": -0.869192361831665,
+            "score": -0.8691923022270203,
             "dropped_seqs": [
               "</s>Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat by MK",
               "</s>Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat at Bristol City",
@@ -13768,7 +14582,7 @@
               "</s>Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat by Rochdale",
               "</s>Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during Saturday's League One defeat by Bristol Rovers"
             ],
-            "n_words_checked": 127
+            "n_words_checked": 211
           },
           "labeled_entities": [
             {
@@ -13805,17 +14619,39 @@
             }
           ]
         },
+        "35604495": {
+          "banned_phrases": [
+            "Chris",
+            "David",
+            "Gary",
+            "Paul"
+          ],
+          "summary": "<Failed generation: blocked all beams>",
+          "generation_metadata": {
+            "score": -Infinity,
+            "dropped_seqs": [
+              "</s>Former Bolton striker Chris",
+              "</s>Former Bolton striker Gary",
+              "</s>Bolton Wanderers have agreed a deal to sell the club to ex-Trotters striker Chris",
+              "</s>Bolton Wanderers have agreed a deal to sell the club to ex-Trotters striker Gary",
+              "</s>Bolton Wanderers have agreed a deal to sell the club to ex-Trotters striker Paul",
+              "</s>Bolton Wanderers have agreed a deal to sell the club to ex-Trotters striker David"
+            ],
+            "n_words_checked": 184
+          },
+          "labeled_entities": []
+        },
         "36516057": {
           "banned_phrases": [
+            "the second weekend in a row",
             "second",
             "three years",
-            "the second weekend in a row",
             "four years",
             "the second week in a row"
           ],
           "summary": "The Conjuring 2 has topped the US and Canada box office for the first time since its release in 2013.",
           "generation_metadata": {
-            "score": -0.6312592625617981,
+            "score": -0.6312592029571533,
             "dropped_seqs": [
               "</s>The second",
               "</s>The Conjuring 2 has topped the US box office for the second",
@@ -13826,7 +14662,7 @@
               "</s>The Conjuring 2 has topped the US and Canada box office for the first time in three years",
               "</s>The Conjuring 2 has topped the US and Canada box office for the third time in four years"
             ],
-            "n_words_checked": 100
+            "n_words_checked": 212
           },
           "labeled_entities": [
             {
@@ -13870,63 +14706,87 @@
               "label": "Non-hallucinated"
             }
           ]
+        },
+        "35491792": {
+          "banned_phrases": [
+            "Steve",
+            "David",
+            "Peter",
+            "Kevin"
+          ],
+          "summary": "<Failed generation: blocked all beams>",
+          "generation_metadata": {
+            "score": -Infinity,
+            "dropped_seqs": [
+              "</s>As a potato farmer, David",
+              "</s>For a man who grew up on a potato farm, David",
+              "</s>For a man who grew up on a Herefordshire potato farm, David",
+              "</s>For a man who grew up on a Herefordshire potato farm, Peter",
+              "</s>For a man who grew up on a potato farm in Herefordshire, David",
+              "</s>For a man who grew up on a potato farm in Herefordshire, Peter",
+              "</s>For a man who grew up on a potato farm in Herefordshire, Steve",
+              "</s>For a man who grew up on a potato farm in Herefordshire, Kevin"
+            ],
+            "n_words_checked": 181
+          },
+          "labeled_entities": []
         }
       },
       "stats": {
         "summary": {
-          "completed": 234,
+          "completed": 233,
           "total": 239,
-          "factual": 160,
-          "non_factual": 5,
-          "failed": 6,
-          "unknown": 68
+          "factual": 166,
+          "non_factual": 6,
+          "failed": 12,
+          "unknown": 55
         },
         "entity": {
           "label": {
-            "Non-factual Hallucination": 5,
-            "Factual Hallucination": 107,
-            "Unknown": 93,
-            "Non-hallucinated": 471,
+            "Non-factual Hallucination": 6,
+            "Factual Hallucination": 112,
+            "Unknown": 74,
+            "Non-hallucinated": 463,
             "Intrinsic Hallucination": 8
           },
           "type": {
             "GPE": {
-              "total": 158,
+              "total": 155,
               "Non-factual Hallucination": 0,
-              "Factual Hallucination": 22,
-              "Unknown": 10,
-              "Non-hallucinated": 125,
+              "Factual Hallucination": 23,
+              "Unknown": 8,
+              "Non-hallucinated": 123,
               "Intrinsic Hallucination": 1
             },
             "CARDINAL": {
-              "total": 44,
+              "total": 42,
               "Non-factual Hallucination": 0,
-              "Factual Hallucination": 4,
-              "Unknown": 10,
+              "Factual Hallucination": 5,
+              "Unknown": 7,
               "Non-hallucinated": 29,
               "Intrinsic Hallucination": 1
             },
             "ORG": {
-              "total": 107,
-              "Non-factual Hallucination": 1,
+              "total": 104,
+              "Non-factual Hallucination": 2,
               "Factual Hallucination": 24,
-              "Unknown": 14,
-              "Non-hallucinated": 68,
+              "Unknown": 12,
+              "Non-hallucinated": 66,
               "Intrinsic Hallucination": 0
             },
             "PERSON": {
-              "total": 205,
+              "total": 196,
               "Non-factual Hallucination": 0,
               "Factual Hallucination": 35,
-              "Unknown": 15,
-              "Non-hallucinated": 153,
+              "Unknown": 10,
+              "Non-hallucinated": 149,
               "Intrinsic Hallucination": 2
             },
             "DATE": {
-              "total": 75,
+              "total": 73,
               "Non-factual Hallucination": 1,
-              "Factual Hallucination": 9,
-              "Unknown": 31,
+              "Factual Hallucination": 11,
+              "Unknown": 27,
               "Non-hallucinated": 34,
               "Intrinsic Hallucination": 0
             },
@@ -13934,8 +14794,8 @@
               "total": 5,
               "Non-factual Hallucination": 2,
               "Factual Hallucination": 1,
-              "Unknown": 2,
-              "Non-hallucinated": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 1,
               "Intrinsic Hallucination": 0
             },
             "ORDINAL": {
@@ -13957,9 +14817,9 @@
             "WORK_OF_ART": {
               "total": 6,
               "Non-factual Hallucination": 1,
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Unknown": 0,
-              "Non-hallucinated": 5,
+              "Non-hallucinated": 4,
               "Intrinsic Hallucination": 0
             },
             "EVENT": {
@@ -13979,10 +14839,10 @@
               "Intrinsic Hallucination": 0
             },
             "LOC": {
-              "total": 13,
+              "total": 12,
               "Non-factual Hallucination": 0,
               "Factual Hallucination": 3,
-              "Unknown": 6,
+              "Unknown": 5,
               "Non-hallucinated": 4,
               "Intrinsic Hallucination": 0
             },
@@ -13995,10 +14855,10 @@
               "Intrinsic Hallucination": 1
             },
             "TIME": {
-              "total": 3,
+              "total": 2,
               "Non-factual Hallucination": 0,
               "Factual Hallucination": 0,
-              "Unknown": 1,
+              "Unknown": 0,
               "Non-hallucinated": 0,
               "Intrinsic Hallucination": 2
             },
