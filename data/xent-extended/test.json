@@ -15,6 +15,22 @@
     ]
   },
   {
+    "source": "Ogwen Valley Mountain Rescue team was called to Yr Elen, in the Carneddau range, at about 14:00 GMT on Saturday.\nThe man, who had rib and back injuries, was flown to hospital in a rescue helicopter.",
+    "reference": "A man in his 60s has been airlifted to hospital after falling while walking in Snowdonia.",
+    "prediction": "A man has been airlifted to hospital after being injured in a fall in the Snowdonian mountains.",
+    "entities": [
+      {
+        "ent": "Snowdonian",
+        "type": "GPE",
+        "start": 74,
+        "end": 84,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
     "source": "Media playback is not supported on this device\nDusmatov, 23, was awarded a unanimous points victory - two judges scoring the fight 30-27, and one 29-28.\nMartinez, 24, is the first Olympic boxing finalist from Colombia.\nThe United States' Nico Hernandez, 20, and 19-year-old Cuban world champion Joahnys Argilagos took bronze after losing in the semi-finals.\nFind out how to get into boxing with our special guide.\nSubscribe to the BBC Sport newsletter to get our pick of news, features and video sent to your inbox.",
     "reference": "Uzbekistan's Hasanboy Dusmatov won Olympic gold in the men's light-flyweight with victory over Colombian Yuberjen Herney Martinez.",
     "prediction": "Colombia's Omar Martinez lost to Kazakhstan's Islam Dusmatov in the Olympic men's flyweight final in Rio.",
@@ -106,6 +122,22 @@
     ]
   },
   {
+    "source": "Media playback is not supported on this device\nDusmatov, 23, was awarded a unanimous points victory - two judges scoring the fight 30-27, and one 29-28.\nMartinez, 24, is the first Olympic boxing finalist from Colombia.\nThe United States' Nico Hernandez, 20, and 19-year-old Cuban world champion Joahnys Argilagos took bronze after losing in the semi-finals.\nFind out how to get into boxing with our special guide.\nSubscribe to the BBC Sport newsletter to get our pick of news, features and video sent to your inbox.",
+    "reference": "Uzbekistan's Hasanboy Dusmatov won Olympic gold in the men's light-flyweight with victory over Colombian Yuberjen Herney Martinez.",
+    "prediction": "Colombia's Jose Luis Martinez has been knocked out in the Olympic men's flyweight final by Kazakhstan's Ruslan Dusmatov.",
+    "entities": [
+      {
+        "ent": "Ruslan",
+        "type": "PERSON",
+        "start": 104,
+        "end": 110,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
     "source": "The bird's head and wings became stuck in the wire fence in Bethesda while it was chasing a wood pigeon.\nRSPCA Inspector Mike Pugh, who freed the animal, said: \"The buzzard was feisty, but luckily, had not had much feather damage.\n\"I released the bird back to the wild where he belongs straight away.\"",
     "reference": "A buzzard has been rescued after becoming trapped between fencing and a wall in Gwynedd.",
     "prediction": "A buzzard has been rescued after becoming stuck in a fence in County Durham.",
@@ -147,6 +179,40 @@
         "end": 88,
         "in_source": false,
         "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "A tractor laden with explosives was driven at a military police station, a statement said.\nThe attack happened early on Sunday near the town of Dogubayezit in Agri province, near the border with Iran.\nSince 24 July, Turkey has carried out hundreds of air raids on PKK bases on both sides of the Iraq-Turkey border.\nA Turkish state news agency, Anadolu, said the tractor was carrying two tons of explosives that were detonated by a suicide bomber.\nTurkey's army said in a statement that \"long-range guns\" were also found. Four of the injured were in a serious condition.\nThe statement said the Karabulak Gendarmerie Station was hit at around 03:00 local time on Sunday (midnight GMT).\nImages in the Turkish press showed a badly-damaged building with the roof destroyed.\nOne report said the blast was so strong that houses in a village several hundred metres away were hit by debris and some residents were slightly injured.\nThe Dogan news agency added that militants also set up ambushes on roads to prevent medical teams getting to the scene.\nThere has been no comment from the PKK so far.\nAFP news agency said it would be the first time the group was accused of deploying a suicide bomber during recent clashes.\nTurkey says the group was behind a number of attacks in the last two weeks:\nTurkey's official news agency says about 260 Kurdish fighters have been killed in strikes in northern Iraq and Turkey since 24 July. It has also targeted positions held by the Islamic State group.\nAt least six people were killed and several wounded in further Turkish air strikes on Saturday east of Erbil, said local officials.\nThe pro-PKK Firat news agency described an attack on the village of Zerkel as a \"massacre\".\nIraqi Kurdish President Massoud Barzani said: \"We condemn the bombing, which led to the martyrdom of the citizens of the Kurdish region, and we call on Turkey to not repeat the bombing of civilians.\"\nThe Turkish military on Sunday said it had investigated the incident and dismissed claims that there could have been civilian casualties in Zerkel, Reuters reported.\nTurkey considers both the PKK and IS terrorist organisations.\nThe PKK has been fighting Turkey for an autonomous homeland for the Kurds.\nMore than 40,000 people have been killed and hundreds of thousands displaced since the PKK began an armed uprising in 1984.\nIn 2012, the government and PKK began peace talks and the following year a ceasefire was agreed.\nHowever, the ceasefire ended in effect when Turkey launched raids against Kurdish separatist camps in northern Iraq last month.\nThe raids came after the PKK reportedly killed two Turkish police officers in retaliation for an attack claimed by Islamic State and what the PKK sees as Turkey's collaboration with IS.",
+    "reference": "Two Turkish soldiers have been killed and 31 wounded in a suicide attack by Kurdish PKK militants, the Turkish military says.",
+    "prediction": "At least nine people have been killed and more than 50 injured in a bomb attack in northern Turkey by the Kurdistan Workers' Party (PKK), the army says.",
+    "entities": [
+      {
+        "ent": "At least nine",
+        "type": "CARDINAL",
+        "start": 0,
+        "end": 13,
+        "in_source": false,
+        "predicted_label": "Factual Hallucination",
+        "label": "Non-factual Hallucination"
+      },
+      {
+        "ent": "more than 50",
+        "type": "CARDINAL",
+        "start": 42,
+        "end": 54,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      },
+      {
+        "ent": "the Kurdistan Workers' Party",
+        "type": "ORG",
+        "start": 102,
+        "end": 130,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Factual Hallucination"
       }
     ]
   },
@@ -305,6 +371,94 @@
         "start": 30,
         "end": 35,
         "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "New analysis for BBC News shows that many people relying on their savings income are worse off than ever before.\nSavings rates plummeted after the Bank of England slashed its base rate in the financial crisis.\nSince last autumn, as the economic outlook has worsened, they have fallen again.\nTax-free Isas, fixed rate bonds and easy access accounts are all at or near their lowest points.\nIn research carried out for the BBC, the rate-checking firm Savings Champion recorded 1,440 savings rate cuts last year and more than 230 so far this year.\nWhile low interest rates are welcomed by mortgage borrowers, they strike fear into those at or near retirement who had hoped that income from their nest eggs would help pay the bills.\n\"There's no light at the end of the tunnel,\" says 76-year-old Mick Bridge, one of a group of ramblers from Chesterfield who all depend on savings.\n\"Like most retired people, there was a plan and suddenly it's not like it was anymore. The pot's disappearing.\"\nFellow walker Sharon Beresford is worried that low interest rates will leave more older people needing help to pay for care.\n\"It's helping young people buy houses, but it's not helping me,\" she says, \"There are a lot of us to be looked after.\"\nThe fall in rates has come across the board, with significant reductions from National Savings & Investments, Bank of Scotland, NatWest and Nationwide Building Society.\nThe average return from the five best easy access accounts has dropped from more than 3% in 2012 to under 1.3%.\nTax-free Isa rates are at their lowest ever. The average variable rate Isa is down to 1%, while a typical fixed-rate Isa pays 1.4%.\nAnother Chesterfield rambler, 63-year-old Judith Knowles, started dipping into her savings when she discovered she would have to wait for her state pension because women's pension ages were being raised. Low savings rates have forced her to dip in again.\n\"It's worrying,\" she says. \"I've had letters saying the rates are going down even more.\"\nSome rates of return are so tiny that savers can improve their situation by switching to a better offer.\nFirst Direct pays just 0.05% to customers in its Savings Account, while Santander has an Easy Isa with an interest rate of a mere 0.1%.\nAnna Bowes, director of Savings Champion, traces the problem back to a decision by the previous Coalition government to supply banks with cheap money to boost their lending.\n\"The competition between providers has been sucked out of the market,\" she explains, \"They just don't need to raise money from savers any more, which has had a devastating impact.\"\nA spokesman for the British Bankers' Association said: \"These have been frustrating times for savers. The Bank of England's base rate has remained at a record low for several years.\n\"While this has been good news for borrowers, it has fostered a low-interest-rate environment which has not been easy for many savers to bear.\"\nThe looming EU referendum has confused the outlook for savers, with George Osborne warning borrowers that a vote to leave could lead to higher interest rates and others speculating that uncertainty could prompt the Bank of England to cut its base rate again.\nBehind the scenes, senior bankers warn that very low savings rates are likely to be the \"new normal\", given the precarious economic situation across the world.",
+    "reference": "Interest rates for savers have fallen to new record lows, after hundreds of cuts in recent months and more than 1,000 in the past year.",
+    "prediction": "More than 1,400 savings rate cuts have been made by banks in the past year, according to a new report.",
+    "entities": [
+      {
+        "ent": "More than 1,400",
+        "type": "CARDINAL",
+        "start": 0,
+        "end": 15,
+        "in_source": false,
+        "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "New analysis for BBC News shows that many people relying on their savings income are worse off than ever before.\nSavings rates plummeted after the Bank of England slashed its base rate in the financial crisis.\nSince last autumn, as the economic outlook has worsened, they have fallen again.\nTax-free Isas, fixed rate bonds and easy access accounts are all at or near their lowest points.\nIn research carried out for the BBC, the rate-checking firm Savings Champion recorded 1,440 savings rate cuts last year and more than 230 so far this year.\nWhile low interest rates are welcomed by mortgage borrowers, they strike fear into those at or near retirement who had hoped that income from their nest eggs would help pay the bills.\n\"There's no light at the end of the tunnel,\" says 76-year-old Mick Bridge, one of a group of ramblers from Chesterfield who all depend on savings.\n\"Like most retired people, there was a plan and suddenly it's not like it was anymore. The pot's disappearing.\"\nFellow walker Sharon Beresford is worried that low interest rates will leave more older people needing help to pay for care.\n\"It's helping young people buy houses, but it's not helping me,\" she says, \"There are a lot of us to be looked after.\"\nThe fall in rates has come across the board, with significant reductions from National Savings & Investments, Bank of Scotland, NatWest and Nationwide Building Society.\nThe average return from the five best easy access accounts has dropped from more than 3% in 2012 to under 1.3%.\nTax-free Isa rates are at their lowest ever. The average variable rate Isa is down to 1%, while a typical fixed-rate Isa pays 1.4%.\nAnother Chesterfield rambler, 63-year-old Judith Knowles, started dipping into her savings when she discovered she would have to wait for her state pension because women's pension ages were being raised. Low savings rates have forced her to dip in again.\n\"It's worrying,\" she says. \"I've had letters saying the rates are going down even more.\"\nSome rates of return are so tiny that savers can improve their situation by switching to a better offer.\nFirst Direct pays just 0.05% to customers in its Savings Account, while Santander has an Easy Isa with an interest rate of a mere 0.1%.\nAnna Bowes, director of Savings Champion, traces the problem back to a decision by the previous Coalition government to supply banks with cheap money to boost their lending.\n\"The competition between providers has been sucked out of the market,\" she explains, \"They just don't need to raise money from savers any more, which has had a devastating impact.\"\nA spokesman for the British Bankers' Association said: \"These have been frustrating times for savers. The Bank of England's base rate has remained at a record low for several years.\n\"While this has been good news for borrowers, it has fostered a low-interest-rate environment which has not been easy for many savers to bear.\"\nThe looming EU referendum has confused the outlook for savers, with George Osborne warning borrowers that a vote to leave could lead to higher interest rates and others speculating that uncertainty could prompt the Bank of England to cut its base rate again.\nBehind the scenes, senior bankers warn that very low savings rates are likely to be the \"new normal\", given the precarious economic situation across the world.",
+    "reference": "Interest rates for savers have fallen to new record lows, after hundreds of cuts in recent months and more than 1,000 in the past year.",
+    "prediction": "More than 1,500 savings rate cuts have been made by banks in the last year.",
+    "entities": [
+      {
+        "ent": "the last year",
+        "type": "DATE",
+        "start": 61,
+        "end": 74,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "New analysis for BBC News shows that many people relying on their savings income are worse off than ever before.\nSavings rates plummeted after the Bank of England slashed its base rate in the financial crisis.\nSince last autumn, as the economic outlook has worsened, they have fallen again.\nTax-free Isas, fixed rate bonds and easy access accounts are all at or near their lowest points.\nIn research carried out for the BBC, the rate-checking firm Savings Champion recorded 1,440 savings rate cuts last year and more than 230 so far this year.\nWhile low interest rates are welcomed by mortgage borrowers, they strike fear into those at or near retirement who had hoped that income from their nest eggs would help pay the bills.\n\"There's no light at the end of the tunnel,\" says 76-year-old Mick Bridge, one of a group of ramblers from Chesterfield who all depend on savings.\n\"Like most retired people, there was a plan and suddenly it's not like it was anymore. The pot's disappearing.\"\nFellow walker Sharon Beresford is worried that low interest rates will leave more older people needing help to pay for care.\n\"It's helping young people buy houses, but it's not helping me,\" she says, \"There are a lot of us to be looked after.\"\nThe fall in rates has come across the board, with significant reductions from National Savings & Investments, Bank of Scotland, NatWest and Nationwide Building Society.\nThe average return from the five best easy access accounts has dropped from more than 3% in 2012 to under 1.3%.\nTax-free Isa rates are at their lowest ever. The average variable rate Isa is down to 1%, while a typical fixed-rate Isa pays 1.4%.\nAnother Chesterfield rambler, 63-year-old Judith Knowles, started dipping into her savings when she discovered she would have to wait for her state pension because women's pension ages were being raised. Low savings rates have forced her to dip in again.\n\"It's worrying,\" she says. \"I've had letters saying the rates are going down even more.\"\nSome rates of return are so tiny that savers can improve their situation by switching to a better offer.\nFirst Direct pays just 0.05% to customers in its Savings Account, while Santander has an Easy Isa with an interest rate of a mere 0.1%.\nAnna Bowes, director of Savings Champion, traces the problem back to a decision by the previous Coalition government to supply banks with cheap money to boost their lending.\n\"The competition between providers has been sucked out of the market,\" she explains, \"They just don't need to raise money from savers any more, which has had a devastating impact.\"\nA spokesman for the British Bankers' Association said: \"These have been frustrating times for savers. The Bank of England's base rate has remained at a record low for several years.\n\"While this has been good news for borrowers, it has fostered a low-interest-rate environment which has not been easy for many savers to bear.\"\nThe looming EU referendum has confused the outlook for savers, with George Osborne warning borrowers that a vote to leave could lead to higher interest rates and others speculating that uncertainty could prompt the Bank of England to cut its base rate again.\nBehind the scenes, senior bankers warn that very low savings rates are likely to be the \"new normal\", given the precarious economic situation across the world.",
+    "reference": "Interest rates for savers have fallen to new record lows, after hundreds of cuts in recent months and more than 1,000 in the past year.",
+    "prediction": "More than 1,500 savings rate cuts have been made by banks in the UK since the start of the year, the BBC has learned.",
+    "entities": [
+      {
+        "ent": "UK",
+        "type": "GPE",
+        "start": 65,
+        "end": 67,
+        "in_source": false,
+        "predicted_label": "Factual Hallucination",
+        "label": "Factual Hallucination"
+      },
+      {
+        "ent": "the start of the year",
+        "type": "DATE",
+        "start": 74,
+        "end": 95,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "New analysis for BBC News shows that many people relying on their savings income are worse off than ever before.\nSavings rates plummeted after the Bank of England slashed its base rate in the financial crisis.\nSince last autumn, as the economic outlook has worsened, they have fallen again.\nTax-free Isas, fixed rate bonds and easy access accounts are all at or near their lowest points.\nIn research carried out for the BBC, the rate-checking firm Savings Champion recorded 1,440 savings rate cuts last year and more than 230 so far this year.\nWhile low interest rates are welcomed by mortgage borrowers, they strike fear into those at or near retirement who had hoped that income from their nest eggs would help pay the bills.\n\"There's no light at the end of the tunnel,\" says 76-year-old Mick Bridge, one of a group of ramblers from Chesterfield who all depend on savings.\n\"Like most retired people, there was a plan and suddenly it's not like it was anymore. The pot's disappearing.\"\nFellow walker Sharon Beresford is worried that low interest rates will leave more older people needing help to pay for care.\n\"It's helping young people buy houses, but it's not helping me,\" she says, \"There are a lot of us to be looked after.\"\nThe fall in rates has come across the board, with significant reductions from National Savings & Investments, Bank of Scotland, NatWest and Nationwide Building Society.\nThe average return from the five best easy access accounts has dropped from more than 3% in 2012 to under 1.3%.\nTax-free Isa rates are at their lowest ever. The average variable rate Isa is down to 1%, while a typical fixed-rate Isa pays 1.4%.\nAnother Chesterfield rambler, 63-year-old Judith Knowles, started dipping into her savings when she discovered she would have to wait for her state pension because women's pension ages were being raised. Low savings rates have forced her to dip in again.\n\"It's worrying,\" she says. \"I've had letters saying the rates are going down even more.\"\nSome rates of return are so tiny that savers can improve their situation by switching to a better offer.\nFirst Direct pays just 0.05% to customers in its Savings Account, while Santander has an Easy Isa with an interest rate of a mere 0.1%.\nAnna Bowes, director of Savings Champion, traces the problem back to a decision by the previous Coalition government to supply banks with cheap money to boost their lending.\n\"The competition between providers has been sucked out of the market,\" she explains, \"They just don't need to raise money from savers any more, which has had a devastating impact.\"\nA spokesman for the British Bankers' Association said: \"These have been frustrating times for savers. The Bank of England's base rate has remained at a record low for several years.\n\"While this has been good news for borrowers, it has fostered a low-interest-rate environment which has not been easy for many savers to bear.\"\nThe looming EU referendum has confused the outlook for savers, with George Osborne warning borrowers that a vote to leave could lead to higher interest rates and others speculating that uncertainty could prompt the Bank of England to cut its base rate again.\nBehind the scenes, senior bankers warn that very low savings rates are likely to be the \"new normal\", given the precarious economic situation across the world.",
+    "reference": "Interest rates for savers have fallen to new record lows, after hundreds of cuts in recent months and more than 1,000 in the past year.",
+    "prediction": "More than 1,500 savings rate cuts have been made by banks in the UK since the start of 2012, the BBC has learned.",
+    "entities": [
+      {
+        "ent": "the start of 2012",
+        "type": "DATE",
+        "start": 74,
+        "end": 91,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "New analysis for BBC News shows that many people relying on their savings income are worse off than ever before.\nSavings rates plummeted after the Bank of England slashed its base rate in the financial crisis.\nSince last autumn, as the economic outlook has worsened, they have fallen again.\nTax-free Isas, fixed rate bonds and easy access accounts are all at or near their lowest points.\nIn research carried out for the BBC, the rate-checking firm Savings Champion recorded 1,440 savings rate cuts last year and more than 230 so far this year.\nWhile low interest rates are welcomed by mortgage borrowers, they strike fear into those at or near retirement who had hoped that income from their nest eggs would help pay the bills.\n\"There's no light at the end of the tunnel,\" says 76-year-old Mick Bridge, one of a group of ramblers from Chesterfield who all depend on savings.\n\"Like most retired people, there was a plan and suddenly it's not like it was anymore. The pot's disappearing.\"\nFellow walker Sharon Beresford is worried that low interest rates will leave more older people needing help to pay for care.\n\"It's helping young people buy houses, but it's not helping me,\" she says, \"There are a lot of us to be looked after.\"\nThe fall in rates has come across the board, with significant reductions from National Savings & Investments, Bank of Scotland, NatWest and Nationwide Building Society.\nThe average return from the five best easy access accounts has dropped from more than 3% in 2012 to under 1.3%.\nTax-free Isa rates are at their lowest ever. The average variable rate Isa is down to 1%, while a typical fixed-rate Isa pays 1.4%.\nAnother Chesterfield rambler, 63-year-old Judith Knowles, started dipping into her savings when she discovered she would have to wait for her state pension because women's pension ages were being raised. Low savings rates have forced her to dip in again.\n\"It's worrying,\" she says. \"I've had letters saying the rates are going down even more.\"\nSome rates of return are so tiny that savers can improve their situation by switching to a better offer.\nFirst Direct pays just 0.05% to customers in its Savings Account, while Santander has an Easy Isa with an interest rate of a mere 0.1%.\nAnna Bowes, director of Savings Champion, traces the problem back to a decision by the previous Coalition government to supply banks with cheap money to boost their lending.\n\"The competition between providers has been sucked out of the market,\" she explains, \"They just don't need to raise money from savers any more, which has had a devastating impact.\"\nA spokesman for the British Bankers' Association said: \"These have been frustrating times for savers. The Bank of England's base rate has remained at a record low for several years.\n\"While this has been good news for borrowers, it has fostered a low-interest-rate environment which has not been easy for many savers to bear.\"\nThe looming EU referendum has confused the outlook for savers, with George Osborne warning borrowers that a vote to leave could lead to higher interest rates and others speculating that uncertainty could prompt the Bank of England to cut its base rate again.\nBehind the scenes, senior bankers warn that very low savings rates are likely to be the \"new normal\", given the precarious economic situation across the world.",
+    "reference": "Interest rates for savers have fallen to new record lows, after hundreds of cuts in recent months and more than 1,000 in the past year.",
+    "prediction": "More than 1,500 savings rate cuts have been made by banks in the UK since the start of 2013, the BBC has learned.",
+    "entities": [
+      {
+        "ent": "the start of 2013",
+        "type": "DATE",
+        "start": 74,
+        "end": 91,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
         "label": "Non-factual Hallucination"
       }
     ]
@@ -521,6 +675,22 @@
     ]
   },
   {
+    "source": "The Vikings led the table after winning six of their first seven games but slipped from the top after losing to Warrington on 25 March.\nBetts' side currently lie in fifth place in the table and face league leaders Warrington again on Friday.\n\"I don't see our form being that bad, we've just lost some games,\" Betts told BBC Radio Merseyside.\n\"We've lost some momentum to look at the table, but internally we're still doing some good things.\"\nAfter conceding 108 points in their opening seven matches, Widnes' fortunes have changed of late, with the Vikings conceding 103 points in their last four games.\n\"It's about doing the little things well, keeping the confidence high and doing the things we did at the beginning of the year with the same kind of determination,\" he added.\n\"We know we've got to get moving back in the league but Warrington are saying the same thing and there are guys who are fighting to get some momentum in their league positions.\"",
+    "reference": "Head coach Denis Betts is not worried about Widnes' recent form despite four consecutive Super League defeats.",
+    "prediction": "Widnes Vikings head coach Chris Betts says the Super League side have not lost momentum despite their recent poor form.",
+    "entities": [
+      {
+        "ent": "Chris",
+        "type": "PERSON",
+        "start": 26,
+        "end": 31,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
     "source": "Leonie Granger from Gillingham, Kent, was sentenced at the Old Bailey having been found guilty of manslaughter.\nHer boyfriend Kyrron Jackson, 28, and his friend Nicholas Chandler, 29, were found guilty of murder and jailed for life with a minimum term of 36 years.\nGranger targeted Mehmet Hassan, 56, in a Mayfair casino in March last year.\nJudge William Kennedy described the attack as \"pitiless and wicked\", adding: \"It was quite simply an act of brutality which defies reason and compassion.\"\nGranger's lawyer Orlando Pownall said she only took part in the plot as she was in love with Jackson and \"fell in with his desires\" and now \"deeply regretted\" her actions.\n\"Her head was turned by Jackson, who she loved, and to some extent by Chandler who was persuasive and superficially charming,\" he said.\nBut Judge Kennedy said she had been \"deceitful from the outset\" and had \"lost her sense and compassion\" when she got involved.\nHe added that she clearly cared more for Jackson than he cared for her.\nGranger, who posed under the name of Rachel, was wined and dined by the divorced father of three who boasted to friends he was not paying her to be with him, the court heard earlier.\nOn the night he was killed, Mr Hassan had taken Granger to the upmarket Nobu restaurant before giving her \u00c2\u00a31,000 to gamble with at the nearby Palm Beach Casino.\nThe two were seen kissing passionately by a poker supervisor, before leaving the casino together for Mr Hassan's flat in Islington.\nGranger then let Jackson and Chandler into the poker player's flat before leaving in a taxi.\nBoth men tied up Mr Hassan with parcel tape and a neck tie before kicking and stamping him to death, the trial was told.\nAfterwards, while he lay dead in a pool of blood, all three were filmed on Granger's mobile phone throwing \u00c2\u00a350 notes around a room and even stuffing  them in their underpants.\nCommenting on the footage, Judge Kennedy told the three defendants: \"The eloquence with which it speaks about you is deafening.\"",
     "reference": "A woman who set a \"honey trap\" for a professional gambler who was kicked to death for his winnings has been jailed for 16 years.",
     "prediction": "A 23-year-old woman who admitted killing a poker player in a \"pitiless and wicked\" attack has been jailed for 20 years.",
@@ -606,6 +776,22 @@
         "start": 72,
         "end": 83,
         "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "Andrew Hutchinson, from Abingdon, Oxfordshire, pleaded guilty to rape, sexual assault and voyeurism committed from 2011 to 2013.\nThe 29-year-old filmed himself raping two patients at the John Radcliffe Hospital in Oxford, where he worked.\nHe also attacked women who had passed out while he was on duty at a music festival, Oxford Crown Court heard.\nHutchinson targeted women who had lost consciousness through drinking too much and they were unaware they had been assaulted until contacted by Thames Valley Police.\nThe court heard the women he raped in the A&E department at the Oxford hospital had to view parts of Hutchinson's recordings in order to identify themselves.\nOne victim, an 18-year-old, was raped in October 2011 and a 35-year-old was raped in February 2012.\nHe also attacked two women in their 20s while volunteering as a medic at the Wilderness Festival in Cornbury Park, Oxfordshire, in August 2013.\nHis was tending the women when he committed the crimes, one in a medical tent and the other in a nearby ambulance.\nOfficers initially arrested him for secretly filming girls as young as nine in changing rooms at the White Horse Leisure Centre in Abingdon in November 2013.\nFollowing a search of his home, police found footage of sex attacks on his computer and mobile phone.\nThe court was told Hutchinson also had hundreds of other voyeuristic images, including \"up skirt\" pictures taken on the London Underground while he was  volunteering at the 2012 Olympics.\nVictims were also filmed at John Radcliffe Hospital and at a gym in Batley, West Yorkshire where he had previously worked.\nAt a hearing on 30 March, he also pleaded guilty to outraging public decency, making indecent images of children, theft of a hospital camera used for internal examinations and possession of the class B drug ketamine.\nThe victims of his crimes were aged between nine and 35, although many were unidentifiable due to the nature of the footage.\nCatherine Stoddart, chief nurse at Oxford University Hospitals NHS Trust, said: \"I am shocked and horrified by the way in which Andrew Hutchinson has betrayed the patients he was entrusted to care for and his colleagues, who also trusted him.\"\nShe said the hospital will be carrying out an internal review to see if Hutchinson could have been prevented from committing his crimes.\nHutchinson was suspended by the trust in November 2013 following allegations he stole medical equipment.\nIt also informed the Nursing and Midwifery Council and launched an internal investigation, which led to his dismissal.\nJudge Ian Pringle QC described Hutchinson's crimes as \"despicable\".\nHe said: \"When they were unconscious requiring your help and your assistance as their nurse, you raped them and you filmed it.\n\"It is impossible to conceive of a greater breach of trust in our society.\"\nIn a statement read out in court, one of the victims said: \"I think that what he has done is much worse that doing it in the street because I had no idea what was happening, so I had no opportunity to fight back.\"\nSenior investigating officer, Det Ch Insp Mark Johns of Thames Valley Police, said: \"This has been a particularly complicated, unusual and sensitive case as the victims were not aware that offences took place because they were not conscious.\n\"I would like to thank the victims for the great courage and dignity they have shown during our investigation.\"\nPolice said all victims who can be identified have been contacted.\nAnyone with concerns can contact police on 101, quoting Operation Bream.",
+    "reference": "A former nurse has been jailed for 18 years for raping and sexually assaulting unconscious women.",
+    "prediction": "A nurse who secretly filmed himself raping patients has been jailed for five years.",
+    "entities": [
+      {
+        "ent": "five years",
+        "type": "DATE",
+        "start": 72,
+        "end": 82,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
         "label": "Non-factual Hallucination"
       }
     ]
@@ -1019,6 +1205,22 @@
     ]
   },
   {
+    "source": "The 30-year-old played for the county in 2011 and helped them reach the final of the domestic T20 competition and the Champions League semi-finals.\n\"I enjoyed my time in Taunton and I am really looking forward to working with Matt Maynard again,\" he said.\n\"For me to be coming back to Somerset to contribute in all forms of the game is awesome.\"\nVan der Nerwe previously played under Somerset director of cricket Matthew Maynard in the Caribbean Premier League, for St Lucia Zouks.\nHe has represented South Africa at international level, but now plays for the Netherlands and is currently involved in the ICC World T20 qualifier.",
+    "reference": "Somerset have signed all-rounder Roelof van der Merwe on a two-year contract to start next season.",
+    "prediction": "Somerset have re-signed South Africa all-rounder Riki van der Nerwe on a one-year deal.",
+    "entities": [
+      {
+        "ent": "one-year",
+        "type": "DATE",
+        "start": 73,
+        "end": 81,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
     "source": "More than 60 years on, with another World Cup looming in Brazil and the Indian economy booming, there are renewed hopes that football can finally gain a toehold in the cricket-loving country.\nQualification for the 2014 World Cup may be a step too far, but there are a number of initiatives under way to boost the sport.\nThe challenges are to nurture that growing interest while wooing fans away from watching overseas football on TV,  and the need to create a strong national league and international team.\nOff the pitch there is the need to build football industry and infrastructure, while boosting the expertise of administrators and coaching and other backroom staff.\n\"There is a challenge from cricket, which gets the most investment,\" admits Kushal Das, general secretary of the All India Football Federation (AIFF).\n\"Many youngsters though are now watching a lot of football, mainly European leagues.\n\"We need to develop interest in the Indian leagues, and we need development programmes for that.\"\nMr Das said he was encouraged by the recent visit of Fifa president Sepp Blatter to the country.\nThe country is hoping to host the Under-17 World Cup in 2017, and Mr Blatter has so far offered encouraging noises.\nMr Das said that highlights over the past couple of years included India playing in the AFC Asian Cup in 2011 for the first time in more than 20 years, and the 15-year commercial and marketing partnership between the AIFF and IMG-Reliance.\nEncouragement has also come from a recent development plan for football in India drawn up with Fifa.\n\"We are starting up academies for player development in four cities by July and another four by July 2013, for different age groups,\" says Mr Das.\nA technical director has also been appointed for the first time, unusual as it may seem that such a role did not exist before.\n\"We are looking not just at player development, but also administration, education, referees,\" says Mr Das.\n\"If we are successful in hosting the Under-17 there will be [business] opportunities, to participate in the whole development of Indian football - it is a great opportunity.\"\nHe adds: \"The biggest challenge is infrastructure. I hope, if we have the World Cup hosting rights, that there will be serious efforts to improve the infrastructure.\"\nIMG and stadium builders Populous have already been around the country looking at which existing stadiums could potentially be brought up to scratch for 2017.\nOne of the footballing hotbeds in the country is Pune, a city in the west of the country with a three million-plus population.\n\"Sport, including football, is tremendously popular among the youth of our city today,\" says Vishwajeet Kadam,  president of Pune District Football Association.\n\"We don't only focus on the skills development of players. We also taking to the FA and taking advice from the Indian Premier League cricket, and hockey, about ways to boost the football industry and surrounding football industry skills.\"\nPune also has contacts with English Premier League football clubs, including Liverpool and Blackburn Rovers, who both have training academies in the city.\n\"Other clubs have been to India to just hold training sessions, but Liverpool has shown a clear commitment,\" says Mr Kadam.\n\"Most European clubs seriously underestimate the Indian market.\n\"There are organisations in India ready to spend money in partnerships with European clubs.\"\nOne club which has formed a partnership is Italian side Inter Milan, which has entered a joint football venture with Tata Tea to support a youth football tournament in India, covering 15 cities, 1,000 schools, and one million children.\nMario de Vivo, Inter Milan chief commercial officer, adds: \"We then select 16 young Indian pupils and take them to Inter Milan training academy for three days.\n\"We are bringing to India not only technical skills, but also medical, nutritional, and psychological support.\n\"We are able to offer a complete platform to help young teams, federations, and other people that want to learn about football and improve the professional side.\"\nBusiness bodies in India also wants to improve transparency, accountability, marketing, planning and professionalism in football.\nRajpal Singh of the Federation of Indian Chambers of Commerce & Industry (Ficci) says: \"We realise in sport we need foreign expertise.\n\"We want to create a sporting culture in India, and bring about attitudinal change and develop a sporting infrastructure.\n\"India is a cricket country but over the past two years you can see a change in attitude. Sports people are now looking towards football.\n\"But we need to examine the whole football infrastructure.\"\nIMG-Reliance is bringing its sports industry expertise to India as part of its deal with the AIFF.\n\"Indians love football and can play football. If you buy into that premise then you know we will be successful,\" says IMG's Jefferson Slack.\nMr Slack admits there are challenges on the football and infrastructure side, but says there is a competitive media market in India that is \"going to need high quality football content\".\nHe adds: \"There are certainly some challenges. The existing league suffers from an??? organisation standpoint.\n\"The IPL [cricket] was instructive because it showed that a properly constructed franchise league could work.\n\"There is a lot of money in India to build a brand. Football needs to succeed. It needs a plan. We are are not there yet.\n\"But the long term view we have is that this will be lucrative.\"\nMeanwhile, uncertainty remains about the future of the proposed, but currently delayed, Premier Soccer League (PLS) in West Bengal.\nThe PLS was intended as a state league for older European players - such as Robert Pires and Fabio Cannavaro. It attracted publicity around the world, particularly in the UK.\nMr Slack said he understood the premise of the league as, he says, India is a country that is \"star driven\".\nBut he said there was a pressing need to boost the status of the current Indian national soccer league.\n\"We are in dialogue with I-League about how to make the league more competitive and attractive,\" he says.\n\"There are no easy solutions there. We completely understand that the clubs need to get more out of it.\"",
     "reference": "When India qualified for the 1950 World Cup in Brazil they refused to participate - partly because it would have meant their normally bare foot team having to wear football boots.",
     "prediction": "When India hosted the first World Cup in 1958, it was hailed as one of the greatest sporting achievements in the country's history.",
@@ -1029,6 +1231,189 @@
         "start": 41,
         "end": 45,
         "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The world number one, 32, beat Waters 11-2 11-5 11-4 in just 24 minutes at the National Squash Centre to secure a first national title since 2012.\n\"I am really happy that I played well all week to win the title again,\" she told the tournament website.\nIn the men's event, Nick Matthew beat James Willstrop 11-2 6-11 11-3 11-3 to win his eighth British title.\nWorld number three Matthew, 35, lost his first set of the week but recovered to win the final in 50 minutes.",
+    "reference": "Laura Massaro won her third British title with a straight-set final victory over Alison Waters in Manchester.",
+    "prediction": "Britain's world number one Laura Trott beat compatriot and fellow Briton Kirsty Water in the final of the Women's National Squash Championship in Birmingham.",
+    "entities": [
+      {
+        "ent": "Britain",
+        "type": "GPE",
+        "start": 0,
+        "end": 7,
+        "in_source": false,
+        "label": "Factual Hallucination"
+      },
+      {
+        "ent": "Trott",
+        "type": "PERSON",
+        "start": 33,
+        "end": 38,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      },
+      {
+        "ent": "Kirsty",
+        "type": "PERSON",
+        "start": 73,
+        "end": 79,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The world number one, 32, beat Waters 11-2 11-5 11-4 in just 24 minutes at the National Squash Centre to secure a first national title since 2012.\n\"I am really happy that I played well all week to win the title again,\" she told the tournament website.\nIn the men's event, Nick Matthew beat James Willstrop 11-2 6-11 11-3 11-3 to win his eighth British title.\nWorld number three Matthew, 35, lost his first set of the week but recovered to win the final in 50 minutes.",
+    "reference": "Laura Massaro won her third British title with a straight-set final victory over Alison Waters in Manchester.",
+    "prediction": "Britain's world number one Laura Robson won her second British National squash title by beating compatriot Sophie Waters in the final.",
+    "entities": [
+      {
+        "ent": "British National",
+        "type": "ORG",
+        "start": 55,
+        "end": 71,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The world number one, 32, beat Waters 11-2 11-5 11-4 in just 24 minutes at the National Squash Centre to secure a first national title since 2012.\n\"I am really happy that I played well all week to win the title again,\" she told the tournament website.\nIn the men's event, Nick Matthew beat James Willstrop 11-2 6-11 11-3 11-3 to win his eighth British title.\nWorld number three Matthew, 35, lost his first set of the week but recovered to win the final in 50 minutes.",
+    "reference": "Laura Massaro won her third British title with a straight-set final victory over Alison Waters in Manchester.",
+    "prediction": "Britain's world number one Laura Trott won her second successive National Championships title with a straight-set victory over England's Kirsty Waters.",
+    "entities": [
+      {
+        "ent": "National Championships",
+        "type": "EVENT",
+        "start": 65,
+        "end": 87,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The world number one, 32, beat Waters 11-2 11-5 11-4 in just 24 minutes at the National Squash Centre to secure a first national title since 2012.\n\"I am really happy that I played well all week to win the title again,\" she told the tournament website.\nIn the men's event, Nick Matthew beat James Willstrop 11-2 6-11 11-3 11-3 to win his eighth British title.\nWorld number three Matthew, 35, lost his first set of the week but recovered to win the final in 50 minutes.",
+    "reference": "Laura Massaro won her third British title with a straight-set final victory over Alison Waters in Manchester.",
+    "prediction": "Britain's world number one Beth Tweddle won her second British Open title with a straight-set victory over world number two Laura Waters in Birmingham.",
+    "entities": [
+      {
+        "ent": "Beth",
+        "type": "PERSON",
+        "start": 27,
+        "end": 31,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      },
+      {
+        "ent": "Tweddle",
+        "type": "PERSON",
+        "start": 32,
+        "end": 39,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      },
+      {
+        "ent": "British Open",
+        "type": "EVENT",
+        "start": 55,
+        "end": 67,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The world number one, 32, beat Waters 11-2 11-5 11-4 in just 24 minutes at the National Squash Centre to secure a first national title since 2012.\n\"I am really happy that I played well all week to win the title again,\" she told the tournament website.\nIn the men's event, Nick Matthew beat James Willstrop 11-2 6-11 11-3 11-3 to win his eighth British title.\nWorld number three Matthew, 35, lost his first set of the week but recovered to win the final in 50 minutes.",
+    "reference": "Laura Massaro won her third British title with a straight-set final victory over Alison Waters in Manchester.",
+    "prediction": "Britain's world number one Kirstie Williams beat compatriot and fellow Briton Sarah Waters to win the women's title at the British Squash Championships.",
+    "entities": [
+      {
+        "ent": "Kirstie",
+        "type": "PERSON",
+        "start": 27,
+        "end": 34,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      },
+      {
+        "ent": "Williams",
+        "type": "PERSON",
+        "start": 35,
+        "end": 43,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      },
+      {
+        "ent": "Sarah",
+        "type": "PERSON",
+        "start": 78,
+        "end": 83,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The world number one, 32, beat Waters 11-2 11-5 11-4 in just 24 minutes at the National Squash Centre to secure a first national title since 2012.\n\"I am really happy that I played well all week to win the title again,\" she told the tournament website.\nIn the men's event, Nick Matthew beat James Willstrop 11-2 6-11 11-3 11-3 to win his eighth British title.\nWorld number three Matthew, 35, lost his first set of the week but recovered to win the final in 50 minutes.",
+    "reference": "Laura Massaro won her third British title with a straight-set final victory over Alison Waters in Manchester.",
+    "prediction": "Britain's world number one Kirsten Waters has won her second National Women's Squash Championship title with a straight-set victory over Australia's Kirsten O'Neill.",
+    "entities": [
+      {
+        "ent": "Kirsten",
+        "type": "PERSON",
+        "start": 27,
+        "end": 34,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      },
+      {
+        "ent": "National Women's Squash Championship",
+        "type": "ORG",
+        "start": 61,
+        "end": 97,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Factual Hallucination"
+      },
+      {
+        "ent": "Australia",
+        "type": "GPE",
+        "start": 137,
+        "end": 146,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      },
+      {
+        "ent": "Kirsten",
+        "type": "PERSON",
+        "start": 149,
+        "end": 156,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      },
+      {
+        "ent": "O'Neill",
+        "type": "PERSON",
+        "start": 157,
+        "end": 164,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
         "label": "Non-factual Hallucination"
       }
     ]
@@ -1064,6 +1449,22 @@
     ]
   },
   {
+    "source": "The pound jumped by 0.85%, or more than one euro cent, to \u00e2\u201a\u00ac1.4072, although against the dollar the pound was down 0.26% at $1.5783.\nOn the stock market, the FTSE 100 was 16.93 points higher at 6,842.60, adding to the sharp gains seen on Monday.\nHowever, the FTSE was lagging gains elsewhere, with Germany's Dax and France's Cac 40 both up more than 1%.\nShares in business supplies distributor Bunzl dropped 1.6% - the biggest faller in the FTSE 100 - after it said organic revenue growth had slowed in the first half of its financial year.\nBunzl also announced it had bought four businesses in the US, Colombia, Canada and France.\nHowever, the most eye-catching move was in the FTSE 250, where shares in Ladbrokes jumped 16% after it said it was in merger talks with Gala Coral.",
+    "reference": "(Noon): The pound hit a four-week high against the euro as the single currency weakened on Tuesday.",
+    "prediction": "(Close): The pound rose against the euro and the dollar on Tuesday, after the Bank of England raised its interest rate to 0.75%.",
+    "entities": [
+      {
+        "ent": "0.75%",
+        "type": "PERCENT",
+        "start": 122,
+        "end": 127,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
     "source": "A referendum on the UK's membership of the EU is to be held later this year.\nThe survey indicates that only 11% of of the chamber's members in Northern Ireland support a British exit (Brexit).\nThat compares to 30% of those surveyed in the rest of the UK.\nThe Chamber of Commerce has about 1,200 members in Northern Ireland.\nAbout 250 of those responded to the poll.\nMore than half of the respondents (60%) said that Prime Minister David Cameron's renegotiated EU deal is unlikely to change how they will vote.\nThe results come on the eve of crunch Brussels talks, which are expected to result in a deal.\nEighty-four per cent of those surveyed in Northern Ireland  also say that there has been no impact on their sales and orders as of yet, due to the uncertainty of Britain's future within the EU.\nCommenting on the results, President of Northern Ireland Chamber of Commerce Stephen McCully said the findings suggest that \"the renegotiation is having little impact on day-to-day business - or the vote of the business community\".\nHe said that this was because many made up their minds before knowing the outcome of negotiations, effectively discounting them as irrelevant.\n\"For businesspeople, this is a question of in or out,\" he said.\n\"Those within Northern Ireland who are firmly wedded to the EU have said that Brexit will leave us stranded outside the EU, and coping with the re-emergence of a land border with the Republic of Ireland.\n\"Emotion has a part in all decision making and it will do so here, but there is a duty to ensure decisions are as well informed as they can be.\"\nClarification: An earlier version of this article omitted the number of respondents to the Chamber of Commerce survey.",
     "reference": "A survey of Chamber of Commerce members in Northern Ireland suggests that 81% will vote for the UK to remain in the European Union (EU).",
     "prediction": "The Northern Ireland Chamber of Commerce has said that the renegotiation of the UK's EU deal will have little impact on day-to-day business.",
@@ -1074,6 +1475,53 @@
         "start": 0,
         "end": 40,
         "in_source": false,
+        "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The Nobel committee praised him for a peace deal signed with Farc rebels, but rejected by Colombians in a vote.\nMr Santos said he dedicated the award to \"all the victims of the conflict\", and the Farc leader congratulated him.\nAbout 260,000 people have been killed and more than six million internally displaced in Colombia.\nThe award did not include Farc leader Rodrigo Londono, known as Timochenko, who also signed the accord.\nThe head of the Nobel commitee said the award recognised the president's \"resolute efforts\" to end the conflict.\n\"The award should also be seen as a tribute to the Colombian people who, despite great hardships and abuses, have not given up hope of a just peace, and to all the  parties who have contributed to the peace process,\" Kaci Kullman Five added.\nSources: BBC Monitoring, Colombian presidency\nMr Santos said on Twitter: \"This honourable distinction is not for me, it's for all the victims of the conflict. Together we'll win the most important award of them all: peace.\"\nThe peace deal was rejected by 50.2% of voters who went to the polls on 2 October.\nThe committee acknowledged the result, saying: \"What the 'No' side rejected was not the desire for peace, but a specific peace agreement.\"\nIt also said that finding a balance between the need for reconciliation and ensuring justice for the victims would be a difficult challenge.\nAlso on Twitter, Farc leader Timochenko said: \"I congratulate President Juan Manuel Santos, Cuba and Norway, who sponsored the process, and Venezuela and Chile, who assisted it, without them, peace would be impossible.\"\nEarlier, he had written: \"The only prize we aspire to is peace with social justice for Colombia, without (right-wing) paramilitary groups, without retaliation or lies. Peace in the streets.\"\nThis was a Peace Prize for a peace deal that wasn't. President Santos joins a long line of Nobel Peace Prize winners who have been rewarded for effort as much as achievement.\nBut it is too easy to be cynical. The Nobel Peace Prize has often been controversial. In recent years a variety of international bureaucracies have won - the EU, the IAEA and the OPCW.\nWhy, some have argued, should people get a prize for simply doing their job? What, others ask, had US President Barack Obama actually done to merit the prize in 2009, other than be elected?\nBut the Nobel has often gone to extraordinary individuals who really have gone above and beyond to bring peace - in Northern Ireland and East Timor to name just two examples. Maybe the award to President Santos may yet galvanise public opinion in Colombia to think again about the deal.\nCritics, led by former president Alvaro Uribe, said the deal was too lenient to the rebels.\nUnder the agreement, special courts would have been created to try crimes committed during the conflict.\nThose who confessed would have received lighter sentences and avoided serving any time in conventional prisons.\nThe Farc would also have been guaranteed 10 seats in the Colombian Congress in the 2018 and 2022 elections.\nDespite the rejection by voters, Mr Santos vowed to continue with talks with the rebels.\nGovernment negotiators have already returned to the Cuban capital Havana for further discussions with Farc leaders.\nKaci Kullman Five, from the Nobel committee, said the award was also meant as \"encouragement\" to the rebels.\n\"Giving the prize to Santos is not a belittlement to any of the other parties.\n\"The Farc is obviously a very important part of this process.''\n1964: Set up as armed wing of Communist Party\n2002: At its height, it had an army of 20,000 fighters controlling up to a third of the country. Senator Ingrid Betancourt was kidnapped and held for six years along with 14 other hostages\n2008: The Farc suffers a series of defeats in its worst year\n2012: Start of peace talks in Havana\n2016: Definitive ceasefire\nFull timeline of Farc conflict\nMr Santos was selected from a list of 376 candidates - 228 were individuals and 148 were organisations. They included:\nThe main candidates for the 2016 Nobel Peace Prize\nWhy are Nobel laureates getting older?\nWinners throughout the years",
+    "reference": "Colombian President Juan Manuel Santos has been awarded the Nobel Peace Prize for his efforts to end the 52-year conflict with left-wing rebels.",
+    "prediction": "Colombian President Juan Manuel Santos has won the 2016 Nobel Peace Prize for his efforts to end more than five decades of armed conflict.",
+    "entities": [
+      {
+        "ent": "more than five decades",
+        "type": "DATE",
+        "start": 97,
+        "end": 119,
+        "in_source": false,
+        "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The Nobel committee praised him for a peace deal signed with Farc rebels, but rejected by Colombians in a vote.\nMr Santos said he dedicated the award to \"all the victims of the conflict\", and the Farc leader congratulated him.\nAbout 260,000 people have been killed and more than six million internally displaced in Colombia.\nThe award did not include Farc leader Rodrigo Londono, known as Timochenko, who also signed the accord.\nThe head of the Nobel commitee said the award recognised the president's \"resolute efforts\" to end the conflict.\n\"The award should also be seen as a tribute to the Colombian people who, despite great hardships and abuses, have not given up hope of a just peace, and to all the  parties who have contributed to the peace process,\" Kaci Kullman Five added.\nSources: BBC Monitoring, Colombian presidency\nMr Santos said on Twitter: \"This honourable distinction is not for me, it's for all the victims of the conflict. Together we'll win the most important award of them all: peace.\"\nThe peace deal was rejected by 50.2% of voters who went to the polls on 2 October.\nThe committee acknowledged the result, saying: \"What the 'No' side rejected was not the desire for peace, but a specific peace agreement.\"\nIt also said that finding a balance between the need for reconciliation and ensuring justice for the victims would be a difficult challenge.\nAlso on Twitter, Farc leader Timochenko said: \"I congratulate President Juan Manuel Santos, Cuba and Norway, who sponsored the process, and Venezuela and Chile, who assisted it, without them, peace would be impossible.\"\nEarlier, he had written: \"The only prize we aspire to is peace with social justice for Colombia, without (right-wing) paramilitary groups, without retaliation or lies. Peace in the streets.\"\nThis was a Peace Prize for a peace deal that wasn't. President Santos joins a long line of Nobel Peace Prize winners who have been rewarded for effort as much as achievement.\nBut it is too easy to be cynical. The Nobel Peace Prize has often been controversial. In recent years a variety of international bureaucracies have won - the EU, the IAEA and the OPCW.\nWhy, some have argued, should people get a prize for simply doing their job? What, others ask, had US President Barack Obama actually done to merit the prize in 2009, other than be elected?\nBut the Nobel has often gone to extraordinary individuals who really have gone above and beyond to bring peace - in Northern Ireland and East Timor to name just two examples. Maybe the award to President Santos may yet galvanise public opinion in Colombia to think again about the deal.\nCritics, led by former president Alvaro Uribe, said the deal was too lenient to the rebels.\nUnder the agreement, special courts would have been created to try crimes committed during the conflict.\nThose who confessed would have received lighter sentences and avoided serving any time in conventional prisons.\nThe Farc would also have been guaranteed 10 seats in the Colombian Congress in the 2018 and 2022 elections.\nDespite the rejection by voters, Mr Santos vowed to continue with talks with the rebels.\nGovernment negotiators have already returned to the Cuban capital Havana for further discussions with Farc leaders.\nKaci Kullman Five, from the Nobel committee, said the award was also meant as \"encouragement\" to the rebels.\n\"Giving the prize to Santos is not a belittlement to any of the other parties.\n\"The Farc is obviously a very important part of this process.''\n1964: Set up as armed wing of Communist Party\n2002: At its height, it had an army of 20,000 fighters controlling up to a third of the country. Senator Ingrid Betancourt was kidnapped and held for six years along with 14 other hostages\n2008: The Farc suffers a series of defeats in its worst year\n2012: Start of peace talks in Havana\n2016: Definitive ceasefire\nFull timeline of Farc conflict\nMr Santos was selected from a list of 376 candidates - 228 were individuals and 148 were organisations. They included:\nThe main candidates for the 2016 Nobel Peace Prize\nWhy are Nobel laureates getting older?\nWinners throughout the years",
+    "reference": "Colombian President Juan Manuel Santos has been awarded the Nobel Peace Prize for his efforts to end the 52-year conflict with left-wing rebels.",
+    "prediction": "Colombian President Juan Manuel Santos has won the 2016 Nobel Peace Prize for his efforts to end more than six decades of armed conflict.",
+    "entities": [
+      {
+        "ent": "more than six decades",
+        "type": "DATE",
+        "start": 97,
+        "end": 118,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The Nobel committee praised him for a peace deal signed with Farc rebels, but rejected by Colombians in a vote.\nMr Santos said he dedicated the award to \"all the victims of the conflict\", and the Farc leader congratulated him.\nAbout 260,000 people have been killed and more than six million internally displaced in Colombia.\nThe award did not include Farc leader Rodrigo Londono, known as Timochenko, who also signed the accord.\nThe head of the Nobel commitee said the award recognised the president's \"resolute efforts\" to end the conflict.\n\"The award should also be seen as a tribute to the Colombian people who, despite great hardships and abuses, have not given up hope of a just peace, and to all the  parties who have contributed to the peace process,\" Kaci Kullman Five added.\nSources: BBC Monitoring, Colombian presidency\nMr Santos said on Twitter: \"This honourable distinction is not for me, it's for all the victims of the conflict. Together we'll win the most important award of them all: peace.\"\nThe peace deal was rejected by 50.2% of voters who went to the polls on 2 October.\nThe committee acknowledged the result, saying: \"What the 'No' side rejected was not the desire for peace, but a specific peace agreement.\"\nIt also said that finding a balance between the need for reconciliation and ensuring justice for the victims would be a difficult challenge.\nAlso on Twitter, Farc leader Timochenko said: \"I congratulate President Juan Manuel Santos, Cuba and Norway, who sponsored the process, and Venezuela and Chile, who assisted it, without them, peace would be impossible.\"\nEarlier, he had written: \"The only prize we aspire to is peace with social justice for Colombia, without (right-wing) paramilitary groups, without retaliation or lies. Peace in the streets.\"\nThis was a Peace Prize for a peace deal that wasn't. President Santos joins a long line of Nobel Peace Prize winners who have been rewarded for effort as much as achievement.\nBut it is too easy to be cynical. The Nobel Peace Prize has often been controversial. In recent years a variety of international bureaucracies have won - the EU, the IAEA and the OPCW.\nWhy, some have argued, should people get a prize for simply doing their job? What, others ask, had US President Barack Obama actually done to merit the prize in 2009, other than be elected?\nBut the Nobel has often gone to extraordinary individuals who really have gone above and beyond to bring peace - in Northern Ireland and East Timor to name just two examples. Maybe the award to President Santos may yet galvanise public opinion in Colombia to think again about the deal.\nCritics, led by former president Alvaro Uribe, said the deal was too lenient to the rebels.\nUnder the agreement, special courts would have been created to try crimes committed during the conflict.\nThose who confessed would have received lighter sentences and avoided serving any time in conventional prisons.\nThe Farc would also have been guaranteed 10 seats in the Colombian Congress in the 2018 and 2022 elections.\nDespite the rejection by voters, Mr Santos vowed to continue with talks with the rebels.\nGovernment negotiators have already returned to the Cuban capital Havana for further discussions with Farc leaders.\nKaci Kullman Five, from the Nobel committee, said the award was also meant as \"encouragement\" to the rebels.\n\"Giving the prize to Santos is not a belittlement to any of the other parties.\n\"The Farc is obviously a very important part of this process.''\n1964: Set up as armed wing of Communist Party\n2002: At its height, it had an army of 20,000 fighters controlling up to a third of the country. Senator Ingrid Betancourt was kidnapped and held for six years along with 14 other hostages\n2008: The Farc suffers a series of defeats in its worst year\n2012: Start of peace talks in Havana\n2016: Definitive ceasefire\nFull timeline of Farc conflict\nMr Santos was selected from a list of 376 candidates - 228 were individuals and 148 were organisations. They included:\nThe main candidates for the 2016 Nobel Peace Prize\nWhy are Nobel laureates getting older?\nWinners throughout the years",
+    "reference": "Colombian President Juan Manuel Santos has been awarded the Nobel Peace Prize for his efforts to end the 52-year conflict with left-wing rebels.",
+    "prediction": "Colombian President Juan Manuel Santos has been awarded the 2016 Nobel Peace Prize for his efforts to end the country's 52-year armed conflict.",
+    "entities": [
+      {
+        "ent": "52-year",
+        "type": "DATE",
+        "start": 120,
+        "end": 127,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
         "label": "Factual Hallucination"
       }
     ]
@@ -1119,6 +1567,69 @@
         "start": 78,
         "end": 87,
         "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The 29-year-old's body was discovered at the DoubleTree by Hilton on Eastfield Road on Saturday at about 19:25.\nEmergency services were called but the man was pronounced dead at the scene.\nA Police Scotland spokeswoman said: \"Inquiries are currently ongoing, however the death is not being treated as suspicious.\"\nA report will be sent to the procurator fiscal.",
+    "reference": "A man has been found dead in the swimming pool of a hotel near Edinburgh Airport.",
+    "prediction": "Police have said the death of a man at a hotel in Dundee is not being treated as suspicious.",
+    "entities": [
+      {
+        "ent": "Dundee",
+        "type": "GPE",
+        "start": 50,
+        "end": 56,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The 29-year-old's body was discovered at the DoubleTree by Hilton on Eastfield Road on Saturday at about 19:25.\nEmergency services were called but the man was pronounced dead at the scene.\nA Police Scotland spokeswoman said: \"Inquiries are currently ongoing, however the death is not being treated as suspicious.\"\nA report will be sent to the procurator fiscal.",
+    "reference": "A man has been found dead in the swimming pool of a hotel near Edinburgh Airport.",
+    "prediction": "Police have said the death of a man at a hotel in Aberdeen is not being treated as suspicious.",
+    "entities": [
+      {
+        "ent": "Aberdeen",
+        "type": "GPE",
+        "start": 50,
+        "end": 58,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The 29-year-old's body was discovered at the DoubleTree by Hilton on Eastfield Road on Saturday at about 19:25.\nEmergency services were called but the man was pronounced dead at the scene.\nA Police Scotland spokeswoman said: \"Inquiries are currently ongoing, however the death is not being treated as suspicious.\"\nA report will be sent to the procurator fiscal.",
+    "reference": "A man has been found dead in the swimming pool of a hotel near Edinburgh Airport.",
+    "prediction": "Police have said the death of a man at a hotel in Glasgow is not being treated as suspicious.",
+    "entities": [
+      {
+        "ent": "Glasgow",
+        "type": "GPE",
+        "start": 50,
+        "end": 57,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The 29-year-old's body was discovered at the DoubleTree by Hilton on Eastfield Road on Saturday at about 19:25.\nEmergency services were called but the man was pronounced dead at the scene.\nA Police Scotland spokeswoman said: \"Inquiries are currently ongoing, however the death is not being treated as suspicious.\"\nA report will be sent to the procurator fiscal.",
+    "reference": "A man has been found dead in the swimming pool of a hotel near Edinburgh Airport.",
+    "prediction": "Police have said the death of a man at a hotel in Dundonald is not being treated as suspicious.",
+    "entities": [
+      {
+        "ent": "Dundonald",
+        "type": "GPE",
+        "start": 50,
+        "end": 59,
+        "in_source": false,
+        "predicted_label": "Factual Hallucination",
         "label": "Non-factual Hallucination"
       }
     ]
@@ -1199,6 +1710,70 @@
     ]
   },
   {
+    "source": "The 26-year-old fly-half has agreed a new deal which could keep him in Wales until the 2019 World Cup.\nWilliams, who played 100 times for Wales, believes it will help Ospreys keep and recruit players.\n\"It's fabulous news for Welsh rugby and the Ospreys in particular,\" he said on BBC Wales' Scrum V TV programme.\n\"Not only is Dan committing himself to Wales for the next four years, but it helps the Ospreys with recruitment for the next couple of seasons.\n\"If players were looking to sign and come to the Ospreys if they can see Dan Biggar is going to be there for the next three or four seasons that helps them as well.\"\nBiggar's current deal was due to expire at the end of this season.\nHe is the first of Wales' 17 dually contracted players to re-sign on the deals which are 60% funded by the WRU and 40% by the region.\nIn addition to potentially attracting new players to the region, Biggar's decision to stay may help negotiations with his Ospreys and Wales colleagues scrum-half Rhys Webb and second row Alun Wyn Jones.\nBoth players' contracts expire in the summer of 2016, with Ospreys skipper Jones saying in November that he was still weighing up his options.\nScarlets are in talks with Wales centre Scott Williams over extending his dual contract, and have secured the return of British and Irish Lions centre Jonathan Davies from Clermont Auvergne next season.",
+    "reference": "Dan Biggar's decision to renew his national dual contract is \"fabulous\" news for Wales and Ospreys, according to Martyn Williams.",
+    "prediction": "Dan Biggar's decision to sign a new four-year contract with Ospreys will help the region attract new players, says former Wales captain Ashley Williams.",
+    "entities": [
+      {
+        "ent": "Ashley",
+        "type": "PERSON",
+        "start": 136,
+        "end": 142,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The 26-year-old fly-half has agreed a new deal which could keep him in Wales until the 2019 World Cup.\nWilliams, who played 100 times for Wales, believes it will help Ospreys keep and recruit players.\n\"It's fabulous news for Welsh rugby and the Ospreys in particular,\" he said on BBC Wales' Scrum V TV programme.\n\"Not only is Dan committing himself to Wales for the next four years, but it helps the Ospreys with recruitment for the next couple of seasons.\n\"If players were looking to sign and come to the Ospreys if they can see Dan Biggar is going to be there for the next three or four seasons that helps them as well.\"\nBiggar's current deal was due to expire at the end of this season.\nHe is the first of Wales' 17 dually contracted players to re-sign on the deals which are 60% funded by the WRU and 40% by the region.\nIn addition to potentially attracting new players to the region, Biggar's decision to stay may help negotiations with his Ospreys and Wales colleagues scrum-half Rhys Webb and second row Alun Wyn Jones.\nBoth players' contracts expire in the summer of 2016, with Ospreys skipper Jones saying in November that he was still weighing up his options.\nScarlets are in talks with Wales centre Scott Williams over extending his dual contract, and have secured the return of British and Irish Lions centre Jonathan Davies from Clermont Auvergne next season.",
+    "reference": "Dan Biggar's decision to renew his national dual contract is \"fabulous\" news for Wales and Ospreys, according to Martyn Williams.",
+    "prediction": "Dan Biggar's decision to sign a new four-year contract with Ospreys will help the region attract new players, according to former Wales captain Gareth Williams.",
+    "entities": [
+      {
+        "ent": "Gareth",
+        "type": "PERSON",
+        "start": 144,
+        "end": 150,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The 26-year-old fly-half has agreed a new deal which could keep him in Wales until the 2019 World Cup.\nWilliams, who played 100 times for Wales, believes it will help Ospreys keep and recruit players.\n\"It's fabulous news for Welsh rugby and the Ospreys in particular,\" he said on BBC Wales' Scrum V TV programme.\n\"Not only is Dan committing himself to Wales for the next four years, but it helps the Ospreys with recruitment for the next couple of seasons.\n\"If players were looking to sign and come to the Ospreys if they can see Dan Biggar is going to be there for the next three or four seasons that helps them as well.\"\nBiggar's current deal was due to expire at the end of this season.\nHe is the first of Wales' 17 dually contracted players to re-sign on the deals which are 60% funded by the WRU and 40% by the region.\nIn addition to potentially attracting new players to the region, Biggar's decision to stay may help negotiations with his Ospreys and Wales colleagues scrum-half Rhys Webb and second row Alun Wyn Jones.\nBoth players' contracts expire in the summer of 2016, with Ospreys skipper Jones saying in November that he was still weighing up his options.\nScarlets are in talks with Wales centre Scott Williams over extending his dual contract, and have secured the return of British and Irish Lions centre Jonathan Davies from Clermont Auvergne next season.",
+    "reference": "Dan Biggar's decision to renew his national dual contract is \"fabulous\" news for Wales and Ospreys, according to Martyn Williams.",
+    "prediction": "Dan Biggar's decision to sign a new four-year contract with Ospreys will help the region attract new players, according to former Wales captain Marti Williams.",
+    "entities": [
+      {
+        "ent": "Marti",
+        "type": "PERSON",
+        "start": 144,
+        "end": 149,
+        "in_source": false,
+        "predicted_label": "Factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The 26-year-old fly-half has agreed a new deal which could keep him in Wales until the 2019 World Cup.\nWilliams, who played 100 times for Wales, believes it will help Ospreys keep and recruit players.\n\"It's fabulous news for Welsh rugby and the Ospreys in particular,\" he said on BBC Wales' Scrum V TV programme.\n\"Not only is Dan committing himself to Wales for the next four years, but it helps the Ospreys with recruitment for the next couple of seasons.\n\"If players were looking to sign and come to the Ospreys if they can see Dan Biggar is going to be there for the next three or four seasons that helps them as well.\"\nBiggar's current deal was due to expire at the end of this season.\nHe is the first of Wales' 17 dually contracted players to re-sign on the deals which are 60% funded by the WRU and 40% by the region.\nIn addition to potentially attracting new players to the region, Biggar's decision to stay may help negotiations with his Ospreys and Wales colleagues scrum-half Rhys Webb and second row Alun Wyn Jones.\nBoth players' contracts expire in the summer of 2016, with Ospreys skipper Jones saying in November that he was still weighing up his options.\nScarlets are in talks with Wales centre Scott Williams over extending his dual contract, and have secured the return of British and Irish Lions centre Jonathan Davies from Clermont Auvergne next season.",
+    "reference": "Dan Biggar's decision to renew his national dual contract is \"fabulous\" news for Wales and Ospreys, according to Martyn Williams.",
+    "prediction": "Dan Biggar's decision to sign a new four-year contract with Ospreys will help the region attract new players, according to former Wales captain Marton Williams.",
+    "entities": [
+      {
+        "ent": "Marton",
+        "type": "PERSON",
+        "start": 144,
+        "end": 150,
+        "in_source": false,
+        "predicted_label": "Factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
     "source": "Hernandez, 24, has signed a three-year deal, which the Tigers have the option of extending for a further 12 months.\nHull's previous record transfer outlay was the \u00a38m they paid Tottenham for midfielder Jake Livermore in June.\nThey also completed the signings of midfielders Mohamed Diame from West Ham and Gaston Ramirez from Southampton.\nHernandez has scored seven goals in 14 matches for Uruguay and made two appearances at the 2014 Fifa World Cup.\nTigers boss Steve Bruce said: \"Abel is a fantastic signing and highlights just how far the club has come in such a short space of time.\n\"He is an exciting talent and, like myself, I'm sure the supporters can't wait to see him in action.\"\nHernandez, who scored 14 goals in 28 appearances to help Palermo win promotion to Italy's Serie A last season, arrives following the \u00a312m sale of Shane Long to Southampton.\nHis signing takes Hull's summer spending beyond \u00a330m.\nBen Arfa, a 27-year-old France international winger, has spent the past three seasons on Tyneside, having joined the Magpies from Marseille in January 2011 following a successful loan spell.\n\"Hatem is a superb addition to the squad, and brings a lot of attacking flair,\" said manager Steve Bruce.\nBen Arfa made 86 appearances for Newcastle, scoring 14 goals.",
     "reference": "Hull City have signed Uruguay striker Abel Hernandez from Palermo for a club-record \u00a310m fee, while Hatem Ben Arfa has joined on loan from Newcastle.",
     "prediction": "Hull City have completed the signing of forward Abel Hernandez from Palermo and winger Hatem Ben Arfa from Newcastle United for a club record fee.",
@@ -1225,6 +1800,46 @@
         "end": 47,
         "in_source": false,
         "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "Police said he was James Gunn, from Stromness.\nMr Gunn's white Ford Focus crashed on the A967 at Garson Farm, Shandwick, on Saturday morning.\nPolice have appealed for anyone who saw the car between Stromness and Twatt from 04:15 to 05:30 to come forward.",
+    "reference": "A 32-year-old man who died after his car crashed on Orkney has been named.",
+    "prediction": "A 23-year-old man has died in a car crash in the Scottish Borders.",
+    "entities": [
+      {
+        "ent": "23-year-old",
+        "type": "DATE",
+        "start": 2,
+        "end": 13,
+        "in_source": false,
+        "label": "Non-factual Hallucination"
+      },
+      {
+        "ent": "the Scottish Borders",
+        "type": "LOC",
+        "start": 45,
+        "end": 65,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "Police said he was James Gunn, from Stromness.\nMr Gunn's white Ford Focus crashed on the A967 at Garson Farm, Shandwick, on Saturday morning.\nPolice have appealed for anyone who saw the car between Stromness and Twatt from 04:15 to 05:30 to come forward.",
+    "reference": "A 32-year-old man who died after his car crashed on Orkney has been named.",
+    "prediction": "A man who died after his car crashed into a tree in Cumbria has been named by police.",
+    "entities": [
+      {
+        "ent": "Cumbria",
+        "type": "GPE",
+        "start": 52,
+        "end": 59,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
       }
     ]
   },
@@ -1274,6 +1889,22 @@
     ]
   },
   {
+    "source": "It was written to author Betty Shew by the 21-year-old princess in 1947, months before her marriage.\nThe two-page note describes how the couple met, were chased by a photographer in Prince Philip's sports car and danced at London nightclubs.\nIt was given a pre-auction estimate of \u00a3800 to \u00a31,200 but sold for \u00a314,400.\nDescribing it as a \"fantastic result\", Richard Edmonds of the Chippenham Auction Rooms in Wiltshire said: \"It was quite an honour to be able to sell such an important document, particularly as the country is celebrating the Queen's 90th birthday.\n\"The bidding was both online and over eight phone lines. It was pretty fast and furious. At times our internet connection looked like it was lighting up.\"\nThe identity of the buyer has not been disclosed.\nThe then Princess Elizabeth agreed to share the details of her relationship with Philip, for a royal wedding souvenir book being written by Mrs Shew.\nIn the letter, written in ink on white paper adorned with the royal crest, the princess recalls how she met Prince Philip at the age of 13, describes his love of fast cars and how the couple danced at nightclubs Ciro's and Quaglino's in London.\nThe future Queen also writes about her wedding ring, which she says will be made of Welsh gold.\nShe and Prince Philip married in November 1947 at Westminster Abbey, the same location as her coronation in June 1953.",
+    "reference": "A letter written by the Queen revealing how she and Prince Philip first fell in love attracted \"furious\" bidding as it smashed pre-auction estimates.",
+    "prediction": "A letter written by Princess Elizabeth describing her relationship with Prince Philip has sold at auction for more than \u00a320,000.",
+    "entities": [
+      {
+        "ent": "more than \u00a320,000",
+        "type": "MONEY",
+        "start": 110,
+        "end": 127,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
     "source": "The Orlando City midfielder, 34, will replace Bayern Munich's Douglas Costa, who was removed from the squad because of an injury to his left thigh.\nEx-AC Milan and Real Madrid player Kaka has been a regular in coach Dunga's squads, without getting much game time.\nHe has won 91 caps and scored 29 goals, but has only played 60 minutes for his country in three years.\nKaka is the second player to be added to the squad because of injury, with Benfica's Jonas replacing Santos striker Ricardo Oliveira.\nBrazil have been drawn in Group B with Ecuador, Haiti and Peru for the tournament, which is staging a special 100th anniversary edition.\nSubscribe to the BBC Sport newsletter to get our pick of news, features and video sent to your inbox.",
     "reference": "Kaka has been called up to the Brazil squad for next month's Copa America in the United States.",
     "prediction": "Kaka has been called up to the Brazil squad for the Copa America next month.",
@@ -1308,6 +1939,22 @@
         "end": 81,
         "in_source": false,
         "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The Orlando City midfielder, 34, will replace Bayern Munich's Douglas Costa, who was removed from the squad because of an injury to his left thigh.\nEx-AC Milan and Real Madrid player Kaka has been a regular in coach Dunga's squads, without getting much game time.\nHe has won 91 caps and scored 29 goals, but has only played 60 minutes for his country in three years.\nKaka is the second player to be added to the squad because of injury, with Benfica's Jonas replacing Santos striker Ricardo Oliveira.\nBrazil have been drawn in Group B with Ecuador, Haiti and Peru for the tournament, which is staging a special 100th anniversary edition.\nSubscribe to the BBC Sport newsletter to get our pick of news, features and video sent to your inbox.",
+    "reference": "Kaka has been called up to the Brazil squad for next month's Copa America in the United States.",
+    "prediction": "Brazil have added Kaka to their squad for next month's Under-20 World Cup in South Africa.",
+    "entities": [
+      {
+        "ent": "South Africa",
+        "type": "GPE",
+        "start": 77,
+        "end": 89,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
       }
     ]
   },
@@ -1367,6 +2014,54 @@
         "start": 84,
         "end": 112,
         "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The route between Edinburgh and Tweedbank had been hit by delays and cancellations.\nScotRail apologised for the problems and said buses had been organised to supplement the trains that could run.\nMore minor disruption on the route between the Borders and Edinburgh was cleared by about 16:00.",
+    "reference": "Services on the Borders Railway are \"running as normal\" after severe disruption due to signalling problems.",
+    "prediction": "Rail passengers on the Borders to Edinburgh line have been told to expect delays of up to an hour and a half.",
+    "entities": [
+      {
+        "ent": "up to an hour and a half",
+        "type": "TIME",
+        "start": 84,
+        "end": 108,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The route between Edinburgh and Tweedbank had been hit by delays and cancellations.\nScotRail apologised for the problems and said buses had been organised to supplement the trains that could run.\nMore minor disruption on the route between the Borders and Edinburgh was cleared by about 16:00.",
+    "reference": "Services on the Borders Railway are \"running as normal\" after severe disruption due to signalling problems.",
+    "prediction": "Rail passengers on the Borders to Edinburgh line have been able to return to their homes after a day of disruption.",
+    "entities": [
+      {
+        "ent": "a day",
+        "type": "DATE",
+        "start": 95,
+        "end": 100,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The route between Edinburgh and Tweedbank had been hit by delays and cancellations.\nScotRail apologised for the problems and said buses had been organised to supplement the trains that could run.\nMore minor disruption on the route between the Borders and Edinburgh was cleared by about 16:00.",
+    "reference": "Services on the Borders Railway are \"running as normal\" after severe disruption due to signalling problems.",
+    "prediction": "Rail passengers on the Borders to Edinburgh line have been told to expect delays of up to two hours.",
+    "entities": [
+      {
+        "ent": "up to two hours",
+        "type": "TIME",
+        "start": 84,
+        "end": 99,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
         "label": "Non-factual Hallucination"
       }
     ]
@@ -1432,6 +2127,97 @@
     ]
   },
   {
+    "source": "Some of the men come from families with close links to the government. One has escaped from custody.\nThe victim, Zouhoura, is the daughter of an opposition leader and was threatened with death if she spoke about the attack.\nA video of her rape sparked a wave of protests in Chad in February.\nAfrica Live: More on this and other news stories",
+    "reference": "Seven men have been sentenced to 10 years for the rape and kidnapping a schoolgirl in the Chadian capital, Ndjamena.",
+    "prediction": "Police in Chad say they have arrested more than 30 men in connection with the rape of a 15-year-old girl.",
+    "entities": [
+      {
+        "ent": "more than 30",
+        "type": "CARDINAL",
+        "start": 38,
+        "end": 50,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      },
+      {
+        "ent": "15-year-old",
+        "type": "DATE",
+        "start": 88,
+        "end": 99,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "Some of the men come from families with close links to the government. One has escaped from custody.\nThe victim, Zouhoura, is the daughter of an opposition leader and was threatened with death if she spoke about the attack.\nA video of her rape sparked a wave of protests in Chad in February.\nAfrica Live: More on this and other news stories",
+    "reference": "Seven men have been sentenced to 10 years for the rape and kidnapping a schoolgirl in the Chadian capital, Ndjamena.",
+    "prediction": "Police in Chad say they have arrested more than 20 men in connection with the rape of an 18-year-old woman last year.",
+    "entities": [
+      {
+        "ent": "more than 20",
+        "type": "CARDINAL",
+        "start": 38,
+        "end": 50,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      },
+      {
+        "ent": "18-year-old",
+        "type": "DATE",
+        "start": 89,
+        "end": 100,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      },
+      {
+        "ent": "last year",
+        "type": "DATE",
+        "start": 107,
+        "end": 116,
+        "in_source": false,
+        "predicted_label": "Factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "Some of the men come from families with close links to the government. One has escaped from custody.\nThe victim, Zouhoura, is the daughter of an opposition leader and was threatened with death if she spoke about the attack.\nA video of her rape sparked a wave of protests in Chad in February.\nAfrica Live: More on this and other news stories",
+    "reference": "Seven men have been sentenced to 10 years for the rape and kidnapping a schoolgirl in the Chadian capital, Ndjamena.",
+    "prediction": "Police in Chad say they have arrested more than 100 men in connection with the rape of a young woman in February.",
+    "entities": [
+      {
+        "ent": "more than 100",
+        "type": "CARDINAL",
+        "start": 38,
+        "end": 51,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "Some of the men come from families with close links to the government. One has escaped from custody.\nThe victim, Zouhoura, is the daughter of an opposition leader and was threatened with death if she spoke about the attack.\nA video of her rape sparked a wave of protests in Chad in February.\nAfrica Live: More on this and other news stories",
+    "reference": "Seven men have been sentenced to 10 years for the rape and kidnapping a schoolgirl in the Chadian capital, Ndjamena.",
+    "prediction": "Police in Chad say they have arrested more than 50 men in connection with the rape of a young woman in February.",
+    "entities": [
+      {
+        "ent": "more than 50",
+        "type": "CARDINAL",
+        "start": 38,
+        "end": 50,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
     "source": "About 50 arrived in the city in May and the families have spent the last three months settling in to their new lives.\nA total of 98 refugees have now arrived in Northern Ireland since the conflict. The first group of Syrian refugees arrived in December 2015.\nThe war in Syria has claimed the lives of more than 250,000 people.\nSome of the refugees in Derry were at the North West Regional College on Tuesday to find out more about learning courses.\nBayan Khello, 18, had to leave many of her family behind including her brother who is currently in Germany.\nBayan spoke to BBC Radio Foyle through an interpreter.\n\"I still have family in Turkey and Aleppo, the sons of my cousin are still there, we have put in an application to have our family unified here.\n\"My uncle and my cousin were killed in the war. My cousin was going back from his work when a sniper shot him in the chest. That was one of my worst days,\" she said.\nBayan, who wears a free Syria wristband in the colours of her native country, said she did not want to leave her home.\n\"I didn't want to leave Aleppo, I wasn't eating for two months. Then my father told me 'We have to live our life now, we have to make a new start'.\n\"I saw houses knocked down with children underneath, its time to end this war, its enough.\"\nBayan, who has a degree in accountancy, said she does not yet know what kind of life she will have in Northern Ireland, but she wants to study hard and learn English.\nYasser Al Satton left his home in Syria after chemical weapons were used in the area.\n\"Within the last month the house of one my relations was bombed and ten people were killed.\n\"Everything that comes to your mind, we lived it and we saw it. One of my relation's lost both of his hands when a bomb exploded.\n\"If we had hope that the war would end we would have stayed but I don't believe the war will end,\" he said.\nYasser said that he was adjusting to his new life in the North West very well.\nA particular highlight was how friendly the people of Derry have been.\n\"Everybody says: 'Hello, how are you, how are you doing, what's the craic?\" he added.",
     "reference": "A group of Syrian refugees living in Londonderry have spoken for the first time about what life was like in their war-torn country.",
     "prediction": "The second group of Syrian refugees have arrived in Londonderry.",
@@ -1458,6 +2244,95 @@
         "end": 17,
         "in_source": false,
         "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The referee was happy with conditions when he arrived at 11:00 GMT, but the situation deteriorated and he called the game off after a 13:00 inspection.\n\"The persistent rainfall over the last 18 hours has meant that the pitch is unfit and the referee had no choice,\" said Oldham chief executive Neil Joy.\nNo date has yet been agreed for the rearranged fixture.",
+    "reference": "The League One match between Oldham and Blackpool has been postponed because of a waterlogged pitch.",
+    "prediction": "Saturday's League One game between Oldham Athletic and Wycombe Wanderers has been postponed because of a waterlogged pitch.",
+    "entities": [
+      {
+        "ent": "League One",
+        "type": "ORG",
+        "start": 11,
+        "end": 21,
+        "in_source": false,
+        "predicted_label": "Factual Hallucination",
+        "label": "Factual Hallucination"
+      },
+      {
+        "ent": "Wycombe Wanderers",
+        "type": "ORG",
+        "start": 55,
+        "end": 72,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The referee was happy with conditions when he arrived at 11:00 GMT, but the situation deteriorated and he called the game off after a 13:00 inspection.\n\"The persistent rainfall over the last 18 hours has meant that the pitch is unfit and the referee had no choice,\" said Oldham chief executive Neil Joy.\nNo date has yet been agreed for the rearranged fixture.",
+    "reference": "The League One match between Oldham and Blackpool has been postponed because of a waterlogged pitch.",
+    "prediction": "Saturday's League One game between Oldham Athletic and Rochdale has been postponed because of a waterlogged pitch.",
+    "entities": [
+      {
+        "ent": "Rochdale",
+        "type": "GPE",
+        "start": 55,
+        "end": 63,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The referee was happy with conditions when he arrived at 11:00 GMT, but the situation deteriorated and he called the game off after a 13:00 inspection.\n\"The persistent rainfall over the last 18 hours has meant that the pitch is unfit and the referee had no choice,\" said Oldham chief executive Neil Joy.\nNo date has yet been agreed for the rearranged fixture.",
+    "reference": "The League One match between Oldham and Blackpool has been postponed because of a waterlogged pitch.",
+    "prediction": "Saturday's League One game between Oldham and Barnsley has been postponed because of a waterlogged pitch.",
+    "entities": [
+      {
+        "ent": "Barnsley",
+        "type": "GPE",
+        "start": 46,
+        "end": 54,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The referee was happy with conditions when he arrived at 11:00 GMT, but the situation deteriorated and he called the game off after a 13:00 inspection.\n\"The persistent rainfall over the last 18 hours has meant that the pitch is unfit and the referee had no choice,\" said Oldham chief executive Neil Joy.\nNo date has yet been agreed for the rearranged fixture.",
+    "reference": "The League One match between Oldham and Blackpool has been postponed because of a waterlogged pitch.",
+    "prediction": "Saturday's League One game between Oldham and Southend United has been postponed because of a waterlogged pitch.",
+    "entities": [
+      {
+        "ent": "Southend United",
+        "type": "GPE",
+        "start": 46,
+        "end": 61,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The referee was happy with conditions when he arrived at 11:00 GMT, but the situation deteriorated and he called the game off after a 13:00 inspection.\n\"The persistent rainfall over the last 18 hours has meant that the pitch is unfit and the referee had no choice,\" said Oldham chief executive Neil Joy.\nNo date has yet been agreed for the rearranged fixture.",
+    "reference": "The League One match between Oldham and Blackpool has been postponed because of a waterlogged pitch.",
+    "prediction": "Saturday's League One game between Oldham and Wigan has been postponed because of a waterlogged pitch.",
+    "entities": [
+      {
+        "ent": "Wigan",
+        "type": "ORG",
+        "start": 46,
+        "end": 51,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
       }
     ]
   },
@@ -1545,6 +2420,38 @@
     ]
   },
   {
+    "source": "Nine men were arrested over a pitch invasion and flares being thrown during City's 3-0 loss at Sixfields.\nThe club has said that the \"repeated disruptions\" were \"unacceptable\".\nA Sky Blue Trust statement said: \"We do not condone anti-social and illegal acts such as the throwing of smoke bombs and multiple pitch invasions.\"\nThe statement continued: \"We do understand, however, that it was entirely the result of frustration and desperation and that many supporters are simply at the end of their tethers feeling powerless and ignored.\n\"While peaceful protests and petitions have attracted national attention and sympathy, they have seemingly been ignored by Sisu and [chairman] Tim Fisher and this once great club is in now in total disarray and turmoil.\n\"The scenes were ugly but borne of desperation and passion. The Trust urges all fans to keep any protests lawful and ensure these scenes are not be repeated.\"\nCoventry fans have held a number of protests against the club's owners this season, with December's EFL Trophy second round win over Crawley attracting a record-low home crowd.\nThe Sky Blues are without a League One victory since 1 November and have only won four times all season.",
+    "reference": "A Coventry City fans' trust says disruption at Saturday's defeat by Northampton was caused by \"desperation\" with the club's owners, Sisu.",
+    "prediction": "Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts, following the pitch invasion during Sunday's League One defeat by MK Dons.",
+    "entities": [
+      {
+        "ent": "Sunday",
+        "type": "DATE",
+        "start": 129,
+        "end": 135,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "Nine men were arrested over a pitch invasion and flares being thrown during City's 3-0 loss at Sixfields.\nThe club has said that the \"repeated disruptions\" were \"unacceptable\".\nA Sky Blue Trust statement said: \"We do not condone anti-social and illegal acts such as the throwing of smoke bombs and multiple pitch invasions.\"\nThe statement continued: \"We do understand, however, that it was entirely the result of frustration and desperation and that many supporters are simply at the end of their tethers feeling powerless and ignored.\n\"While peaceful protests and petitions have attracted national attention and sympathy, they have seemingly been ignored by Sisu and [chairman] Tim Fisher and this once great club is in now in total disarray and turmoil.\n\"The scenes were ugly but borne of desperation and passion. The Trust urges all fans to keep any protests lawful and ensure these scenes are not be repeated.\"\nCoventry fans have held a number of protests against the club's owners this season, with December's EFL Trophy second round win over Crawley attracting a record-low home crowd.\nThe Sky Blues are without a League One victory since 1 November and have only won four times all season.",
+    "reference": "A Coventry City fans' trust says disruption at Saturday's defeat by Northampton was caused by \"desperation\" with the club's owners, Sisu.",
+    "prediction": "Coventry City's Supporters' Trust has said it does not condone anti-social and illegal acts following the pitch invasion during the club's defeat by MK Dons on Boxing Day.",
+    "entities": [
+      {
+        "ent": "Boxing Day",
+        "type": "DATE",
+        "start": 160,
+        "end": 170,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
     "source": "Gaiman's fantasy novel beat fellow National Book Award winners including Kate Atkinson and David Walliams.\nThe tale about a man returning to his childhood home for a funeral won the public vote from a shortlist of this year's 10 National Book Award winners.\nThe graphic novelist said he was \"amazed and thrilled\".\n\"I've never written a book before that was so close to my own heart - a story about memory and magic and the fear and danger of being a child,\" said Gaiman.\n\"I wasn't sure that anyone else would like it.\n\"I'm amazed and thrilled that so many other people have read it, loved it, and made their friends read it too.\n\"Winning a National Book Award was thrilling; discovering that the public have made The Ocean at the End of the Lane their Book of the Year is somewhere out beyond wonderful. Thank you to everyone who voted.\"\n'Dedication'\nGaiman's novel had already won in the Audiobook of the Year category.\nThe book secured the public vote from a shortlist including Gillian Flynn's bestseller Gone Girl, David Jason's My Life and schoolgirl Malala Yousafzai's I Am Malala to win the Book of the Year title.\nOnline voting for the title, the only book award chosen by readers, closed on 19 December.\nLast year's winner was EL James' raunchy blockbuster Fifty Shades of Grey, while Caitlin Moran's How To Be A Woman and David Nicholls' romantic novel One Day have also taken the prize.\nDame Mary Perkins, founder of the award's sponsors Specsavers, congratulated Gaiman on \"this fantastic award\".\n\"The competition was tough but to be chosen by members of the public as well as your industry peers truly is a tribute to hard work, dedication and creativity,\" she said.\nGaiman made his name writing graphic novels including The Sandman series and Coraline. He has penned two recent Doctor Who episodes featuring Matt Smith and is currently writing a prequel to The Sandman. A TV series of his book American Gods is in development.",
     "reference": "Neil Gaiman's The Ocean at the End of the Lane has been voted 2013's Book of the Year, winning the public vote \"by a considerable margin\".",
     "prediction": "Neil Gaiman's novel The Ocean at the End of the Lane has been named the UK's Book of the Year.",
@@ -1615,6 +2522,22 @@
         "start": 71,
         "end": 77,
         "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "Holdsworth, 47, beat takeover offers from banker Roger Tamraz and Bolton Wanderers Supporters' Trust.\nThe club, owned by Eddie Davies, are \u00a3172.9m in debt and have been trying to find a buyer for a number of months.\nThe Championship strugglers are scheduled in the High Court on Monday over a \u00a33m unpaid tax bill.\nIt is hoped the takeover will soon be completed as Wanderers must let the High Court know by 19 February if they are going to enter administration, and also prove they have funds to continue trading.\nFormer Wimbledon and Brentford forward Holdsworth spent six seasons at Bolton, scoring 52 goals in 188 appearances.\nBBC Radio Manchester also understands the sale of the Trotters' training ground at Euxton has yet to be finalised, with League One side Wigan making an approach.",
+    "reference": "Bolton Wanderers have given preferred bidder status to former striker Dean Holdsworth's Sports Shield consortium, reports BBC Radio Manchester.",
+    "prediction": "Bolton Wanderers have agreed a deal to sell the club to ex-Trotters striker David Holdsworth, BBC Radio Manchester understands.",
+    "entities": [
+      {
+        "ent": "David",
+        "type": "PERSON",
+        "start": 76,
+        "end": 81,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
         "label": "Non-factual Hallucination"
       }
     ]
@@ -1695,6 +2618,22 @@
     ]
   },
   {
+    "source": "The horror starring Vera Farmiga and Patrick Wilson as paranormal investigators made $40.4m (\u00a328.5m).\nVideo game adaptation Warcraft came in second with $24.4m (\u00a317.2m) and crime caper Now You See Me 2 was at three, taking $23m (\u00a316.2m).\nTeenage Mutant Ninja Turtles dropped to four with $14.8m (\u00a310.4m).\nFollowing a spate of poor performing sequels such as The Huntsman: Winter's War, Alice Through the Looking Glass and Ride Along 2, The Conjuring 2 opened nearly on par with its 2013 original.\n\"There's seemingly been a spell cast over the second instalments and The Conjuring, I think, broke that spell,\" said Paul Dergarabedian, senior media analyst for Comscore.\n\"Just the overall quality won over the audience in a genre that's generally looked down upon from a critical perspective.''\nBig budget CGI extravaganza Warcraft, taken from the hit video game franchise, reportedly cost $160m (\u00a3112.8m) to make, so effectively bombed in the US financially as well as critically.\nHowever, it was a phenomenal success overseas, particularly in China where it made $156m (\u00a3110m) in its first five days, surpassing 2015's Avengers: Age of Ultron to set a new record for the biggest debut for a foreign release.\nThe game is particularly popular there, even spawning a theme park.\nThe magician crime caper Now You See Me 2, starring Jesse Eisenberg, Mark Ruffalo and Woody Harrelson, followed the disappointing trajectory of most recent sequels, dropping from its 2013 original opening debut of $29.4m (\u00a320.8) to $23m (\u00a316.2m).\nThe fifth Teenage Mutant Ninja Turtles movie, Out of the Shadows, fell to number four in only its second weekend.\nThe last movie in the franchise grossed nearly double in its opening weekend box office.\nRounding off the top five was X-Men: Apocalypse, taking $10m (\u00a37m) in a troubling third weekend.\nNext week sees the release of Pixar's Finding Nemo sequel, Finding Dory.",
+    "reference": "The Conjuring 2 has topped the North American box office chart in its first week of release, breaking a recent slump in success for movie sequels.",
+    "prediction": "The Conjuring 2 has topped the US and Canada box office for the second time in three weeks.",
+    "entities": [
+      {
+        "ent": "three weeks",
+        "type": "DATE",
+        "start": 79,
+        "end": 90,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
     "source": "It is a talent that helped him move from being bankrupt, aged 32, to becoming a multimillionaire by the time he was 48.\nAlong the way he created and sold best-selling upmarket crisps brand Tyrrells, and won a high-profile battle against supermarket giant Tesco.\nNow 56, and the founder and owner of Chase Vodka, a luxury version of the spirit made from potatoes grown on his farm, the serial entrepreneur says: \"People love stories, the real stories behind things.\n\"And the media was very important to me from the first days of Tyrrells.\n\"I was a guy who had been beaten up by the supermarkets, and people love to support the underdog.\"\nThe son of potato farmers who lived near the Herefordshire town of Leominster, Mr Chase bought the family farm from his dad when he was 20 after he \"managed to find a bank manager brave enough to lend me \u00a3200,000\".\nAs the cost of potatoes can rise and fall sharply, business was up and down for the next 12 years, until torrential rain in 1992 meant he couldn't harvest his crop, which he had to leave to rot in the fields.\nOverextended financially, the business collapsed, and Mr Chase had to file for bankruptcy. He says: \"I was very ashamed and embarrassed.\"\nAfter \"running away to Australia\" for a few months, he returned to Herefordshire, and was able to borrow funds to buy back the farm from the receivers, and start up in business again.\nThis time, to make extra money, he became a potato trader, buying spuds from a number of farms, and then selling them on to supermarkets.\nYet while he got himself back on his feet financially, Mr Chase says he became increasingly frustrated that supermarkets would reject potatoes that weren't \"cosmetically perfect\".\nHe adds: \"I'd send off 10 loads of spuds every day, and I'd be getting five back. It was very painful how the supermarkets were treating us farmers.\"\nMr Chase's life-changing moment came in 2002 when he found out that rejected potatoes were being bought up by the UK operation of US crisp-maker Kettle.\nAt the time Kettle was one of new companies making so-called \"posh crisps\", potato crisps which were cut a little thicker than the mass-market brands, and fried by hand.\nDespite having no crisp-making experience or knowledge, Mr Chase was convinced he could set up his own upmarket crisps brand.\nSo he phoned a few UK crisp-makers to ask if he could see how they did things, and all said \"no\". Undeterred, he flew out to the US and visited facilities in Pennsylvania and Colorado.\nReturning to the UK, he built a crisp-making facility at the family farm, and Tyrrells [taking its name from the property] was up and running six months later.\nQuick to tell his story to local newspapers to build up publicity, Mr Chase hit the road to spend two weeks visiting independent food shops across the UK with samples of his crisps.\nHe says: \"Tyrrells grew and grew very quickly, and it was a brilliant cash cow. We'd sell the bags to shops for \u00a31 and they would retail them for \u00a32. For us the net profit was 35%.\"\nSupermarkets such as Waitrose soon followed suit, but Mr Chase was adamant that he would not sell to the largest - Tesco - because he didn't like what he saw as the pressure it put on farmers to lower their prices.\nThen one day in 2006 a friend told him that Tesco was selling Tyrrells' crisps. It transpired that Tesco had been buying them on the grey market, and selling them below the recommended retail price.\nAn incensed Mr Chase demanded that Tesco stop selling them. After the supermarket refused, Mr Chase started a media campaign that included an appearance on BBC Radio 4's Today programme. Tesco then did back down.\nWith sales of Tyrrells crisps continuing to grow over the next few years, and annual turnover hitting \u00a314m, Mr Chase borrowed money from his bank to expand production. The condition the bank set was that he had to bring in a management team to help him run the business.\nMr Chase, who had previously been very hands on, and liked to help out with all parts of the business, says that bringing in new managers ultimately changed the business - to its detriment.\n\"We got to a stage where I didn't like where the business was going,\" he says. \"We were employing corporate people who were arranging meetings about more meetings.\"\nUnhappy with Tyrrells' new big business ethos, and going through a \"messy divorce\", Mr Chase - who was the sole shareholder - decided to sell up in 2008 to a private capital business for almost \u00a340m.\nLooking for a new business venture, and with the new owners of Tyrrells choosing to buy their potatoes from elsewhere, Mr Chase came up with the idea of turning his spuds into premium vodka.\nSo with money no longer a problem, he bought a distillation system, and Chase Vodka was born.\nAimed at the luxury end of the market, it retails for \u00a335 a bottle.\nWhile Mr Chase admits it isn't anywhere near as profitable as selling crisps, it appears to be very much a labour of love. And focused very much on exports, he spends a lot of time travelling the world to build up sales.\nAnd showing that he has lost little of his public relations skills, every year he flies influential barmen and women from around the world to visit his farm in Herefordshire to see how the potatoes are grown, and vodka is made.\nAlso now making a gin and a whisky, the Chase Distillery sells 10,000 bottles a week.\nMr Chase says: \"You have to tell people your story if you want to build your brand. But there has to be real DNA behind it if you want to be successful.\"",
     "reference": "For a Herefordshire potato farmer, William Chase is impressively savvy about the need for positive publicity, and the importance of telling a good story.",
     "prediction": "For a man who grew up on a potato farm in Herefordshire, Peter Chase has a natural knack for telling stories.",
@@ -1720,6 +2659,22 @@
         "start": 57,
         "end": 62,
         "in_source": false,
+        "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "It is a talent that helped him move from being bankrupt, aged 32, to becoming a multimillionaire by the time he was 48.\nAlong the way he created and sold best-selling upmarket crisps brand Tyrrells, and won a high-profile battle against supermarket giant Tesco.\nNow 56, and the founder and owner of Chase Vodka, a luxury version of the spirit made from potatoes grown on his farm, the serial entrepreneur says: \"People love stories, the real stories behind things.\n\"And the media was very important to me from the first days of Tyrrells.\n\"I was a guy who had been beaten up by the supermarkets, and people love to support the underdog.\"\nThe son of potato farmers who lived near the Herefordshire town of Leominster, Mr Chase bought the family farm from his dad when he was 20 after he \"managed to find a bank manager brave enough to lend me \u00a3200,000\".\nAs the cost of potatoes can rise and fall sharply, business was up and down for the next 12 years, until torrential rain in 1992 meant he couldn't harvest his crop, which he had to leave to rot in the fields.\nOverextended financially, the business collapsed, and Mr Chase had to file for bankruptcy. He says: \"I was very ashamed and embarrassed.\"\nAfter \"running away to Australia\" for a few months, he returned to Herefordshire, and was able to borrow funds to buy back the farm from the receivers, and start up in business again.\nThis time, to make extra money, he became a potato trader, buying spuds from a number of farms, and then selling them on to supermarkets.\nYet while he got himself back on his feet financially, Mr Chase says he became increasingly frustrated that supermarkets would reject potatoes that weren't \"cosmetically perfect\".\nHe adds: \"I'd send off 10 loads of spuds every day, and I'd be getting five back. It was very painful how the supermarkets were treating us farmers.\"\nMr Chase's life-changing moment came in 2002 when he found out that rejected potatoes were being bought up by the UK operation of US crisp-maker Kettle.\nAt the time Kettle was one of new companies making so-called \"posh crisps\", potato crisps which were cut a little thicker than the mass-market brands, and fried by hand.\nDespite having no crisp-making experience or knowledge, Mr Chase was convinced he could set up his own upmarket crisps brand.\nSo he phoned a few UK crisp-makers to ask if he could see how they did things, and all said \"no\". Undeterred, he flew out to the US and visited facilities in Pennsylvania and Colorado.\nReturning to the UK, he built a crisp-making facility at the family farm, and Tyrrells [taking its name from the property] was up and running six months later.\nQuick to tell his story to local newspapers to build up publicity, Mr Chase hit the road to spend two weeks visiting independent food shops across the UK with samples of his crisps.\nHe says: \"Tyrrells grew and grew very quickly, and it was a brilliant cash cow. We'd sell the bags to shops for \u00a31 and they would retail them for \u00a32. For us the net profit was 35%.\"\nSupermarkets such as Waitrose soon followed suit, but Mr Chase was adamant that he would not sell to the largest - Tesco - because he didn't like what he saw as the pressure it put on farmers to lower their prices.\nThen one day in 2006 a friend told him that Tesco was selling Tyrrells' crisps. It transpired that Tesco had been buying them on the grey market, and selling them below the recommended retail price.\nAn incensed Mr Chase demanded that Tesco stop selling them. After the supermarket refused, Mr Chase started a media campaign that included an appearance on BBC Radio 4's Today programme. Tesco then did back down.\nWith sales of Tyrrells crisps continuing to grow over the next few years, and annual turnover hitting \u00a314m, Mr Chase borrowed money from his bank to expand production. The condition the bank set was that he had to bring in a management team to help him run the business.\nMr Chase, who had previously been very hands on, and liked to help out with all parts of the business, says that bringing in new managers ultimately changed the business - to its detriment.\n\"We got to a stage where I didn't like where the business was going,\" he says. \"We were employing corporate people who were arranging meetings about more meetings.\"\nUnhappy with Tyrrells' new big business ethos, and going through a \"messy divorce\", Mr Chase - who was the sole shareholder - decided to sell up in 2008 to a private capital business for almost \u00a340m.\nLooking for a new business venture, and with the new owners of Tyrrells choosing to buy their potatoes from elsewhere, Mr Chase came up with the idea of turning his spuds into premium vodka.\nSo with money no longer a problem, he bought a distillation system, and Chase Vodka was born.\nAimed at the luxury end of the market, it retails for \u00a335 a bottle.\nWhile Mr Chase admits it isn't anywhere near as profitable as selling crisps, it appears to be very much a labour of love. And focused very much on exports, he spends a lot of time travelling the world to build up sales.\nAnd showing that he has lost little of his public relations skills, every year he flies influential barmen and women from around the world to visit his farm in Herefordshire to see how the potatoes are grown, and vodka is made.\nAlso now making a gin and a whisky, the Chase Distillery sells 10,000 bottles a week.\nMr Chase says: \"You have to tell people your story if you want to build your brand. But there has to be real DNA behind it if you want to be successful.\"",
+    "reference": "For a Herefordshire potato farmer, William Chase is impressively savvy about the need for positive publicity, and the importance of telling a good story.",
+    "prediction": "For a man who grew up on a potato farm in Herefordshire, Kevin Chase has a natural knack for telling stories.",
+    "entities": [
+      {
+        "ent": "Kevin",
+        "type": "PERSON",
+        "start": 57,
+        "end": 62,
+        "in_source": false,
+        "predicted_label": "Non-factual Hallucination",
         "label": "Non-factual Hallucination"
       }
     ]
