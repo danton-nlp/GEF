@@ -3,11 +3,7 @@ from typing import List, Tuple
 from tqdm import tqdm
 import torch
 from transformers.tokenization_utils_base import BatchEncoding
-from src.data_utils import (
-    load_xent,
-    persist_example_with_probs,
-    split_batches
-)
+from src.data_utils import load_xent, persist_example_with_probs, split_batches
 from src.generation_utils import load_model_and_tokenizer, load_bart_xsum_cmlm
 from src.prob_computation_utils import build_masked_inputs_and_targets
 
@@ -22,7 +18,7 @@ def compute_probs_for_summary(
     verbose: bool = False,
     device=torch.device("cuda" if torch.cuda.is_available() else "cpu"),
     batch_size: int = 3,
-) -> List[Tuple[float]]:
+) -> List[Tuple[float, float]]:
     """
     Compute the joint prior and posterior probabilities of an masked entity, given
     a possible causal (left context only) or non-causal (left and right
