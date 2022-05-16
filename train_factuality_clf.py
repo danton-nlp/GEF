@@ -63,7 +63,11 @@ def to_nonfactual_label(example):
         return 0
 
 
-def build_features_and_targets(data):
+def build_features_and_targets(data, ignore_intrinsic: bool):
+    if ignore_intrinsic:
+        print('filling out intrinsic hallucinations')
+        data = data[data['entity_label'] != 'Intrinsic Hallucination']
+
     targets = data.apply(to_nonfactual_label, axis=1)
     features = data[["prior_prob", "posterior_prob", "overlaps_source"]]
 
@@ -78,6 +82,7 @@ if __name__ == "__main__":
     parser.add_argument("--pickled_clf_path", type=str)
     parser.add_argument("--train_data_filepath", type=str)
     parser.add_argument("--test_data_filepath", type=str)
+    parser.add_argument("--ignore_intrinsic", default=False, action='store_true')
     args = parser.parse_args()
 
     train_data = json.load(open(args.train_data_filepath))
@@ -86,8 +91,8 @@ if __name__ == "__main__":
     Xy_train = preprocess_data(train_data)
     Xy_test = preprocess_data(test_data)
 
-    X_train, y_train = build_features_and_targets(Xy_train)
-    X_test, y_test = build_features_and_targets(Xy_test)
+    X_train, y_train = build_features_and_targets(Xy_train, args.ignore_intrinsic)
+    X_test, y_test = build_features_and_targets(Xy_test, args.ignore_intrinsic)
 
     model = Pipeline(
         [
