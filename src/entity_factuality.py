@@ -8,7 +8,7 @@ from sklearn.neighbors import KNeighborsClassifier
 import numpy as np
 from src.misc_utils import Timer
 import pickle
-from src.generation_utils import load_bart_xsum_cmlm, load_model_and_tokenizer
+from src.generation_utils import load_bart_xsum_cmlm, load_model_and_tokenizer, load_prior_model_and_tokenizer
 from src.prob_computation_utils import build_masked_inputs_and_targets_for_inference
 import pandas as pd
 
@@ -41,9 +41,7 @@ class EntityFactualityClassifier:
                 1: ANNOTATION_LABELS["Non-factual"],
             }
             self.batch_size = batch_size
-            self.prior_model_and_tokenizer = load_model_and_tokenizer(
-                "facebook/bart-large"
-            )
+            self.prior_model_and_tokenizer = load_prior_model_and_tokenizer()
             self.posterior_model_and_tokenizer = load_bart_xsum_cmlm()
 
     def extract_features(

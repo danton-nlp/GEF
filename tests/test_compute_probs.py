@@ -1,18 +1,16 @@
 import numpy as np
 import pandas as pd
 import pytest
-from compute_probs import (
-    build_masked_inputs_and_targets,
-    compute_probs_for_summary,
-)
-from src.generation_utils import load_model_and_tokenizer, load_bart_xsum_cmlm
+from compute_probs import (build_masked_inputs_and_targets,
+                           compute_probs_for_summary)
+from src.generation_utils import (load_bart_xsum_cmlm,
+                                  load_prior_model_and_tokenizer)
 
 
 @pytest.fixture(scope="session")
 def bart_large():
-    print("Loading model...")
-    model, tokenizer = load_model_and_tokenizer("facebook/bart-large")
-    return model, tokenizer
+    print("Loading prior model...")
+    return load_prior_model_and_tokenizer()
 
 
 @pytest.fixture(scope="session")

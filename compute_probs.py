@@ -1,14 +1,14 @@
 import argparse
+import json
 from typing import List, Tuple
-from tqdm import tqdm
+
 import torch
+from tqdm import tqdm
 from transformers.tokenization_utils_base import BatchEncoding
-from src.data_utils import (
-    load_xent, 
-    persist_example_with_probs,
-    split_batches
-)
-from src.generation_utils import load_model_and_tokenizer, load_bart_xsum_cmlm
+
+from src.data_utils import persist_example_with_probs, split_batches
+from src.generation_utils import (load_bart_xsum_cmlm,
+                                  load_prior_model_and_tokenizer)
 from src.prob_computation_utils import build_masked_inputs_and_targets
 
 
@@ -193,21 +193,20 @@ if __name__ == "__main__":
     parser.add_argument(
         "--xent_split", type=str, default="test", choices=["test", "train"]
     )
-
     parser.add_argument(
-        "--input_filepath",
+        "--entity_input_filepath",
         type=str,
         help="filepath to read existing prob output from",
     )
     parser.add_argument(
-        "--output_filepath",
+        "--entity_with_probs_output_filepath",
         type=str,
         help="filepath to write prob output to",
     )
     args = parser.parse_args()
-    dataset = load_xent(args.xent_split)[: args.num_examples]
+    dataset = json.load(open(args.entity_input_filepath))
 
-    prior_model_and_tokenizer = load_model_and_tokenizer("facebook/bart-large")
+    prior_model_and_tokenizer = load_prior_model_and_tokenizer()
     posterior_model_and_tokenizer = load_bart_xsum_cmlm()
 
     for idx, example in enumerate(tqdm(dataset)):
@@ -226,11 +225,11 @@ if __name__ == "__main__":
             entities=entities,
             batch_size=args.batch_size,
             prior_model_and_tokenizer=prior_model_and_tokenizer,
-            posterior_model_and_tokenizer=posterior_model_and_tokenizer
+            posterior_model_and_tokenizer=posterior_model_and_tokenizer,
         )
 
         persist_example_with_probs(
-            output_filepath=args.output_filepath,
+            output_filepath=args.entity_with_probs_output_filepath,
             output_dataset=dataset,
             output_dataset_idx=idx,
             example=example,
