@@ -4,7 +4,7 @@ from tqdm import tqdm
 import torch
 from transformers.tokenization_utils_base import BatchEncoding
 from src.data_utils import (
-    load_xent, 
+    load_xent,
     persist_example_with_probs,
     split_batches
 )
@@ -77,10 +77,8 @@ def compute_probs_for_summary(
             batch_targets, return_tensors="pt", padding=True
         ).to(device)
 
-        batch_entities_with_leading_space = [" " + entity for entity in batch_entities]
-
         entity_tokenized = prior_model_and_tokenizer[1](
-            batch_entities_with_leading_space,
+            batch_entities,
             return_tensors="pt",
             add_special_tokens=False,
             padding=True,

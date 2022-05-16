@@ -57,7 +57,13 @@ def build_masked_inputs_and_targets(
         )
         inputs.append(masked_input)
         targets.append(prediction)
-        entities.append(entity["ent"])
+
+        if entity['start'] != 0:
+            entity_to_tokenize = " " + entity['ent']
+        else:
+            entity_to_tokenize = entity['ent']
+        entities.append(entity_to_tokenize)
+
         sources.append(example["source"])
         labels.append(entity["label"])
 
