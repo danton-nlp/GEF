@@ -29,7 +29,7 @@ Model: Test FBS w/ oracle, i=5
                  'non_factual': 0.2,
                  'total': 60,
                  'unknown': 0.0}}
-Model: Test FBS w/ classifier, i=5
+Model: Test FBS w/ classifier v0, i=5
 { 'entities': { 'Factual Hallucination': 29,
                 'Intrinsic Hallucination': 1,
                 'Non-factual Hallucination': 12,
@@ -39,6 +39,21 @@ Model: Test FBS w/ classifier, i=5
   'rouge1': 0.44686161562319854,
   'rouge2': 0.21983325456930503,
   'rougeL': 0.36991888807966705,
+  'summaries': { 'factual': 0.7166666666666667,
+                 'failed': 9,
+                 'non_factual': 0.2833333333333333,
+                 'total': 60,
+                 'unknown': 0.0}}
+Model: Test FBS w/ classifier v1, i=5
+{ 'entities': { 'Factual Hallucination': 27,
+                'Intrinsic Hallucination': 1,
+                'Non-factual Hallucination': 12,
+                'Non-hallucinated': 104,
+                'Unknown': 0,
+                'total': 144},
+  'rouge1': 0.4430515339649794,
+  'rouge2': 0.21683244459754625,
+  'rougeL': 0.36373741849853675,
   'summaries': { 'factual': 0.7166666666666667,
                  'failed': 9,
                  'non_factual': 0.2833333333333333,

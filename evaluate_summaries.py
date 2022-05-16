@@ -142,7 +142,7 @@ if __name__ == "__main__":
     pp = pprint.PrettyPrinter(indent=2)
     parser = argparse.ArgumentParser()
     parser.add_argument("--annotate", type=bool, default=False)
-    parser.add_argument("--test_size", type=int, default=60)
+    parser.add_argument("--test_size", type=int, default=100)
     args = parser.parse_args()
 
     gold_metadata = get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD)
@@ -167,8 +167,11 @@ if __name__ == "__main__":
         "Test FBS w/ oracle, i=5": load_summaries_from_logs(
             "results/xent-test-oracle.json", max_iterations=5
         ),
-        "Test FBS w/ classifier, i=5": load_summaries_from_logs(
-            "results/xent-test-classifier.json", max_iterations=5
+        "Test FBS w/ classifier v0, i=5": load_summaries_from_logs(
+            "results/xent-test-classifier-knnv0.json", max_iterations=5
+        ),
+        "Test FBS w/ classifier v1, i=5": load_summaries_from_logs(
+            "results/xent-test-classifier-knnv1.json", max_iterations=5
         ),
         # "Test FBS w/ bad classifier, i=5": load_summaries_from_logs(
         #     "results/test-bad-classifier.json", max_iterations=5

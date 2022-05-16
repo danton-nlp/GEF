@@ -211,7 +211,7 @@ if __name__ == "__main__":
             ]
         }
     elif args.data_subset in ["test-anton", "test-daniel", "test"]:
-        test_set = load_test_set(xsum_test, summary_gold_metadata, N=60)
+        test_set = load_test_set(xsum_test, summary_gold_metadata, N=100)
         if "anton" in args.data_subset:
             print("Loaded Anton's test subset")
             test_set = test_set[: len(test_set) // 2]
