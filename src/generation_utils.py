@@ -21,16 +21,28 @@ def entropy(p_dist: torch.Tensor) -> float:
     return -torch.mul(p_dist, p_dist.log()).sum(0).item()
 
 
-def load_model_and_tokenizer(path: str, device=torch.device("cuda" if torch.cuda.is_available() else "cpu")):
+def load_prior_model_and_tokenizer():
+    return load_model_and_tokenizer("facebook/bart-large")
+
+
+def load_model_and_tokenizer(
+    path: str, device=torch.device("cuda" if torch.cuda.is_available() else "cpu")
+):
     return (
         AutoModelForSeq2SeqLM.from_pretrained(path).to(device),
         AutoTokenizer.from_pretrained(path),
     )
 
 
-def load_bart_xsum_cmlm(device=torch.device("cuda" if torch.cuda.is_available() else "cpu")):
-    model = AutoModelForSeq2SeqLM.from_pretrained("model-checkpoints/entfa-cmlm").to(device)
-    tokenizer = AutoTokenizer.from_pretrained("facebook/bart-large-xsum", mask_token="###")
+def load_bart_xsum_cmlm(
+    device=torch.device("cuda" if torch.cuda.is_available() else "cpu"),
+):
+    model = AutoModelForSeq2SeqLM.from_pretrained("model-checkpoints/entfa-cmlm").to(
+        device
+    )
+    tokenizer = AutoTokenizer.from_pretrained(
+        "facebook/bart-large-xsum", mask_token="###"
+    )
 
     return model, tokenizer
 
@@ -42,7 +54,7 @@ def generate_summaries(
     word_logits_processor: WordLogitsProcessor,
     num_beams=4,
     return_beam_metadata=False,
-    device=torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device=torch.device("cuda" if torch.cuda.is_available() else "cpu"),
 ):
     model.to(device)
     inputs = tokenizer(
