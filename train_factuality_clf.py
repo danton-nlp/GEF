@@ -74,14 +74,20 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Train kNN classifier on Xent-probs dataset"
     )
-    parser.add_argument("--input_filepath", type=str)
     parser.add_argument("--n_neighbors", type=int, default=30)
     parser.add_argument("--pickled_clf_path", type=str)
+    parser.add_argument("--train_data_filepath", type=str)
+    parser.add_argument("--test_data_filepath", type=str)
     args = parser.parse_args()
 
-    train_data = json.load(open(args.input_filepath))
+    train_data = json.load(open(args.train_data_filepath))
+    test_data = json.load(open(args.test_data_filepath))
+
     Xy_train = preprocess_data(train_data)
+    Xy_test = preprocess_data(test_data)
+
     X_train, y_train = build_features_and_targets(Xy_train)
+    X_test, y_test = build_features_and_targets(Xy_test)
 
     model = Pipeline(
         [
@@ -92,18 +98,18 @@ if __name__ == "__main__":
 
     model.fit(X_train, y_train)
 
-    print("train score:", model.score(X_train, y_train))
-
     print(
+        "Xent Test Results\n",
         classification_report(
-            model.predict(X_train),
-            y_train,
+            model.predict(X_test),
+            y_test,
             target_names=["Factual", "Non-Factual"],
             digits=4,
         )
     )
 
-    with open(args.pickled_clf_path, "wb") as handle:
-        pickle.dump(model, handle)
+    if args.pickled_clf_path:
+        with open(args.pickled_clf_path, "wb") as handle:
+            pickle.dump(model, handle)
 
-    print(f"saved model to {args.pickled_clf_path}")
+        print(f"saved model to {args.pickled_clf_path}")
