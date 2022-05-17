@@ -2,7 +2,8 @@ from collections import defaultdict
 import argparse
 from src.data_utils import (
     load_debug_subset,
-    load_test_set,
+    load_extrinsic_test_set,
+    load_xent_test_set,
     load_xsum_dict,
     split_batches,
 )
@@ -35,6 +36,7 @@ from src.annotation import (
 
 SUMTOOL_DATASET = "xsum"
 SUMTOOL_MODEL_GOLD = "gold"
+SUMTOOL_MODEL_BASELINE = "facebook-bart-large-xsum"
 
 
 def persist_iteration(
@@ -173,6 +175,7 @@ if __name__ == "__main__":
     parser.add_argument("--annotate", type=bool, default=False)
     parser.add_argument("--verbose", type=bool, default=False)
     parser.add_argument("--batch_size", type=int, default=2)
+    parser.add_argument("--test_size", type=int, defualt=100)
     parser.add_argument(
         "--data_subset", type=str, default="debug", help="debug|xent|full"
     )
@@ -183,12 +186,12 @@ if __name__ == "__main__":
         iteration_log = {}
         logging_path = get_new_log_path("logs-iterative") + ".json"
         summary_gold_metadata = get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD)
+        baseline_metadata = get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_BASELINE)
         xsum_test = load_xsum_dict("test")
 
     if args.pickled_classifier != "":
         clf_factuality = EntityFactualityClassifier(
-            args.pickled_classifier,
-            args.classifier_batch_size
+            args.pickled_classifier, args.classifier_batch_size
         )
     else:
         clf_factuality = None
@@ -210,16 +213,15 @@ if __name__ == "__main__":
                 : int(args.data_subset.split("-")[-1])
             ]
         }
-    elif args.data_subset in ["test-anton", "test-daniel", "test"]:
-        test_set = load_test_set(xsum_test, summary_gold_metadata, N=100)
-        if "anton" in args.data_subset:
-            print("Loaded Anton's test subset")
-            test_set = test_set[: len(test_set) // 2]
-        elif "daniel" in args.data_subset:
-            print("Loaded Daniel's test subset")
-            test_set = test_set[len(test_set) // 2 :]
-        else:
-            print("Loaded full test set")
+    elif args.data_subset in ["test-xent"]:
+        test_set = load_xent_test_set(
+            xsum_test, summary_gold_metadata, N=args.test_size
+        )
+        docs_to_summarize = {k: v for (k, v) in test_set}
+    elif args.data_subset in ["test-extrinsic"]:
+        test_set = load_extrinsic_test_set(
+            xsum_test, baseline_metadata, summary_gold_metadata, N=args.test_size
+        )
         docs_to_summarize = {k: v for (k, v) in test_set}
     elif args.data_subset == "full":
         docs_to_summarize = {sum_id: x["document"] for sum_id, x in xsum_test.items()}

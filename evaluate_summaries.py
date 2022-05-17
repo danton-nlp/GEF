@@ -1,6 +1,6 @@
 from typing import List
 from src.annotation import prompt_annotation_flow
-from src.data_utils import load_test_set, load_xsum_dict
+from src.data_utils import load_extrinsic_test_set, load_xent_test_set, load_xsum_dict
 from src.detect_entities import detect_entities
 from sumtool.storage import get_summary_metrics, get_summaries
 from src.entity_utils import MarkedEntity, count_entities, filter_entities
@@ -18,6 +18,7 @@ from termcolor import colored
 
 SUMTOOL_DATASET = "xsum"
 SUMTOOL_MODEL_GOLD = "gold"
+SUMTOOL_MODEL_BASELINE = "facebook-bart-large-xsum"
 pp = pprint.PrettyPrinter(indent=2)
 
 
@@ -135,7 +136,7 @@ def compute_metrics(
             "is_factual": not non_factual and not has_unknown,
             "has_unknown": has_unknown,
             "has_failed": summary == SUMMARY_FAILED_GENERATION,
-            "n_extrinsic": n_extrinsic
+            "n_extrinsic": n_extrinsic,
         }
 
         if print_counter < print_first_n:
@@ -203,6 +204,7 @@ def load_summaries_from_logs(path, max_iterations=5):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--annotate", type=bool, default=False)
+    parser.add_argument("--data_subset", type=str, default="test-extrinsic")
     parser.add_argument("--test_size", type=int, default=100)
     parser.add_argument("--entity_label_match", type=str, default="contained")
     parser.add_argument("--print_first_n", type=int, default=0)
@@ -210,11 +212,17 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     gold_metadata = get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD)
+    baseline_metadata = get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_BASELINE)
     gold_sums = get_summaries(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD)
     xsum_test = load_xsum_dict("test")
-    test_set_ids = {
-        k for (k, v) in load_test_set(xsum_test, gold_metadata, args.test_size)
-    }
+    test_set = (
+        load_extrinsic_test_set(
+            xsum_test, baseline_metadata, gold_metadata, args.test_size
+        )
+        if args.data_subset == "test-extrinsic"
+        else load_xent_test_set(xsum_test, gold_metadata, args.test_size)
+    )
+    test_set_ids = {k for (k, v) in test_set}
 
     print(f"Test results for {len(test_set_ids)} summaries")
 
@@ -238,7 +246,7 @@ if __name__ == "__main__":
     for sumtool_name, model_label in [
         ("facebook-bart-large-xsum", "baseline"),
         ("chen-corrector", "corrector"),  # Chen. et al replication project
-        ("entity-filter-v2", "filtered"),  # Nan. et al
+        # ("entity-filter-v2", "filtered"),  # Nan. et al
     ]:
         dataset = get_summaries(SUMTOOL_DATASET, sumtool_name)
         MODEL_RESULTS[model_label] = {
@@ -298,6 +306,7 @@ if __name__ == "__main__":
             "rougeL",
         ],
     )
-    df_aggregated.to_csv(f"evaluation-{args.test_size}.csv", index=False)
+    out_name = args.data_subset.replace("test-", "eval-")
+    df_aggregated.to_csv(f"{out_name}-{args.test_size}.csv", index=False)
     df_summaries = pd.DataFrame.from_dict(summary_results, orient="index")
-    df_summaries.to_json(f"evaluation-{args.test_size}-summaries.json")
+    df_summaries.to_json(f"{out_name}-{args.test_size}-summaries.json")
