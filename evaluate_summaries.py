@@ -1,8 +1,9 @@
+from typing import List
 from src.annotation import prompt_annotation_flow
 from src.data_utils import load_test_set, load_xsum_dict
 from src.detect_entities import detect_entities
 from sumtool.storage import get_summary_metrics, get_summaries
-from src.entity_utils import count_entities, filter_entities
+from src.entity_utils import MarkedEntity, count_entities, filter_entities
 from src.oracle import get_entity_annotations, oracle_label_entities
 from src.entity_factuality import ANNOTATION_LABELS
 from src.generation_utils import SUMMARY_FAILED_GENERATION
@@ -12,13 +13,17 @@ import json
 import numpy as np
 import pprint
 import pandas as pd
+from termcolor import colored
 
 
 SUMTOOL_DATASET = "xsum"
 SUMTOOL_MODEL_GOLD = "gold"
+pp = pprint.PrettyPrinter(indent=2)
 
 
-def get_labeled_entities(sums_by_id, gold_metadata, xsum_test, should_annotate):
+def get_labeled_entities(
+    sums_by_id, gold_metadata, xsum_test, should_annotate, entity_match_type
+):
     summary_entities = {}
     for sum_id, summary in sums_by_id.items():
         summary_entities[sum_id] = detect_entities(
@@ -27,6 +32,7 @@ def get_labeled_entities(sums_by_id, gold_metadata, xsum_test, should_annotate):
     labeled_ents = oracle_label_entities(
         summary_entities,
         get_entity_annotations(summary_entities.keys(), gold_metadata),
+        entity_match_type,
     )
     unknown_entities = filter_entities(
         lambda x: x["label"] == ANNOTATION_LABELS["Unknown"],
@@ -48,9 +54,30 @@ def get_labeled_entities(sums_by_id, gold_metadata, xsum_test, should_annotate):
     return labeled_ents
 
 
-def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test, should_annotate):
+def mark_entities(summary, labeled_entities: List[MarkedEntity]):
+    marked_summary = summary
+    offset = 0
+    for ent in sorted(labeled_entities, key=lambda x: x["start"]):
+        position = ent["end"] + offset
+        inserted_label = " [" + ent["label"] + "]"
+        before = marked_summary[:position]
+        after = marked_summary[position:]
+        marked_summary = before + inserted_label + after
+        offset += len(inserted_label)
+    return marked_summary
+
+
+def compute_metrics(
+    sums_by_id,
+    gold_sums,
+    gold_metadata,
+    xsum_test,
+    should_annotate,
+    entity_match_type,
+    print_first_n,
+):
     labeled_ents = get_labeled_entities(
-        sums_by_id, gold_metadata, xsum_test, should_annotate
+        sums_by_id, gold_metadata, xsum_test, should_annotate, entity_match_type
     )
     summary_results = {}
     counters = {
@@ -62,12 +89,13 @@ def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test, should_anno
         "rouge1": [],
         "rouge2": [],
         "rougeL": [],
-        "extrinsic_per_sum": [],
+        "sum_with_extrinsic": 0,
     }
     for value in ANNOTATION_LABELS.values():
         counters[value] = 0
 
-    for sum_id, summary in sums_by_id.items():
+    print_counter = 0
+    for sum_id, summary in sorted(sums_by_id.items(), key=lambda x: x[0]):
         source = xsum_test[sum_id]["document"]
         reference = gold_sums[sum_id]["summary"]
 
@@ -87,10 +115,10 @@ def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test, should_anno
         for ent in labeled_ents[sum_id]:
             counters["entities"] += 1
             counters[ent["label"]] += 1
-            if [
-                ent["label"] in ["Non-factual"]
+            if (
+                ent["label"] == ANNOTATION_LABELS["Non-factual"]
                 or ent["label"] == ANNOTATION_LABELS["Intrinsic"]
-            ]:
+            ):
                 non_factual = True
             elif ent["label"] == "Unknown":
                 has_unknown = True
@@ -101,6 +129,27 @@ def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test, should_anno
             ]:
                 n_extrinsic += 1
 
+        summary_results[sum_id] = {
+            "summary": summary,
+            "is_non_factual": non_factual,
+            "is_factual": not non_factual and not has_unknown,
+            "has_unknown": has_unknown,
+            "has_failed": summary == SUMMARY_FAILED_GENERATION,
+            "n_extrinsic": n_extrinsic
+        }
+
+        if print_counter < print_first_n:
+            print(f"----XSUM ID {sum_id}----")
+            print(mark_entities(summary, labeled_ents[sum_id]))
+            print(
+                f"Is factual? {colored(str(not non_factual), 'red' if non_factual else 'green')}"
+            )
+            print()
+            print(f"GT summary: {xsum_test[sum_id]['summary']}")
+            print("----")
+            print()
+            print_counter += 1
+
         if non_factual:
             counters["non_factual"] += 1
         elif has_unknown:
@@ -108,18 +157,19 @@ def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test, should_anno
         else:
             counters["factual"] += 1
 
-        counters["extrinsic_per_sum"].append(n_extrinsic)
+        if n_extrinsic > 0:
+            counters["sum_with_extrinsic"] += 1
 
+    total = len(sums_by_id)
     metrics = {
         "summaries": {
-            "total": len(sums_by_id),
-            "factual": counters["factual"] / len(sums_by_id),
-            "non_factual": counters["non_factual"] / len(sums_by_id),
-            "unknown": counters["unknown"] / len(sums_by_id),
+            "total": total,
+            "factual": counters["factual"] / total,
+            "non_factual": counters["non_factual"] / total,
+            "unknown": counters["unknown"] / total,
             "failed": counters["failed"],
-            "extrinsic_per_sum": np.mean(counters["extrinsic_per_sum"]),
-            "ents_per_sum": counters["entities"]
-            / (len(sums_by_id) - counters["failed"]),
+            "sum_with_extrinsic": counters["sum_with_extrinsic"] / total,
+            "ents_per_sum": counters["entities"] / (total - counters["failed"]),
         },
         "entities": {
             "total": counters["entities"],
@@ -151,10 +201,12 @@ def load_summaries_from_logs(path, max_iterations=5):
 
 
 if __name__ == "__main__":
-    pp = pprint.PrettyPrinter(indent=2)
     parser = argparse.ArgumentParser()
     parser.add_argument("--annotate", type=bool, default=False)
     parser.add_argument("--test_size", type=int, default=100)
+    parser.add_argument("--entity_label_match", type=str, default="contained")
+    parser.add_argument("--print_first_n", type=int, default=0)
+    parser.add_argument("--model_filter", type=str, default="")
     args = parser.parse_args()
 
     gold_metadata = get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD)
@@ -170,58 +222,69 @@ if __name__ == "__main__":
         # "Test FBS w/ oracle, i=2": load_summaries_from_logs(
         #     "results/xent-test-oracle.json", max_iterations=2
         # ),
-        "Test FBS w/ oracle, i=5": load_summaries_from_logs(
+        "fbs_oracle": load_summaries_from_logs(
             "results/xent-test-oracle.json", max_iterations=5
         ),
         # "Test FBS w/ classifier v0, i=5": load_summaries_from_logs(
         #     "results/xent-test-classifier-knnv0.json", max_iterations=5
         # ),
-        "Test FBS w/ classifier v1, i=5": load_summaries_from_logs(
+        "fbs_classifier": load_summaries_from_logs(
             "results/xent-test-classifier-knnv1.json", max_iterations=5
         ),
         # "Test FBS w/ bad classifier, i=5": load_summaries_from_logs(
         #     "results/test-bad-classifier.json", max_iterations=5
         # ),
     }
-    for sumtool_name in [
-        "facebook-bart-large-xsum",  # Baseline
-        "chen-corrector",  # Chen. et al replication project
-        "entity-filter-v2",  # Nan. et al
+    for sumtool_name, model_label in [
+        ("facebook-bart-large-xsum", "baseline"),
+        ("chen-corrector", "corrector"),  # Chen. et al replication project
+        ("entity-filter-v2", "filtered"),  # Nan. et al
     ]:
         dataset = get_summaries(SUMTOOL_DATASET, sumtool_name)
-        MODEL_RESULTS[sumtool_name] = {
+        MODEL_RESULTS[model_label] = {
             sum_id: x["summary"] for sum_id, x in dataset.items()
         }
 
-    metrics = {}
-    data_for_df = []
-    for label, sums_by_id in MODEL_RESULTS.items():
-        filtered_sums_by_id = {
-            sum_id: x for sum_id, x in sums_by_id.items() if sum_id in test_set_ids
-        }
-        print(f"Model: {label}")
-        metrics = compute_metrics(
-            filtered_sums_by_id, gold_sums, gold_metadata, xsum_test, args.annotate
-        )[0]
-        pp.pprint(metrics)
+    aggregated_results = []
+    summary_results = {}
+    for model_label, sums_by_id in MODEL_RESULTS.items():
+        if args.model_filter == "" or args.model_filter in model_label:
+            filtered_sums_by_id = {
+                sum_id: x for sum_id, x in sums_by_id.items() if sum_id in test_set_ids
+            }
+            print(f"Model: {model_label}")
+            agg_metrics, summaries = compute_metrics(
+                filtered_sums_by_id,
+                gold_sums,
+                gold_metadata,
+                xsum_test,
+                args.annotate,
+                args.entity_label_match,
+                args.print_first_n,
+            )
+            pp.pprint(agg_metrics)
+            aggregated_results.append(
+                [
+                    model_label,
+                    agg_metrics["summaries"]["factual"],
+                    agg_metrics["summaries"]["non_factual"],
+                    agg_metrics["summaries"]["unknown"],
+                    agg_metrics["summaries"]["failed"],
+                    agg_metrics["summaries"]["ents_per_sum"],
+                    agg_metrics["summaries"]["sum_with_extrinsic"],
+                    agg_metrics["rouge1"],
+                    agg_metrics["rouge2"],
+                    agg_metrics["rougeL"],
+                ]
+            )
+            for sum_id, sum_metrics in summaries.items():
+                if sum_id not in summary_results:
+                    summary_results[sum_id] = {}
+                for metric, value in sum_metrics.items():
+                    summary_results[sum_id][f"{model_label}_{metric}"] = value
 
-        data_for_df.append(
-            [
-                label,
-                metrics["summaries"]["factual"],
-                metrics["summaries"]["non_factual"],
-                metrics["summaries"]["unknown"],
-                metrics["summaries"]["failed"],
-                metrics["summaries"]["ents_per_sum"],
-                metrics["summaries"]["extrinsic_per_sum"],
-                metrics["rouge1"],
-                metrics["rouge2"],
-                metrics["rougeL"],
-            ]
-        )
-
-    df = pd.DataFrame(
-        data_for_df,
+    df_aggregated = pd.DataFrame(
+        aggregated_results,
         columns=[
             "model",
             "factual",
@@ -229,11 +292,12 @@ if __name__ == "__main__":
             "unknown",
             "failed",
             "ents_per_sum",
-            "extrinsic_per_sum",
+            "sum_with_extrinsic",
             "rouge1",
             "rouge2",
             "rougeL",
         ],
     )
-    df.to_csv(f"evaluation-{args.test_size}.csv")
-    print(df)
+    df_aggregated.to_csv(f"evaluation-{args.test_size}.csv", index=False)
+    df_summaries = pd.DataFrame.from_dict(summary_results, orient="index")
+    df_summaries.to_json(f"evaluation-{args.test_size}-summaries.json")
