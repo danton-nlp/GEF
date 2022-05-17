@@ -11,6 +11,7 @@ import argparse
 import json
 import numpy as np
 import pprint
+import pandas as pd
 
 
 SUMTOOL_DATASET = "xsum"
@@ -61,6 +62,7 @@ def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test, should_anno
         "rouge1": [],
         "rouge2": [],
         "rougeL": [],
+        "extrinsic_per_sum": [],
     }
     for value in ANNOTATION_LABELS.values():
         counters[value] = 0
@@ -72,27 +74,32 @@ def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test, should_anno
         non_factual = False
         has_unknown = False
 
-        # TODO: handle rogue score computation for failed gen
-        if summary != SUMMARY_FAILED_GENERATION:
+        if summary == SUMMARY_FAILED_GENERATION:
+            non_factual = True
+            counters["failed"] += 1
+        else:
             rouge_scores = rouge([summary], [reference])
             counters["rouge1"].append(rouge_scores["rouge1"]["f1"])
             counters["rouge2"].append(rouge_scores["rouge2"]["f1"])
             counters["rougeL"].append(rouge_scores["rougeL"]["f1"])
 
-        if summary == SUMMARY_FAILED_GENERATION:
-            non_factual = True
-            counters["failed"] += 1
-
+        n_extrinsic = 0
         for ent in labeled_ents[sum_id]:
             counters["entities"] += 1
             counters[ent["label"]] += 1
-            if (
-                ent["label"] == ANNOTATION_LABELS["Non-factual"]
+            if [
+                ent["label"] in ["Non-factual"]
                 or ent["label"] == ANNOTATION_LABELS["Intrinsic"]
-            ):
+            ]:
                 non_factual = True
             elif ent["label"] == "Unknown":
                 has_unknown = True
+
+            if ent["label"] in [
+                ANNOTATION_LABELS["Factual"],
+                ANNOTATION_LABELS["Non-factual"],
+            ]:
+                n_extrinsic += 1
 
         if non_factual:
             counters["non_factual"] += 1
@@ -101,6 +108,8 @@ def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test, should_anno
         else:
             counters["factual"] += 1
 
+        counters["extrinsic_per_sum"].append(n_extrinsic)
+
     metrics = {
         "summaries": {
             "total": len(sums_by_id),
@@ -108,6 +117,9 @@ def compute_metrics(sums_by_id, gold_sums, gold_metadata, xsum_test, should_anno
             "non_factual": counters["non_factual"] / len(sums_by_id),
             "unknown": counters["unknown"] / len(sums_by_id),
             "failed": counters["failed"],
+            "extrinsic_per_sum": np.mean(counters["extrinsic_per_sum"]),
+            "ents_per_sum": counters["entities"]
+            / (len(sums_by_id) - counters["failed"]),
         },
         "entities": {
             "total": counters["entities"],
@@ -155,21 +167,15 @@ if __name__ == "__main__":
     print(f"Test results for {len(test_set_ids)} summaries")
 
     MODEL_RESULTS = {
-        # "Debug FBS w/ oracle, i=5": load_summaries_from_logs(
-        #     "results/debug-oracle.json", max_iterations=5
+        # "Test FBS w/ oracle, i=2": load_summaries_from_logs(
+        #     "results/xent-test-oracle.json", max_iterations=2
         # ),
-        # "Debug FBS w/ classifier, i=5": load_summaries_from_logs(
-        #     "results/debug-classifier.json", max_iterations=5
-        # ),
-        "Test FBS w/ oracle, i=2": load_summaries_from_logs(
-            "results/xent-test-oracle.json", max_iterations=2
-        ),
         "Test FBS w/ oracle, i=5": load_summaries_from_logs(
             "results/xent-test-oracle.json", max_iterations=5
         ),
-        "Test FBS w/ classifier v0, i=5": load_summaries_from_logs(
-            "results/xent-test-classifier-knnv0.json", max_iterations=5
-        ),
+        # "Test FBS w/ classifier v0, i=5": load_summaries_from_logs(
+        #     "results/xent-test-classifier-knnv0.json", max_iterations=5
+        # ),
         "Test FBS w/ classifier v1, i=5": load_summaries_from_logs(
             "results/xent-test-classifier-knnv1.json", max_iterations=5
         ),
@@ -188,13 +194,46 @@ if __name__ == "__main__":
         }
 
     metrics = {}
+    data_for_df = []
     for label, sums_by_id in MODEL_RESULTS.items():
         filtered_sums_by_id = {
             sum_id: x for sum_id, x in sums_by_id.items() if sum_id in test_set_ids
         }
         print(f"Model: {label}")
-        pp.pprint(
-            compute_metrics(
-                filtered_sums_by_id, gold_sums, gold_metadata, xsum_test, args.annotate
-            )[0]
+        metrics = compute_metrics(
+            filtered_sums_by_id, gold_sums, gold_metadata, xsum_test, args.annotate
+        )[0]
+        pp.pprint(metrics)
+
+        data_for_df.append(
+            [
+                label,
+                metrics["summaries"]["factual"],
+                metrics["summaries"]["non_factual"],
+                metrics["summaries"]["unknown"],
+                metrics["summaries"]["failed"],
+                metrics["summaries"]["ents_per_sum"],
+                metrics["summaries"]["extrinsic_per_sum"],
+                metrics["rouge1"],
+                metrics["rouge2"],
+                metrics["rougeL"],
+            ]
         )
+
+    df = pd.DataFrame(
+        data_for_df,
+        columns=[
+            "model",
+            "factual",
+            "non_factual",
+            "unknown",
+            "failed",
+            "ents_per_sum",
+            "extrinsic_per_sum",
+            "rouge1",
+            "rouge2",
+            "rougeL",
+        ],
+    )
+    df.to_csv(f"evaluation-{args.test_size}.csv")
+    print(df)
