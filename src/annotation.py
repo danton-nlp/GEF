@@ -52,12 +52,12 @@ def annotate_entities(
                     printed_sum = True
 
                 print(
-                    f"What is the label of '{entity['ent']} (pos {entity['start']}:{entity['end']})?"
+                    f"What is the label of '{entity['ent']} (pos {entity['start']}:{entity['end']})? In source: {entity['in_source']}"
                 )
                 user_input = ""
-                while user_input not in ["0", "1", "I", "U", "S"]:
+                while user_input not in ["0", "1", "I", "U", "S", "N"]:
                     user_input = input(
-                        "Non-factual (0), Factual (1), Intrinsic (I), Unknown (U) or Skip & save annotations (S)\n"
+                        "Non-factual (0), Factual (1), Intrinsic (I), Non-hallucinated (N), Unknown (U) or Skip & save annotations (S)\n"
                     )
 
                 if user_input == "S":
@@ -73,6 +73,10 @@ def annotate_entities(
                 elif user_input == "0":
                     annotation = entity.copy()
                     annotation["label"] = ANNOTATION_LABELS["Non-factual"]
+                    updated_annotations[sum_id].append(annotation)
+                elif user_input == "N":
+                    annotation = entity.copy()
+                    annotation["label"] = ANNOTATION_LABELS["Non-hallucinated"]
                     updated_annotations[sum_id].append(annotation)
     return updated_annotations
 
