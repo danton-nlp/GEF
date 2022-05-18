@@ -1,2 +1,0 @@
-model,factual,non_factual,unknown,failed,ents_per_sum,sum_with_extrinsic,rouge1,rouge2,rougeL
-corrector,0.4,0.6,0.0,0,3.5,0.95,0.4486908977776305,0.2165264480594573,0.3604032917921902

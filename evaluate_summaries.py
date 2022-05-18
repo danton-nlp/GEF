@@ -228,17 +228,17 @@ if __name__ == "__main__":
 
     MODEL_RESULTS = {
         # "Test FBS w/ oracle, i=2": load_summaries_from_logs(
-        #     "results/xent-test-oracle.json", max_iterations=2
+        #     f"results/{args.data_subset}-oracle.json", max_iterations=2
         # ),
         "fbs_oracle": load_summaries_from_logs(
-            "results/xent-test-oracle.json", max_iterations=5
+            f"results/{args.data_subset}-oracle.json", max_iterations=5
         ),
         # "Test FBS w/ classifier v0, i=5": load_summaries_from_logs(
-        #     "results/xent-test-classifier-knnv0.json", max_iterations=5
+        #     f"results/{args.data_subset}-classifier-knnv0.json", max_iterations=5
         # ),
-        "fbs_classifier": load_summaries_from_logs(
-            "results/xent-test-classifier-knnv1.json", max_iterations=5
-        ),
+        # "fbs_classifier": load_summaries_from_logs(
+        #     f"results/{args.data_subset}-classifier-knnv1.json", max_iterations=5
+        # ),
         # "Test FBS w/ bad classifier, i=5": load_summaries_from_logs(
         #     "results/test-bad-classifier.json", max_iterations=5
         # ),
@@ -307,6 +307,6 @@ if __name__ == "__main__":
         ],
     )
     out_name = args.data_subset.replace("test-", "eval-")
-    df_aggregated.to_csv(f"{out_name}-{args.test_size}.csv", index=False)
+    df_aggregated.to_csv(f"results/{out_name}-{args.test_size}.csv", index=False)
     df_summaries = pd.DataFrame.from_dict(summary_results, orient="index")
-    df_summaries.to_json(f"{out_name}-{args.test_size}-summaries.json")
+    df_summaries.to_json(f"results/{out_name}-{args.test_size}-summaries.json")

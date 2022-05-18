@@ -1,0 +1,2762 @@
+{
+  "timestamp": 1652831931.837009,
+  "args": {
+    "pickled_classifier": "",
+    "classifier_batch_size": 4,
+    "model_path": "facebook/bart-large-xsum",
+    "max_iterations": 5,
+    "annotate": true,
+    "verbose": false,
+    "batch_size": 2,
+    "test_size": 20,
+    "data_subset": "test-extrinsic"
+  },
+  "iterations": {
+    "0": {
+      "summaries": {
+        "39784504": {
+          "banned_phrases": [],
+          "summary": "A local newspaper has accused the Conservatives of being \"archaic\" after it was told it could not film Theresa May's visit to a Cornwall factory.",
+          "generation_metadata": {
+            "score": -0.538760781288147,
+            "dropped_seqs": [],
+            "n_words_checked": 134
+          },
+          "labeled_entities": [
+            {
+              "ent": "Conservatives",
+              "type": "NORP",
+              "start": 34,
+              "end": 47,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Theresa",
+              "type": "PERSON",
+              "start": 103,
+              "end": 110,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "May",
+              "type": "PERSON",
+              "start": 111,
+              "end": 114,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Cornwall",
+              "type": "GPE",
+              "start": 128,
+              "end": 136,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "36066252": {
+          "banned_phrases": [],
+          "summary": "The International Monetary Fund (IMF) has warned that global growth could slow to 3.2% this year and 3.5% in 2017.",
+          "generation_metadata": {
+            "score": -0.4960077404975891,
+            "dropped_seqs": [],
+            "n_words_checked": 129
+          },
+          "labeled_entities": [
+            {
+              "ent": "The International Monetary Fund",
+              "type": "ORG",
+              "start": 0,
+              "end": 31,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "3.2%",
+              "type": "PERCENT",
+              "start": 82,
+              "end": 86,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "this year",
+              "type": "DATE",
+              "start": 87,
+              "end": 96,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "3.5%",
+              "type": "PERCENT",
+              "start": 101,
+              "end": 105,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "2017",
+              "type": "DATE",
+              "start": 109,
+              "end": 113,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "34898778": {
+          "banned_phrases": [],
+          "summary": "Nour, a 15-year-old girl, was caught up in the fighting between so-called Islamic State (IS) and government forces in the Syrian city of Raqqa in 2014.",
+          "generation_metadata": {
+            "score": -0.5832820534706116,
+            "dropped_seqs": [],
+            "n_words_checked": 128
+          },
+          "labeled_entities": [
+            {
+              "ent": "Nour",
+              "type": "ORG",
+              "start": 0,
+              "end": 4,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "15-year-old",
+              "type": "DATE",
+              "start": 8,
+              "end": 19,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Islamic State",
+              "type": "ORG",
+              "start": 74,
+              "end": 87,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Syrian",
+              "type": "NORP",
+              "start": 122,
+              "end": 128,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Raqqa",
+              "type": "GPE",
+              "start": 137,
+              "end": 142,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "2014",
+              "type": "DATE",
+              "start": 146,
+              "end": 150,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36635880": {
+          "banned_phrases": [],
+          "summary": "Great Britain's women produced their best performance of the EuroHockey Championships with a 4-3 win over New Zealand.",
+          "generation_metadata": {
+            "score": -0.6033487915992737,
+            "dropped_seqs": [],
+            "n_words_checked": 125
+          },
+          "labeled_entities": [
+            {
+              "ent": "Great Britain's",
+              "type": "GPE",
+              "start": 0,
+              "end": 15,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "the EuroHockey Championships",
+              "type": "ORG",
+              "start": 57,
+              "end": 85,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "4",
+              "type": "CARDINAL",
+              "start": 93,
+              "end": 94,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "New Zealand",
+              "type": "GPE",
+              "start": 106,
+              "end": 117,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "34614991": {
+          "banned_phrases": [],
+          "summary": "Nicola Sturgeon has said she will always work with Plaid Cymru leader Leanne Wood.",
+          "generation_metadata": {
+            "score": -0.2939935624599457,
+            "dropped_seqs": [],
+            "n_words_checked": 85
+          },
+          "labeled_entities": [
+            {
+              "ent": "Nicola",
+              "type": "PERSON",
+              "start": 0,
+              "end": 6,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Sturgeon",
+              "type": "PERSON",
+              "start": 7,
+              "end": 15,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Leanne",
+              "type": "PERSON",
+              "start": 70,
+              "end": 76,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Wood",
+              "type": "PERSON",
+              "start": 77,
+              "end": 81,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "36772094": {
+          "banned_phrases": [],
+          "summary": "The RSPCA has reported a fall in the number of animal cruelty cases in Wales last year.",
+          "generation_metadata": {
+            "score": -0.565355658531189,
+            "dropped_seqs": [],
+            "n_words_checked": 103
+          },
+          "labeled_entities": [
+            {
+              "ent": "RSPCA",
+              "type": "ORG",
+              "start": 4,
+              "end": 9,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Wales",
+              "type": "GPE",
+              "start": 71,
+              "end": 76,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "last year",
+              "type": "DATE",
+              "start": 77,
+              "end": 86,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "26398483": {
+          "banned_phrases": [],
+          "summary": "Police have released an image of a man they want to speak to in connection with a sexual assault on a 15-year-old girl in Hertfordshire.",
+          "generation_metadata": {
+            "score": -0.4129006862640381,
+            "dropped_seqs": [],
+            "n_words_checked": 106
+          },
+          "labeled_entities": [
+            {
+              "ent": "15-year-old",
+              "type": "DATE",
+              "start": 102,
+              "end": 113,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Hertfordshire",
+              "type": "GPE",
+              "start": 122,
+              "end": 135,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "36295288": {
+          "banned_phrases": [],
+          "summary": "The so-called Islamic State (IS) group says it has taken control of a hospital in the eastern Syrian city of Deir al-Zour.",
+          "generation_metadata": {
+            "score": -0.4395279884338379,
+            "dropped_seqs": [],
+            "n_words_checked": 111
+          },
+          "labeled_entities": [
+            {
+              "ent": "Islamic State",
+              "type": "ORG",
+              "start": 14,
+              "end": 27,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Syrian",
+              "type": "NORP",
+              "start": 94,
+              "end": 100,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Deir al-Zour",
+              "type": "GPE",
+              "start": 109,
+              "end": 121,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "30657223": {
+          "banned_phrases": [],
+          "summary": "Hartlepool United have signed Reading midfielder Emmanuel Tshibola and Mansfield Town striker Josh Bingham on loan until the end of the season.",
+          "generation_metadata": {
+            "score": -0.46714699268341064,
+            "dropped_seqs": [],
+            "n_words_checked": 90
+          },
+          "labeled_entities": [
+            {
+              "ent": "Hartlepool United",
+              "type": "GPE",
+              "start": 0,
+              "end": 17,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Emmanuel",
+              "type": "PERSON",
+              "start": 49,
+              "end": 57,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Tshibola",
+              "type": "PERSON",
+              "start": 58,
+              "end": 66,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Mansfield Town",
+              "type": "ORG",
+              "start": 71,
+              "end": 85,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Josh",
+              "type": "PERSON",
+              "start": 94,
+              "end": 98,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Bingham",
+              "type": "PERSON",
+              "start": 99,
+              "end": 106,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the end of the season",
+              "type": "DATE",
+              "start": 121,
+              "end": 142,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "38470818": {
+          "banned_phrases": [],
+          "summary": "St Johnstone's Gary Anderson says Rangers' John Kiernan should face a Scottish FA disciplinary hearing over an alleged punch.",
+          "generation_metadata": {
+            "score": -0.7630751729011536,
+            "dropped_seqs": [],
+            "n_words_checked": 105
+          },
+          "labeled_entities": [
+            {
+              "ent": "St Johnstone's",
+              "type": "PERSON",
+              "start": 0,
+              "end": 14,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Gary",
+              "type": "PERSON",
+              "start": 15,
+              "end": 19,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Anderson",
+              "type": "PERSON",
+              "start": 20,
+              "end": 28,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Rangers",
+              "type": "ORG",
+              "start": 34,
+              "end": 41,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "John",
+              "type": "PERSON",
+              "start": 43,
+              "end": 47,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Kiernan",
+              "type": "PERSON",
+              "start": 48,
+              "end": 55,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Scottish",
+              "type": "NORP",
+              "start": 70,
+              "end": 78,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "40243246": {
+          "banned_phrases": [],
+          "summary": "A 19-year-old man has been arrested as part of the investigation into the London Bridge terror attack, police have said.",
+          "generation_metadata": {
+            "score": -0.42941662669181824,
+            "dropped_seqs": [],
+            "n_words_checked": 95
+          },
+          "labeled_entities": [
+            {
+              "ent": "19-year-old",
+              "type": "DATE",
+              "start": 2,
+              "end": 13,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "London Bridge",
+              "type": "FAC",
+              "start": 74,
+              "end": 87,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "33648595": {
+          "banned_phrases": [],
+          "summary": "The man behind the takeover of the Financial Times is one of Japan's richest men, Shigeru Kita.",
+          "generation_metadata": {
+            "score": -0.6760781407356262,
+            "dropped_seqs": [],
+            "n_words_checked": 89
+          },
+          "labeled_entities": [
+            {
+              "ent": "the Financial Times",
+              "type": "ORG",
+              "start": 31,
+              "end": 50,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Japan",
+              "type": "GPE",
+              "start": 61,
+              "end": 66,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Shigeru",
+              "type": "PERSON",
+              "start": 82,
+              "end": 89,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Kita",
+              "type": "PERSON",
+              "start": 90,
+              "end": 94,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "36341722": {
+          "banned_phrases": [],
+          "summary": "Three men have been found guilty of blowing up cash machines and stealing more than \u00a3200,000.",
+          "generation_metadata": {
+            "score": -0.43661561608314514,
+            "dropped_seqs": [],
+            "n_words_checked": 72
+          },
+          "labeled_entities": [
+            {
+              "ent": "Three",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 5,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "more than \u00a3200,000",
+              "type": "MONEY",
+              "start": 74,
+              "end": 92,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "39807248": {
+          "banned_phrases": [],
+          "summary": "An under-performing academy in Southampton is to be merged with another in the city.",
+          "generation_metadata": {
+            "score": -0.7381937503814697,
+            "dropped_seqs": [],
+            "n_words_checked": 79
+          },
+          "labeled_entities": [
+            {
+              "ent": "Southampton",
+              "type": "GPE",
+              "start": 31,
+              "end": 42,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "40498102": {
+          "banned_phrases": [],
+          "summary": "An exhibition in Iran of cartoonists' depictions of Donald Trump has drawn comparisons with Adolf Hitler.",
+          "generation_metadata": {
+            "score": -0.7305685877799988,
+            "dropped_seqs": [],
+            "n_words_checked": 109
+          },
+          "labeled_entities": [
+            {
+              "ent": "Iran",
+              "type": "GPE",
+              "start": 17,
+              "end": 21,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Donald",
+              "type": "PERSON",
+              "start": 52,
+              "end": 58,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Trump",
+              "type": "PERSON",
+              "start": 59,
+              "end": 64,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Adolf",
+              "type": "PERSON",
+              "start": 92,
+              "end": 97,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Hitler",
+              "type": "PERSON",
+              "start": 98,
+              "end": 104,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "32798693": {
+          "banned_phrases": [],
+          "summary": "The High Court has ruled in favour of HM Revenue & Customs (HMRC) in a case involving the retailer Next.",
+          "generation_metadata": {
+            "score": -0.5437430739402771,
+            "dropped_seqs": [],
+            "n_words_checked": 110
+          },
+          "labeled_entities": [
+            {
+              "ent": "The High Court",
+              "type": "ORG",
+              "start": 0,
+              "end": 14,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "HM Revenue & Customs",
+              "type": "ORG",
+              "start": 38,
+              "end": 58,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Next",
+              "type": "ORG",
+              "start": 99,
+              "end": 103,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "32557344": {
+          "banned_phrases": [],
+          "summary": "The RSPCA has appealed for information after an injured pony was found dumped in a field in Lincolnshire.",
+          "generation_metadata": {
+            "score": -0.5797626376152039,
+            "dropped_seqs": [],
+            "n_words_checked": 88
+          },
+          "labeled_entities": [
+            {
+              "ent": "RSPCA",
+              "type": "ORG",
+              "start": 4,
+              "end": 9,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Lincolnshire",
+              "type": "GPE",
+              "start": 92,
+              "end": 104,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "39593375": {
+          "banned_phrases": [],
+          "summary": "A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for 12 years.",
+          "generation_metadata": {
+            "score": -0.45138415694236755,
+            "dropped_seqs": [],
+            "n_words_checked": 78
+          },
+          "labeled_entities": [
+            {
+              "ent": "12-year-old",
+              "type": "DATE",
+              "start": 27,
+              "end": 38,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "12 years",
+              "type": "DATE",
+              "start": 103,
+              "end": 111,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "35038754": {
+          "banned_phrases": [],
+          "summary": "Northern Ireland's justice minister has said he has been assured that the government will honour a promise to provide extra funding for institutions dealing with the past.",
+          "generation_metadata": {
+            "score": -0.6526359915733337,
+            "dropped_seqs": [],
+            "n_words_checked": 111
+          },
+          "labeled_entities": [
+            {
+              "ent": "Northern Ireland's",
+              "type": "GPE",
+              "start": 0,
+              "end": 18,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "31113635": {
+          "banned_phrases": [],
+          "summary": "The amount of money spent on film production in the UK reached an all-time high last year, according to figures from the British Film Institute.",
+          "generation_metadata": {
+            "score": -0.4296531081199646,
+            "dropped_seqs": [],
+            "n_words_checked": 107
+          },
+          "labeled_entities": [
+            {
+              "ent": "UK",
+              "type": "GPE",
+              "start": 52,
+              "end": 54,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "last year",
+              "type": "DATE",
+              "start": 80,
+              "end": 89,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "the British Film Institute",
+              "type": "ORG",
+              "start": 117,
+              "end": 143,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 9,
+          "total": 20,
+          "factual": 9,
+          "non_factual": 11,
+          "failed": 0,
+          "unknown": 0
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 14,
+            "Factual Hallucination": 20,
+            "Unknown": 0,
+            "Non-hallucinated": 36,
+            "Intrinsic Hallucination": 0
+          },
+          "type": {
+            "PERSON": {
+              "total": 21,
+              "Non-factual Hallucination": 5,
+              "Factual Hallucination": 5,
+              "Unknown": 0,
+              "Non-hallucinated": 11,
+              "Intrinsic Hallucination": 0
+            },
+            "NORP": {
+              "total": 4,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 3,
+              "Intrinsic Hallucination": 0
+            },
+            "GPE": {
+              "total": 14,
+              "Non-factual Hallucination": 2,
+              "Factual Hallucination": 3,
+              "Unknown": 0,
+              "Non-hallucinated": 9,
+              "Intrinsic Hallucination": 0
+            },
+            "ORG": {
+              "total": 14,
+              "Non-factual Hallucination": 2,
+              "Factual Hallucination": 5,
+              "Unknown": 0,
+              "Non-hallucinated": 7,
+              "Intrinsic Hallucination": 0
+            },
+            "PERCENT": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2,
+              "Intrinsic Hallucination": 0
+            },
+            "DATE": {
+              "total": 11,
+              "Non-factual Hallucination": 4,
+              "Factual Hallucination": 4,
+              "Unknown": 0,
+              "Non-hallucinated": 3,
+              "Intrinsic Hallucination": 0
+            },
+            "CARDINAL": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 1,
+              "Intrinsic Hallucination": 0
+            },
+            "FAC": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "MONEY": {
+              "total": 1,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            }
+          }
+        }
+      }
+    },
+    "1": {
+      "summaries": {
+        "34898778": {
+          "banned_phrases": [
+            "15-year-old",
+            "2014"
+          ],
+          "summary": "Nour is a 23-year-old woman who was caught up in the fighting between so-called Islamic State (IS) and government forces in the Syrian city of Raqqa in June.",
+          "generation_metadata": {
+            "score": -0.6603928804397583,
+            "dropped_seqs": [
+              "</s>In 2014",
+              "</s>Nour, a 15-year-old",
+              "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between so-called Islamic State (IS) and government forces in 2014",
+              "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between so-called Islamic State (IS) and government forces in June 2014",
+              "</s>Nour is a 23-year-old woman who was caught up in the fighting between so-called Islamic State (IS) and government forces in the Syrian city of Raqqa in 2014",
+              "</s>Nour is a 23-year-old woman who was caught up in the fighting between so-called Islamic State (IS) and government forces in the Iraqi city of Mosul in 2014",
+              "</s>Nour is a 23-year-old woman who was caught up in the fighting between so-called Islamic State (IS) and government forces in the Syrian city of Aleppo in 2014",
+              "</s>Nour is a 23-year-old woman who was caught up in the fighting between so-called Islamic State (IS) and government forces in the Syrian city of Raqqa in June 2014"
+            ],
+            "n_words_checked": 135
+          },
+          "labeled_entities": [
+            {
+              "ent": "Nour",
+              "type": "PERSON",
+              "start": 0,
+              "end": 4,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "23-year-old",
+              "type": "DATE",
+              "start": 10,
+              "end": 21,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Islamic State",
+              "type": "ORG",
+              "start": 80,
+              "end": 93,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Syrian",
+              "type": "NORP",
+              "start": 128,
+              "end": 134,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Raqqa",
+              "type": "GPE",
+              "start": 143,
+              "end": 148,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "June",
+              "type": "DATE",
+              "start": 152,
+              "end": 156,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "36635880": {
+          "banned_phrases": [
+            "the EuroHockey Championships"
+          ],
+          "summary": "Great Britain's women produced their best performance of the World League Final with a 4-3 win over New Zealand.",
+          "generation_metadata": {
+            "score": -0.6199755668640137,
+            "dropped_seqs": [
+              "</s>Great Britain's women produced their best performance of the EuroHockey Championships"
+            ],
+            "n_words_checked": 134
+          },
+          "labeled_entities": [
+            {
+              "ent": "Great Britain's",
+              "type": "GPE",
+              "start": 0,
+              "end": 15,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "the World League Final",
+              "type": "ORG",
+              "start": 57,
+              "end": 79,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "4",
+              "type": "CARDINAL",
+              "start": 87,
+              "end": 88,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "New Zealand",
+              "type": "GPE",
+              "start": 100,
+              "end": 111,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "26398483": {
+          "banned_phrases": [
+            "15-year-old"
+          ],
+          "summary": "Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 14-year-old girl in Hertfordshire.",
+          "generation_metadata": {
+            "score": -0.4024292826652527,
+            "dropped_seqs": [
+              "</s>Police investigating the sexual assault of a 15-year-old",
+              "</s>Police have released an image of a man they want to speak to in connection with a sexual assault on a 15-year-old",
+              "</s>Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 15-year-old",
+              "</s>Police have released an E-fit image of a man they want to speak to in connection with the sexual assault of a 15-year-old"
+            ],
+            "n_words_checked": 106
+          },
+          "labeled_entities": [
+            {
+              "ent": "14-year-old",
+              "type": "DATE",
+              "start": 108,
+              "end": 119,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Hertfordshire",
+              "type": "GPE",
+              "start": 128,
+              "end": 141,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "30657223": {
+          "banned_phrases": [
+            "Josh",
+            "Emmanuel"
+          ],
+          "summary": "Hartlepool United have signed Reading midfielder Olamide Tshibola and Mansfield Town striker Jordan Bingham on loan until the end of the season.",
+          "generation_metadata": {
+            "score": -0.4948195815086365,
+            "dropped_seqs": [
+              "</s>Hartlepool United have signed Reading midfielder Emmanuel",
+              "</s>Hartlepool United have signed Reading midfielder Nkosi Tshibola and Mansfield Town striker Josh",
+              "</s>Hartlepool United have signed Reading midfielder Olamide Tshibola and Mansfield Town striker Josh"
+            ],
+            "n_words_checked": 100
+          },
+          "labeled_entities": [
+            {
+              "ent": "Hartlepool United",
+              "type": "GPE",
+              "start": 0,
+              "end": 17,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Olamide",
+              "type": "PERSON",
+              "start": 49,
+              "end": 56,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Tshibola",
+              "type": "PERSON",
+              "start": 57,
+              "end": 65,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Mansfield Town",
+              "type": "ORG",
+              "start": 70,
+              "end": 84,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Jordan",
+              "type": "PERSON",
+              "start": 93,
+              "end": 99,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Bingham",
+              "type": "PERSON",
+              "start": 100,
+              "end": 107,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the end of the season",
+              "type": "DATE",
+              "start": 122,
+              "end": 143,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "38470818": {
+          "banned_phrases": [
+            "Gary",
+            "John"
+          ],
+          "summary": "St Johnstone's Paul Anderson has said Rangers defender Kieran Kiernan should face a Scottish FA disciplinary hearing over an alleged punch.",
+          "generation_metadata": {
+            "score": -0.8810783624649048,
+            "dropped_seqs": [
+              "</s>St Johnstone's Gary",
+              "</s>St Johnstone captain Gary",
+              "</s>St Johnstone's Paul Anderson says Rangers' John",
+              "</s>St Johnstone's Steven Anderson says Rangers' John",
+              "</s>St Johnstone's Paul Anderson has said Rangers' John",
+              "</s>St Johnstone's Paul Anderson has said Rangers defender John"
+            ],
+            "n_words_checked": 89
+          },
+          "labeled_entities": [
+            {
+              "ent": "St Johnstone's",
+              "type": "PERSON",
+              "start": 0,
+              "end": 14,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Paul",
+              "type": "PERSON",
+              "start": 15,
+              "end": 19,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Anderson",
+              "type": "PERSON",
+              "start": 20,
+              "end": 28,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Rangers",
+              "type": "ORG",
+              "start": 38,
+              "end": 45,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kieran",
+              "type": "PERSON",
+              "start": 55,
+              "end": 61,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Kiernan",
+              "type": "PERSON",
+              "start": 62,
+              "end": 69,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Scottish",
+              "type": "NORP",
+              "start": 84,
+              "end": 92,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "33648595": {
+          "banned_phrases": [
+            "Shigeru"
+          ],
+          "summary": "The man behind the takeover of the Financial Times is Masayoshi Kita, one of Japan's richest men.",
+          "generation_metadata": {
+            "score": -0.7048100829124451,
+            "dropped_seqs": [
+              "</s>The man behind the takeover of the Financial Times is one of Japan's richest men, Shigeru"
+            ],
+            "n_words_checked": 92
+          },
+          "labeled_entities": [
+            {
+              "ent": "the Financial Times",
+              "type": "ORG",
+              "start": 31,
+              "end": 50,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Masayoshi",
+              "type": "PERSON",
+              "start": 54,
+              "end": 63,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Kita",
+              "type": "PERSON",
+              "start": 64,
+              "end": 68,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "one",
+              "type": "CARDINAL",
+              "start": 70,
+              "end": 73,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Japan",
+              "type": "GPE",
+              "start": 77,
+              "end": 82,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "36341722": {
+          "banned_phrases": [
+            "more than \u00a3200,000"
+          ],
+          "summary": "Three men have been found guilty of blowing up cash machines and stealing more than \u00a3100,000.",
+          "generation_metadata": {
+            "score": -0.46260592341423035,
+            "dropped_seqs": [
+              "</s>Three men have been convicted of stealing more than \u00a3200,000",
+              "</s>Three men have been found guilty of stealing more than \u00a3200,000",
+              "</s>Three men have been found guilty of blowing up cash machines and stealing more than \u00a3200,000"
+            ],
+            "n_words_checked": 72
+          },
+          "labeled_entities": [
+            {
+              "ent": "Three",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 5,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "more than \u00a3100,000",
+              "type": "MONEY",
+              "start": 74,
+              "end": 92,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "39807248": {
+          "banned_phrases": [
+            "Southampton"
+          ],
+          "summary": "An under-performing academy school in south-west London is to be merged with another in a bid to save money.",
+          "generation_metadata": {
+            "score": -0.7206796407699585,
+            "dropped_seqs": [
+              "</s>An underperforming academy in Southampton",
+              "</s>An under-performing academy in Southampton",
+              "</s>An under-performing school in Southampton",
+              "</s>An under-performing academy school in Southampton"
+            ],
+            "n_words_checked": 81
+          },
+          "labeled_entities": [
+            {
+              "ent": "London",
+              "type": "GPE",
+              "start": 49,
+              "end": 55,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "32798693": {
+          "banned_phrases": [
+            "The High Court"
+          ],
+          "summary": "Retailer Next has lost a High Court battle with HM Revenue & Customs over corporation tax.",
+          "generation_metadata": {
+            "score": -0.6995490789413452,
+            "dropped_seqs": [
+              "</s>The High Court"
+            ],
+            "n_words_checked": 96
+          },
+          "labeled_entities": [
+            {
+              "ent": "Next",
+              "type": "ORG",
+              "start": 9,
+              "end": 13,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "High Court",
+              "type": "ORG",
+              "start": 25,
+              "end": 35,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "HM Revenue & Customs",
+              "type": "ORG",
+              "start": 48,
+              "end": 68,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "32557344": {
+          "banned_phrases": [
+            "Lincolnshire"
+          ],
+          "summary": "The RSPCA has appealed for help to find the owner of a pony found seriously injured in a remote part of Nottinghamshire.",
+          "generation_metadata": {
+            "score": -0.6634083390235901,
+            "dropped_seqs": [
+              "</s>The RSPCA has appealed for information after an injured pony was found dumped in a field in Lincolnshire",
+              "</s>The RSPCA has appealed for help to find the owner of a pony found badly injured in a field in Lincolnshire",
+              "</s>The RSPCA has appealed for help to find the owner of a pony found seriously injured in a remote part of Lincolnshire",
+              "</s>The RSPCA has appealed for help to find the owner of a pony found badly injured in a remote part of Lincolnshire"
+            ],
+            "n_words_checked": 116
+          },
+          "labeled_entities": [
+            {
+              "ent": "RSPCA",
+              "type": "ORG",
+              "start": 4,
+              "end": 9,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Nottinghamshire",
+              "type": "GPE",
+              "start": 104,
+              "end": 119,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "39593375": {
+          "banned_phrases": [
+            "12 years"
+          ],
+          "summary": "A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for eight years.",
+          "generation_metadata": {
+            "score": -0.4643600881099701,
+            "dropped_seqs": [
+              "</s>A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for 12 years",
+              "</s>A paedophile who groomed a 10-year-old boy on Facebook before sexually abusing him has been jailed for 12 years"
+            ],
+            "n_words_checked": 88
+          },
+          "labeled_entities": [
+            {
+              "ent": "12-year-old",
+              "type": "DATE",
+              "start": 27,
+              "end": 38,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "eight years",
+              "type": "DATE",
+              "start": 103,
+              "end": 114,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 11,
+          "total": 20,
+          "factual": 9,
+          "non_factual": 1,
+          "failed": 0,
+          "unknown": 10
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 1,
+            "Factual Hallucination": 20,
+            "Unknown": 13,
+            "Non-hallucinated": 37,
+            "Intrinsic Hallucination": 0
+          },
+          "type": {
+            "PERSON": {
+              "total": 22,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 5,
+              "Unknown": 5,
+              "Non-hallucinated": 12,
+              "Intrinsic Hallucination": 0
+            },
+            "NORP": {
+              "total": 4,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 3,
+              "Intrinsic Hallucination": 0
+            },
+            "GPE": {
+              "total": 14,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 3,
+              "Unknown": 2,
+              "Non-hallucinated": 9,
+              "Intrinsic Hallucination": 0
+            },
+            "ORG": {
+              "total": 13,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 5,
+              "Unknown": 1,
+              "Non-hallucinated": 6,
+              "Intrinsic Hallucination": 0
+            },
+            "PERCENT": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2,
+              "Intrinsic Hallucination": 0
+            },
+            "DATE": {
+              "total": 11,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 4,
+              "Unknown": 4,
+              "Non-hallucinated": 3,
+              "Intrinsic Hallucination": 0
+            },
+            "CARDINAL": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 2,
+              "Intrinsic Hallucination": 0
+            },
+            "FAC": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "MONEY": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            }
+          }
+        }
+      }
+    },
+    "2": {
+      "summaries": {
+        "34898778": {
+          "banned_phrases": [
+            "15-year-old",
+            "2014",
+            "23-year-old",
+            "June"
+          ],
+          "summary": "<Failed generation: blocked all beams>",
+          "generation_metadata": {
+            "score": -Infinity,
+            "dropped_seqs": [
+              "</s>In 2014",
+              "</s>Nour, a 15-year-old",
+              "</s>Nour is a 23-year-old",
+              "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between so-called Islamic State (IS) and government forces in 2014",
+              "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between so-called Islamic State (IS) and government forces in June",
+              "</s>Nour, from the Syrian city of Raqqa, was caught up in the fighting between so-called Islamic State (IS) and government forces in 2014",
+              "</s>Nour, from the Syrian city of Raqqa, was caught up in the fighting between so-called Islamic State (IS) and government forces in June"
+            ],
+            "n_words_checked": 105
+          },
+          "labeled_entities": []
+        },
+        "36635880": {
+          "banned_phrases": [
+            "the World League Final",
+            "the EuroHockey Championships"
+          ],
+          "summary": "Great Britain's women produced their best performance of the World League semi-finals with a 4-3 win over New Zealand.",
+          "generation_metadata": {
+            "score": -0.6306917667388916,
+            "dropped_seqs": [
+              "</s>Great Britain's women produced their best performance of the World League Final",
+              "</s>Great Britain's women produced their best performance of the EuroHockey Championships"
+            ],
+            "n_words_checked": 105
+          },
+          "labeled_entities": [
+            {
+              "ent": "Great Britain's",
+              "type": "GPE",
+              "start": 0,
+              "end": 15,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "the World League",
+              "type": "ORG",
+              "start": 57,
+              "end": 73,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "4",
+              "type": "CARDINAL",
+              "start": 93,
+              "end": 94,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "New Zealand",
+              "type": "GPE",
+              "start": 106,
+              "end": 117,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "30657223": {
+          "banned_phrases": [
+            "Olamide",
+            "Josh",
+            "Jordan",
+            "Emmanuel"
+          ],
+          "summary": "Hartlepool United have signed Reading midfielder Nkosi Tshibola and Mansfield Town striker Ryan Bingham on loan until the end of the season.",
+          "generation_metadata": {
+            "score": -0.500237226486206,
+            "dropped_seqs": [
+              "</s>Hartlepool United have signed Reading midfielder Emmanuel",
+              "</s>Hartlepool United have signed Reading midfielder Olamide",
+              "</s>Hartlepool United have signed Reading midfielder Nkosi Tshibola and Mansfield Town striker Josh",
+              "</s>Hartlepool United have signed Reading midfielder Nkosi Tshibola and Mansfield Town striker Jordan"
+            ],
+            "n_words_checked": 96
+          },
+          "labeled_entities": [
+            {
+              "ent": "Hartlepool United",
+              "type": "GPE",
+              "start": 0,
+              "end": 17,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Nkosi",
+              "type": "PERSON",
+              "start": 49,
+              "end": 54,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Tshibola",
+              "type": "PERSON",
+              "start": 55,
+              "end": 63,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Mansfield Town",
+              "type": "ORG",
+              "start": 68,
+              "end": 82,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Ryan",
+              "type": "PERSON",
+              "start": 91,
+              "end": 95,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Bingham",
+              "type": "PERSON",
+              "start": 96,
+              "end": 103,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the end of the season",
+              "type": "DATE",
+              "start": 118,
+              "end": 139,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            }
+          ]
+        },
+        "38470818": {
+          "banned_phrases": [
+            "Gary",
+            "Kieran",
+            "John",
+            "Paul"
+          ],
+          "summary": "St Johnstone's Steven Anderson has said Rangers defender Kiernan should face a Scottish FA disciplinary hearing over an alleged punch.",
+          "generation_metadata": {
+            "score": -0.900766909122467,
+            "dropped_seqs": [
+              "</s>St Johnstone's Gary",
+              "</s>St Johnstone captain Gary",
+              "</s>St Johnstone's Paul",
+              "</s>St Johnstone's Steven Anderson says Rangers' John",
+              "</s>St Johnstone's Steven Anderson has said Rangers' John",
+              "</s>St Johnstone's Steven Anderson has said Rangers defender John",
+              "</s>St Johnstone's Steven Anderson has said Rangers defender Kieran",
+              "</s>St Johnstone's Steven Anderson has said Rangers' Kieran"
+            ],
+            "n_words_checked": 108
+          },
+          "labeled_entities": [
+            {
+              "ent": "St Johnstone's",
+              "type": "PERSON",
+              "start": 0,
+              "end": 14,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Steven",
+              "type": "PERSON",
+              "start": 15,
+              "end": 21,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Anderson",
+              "type": "PERSON",
+              "start": 22,
+              "end": 30,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Rangers",
+              "type": "ORG",
+              "start": 40,
+              "end": 47,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kiernan",
+              "type": "PERSON",
+              "start": 57,
+              "end": 64,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Scottish",
+              "type": "NORP",
+              "start": 79,
+              "end": 87,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "33648595": {
+          "banned_phrases": [
+            "Masayoshi",
+            "Shigeru"
+          ],
+          "summary": "The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Kaori Kita.",
+          "generation_metadata": {
+            "score": -0.726014256477356,
+            "dropped_seqs": [
+              "</s>The man behind the takeover of the Financial Times is Masayoshi",
+              "</s>The man behind the takeover of the Financial Times is one of Japan's richest men, Shigeru",
+              "</s>The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Shigeru"
+            ],
+            "n_words_checked": 103
+          },
+          "labeled_entities": [
+            {
+              "ent": "the Financial Times",
+              "type": "ORG",
+              "start": 31,
+              "end": 50,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Japan",
+              "type": "GPE",
+              "start": 61,
+              "end": 66,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kaori",
+              "type": "PERSON",
+              "start": 98,
+              "end": 103,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Kita",
+              "type": "PERSON",
+              "start": 104,
+              "end": 108,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "39807248": {
+          "banned_phrases": [
+            "London",
+            "Southampton"
+          ],
+          "summary": "An under-performing academy school in Portsmouth is to be merged with another in the city.",
+          "generation_metadata": {
+            "score": -0.7765689492225647,
+            "dropped_seqs": [
+              "</s>An underperforming academy in Southampton",
+              "</s>An under-performing academy in Southampton",
+              "</s>An under-performing school in Southampton",
+              "</s>An under-performing academy school in Southampton",
+              "</s>An under-performing academy in south-west London",
+              "</s>An under-performing academy in south-east London",
+              "</s>An under-performing academy school in south-west London"
+            ],
+            "n_words_checked": 104
+          },
+          "labeled_entities": [
+            {
+              "ent": "Portsmouth",
+              "type": "GPE",
+              "start": 38,
+              "end": 48,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "32798693": {
+          "banned_phrases": [
+            "The High Court",
+            "High Court"
+          ],
+          "summary": "Retailer Next has lost a High Court battle with HM Revenue & Customs over corporation tax.",
+          "generation_metadata": {
+            "score": -0.6995490789413452,
+            "dropped_seqs": [
+              "</s>The High Court"
+            ],
+            "n_words_checked": 96
+          },
+          "labeled_entities": [
+            {
+              "ent": "Next",
+              "type": "ORG",
+              "start": 9,
+              "end": 13,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "High Court",
+              "type": "ORG",
+              "start": 25,
+              "end": 35,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "HM Revenue & Customs",
+              "type": "ORG",
+              "start": 48,
+              "end": 68,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "32557344": {
+          "banned_phrases": [
+            "Nottinghamshire",
+            "Lincolnshire"
+          ],
+          "summary": "The RSPCA has appealed for help to find the owner of a pony found seriously injured in a remote part of Lincoln county.",
+          "generation_metadata": {
+            "score": -0.8096683025360107,
+            "dropped_seqs": [
+              "</s>The RSPCA has appealed for information after an injured pony was found dumped in a field in Lincolnshire",
+              "</s>The RSPCA has appealed for help to find the owner of a pony found badly injured in a field in Lincolnshire",
+              "</s>The RSPCA has appealed for help to find the owner of a pony found seriously injured in a remote part of Lincolnshire",
+              "</s>The RSPCA has appealed for help to find the owner of a pony found badly injured in a remote part of Lincolnshire",
+              "</s>The RSPCA has appealed for help to find the owner of a pony found seriously injured in a remote part of Nottinghamshire"
+            ],
+            "n_words_checked": 124
+          },
+          "labeled_entities": [
+            {
+              "ent": "RSPCA",
+              "type": "ORG",
+              "start": 4,
+              "end": 9,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Lincoln county",
+              "type": "ORG",
+              "start": 104,
+              "end": 118,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "39593375": {
+          "banned_phrases": [
+            "12 years",
+            "eight years"
+          ],
+          "summary": "A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for seven years.",
+          "generation_metadata": {
+            "score": -0.4688425660133362,
+            "dropped_seqs": [
+              "</s>A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for 12 years",
+              "</s>A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for eight years",
+              "</s>A paedophile who groomed a 10-year-old boy on Facebook before sexually abusing him has been jailed for 12 years"
+            ],
+            "n_words_checked": 89
+          },
+          "labeled_entities": [
+            {
+              "ent": "12-year-old",
+              "type": "DATE",
+              "start": 27,
+              "end": 38,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "seven years",
+              "type": "DATE",
+              "start": 103,
+              "end": 114,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 14,
+          "total": 20,
+          "factual": 9,
+          "non_factual": 3,
+          "failed": 1,
+          "unknown": 7
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 3,
+            "Factual Hallucination": 17,
+            "Unknown": 8,
+            "Non-hallucinated": 35,
+            "Intrinsic Hallucination": 0
+          },
+          "type": {
+            "PERSON": {
+              "total": 20,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 5,
+              "Unknown": 3,
+              "Non-hallucinated": 11,
+              "Intrinsic Hallucination": 0
+            },
+            "NORP": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 3,
+              "Intrinsic Hallucination": 0
+            },
+            "GPE": {
+              "total": 12,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 2,
+              "Unknown": 1,
+              "Non-hallucinated": 9,
+              "Intrinsic Hallucination": 0
+            },
+            "ORG": {
+              "total": 13,
+              "Non-factual Hallucination": 2,
+              "Factual Hallucination": 4,
+              "Unknown": 1,
+              "Non-hallucinated": 6,
+              "Intrinsic Hallucination": 0
+            },
+            "PERCENT": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2,
+              "Intrinsic Hallucination": 0
+            },
+            "DATE": {
+              "total": 9,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 4,
+              "Unknown": 2,
+              "Non-hallucinated": 3,
+              "Intrinsic Hallucination": 0
+            },
+            "CARDINAL": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 1,
+              "Intrinsic Hallucination": 0
+            },
+            "FAC": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "MONEY": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            }
+          }
+        }
+      }
+    },
+    "3": {
+      "summaries": {
+        "36635880": {
+          "banned_phrases": [
+            "the World League Final",
+            "the EuroHockey Championships",
+            "the World League"
+          ],
+          "summary": "Great Britain's women produced their best performance of the World Cup with a 4-3 win over New Zealand in the play-off.",
+          "generation_metadata": {
+            "score": -0.6728382706642151,
+            "dropped_seqs": [
+              "</s>Great Britain's women produced their best performance of the World League",
+              "</s>Great Britain's women secured their first medal of the World League",
+              "</s>Great Britain's women produced their best performance of the EuroHockey Championships"
+            ],
+            "n_words_checked": 92
+          },
+          "labeled_entities": [
+            {
+              "ent": "Great Britain's",
+              "type": "GPE",
+              "start": 0,
+              "end": 15,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "the World Cup",
+              "type": "EVENT",
+              "start": 57,
+              "end": 70,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "4",
+              "type": "CARDINAL",
+              "start": 78,
+              "end": 79,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "New Zealand",
+              "type": "GPE",
+              "start": 91,
+              "end": 102,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "30657223": {
+          "banned_phrases": [
+            "Olamide",
+            "Jordan",
+            "Ryan",
+            "Emmanuel",
+            "Nkosi",
+            "Josh"
+          ],
+          "summary": "Hartlepool United have signed Reading midfielder Alex Tshibola on loan until the end of the season and Mansfield Town striker Joe Bingham on a month's loan.",
+          "generation_metadata": {
+            "score": -0.5374224185943604,
+            "dropped_seqs": [
+              "</s>Hartlepool United have signed Reading midfielder Emmanuel",
+              "</s>Hartlepool United have signed Reading midfielder Olamide",
+              "</s>Hartlepool United have signed Reading midfielder Nkosi",
+              "</s>Hartlepool United have signed Reading midfielder Ola Tshibola and Mansfield Town striker Josh",
+              "</s>Hartlepool United have signed Reading midfielder Ola Tshibola and Mansfield Town striker Jordan",
+              "</s>Hartlepool United have signed Reading midfielder Ola Tshibola and Mansfield Town striker Ryan",
+              "</s>Hartlepool United have signed Reading midfielder Alex Tshibola on loan until the end of the season and Mansfield Town striker Jordan",
+              "</s>Hartlepool United have signed Reading midfielder Alex Tshibola on loan until the end of the season and Mansfield Town striker Josh",
+              "</s>Hartlepool United have signed Reading midfielder Alex Tshibola on loan until the end of the season and Mansfield Town striker Ryan"
+            ],
+            "n_words_checked": 110
+          },
+          "labeled_entities": [
+            {
+              "ent": "Hartlepool United",
+              "type": "GPE",
+              "start": 0,
+              "end": 17,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Alex",
+              "type": "PERSON",
+              "start": 49,
+              "end": 53,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Tshibola",
+              "type": "PERSON",
+              "start": 54,
+              "end": 62,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the end of the season",
+              "type": "DATE",
+              "start": 77,
+              "end": 98,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Mansfield",
+              "type": "GPE",
+              "start": 103,
+              "end": 112,
+              "in_source": true,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Joe",
+              "type": "PERSON",
+              "start": 126,
+              "end": 129,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Bingham",
+              "type": "PERSON",
+              "start": 130,
+              "end": 137,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "month",
+              "type": "DATE",
+              "start": 143,
+              "end": 148,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "33648595": {
+          "banned_phrases": [
+            "Kaori",
+            "Masayoshi",
+            "Shigeru"
+          ],
+          "summary": "The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Ken Kita.",
+          "generation_metadata": {
+            "score": -0.7617713212966919,
+            "dropped_seqs": [
+              "</s>The man behind the takeover of the Financial Times is Masayoshi",
+              "</s>The man behind the takeover of the Financial Times is one of Japan's richest men, Shigeru",
+              "</s>The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Kaori",
+              "</s>The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Shigeru",
+              "</s>The man behind the takeover of the Financial Times is one of the world's richest men, and his name is Kaori"
+            ],
+            "n_words_checked": 102
+          },
+          "labeled_entities": [
+            {
+              "ent": "the Financial Times",
+              "type": "ORG",
+              "start": 31,
+              "end": 50,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Japan",
+              "type": "GPE",
+              "start": 61,
+              "end": 66,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Ken",
+              "type": "PERSON",
+              "start": 98,
+              "end": 101,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Kita",
+              "type": "PERSON",
+              "start": 102,
+              "end": 106,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "39807248": {
+          "banned_phrases": [
+            "London",
+            "Southampton",
+            "Portsmouth"
+          ],
+          "summary": "An under-performing academy school in south-west England is to be merged with another in a bid to save money.",
+          "generation_metadata": {
+            "score": -0.8073098063468933,
+            "dropped_seqs": [
+              "</s>An underperforming academy in Southampton",
+              "</s>An under-performing academy in Southampton",
+              "</s>An under-performing school in Southampton",
+              "</s>An under-performing academy school in Southampton",
+              "</s>An under-performing academy school in Portsmouth",
+              "</s>An under-performing academy school in south London",
+              "</s>An under-performing academy in south-west London",
+              "</s>An under-performing academy in south-east London",
+              "</s>An under-performing academy school in south-west London"
+            ],
+            "n_words_checked": 96
+          },
+          "labeled_entities": [
+            {
+              "ent": "England",
+              "type": "GPE",
+              "start": 49,
+              "end": 56,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "32798693": {
+          "banned_phrases": [
+            "The High Court",
+            "High Court"
+          ],
+          "summary": "Retailer Next has lost a High Court battle with HM Revenue & Customs over corporation tax.",
+          "generation_metadata": {
+            "score": -0.6995490789413452,
+            "dropped_seqs": [
+              "</s>The High Court"
+            ],
+            "n_words_checked": 93
+          },
+          "labeled_entities": [
+            {
+              "ent": "Next",
+              "type": "ORG",
+              "start": 9,
+              "end": 13,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "High Court",
+              "type": "ORG",
+              "start": 25,
+              "end": 35,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "HM Revenue & Customs",
+              "type": "ORG",
+              "start": 48,
+              "end": 68,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "39593375": {
+          "banned_phrases": [
+            "12 years",
+            "eight years",
+            "seven years"
+          ],
+          "summary": "<Failed generation: blocked all beams>",
+          "generation_metadata": {
+            "score": -Infinity,
+            "dropped_seqs": [
+              "</s>A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for 12 years",
+              "</s>A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for eight years",
+              "</s>A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for seven years",
+              "</s>A paedophile who groomed a 10-year-old boy on Facebook before sexually abusing him has been jailed for 12 years"
+            ],
+            "n_words_checked": 90
+          },
+          "labeled_entities": []
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 16,
+          "total": 20,
+          "factual": 10,
+          "non_factual": 1,
+          "failed": 2,
+          "unknown": 7
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 1,
+            "Factual Hallucination": 16,
+            "Unknown": 9,
+            "Non-hallucinated": 36,
+            "Intrinsic Hallucination": 0
+          },
+          "type": {
+            "PERSON": {
+              "total": 20,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 5,
+              "Unknown": 4,
+              "Non-hallucinated": 11,
+              "Intrinsic Hallucination": 0
+            },
+            "NORP": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 3,
+              "Intrinsic Hallucination": 0
+            },
+            "GPE": {
+              "total": 13,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 3,
+              "Unknown": 0,
+              "Non-hallucinated": 10,
+              "Intrinsic Hallucination": 0
+            },
+            "ORG": {
+              "total": 11,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 3,
+              "Unknown": 1,
+              "Non-hallucinated": 6,
+              "Intrinsic Hallucination": 0
+            },
+            "PERCENT": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2,
+              "Intrinsic Hallucination": 0
+            },
+            "DATE": {
+              "total": 8,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 3,
+              "Unknown": 2,
+              "Non-hallucinated": 3,
+              "Intrinsic Hallucination": 0
+            },
+            "CARDINAL": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 1,
+              "Intrinsic Hallucination": 0
+            },
+            "EVENT": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "FAC": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "MONEY": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            }
+          }
+        }
+      }
+    },
+    "4": {
+      "summaries": {
+        "36635880": {
+          "banned_phrases": [
+            "the World League Final",
+            "the EuroHockey Championships",
+            "the World League",
+            "the World Cup"
+          ],
+          "summary": "Great Britain's women produced their best performance of the EuroHockey Championship with a 4-3 win over New Zealand.",
+          "generation_metadata": {
+            "score": -0.6858356595039368,
+            "dropped_seqs": [
+              "</s>Great Britain's women produced their best performance of the World League",
+              "</s>Great Britain's women produced their best performance of the World Cup",
+              "</s>Great Britain's women secured their first medal of the World League",
+              "</s>Great Britain's women produced their best performance of the EuroHockey Championships"
+            ],
+            "n_words_checked": 100
+          },
+          "labeled_entities": [
+            {
+              "ent": "Great Britain's",
+              "type": "GPE",
+              "start": 0,
+              "end": 15,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "the EuroHockey Championship",
+              "type": "EVENT",
+              "start": 57,
+              "end": 84,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "4",
+              "type": "CARDINAL",
+              "start": 92,
+              "end": 93,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "New Zealand",
+              "type": "GPE",
+              "start": 105,
+              "end": 116,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "30657223": {
+          "banned_phrases": [
+            "Olamide",
+            "Jordan",
+            "Ryan",
+            "Emmanuel",
+            "Nkosi",
+            "Alex",
+            "Joe",
+            "Josh"
+          ],
+          "summary": "Hartlepool United have signed Reading midfielder Ola Tshibola on loan until the end of the season and Mansfield Town striker Callum Bingham on a month's loan.",
+          "generation_metadata": {
+            "score": -0.5720820426940918,
+            "dropped_seqs": [
+              "</s>Hartlepool United have signed Reading midfielder Alex",
+              "</s>Hartlepool United have signed Reading midfielder Emmanuel",
+              "</s>Hartlepool United have signed Reading midfielder Olamide",
+              "</s>Hartlepool United have signed Reading midfielder Nkosi",
+              "</s>Hartlepool United have signed Reading midfielder Ola Tshibola and Mansfield Town striker Josh",
+              "</s>Hartlepool United have signed Reading midfielder Ola Tshibola and Mansfield Town striker Jordan",
+              "</s>Hartlepool United have signed Reading midfielder Ola Tshibola and Mansfield Town striker Ryan",
+              "</s>Hartlepool United have signed Reading midfielder Ola Tshibola on loan until the end of the season and Mansfield Town striker Josh",
+              "</s>Hartlepool United have signed Reading midfielder Ola Tshibola on loan until the end of the season and Mansfield Town striker Jordan",
+              "</s>Hartlepool United have signed Reading midfielder Ola Tshibola on loan until the end of the season and Mansfield Town striker Ryan"
+            ],
+            "n_words_checked": 117
+          },
+          "labeled_entities": [
+            {
+              "ent": "Hartlepool United",
+              "type": "GPE",
+              "start": 0,
+              "end": 17,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Ola",
+              "type": "PERSON",
+              "start": 49,
+              "end": 52,
+              "in_source": true,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "Tshibola",
+              "type": "PERSON",
+              "start": 53,
+              "end": 61,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the end of the season",
+              "type": "DATE",
+              "start": 76,
+              "end": 97,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Mansfield",
+              "type": "GPE",
+              "start": 102,
+              "end": 111,
+              "in_source": true,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Callum",
+              "type": "PERSON",
+              "start": 125,
+              "end": 131,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Bingham",
+              "type": "PERSON",
+              "start": 132,
+              "end": 139,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "month",
+              "type": "DATE",
+              "start": 145,
+              "end": 150,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "33648595": {
+          "banned_phrases": [
+            "Kaori",
+            "Masayoshi",
+            "Shigeru",
+            "Ken"
+          ],
+          "summary": "The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Kaoru Kita.",
+          "generation_metadata": {
+            "score": -0.7643480896949768,
+            "dropped_seqs": [
+              "</s>The man behind the takeover of the Financial Times is Masayoshi",
+              "</s>The man behind the takeover of the Financial Times is one of Japan's richest men, Shigeru",
+              "</s>The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Ken",
+              "</s>The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Kaori",
+              "</s>The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Shigeru",
+              "</s>The man behind the takeover of the Financial Times is one of the world's richest men, and his name is Kaori"
+            ],
+            "n_words_checked": 109
+          },
+          "labeled_entities": [
+            {
+              "ent": "the Financial Times",
+              "type": "ORG",
+              "start": 31,
+              "end": 50,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Japan",
+              "type": "GPE",
+              "start": 61,
+              "end": 66,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kaoru",
+              "type": "PERSON",
+              "start": 98,
+              "end": 103,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Kita",
+              "type": "PERSON",
+              "start": 104,
+              "end": 108,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "32798693": {
+          "banned_phrases": [
+            "The High Court",
+            "High Court"
+          ],
+          "summary": "Retailer Next has lost a High Court battle with HM Revenue & Customs over corporation tax.",
+          "generation_metadata": {
+            "score": -0.6995491981506348,
+            "dropped_seqs": [
+              "</s>The High Court"
+            ],
+            "n_words_checked": 96
+          },
+          "labeled_entities": [
+            {
+              "ent": "Next",
+              "type": "ORG",
+              "start": 9,
+              "end": 13,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "High Court",
+              "type": "ORG",
+              "start": 25,
+              "end": 35,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "HM Revenue & Customs",
+              "type": "ORG",
+              "start": 48,
+              "end": 68,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 16,
+          "total": 20,
+          "factual": 10,
+          "non_factual": 3,
+          "failed": 2,
+          "unknown": 5
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 3,
+            "Factual Hallucination": 16,
+            "Unknown": 7,
+            "Non-hallucinated": 36,
+            "Intrinsic Hallucination": 0
+          },
+          "type": {
+            "PERSON": {
+              "total": 20,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 5,
+              "Unknown": 3,
+              "Non-hallucinated": 11,
+              "Intrinsic Hallucination": 0
+            },
+            "NORP": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 3,
+              "Intrinsic Hallucination": 0
+            },
+            "GPE": {
+              "total": 13,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 3,
+              "Unknown": 0,
+              "Non-hallucinated": 10,
+              "Intrinsic Hallucination": 0
+            },
+            "ORG": {
+              "total": 11,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 3,
+              "Unknown": 1,
+              "Non-hallucinated": 6,
+              "Intrinsic Hallucination": 0
+            },
+            "PERCENT": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2,
+              "Intrinsic Hallucination": 0
+            },
+            "DATE": {
+              "total": 8,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 3,
+              "Unknown": 2,
+              "Non-hallucinated": 3,
+              "Intrinsic Hallucination": 0
+            },
+            "EVENT": {
+              "total": 1,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "CARDINAL": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 1,
+              "Intrinsic Hallucination": 0
+            },
+            "FAC": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "MONEY": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}
