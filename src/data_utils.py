@@ -116,7 +116,7 @@ def load_extrinsic_test_set(
         )
         > 0
     }
-    print(len(test_summaries))
+    print(f"Loading {N}/{len(test_summaries)} from extrinsic test set")
     rng_data_split = random.Random(42)
     # shuffle and get first N
     test_set = {

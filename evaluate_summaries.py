@@ -236,9 +236,12 @@ if __name__ == "__main__":
         # "Test FBS w/ classifier v0, i=5": load_summaries_from_logs(
         #     f"results/{args.data_subset}-classifier-knnv0.json", max_iterations=5
         # ),
-        # "fbs_classifier": load_summaries_from_logs(
-        #     f"results/{args.data_subset}-classifier-knnv1.json", max_iterations=5
-        # ),
+        "fbs_classifier": load_summaries_from_logs(
+            f"results/{args.data_subset}-classifier-knnv1.json", max_iterations=5
+        ),
+        "fbs_classifier_i10": load_summaries_from_logs(
+            f"results/{args.data_subset}-classifier-knnv1.json", max_iterations=10
+        ),
         # "Test FBS w/ bad classifier, i=5": load_summaries_from_logs(
         #     "results/test-bad-classifier.json", max_iterations=5
         # ),
