@@ -170,6 +170,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--pickled_classifier", type=str, default="")
     parser.add_argument("--classifier_batch_size", type=int, default=4)
+    parser.add_argument("--entity_label_match", type=str, default="contained")
     parser.add_argument("--model_path", type=str, default="facebook/bart-large-xsum")
     parser.add_argument("--max_iterations", type=int, default=5)
     parser.add_argument("--annotate", type=bool, default=False)
@@ -317,6 +318,7 @@ if __name__ == "__main__":
                         get_entity_annotations(
                             summary_entities.keys(), summary_gold_metadata
                         ),
+                        args.entity_label_match,
                     )
 
                 # Update results based on oracle labels & banned words based on predictions

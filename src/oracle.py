@@ -17,16 +17,23 @@ def get_entity_annotations(sum_ids, metadata):
     return annotations
 
 
-EntityMatchType = Literal["contained", "strict_all", "strict_intrinsic"]
+EntityMatchType = Literal[
+    "contained", "strict_all", "strict_intrinsic", "strict_extrinsic"
+]
 
 
 def is_entity_match(
     entity: MarkedEntity, annotation: MarkedEntity, match_type: EntityMatchType
 ) -> bool:
     entity_contained = is_entity_contained(entity["ent"], annotation["ent"])
-    if match_type == "strict_all" or (
-        match_type == "strict_intrinsic"
-        and annotation["type"] == ANNOTATION_LABELS["Instrinsic"]
+    if (
+        match_type == "strict_all"
+        or (annotation["label"] == ANNOTATION_LABELS["Intrinsic"])
+        or (
+            match_type == "strict_extrinsic"
+            and annotation["label"]
+            in [ANNOTATION_LABELS["Non-factual"], ANNOTATION_LABELS["Factual"]]
+        )
     ):
         entity_span_match = (
             entity["start"] == annotation["start"]
@@ -49,6 +56,7 @@ def oracle_label_entities(
             x["label"] = (
                 "Unknown"
                 if not x["in_source"]
+                or entity_match_type in ["strict_intrinsic", "strict_all"]
                 else ANNOTATION_LABELS["Non-hallucinated"]
             )
         for unlabeled_entity in to_be_labeled:
