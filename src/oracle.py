@@ -28,7 +28,10 @@ def is_entity_match(
     entity_contained = is_entity_contained(entity["ent"], annotation["ent"])
     if (
         match_type == "strict_all"
-        or (annotation["label"] == ANNOTATION_LABELS["Intrinsic"])
+        or (
+            annotation["label"]
+            in [ANNOTATION_LABELS["Intrinsic"], ANNOTATION_LABELS["Non-hallucinated"]]
+        )
         or (
             match_type == "strict_extrinsic"
             and annotation["label"]
