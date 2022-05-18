@@ -309,7 +309,7 @@ if __name__ == "__main__":
             "rougeL",
         ],
     )
-    out_name = args.data_subset.replace("test-", "eval-")
-    df_aggregated.to_csv(f"results/{out_name}-{args.test_size}.csv", index=False)
+    
+    df_aggregated.to_csv(f"results/{args.data_subset}-{args.test_size}.csv", index=False)
     df_summaries = pd.DataFrame.from_dict(summary_results, orient="index")
-    df_summaries.to_json(f"results/{out_name}-{args.test_size}-summaries.json")
+    df_summaries.to_json(f"results/{args.data_subset}-{args.test_size}-summaries.json")
