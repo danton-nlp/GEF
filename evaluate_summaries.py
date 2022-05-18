@@ -84,6 +84,8 @@ def compute_metrics(
     counters = {
         "factual": 0,
         "non_factual": 0,
+        "non_factual_intrinsic": 0,
+        "non_factual_extrinsic": 0,
         "unknown": 0,
         "entities": 0,
         "failed": 0,
@@ -100,11 +102,14 @@ def compute_metrics(
         source = xsum_test[sum_id]["document"]
         reference = gold_sums[sum_id]["summary"]
 
-        non_factual = False
+        non_factual_extrinsic = False
+        non_factual_intrinsic = False
+        has_failed = False
         has_unknown = False
 
         if summary == SUMMARY_FAILED_GENERATION:
-            non_factual = True
+            non_factual_extrinsic = True
+            has_failed = True
             counters["failed"] += 1
         else:
             rouge_scores = rouge([summary], [reference])
@@ -118,9 +123,12 @@ def compute_metrics(
             counters[ent["label"]] += 1
             if (
                 ent["label"] == ANNOTATION_LABELS["Non-factual"]
-                or ent["label"] == ANNOTATION_LABELS["Intrinsic"]
             ):
-                non_factual = True
+                non_factual_extrinsic = True
+            elif (
+                ent["label"] == ANNOTATION_LABELS["Intrinsic"]
+            ):
+                non_factual_intrinsic = True
             elif ent["label"] == "Unknown":
                 has_unknown = True
 
@@ -129,13 +137,15 @@ def compute_metrics(
                 ANNOTATION_LABELS["Non-factual"],
             ]:
                 n_extrinsic += 1
-
+        non_factual = has_failed or non_factual_extrinsic or non_factual_intrinsic
         summary_results[sum_id] = {
             "summary": summary,
             "is_non_factual": non_factual,
+            "is_non_factual_extrinsic": non_factual_extrinsic,
+            "is_non_factual_intrinsic": non_factual_intrinsic,
             "is_factual": not non_factual and not has_unknown,
             "has_unknown": has_unknown,
-            "has_failed": summary == SUMMARY_FAILED_GENERATION,
+            "has_failed": has_failed,
             "n_extrinsic": n_extrinsic,
         }
 
@@ -158,6 +168,11 @@ def compute_metrics(
         else:
             counters["factual"] += 1
 
+        if non_factual_extrinsic:
+            counters["non_factual_extrinsic"] += 1
+        if non_factual_intrinsic:
+            counters["non_factual_intrinsic"] += 1
+
         if n_extrinsic > 0:
             counters["sum_with_extrinsic"] += 1
 
@@ -167,6 +182,8 @@ def compute_metrics(
             "total": total,
             "factual": counters["factual"] / total,
             "non_factual": counters["non_factual"] / total,
+            "non_factual_extrinsic": counters["non_factual_extrinsic"] / total,
+            "non_factual_intrinsic": counters["non_factual_intrinsic"] / total,
             "unknown": counters["unknown"] / total,
             "failed": counters["failed"],
             "sum_with_extrinsic": counters["sum_with_extrinsic"] / total,
@@ -279,6 +296,8 @@ if __name__ == "__main__":
                     model_label,
                     agg_metrics["summaries"]["factual"],
                     agg_metrics["summaries"]["non_factual"],
+                    agg_metrics["summaries"]["non_factual_extrinsic"],
+                    agg_metrics["summaries"]["non_factual_intrinsic"],
                     agg_metrics["summaries"]["unknown"],
                     agg_metrics["summaries"]["failed"],
                     agg_metrics["summaries"]["ents_per_sum"],
@@ -300,6 +319,8 @@ if __name__ == "__main__":
             "model",
             "factual",
             "non_factual",
+            "non_factual_extrinsic",
+            "non_factual_intrinsic",
             "unknown",
             "failed",
             "ents_per_sum",
