@@ -177,11 +177,12 @@ if __name__ == "__main__":
     parser.add_argument("--verbose", type=bool, default=False)
     parser.add_argument("--batch_size", type=int, default=2)
     parser.add_argument("--test_size", type=int, default=100)
+    parser.add_argument("--num_beams", type=int, default=4)
     parser.add_argument(
         "--data_subset", type=str, default="debug", help="debug|xent|full"
     )
     args = parser.parse_args()
-    num_beams = 4
+    num_beams = args.num_beams
     with Timer("Loading summarization model & dataset"):
         model, tokenizer = load_model_and_tokenizer(args.model_path)
         iteration_log = {}
