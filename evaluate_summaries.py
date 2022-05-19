@@ -251,7 +251,7 @@ if __name__ == "__main__":
     if args.data_subset == "full" or args.data_subset == "full-extrinsic":
         MODEL_RESULTS = {
             "fbs_classifier": load_summaries_from_logs(
-                f"results/full-classifier-knnv1.json", max_iterations=5
+                "results/full-classifier-knnv1.json", max_iterations=5
             ),
         }
     else:
