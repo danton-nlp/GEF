@@ -14,6 +14,7 @@ import numpy as np
 import pprint
 import pandas as pd
 from termcolor import colored
+from tqdm import tqdm
 
 
 SUMTOOL_DATASET = "xsum"
@@ -98,7 +99,7 @@ def compute_metrics(
         counters[value] = 0
 
     print_counter = 0
-    for sum_id, summary in sorted(sums_by_id.items(), key=lambda x: x[0]):
+    for sum_id, summary in tqdm(sorted(sums_by_id.items(), key=lambda x: x[0])):
         source = xsum_test[sum_id]["document"]
         reference = gold_sums[sum_id]["summary"]
 
@@ -121,13 +122,9 @@ def compute_metrics(
         for ent in labeled_ents[sum_id]:
             counters["entities"] += 1
             counters[ent["label"]] += 1
-            if (
-                ent["label"] == ANNOTATION_LABELS["Non-factual"]
-            ):
+            if ent["label"] == ANNOTATION_LABELS["Non-factual"]:
                 non_factual_extrinsic = True
-            elif (
-                ent["label"] == ANNOTATION_LABELS["Intrinsic"]
-            ):
+            elif ent["label"] == ANNOTATION_LABELS["Intrinsic"]:
                 non_factual_intrinsic = True
             elif ent["label"] == "Unknown":
                 has_unknown = True
@@ -232,37 +229,52 @@ if __name__ == "__main__":
     baseline_metadata = get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_BASELINE)
     gold_sums = get_summaries(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD)
     xsum_test = load_xsum_dict("test")
-    test_set = (
-        load_extrinsic_test_set(
-            xsum_test, baseline_metadata, gold_metadata, args.test_size
+    if args.data_subset == "full":
+        test_set_ids = set(xsum_test.keys())
+    elif args.data_subset == "full-extrinsic":
+        test_set = load_extrinsic_test_set(
+            xsum_test, baseline_metadata, gold_metadata, 10000
         )
-        if args.data_subset == "test-extrinsic"
-        else load_xent_test_set(xsum_test, gold_metadata, args.test_size)
-    )
-    test_set_ids = {k for (k, v) in test_set}
+        test_set_ids = {k for (k, v) in test_set}
+    else:
+        test_set = (
+            load_extrinsic_test_set(
+                xsum_test, baseline_metadata, gold_metadata, args.test_size
+            )
+            if args.data_subset == "test-extrinsic"
+            else load_xent_test_set(xsum_test, gold_metadata, args.test_size)
+        )
+        test_set_ids = {k for (k, v) in test_set}
 
     print(f"Test results for {len(test_set_ids)} summaries")
 
-    MODEL_RESULTS = {
-        # "Test FBS w/ oracle, i=2": load_summaries_from_logs(
-        #     f"results/{args.data_subset}-oracle.json", max_iterations=2
-        # ),
-        "fbs_oracle": load_summaries_from_logs(
-            f"results/{args.data_subset}-oracle.json", max_iterations=5
-        ),
-        # "Test FBS w/ classifier v0, i=5": load_summaries_from_logs(
-        #     f"results/{args.data_subset}-classifier-knnv0.json", max_iterations=5
-        # ),
-        "fbs_classifier": load_summaries_from_logs(
-            f"results/{args.data_subset}-classifier-knnv1.json", max_iterations=5
-        ),
-        "fbs_classifier_i10": load_summaries_from_logs(
-            f"results/{args.data_subset}-classifier-knnv1.json", max_iterations=10
-        ),
-        # "Test FBS w/ bad classifier, i=5": load_summaries_from_logs(
-        #     "results/test-bad-classifier.json", max_iterations=5
-        # ),
-    }
+    if args.data_subset == "full" or args.data_subset == "full-extrinsic":
+        MODEL_RESULTS = {
+            "fbs_classifier": load_summaries_from_logs(
+                f"results/full-classifier-knnv1.json", max_iterations=5
+            ),
+        }
+    else:
+        MODEL_RESULTS = {
+            # "Test FBS w/ oracle, i=2": load_summaries_from_logs(
+            #     f"results/{args.data_subset}-oracle.json", max_iterations=2
+            # ),
+            "fbs_oracle": load_summaries_from_logs(
+                f"results/{args.data_subset}-oracle.json", max_iterations=5
+            ),
+            # "Test FBS w/ classifier v0, i=5": load_summaries_from_logs(
+            #     f"results/{args.data_subset}-classifier-knnv0.json", max_iterations=5
+            # ),
+            "fbs_classifier": load_summaries_from_logs(
+                f"results/{args.data_subset}-classifier-knnv1.json", max_iterations=5
+            ),
+            "fbs_classifier_i10": load_summaries_from_logs(
+                f"results/{args.data_subset}-classifier-knnv1.json", max_iterations=10
+            ),
+            # "Test FBS w/ bad classifier, i=5": load_summaries_from_logs(
+            #     "results/test-bad-classifier.json", max_iterations=5
+            # ),
+        }
     for sumtool_name, model_label in [
         ("facebook-bart-large-xsum", "baseline"),
         ("chen-corrector", "corrector"),  # Chen. et al replication project
@@ -330,7 +342,9 @@ if __name__ == "__main__":
             "rougeL",
         ],
     )
-    
-    df_aggregated.to_csv(f"results/{args.data_subset}-{args.test_size}.csv", index=False)
+
+    df_aggregated.to_csv(
+        f"results/{args.data_subset}-{args.test_size}.csv", index=False
+    )
     df_summaries = pd.DataFrame.from_dict(summary_results, orient="index")
     df_summaries.to_json(f"results/{args.data_subset}-{args.test_size}-summaries.json")
