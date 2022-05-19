@@ -1,6 +1,7 @@
 import argparse
 import json
 import pickle
+from typing import List, Tuple
 import pandas as pd
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
@@ -28,23 +29,17 @@ def preprocess_data(examples):
     prior_probs, posterior_probs, overlaps, labels = [], [], [], []
 
     for example in examples:
-        has_no_probs = all(
-            "prior_prob" not in entity.keys() for entity in example["entities"]
-        )
-        if has_no_probs:
-            next
-        else:
-            (
-                example_prior_probs,
-                example_posterior_probs,
-                example_overlaps,
-                example_labels,
-            ) = preprocess_summary(example)
+        (
+            example_prior_probs,
+            example_posterior_probs,
+            example_overlaps,
+            example_labels,
+        ) = preprocess_summary(example)
 
-            prior_probs.extend(example_prior_probs)
-            posterior_probs.extend(example_posterior_probs)
-            overlaps.extend(example_overlaps)
-            labels.extend(example_labels)
+        prior_probs.extend(example_prior_probs)
+        posterior_probs.extend(example_posterior_probs)
+        overlaps.extend(example_overlaps)
+        labels.extend(example_labels)
 
     return pd.DataFrame(
         {
@@ -63,28 +58,74 @@ def to_nonfactual_label(example):
         return 0
 
 
-def build_train_features_and_targets(data, ignore_intrinsic: bool):
-    if ignore_intrinsic:
-        data = data[data["entity_label"] != "Intrinsic Hallucination"]
+def filter_data(
+    train_data: pd.DataFrame,
+    test_data: pd.DataFrame,
+    methods: List[str],
+):
+    if ("extrinsic_only" in methods) and (len(methods) > 1):
+        raise ValueError("not sensible to specify extrinsic_only and other filters")
 
-    targets = data.apply(to_nonfactual_label, axis=1)
-    features = data[["prior_prob", "posterior_prob", "overlaps_source"]]
+    if methods == ["extrinsic_only"]:
+        print(
+            "\n -- Only training and testing on extrinsic entity hallucinations -- \n"
+        )
 
-    return features, targets
+        train_data = train_data[
+            train_data["entity_label"].isin(
+                ["Factual Hallucination", "Non-factual Hallucination"]
+            )
+        ]
+
+        test_data = test_data[
+            test_data["entity_label"].isin(
+                ["Factual Hallucination", "Non-factual Hallucination"]
+            )
+        ]
+
+    else:
+        if "no_intrinsic" in methods:
+            print("\n -- Ignoring intrinsic hallucations in train and test data -- \n")
+
+            train_data = train_data[
+                train_data["entity_label"] != "Intrinsic Hallucination"
+            ]
+            test_data = test_data[
+                test_data["entity_label"] != "Intrinsic Hallucination"
+            ]
+
+        if "extrinsic_test_only" in methods:
+            print("\n -- Testing only on entities that are hallucinated -- \n")
+
+            test_data = test_data[
+                test_data["entity_label"].isin(
+                    ["Factual Hallucination", "Non-factual Hallucination"]
+                )
+            ]
+
+    return train_data, test_data
 
 
-def build_test_features_and_targets(data, ignore_intrinsic: bool, test_only_on_hallucinated: bool):
-    if ignore_intrinsic:
-        data = data[data["entity_label"] != "Intrinsic Hallucination"]
+def build_features_and_targets(
+    datasets: Tuple[pd.DataFrame, pd.DataFrame],
+    no_overlaps_source: bool = False,
+):
+    features_and_targets: List[Tuple] = []
 
-    if test_only_on_hallucinated:
-        print("\n -- Testing only on entities that are hallucinated -- \n")
-        data = data[data["entity_label"] != "Non-hallucinated"]
+    if no_overlaps_source:
+        print("\n -- No including overlaps_source as a feature -- \n")
 
-    targets = data.apply(to_nonfactual_label, axis=1)
-    features = data[["prior_prob", "posterior_prob", "overlaps_source"]]
+    for dataset in datasets:
+        targets = dataset.apply(to_nonfactual_label, axis=1)
 
-    return features, targets
+        if no_overlaps_source:
+            features = dataset[["prior_prob", "posterior_prob"]]
+        else:
+            features = dataset[["prior_prob", "posterior_prob", "overlaps_source"]]
+
+        features_and_targets.append((features, targets))
+
+    return features_and_targets
 
 
 if __name__ == "__main__":
@@ -95,14 +136,16 @@ if __name__ == "__main__":
     parser.add_argument("--pickled_clf_path", type=str)
     parser.add_argument("--train_data_filepath", type=str)
     parser.add_argument("--test_data_filepath", type=str)
-    parser.add_argument("--ignore_intrinsic", default=True)
+    parser.add_argument("--no_overlaps_source", default=False, action='store_true')
     parser.add_argument(
-        "--test_only_on_hallucinated",
-        default=False,
-        action="store_true",
-        help="filter test set to only evaluate against hallucinated entitites."
-        + "Enables a more fair comparison against xent-extended",
+        "--data_filters",
+        action="append",
+        choices=["extrinsic_only", "extrinsic_test_only", "no_intrinsic"],
+        help="Specific EITHER extrinsic_only (only test and train on extrinsic hallucinations, ignore factual named entities and intrinsic hallucinations)"
+        + "OR any combination of extrinsic_test_only (test only on extrinsic train on everything unless specified otherwise) or no_instrinic"
+        + "(don't train or test on entities labeled as intrinsic)",
     )
+
     args = parser.parse_args()
 
     train_data = json.load(open(args.train_data_filepath))
@@ -111,13 +154,11 @@ if __name__ == "__main__":
     Xy_train = preprocess_data(train_data)
     Xy_test = preprocess_data(test_data)
 
-    print("\n -- Ignoring intrinsic hallucations in train and test data -- \n")
+    Xy_train, Xy_test = filter_data(Xy_train, Xy_test, args.data_filters)
 
-    X_train, y_train = build_train_features_and_targets(Xy_train, args.ignore_intrinsic)
-    X_test, y_test = build_test_features_and_targets(
-        Xy_test,
-        args.ignore_intrinsic,
-        args.test_only_on_hallucinated
+    (X_train, y_train), (X_test, y_test) = build_features_and_targets(
+        (Xy_train, Xy_test),
+        no_overlaps_source=args.no_overlaps_source
     )
 
     model = Pipeline(
