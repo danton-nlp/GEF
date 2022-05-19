@@ -8,7 +8,11 @@ from sklearn.neighbors import KNeighborsClassifier
 import numpy as np
 from src.misc_utils import Timer
 import pickle
-from src.generation_utils import load_bart_xsum_cmlm, load_model_and_tokenizer, load_prior_model_and_tokenizer
+from src.generation_utils import (
+    load_bart_xsum_cmlm,
+    load_model_and_tokenizer,
+    load_prior_model_and_tokenizer,
+)
 from src.prob_computation_utils import build_masked_inputs_and_targets_for_inference
 import pandas as pd
 
@@ -98,15 +102,15 @@ class EntityFactualityClassifier:
     ) -> MarkedEntityLookup:
         classified_entities: MarkedEntityLookup = {}
         for sum_id, summary in gen_summaries_by_id.items():
-            if len(marked_entities[sum_id]) > 0:
+            updated_entities = [x.copy() for x in marked_entities[sum_id]]
+            entities_to_classify = [x for x in updated_entities if not x["in_source"]]
+            if len(entities_to_classify) > 0:
                 features = self.extract_features(
-                    summary, sources_by_id[sum_id], marked_entities[sum_id]
+                    summary, sources_by_id[sum_id], entities_to_classify
                 )
                 predictions = self.clf.predict(features)
-                entities_with_preds = [x.copy() for x in marked_entities[sum_id]]
-                for entitiy, pred in zip(entities_with_preds, predictions):
+                for entitiy, pred in zip(entities_to_classify, predictions):
                     entitiy["predicted_label"] = self.label_mapping[pred]
-                classified_entities[sum_id] = entities_with_preds
-            else:
-                classified_entities[sum_id] = []
+
+            classified_entities[sum_id] = updated_entities
         return classified_entities
