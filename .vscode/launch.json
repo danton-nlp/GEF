@@ -5,6 +5,22 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "knn train",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--train_data_filepath",
+                "data/xent-probs/train.json",
+                "--test_data_filepath",
+                "data/xent-probs/test.json",
+                "--data_filters",
+                "extrinsic_only"
+            ]
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
