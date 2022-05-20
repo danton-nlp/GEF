@@ -24,16 +24,22 @@ pp = pprint.PrettyPrinter(indent=2)
 
 
 def get_labeled_entities(
-    sums_by_id, gold_metadata, xsum_test, should_annotate, entity_match_type
+    sums_by_id,
+    sum_ents_by_id,
+    gold_metadata,
+    xsum_test,
+    should_annotate,
+    entity_match_type,
 ):
-    summary_entities = {}
-    for sum_id, summary in sums_by_id.items():
-        summary_entities[sum_id] = detect_entities(
-            summary, xsum_test[sum_id]["document"]
-        )
+    # Detect entities if they're not cached
+    if len(sum_ents_by_id) == 0:
+        for sum_id, summary in sums_by_id.items():
+            sum_ents_by_id[sum_id] = detect_entities(
+                summary, xsum_test[sum_id]["document"]
+            )
     labeled_ents = oracle_label_entities(
-        summary_entities,
-        get_entity_annotations(summary_entities.keys(), gold_metadata),
+        sum_ents_by_id,
+        get_entity_annotations(sum_ents_by_id.keys(), gold_metadata),
         entity_match_type,
     )
     unknown_entities = filter_entities(
@@ -50,8 +56,8 @@ def get_labeled_entities(
         )
         if result is not False:
             labeled_ents = oracle_label_entities(
-                summary_entities,
-                get_entity_annotations(summary_entities.keys(), gold_metadata),
+                sum_ents_by_id,
+                get_entity_annotations(sum_ents_by_id.keys(), gold_metadata),
             )
     return labeled_ents
 
@@ -71,15 +77,23 @@ def mark_entities(summary, labeled_entities: List[MarkedEntity]):
 
 def compute_metrics(
     sums_by_id,
+    sum_ents_by_id,
     gold_sums,
     gold_metadata,
     xsum_test,
     should_annotate,
     entity_match_type,
     print_first_n,
+    is_fbs,
+    is_gold
 ):
     labeled_ents = get_labeled_entities(
-        sums_by_id, gold_metadata, xsum_test, should_annotate, entity_match_type
+        sums_by_id,
+        sum_ents_by_id,
+        gold_metadata,
+        xsum_test,
+        should_annotate,
+        entity_match_type,
     )
     summary_results = {}
     counters = {
@@ -89,6 +103,7 @@ def compute_metrics(
         "non_factual_extrinsic": 0,
         "unknown": 0,
         "entities": 0,
+        "skipped": 0,
         "failed": 0,
         "rouge1": [],
         "rouge2": [],
@@ -105,11 +120,12 @@ def compute_metrics(
 
         non_factual_extrinsic = False
         non_factual_intrinsic = False
-        has_failed = False
+        is_skipped = False
         has_unknown = False
+        has_failed = False
 
         if summary == SUMMARY_FAILED_GENERATION:
-            non_factual_extrinsic = True
+            is_skipped = True
             has_failed = True
             counters["failed"] += 1
         else:
@@ -120,9 +136,27 @@ def compute_metrics(
 
         n_extrinsic = 0
         for ent in labeled_ents[sum_id]:
+            if is_gold:
+                if ent["in_source"]:
+                    counters[ANNOTATION_LABELS["Factual"]] += 1
+                else:
+                    counters[ANNOTATION_LABELS["Non-hallucinated"]] += 1
+                continue
             counters["entities"] += 1
             counters[ent["label"]] += 1
-            if ent["label"] == ANNOTATION_LABELS["Non-factual"]:
+
+            # SKIP LOGIC for FBS
+            if is_fbs:
+                is_oracle = "predicted_label" not in ent
+                if is_oracle and ent["label"] == ANNOTATION_LABELS["Non-factual"]:
+                    is_skipped = True
+                elif (
+                    not is_oracle
+                    and ent["predicted_label"] == ANNOTATION_LABELS["Non-factual"]
+                ):
+                    is_skipped = True
+
+            if not is_skipped and ent["label"] == ANNOTATION_LABELS["Non-factual"]:
                 non_factual_extrinsic = True
             elif ent["label"] == ANNOTATION_LABELS["Intrinsic"]:
                 non_factual_intrinsic = True
@@ -134,7 +168,7 @@ def compute_metrics(
                 ANNOTATION_LABELS["Non-factual"],
             ]:
                 n_extrinsic += 1
-        non_factual = has_failed or non_factual_extrinsic or non_factual_intrinsic
+        non_factual = not is_skipped and non_factual_extrinsic or non_factual_intrinsic
         summary_results[sum_id] = {
             "summary": summary,
             "is_non_factual": non_factual,
@@ -142,6 +176,7 @@ def compute_metrics(
             "is_non_factual_intrinsic": non_factual_intrinsic,
             "is_factual": not non_factual and not has_unknown,
             "has_unknown": has_unknown,
+            "is_skipped": is_skipped,
             "has_failed": has_failed,
             "n_extrinsic": n_extrinsic,
         }
@@ -158,7 +193,9 @@ def compute_metrics(
             print()
             print_counter += 1
 
-        if non_factual:
+        if is_skipped:
+            counters["skipped"] += 1
+        elif non_factual:
             counters["non_factual"] += 1
         elif has_unknown:
             counters["unknown"] += 1
@@ -181,10 +218,11 @@ def compute_metrics(
             "non_factual": counters["non_factual"] / total,
             "non_factual_extrinsic": counters["non_factual_extrinsic"] / total,
             "non_factual_intrinsic": counters["non_factual_intrinsic"] / total,
-            "unknown": counters["unknown"] / total,
+            "skipped": counters["skipped"] / total,
             "failed": counters["failed"],
+            "unknown": counters["unknown"] / total,
             "sum_with_extrinsic": counters["sum_with_extrinsic"] / total,
-            "ents_per_sum": counters["entities"] / (total - counters["failed"]),
+            "ents_per_sum": counters["entities"] / (total - counters["skipped"]),
         },
         "entities": {
             "total": counters["entities"],
@@ -206,13 +244,15 @@ def load_summaries_from_logs(path, max_iterations=5):
     sorted_keys = sorted([int(x) for x in logs["iterations"].keys()])
 
     sums_by_id = {}
+    sum_ents_by_id = {}
     for idx in sorted_keys:
         summaries = logs["iterations"][str(idx)]["summaries"]
         for sum_id, data in summaries.items():
             sums_by_id[sum_id] = data["summary"]
+            sum_ents_by_id[sum_id] = data["labeled_entities"]
         if idx + 1 == max_iterations:
             break
-    return sums_by_id
+    return (sums_by_id, sum_ents_by_id)
 
 
 if __name__ == "__main__":
@@ -278,16 +318,18 @@ if __name__ == "__main__":
     for sumtool_name, model_label in [
         ("facebook-bart-large-xsum", "baseline"),
         ("chen-corrector", "corrector"),  # Chen. et al replication project
+        ("gold", "gold"),  # Chen. et al replication project
         # ("entity-filter-v2", "filtered"),  # Nan. et al
     ]:
         dataset = get_summaries(SUMTOOL_DATASET, sumtool_name)
-        MODEL_RESULTS[model_label] = {
-            sum_id: x["summary"] for sum_id, x in dataset.items()
-        }
+        MODEL_RESULTS[model_label] = (
+            {sum_id: x["summary"] for sum_id, x in dataset.items()},
+            {},
+        )
 
     aggregated_results = []
     summary_results = {}
-    for model_label, sums_by_id in MODEL_RESULTS.items():
+    for model_label, (sums_by_id, sum_ents_by_id) in MODEL_RESULTS.items():
         if args.model_filter == "" or args.model_filter in model_label:
             filtered_sums_by_id = {
                 sum_id: x for sum_id, x in sums_by_id.items() if sum_id in test_set_ids
@@ -295,22 +337,27 @@ if __name__ == "__main__":
             print(f"Model: {model_label}")
             agg_metrics, summaries = compute_metrics(
                 filtered_sums_by_id,
+                sum_ents_by_id,
                 gold_sums,
                 gold_metadata,
                 xsum_test,
-                args.annotate,
+                args.annotate and "gold" not in model_label.lower(),
                 args.entity_label_match,
                 args.print_first_n,
+                is_fbs="fbs" in model_label.lower(),
+                is_gold="gold" in model_label.lower()
             )
             pp.pprint(agg_metrics)
             aggregated_results.append(
                 [
                     model_label,
+                    agg_metrics["summaries"]["total"],
                     agg_metrics["summaries"]["factual"],
                     agg_metrics["summaries"]["non_factual"],
                     agg_metrics["summaries"]["non_factual_extrinsic"],
                     agg_metrics["summaries"]["non_factual_intrinsic"],
                     agg_metrics["summaries"]["unknown"],
+                    agg_metrics["summaries"]["skipped"],
                     agg_metrics["summaries"]["failed"],
                     agg_metrics["summaries"]["ents_per_sum"],
                     agg_metrics["summaries"]["sum_with_extrinsic"],
@@ -329,11 +376,13 @@ if __name__ == "__main__":
         aggregated_results,
         columns=[
             "model",
+            "total",
             "factual",
             "non_factual",
             "non_factual_extrinsic",
             "non_factual_intrinsic",
             "unknown",
+            "skipped",
             "failed",
             "ents_per_sum",
             "sum_with_extrinsic",
