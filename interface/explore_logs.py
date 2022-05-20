@@ -15,8 +15,8 @@ def load_results(path):
         return json.load(f)
 
 
-def render_explore_results():
-    st.title("Explore Results")
+def render_explore_logs():
+    st.title("Explore Logs")
     results_path = st_select_results()
     results = load_results(results_path)
 
