@@ -1,12 +1,12 @@
 \newcommand{\fbsOracleFactual}{65\%}
-\newcommand{\fbsOracleNonFactual}{0\%}
+\newcommand{\fbsOracleNonFactual}{12\%}
 \newcommand{\fbsOracleNonFactualExtrinsic}{0\%}
-\newcommand{\fbsOracleNonFactualIntrinsic}{14\%}
-\newcommand{\fbsOracleSkipped}{35\%}
+\newcommand{\fbsOracleNonFactualIntrinsic}{12\%}
+\newcommand{\fbsOracleSkipped}{23\%}
 \newcommand{\fbsClassifierFactual}{48\%}
 \newcommand{\fbsClassifierNonFactual}{26\%}
-\newcommand{\fbsClassifierNonFactualExtrinsic}{22\%}
-\newcommand{\fbsClassifierNonFactualIntrinsic}{13\%}
+\newcommand{\fbsClassifierNonFactualExtrinsic}{19\%}
+\newcommand{\fbsClassifierNonFactualIntrinsic}{10\%}
 \newcommand{\fbsClassifierSkipped}{26\%}
 \newcommand{\fbsClassifierRougeOneFull}{44.63}
 \newcommand{\fbsClassifierRougeOneExtrinsic}{45.43}

@@ -168,7 +168,7 @@ def compute_metrics(
                 ANNOTATION_LABELS["Non-factual"],
             ]:
                 n_extrinsic += 1
-        non_factual = not is_skipped and non_factual_extrinsic or non_factual_intrinsic
+        non_factual = not is_skipped and (non_factual_extrinsic or non_factual_intrinsic)
         summary_results[sum_id] = {
             "summary": summary,
             "is_non_factual": non_factual,
@@ -202,10 +202,11 @@ def compute_metrics(
         else:
             counters["factual"] += 1
 
-        if non_factual_extrinsic:
-            counters["non_factual_extrinsic"] += 1
-        if non_factual_intrinsic:
-            counters["non_factual_intrinsic"] += 1
+        if not is_skipped:
+            if non_factual_extrinsic:
+                counters["non_factual_extrinsic"] += 1
+            if non_factual_intrinsic:
+                counters["non_factual_intrinsic"] += 1
 
         if n_extrinsic > 0:
             counters["sum_with_extrinsic"] += 1
