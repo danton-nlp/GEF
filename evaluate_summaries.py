@@ -143,6 +143,7 @@ def compute_metrics(
                     counters[ANNOTATION_LABELS["Non-hallucinated"]] += 1
                 continue
             counters["entities"] += 1
+            # BUG: entity label is increment even if the summary is skipped
             counters[ent["label"]] += 1
 
             # SKIP LOGIC for FBS
@@ -258,7 +259,7 @@ def load_summaries_from_logs(path, max_iterations=5):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--annotate", type=bool, default=True)
+    parser.add_argument("--annotate", type=bool, default=False)
     parser.add_argument("--data_subset", type=str, default="test-extrinsic")
     parser.add_argument("--test_size", type=int, default=10)
     parser.add_argument("--entity_label_match", type=str, default="contained")
