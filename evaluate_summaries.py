@@ -143,6 +143,7 @@ def compute_metrics(
                     counters[ANNOTATION_LABELS["Non-hallucinated"]] += 1
                 continue
             counters["entities"] += 1
+            # BUG: entity label is increment even if the summary is skipped
             counters[ent["label"]] += 1
 
             # SKIP LOGIC for FBS
