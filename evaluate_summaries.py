@@ -174,7 +174,7 @@ def compute_metrics(
             "is_non_factual": non_factual,
             "is_non_factual_extrinsic": non_factual_extrinsic,
             "is_non_factual_intrinsic": non_factual_intrinsic,
-            "is_factual": not non_factual and not has_unknown,
+            "is_factual": not is_skipped and not non_factual and not has_unknown,
             "has_unknown": has_unknown,
             "is_skipped": is_skipped,
             "has_failed": has_failed,
@@ -258,9 +258,9 @@ def load_summaries_from_logs(path, max_iterations=5):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--annotate", type=bool, default=False)
+    parser.add_argument("--annotate", type=bool, default=True)
     parser.add_argument("--data_subset", type=str, default="test-extrinsic")
-    parser.add_argument("--test_size", type=int, default=100)
+    parser.add_argument("--test_size", type=int, default=10)
     parser.add_argument("--entity_label_match", type=str, default="contained")
     parser.add_argument("--print_first_n", type=int, default=0)
     parser.add_argument("--model_filter", type=str, default="")
@@ -335,10 +335,13 @@ if __name__ == "__main__":
             filtered_sums_by_id = {
                 sum_id: x for sum_id, x in sums_by_id.items() if sum_id in test_set_ids
             }
+            filtered_ents_by_id = {
+                sum_id: x for sum_id, x in sum_ents_by_id.items() if sum_id in test_set_ids
+            }
             print(f"Model: {model_label}")
             agg_metrics, summaries = compute_metrics(
                 filtered_sums_by_id,
-                sum_ents_by_id,
+                filtered_ents_by_id,
                 gold_sums,
                 gold_metadata,
                 xsum_test,

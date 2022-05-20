@@ -1,12 +1,14 @@
 import streamlit as st
 from interface.beam_search import render_beam_search
-from interface.explore_results import render_explore_results
+from interface.explore_logs import render_explore_logs
+from interface.compare_results import render_compare_results
 
 
 def render():
     pages = {
-        "Explore Results": render_explore_results,
-        "Dictionary Constraints (word-level)": render_beam_search
+        "Compare Results": render_compare_results,
+        "Explore Logs": render_explore_logs,
+        "Phrase-level Beam Search Constraints": render_beam_search
     }
 
     st.sidebar.title("Factual Beam Search")
