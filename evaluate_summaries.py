@@ -111,7 +111,7 @@ if __name__ == "__main__":
                 args.entity_label_match,
                 args.print_first_n,
                 is_fbs="fbs" in model_label.lower(),
-                is_gold="gold" in model_label.lower(),
+                is_oracle="oracle" in model_label.lower(),
             )
             pp.pprint(agg_metrics)
             aggregated_results.append(

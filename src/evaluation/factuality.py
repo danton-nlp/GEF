@@ -1,3 +1,4 @@
+from collections import defaultdict
 from typing import List
 from src.annotation import prompt_annotation_flow
 from src.detect_entities import detect_entities
@@ -63,6 +64,70 @@ def mark_entities(summary, labeled_entities: List[MarkedEntity]):
     return marked_summary
 
 
+def evaluate_summary(
+    summary: str,
+    source: str,
+    reference: str,
+    labeled_entities: List[MarkedEntity],
+    is_fbs,
+    is_oracle,
+):
+    is_gold = summary == reference
+    summary_eval = {
+        "skipped": False,
+        "failed": False,
+        "count_entity_total": 0,
+        "count_entity_extrinsic": 0,
+        "count_entity_label": defaultdict(lambda: 0),
+        "has_predicted_non_factual": False,
+        "rouge1": None,
+        "rouge2": None,
+        "rougeL": None,
+    }
+    if summary == SUMMARY_FAILED_GENERATION:
+        summary_eval["failed"] = True
+        summary_eval["skipped"] = True
+    else:
+        rouge_scores = rouge([summary], [reference])
+        summary_eval["rouge1"] = rouge_scores["rouge1"]["f1"]
+        summary_eval["rouge2"] = rouge_scores["rouge2"]["f1"]
+        summary_eval["rougeL"] = rouge_scores["rougeL"]["f1"]
+
+        for ent in labeled_entities:
+            summary_eval["count_entity_total"] += 1
+
+            # Increment entity label count
+            if is_gold:
+                if ent["in_source"]:
+                    summary_eval["count_entity_label"][
+                        ANNOTATION_LABELS["Factual"]
+                    ] += 1
+                else:
+                    summary_eval["count_entity_label"][
+                        ANNOTATION_LABELS["Non-hallucinated"]
+                    ] += 1
+            else:
+                summary_eval["count_entity_label"][ent["label"]] += 1
+
+                # Detect non-factual predictions from FBS classifier
+                if (
+                    "predicted_label" in ent
+                    and ent["predicted_label"] == ANNOTATION_LABELS["Non-factual"]
+                ):
+                    summary_eval["has_predicted_non_factual"] = True
+
+    # Derive count of extrinsic entities from label counts
+    for extrinsic_label in [
+        ANNOTATION_LABELS["Factual"],
+        ANNOTATION_LABELS["Non-factual"],
+    ]:
+        summary_eval["count_entity_extrinsic"] += summary_eval["count_entity_label"][
+            extrinsic_label
+        ]
+
+    return summary_eval
+
+
 def evaluate_factuality(
     sums_by_id,
     sum_ents_by_id,
@@ -73,7 +138,7 @@ def evaluate_factuality(
     entity_match_type: EntityMatchType,
     print_first_n,
     is_fbs,
-    is_gold,
+    is_oracle,
 ):
     labeled_ents = get_labeled_entities(
         sums_by_id,
@@ -84,7 +149,7 @@ def evaluate_factuality(
         entity_match_type,
     )
     summary_results = {}
-    counters = {
+    agg_results = {
         "factual": 0,
         "non_factual": 0,
         "non_factual_intrinsic": 0,
@@ -97,82 +162,61 @@ def evaluate_factuality(
         "rouge2": [],
         "rougeL": [],
         "sum_with_extrinsic": 0,
+        "count_entity_label": defaultdict(lambda: 0)
     }
-    for value in ANNOTATION_LABELS.values():
-        counters[value] = 0
 
     print_counter = 0
     for sum_id, summary in tqdm(sorted(sums_by_id.items(), key=lambda x: x[0])):
-        source = xsum_test[sum_id]["document"]
-        reference = gold_sums[sum_id]["summary"]
+        summary_eval = evaluate_summary(
+            summary,
+            xsum_test[sum_id]["document"],
+            gold_sums[sum_id]["summary"],
+            labeled_ents[sum_id],
+            is_fbs,
+            is_oracle,
+        )
+        count_non_factual_extrinsic = summary_eval["count_entity_label"][
+            ANNOTATION_LABELS["Non-factual"]
+        ]
+        count_non_factual_intrinsic = summary_eval["count_entity_label"][
+            ANNOTATION_LABELS["Intrinsic"]
+        ]
 
+        # Init the possible eval states of a summary
         non_factual_extrinsic = False
         non_factual_intrinsic = False
-        is_skipped = False
-        has_unknown = False
-        has_failed = False
-
-        if summary == SUMMARY_FAILED_GENERATION:
-            is_skipped = True
-            has_failed = True
-            counters["failed"] += 1
-        else:
-            rouge_scores = rouge([summary], [reference])
-            counters["rouge1"].append(rouge_scores["rouge1"]["f1"])
-            counters["rouge2"].append(rouge_scores["rouge2"]["f1"])
-            counters["rougeL"].append(rouge_scores["rougeL"]["f1"])
-
-        n_extrinsic = 0
-        for ent in labeled_ents[sum_id]:
-            if is_gold:
-                if ent["in_source"]:
-                    counters[ANNOTATION_LABELS["Factual"]] += 1
-                else:
-                    counters[ANNOTATION_LABELS["Non-hallucinated"]] += 1
-                counters["entities"] += 1
-                continue
-
-            # SKIP LOGIC for FBS
-            if is_fbs:
-                is_oracle = "predicted_label" not in ent
-                if is_oracle and ent["label"] == ANNOTATION_LABELS["Non-factual"]:
-                    is_skipped = True
-                elif (
-                    not is_oracle
-                    and ent["predicted_label"] == ANNOTATION_LABELS["Non-factual"]
-                ):
-                    is_skipped = True
-
-            # Only count entity if summary is not skipped
-            if not is_skipped:
-                counters["entities"] += 1
-                counters[ent["label"]] += 1
-
-            if not is_skipped and ent["label"] == ANNOTATION_LABELS["Non-factual"]:
-                non_factual_extrinsic = True
-            elif ent["label"] == ANNOTATION_LABELS["Intrinsic"]:
-                non_factual_intrinsic = True
-            elif ent["label"] == "Unknown":
-                has_unknown = True
-
-            if ent["label"] in [
-                ANNOTATION_LABELS["Factual"],
-                ANNOTATION_LABELS["Non-factual"],
-            ]:
-                n_extrinsic += 1
-        non_factual = not is_skipped and (
-            non_factual_extrinsic or non_factual_intrinsic
+        non_factual = False
+        has_unknown = (
+            summary_eval["count_entity_label"][ANNOTATION_LABELS["Unknown"]] > 0
         )
+        count_extrinsic = 0
+
+        # Skip logic
+        is_skipped = False
+        if summary_eval["failed"]:
+            is_skipped = True
+        elif is_fbs and is_oracle and count_non_factual_extrinsic:
+            is_skipped = True
+        elif is_fbs and summary_eval["has_predicted_non_factual"]:
+            is_skipped = True
+
+        # Update evaluation state if summary is not skipped
+        if not is_skipped:
+            non_factual_extrinsic = count_non_factual_extrinsic > 0
+            non_factual_intrinsic = count_non_factual_intrinsic > 0
+            non_factual = non_factual_extrinsic or non_factual_intrinsic
+            count_extrinsic = summary_eval["count_entity_extrinsic"]
+
         summary_results[sum_id] = {
             "summary": summary,
             "is_non_factual": non_factual,
             "is_non_factual_extrinsic": non_factual_extrinsic,
             "is_non_factual_intrinsic": non_factual_intrinsic,
             "is_factual": not is_skipped and not non_factual and not has_unknown,
-            "has_unknown": has_unknown,
             "is_skipped": is_skipped,
-            "has_failed": has_failed,
-            "n_extrinsic": n_extrinsic,
+            "has_unknown": has_unknown,
+            "has_failed": summary_eval["failed"],
+            "count_extrinsic": count_extrinsic,
         }
 
         if print_counter < print_first_n:
@@ -187,46 +231,59 @@ def evaluate_factuality(
             print()
             print_counter += 1
 
+        # Increment aggregated results
+        if summary_eval["failed"]:
+            agg_results["failed"] += 1
+
+        # Only increment counts if summary is NOT skipped!
         if is_skipped:
-            counters["skipped"] += 1
-        elif non_factual:
-            counters["non_factual"] += 1
-        elif has_unknown:
-            counters["unknown"] += 1
+            agg_results["skipped"] += 1
         else:
-            counters["factual"] += 1
+            agg_results["entities"] += summary_eval["count_entity_total"]
+            for key, value in summary_eval["count_entity_label"].items():
+                agg_results["count_entity_label"][key] += value
 
-        if not is_skipped:
+            if non_factual:
+                agg_results["non_factual"] += 1
+            elif has_unknown:
+                agg_results["unknown"] += 1
+            else:
+                agg_results["factual"] += 1
+
             if non_factual_extrinsic:
-                counters["non_factual_extrinsic"] += 1
+                agg_results["non_factual_extrinsic"] += 1
             if non_factual_intrinsic:
-                counters["non_factual_intrinsic"] += 1
+                agg_results["non_factual_intrinsic"] += 1
 
-        if n_extrinsic > 0:
-            counters["sum_with_extrinsic"] += 1
+            if count_extrinsic > 0:
+                agg_results["sum_with_extrinsic"] += 1
+
+            agg_results["rouge1"].append(summary_eval["rouge1"])
+            agg_results["rouge2"].append(summary_eval["rouge2"])
+            agg_results["rougeL"].append(summary_eval["rougeL"])
 
     total = len(sums_by_id)
     metrics = {
         "summaries": {
             "total": total,
-            "factual": counters["factual"] / total,
-            "non_factual": counters["non_factual"] / total,
-            "non_factual_extrinsic": counters["non_factual_extrinsic"] / total,
-            "non_factual_intrinsic": counters["non_factual_intrinsic"] / total,
-            "skipped": counters["skipped"] / total,
-            "failed": counters["failed"],
-            "unknown": counters["unknown"] / total,
-            "sum_with_extrinsic": counters["sum_with_extrinsic"] / total,
-            "ents_per_sum": counters["entities"] / (total - counters["skipped"]),
+            "factual": agg_results["factual"] / total,
+            "non_factual": agg_results["non_factual"] / total,
+            "non_factual_extrinsic": agg_results["non_factual_extrinsic"] / total,
+            "non_factual_intrinsic": agg_results["non_factual_intrinsic"] / total,
+            "skipped": agg_results["skipped"] / total,
+            "failed": agg_results["failed"],
+            "unknown": agg_results["unknown"] / total,
+            "sum_with_extrinsic": agg_results["sum_with_extrinsic"] / total,
+            "ents_per_sum": agg_results["entities"] / (total - agg_results["skipped"]),
         },
         "entities": {
-            "total": counters["entities"],
+            "total": agg_results["entities"],
         },
-        "rouge1": np.mean(counters["rouge1"]),
-        "rouge2": np.mean(counters["rouge2"]),
-        "rougeL": np.mean(counters["rougeL"]),
+        "rouge1": np.mean(agg_results["rouge1"]),
+        "rouge2": np.mean(agg_results["rouge2"]),
+        "rougeL": np.mean(agg_results["rougeL"]),
     }
     for value in ANNOTATION_LABELS.values():
-        metrics["entities"][value] = counters[value]
+        metrics["entities"][value] = agg_results["count_entity_label"][value]
 
     return metrics, summary_results

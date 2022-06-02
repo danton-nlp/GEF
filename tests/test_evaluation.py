@@ -65,7 +65,7 @@ def test_evaluate_factuality_oracle():
         entity_match_type="strict_intrinsic",
         print_first_n=0,
         is_fbs=True,
-        is_gold=False,
+        is_oracle=True,
     )
     # These metrics might change if the dataset changes
     assert agg_metrics["summaries"]["total"] == 100
@@ -76,10 +76,10 @@ def test_evaluate_factuality_oracle():
     assert agg_metrics["rouge1"] > 0.46
     assert agg_metrics["rouge2"] > 0.22
     assert agg_metrics["entities"]["Unknown"] == 0
-    assert agg_metrics["entities"]["Factual Hallucination"] == 92
-    assert agg_metrics["entities"]["Intrinsic Hallucination"] == 15
-    assert agg_metrics["entities"]["Non-hallucinated"] == 167
-    assert agg_metrics["entities"]["total"] == 92 + 15 + 167
+    assert agg_metrics["entities"]["Factual Hallucination"] == 88
+    assert agg_metrics["entities"]["Intrinsic Hallucination"] == 14
+    assert agg_metrics["entities"]["Non-hallucinated"] == 154
+    assert agg_metrics["entities"]["total"] == 88 + 14 + 154
 
     # CRUCIAL: Oracle should have 0 non factual hallucinations because they're skipped
     assert agg_metrics["summaries"]["non_factual_extrinsic"] == 0
@@ -120,7 +120,7 @@ def test_evaluate_factuality_classifier():
         entity_match_type="strict_intrinsic",
         print_first_n=0,
         is_fbs=True,
-        is_gold=False,
+        is_oracle=False,
     )
     assert agg_metrics["summaries"]["total"] == 100
     assert agg_metrics["summaries"]["factual"] == 0.48
@@ -130,12 +130,12 @@ def test_evaluate_factuality_classifier():
     assert agg_metrics["summaries"]["skipped"] == 0.26
     assert agg_metrics["summaries"]["failed"] == 14
     assert agg_metrics["summaries"]["unknown"] == 0
-    assert agg_metrics["entities"]["Non-factual Hallucination"] == 24
     assert agg_metrics["entities"]["Unknown"] == 0
-    assert agg_metrics["entities"]["Factual Hallucination"] == 71
-    assert agg_metrics["entities"]["Intrinsic Hallucination"] == 13
-    assert agg_metrics["entities"]["Non-hallucinated"] == 155
-    assert agg_metrics["entities"]["total"] == 24 + 71 + 13 + 155
+    assert agg_metrics["entities"]["Non-factual Hallucination"] == 21
+    assert agg_metrics["entities"]["Factual Hallucination"] == 63
+    assert agg_metrics["entities"]["Intrinsic Hallucination"] == 11
+    assert agg_metrics["entities"]["Non-hallucinated"] == 144
+    assert agg_metrics["entities"]["total"] == 21 + 63 + 11 + 144
 
     # Should sum to 1
     assert (
@@ -168,7 +168,7 @@ def test_evaluate_factuality_baseline():
         entity_match_type="strict_intrinsic",
         print_first_n=0,
         is_fbs=False,
-        is_gold=False,
+        is_oracle=False,
     )
     assert agg_metrics["summaries"]["total"] == 100
     assert agg_metrics["summaries"]["factual"] == 0.41
@@ -205,7 +205,7 @@ def test_evaluate_factuality_gold():
         gold_sums,
         gold_metadata,
         xsum_test,
-    ) = load_data("facebook-bart-large-xsum")
+    ) = load_data("gold")
     agg_metrics, summaries = evaluate_factuality(
         sums_by_id,
         sum_ents_by_id,
@@ -216,7 +216,7 @@ def test_evaluate_factuality_gold():
         entity_match_type="strict_intrinsic",
         print_first_n=0,
         is_fbs=False,
-        is_gold=True,
+        is_oracle=False,
     )
     assert agg_metrics["summaries"]["total"] == 100
     assert agg_metrics["summaries"]["factual"] == 1
@@ -228,10 +228,10 @@ def test_evaluate_factuality_gold():
     assert agg_metrics["summaries"]["unknown"] == 0
     assert agg_metrics["entities"]["Non-factual Hallucination"] == 0
     assert agg_metrics["entities"]["Unknown"] == 0
-    assert agg_metrics["entities"]["Factual Hallucination"] == 202
+    assert agg_metrics["entities"]["Factual Hallucination"] == 173
     assert agg_metrics["entities"]["Intrinsic Hallucination"] == 0
-    assert agg_metrics["entities"]["Non-hallucinated"] == 167
-    assert agg_metrics["entities"]["total"] == 202 + 167
+    assert agg_metrics["entities"]["Non-hallucinated"] == 193
+    assert agg_metrics["entities"]["total"] == 173 + 193
 
     # Should sum to 1
     assert (
