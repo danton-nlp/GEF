@@ -4,14 +4,26 @@ from src.data_utils import (
     get_gold_data,
     load_xsum_dict,
 )
+from sumtool.storage import get_summaries
 from src.evaluation.factuality import evaluate_factuality
 from sumtool.storage import get_summary_metrics
 
 TEST_SIZE = 100
 
 
-def load_fbs_results(results_path: str):
-    sums_by_id, sum_ents_by_id = load_summaries_from_logs(results_path)
+def load_data(results_path: str):
+    sums_by_id, sum_ents_by_id = (
+        load_summaries_from_logs(results_path)
+        if "results" in results_path
+        # load from sumtool
+        else (
+            {
+                sum_id: x["summary"]
+                for sum_id, x in get_summaries("xsum", results_path).items()
+            },
+            {},
+        )
+    )
     gold_sums, gold_metadata = get_gold_data()
     baseline_metadata = get_summary_metrics("xsum", "facebook-bart-large-xsum")
     xsum_test = load_xsum_dict("test")
@@ -42,8 +54,7 @@ def test_evaluate_factuality_oracle():
         gold_sums,
         gold_metadata,
         xsum_test,
-    ) = load_fbs_results("results/test-extrinsic-oracle.json")
-
+    ) = load_data("results/test-extrinsic-oracle.json")
     agg_metrics, summaries = evaluate_factuality(
         sums_by_id,
         sum_ents_by_id,
@@ -98,9 +109,7 @@ def test_evaluate_factuality_classifier():
         gold_sums,
         gold_metadata,
         xsum_test,
-    ) = load_fbs_results("results/test-extrinsic-classifier-knnv1.json")
-    gold_sums, gold_metadata = get_gold_data()
-    xsum_test = load_xsum_dict("test")
+    ) = load_data("results/test-extrinsic-classifier-knnv1.json")
     agg_metrics, summaries = evaluate_factuality(
         sums_by_id,
         sum_ents_by_id,
@@ -127,6 +136,54 @@ def test_evaluate_factuality_classifier():
     assert agg_metrics["entities"]["Intrinsic Hallucination"] == 13
     assert agg_metrics["entities"]["Non-hallucinated"] == 155
     assert agg_metrics["entities"]["total"] == 24 + 71 + 13 + 155
+
+    # Should sum to 1
+    assert (
+        sum(
+            [
+                agg_metrics["summaries"]["factual"],
+                agg_metrics["summaries"]["non_factual"],
+                agg_metrics["summaries"]["skipped"],
+            ]
+        )
+        == 1
+    )
+
+
+def test_evaluate_factuality_baseline():
+    (
+        sums_by_id,
+        sum_ents_by_id,
+        gold_sums,
+        gold_metadata,
+        xsum_test,
+    ) = load_data("facebook-bart-large-xsum")
+    agg_metrics, summaries = evaluate_factuality(
+        sums_by_id,
+        sum_ents_by_id,
+        gold_sums,
+        gold_metadata,
+        xsum_test,
+        should_annotate=False,
+        entity_match_type="strict_intrinsic",
+        print_first_n=0,
+        is_fbs=False,
+        is_gold=False,
+    )
+    assert agg_metrics["summaries"]["total"] == 100
+    assert agg_metrics["summaries"]["factual"] == 0.41
+    assert agg_metrics["summaries"]["non_factual"] == 0.59
+    assert agg_metrics["summaries"]["non_factual_extrinsic"] == 0.52
+    assert agg_metrics["summaries"]["non_factual_intrinsic"] == 0.12
+    assert agg_metrics["summaries"]["skipped"] == 0
+    assert agg_metrics["summaries"]["failed"] == 0
+    assert agg_metrics["summaries"]["unknown"] == 0
+    assert agg_metrics["entities"]["Non-factual Hallucination"] == 74
+    assert agg_metrics["entities"]["Unknown"] == 0
+    assert agg_metrics["entities"]["Factual Hallucination"] == 94
+    assert agg_metrics["entities"]["Intrinsic Hallucination"] == 13
+    assert agg_metrics["entities"]["Non-hallucinated"] == 188
+    assert agg_metrics["entities"]["total"] == 74 + 94 + 13 + 188
 
     # Should sum to 1
     assert (
