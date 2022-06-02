@@ -2,6 +2,10 @@ from typing import Dict, List, Tuple, TypedDict
 import json
 from datasets import load_dataset
 import random
+from sumtool.storage import get_summary_metrics, get_summaries
+
+SUMTOOL_DATASET = "xsum"
+SUMTOOL_MODEL_GOLD = "gold"
 
 
 class XSumDoc(TypedDict):
@@ -137,3 +141,28 @@ def split_batches(lst, size):
     """Yield successive chunks from lst."""
     for i in range(0, len(lst), size):
         yield lst[i : i + size]
+
+
+def load_summaries_from_logs(path, max_iterations=5):
+    with open(path, "r") as f:
+        logs = json.load(f)
+
+    sorted_keys = sorted([int(x) for x in logs["iterations"].keys()])
+
+    sums_by_id = {}
+    sum_ents_by_id = {}
+    for idx in sorted_keys:
+        summaries = logs["iterations"][str(idx)]["summaries"]
+        for sum_id, data in summaries.items():
+            sums_by_id[sum_id] = data["summary"]
+            sum_ents_by_id[sum_id] = data["labeled_entities"]
+        if idx + 1 == max_iterations:
+            break
+    return (sums_by_id, sum_ents_by_id)
+
+
+def get_gold_data():
+    return (
+        get_summaries(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD),
+        get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD)
+    )

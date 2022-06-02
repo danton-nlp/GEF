@@ -2,7 +2,7 @@ from typing import List
 from src.annotation import prompt_annotation_flow
 from src.detect_entities import detect_entities
 from src.entity_utils import MarkedEntity, count_entities, filter_entities
-from src.oracle import get_entity_annotations, oracle_label_entities
+from src.oracle import EntityMatchType, get_entity_annotations, oracle_label_entities
 from src.entity_factuality import ANNOTATION_LABELS
 from src.generation_utils import SUMMARY_FAILED_GENERATION
 from src.metrics import rouge
@@ -70,7 +70,7 @@ def evaluate_factuality(
     gold_metadata,
     xsum_test,
     should_annotate,
-    entity_match_type,
+    entity_match_type: EntityMatchType,
     print_first_n,
     is_fbs,
     is_gold,
