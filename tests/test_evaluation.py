@@ -111,7 +111,7 @@ def test_evaluate_factuality_classifier():
     assert agg_metrics["summaries"]["skipped"] == 0.26
     assert agg_metrics["summaries"]["failed"] == 14
     assert agg_metrics["summaries"]["unknown"] == 0
-    assert agg_metrics["entities"]["Non-factual Hallucination"] == 37
+    assert agg_metrics["entities"]["Non-factual Hallucination"] == 24
 
     # Should sum to 1
     assert (
