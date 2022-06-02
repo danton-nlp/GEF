@@ -130,7 +130,6 @@ def evaluate_factuality(
                 else:
                     counters[ANNOTATION_LABELS["Non-hallucinated"]] += 1
                 continue
-            counters["entities"] += 1
 
             # SKIP LOGIC for FBS
             if is_fbs:
@@ -143,8 +142,9 @@ def evaluate_factuality(
                 ):
                     is_skipped = True
 
-            # Only count entity label if summary is not skipped
+            # Only count entity if summary is not skipped
             if not is_skipped:
+                counters["entities"] += 1
                 counters[ent["label"]] += 1
 
             if not is_skipped and ent["label"] == ANNOTATION_LABELS["Non-factual"]:
