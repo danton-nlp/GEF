@@ -129,6 +129,7 @@ def evaluate_factuality(
                     counters[ANNOTATION_LABELS["Factual"]] += 1
                 else:
                     counters[ANNOTATION_LABELS["Non-hallucinated"]] += 1
+                counters["entities"] += 1
                 continue
 
             # SKIP LOGIC for FBS

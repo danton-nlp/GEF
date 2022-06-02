@@ -196,3 +196,51 @@ def test_evaluate_factuality_baseline():
         )
         == 1
     )
+
+
+def test_evaluate_factuality_gold():
+    (
+        sums_by_id,
+        sum_ents_by_id,
+        gold_sums,
+        gold_metadata,
+        xsum_test,
+    ) = load_data("facebook-bart-large-xsum")
+    agg_metrics, summaries = evaluate_factuality(
+        sums_by_id,
+        sum_ents_by_id,
+        gold_sums,
+        gold_metadata,
+        xsum_test,
+        should_annotate=False,
+        entity_match_type="strict_intrinsic",
+        print_first_n=0,
+        is_fbs=False,
+        is_gold=True,
+    )
+    assert agg_metrics["summaries"]["total"] == 100
+    assert agg_metrics["summaries"]["factual"] == 1
+    assert agg_metrics["summaries"]["non_factual"] == 0
+    assert agg_metrics["summaries"]["non_factual_extrinsic"] == 0
+    assert agg_metrics["summaries"]["non_factual_intrinsic"] == 0
+    assert agg_metrics["summaries"]["skipped"] == 0
+    assert agg_metrics["summaries"]["failed"] == 0
+    assert agg_metrics["summaries"]["unknown"] == 0
+    assert agg_metrics["entities"]["Non-factual Hallucination"] == 0
+    assert agg_metrics["entities"]["Unknown"] == 0
+    assert agg_metrics["entities"]["Factual Hallucination"] == 202
+    assert agg_metrics["entities"]["Intrinsic Hallucination"] == 0
+    assert agg_metrics["entities"]["Non-hallucinated"] == 167
+    assert agg_metrics["entities"]["total"] == 202 + 167
+
+    # Should sum to 1
+    assert (
+        sum(
+            [
+                agg_metrics["summaries"]["factual"],
+                agg_metrics["summaries"]["non_factual"],
+                agg_metrics["summaries"]["skipped"],
+            ]
+        )
+        == 1
+    )
