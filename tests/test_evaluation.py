@@ -10,7 +10,7 @@ from sumtool.storage import get_summary_metrics
 TEST_SIZE = 100
 
 
-def load_data(results_path: str):
+def load_fbs_results(results_path: str):
     sums_by_id, sum_ents_by_id = load_summaries_from_logs(results_path)
     gold_sums, gold_metadata = get_gold_data()
     baseline_metadata = get_summary_metrics("xsum", "facebook-bart-large-xsum")
@@ -35,13 +35,14 @@ def load_data(results_path: str):
     )
 
 
-# TODO: add tests for sub-routines?
-
-
 def test_evaluate_factuality_oracle():
-    (sums_by_id, sum_ents_by_id, gold_sums, gold_metadata, xsum_test) = load_data(
-        "results/test-extrinsic-oracle.json"
-    )
+    (
+        sums_by_id,
+        sum_ents_by_id,
+        gold_sums,
+        gold_metadata,
+        xsum_test,
+    ) = load_fbs_results("results/test-extrinsic-oracle.json")
 
     agg_metrics, summaries = evaluate_factuality(
         sums_by_id,
@@ -63,6 +64,11 @@ def test_evaluate_factuality_oracle():
     assert agg_metrics["summaries"]["failed"] == 7
     assert agg_metrics["rouge1"] > 0.46
     assert agg_metrics["rouge2"] > 0.22
+    assert agg_metrics["entities"]["Unknown"] == 0
+    assert agg_metrics["entities"]["Factual Hallucination"] == 92
+    assert agg_metrics["entities"]["Intrinsic Hallucination"] == 15
+    assert agg_metrics["entities"]["Non-hallucinated"] == 167
+    assert agg_metrics["entities"]["total"] == 92 + 15 + 167
 
     # CRUCIAL: Oracle should have 0 non factual hallucinations because they're skipped
     assert agg_metrics["summaries"]["non_factual_extrinsic"] == 0
@@ -86,9 +92,13 @@ def test_evaluate_factuality_oracle():
 
 
 def test_evaluate_factuality_classifier():
-    (sums_by_id, sum_ents_by_id, gold_sums, gold_metadata, xsum_test) = load_data(
-        "results/test-extrinsic-classifier-knnv1.json"
-    )
+    (
+        sums_by_id,
+        sum_ents_by_id,
+        gold_sums,
+        gold_metadata,
+        xsum_test,
+    ) = load_fbs_results("results/test-extrinsic-classifier-knnv1.json")
     gold_sums, gold_metadata = get_gold_data()
     xsum_test = load_xsum_dict("test")
     agg_metrics, summaries = evaluate_factuality(
@@ -112,6 +122,11 @@ def test_evaluate_factuality_classifier():
     assert agg_metrics["summaries"]["failed"] == 14
     assert agg_metrics["summaries"]["unknown"] == 0
     assert agg_metrics["entities"]["Non-factual Hallucination"] == 24
+    assert agg_metrics["entities"]["Unknown"] == 0
+    assert agg_metrics["entities"]["Factual Hallucination"] == 71
+    assert agg_metrics["entities"]["Intrinsic Hallucination"] == 13
+    assert agg_metrics["entities"]["Non-hallucinated"] == 155
+    assert agg_metrics["entities"]["total"] == 24 + 71 + 13 + 155
 
     # Should sum to 1
     assert (
