@@ -1,34 +1,20 @@
-from src.data_utils import load_extrinsic_test_set, load_xent_test_set, load_xsum_dict
+from src.data_utils import (
+    get_gold_data,
+    load_extrinsic_test_set,
+    load_xent_test_set,
+    load_xsum_dict,
+    load_summaries_from_logs,
+)
 from src.evaluation.factuality import evaluate_factuality
 from sumtool.storage import get_summary_metrics, get_summaries
 import argparse
-import json
 import pprint
 import pandas as pd
 
 
 SUMTOOL_DATASET = "xsum"
-SUMTOOL_MODEL_GOLD = "gold"
 SUMTOOL_MODEL_BASELINE = "facebook-bart-large-xsum"
 pp = pprint.PrettyPrinter(indent=2)
-
-
-def load_summaries_from_logs(path, max_iterations=5):
-    with open(path, "r") as f:
-        logs = json.load(f)
-
-    sorted_keys = sorted([int(x) for x in logs["iterations"].keys()])
-
-    sums_by_id = {}
-    sum_ents_by_id = {}
-    for idx in sorted_keys:
-        summaries = logs["iterations"][str(idx)]["summaries"]
-        for sum_id, data in summaries.items():
-            sums_by_id[sum_id] = data["summary"]
-            sum_ents_by_id[sum_id] = data["labeled_entities"]
-        if idx + 1 == max_iterations:
-            break
-    return (sums_by_id, sum_ents_by_id)
 
 
 if __name__ == "__main__":
@@ -41,9 +27,8 @@ if __name__ == "__main__":
     parser.add_argument("--model_filter", type=str, default="")
     args = parser.parse_args()
 
-    gold_metadata = get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD)
     baseline_metadata = get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_BASELINE)
-    gold_sums = get_summaries(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD)
+    gold_sums, gold_metadata = get_gold_data()
     xsum_test = load_xsum_dict("test")
     if args.data_subset == "full":
         test_set_ids = set(xsum_test.keys())
