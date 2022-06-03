@@ -1,5 +1,5 @@
 {
-  "timestamp": 1654183551.402068,
+  "timestamp": 1654287181.836329,
   "args": {
     "pickled_classifier": "factuality-classifiers/v1-knn.pickle",
     "classifier_batch_size": 4,
@@ -853,8 +853,8 @@
       "summaries": {
         "37066389": {
           "banned_phrases": [
-            "Carlos",
-            "Omar"
+            "Omar",
+            "Carlos"
           ],
           "summary": "Colombia's Gabriel Martinez has been beaten in the Olympic men's flyweight final by Kazakhstan's Islam Dusmatov.",
           "generation_metadata": {
@@ -948,10 +948,10 @@
         },
         "34361828": {
           "banned_phrases": [
-            "the 1970s",
-            "Pembrokeshire",
+            "the 1950s",
             "Gwynedd village",
-            "the 1950s"
+            "the 1970s",
+            "Pembrokeshire"
           ],
           "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
           "generation_metadata": {
@@ -1015,9 +1015,9 @@
         },
         "36396523": {
           "banned_phrases": [
+            "South America",
             "Chile",
-            "Copa America",
-            "South America"
+            "Copa America"
           ],
           "summary": "Brazil have added Kaka to their squad for next month's Under-20 World Cup in South Africa.",
           "generation_metadata": {
@@ -1188,9 +1188,9 @@
       "summaries": {
         "37066389": {
           "banned_phrases": [
-            "Carlos",
+            "Omar",
             "Gabriel",
-            "Omar"
+            "Carlos"
           ],
           "summary": "Colombia's Jose Luis Martinez has been knocked out in the Olympic men's flyweight final by Kazakhstan's Ruslan Dusmatov.",
           "generation_metadata": {
@@ -1268,9 +1268,9 @@
         },
         "37615223": {
           "banned_phrases": [
+            "fourth",
             "the Amex Stadium",
-            "third",
-            "fourth"
+            "third"
           ],
           "summary": "Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex stadium.",
           "generation_metadata": {
@@ -1333,11 +1333,11 @@
         },
         "34361828": {
           "banned_phrases": [
-            "1950",
-            "the 1970s",
+            "the 1950s",
             "Gwynedd village",
             "Pembrokeshire",
-            "the 1950s"
+            "the 1970s",
+            "1950"
           ],
           "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
           "generation_metadata": {
@@ -1374,9 +1374,9 @@
         },
         "17996567": {
           "banned_phrases": [
+            "Staffordshire",
             "Gloucestershire",
-            "Flintshire",
-            "Staffordshire"
+            "Flintshire"
           ],
           "summary": "Plans to cut home-to-school transport subsidies for children in Gloucesterse have been put on hold.",
           "generation_metadata": {
@@ -1403,10 +1403,10 @@
         },
         "36396523": {
           "banned_phrases": [
-            "Chile",
-            "Copa America",
+            "South America",
             "South Africa",
-            "South America"
+            "Chile",
+            "Copa America"
           ],
           "summary": "<Failed generation: blocked all beams>",
           "generation_metadata": {
@@ -1524,12 +1524,12 @@
       "summaries": {
         "37066389": {
           "banned_phrases": [
-            "Luis",
             "Gabriel",
             "Carlos",
             "Jose",
-            "Ruslan",
-            "Omar"
+            "Omar",
+            "Luis",
+            "Ruslan"
           ],
           "summary": "<Failed generation: blocked all beams>",
           "generation_metadata": {
@@ -1546,10 +1546,10 @@
         },
         "37615223": {
           "banned_phrases": [
+            "fourth",
             "the Amex Stadium",
             "Amex",
-            "third",
-            "fourth"
+            "third"
           ],
           "summary": "Sam Baldock's first-half header was enough for Brighton to beat Wolves and move up to second in the Championship.",
           "generation_metadata": {
@@ -1610,11 +1610,11 @@
         },
         "34361828": {
           "banned_phrases": [
-            "1950",
-            "the 1970s",
+            "the 1950s",
             "Gwynedd village",
             "Pembrokeshire",
-            "the 1950s"
+            "the 1970s",
+            "1950"
           ],
           "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
           "generation_metadata": {
@@ -1652,8 +1652,8 @@
         "36203675": {
           "banned_phrases": [
             "the University of Bristol",
-            "the University of Cambridge",
             "the University of Manchester",
+            "the University of Cambridge",
             "the University of Oxford"
           ],
           "summary": "<Failed generation: blocked all beams>",
