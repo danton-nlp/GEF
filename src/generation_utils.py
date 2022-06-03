@@ -21,8 +21,13 @@ def entropy(p_dist: torch.Tensor) -> float:
     return -torch.mul(p_dist, p_dist.log()).sum(0).item()
 
 
-def load_prior_model_and_tokenizer():
-    return load_model_and_tokenizer("facebook/bart-large")
+def load_prior_model_and_tokenizer(model_name):
+    return load_model_and_tokenizer(model_name)
+
+
+def load_posterior_model_and_tokenizer(model_name):
+    if model_name == "entfa-cmlm":
+        return load_bart_xsum_cmlm()
 
 
 def load_model_and_tokenizer(

@@ -9,8 +9,7 @@ import numpy as np
 from src.misc_utils import Timer
 import pickle
 from src.generation_utils import (
-    load_bart_xsum_cmlm,
-    load_model_and_tokenizer,
+    load_posterior_model_and_tokenizer,
     load_prior_model_and_tokenizer,
 )
 from src.prob_computation_utils import build_masked_inputs_and_targets_for_inference
@@ -36,7 +35,9 @@ class EntityFactualityClassifier:
     classifying & returning label.
     """
 
-    def __init__(self, pickled_model_path, batch_size=4):
+    def __init__(
+        self, pickled_model_path, prior_model_path, posterior_model_path, batch_size=4
+    ):
         with Timer("Initializing entity factuality classifier"):
             with open(pickled_model_path, "rb") as f:
                 self.clf: PickledClassifier = pickle.load(f)
@@ -45,8 +46,12 @@ class EntityFactualityClassifier:
                 1: ANNOTATION_LABELS["Non-factual"],
             }
             self.batch_size = batch_size
-            self.prior_model_and_tokenizer = load_prior_model_and_tokenizer()
-            self.posterior_model_and_tokenizer = load_bart_xsum_cmlm()
+            self.prior_model_and_tokenizer = load_prior_model_and_tokenizer(
+                prior_model_path
+            )
+            self.posterior_model_and_tokenizer = load_posterior_model_and_tokenizer(
+                posterior_model_path
+            )
 
     def extract_features(
         self,
