@@ -1,5 +1,5 @@
 {
-  "timestamp": 1654182752.722374,
+  "timestamp": 1654286780.60166,
   "args": {
     "pickled_classifier": "",
     "classifier_batch_size": 4,
@@ -744,9 +744,9 @@
         },
         "36396523": {
           "banned_phrases": [
-            "World Cup",
+            "South America",
             "next month's",
-            "South America"
+            "World Cup"
           ],
           "summary": "Kaka has been called up to the Brazil squad for the Copa America next month.",
           "generation_metadata": {
@@ -974,8 +974,8 @@
         },
         "37615223": {
           "banned_phrases": [
-            "the Amex Stadium",
-            "third"
+            "third",
+            "the Amex Stadium"
           ],
           "summary": "Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to fourth in the Championship.",
           "generation_metadata": {
@@ -1016,10 +1016,10 @@
         },
         "32112735": {
           "banned_phrases": [
-            "Tomlinson",
-            "Horan",
             "Louis",
-            "Niall"
+            "Horan",
+            "Niall",
+            "Tomlinson"
           ],
           "summary": "One Direction have confirmed they're staying in the band.",
           "generation_metadata": {
@@ -1044,10 +1044,10 @@
         },
         "34361828": {
           "banned_phrases": [
-            "Pembrokeshire",
-            "Gwynedd village",
             "the 1950s",
-            "the 1970s"
+            "the 1970s",
+            "Pembrokeshire",
+            "Gwynedd village"
           ],
           "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
           "generation_metadata": {
@@ -1083,8 +1083,8 @@
         },
         "17996567": {
           "banned_phrases": [
-            "Flintshire",
-            "Gloucestershire"
+            "Gloucestershire",
+            "Flintshire"
           ],
           "summary": "Plans to cut home-to-school transport subsidies for children in Staffordshire have been put on hold.",
           "generation_metadata": {
@@ -1109,10 +1109,10 @@
         },
         "36396523": {
           "banned_phrases": [
-            "next month",
-            "World Cup",
+            "South America",
             "next month's",
-            "South America"
+            "World Cup",
+            "next month"
           ],
           "summary": "Kaka has been called up to the Brazil squad for the Copa America in Chile in June.",
           "generation_metadata": {
@@ -1280,8 +1280,8 @@
       "summaries": {
         "37066389": {
           "banned_phrases": [
-            "Gabriel",
             "Omar",
+            "Gabriel",
             "Kazakhstan",
             "Carlos"
           ],
@@ -1348,9 +1348,9 @@
         },
         "37615223": {
           "banned_phrases": [
-            "the Amex Stadium",
             "fourth",
-            "third"
+            "third",
+            "the Amex Stadium"
           ],
           "summary": "Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex stadium.",
           "generation_metadata": {
@@ -1411,11 +1411,11 @@
         },
         "34361828": {
           "banned_phrases": [
-            "the 1950s",
             "1950",
-            "the 1970s",
+            "Pembrokeshire",
             "Gwynedd village",
-            "Pembrokeshire"
+            "the 1950s",
+            "the 1970s"
           ],
           "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
           "generation_metadata": {
@@ -1452,8 +1452,8 @@
         "17996567": {
           "banned_phrases": [
             "Gloucestershire",
-            "Flintshire",
-            "Staffordshire"
+            "Staffordshire",
+            "Flintshire"
           ],
           "summary": "Plans to cut home-to-school transport subsidies for children in Gloucesterse have been put on hold.",
           "generation_metadata": {
@@ -1479,11 +1479,11 @@
         },
         "36396523": {
           "banned_phrases": [
-            "next month's",
             "South America",
             "World Cup",
+            "next month",
             "Chile",
-            "next month"
+            "next month's"
           ],
           "summary": "Kaka has been called up to the Brazil squad for the Copa America in Brazil in June.",
           "generation_metadata": {
@@ -1544,9 +1544,9 @@
         },
         "36203675": {
           "banned_phrases": [
-            "the University of Cambridge",
             "the University of Oxford",
-            "the University of Bristol"
+            "the University of Bristol",
+            "the University of Cambridge"
           ],
           "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Manchester.",
           "generation_metadata": {
@@ -1647,12 +1647,12 @@
       "summaries": {
         "37066389": {
           "banned_phrases": [
+            "Luis",
             "Gabriel",
+            "Jose",
             "Omar",
             "Kazakhstan",
-            "Luis",
-            "Carlos",
-            "Jose"
+            "Carlos"
           ],
           "summary": "<Failed generation: blocked all beams>",
           "generation_metadata": {
@@ -1671,9 +1671,9 @@
         "37615223": {
           "banned_phrases": [
             "Amex",
-            "the Amex Stadium",
             "fourth",
-            "third"
+            "third",
+            "the Amex Stadium"
           ],
           "summary": "Sam Baldock's first-half header was enough for Brighton to beat Wolves and move up to second in the Championship.",
           "generation_metadata": {
@@ -1733,11 +1733,11 @@
         },
         "34361828": {
           "banned_phrases": [
-            "the 1950s",
             "1950",
-            "the 1970s",
+            "Pembrokeshire",
             "Gwynedd village",
-            "Pembrokeshire"
+            "the 1950s",
+            "the 1970s"
           ],
           "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
           "generation_metadata": {
@@ -1774,9 +1774,9 @@
         "17996567": {
           "banned_phrases": [
             "Gloucestershire",
-            "Flintshire",
+            "Staffordshire",
             "Gloucesterse",
-            "Staffordshire"
+            "Flintshire"
           ],
           "summary": "Plans to cut home-to-school transport subsidies for children in Gloucestersfield have been put on hold.",
           "generation_metadata": {
@@ -1804,9 +1804,9 @@
         "36203675": {
           "banned_phrases": [
             "the University of Manchester",
-            "the University of Cambridge",
             "the University of Oxford",
-            "the University of Bristol"
+            "the University of Bristol",
+            "the University of Cambridge"
           ],
           "summary": "<Failed generation: blocked all beams>",
           "generation_metadata": {
