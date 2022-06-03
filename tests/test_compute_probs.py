@@ -10,7 +10,7 @@ from src.generation_utils import (load_bart_xsum_cmlm,
 @pytest.fixture(scope="session")
 def bart_large():
     print("Loading prior model...")
-    return load_prior_model_and_tokenizer()
+    return load_prior_model_and_tokenizer("facebook/bart-large")
 
 
 @pytest.fixture(scope="session")

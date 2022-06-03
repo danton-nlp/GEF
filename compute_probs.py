@@ -206,7 +206,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     dataset = json.load(open(args.entity_input_filepath))
 
-    prior_model_and_tokenizer = load_prior_model_and_tokenizer()
+    prior_model_and_tokenizer = load_prior_model_and_tokenizer("facebook/bart-large")
     posterior_model_and_tokenizer = load_bart_xsum_cmlm()
 
     for idx, example in enumerate(tqdm(dataset)):

@@ -166,7 +166,11 @@ if __name__ == "__main__":
     parser.add_argument("--pickled_classifier", type=str, default="")
     parser.add_argument("--classifier_batch_size", type=int, default=4)
     parser.add_argument("--entity_label_match", type=str, default="contained")
-    parser.add_argument("--model_path", type=str, default="facebook/bart-large-xsum")
+    parser.add_argument(
+        "--model_summarization", type=str, default="facebook/bart-large-xsum"
+    )
+    parser.add_argument("--model_prior", type=str, default="facebook/bart-large")
+    parser.add_argument("--model_posterior", type=str, default="entfa-cmlm")
     parser.add_argument("--max_iterations", type=int, default=5)
     parser.add_argument("--annotate", type=bool, default=False)
     parser.add_argument("--verbose", type=bool, default=False)
@@ -179,7 +183,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     num_beams = args.num_beams
     with Timer("Loading summarization model & dataset"):
-        model, tokenizer = load_model_and_tokenizer(args.model_path)
+        model, tokenizer = load_model_and_tokenizer(args.model_summarization)
         iteration_log = {}
         logging_path = get_new_log_path("logs-iterative") + ".json"
         summary_gold_metadata = get_summary_metrics("xsum", "gold")
@@ -188,7 +192,10 @@ if __name__ == "__main__":
 
     if args.pickled_classifier != "":
         clf_factuality = EntityFactualityClassifier(
-            args.pickled_classifier, args.classifier_batch_size
+            args.pickled_classifier,
+            args.model_prior,
+            args.model_posterior,
+            args.classifier_batch_size,
         )
     else:
         clf_factuality = None
