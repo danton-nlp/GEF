@@ -64,10 +64,9 @@ def build_masked_inputs_and_targets(
     return inputs, targets, entities, sources, labels
 
 
-class InferenceInput(TypedDict):
-    source: str
-    prediction: str
-    entities: List[MarkedEntity]
+Summary = str
+Source = str
+InferenceInput = List[Tuple[Summary, Source, List[MarkedEntity]]]
 
 
 def build_masked_inputs_and_targets_for_inference(
@@ -89,15 +88,15 @@ def build_masked_inputs_and_targets_for_inference(
     """
 
     inputs, targets, entities, sources = [], [], [], []
-    prediction = inference_input["prediction"]
 
-    for entity in inference_input["entities"]:
-        masked_input = (
-            prediction[0 : entity["start"]] + "<mask>" + prediction[entity["end"] :]
-        )
-        inputs.append(masked_input)
-        targets.append(prediction)
-        entities.append(entity["ent"])
-        sources.append(inference_input["source"])
+    for (prediction, source, marked_ents) in inference_input:
+        for entity in marked_ents:
+            masked_input = (
+                prediction[0 : entity["start"]] + "<mask>" + prediction[entity["end"] :]
+            )
+            inputs.append(masked_input)
+            targets.append(prediction)
+            entities.append(entity["ent"])
+            sources.append(source)
 
     return inputs, targets, entities, sources
