@@ -6,7 +6,7 @@ from sumtool.storage import get_summary_metrics, get_summaries
 from src.entity_utils import MarkedEntity, count_entities, filter_entities
 from src.oracle import get_entity_annotations, oracle_label_entities
 from src.entity_factuality import ANNOTATION_LABELS
-from src.generation_utils import SUMMARY_FAILED_GENERATION
+from transformers_phrase_limits import SUMMARY_FAILED_GENERATION
 from src.metrics import rouge
 import argparse
 import json

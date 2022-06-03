@@ -1,9 +1,12 @@
 import argparse
 from src.data_utils import load_xsum_dict
-from src.generation_utils import load_model_and_tokenizer, generate_summaries
+from src.generation_utils import load_model_and_tokenizer
 import json
-from src.beam_validators import BannedPhrases
-from src.word_logits_processor import WordLogitsProcessor
+from transformers_phrase_limits import (
+    BannedPhrases,
+    generate_summaries_with_phrase_limits,
+    PhraseLogitsProcessor
+)
 
 
 def load_annotations(fname):
@@ -41,12 +44,12 @@ if __name__ == "__main__":
             word for word in annotation["non_factual_hallucinations"]
         }
 
-    factuality_enforcer = WordLogitsProcessor(
+    factuality_enforcer = PhraseLogitsProcessor(
         tokenizer,
         args.num_beams,
         BannedPhrases(banned_phrases_by_input_idx=banned_phrases_by_input_idx),
     )
-    summaries, metadata = generate_summaries(
+    summaries, metadata = generate_summaries_with_phrase_limits(
         model,
         tokenizer,
         docs_to_summarize,

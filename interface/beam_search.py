@@ -1,8 +1,11 @@
 from datasets import load_dataset
 import streamlit as st
-from src.beam_validators import BannedPhrases
-from src.word_logits_processor import WordLogitsProcessor
-from src.generation_utils import generate_summaries, load_model_and_tokenizer
+from transformers_phrase_limits import (
+    PhraseLogitsProcessor,
+    BannedPhrases,
+    generate_summaries_with_phrase_limits
+)
+from src.generation_utils import load_model_and_tokenizer
 import pandas as pd
 import numpy as np
 
@@ -16,11 +19,11 @@ def cached_model_and_tokenizer():
 def cached_generate_summaries(docs_to_summarize, excluded_dictionary, num_beams):
     model, tokenizer = cached_model_and_tokenizer()
 
-    return generate_summaries(
+    return generate_summaries_with_phrase_limits(
         model,
         tokenizer,
         docs_to_summarize,
-        WordLogitsProcessor(
+        PhraseLogitsProcessor(
             tokenizer, num_beams, BannedPhrases(excluded_dictionary)
         ),
         return_beam_metadata=True,
