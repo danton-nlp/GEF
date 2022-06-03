@@ -335,7 +335,7 @@ if __name__ == "__main__":
                         # Use classifier label if classifier is loaded, otherwise use the oracle
                         label = (
                             ent["predicted_label"]
-                            if clf_factuality is not None and "predicted_label" in ent
+                            if clf_factuality is not None
                             else ent["label"]
                         )
                         results_by_sum_id[sum_id][label].append(ent)

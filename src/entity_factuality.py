@@ -108,7 +108,12 @@ class EntityFactualityClassifier:
         classified_entities: MarkedEntityLookup = {}
         for sum_id, summary in gen_summaries_by_id.items():
             updated_entities = [x.copy() for x in marked_entities[sum_id]]
-            entities_to_classify = [x for x in updated_entities if not x["in_source"]]
+            entities_to_classify = []
+            for ent in updated_entities:
+                if ent["in_source"]:
+                    ent["predicted_label"] = ANNOTATION_LABELS["Non-hallucinated"]
+                else:
+                    entities_to_classify.append(ent)
             if len(entities_to_classify) > 0:
                 features = self.extract_features(
                     summary, sources_by_id[sum_id], entities_to_classify
