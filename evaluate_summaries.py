@@ -19,7 +19,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--annotate", type=bool, default=False)
     parser.add_argument("--test_size", type=int, default=100)
-    parser.add_argument("--entity_label_match", type=str, default="strict_intrinsic")
+    parser.add_argument("--entity_label_match", type=str, default="strict_all")
     parser.add_argument("--print_first_n", type=int, default=0)
     parser.add_argument("--model_filter", type=str, default="")
     parser.add_argument("--count_skips", type=bool, default=False)
