@@ -50,20 +50,20 @@ if __name__ == "__main__":
     generated_summary_ids = []
     generated_summaries = []
 
-    for batch_idx, batch_data in enumerate(tqdm(data_loader)):
-        batch_inputs = tokenizer(
-            batch_data['document'],
-            return_tensors='pt',
-            padding=True,
-            truncation=True
-        ).to(device)
+    with torch.no_grad():
+        for batch_idx, batch_data in enumerate(tqdm(data_loader)):
+            batch_inputs = tokenizer(
+                batch_data['document'],
+                return_tensors='pt',
+                padding=True,
+                truncation=True
+            ).to(device)
 
-        batch_predicted_summaries = tokenizer.batch_decode(
-            model.generate(batch_inputs.input_ids)
-        )
-
-        generated_summary_ids.extend(batch_data['id'])
-        generated_summaries.extend(batch_predicted_summaries)
+            batch_predicted_summaries = tokenizer.batch_decode(
+                model.generate(batch_inputs.input_ids)
+            )
+            generated_summary_ids.extend(batch_data['id'])
+            generated_summaries.extend(batch_predicted_summaries)
 
     xsumidx_to_generated_summary = dict(zip(generated_summary_ids, generated_summaries))
 
