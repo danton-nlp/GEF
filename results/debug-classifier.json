@@ -1,16 +1,13 @@
 {
-  "timestamp": 1654283082.671066,
+  "timestamp": 1652648533.8159683,
   "args": {
-    "pickled_classifier": "factuality-classifiers/v1-knn.pickle",
+    "pickled_classifier": "factuality-classifiers/v0-knn.pickle",
     "classifier_batch_size": 4,
-    "entity_label_match": "contained",
     "model_path": "facebook/bart-large-xsum",
     "max_iterations": 5,
     "annotate": false,
     "verbose": false,
-    "batch_size": 2,
-    "test_size": 100,
-    "num_beams": 4,
+    "batch_size": 4,
     "data_subset": "debug"
   },
   "iterations": {
@@ -20,7 +17,7 @@
           "banned_phrases": [],
           "summary": "Colombia's Omar Martinez lost to Kazakhstan's Islam Dusmatov in the Olympic men's flyweight final in Rio.",
           "generation_metadata": {
-            "score": -0.6497074365615845,
+            "score": -0.6497118473052979,
             "dropped_seqs": [],
             "n_words_checked": 81
           },
@@ -31,6 +28,7 @@
               "start": 0,
               "end": 8,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -48,6 +46,7 @@
               "start": 16,
               "end": 24,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -74,7 +73,7 @@
           "banned_phrases": [],
           "summary": "Villagers in Shropshire are calling for the reopening of a dual carriageway next to Stonehenge.",
           "generation_metadata": {
-            "score": -0.559841513633728,
+            "score": -0.5598481893539429,
             "dropped_seqs": [],
             "n_words_checked": 80
           },
@@ -94,6 +93,7 @@
               "start": 84,
               "end": 94,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             }
           ]
@@ -102,9 +102,9 @@
           "banned_phrases": [],
           "summary": "Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium.",
           "generation_metadata": {
-            "score": -0.5099020004272461,
+            "score": -0.5099042057991028,
             "dropped_seqs": [],
-            "n_words_checked": 82
+            "n_words_checked": 90
           },
           "labeled_entities": [
             {
@@ -113,14 +113,16 @@
               "start": 0,
               "end": 3,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
-              "ent": "Baldock's",
+              "ent": "Baldock",
               "type": "PERSON",
               "start": 4,
-              "end": 13,
+              "end": 11,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -138,6 +140,7 @@
               "start": 51,
               "end": 59,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -155,9 +158,9 @@
           "banned_phrases": [],
           "summary": "Liam Payne and Niall Horan have confirmed they're staying in One Direction.",
           "generation_metadata": {
-            "score": -0.48298680782318115,
+            "score": -0.48299190402030945,
             "dropped_seqs": [],
-            "n_words_checked": 77
+            "n_words_checked": 89
           },
           "labeled_entities": [
             {
@@ -166,6 +169,7 @@
               "start": 0,
               "end": 4,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -174,6 +178,7 @@
               "start": 5,
               "end": 10,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -200,7 +205,7 @@
           "banned_phrases": [],
           "summary": "A search is under way for the remains of a Pembrokeshire village which was wiped out by storms in the 1970s.",
           "generation_metadata": {
-            "score": -0.692768931388855,
+            "score": -0.6927704215049744,
             "dropped_seqs": [],
             "n_words_checked": 95
           },
@@ -229,7 +234,7 @@
           "banned_phrases": [],
           "summary": "Plans to cut home-to-school transport subsidies in Gloucestershire have been put on hold.",
           "generation_metadata": {
-            "score": -0.5601837038993835,
+            "score": -0.5601844191551208,
             "dropped_seqs": [],
             "n_words_checked": 89
           },
@@ -249,9 +254,9 @@
           "banned_phrases": [],
           "summary": "Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final World Cup warm-up.",
           "generation_metadata": {
-            "score": -0.36631321907043457,
+            "score": -0.3663136959075928,
             "dropped_seqs": [],
-            "n_words_checked": 86
+            "n_words_checked": 89
           },
           "labeled_entities": [
             {
@@ -260,6 +265,7 @@
               "start": 0,
               "end": 6,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -268,6 +274,7 @@
               "start": 7,
               "end": 13,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -276,6 +283,7 @@
               "start": 40,
               "end": 47,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -284,6 +292,7 @@
               "start": 73,
               "end": 79,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -301,9 +310,9 @@
           "banned_phrases": [],
           "summary": "Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America.",
           "generation_metadata": {
-            "score": -0.45060160756111145,
+            "score": -0.45060282945632935,
             "dropped_seqs": [],
-            "n_words_checked": 81
+            "n_words_checked": 89
           },
           "labeled_entities": [
             {
@@ -312,6 +321,7 @@
               "start": 0,
               "end": 6,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -320,6 +330,7 @@
               "start": 18,
               "end": 22,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -355,7 +366,7 @@
           "banned_phrases": [],
           "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol.",
           "generation_metadata": {
-            "score": -0.8142673969268799,
+            "score": -0.8142692446708679,
             "dropped_seqs": [],
             "n_words_checked": 96
           },
@@ -375,7 +386,7 @@
           "banned_phrases": [],
           "summary": "Abertay University in Dundee has been named the best university in the world for its graduate courses in computer games design.",
           "generation_metadata": {
-            "score": -0.5155394673347473,
+            "score": -0.515540361404419,
             "dropped_seqs": [],
             "n_words_checked": 87
           },
@@ -404,34 +415,34 @@
         "entity": {
           "label": {
             "Non-factual Hallucination": 9,
-            "Factual Hallucination": 8,
+            "Factual Hallucination": 22,
             "Unknown": 0,
-            "Non-hallucinated": 14,
+            "Non-hallucinated": 0,
             "Intrinsic Hallucination": 0
           },
           "type": {
             "PERSON": {
               "total": 11,
               "Non-factual Hallucination": 1,
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 10,
               "Unknown": 0,
-              "Non-hallucinated": 8,
+              "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
             "GPE": {
               "total": 11,
               "Non-factual Hallucination": 3,
-              "Factual Hallucination": 3,
+              "Factual Hallucination": 8,
               "Unknown": 0,
-              "Non-hallucinated": 5,
+              "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
             "FAC": {
               "total": 2,
               "Non-factual Hallucination": 1,
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Unknown": 0,
-              "Non-hallucinated": 1,
+              "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
             "DATE": {
@@ -478,7 +489,7 @@
           ],
           "summary": "Colombia's Carlos Martinez has been beaten in the Olympic men's flyweight final by Kazakhstan's Islam Dusmatov.",
           "generation_metadata": {
-            "score": -0.66920405626297,
+            "score": -0.6692063808441162,
             "dropped_seqs": [
               "</s>Colombia's Omar"
             ],
@@ -491,6 +502,7 @@
               "start": 0,
               "end": 8,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -508,6 +520,7 @@
               "start": 18,
               "end": 26,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -527,7 +540,7 @@
           ],
           "summary": "Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to third in the Championship.",
           "generation_metadata": {
-            "score": -0.5327224135398865,
+            "score": -0.5327234268188477,
             "dropped_seqs": [
               "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves at the Amex Stadium",
               "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium"
@@ -541,6 +554,7 @@
               "start": 0,
               "end": 3,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -549,6 +563,7 @@
               "start": 4,
               "end": 11,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -557,6 +572,7 @@
               "start": 83,
               "end": 88,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-factual Hallucination"
             }
           ]
@@ -568,7 +584,7 @@
           ],
           "summary": "A search is under way for the remains of a Gwynedd village which was wiped out by storms in the 1950s.",
           "generation_metadata": {
-            "score": -0.7429369688034058,
+            "score": -0.7429375052452087,
             "dropped_seqs": [
               "</s>A search is under way for the remains of a Pembrokeshire",
               "</s>A search is under way for the remains of a Gwynedd village which was wiped out by storms in the 1970s",
@@ -603,7 +619,7 @@
           ],
           "summary": "Plans to cut home-to-school transport subsidies for children in Flintshire have been put on hold.",
           "generation_metadata": {
-            "score": -0.6140730381011963,
+            "score": -0.6140735745429993,
             "dropped_seqs": [
               "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
@@ -628,13 +644,13 @@
           ],
           "summary": "Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final Euro 2016 warm-up game.",
           "generation_metadata": {
-            "score": -0.37551578879356384,
+            "score": -0.37551575899124146,
             "dropped_seqs": [
               "</s>Eden Hazard scored twice as Belgium came from behind to beat Norway in their final World Cup",
               "</s>Eden Hazard scored twice as Belgium came from behind to beat Norway 3-2 in their final World Cup",
               "</s>Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final World Cup"
             ],
-            "n_words_checked": 94
+            "n_words_checked": 96
           },
           "labeled_entities": [
             {
@@ -643,6 +659,7 @@
               "start": 0,
               "end": 6,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -651,6 +668,7 @@
               "start": 7,
               "end": 13,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -659,6 +677,7 @@
               "start": 40,
               "end": 47,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -667,6 +686,7 @@
               "start": 73,
               "end": 79,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -675,6 +695,7 @@
               "start": 100,
               "end": 104,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             }
           ]
@@ -685,7 +706,7 @@
           ],
           "summary": "Brazil have added Kaka to their squad for next month's Copa America in Chile.",
           "generation_metadata": {
-            "score": -0.4901454448699951,
+            "score": -0.4901476800441742,
             "dropped_seqs": [
               "</s>Brazil have added Kaka to their squad for the Under-20 World Cup in South America",
               "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America",
@@ -700,6 +721,7 @@
               "start": 0,
               "end": 6,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -708,6 +730,7 @@
               "start": 18,
               "end": 22,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -745,7 +768,7 @@
           ],
           "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford.",
           "generation_metadata": {
-            "score": -0.8211338520050049,
+            "score": -0.8211356997489929,
             "dropped_seqs": [
               "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol"
@@ -770,61 +793,61 @@
           ],
           "summary": "Abertay University has been named the best university in the world for its graduate courses in computer games design.",
           "generation_metadata": {
-            "score": -0.5877702832221985,
+            "score": -0.5877705216407776,
             "dropped_seqs": [
               "</s>Abertay University in Dundee"
             ],
-            "n_words_checked": 101
+            "n_words_checked": 93
           },
           "labeled_entities": []
         }
       },
       "stats": {
         "summary": {
-          "completed": 4,
+          "completed": 5,
           "total": 10,
-          "factual": 4,
-          "non_factual": 6,
+          "factual": 5,
+          "non_factual": 5,
           "failed": 0,
           "unknown": 0
         },
         "entity": {
           "label": {
-            "Non-factual Hallucination": 8,
-            "Factual Hallucination": 5,
+            "Non-factual Hallucination": 7,
+            "Factual Hallucination": 20,
             "Unknown": 0,
-            "Non-hallucinated": 14,
+            "Non-hallucinated": 0,
             "Intrinsic Hallucination": 0
           },
           "type": {
             "PERSON": {
               "total": 12,
               "Non-factual Hallucination": 2,
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 10,
               "Unknown": 0,
-              "Non-hallucinated": 8,
+              "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
             "GPE": {
               "total": 8,
               "Non-factual Hallucination": 2,
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 6,
               "Unknown": 0,
-              "Non-hallucinated": 4,
+              "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
             "FAC": {
               "total": 2,
               "Non-factual Hallucination": 1,
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Unknown": 0,
-              "Non-hallucinated": 1,
+              "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
             "ORDINAL": {
               "total": 1,
-              "Non-factual Hallucination": 1,
-              "Factual Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Unknown": 0,
               "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
@@ -832,9 +855,9 @@
             "DATE": {
               "total": 3,
               "Non-factual Hallucination": 1,
-              "Factual Hallucination": 1,
+              "Factual Hallucination": 2,
               "Unknown": 0,
-              "Non-hallucinated": 1,
+              "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
             "ORG": {
@@ -858,7 +881,7 @@
           ],
           "summary": "Colombia's Gabriel Martinez has been beaten in the Olympic men's flyweight final by Kazakhstan's Islam Dusmatov.",
           "generation_metadata": {
-            "score": -0.7071731686592102,
+            "score": -0.7071751952171326,
             "dropped_seqs": [
               "</s>Colombia's Omar",
               "</s>Colombia's Carlos",
@@ -873,6 +896,7 @@
               "start": 0,
               "end": 8,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -890,6 +914,7 @@
               "start": 19,
               "end": 27,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -903,59 +928,16 @@
             }
           ]
         },
-        "37615223": {
-          "banned_phrases": [
-            "third",
-            "the Amex Stadium"
-          ],
-          "summary": "Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to fourth in the Championship.",
-          "generation_metadata": {
-            "score": -0.5369516015052795,
-            "dropped_seqs": [
-              "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves at the Amex Stadium",
-              "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to third",
-              "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium"
-            ],
-            "n_words_checked": 88
-          },
-          "labeled_entities": [
-            {
-              "ent": "Sam",
-              "type": "PERSON",
-              "start": 0,
-              "end": 3,
-              "in_source": true,
-              "label": "Non-hallucinated"
-            },
-            {
-              "ent": "Baldock",
-              "type": "PERSON",
-              "start": 4,
-              "end": 11,
-              "in_source": true,
-              "label": "Non-hallucinated"
-            },
-            {
-              "ent": "fourth",
-              "type": "ORDINAL",
-              "start": 83,
-              "end": 89,
-              "in_source": false,
-              "predicted_label": "Non-factual Hallucination",
-              "label": "Non-factual Hallucination"
-            }
-          ]
-        },
         "34361828": {
           "banned_phrases": [
             "Pembrokeshire",
+            "Gwynedd village",
             "the 1950s",
-            "the 1970s",
-            "Gwynedd village"
+            "the 1970s"
           ],
           "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
           "generation_metadata": {
-            "score": -1.00760817527771,
+            "score": -1.0076079368591309,
             "dropped_seqs": [
               "</s>A search is under way for the remains of a Gwynedd village",
               "</s>A search is under way for the remains of a Pembrokeshire",
@@ -973,6 +955,7 @@
               "start": 47,
               "end": 52,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -993,13 +976,13 @@
           ],
           "summary": "Plans to cut home-to-school transport subsidies for children in Staffordshire have been put on hold.",
           "generation_metadata": {
-            "score": -0.6207175850868225,
+            "score": -0.6207178235054016,
             "dropped_seqs": [
               "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
               "</s>Plans to cut home-to-school transport subsidies for children in Flintshire",
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
-            "n_words_checked": 85
+            "n_words_checked": 81
           },
           "labeled_entities": [
             {
@@ -1015,13 +998,13 @@
         },
         "36396523": {
           "banned_phrases": [
-            "Copa America",
             "South America",
+            "Copa America",
             "Chile"
           ],
           "summary": "Brazil have added Kaka to their squad for next month's Under-20 World Cup in South Africa.",
           "generation_metadata": {
-            "score": -0.4966789484024048,
+            "score": -0.49668043851852417,
             "dropped_seqs": [
               "</s>Brazil have added Kaka to their squad for next month's Copa America",
               "</s>Brazil have added Kaka to their squad for the Under-20 World Cup in Chile",
@@ -1029,7 +1012,7 @@
               "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America",
               "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup in South America"
             ],
-            "n_words_checked": 75
+            "n_words_checked": 79
           },
           "labeled_entities": [
             {
@@ -1038,6 +1021,7 @@
               "start": 0,
               "end": 6,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -1046,6 +1030,7 @@
               "start": 18,
               "end": 22,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -1073,7 +1058,7 @@
               "end": 89,
               "in_source": false,
               "predicted_label": "Non-factual Hallucination",
-              "label": "Non-factual Hallucination"
+              "label": "Unknown"
             }
           ]
         },
@@ -1084,7 +1069,7 @@
           ],
           "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge.",
           "generation_metadata": {
-            "score": -0.8350398540496826,
+            "score": -0.8350410461425781,
             "dropped_seqs": [
               "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
               "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Oxford",
@@ -1108,50 +1093,50 @@
       },
       "stats": {
         "summary": {
-          "completed": 4,
+          "completed": 5,
           "total": 10,
-          "factual": 4,
-          "non_factual": 6,
+          "factual": 5,
+          "non_factual": 5,
           "failed": 0,
           "unknown": 0
         },
         "entity": {
           "label": {
-            "Non-factual Hallucination": 6,
-            "Factual Hallucination": 6,
+            "Non-factual Hallucination": 5,
+            "Factual Hallucination": 22,
             "Unknown": 0,
-            "Non-hallucinated": 15,
+            "Non-hallucinated": 0,
             "Intrinsic Hallucination": 0
           },
           "type": {
             "PERSON": {
               "total": 11,
               "Non-factual Hallucination": 1,
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 10,
               "Unknown": 0,
-              "Non-hallucinated": 8,
+              "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
             "GPE": {
               "total": 9,
               "Non-factual Hallucination": 2,
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 7,
               "Unknown": 0,
-              "Non-hallucinated": 5,
+              "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
             "FAC": {
               "total": 1,
               "Non-factual Hallucination": 0,
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Unknown": 0,
-              "Non-hallucinated": 1,
+              "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
             "ORDINAL": {
               "total": 1,
-              "Non-factual Hallucination": 1,
-              "Factual Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Unknown": 0,
               "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
@@ -1159,9 +1144,9 @@
             "DATE": {
               "total": 3,
               "Non-factual Hallucination": 1,
-              "Factual Hallucination": 1,
+              "Factual Hallucination": 2,
               "Unknown": 0,
-              "Non-hallucinated": 1,
+              "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
             "EVENT": {
@@ -1189,19 +1174,19 @@
         "37066389": {
           "banned_phrases": [
             "Omar",
-            "Carlos",
-            "Gabriel"
+            "Gabriel",
+            "Carlos"
           ],
           "summary": "Colombia's Jose Luis Martinez has been knocked out in the Olympic men's flyweight final by Kazakhstan's Ruslan Dusmatov.",
           "generation_metadata": {
-            "score": -0.7542145252227783,
+            "score": -0.7542169094085693,
             "dropped_seqs": [
               "</s>Colombia's Omar",
               "</s>Colombia's Carlos",
               "</s>Colombia's Gabriel",
               "</s>Colombia's Jose Carlos"
             ],
-            "n_words_checked": 90
+            "n_words_checked": 87
           },
           "labeled_entities": [
             {
@@ -1210,6 +1195,7 @@
               "start": 0,
               "end": 8,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -1236,6 +1222,7 @@
               "start": 21,
               "end": 29,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -1254,7 +1241,7 @@
               "end": 110,
               "in_source": false,
               "predicted_label": "Non-factual Hallucination",
-              "label": "Non-factual Hallucination"
+              "label": "Unknown"
             },
             {
               "ent": "Dusmatov",
@@ -1262,86 +1249,22 @@
               "start": 111,
               "end": 119,
               "in_source": true,
-              "label": "Non-hallucinated"
-            }
-          ]
-        },
-        "37615223": {
-          "banned_phrases": [
-            "third",
-            "the Amex Stadium",
-            "fourth"
-          ],
-          "summary": "Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex stadium.",
-          "generation_metadata": {
-            "score": -0.7147307991981506,
-            "dropped_seqs": [
-              "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves at the Amex Stadium",
-              "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to third",
-              "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to fourth",
-              "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium",
-              "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex stadium and move them up to third",
-              "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex stadium and move them up to fourth",
-              "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex stadium and move the Seagulls up to fourth"
-            ],
-            "n_words_checked": 114
-          },
-          "labeled_entities": [
-            {
-              "ent": "Sam",
-              "type": "PERSON",
-              "start": 0,
-              "end": 3,
-              "in_source": true,
-              "label": "Non-hallucinated"
-            },
-            {
-              "ent": "Baldock's",
-              "type": "PERSON",
-              "start": 4,
-              "end": 13,
-              "in_source": true,
-              "label": "Non-hallucinated"
-            },
-            {
-              "ent": "first-half",
-              "type": "DATE",
-              "start": 14,
-              "end": 24,
-              "in_source": false,
               "predicted_label": "Factual Hallucination",
-              "label": "Factual Hallucination"
-            },
-            {
-              "ent": "Brighton",
-              "type": "GPE",
-              "start": 51,
-              "end": 59,
-              "in_source": true,
               "label": "Non-hallucinated"
-            },
-            {
-              "ent": "Amex",
-              "type": "ORG",
-              "start": 87,
-              "end": 91,
-              "in_source": false,
-              "predicted_label": "Non-factual Hallucination",
-              "label": "Non-factual Hallucination"
             }
           ]
         },
         "34361828": {
           "banned_phrases": [
             "Pembrokeshire",
-            "the 1950s",
+            "Gwynedd village",
             "the 1970s",
-            "1950",
-            "Gwynedd village"
+            "the 1950s",
+            "1950"
           ],
           "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
           "generation_metadata": {
-            "score": -1.00760817527771,
+            "score": -1.0076079368591309,
             "dropped_seqs": [
               "</s>A search is under way for the remains of a Gwynedd village",
               "</s>A search is under way for the remains of a Pembrokeshire",
@@ -1359,6 +1282,7 @@
               "start": 47,
               "end": 52,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -1374,20 +1298,20 @@
         },
         "17996567": {
           "banned_phrases": [
+            "Staffordshire",
             "Flintshire",
-            "Gloucestershire",
-            "Staffordshire"
+            "Gloucestershire"
           ],
           "summary": "Plans to cut home-to-school transport subsidies for children in Gloucesterse have been put on hold.",
           "generation_metadata": {
-            "score": -0.8472769260406494,
+            "score": -0.8472778797149658,
             "dropped_seqs": [
               "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
               "</s>Plans to cut home-to-school transport subsidies for children in Flintshire",
               "</s>Plans to cut home-to-school transport subsidies for children in Staffordshire",
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
-            "n_words_checked": 84
+            "n_words_checked": 88
           },
           "labeled_entities": [
             {
@@ -1403,10 +1327,10 @@
         },
         "36396523": {
           "banned_phrases": [
-            "Chile",
-            "Copa America",
             "South America",
-            "South Africa"
+            "Copa America",
+            "South Africa",
+            "Chile"
           ],
           "summary": "<Failed generation: blocked all beams>",
           "generation_metadata": {
@@ -1422,19 +1346,19 @@
               "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup in South Africa",
               "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South Africa"
             ],
-            "n_words_checked": 92
+            "n_words_checked": 89
           },
           "labeled_entities": []
         },
         "36203675": {
           "banned_phrases": [
             "the University of Bristol",
-            "the University of Cambridge",
-            "the University of Oxford"
+            "the University of Oxford",
+            "the University of Cambridge"
           ],
           "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Manchester.",
           "generation_metadata": {
-            "score": -0.8421373963356018,
+            "score": -0.8421388864517212,
             "dropped_seqs": [
               "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
               "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Oxford",
@@ -1460,60 +1384,68 @@
       },
       "stats": {
         "summary": {
-          "completed": 6,
+          "completed": 7,
           "total": 10,
-          "factual": 5,
-          "non_factual": 4,
+          "factual": 6,
+          "non_factual": 3,
           "failed": 1,
           "unknown": 0
         },
         "entity": {
           "label": {
-            "Non-factual Hallucination": 6,
-            "Factual Hallucination": 6,
+            "Non-factual Hallucination": 5,
+            "Factual Hallucination": 20,
             "Unknown": 0,
-            "Non-hallucinated": 15,
+            "Non-hallucinated": 0,
             "Intrinsic Hallucination": 0
           },
           "type": {
             "PERSON": {
               "total": 13,
               "Non-factual Hallucination": 3,
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 10,
               "Unknown": 0,
-              "Non-hallucinated": 8,
+              "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
             "GPE": {
-              "total": 7,
+              "total": 6,
               "Non-factual Hallucination": 0,
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 6,
               "Unknown": 0,
-              "Non-hallucinated": 5,
+              "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
             "FAC": {
               "total": 1,
               "Non-factual Hallucination": 0,
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Unknown": 0,
-              "Non-hallucinated": 1,
+              "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
-            "ORG": {
-              "total": 3,
-              "Non-factual Hallucination": 2,
+            "ORDINAL": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
               "Factual Hallucination": 1,
               "Unknown": 0,
               "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
             "DATE": {
-              "total": 3,
+              "total": 2,
               "Non-factual Hallucination": 1,
               "Factual Hallucination": 1,
               "Unknown": 0,
-              "Non-hallucinated": 1,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "ORG": {
+              "total": 2,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             }
           }
@@ -1525,11 +1457,11 @@
         "37066389": {
           "banned_phrases": [
             "Jose",
-            "Carlos",
-            "Gabriel",
             "Luis",
+            "Gabriel",
             "Ruslan",
-            "Omar"
+            "Omar",
+            "Carlos"
           ],
           "summary": "<Failed generation: blocked all beams>",
           "generation_metadata": {
@@ -1540,85 +1472,21 @@
               "</s>Colombia's Jose",
               "</s>Colombia's Gabriel"
             ],
-            "n_words_checked": 63
+            "n_words_checked": 75
           },
           "labeled_entities": []
-        },
-        "37615223": {
-          "banned_phrases": [
-            "fourth",
-            "third",
-            "Amex",
-            "the Amex Stadium"
-          ],
-          "summary": "Sam Baldock's first-half header was enough for Brighton to beat Wolves and move up to second in the Championship.",
-          "generation_metadata": {
-            "score": -0.595047116279602,
-            "dropped_seqs": [
-              "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves at the Amex",
-              "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to third",
-              "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to fourth",
-              "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex",
-              "</s>Sam Baldock's first-half header was enough for Brighton to beat Wolves and move up to third",
-              "</s>Sam Baldock's first-half header was enough for Brighton to beat Wolves and move up to fourth"
-            ],
-            "n_words_checked": 86
-          },
-          "labeled_entities": [
-            {
-              "ent": "Sam",
-              "type": "PERSON",
-              "start": 0,
-              "end": 3,
-              "in_source": true,
-              "label": "Non-hallucinated"
-            },
-            {
-              "ent": "Baldock's",
-              "type": "PERSON",
-              "start": 4,
-              "end": 13,
-              "in_source": true,
-              "label": "Non-hallucinated"
-            },
-            {
-              "ent": "first-half",
-              "type": "DATE",
-              "start": 14,
-              "end": 24,
-              "in_source": false,
-              "predicted_label": "Factual Hallucination",
-              "label": "Factual Hallucination"
-            },
-            {
-              "ent": "Brighton",
-              "type": "GPE",
-              "start": 47,
-              "end": 55,
-              "in_source": true,
-              "label": "Non-hallucinated"
-            },
-            {
-              "ent": "second",
-              "type": "ORDINAL",
-              "start": 86,
-              "end": 92,
-              "in_source": true,
-              "label": "Non-hallucinated"
-            }
-          ]
         },
         "34361828": {
           "banned_phrases": [
             "Pembrokeshire",
-            "the 1950s",
+            "Gwynedd village",
             "the 1970s",
-            "1950",
-            "Gwynedd village"
+            "the 1950s",
+            "1950"
           ],
           "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
           "generation_metadata": {
-            "score": -1.0076080560684204,
+            "score": -1.0076086521148682,
             "dropped_seqs": [
               "</s>A search is under way for the remains of a Gwynedd village",
               "</s>A search is under way for the remains of a Pembrokeshire",
@@ -1636,6 +1504,7 @@
               "start": 47,
               "end": 52,
               "in_source": true,
+              "predicted_label": "Factual Hallucination",
               "label": "Non-hallucinated"
             },
             {
@@ -1651,10 +1520,10 @@
         },
         "36203675": {
           "banned_phrases": [
-            "the University of Manchester",
             "the University of Bristol",
-            "the University of Cambridge",
-            "the University of Oxford"
+            "the University of Manchester",
+            "the University of Oxford",
+            "the University of Cambridge"
           ],
           "summary": "<Failed generation: blocked all beams>",
           "generation_metadata": {
@@ -1668,7 +1537,7 @@
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge",
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Manchester"
             ],
-            "n_words_checked": 104
+            "n_words_checked": 92
           },
           "labeled_entities": []
         }
@@ -1685,50 +1554,50 @@
         "entity": {
           "label": {
             "Non-factual Hallucination": 1,
-            "Factual Hallucination": 5,
+            "Factual Hallucination": 16,
             "Unknown": 0,
-            "Non-hallucinated": 13,
+            "Non-hallucinated": 0,
             "Intrinsic Hallucination": 0
           },
           "type": {
             "GPE": {
-              "total": 5,
+              "total": 4,
               "Non-factual Hallucination": 0,
-              "Factual Hallucination": 1,
+              "Factual Hallucination": 4,
               "Unknown": 0,
-              "Non-hallucinated": 4,
+              "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
             "FAC": {
               "total": 1,
               "Non-factual Hallucination": 0,
-              "Factual Hallucination": 0,
-              "Unknown": 0,
-              "Non-hallucinated": 1,
-              "Intrinsic Hallucination": 0
-            },
-            "DATE": {
-              "total": 3,
-              "Non-factual Hallucination": 1,
               "Factual Hallucination": 1,
               "Unknown": 0,
-              "Non-hallucinated": 1,
+              "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
             "PERSON": {
               "total": 8,
               "Non-factual Hallucination": 0,
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 8,
               "Unknown": 0,
-              "Non-hallucinated": 6,
+              "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
             "ORDINAL": {
               "total": 1,
               "Non-factual Hallucination": 0,
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Unknown": 0,
-              "Non-hallucinated": 1,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "DATE": {
+              "total": 2,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 1,
+              "Unknown": 0,
+              "Non-hallucinated": 0,
               "Intrinsic Hallucination": 0
             },
             "ORG": {

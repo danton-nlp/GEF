@@ -1,16 +1,13 @@
 {
-  "timestamp": 1654285400.886446,
+  "timestamp": 1652647857.3075583,
   "args": {
     "pickled_classifier": "",
     "classifier_batch_size": 4,
-    "entity_label_match": "contained",
     "model_path": "facebook/bart-large-xsum",
     "max_iterations": 5,
     "annotate": false,
     "verbose": false,
-    "batch_size": 2,
-    "test_size": 100,
-    "num_beams": 4,
+    "batch_size": 4,
     "data_subset": "debug"
   },
   "iterations": {
@@ -20,7 +17,7 @@
           "banned_phrases": [],
           "summary": "Colombia's Omar Martinez lost to Kazakhstan's Islam Dusmatov in the Olympic men's flyweight final in Rio.",
           "generation_metadata": {
-            "score": -0.6497074365615845,
+            "score": -0.6497118473052979,
             "dropped_seqs": [],
             "n_words_checked": 81
           },
@@ -71,7 +68,7 @@
           "banned_phrases": [],
           "summary": "Villagers in Shropshire are calling for the reopening of a dual carriageway next to Stonehenge.",
           "generation_metadata": {
-            "score": -0.559841513633728,
+            "score": -0.5598481893539429,
             "dropped_seqs": [],
             "n_words_checked": 80
           },
@@ -98,9 +95,9 @@
           "banned_phrases": [],
           "summary": "Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium.",
           "generation_metadata": {
-            "score": -0.5099020004272461,
+            "score": -0.5099042057991028,
             "dropped_seqs": [],
-            "n_words_checked": 82
+            "n_words_checked": 90
           },
           "labeled_entities": [
             {
@@ -112,10 +109,10 @@
               "label": "Non-hallucinated"
             },
             {
-              "ent": "Baldock's",
+              "ent": "Baldock",
               "type": "PERSON",
               "start": 4,
-              "end": 13,
+              "end": 11,
               "in_source": true,
               "label": "Non-hallucinated"
             },
@@ -149,9 +146,9 @@
           "banned_phrases": [],
           "summary": "Liam Payne and Niall Horan have confirmed they're staying in One Direction.",
           "generation_metadata": {
-            "score": -0.48298680782318115,
+            "score": -0.48299190402030945,
             "dropped_seqs": [],
-            "n_words_checked": 77
+            "n_words_checked": 89
           },
           "labeled_entities": [
             {
@@ -192,7 +189,7 @@
           "banned_phrases": [],
           "summary": "A search is under way for the remains of a Pembrokeshire village which was wiped out by storms in the 1970s.",
           "generation_metadata": {
-            "score": -0.692768931388855,
+            "score": -0.6927704215049744,
             "dropped_seqs": [],
             "n_words_checked": 95
           },
@@ -219,7 +216,7 @@
           "banned_phrases": [],
           "summary": "Plans to cut home-to-school transport subsidies in Gloucestershire have been put on hold.",
           "generation_metadata": {
-            "score": -0.5601837038993835,
+            "score": -0.5601844191551208,
             "dropped_seqs": [],
             "n_words_checked": 89
           },
@@ -238,9 +235,9 @@
           "banned_phrases": [],
           "summary": "Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final World Cup warm-up.",
           "generation_metadata": {
-            "score": -0.36631321907043457,
+            "score": -0.3663136959075928,
             "dropped_seqs": [],
-            "n_words_checked": 86
+            "n_words_checked": 89
           },
           "labeled_entities": [
             {
@@ -289,9 +286,9 @@
           "banned_phrases": [],
           "summary": "Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America.",
           "generation_metadata": {
-            "score": -0.45060160756111145,
+            "score": -0.45060282945632935,
             "dropped_seqs": [],
-            "n_words_checked": 81
+            "n_words_checked": 89
           },
           "labeled_entities": [
             {
@@ -340,7 +337,7 @@
           "banned_phrases": [],
           "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol.",
           "generation_metadata": {
-            "score": -0.8142673969268799,
+            "score": -0.8142692446708679,
             "dropped_seqs": [],
             "n_words_checked": 96
           },
@@ -359,7 +356,7 @@
           "banned_phrases": [],
           "summary": "Abertay University in Dundee has been named the best university in the world for its graduate courses in computer games design.",
           "generation_metadata": {
-            "score": -0.5155394673347473,
+            "score": -0.515540361404419,
             "dropped_seqs": [],
             "n_words_checked": 87
           },
@@ -462,7 +459,7 @@
           ],
           "summary": "Colombia's Carlos Martinez has been beaten in the Olympic men's flyweight final by Uzbekistan's Islam Dusmatov.",
           "generation_metadata": {
-            "score": -0.6965238451957703,
+            "score": -0.6965259313583374,
             "dropped_seqs": [
               "</s>The Kazakhstan",
               "</s>Colombia's Omar",
@@ -514,7 +511,7 @@
           ],
           "summary": "Villagers in Shrewsbury are calling for the reopening of a dual carriageway next to Stonehenge.",
           "generation_metadata": {
-            "score": -0.5977228879928589,
+            "score": -0.59772789478302,
             "dropped_seqs": [
               "</s>Villagers in Shropshire"
             ],
@@ -545,12 +542,12 @@
           ],
           "summary": "Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to third in the Championship.",
           "generation_metadata": {
-            "score": -0.5327222347259521,
+            "score": -0.5327234268188477,
             "dropped_seqs": [
               "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves at the Amex Stadium",
               "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium"
             ],
-            "n_words_checked": 83
+            "n_words_checked": 97
           },
           "labeled_entities": [
             {
@@ -581,16 +578,16 @@
         },
         "32112735": {
           "banned_phrases": [
-            "Niall",
-            "Horan"
+            "Horan",
+            "Niall"
           ],
           "summary": "Liam Payne and Louis Tomlinson have confirmed they're staying in One Direction.",
           "generation_metadata": {
-            "score": -0.5388206243515015,
+            "score": -0.5388250946998596,
             "dropped_seqs": [
               "</s>Liam Payne and Niall"
             ],
-            "n_words_checked": 81
+            "n_words_checked": 101
           },
           "labeled_entities": [
             {
@@ -634,7 +631,7 @@
           ],
           "summary": "A search is under way for the remains of a Gwynedd village which was wiped out by storms in the 1950s.",
           "generation_metadata": {
-            "score": -0.7429369688034058,
+            "score": -0.7429375052452087,
             "dropped_seqs": [
               "</s>A search is under way for the remains of a Pembrokeshire",
               "</s>A search is under way for the remains of a Gwynedd village which was wiped out by storms in the 1970s",
@@ -667,7 +664,7 @@
           ],
           "summary": "Plans to cut home-to-school transport subsidies for children in Flintshire have been put on hold.",
           "generation_metadata": {
-            "score": -0.6140730381011963,
+            "score": -0.6140735745429993,
             "dropped_seqs": [
               "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
@@ -691,7 +688,7 @@
           ],
           "summary": "Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final Euro 2016 warm-up game.",
           "generation_metadata": {
-            "score": -0.37551578879356384,
+            "score": -0.37551575899124146,
             "dropped_seqs": [
               "</s>Eden Hazard scored twice as Belgium came from behind to beat Norway in their final World Cup",
               "</s>Eden Hazard scored twice as Belgium came from behind to beat Norway 3-2 in their final World Cup",
@@ -750,14 +747,14 @@
           ],
           "summary": "Kaka has been called up to the Brazil squad for the Copa America next month.",
           "generation_metadata": {
-            "score": -0.5828989744186401,
+            "score": -0.5829020738601685,
             "dropped_seqs": [
               "</s>Brazil have added Kaka to their squad for next month's",
               "</s>Brazil have added Kaka to their squad for the Under-20 World Cup",
               "</s>Brazil have called up Kaka to their squad for the Under-20 World Cup",
               "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup"
             ],
-            "n_words_checked": 84
+            "n_words_checked": 80
           },
           "labeled_entities": [
             {
@@ -800,7 +797,7 @@
           ],
           "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford.",
           "generation_metadata": {
-            "score": -0.8211338520050049,
+            "score": -0.8211354613304138,
             "dropped_seqs": [
               "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol"
@@ -893,13 +890,13 @@
       "summaries": {
         "37066389": {
           "banned_phrases": [
-            "Omar",
+            "Carlos",
             "Kazakhstan",
-            "Carlos"
+            "Omar"
           ],
           "summary": "Colombia's Gabriel Martinez has been beaten in the Olympic men's flyweight final by Uzbekistan's Islam Dusmatov.",
           "generation_metadata": {
-            "score": -0.7325229048728943,
+            "score": -0.7325249314308167,
             "dropped_seqs": [
               "</s>The Kazakhstan",
               "</s>Colombia's Omar",
@@ -954,7 +951,7 @@
           ],
           "summary": "A campaign has been launched to get Stonehenge Bottom's main road re-opened after it was closed to traffic.",
           "generation_metadata": {
-            "score": -0.7396910786628723,
+            "score": -0.7396929860115051,
             "dropped_seqs": [
               "</s>Villagers in Shropshire",
               "</s>Villagers in Shrewsbury"
@@ -974,18 +971,18 @@
         },
         "37615223": {
           "banned_phrases": [
-            "the Amex Stadium",
-            "third"
+            "third",
+            "the Amex Stadium"
           ],
           "summary": "Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to fourth in the Championship.",
           "generation_metadata": {
-            "score": -0.53695148229599,
+            "score": -0.5369529128074646,
             "dropped_seqs": [
               "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves at the Amex Stadium",
               "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to third",
               "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium"
             ],
-            "n_words_checked": 81
+            "n_words_checked": 96
           },
           "labeled_entities": [
             {
@@ -1017,19 +1014,19 @@
         "32112735": {
           "banned_phrases": [
             "Horan",
+            "Louis",
             "Tomlinson",
-            "Niall",
-            "Louis"
+            "Niall"
           ],
           "summary": "One Direction have confirmed they're staying in the band.",
           "generation_metadata": {
-            "score": -0.7054998278617859,
+            "score": -0.7054991126060486,
             "dropped_seqs": [
               "</s>Liam Payne and Louis",
               "</s>Liam Payne, Louis",
               "</s>Liam Payne and Niall"
             ],
-            "n_words_checked": 78
+            "n_words_checked": 102
           },
           "labeled_entities": [
             {
@@ -1044,14 +1041,14 @@
         },
         "34361828": {
           "banned_phrases": [
-            "Pembrokeshire",
             "the 1950s",
             "Gwynedd village",
+            "Pembrokeshire",
             "the 1970s"
           ],
           "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
           "generation_metadata": {
-            "score": -1.00760817527771,
+            "score": -1.0076079368591309,
             "dropped_seqs": [
               "</s>A search is under way for the remains of a Gwynedd village",
               "</s>A search is under way for the remains of a Pembrokeshire",
@@ -1083,12 +1080,12 @@
         },
         "17996567": {
           "banned_phrases": [
-            "Flintshire",
-            "Gloucestershire"
+            "Gloucestershire",
+            "Flintshire"
           ],
           "summary": "Plans to cut home-to-school transport subsidies for children in Staffordshire have been put on hold.",
           "generation_metadata": {
-            "score": -0.6207175850868225,
+            "score": -0.6207178235054016,
             "dropped_seqs": [
               "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
               "</s>Plans to cut home-to-school transport subsidies for children in Flintshire",
@@ -1109,14 +1106,14 @@
         },
         "36396523": {
           "banned_phrases": [
-            "next month",
             "next month's",
             "South America",
+            "next month",
             "World Cup"
           ],
           "summary": "Kaka has been called up to the Brazil squad for the Copa America in Chile in June.",
           "generation_metadata": {
-            "score": -0.6230838298797607,
+            "score": -0.62308669090271,
             "dropped_seqs": [
               "</s>Brazil have added Kaka to their squad for next month",
               "</s>Brazil have added Kaka to their squad for the Under-20 World Cup",
@@ -1125,7 +1122,7 @@
               "</s>Kaka has been called up to the Brazil squad for the Copa America next month",
               "</s>Kaka has been called up to the Brazil squad for the Copa America in Chile next month"
             ],
-            "n_words_checked": 101
+            "n_words_checked": 97
           },
           "labeled_entities": [
             {
@@ -1177,7 +1174,7 @@
           ],
           "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge.",
           "generation_metadata": {
-            "score": -0.8350398540496826,
+            "score": -0.8350414633750916,
             "dropped_seqs": [
               "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
               "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Oxford",
@@ -1280,14 +1277,14 @@
       "summaries": {
         "37066389": {
           "banned_phrases": [
-            "Omar",
-            "Gabriel",
+            "Carlos",
             "Kazakhstan",
-            "Carlos"
+            "Gabriel",
+            "Omar"
           ],
           "summary": "Colombia's Jose Luis Martinez has been beaten in the Olympic men's flyweight final by Uzbekistan's Islam Dusmatov.",
           "generation_metadata": {
-            "score": -0.7803317904472351,
+            "score": -0.7803342938423157,
             "dropped_seqs": [
               "</s>The Kazakhstan",
               "</s>Colombia's Omar",
@@ -1348,13 +1345,13 @@
         },
         "37615223": {
           "banned_phrases": [
+            "third",
             "the Amex Stadium",
-            "fourth",
-            "third"
+            "fourth"
           ],
           "summary": "Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex stadium.",
           "generation_metadata": {
-            "score": -0.7147307991981506,
+            "score": -0.7147330641746521,
             "dropped_seqs": [
               "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves at the Amex Stadium",
               "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to third",
@@ -1376,10 +1373,10 @@
               "label": "Non-hallucinated"
             },
             {
-              "ent": "Baldock's",
+              "ent": "Baldock",
               "type": "PERSON",
               "start": 4,
-              "end": 13,
+              "end": 11,
               "in_source": true,
               "label": "Non-hallucinated"
             },
@@ -1411,15 +1408,15 @@
         },
         "34361828": {
           "banned_phrases": [
-            "Gwynedd village",
-            "the 1950s",
-            "1950",
             "Pembrokeshire",
-            "the 1970s"
+            "the 1950s",
+            "Gwynedd village",
+            "the 1970s",
+            "1950"
           ],
           "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
           "generation_metadata": {
-            "score": -1.00760817527771,
+            "score": -1.0076082944869995,
             "dropped_seqs": [
               "</s>A search is under way for the remains of a Gwynedd village",
               "</s>A search is under way for the remains of a Pembrokeshire",
@@ -1451,20 +1448,20 @@
         },
         "17996567": {
           "banned_phrases": [
+            "Gloucestershire",
             "Staffordshire",
-            "Flintshire",
-            "Gloucestershire"
+            "Flintshire"
           ],
           "summary": "Plans to cut home-to-school transport subsidies for children in Gloucesterse have been put on hold.",
           "generation_metadata": {
-            "score": -0.8472769260406494,
+            "score": -0.8472775220870972,
             "dropped_seqs": [
               "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
               "</s>Plans to cut home-to-school transport subsidies for children in Flintshire",
               "</s>Plans to cut home-to-school transport subsidies for children in Staffordshire",
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
-            "n_words_checked": 84
+            "n_words_checked": 88
           },
           "labeled_entities": [
             {
@@ -1479,15 +1476,15 @@
         },
         "36396523": {
           "banned_phrases": [
-            "next month",
+            "next month's",
             "World Cup",
-            "South America",
             "Chile",
-            "next month's"
+            "next month",
+            "South America"
           ],
           "summary": "Kaka has been called up to the Brazil squad for the Copa America in Brazil in June.",
           "generation_metadata": {
-            "score": -0.6635534763336182,
+            "score": -0.6635565161705017,
             "dropped_seqs": [
               "</s>Brazil have added Kaka to their squad for next month",
               "</s>Brazil have added Kaka to their squad for the Under-20 World Cup",
@@ -1545,12 +1542,12 @@
         "36203675": {
           "banned_phrases": [
             "the University of Bristol",
-            "the University of Cambridge",
-            "the University of Oxford"
+            "the University of Oxford",
+            "the University of Cambridge"
           ],
           "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Manchester.",
           "generation_metadata": {
-            "score": -0.8421373963356018,
+            "score": -0.8421390056610107,
             "dropped_seqs": [
               "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Bristol",
               "</s>A mobile game designed to help people with dementia is being used by researchers at the University of Oxford",
@@ -1647,11 +1644,11 @@
       "summaries": {
         "37066389": {
           "banned_phrases": [
-            "Jose",
-            "Luis",
-            "Gabriel",
             "Kazakhstan",
+            "Luis",
+            "Jose",
             "Omar",
+            "Gabriel",
             "Carlos"
           ],
           "summary": "<Failed generation: blocked all beams>",
@@ -1664,20 +1661,20 @@
               "</s>Colombia's Jose",
               "</s>Colombia's Gabriel"
             ],
-            "n_words_checked": 63
+            "n_words_checked": 75
           },
           "labeled_entities": []
         },
         "37615223": {
           "banned_phrases": [
-            "Amex",
+            "third",
             "the Amex Stadium",
-            "fourth",
-            "third"
+            "Amex",
+            "fourth"
           ],
           "summary": "Sam Baldock's first-half header was enough for Brighton to beat Wolves and move up to second in the Championship.",
           "generation_metadata": {
-            "score": -0.595047116279602,
+            "score": -0.595048189163208,
             "dropped_seqs": [
               "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves at the Amex",
               "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to third",
@@ -1686,7 +1683,7 @@
               "</s>Sam Baldock's first-half header was enough for Brighton to beat Wolves and move up to third",
               "</s>Sam Baldock's first-half header was enough for Brighton to beat Wolves and move up to fourth"
             ],
-            "n_words_checked": 86
+            "n_words_checked": 89
           },
           "labeled_entities": [
             {
@@ -1698,10 +1695,10 @@
               "label": "Non-hallucinated"
             },
             {
-              "ent": "Baldock's",
+              "ent": "Baldock",
               "type": "PERSON",
               "start": 4,
-              "end": 13,
+              "end": 11,
               "in_source": true,
               "label": "Non-hallucinated"
             },
@@ -1733,15 +1730,15 @@
         },
         "34361828": {
           "banned_phrases": [
-            "Gwynedd village",
-            "the 1950s",
-            "1950",
             "Pembrokeshire",
-            "the 1970s"
+            "the 1950s",
+            "Gwynedd village",
+            "the 1970s",
+            "1950"
           ],
           "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
           "generation_metadata": {
-            "score": -1.00760817527771,
+            "score": -1.0076082944869995,
             "dropped_seqs": [
               "</s>A search is under way for the remains of a Gwynedd village",
               "</s>A search is under way for the remains of a Pembrokeshire",
@@ -1773,14 +1770,14 @@
         },
         "17996567": {
           "banned_phrases": [
+            "Gloucestershire",
             "Staffordshire",
             "Gloucesterse",
-            "Flintshire",
-            "Gloucestershire"
+            "Flintshire"
           ],
           "summary": "Plans to cut home-to-school transport subsidies for children in Gloucestersfield have been put on hold.",
           "generation_metadata": {
-            "score": -0.8587636351585388,
+            "score": -0.8587639331817627,
             "dropped_seqs": [
               "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
               "</s>Plans to cut home-to-school transport subsidies for children in Flintshire",
@@ -1788,7 +1785,7 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire",
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucesterse"
             ],
-            "n_words_checked": 87
+            "n_words_checked": 79
           },
           "labeled_entities": [
             {
@@ -1805,8 +1802,8 @@
           "banned_phrases": [
             "the University of Manchester",
             "the University of Bristol",
-            "the University of Cambridge",
-            "the University of Oxford"
+            "the University of Oxford",
+            "the University of Cambridge"
           ],
           "summary": "<Failed generation: blocked all beams>",
           "generation_metadata": {
