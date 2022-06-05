@@ -1,7 +1,7 @@
 from src.data_utils import (
     load_extrinsic_test_set,
     load_summaries_from_logs,
-    get_gold_data,
+    get_gold_xsum_data,
     load_xsum_dict,
 )
 from sumtool.storage import get_summaries
@@ -24,7 +24,7 @@ def load_data(results_path: str):
             {},
         )
     )
-    gold_sums, gold_metadata = get_gold_data()
+    gold_sums, gold_metadata = get_gold_xsum_data()
     baseline_metadata = get_summary_metrics("xsum", "facebook-bart-large-xsum")
     xsum_test = load_xsum_dict("test")
     test_set = load_extrinsic_test_set(

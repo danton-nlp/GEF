@@ -7,10 +7,6 @@ from src.entity_factuality import ANNOTATION_LABELS
 from src.entity_utils import MarkedEntityLookup
 
 
-SUMTOOL_DATASET = "xsum"
-SUMTOOL_MODEL_GOLD = "gold"
-
-
 def persist_updated_annotations(old_metadata, updated_annotations, summaries_by_id):
     updated_metadata = old_metadata.copy()
     for sum_id, new_annotations in updated_annotations.items():
@@ -28,7 +24,7 @@ def persist_updated_annotations(old_metadata, updated_annotations, summaries_by_
                 our_annotations[summary].append(annot)
             updated_metadata[sum_id]["our_annotations"] = our_annotations
 
-    store_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD, updated_metadata)
+    store_summary_metrics("xsum", "gold", updated_metadata)
     return updated_metadata
 
 
