@@ -1,15 +1,10 @@
-from sumtool.storage import get_summary_metrics, get_summaries
-from src.data_utils import load_xsum_dict
+from src.data_utils import get_gold_xsum_data, load_xsum_dict
 import json
 
 
-SUMTOOL_DATASET = "xsum"
-SUMTOOL_MODEL = "gold"
-
 if __name__ == "__main__":
     xsum_test = load_xsum_dict("test")
-    gold_metadata = get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL)
-    gold_summaries = get_summaries(SUMTOOL_DATASET, SUMTOOL_MODEL)
+    gold_metadata, gold_summaries = get_gold_xsum_data()
 
     persisted = []
     n_ents = 0

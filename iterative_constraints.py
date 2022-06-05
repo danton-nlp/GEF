@@ -34,11 +34,6 @@ from src.annotation import (
 )
 
 
-SUMTOOL_DATASET = "xsum"
-SUMTOOL_MODEL_GOLD = "gold"
-SUMTOOL_MODEL_BASELINE = "facebook-bart-large-xsum"
-
-
 def persist_iteration(
     logging_path,
     parser_args,
@@ -187,8 +182,8 @@ if __name__ == "__main__":
         model, tokenizer = load_model_and_tokenizer(args.model_path)
         iteration_log = {}
         logging_path = get_new_log_path("logs-iterative") + ".json"
-        summary_gold_metadata = get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD)
-        baseline_metadata = get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_BASELINE)
+        summary_gold_metadata = get_summary_metrics("xsum", "gold")
+        baseline_metadata = get_summary_metrics("xsum", "facebook-bart-large-xsum")
         xsum_test = load_xsum_dict("test")
 
     if args.pickled_classifier != "":

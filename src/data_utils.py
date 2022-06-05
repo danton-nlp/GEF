@@ -4,9 +4,6 @@ from datasets import load_dataset
 import random
 from sumtool.storage import get_summary_metrics, get_summaries
 
-SUMTOOL_DATASET = "xsum"
-SUMTOOL_MODEL_GOLD = "gold"
-
 
 class XSumDoc(TypedDict):
     document: str
@@ -161,8 +158,8 @@ def load_summaries_from_logs(path, max_iterations=5):
     return (sums_by_id, sum_ents_by_id)
 
 
-def get_gold_data():
+def get_gold_xsum_data():
     return (
-        get_summaries(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD),
-        get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_GOLD)
+        get_summaries("xsum", "gold"),
+        get_summary_metrics("xsum", "gold")
     )

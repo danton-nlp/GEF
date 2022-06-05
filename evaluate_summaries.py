@@ -1,5 +1,5 @@
 from src.data_utils import (
-    get_gold_data,
+    get_gold_xsum_data,
     load_extrinsic_test_set,
     load_xent_test_set,
     load_xsum_dict,
@@ -12,8 +12,6 @@ import pprint
 import pandas as pd
 
 
-SUMTOOL_DATASET = "xsum"
-SUMTOOL_MODEL_BASELINE = "facebook-bart-large-xsum"
 pp = pprint.PrettyPrinter(indent=2)
 
 
@@ -27,8 +25,8 @@ if __name__ == "__main__":
     parser.add_argument("--model_filter", type=str, default="")
     args = parser.parse_args()
 
-    baseline_metadata = get_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL_BASELINE)
-    gold_sums, gold_metadata = get_gold_data()
+    baseline_metadata = get_summary_metrics("xsum", "facebook-bart-large-xsum")
+    gold_sums, gold_metadata = get_gold_xsum_data()
     xsum_test = load_xsum_dict("test")
     if args.data_subset == "full":
         test_set_ids = set(xsum_test.keys())
@@ -82,7 +80,7 @@ if __name__ == "__main__":
         ("gold", "gold"),  # Chen. et al replication project
         # ("entity-filter-v2", "filtered"),  # Nan. et al
     ]:
-        dataset = get_summaries(SUMTOOL_DATASET, sumtool_name)
+        dataset = get_summaries("xsum", sumtool_name)
         MODEL_RESULTS[model_label] = (
             {sum_id: x["summary"] for sum_id, x in dataset.items()},
             {},

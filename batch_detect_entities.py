@@ -5,14 +5,12 @@ from src.detect_entities import detect_entities
 from tqdm import tqdm
 
 
-SUMTOOL_DATASET = "xsum"
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("model", type=str)
     args = parser.parse_args()
 
-    summaries = get_summaries(SUMTOOL_DATASET, args.model)
+    summaries = get_summaries("xsum", args.model)
     xsum_test = load_xsum_dict("test")
 
     summary_metadata = {}
@@ -23,4 +21,4 @@ if __name__ == "__main__":
             xsum_test[sum_id]["document"]
         )}
 
-    store_summary_metrics(SUMTOOL_DATASET, args.model, summary_metadata)
+    store_summary_metrics("xsum", args.model, summary_metadata)

@@ -8,9 +8,6 @@ def load_EntFA(split: str):
         return json.load(f)
 
 
-SUMTOOL_DATASET = "xsum"
-SUMTOOL_MODEL = "gold"
-
 if __name__ == "__main__":
     EntFA_train = load_EntFA("train")
     EntFA_test = load_EntFA("test")
@@ -41,4 +38,4 @@ if __name__ == "__main__":
         
         print(data_label)
         print(f"Missing {missing}, persisted: {len(summary_annotations)}")
-        store_summary_metrics(SUMTOOL_DATASET, SUMTOOL_MODEL, summary_annotations)
+        store_summary_metrics("xsum", "gold", summary_annotations)
