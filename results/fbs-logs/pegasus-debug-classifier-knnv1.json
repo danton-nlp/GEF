@@ -99,7 +99,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 68,
-            "score": -2.0206449031829834
+            "score": -2.020644187927246
           },
           "labeled_entities": [
             {
@@ -128,7 +128,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 103,
-            "score": -2.1893975734710693
+            "score": -2.1893985271453857
           },
           "labeled_entities": [
             {
@@ -148,7 +148,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 61,
-            "score": -1.7932838201522827
+            "score": -1.793282389640808
           },
           "labeled_entities": [
             {
@@ -177,7 +177,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 103,
-            "score": -2.6305294036865234
+            "score": -2.6305298805236816
           },
           "labeled_entities": [
             {
@@ -197,7 +197,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 51,
-            "score": -2.248680591583252
+            "score": -2.248680353164673
           },
           "labeled_entities": [],
           "summary": "A new mobile game is being used to help dementia research."
@@ -207,7 +207,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 78,
-            "score": -1.2077488899230957
+            "score": -1.2077487707138062
           },
           "labeled_entities": [
             {
@@ -254,7 +254,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 92,
-            "score": -0.9375079274177551
+            "score": -0.9375077486038208
           },
           "labeled_entities": [
             {
@@ -310,7 +310,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 105,
-            "score": -1.7805222272872925
+            "score": -1.780522346496582
           },
           "labeled_entities": [
             {
@@ -375,7 +375,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 104,
-            "score": -1.3464999198913574
+            "score": -1.3465012311935425
           },
           "labeled_entities": [
             {
@@ -388,8 +388,8 @@
               "type": "PERSON"
             },
             {
-              "end": 11,
-              "ent": "Baldock",
+              "end": 13,
+              "ent": "Baldock's",
               "in_source": true,
               "label": "Non-hallucinated",
               "predicted_label": "Non-hallucinated",
@@ -422,7 +422,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 94,
-            "score": -1.5793753862380981
+            "score": -1.5793757438659668
           },
           "labeled_entities": [
             {
@@ -528,7 +528,7 @@
               "<pad> Plans to cut school transport subsidies in Hampshire"
             ],
             "n_words_checked": 68,
-            "score": -1.9710413217544556
+            "score": -1.9710404872894287
           },
           "labeled_entities": [
             {
@@ -555,7 +555,7 @@
               "<pad> Kaka has been called up to Brazil's squad for the Copa America"
             ],
             "n_words_checked": 94,
-            "score": -1.3225456476211548
+            "score": -1.3225460052490234
           },
           "labeled_entities": [
             {
@@ -611,7 +611,7 @@
               "<pad> Uzbekistan's Shakhobidin Dusmatov won Olympic gold in the men's light-heavyweight boxing with victory over Colombia's Ivan"
             ],
             "n_words_checked": 109,
-            "score": -1.992152452468872
+            "score": -1.9921514987945557
           },
           "labeled_entities": [
             {
@@ -682,7 +682,7 @@
               "<pad> The University of Abertay in Dundee"
             ],
             "n_words_checked": 85,
-            "score": -1.5729538202285767
+            "score": -1.5729546546936035
           },
           "labeled_entities": [
             {
@@ -805,5 +805,5 @@
       }
     }
   },
-  "timestamp": 1654893195.0502858
+  "timestamp": 1655674440.2435312
 }

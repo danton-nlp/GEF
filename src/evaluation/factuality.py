@@ -20,8 +20,8 @@ def get_labeled_entities(
     entity_match_type,
 ):
     # Detect entities if they're not cached
-    if len(sum_ents_by_id) == 0:
-        for sum_id, summary in sums_by_id.items():
+    for sum_id, summary in sums_by_id.items():
+        if sum_id not in sum_ents_by_id:
             sum_ents_by_id[sum_id] = detect_entities(
                 summary, xsum_test[sum_id]["document"]
             )

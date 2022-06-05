@@ -94,7 +94,7 @@ def load_summaries_from_logs(path, max_iterations=5):
         logs = json.load(f)
 
     sorted_keys = sorted([int(x) for x in logs["iterations"].keys()])
-
+    baseline_sums = get_summaries("xsum", "facebook-bart-large-xsum")
     sums_by_id = {}
     sum_ents_by_id = {}
     failed_sums_by_id = {}
@@ -109,6 +109,10 @@ def load_summaries_from_logs(path, max_iterations=5):
             else:
                 # Keep track of iteration idx when summary generation failed
                 failed_sums_by_id[sum_id] = iteration_idx
+
+                # Fall back to baseline
+                # sums_by_id[sum_id] = baseline_sums[sum_id]["summary"]
+                # del sum_ents_by_id[sum_id]
         if iteration_idx + 1 == max_iterations:
             break
     return (sums_by_id, sum_ents_by_id, failed_sums_by_id)
