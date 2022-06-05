@@ -1234,7 +1234,7 @@
               "end": 38,
               "ent": "Luzon",
               "in_source": true,
-              "label": "Factual Hallucination",
+              "label": "Non-hallucinated",
               "predicted_label": "Non-hallucinated",
               "start": 33,
               "type": "PERSON"
@@ -3729,8 +3729,8 @@
               "type": "PERSON"
             },
             {
-              "end": 15,
-              "ent": "Raymond",
+              "end": 17,
+              "ent": "Raymond's",
               "in_source": true,
               "label": "Non-hallucinated",
               "predicted_label": "Non-hallucinated",
@@ -4744,7 +4744,7 @@
               "end": 107,
               "ent": "September 2008",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 93,
               "type": "DATE"
@@ -5230,7 +5230,7 @@
               "end": 38,
               "ent": "Luzon",
               "in_source": true,
-              "label": "Factual Hallucination",
+              "label": "Non-hallucinated",
               "predicted_label": "Non-hallucinated",
               "start": 33,
               "type": "PERSON"
@@ -6387,8 +6387,8 @@
               "type": "PERSON"
             },
             {
-              "end": 15,
-              "ent": "Raymond",
+              "end": 17,
+              "ent": "Raymond's",
               "in_source": true,
               "label": "Non-hallucinated",
               "predicted_label": "Non-hallucinated",
@@ -6441,7 +6441,7 @@
               "end": 45,
               "ent": "four-year-old",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 32,
               "type": "DATE"
@@ -6572,7 +6572,7 @@
               "end": 97,
               "ent": "the end of the 2017 season",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 71,
               "type": "DATE"
@@ -7464,7 +7464,7 @@
               "end": 42,
               "ent": "Luzon",
               "in_source": true,
-              "label": "Factual Hallucination",
+              "label": "Intrinsic Hallucination",
               "predicted_label": "Non-hallucinated",
               "start": 37,
               "type": "PERSON"
@@ -7730,7 +7730,7 @@
               "end": 155,
               "ent": "eight years",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 144,
               "type": "DATE"
@@ -7969,7 +7969,7 @@
               "end": 50,
               "ent": "Joe",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 47,
               "type": "PERSON"
@@ -9192,8 +9192,8 @@
               "type": "PERSON"
             },
             {
-              "end": 11,
-              "ent": "Madine",
+              "end": 13,
+              "ent": "Madine's",
               "in_source": true,
               "label": "Non-hallucinated",
               "predicted_label": "Non-hallucinated",
@@ -9678,7 +9678,7 @@
               "end": 36,
               "ent": "Matt",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 32,
               "type": "PERSON"
@@ -10692,7 +10692,7 @@
               "end": 97,
               "ent": "2017",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 93,
               "type": "DATE"
@@ -11657,5 +11657,5 @@
       }
     }
   },
-  "timestamp": 1655405861.6138594
+  "timestamp": 1655674903.6342065
 }

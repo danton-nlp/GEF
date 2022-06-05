@@ -19,17 +19,17 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 94,
+            "Factual Hallucination": 89,
             "Intrinsic Hallucination": 13,
-            "Non-factual Hallucination": 74,
-            "Non-hallucinated": 188,
+            "Non-factual Hallucination": 77,
+            "Non-hallucinated": 182,
             "Unknown": 0
           },
           "type": {
             "CARDINAL": {
-              "Factual Hallucination": 7,
+              "Factual Hallucination": 6,
               "Intrinsic Hallucination": 2,
-              "Non-factual Hallucination": 6,
+              "Non-factual Hallucination": 7,
               "Non-hallucinated": 6,
               "Unknown": 0,
               "total": 21
@@ -107,10 +107,10 @@
               "total": 8
             },
             "ORG": {
-              "Factual Hallucination": 18,
+              "Factual Hallucination": 17,
               "Intrinsic Hallucination": 2,
               "Non-factual Hallucination": 6,
-              "Non-hallucinated": 32,
+              "Non-hallucinated": 33,
               "Unknown": 0,
               "total": 58
             },
@@ -123,12 +123,12 @@
               "total": 3
             },
             "PERSON": {
-              "Factual Hallucination": 30,
+              "Factual Hallucination": 27,
               "Intrinsic Hallucination": 4,
-              "Non-factual Hallucination": 21,
-              "Non-hallucinated": 73,
+              "Non-factual Hallucination": 23,
+              "Non-hallucinated": 66,
               "Unknown": 0,
-              "total": 128
+              "total": 120
             },
             "PRODUCT": {
               "Factual Hallucination": 0,
@@ -157,10 +157,10 @@
           }
         },
         "summary": {
-          "completed": 48,
-          "factual": 48,
+          "completed": 47,
+          "factual": 47,
           "failed": 0,
-          "non_factual": 52,
+          "non_factual": 53,
           "total": 100,
           "unknown": 0
         }
@@ -878,8 +878,8 @@
               "type": "PERSON"
             },
             {
-              "end": 12,
-              "ent": "Blatter",
+              "end": 14,
+              "ent": "Blatter's",
               "in_source": true,
               "label": "Non-hallucinated",
               "start": 5,
@@ -1037,32 +1037,16 @@
               "end": 19,
               "ent": "European Commission",
               "in_source": true,
-              "label": "Factual Hallucination",
+              "label": "Non-hallucinated",
               "start": 0,
               "type": "ORG"
             },
             {
-              "end": 34,
-              "ent": "Jean",
+              "end": 41,
+              "ent": "Jean-Claude",
               "in_source": false,
               "label": "Factual Hallucination",
               "start": 30,
-              "type": "PERSON"
-            },
-            {
-              "end": 35,
-              "ent": "-",
-              "in_source": true,
-              "label": "Factual Hallucination",
-              "start": 34,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 35,
               "type": "PERSON"
             },
             {
@@ -1981,7 +1965,7 @@
               "end": 23,
               "ent": "Marcelo",
               "in_source": false,
-              "label": "Factual Hallucination",
+              "label": "Non-factual Hallucination",
               "start": 16,
               "type": "PERSON"
             },
@@ -2386,27 +2370,11 @@
               "type": "ORG"
             },
             {
-              "end": 27,
-              "ent": "Jean",
+              "end": 34,
+              "ent": "Jean-Claude",
               "in_source": false,
               "label": "Non-factual Hallucination",
               "start": 23,
-              "type": "PERSON"
-            },
-            {
-              "end": 28,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 27,
-              "type": "PERSON"
-            },
-            {
-              "end": 34,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 28,
               "type": "PERSON"
             },
             {
@@ -2499,7 +2467,7 @@
               "end": 36,
               "ent": "2",
               "in_source": true,
-              "label": "Factual Hallucination",
+              "label": "Non-factual Hallucination",
               "start": 35,
               "type": "CARDINAL"
             },
@@ -2767,27 +2735,11 @@
               "type": "PERSON"
             },
             {
-              "end": 160,
-              "ent": "Hogan",
+              "end": 165,
+              "ent": "Hogan-Howe",
               "in_source": false,
               "label": "Factual Hallucination",
               "start": 155,
-              "type": "PERSON"
-            },
-            {
-              "end": 161,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 160,
-              "type": "PERSON"
-            },
-            {
-              "end": 165,
-              "ent": "Howe",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 161,
               "type": "PERSON"
             }
           ],
@@ -3273,8 +3225,8 @@
               "type": "PERSON"
             },
             {
-              "end": 87,
-              "ent": "Trump",
+              "end": 89,
+              "ent": "Trump's",
               "in_source": true,
               "label": "Non-hallucinated",
               "start": 82,
@@ -3295,7 +3247,7 @@
               "end": 14,
               "ent": "St Johnstone's",
               "in_source": false,
-              "label": "Factual Hallucination",
+              "label": "Non-factual Hallucination",
               "start": 0,
               "type": "PERSON"
             },
@@ -3679,8 +3631,8 @@
               "type": "PERSON"
             },
             {
-              "end": 114,
-              "ent": "May",
+              "end": 116,
+              "ent": "May's",
               "in_source": false,
               "label": "Factual Hallucination",
               "start": 111,
@@ -3736,7 +3688,7 @@
               "end": 46,
               "ent": "Jordan",
               "in_source": false,
-              "label": "Non-hallucinated",
+              "label": "Non-factual Hallucination",
               "start": 40,
               "type": "PERSON"
             },
@@ -4125,27 +4077,11 @@
               "type": "PERSON"
             },
             {
-              "end": 30,
-              "ent": "al",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 28,
-              "type": "PERSON"
-            },
-            {
-              "end": 31,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 30,
-              "type": "PERSON"
-            },
-            {
               "end": 36,
-              "ent": "Abadi",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 31,
+              "ent": "al-Abadi",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 28,
               "type": "PERSON"
             },
             {
@@ -4200,8 +4136,8 @@
               "type": "PERSON"
             },
             {
-              "end": 44,
-              "ent": "Logan",
+              "end": 46,
+              "ent": "Logan's",
               "in_source": true,
               "label": "Non-hallucinated",
               "start": 39,
@@ -4224,26 +4160,26 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 100,
-            "Intrinsic Hallucination": 13,
-            "Non-factual Hallucination": 50,
-            "Non-hallucinated": 186,
-            "Unknown": 0
+            "Factual Hallucination": 93,
+            "Intrinsic Hallucination": 14,
+            "Non-factual Hallucination": 51,
+            "Non-hallucinated": 181,
+            "Unknown": 3
           },
           "type": {
             "CARDINAL": {
               "Factual Hallucination": 8,
               "Intrinsic Hallucination": 2,
-              "Non-factual Hallucination": 4,
-              "Non-hallucinated": 7,
+              "Non-factual Hallucination": 6,
+              "Non-hallucinated": 9,
               "Unknown": 0,
-              "total": 21
+              "total": 25
             },
             "DATE": {
-              "Factual Hallucination": 13,
+              "Factual Hallucination": 12,
               "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 12,
-              "Non-hallucinated": 7,
+              "Non-hallucinated": 8,
               "Unknown": 0,
               "total": 33
             },
@@ -4256,20 +4192,20 @@
               "total": 7
             },
             "FAC": {
-              "Factual Hallucination": 4,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 2,
-              "Unknown": 0,
+              "Unknown": 1,
               "total": 6
             },
             "GPE": {
               "Factual Hallucination": 15,
               "Intrinsic Hallucination": 2,
-              "Non-factual Hallucination": 9,
-              "Non-hallucinated": 47,
+              "Non-factual Hallucination": 8,
+              "Non-hallucinated": 46,
               "Unknown": 0,
-              "total": 73
+              "total": 71
             },
             "LAW": {
               "Factual Hallucination": 0,
@@ -4312,12 +4248,12 @@
               "total": 5
             },
             "ORG": {
-              "Factual Hallucination": 19,
-              "Intrinsic Hallucination": 2,
+              "Factual Hallucination": 18,
+              "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 6,
-              "Non-hallucinated": 29,
+              "Non-hallucinated": 30,
               "Unknown": 0,
-              "total": 56
+              "total": 55
             },
             "PERCENT": {
               "Factual Hallucination": 0,
@@ -4328,12 +4264,12 @@
               "total": 3
             },
             "PERSON": {
-              "Factual Hallucination": 29,
-              "Intrinsic Hallucination": 3,
+              "Factual Hallucination": 25,
+              "Intrinsic Hallucination": 5,
               "Non-factual Hallucination": 16,
-              "Non-hallucinated": 71,
-              "Unknown": 0,
-              "total": 119
+              "Non-hallucinated": 63,
+              "Unknown": 2,
+              "total": 111
             },
             "TIME": {
               "Factual Hallucination": 0,
@@ -4355,11 +4291,11 @@
         },
         "summary": {
           "completed": 64,
-          "factual": 60,
+          "factual": 59,
           "failed": 1,
-          "non_factual": 39,
+          "non_factual": 38,
           "total": 100,
-          "unknown": 0
+          "unknown": 2
         }
       },
       "summaries": {
@@ -4372,7 +4308,7 @@
               "</s>An 18-year-old"
             ],
             "n_words_checked": 90,
-            "score": -0.4605553150177002
+            "score": -0.46055522561073303
           },
           "labeled_entities": [
             {
@@ -4430,7 +4366,7 @@
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association"
             ],
             "n_words_checked": 123,
-            "score": -0.6519452929496765
+            "score": -0.6519452333450317
           },
           "labeled_entities": [
             {
@@ -4488,7 +4424,7 @@
               "</s>The Irish economy grew by 7.7% in the first three months of the year"
             ],
             "n_words_checked": 117,
-            "score": -0.5470374822616577
+            "score": -0.5470373630523682
           },
           "labeled_entities": [
             {
@@ -4653,7 +4589,7 @@
               "</s>A drugs expert has warned people not to take'superman' ecstasy pills following the deaths of at least four people in recent weeks"
             ],
             "n_words_checked": 100,
-            "score": -0.7424311637878418
+            "score": -0.7424309253692627
           },
           "labeled_entities": [
             {
@@ -4723,7 +4659,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 74,
-            "score": -0.6646241545677185
+            "score": -0.6646240949630737
           },
           "labeled_entities": [
             {
@@ -4859,7 +4795,7 @@
               "</s>The world premiere of the new animated film Minions has taken place in New York, USA"
             ],
             "n_words_checked": 64,
-            "score": -0.6287202835083008
+            "score": -0.6287207007408142
           },
           "labeled_entities": [
             {
@@ -5037,7 +4973,7 @@
               "</s>The US astronaut who's been living on the International Space Station for more than a year"
             ],
             "n_words_checked": 111,
-            "score": -0.6445131897926331
+            "score": -0.6445137858390808
           },
           "labeled_entities": [
             {
@@ -5060,7 +4996,7 @@
               "end": 96,
               "ent": "more than seven months",
               "in_source": true,
-              "label": "Factual Hallucination",
+              "label": "Non-hallucinated",
               "start": 74,
               "type": "DATE"
             }
@@ -5081,7 +5017,7 @@
               "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run incident in Dundee"
             ],
             "n_words_checked": 100,
-            "score": -0.627849817276001
+            "score": -0.6278495788574219
           },
           "labeled_entities": [
             {
@@ -5281,7 +5217,7 @@
               "</s>Worcestershire wicketkeeper-batsman Tom Shantry has signed a new three-year"
             ],
             "n_words_checked": 62,
-            "score": -0.47645995020866394
+            "score": -0.4764600992202759
           },
           "labeled_entities": [
             {
@@ -5448,93 +5384,109 @@
           "banned_phrases": [
             "Cilic",
             "Dusan",
+            "Marcelo",
             "Marin"
           ],
           "generation_metadata": {
             "dropped_seqs": [
-              "</s>Andy Murray and Marcelo Melo beat Marin",
-              "</s>Britain's Jamie Murray and Marcelo Melo beat Marin",
-              "</s>Britain's Jamie Murray and Marcelo Melo beat world number two Marin",
-              "</s>Britain's Jamie Murray and Marcelo Melo beat Croatia's Dusan"
+              "</s>Andy Murray and Marcelo",
+              "</s>Jamie Murray and Marcelo",
+              "</s>Britain's Jamie Murray and Marcelo",
+              "</s>World number one Andy Murray and Marcelo",
+              "</s>World number one Andy Murray beat Marcelo",
+              "</s>World number one Andy Murray and partner Marcelo",
+              "</s>World number one Andy Murray and Marcelos Melo beat Marin",
+              "</s>World number one Andy Murray and partner Marcelos Melo beat Marin",
+              "</s>World number one Andy Murray and Marcelos Melo beat world number two Marin",
+              "</s>World number one Andy Murray and Marcelos Melo beat world number three Marin",
+              "</s>World number one Andy Murray and partner Marcelos Melo beat world number two Marin"
             ],
-            "n_words_checked": 98,
-            "score": -0.4633016884326935
+            "n_words_checked": 107,
+            "score": -0.6692751049995422
           },
           "labeled_entities": [
             {
-              "end": 7,
-              "ent": "Britain",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 0,
-              "type": "GPE"
+              "end": 16,
+              "ent": "one",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 13,
+              "type": "CARDINAL"
             },
             {
-              "end": 15,
-              "ent": "Jamie",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 10,
+              "end": 21,
+              "ent": "Andy",
+              "in_source": true,
+              "label": "Intrinsic Hallucination",
+              "start": 17,
               "type": "PERSON"
             },
             {
-              "end": 22,
+              "end": 28,
               "ent": "Murray",
               "in_source": true,
               "label": "Non-hallucinated",
-              "start": 16,
+              "start": 22,
               "type": "PERSON"
             },
             {
-              "end": 34,
-              "ent": "Marcelo",
+              "end": 41,
+              "ent": "Marcelos",
               "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 27,
+              "label": "Non-factual Hallucination",
+              "start": 33,
               "type": "PERSON"
             },
             {
-              "end": 39,
+              "end": 46,
               "ent": "Melo",
               "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 35,
+              "label": "Intrinsic Hallucination",
+              "start": 42,
               "type": "PERSON"
             },
             {
-              "end": 52,
-              "ent": "Croatia",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 45,
-              "type": "GPE"
+              "end": 68,
+              "ent": "two",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 65,
+              "type": "CARDINAL"
             },
             {
-              "end": 59,
+              "end": 73,
               "ent": "Ivan",
               "in_source": false,
               "label": "Factual Hallucination",
-              "start": 55,
+              "start": 69,
               "type": "PERSON"
             },
             {
-              "end": 65,
+              "end": 79,
               "ent": "Dodig",
               "in_source": true,
               "label": "Non-hallucinated",
-              "start": 60,
+              "start": 74,
               "type": "PERSON"
             },
             {
-              "end": 119,
-              "ent": "the Monte Carlo Masters",
+              "end": 86,
+              "ent": "7",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 85,
+              "type": "CARDINAL"
+            },
+            {
+              "end": 93,
+              "ent": "6-4",
               "in_source": false,
               "label": "Factual Hallucination",
-              "start": 96,
-              "type": "FAC"
+              "start": 90,
+              "type": "CARDINAL"
             }
           ],
-          "summary": "Britain's Jamie Murray and Marcelo Melo beat Croatia's Ivan Dodig 6-4 6-3 to reach the final of the Monte Carlo Masters."
+          "summary": "World number one Andy Murray and Marcelos Melo beat world number two Ivan Dodig 7-6 (7-4) 6-4 to reach the Monte Carlo Masters final."
         },
         "36162485": {
           "banned_phrases": [
@@ -5548,7 +5500,7 @@
               "</s>World number one Mark Selby will play Ding Junhui in the World Championship semi-finals after beating Marco Fu 6-4"
             ],
             "n_words_checked": 90,
-            "score": -0.5046682953834534
+            "score": -0.5046678781509399
           },
           "labeled_entities": [
             {
@@ -5716,13 +5668,14 @@
         },
         "36555657": {
           "banned_phrases": [
-            "Claude",
-            "Jean"
+            "Jean-Claude"
           ],
           "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 100,
-            "score": -0.5803329348564148
+            "dropped_seqs": [
+              "</s>Viacom chief executive Jean-Claude"
+            ],
+            "n_words_checked": 90,
+            "score": -0.5819692611694336
           },
           "labeled_entities": [
             {
@@ -5734,55 +5687,39 @@
               "type": "ORG"
             },
             {
-              "end": 27,
-              "ent": "Jean",
+              "end": 31,
+              "ent": "Philippe",
               "in_source": false,
-              "label": "Non-factual Hallucination",
+              "label": "Unknown",
               "start": 23,
               "type": "PERSON"
             },
             {
-              "end": 28,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 27,
-              "type": "PERSON"
-            },
-            {
-              "end": 34,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 28,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
+              "end": 38,
               "ent": "Dauman",
               "in_source": true,
               "label": "Non-hallucinated",
-              "start": 35,
+              "start": 32,
               "type": "PERSON"
             },
             {
-              "end": 104,
+              "end": 101,
               "ent": "Sumner",
               "in_source": false,
               "label": "Factual Hallucination",
-              "start": 98,
+              "start": 95,
               "type": "PERSON"
             },
             {
-              "end": 113,
+              "end": 110,
               "ent": "Redstone",
               "in_source": true,
               "label": "Non-hallucinated",
-              "start": 105,
+              "start": 102,
               "type": "PERSON"
             }
           ],
-          "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner Redstone."
+          "summary": "Viacom chief executive Philippe Dauman has been removed from the board of the company owned by Sumner Redstone."
         },
         "36635880": {
           "banned_phrases": [
@@ -5833,6 +5770,7 @@
         },
         "36730443": {
           "banned_phrases": [
+            "2",
             "last-16"
           ],
           "generation_metadata": {
@@ -5855,7 +5793,7 @@
               "end": 36,
               "ent": "2",
               "in_source": true,
-              "label": "Factual Hallucination",
+              "label": "Non-factual Hallucination",
               "start": 35,
               "type": "CARDINAL"
             },
@@ -5890,7 +5828,7 @@
               "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes"
             ],
             "n_words_checked": 89,
-            "score": -0.548823356628418
+            "score": -0.5488234162330627
           },
           "labeled_entities": [
             {
@@ -6001,7 +5939,7 @@
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 500,000 euro (\u00a3353,176) were seized in Paris",
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 400,000 euro (\u00a3353,176) were seized by police in Paris"
             ],
-            "n_words_checked": 111,
+            "n_words_checked": 113,
             "score": -0.6171761751174927
           },
           "labeled_entities": [
@@ -6328,79 +6266,80 @@
         "38470818": {
           "banned_phrases": [
             "Gary",
-            "John"
+            "John",
+            "St Johnstone's"
           ],
           "generation_metadata": {
             "dropped_seqs": [
-              "</s>St Johnstone's Gary",
+              "</s>St Johnstone's",
               "</s>St Johnstone captain Gary",
-              "</s>St Johnstone's Paul Anderson says Rangers' John",
-              "</s>St Johnstone's Steven Anderson says Rangers' John",
-              "</s>St Johnstone's Paul Anderson has said Rangers' John",
-              "</s>St Johnstone's Paul Anderson has said Rangers defender John"
+              "</s>St Johnstone defender Gary",
+              "</s>St Johnstone midfielder Gary",
+              "</s>St Johnstone defender Ryan Anderson says Rangers midfielder John",
+              "</s>St Johnstone defender Ryan Anderson has said Rangers midfielder John"
             ],
-            "n_words_checked": 93,
-            "score": -0.8810805082321167
+            "n_words_checked": 83,
+            "score": -0.881280779838562
           },
           "labeled_entities": [
             {
-              "end": 14,
-              "ent": "St Johnstone's",
+              "end": 12,
+              "ent": "St Johnstone",
               "in_source": false,
-              "label": "Factual Hallucination",
+              "label": "Non-factual Hallucination",
               "start": 0,
               "type": "PERSON"
             },
             {
-              "end": 19,
-              "ent": "Paul",
+              "end": 26,
+              "ent": "Ryan",
               "in_source": false,
               "label": "Non-factual Hallucination",
-              "start": 15,
+              "start": 22,
               "type": "PERSON"
             },
             {
-              "end": 28,
+              "end": 35,
               "ent": "Anderson",
               "in_source": true,
               "label": "Non-hallucinated",
-              "start": 20,
+              "start": 27,
               "type": "PERSON"
             },
             {
-              "end": 45,
+              "end": 48,
               "ent": "Rangers",
               "in_source": true,
               "label": "Non-hallucinated",
-              "start": 38,
+              "start": 41,
               "type": "ORG"
             },
             {
-              "end": 61,
+              "end": 66,
               "ent": "Kieran",
               "in_source": false,
               "label": "Non-factual Hallucination",
-              "start": 55,
+              "start": 60,
               "type": "PERSON"
             },
             {
-              "end": 69,
+              "end": 74,
               "ent": "Kiernan",
               "in_source": true,
               "label": "Non-hallucinated",
-              "start": 62,
+              "start": 67,
               "type": "PERSON"
             },
             {
-              "end": 92,
+              "end": 97,
               "ent": "Scottish",
               "in_source": true,
               "label": "Non-hallucinated",
-              "start": 84,
+              "start": 89,
               "type": "NORP"
             }
           ],
-          "summary": "St Johnstone's Paul Anderson has said Rangers defender Kieran Kiernan should face a Scottish FA disciplinary hearing over an alleged punch."
+          "summary": "St Johnstone defender Ryan Anderson says Rangers midfielder Kieran Kiernan should face a Scottish FA disciplinary hearing over an alleged punch."
         },
         "38983532": {
           "banned_phrases": [
@@ -6545,6 +6484,55 @@
           ],
           "summary": "An under-performing academy school in south-west London is to be merged with another in a bid to save money."
         },
+        "39847765": {
+          "banned_phrases": [
+            "Jordan"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "</s>Peterborough United have signed striker Jordan",
+              "</s>Peterborough United have signed midfielder Jordan",
+              "</s>Peterborough United have completed the signing of striker Jordan"
+            ],
+            "n_words_checked": 73,
+            "score": -0.618442952632904
+          },
+          "labeled_entities": [
+            {
+              "end": 19,
+              "ent": "Peterborough United",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 0,
+              "type": "GPE"
+            },
+            {
+              "end": 44,
+              "ent": "Josh",
+              "in_source": false,
+              "label": "Unknown",
+              "start": 40,
+              "type": "PERSON"
+            },
+            {
+              "end": 50,
+              "ent": "Lloyd",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 45,
+              "type": "PERSON"
+            },
+            {
+              "end": 83,
+              "ent": "Northampton Town",
+              "in_source": false,
+              "label": "Unknown",
+              "start": 67,
+              "type": "FAC"
+            }
+          ],
+          "summary": "Peterborough United have signed striker Josh Lloyd from non-league Northampton Town for an undisclosed fee."
+        },
         "39895178": {
           "banned_phrases": [
             "second"
@@ -6617,11 +6605,9 @@
               "</s>Welshman Jamie Evans retained his IBF super-lightweight title with a unanimous points victory over American Scott Ormond in Cardiff<s><s>",
               "</s>Welshman Jamie Evans retained his IBF super-lightweight title with a unanimous points victory over American Scott Ormond in Cardiff<s><unk>",
               "</s>Welshman Jamie Evans retained his IBF super-lightweight title with a unanimous points victory over American Scott Ormond in Cardiff<s><s><s>",
-              "</s>Welshman Jamie Evans retained his IBF super-lightweight title with a unanimous points victory over American Scott Ormond in Cardiff<s><s><unk>",
-              "</s>Welshman Jamie Evans retained his IBF super-lightweight title with a unanimous points victory over American Scott Ormond in Cardiff<s><s><s><s>",
-              "</s>Welshman Jamie Evans retained his IBF super-lightweight title with a unanimous points victory over American Scott Ormond in Cardiff<s><s><s><unk>"
+              "</s>Welshman Jamie Evans retained his IBF super-lightweight title with a unanimous points victory over American Scott Ormond in Cardiff<s><s><unk>"
             ],
-            "n_words_checked": 98,
+            "n_words_checked": 96,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -6720,28 +6706,28 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 102,
-            "Intrinsic Hallucination": 16,
-            "Non-factual Hallucination": 37,
-            "Non-hallucinated": 184,
-            "Unknown": 0
+            "Factual Hallucination": 91,
+            "Intrinsic Hallucination": 13,
+            "Non-factual Hallucination": 35,
+            "Non-hallucinated": 175,
+            "Unknown": 4
           },
           "type": {
             "CARDINAL": {
-              "Factual Hallucination": 8,
+              "Factual Hallucination": 7,
               "Intrinsic Hallucination": 2,
-              "Non-factual Hallucination": 4,
+              "Non-factual Hallucination": 5,
               "Non-hallucinated": 6,
               "Unknown": 0,
               "total": 20
             },
             "DATE": {
-              "Factual Hallucination": 15,
-              "Intrinsic Hallucination": 3,
+              "Factual Hallucination": 14,
+              "Intrinsic Hallucination": 2,
               "Non-factual Hallucination": 3,
-              "Non-hallucinated": 7,
+              "Non-hallucinated": 8,
               "Unknown": 0,
-              "total": 28
+              "total": 27
             },
             "EVENT": {
               "Factual Hallucination": 4,
@@ -6756,8 +6742,8 @@
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 2,
-              "Unknown": 0,
-              "total": 5
+              "Unknown": 1,
+              "total": 6
             },
             "GPE": {
               "Factual Hallucination": 16,
@@ -6802,18 +6788,18 @@
             "ORDINAL": {
               "Factual Hallucination": 4,
               "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 1,
+              "Non-factual Hallucination": 0,
               "Non-hallucinated": 0,
               "Unknown": 0,
-              "total": 5
+              "total": 4
             },
             "ORG": {
-              "Factual Hallucination": 18,
-              "Intrinsic Hallucination": 2,
+              "Factual Hallucination": 17,
+              "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 4,
               "Non-hallucinated": 29,
               "Unknown": 0,
-              "total": 53
+              "total": 51
             },
             "PERCENT": {
               "Factual Hallucination": 0,
@@ -6824,28 +6810,12 @@
               "total": 3
             },
             "PERSON": {
-              "Factual Hallucination": 29,
-              "Intrinsic Hallucination": 4,
-              "Non-factual Hallucination": 15,
-              "Non-hallucinated": 68,
-              "Unknown": 0,
-              "total": 116
-            },
-            "PRODUCT": {
-              "Factual Hallucination": 1,
-              "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 0,
-              "Non-hallucinated": 0,
-              "Unknown": 0,
-              "total": 1
-            },
-            "QUANTITY": {
-              "Factual Hallucination": 1,
-              "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 0,
-              "Non-hallucinated": 0,
-              "Unknown": 0,
-              "total": 1
+              "Factual Hallucination": 23,
+              "Intrinsic Hallucination": 3,
+              "Non-factual Hallucination": 13,
+              "Non-hallucinated": 58,
+              "Unknown": 3,
+              "total": 100
             },
             "TIME": {
               "Factual Hallucination": 0,
@@ -6867,11 +6837,11 @@
         },
         "summary": {
           "completed": 77,
-          "factual": 70,
-          "failed": 3,
-          "non_factual": 27,
+          "factual": 68,
+          "failed": 4,
+          "non_factual": 26,
           "total": 100,
-          "unknown": 0
+          "unknown": 2
         }
       },
       "summaries": {
@@ -7028,7 +6998,7 @@
               "</s>Hartlepool United have signed Reading midfielder Nkosi Tshibola and Mansfield Town striker Ryan Bingham on loan until the end of the season",
               "</s>Hartlepool United have signed Reading midfielder Nkosi Tshibola and Mansfield Town striker Jack Bingham on loan until the end of the season"
             ],
-            "n_words_checked": 105,
+            "n_words_checked": 104,
             "score": -0.6431590914726257
           },
           "labeled_entities": [
@@ -7084,7 +7054,7 @@
               "end": 150,
               "ent": "the end of the League One season",
               "in_source": false,
-              "label": "Intrinsic Hallucination",
+              "label": "Non-factual Hallucination",
               "start": 118,
               "type": "DATE"
             }
@@ -7598,120 +7568,44 @@
         },
         "36061830": {
           "banned_phrases": [
-            "Britain",
             "Cilic",
             "Dusan",
-            "Marin"
+            "Marcelo",
+            "Marcelos",
+            "Marin",
+            "two"
           ],
           "generation_metadata": {
             "dropped_seqs": [
-              "</s>Britain",
-              "</s>Andy Murray and Marcelo Melo beat Marin",
-              "</s>Jamie Murray and Marcelo Melo beat Marin",
-              "</s>Andy Murray and Marcelo Melo reached their third Monte Carlo Masters final in four years with a 6-4 6-3 victory over Marin"
+              "</s>Andy Murray and Marcelo",
+              "</s>Jamie Murray and Marcelo",
+              "</s>Britain's Jamie Murray and Marcelo",
+              "</s>World number one Andy Murray and Marcelo",
+              "</s>World number one Andy Murray beat Marcelo",
+              "</s>World number one Andy Murray and Marcelos",
+              "</s>World number one Andy Murray and partner Marcelo",
+              "</s>World number one Andy Murray and partner Marcelos",
+              "</s>World number one Andy Murray and partner Marcel Granollers beat Marcelo",
+              "</s>World number one Andy Murray and partner Marcel Granollers beat defending champions Marcelo",
+              "</s>World number one Andy Murray and partner Marcel Granollers reached the Monte Carlo Masters final by beating Marcelo",
+              "</s>World number one Andy Murray and partner Marcel Granollers reached the Monte Carlo Masters final with a 6-4 6-3 victory over Marcelo",
+              "</s>World number one Andy Murray and partner Marcel Granollers reached the Monte Carlo Masters final with a 6-4 6-3 win over Marcelo",
+              "</s>World number one Andy Murray and partner Marcel Granollers reached the Monte Carlo Masters final with a 6-4 6-2 victory over Marcelo",
+              "</s>World number one Andy Murray and partner Marcel Granollers reached the Monte Carlo Masters final with a 6-3 6-4 victory over Marcelo",
+              "</s>World number one Andy Murray and partner Marcel Granollers reached the Monte Carlo Masters final with a 6-4 6-3 victory over Marcelo<s>",
+              "</s>World number one Andy Murray and partner Marcel Granollers reached the Monte Carlo Masters final with a 6-4 6-3 victory over Marcelo<unk>",
+              "</s>World number one Andy Murray and partner Marcel Granollers reached the Monte Carlo Masters final with a 6-4 6-3 victory over Marcelo<s><s>",
+              "</s>World number one Andy Murray and partner Marcel Granollers reached the Monte Carlo Masters final with a 6-4 6-3 victory over Marcelo<s><unk>",
+              "</s>World number one Andy Murray and partner Marcel Granollers reached the Monte Carlo Masters final with a 6-4 6-3 victory over Marcelo<s><s><s>",
+              "</s>World number one Andy Murray and partner Marcel Granollers reached the Monte Carlo Masters final with a 6-4 6-3 victory over Marcelo<s><s><unk>",
+              "</s>World number one Andy Murray and partner Marcel Granollers reached the Monte Carlo Masters final with a 6-4 6-3 victory over Marcelo<s><s><s><s>",
+              "</s>World number one Andy Murray and partner Marcel Granollers reached the Monte Carlo Masters final with a 6-4 6-3 victory over Marcelo<s><s><s><unk>"
             ],
-            "n_words_checked": 102,
-            "score": -0.554535448551178
+            "n_words_checked": 94,
+            "score": -Infinity
           },
-          "labeled_entities": [
-            {
-              "end": 4,
-              "ent": "Andy",
-              "in_source": true,
-              "label": "Intrinsic Hallucination",
-              "start": 0,
-              "type": "PERSON"
-            },
-            {
-              "end": 11,
-              "ent": "Murray",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 5,
-              "type": "PERSON"
-            },
-            {
-              "end": 23,
-              "ent": "Marcelo",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 16,
-              "type": "PERSON"
-            },
-            {
-              "end": 28,
-              "ent": "Melo",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 24,
-              "type": "PERSON"
-            },
-            {
-              "end": 48,
-              "ent": "third",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 43,
-              "type": "ORDINAL"
-            },
-            {
-              "end": 68,
-              "ent": "Monte Carlo Masters",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 49,
-              "type": "PRODUCT"
-            },
-            {
-              "end": 88,
-              "ent": "four years",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 78,
-              "type": "DATE"
-            },
-            {
-              "end": 99,
-              "ent": "6-4",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 96,
-              "type": "QUANTITY"
-            },
-            {
-              "end": 121,
-              "ent": "Ivan",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 117,
-              "type": "PERSON"
-            },
-            {
-              "end": 127,
-              "ent": "Dodig",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 122,
-              "type": "PERSON"
-            },
-            {
-              "end": 136,
-              "ent": "Ivan",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 132,
-              "type": "PERSON"
-            },
-            {
-              "end": 142,
-              "ent": "Lendl",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 137,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "Andy Murray and Marcelo Melo reached their third Monte Carlo Masters final in four years with a 6-4 6-3 victory over Ivan Dodig and Ivan Lendl."
+          "labeled_entities": [],
+          "summary": "<Failed generation: blocked all beams>"
         },
         "36162485": {
           "banned_phrases": [
@@ -7857,6 +7751,7 @@
         },
         "36730443": {
           "banned_phrases": [
+            "2",
             "last-16",
             "the last 16"
           ],
@@ -7881,7 +7776,7 @@
               "end": 36,
               "ent": "2",
               "in_source": true,
-              "label": "Factual Hallucination",
+              "label": "Non-factual Hallucination",
               "start": 35,
               "type": "CARDINAL"
             },
@@ -8287,73 +8182,69 @@
             "Gary",
             "John",
             "Kieran",
-            "Paul"
+            "Ryan",
+            "St Johnstone",
+            "St Johnstone's"
           ],
           "generation_metadata": {
             "dropped_seqs": [
-              "</s>St Johnstone's Gary",
-              "</s>St Johnstone captain Gary",
-              "</s>St Johnstone's Paul",
-              "</s>St Johnstone's Steven Anderson says Rangers' John",
-              "</s>St Johnstone's Steven Anderson has said Rangers' John",
-              "</s>St Johnstone's Steven Anderson has said Rangers defender John",
-              "</s>St Johnstone's Steven Anderson has said Rangers defender Kieran",
-              "</s>St Johnstone's Steven Anderson has said Rangers' Kieran"
+              "</s>St Johnstone",
+              "</s>Rangers defender John",
+              "</s>Rangers defender Kieran",
+              "</s>Dundee United's Gary",
+              "</s>Rangers defender Kiernan will face a Scottish FA disciplinary hearing over an alleged punch on St Johnstone",
+              "</s>Rangers defender Kiernan will face a Scottish FA disciplinary hearing after being accused of punching St Johnstone",
+              "</s>Rangers defender Kiernan is to face a Scottish FA disciplinary hearing over an alleged punch on St Johnstone",
+              "</s>Rangers defender Kiernan is to face a Scottish FA disciplinary hearing after being accused of punching St Johnstone",
+              "</s>Rangers defender Kiernan is to face a Scottish FA disciplinary hearing over an alleged punch on St Johnstones' Gary",
+              "</s>Rangers defender Kiernan is to face a Scottish FA disciplinary hearing after being accused of punching St Johnstones' Gary"
             ],
-            "n_words_checked": 80,
-            "score": -0.9007701277732849
+            "n_words_checked": 107,
+            "score": -0.9444795846939087
           },
           "labeled_entities": [
             {
-              "end": 14,
-              "ent": "St Johnstone's",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 0,
-              "type": "PERSON"
-            },
-            {
-              "end": 21,
-              "ent": "Steven",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 15,
-              "type": "PERSON"
-            },
-            {
-              "end": 30,
-              "ent": "Anderson",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 22,
-              "type": "PERSON"
-            },
-            {
-              "end": 47,
-              "ent": "Rangers",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 40,
-              "type": "ORG"
-            },
-            {
-              "end": 64,
+              "end": 24,
               "ent": "Kiernan",
               "in_source": true,
               "label": "Non-hallucinated",
-              "start": 57,
+              "start": 17,
               "type": "PERSON"
             },
             {
-              "end": 87,
+              "end": 46,
               "ent": "Scottish",
               "in_source": true,
               "label": "Non-hallucinated",
-              "start": 79,
+              "start": 38,
               "type": "NORP"
+            },
+            {
+              "end": 110,
+              "ent": "St Johnstones'",
+              "in_source": false,
+              "label": "Unknown",
+              "start": 96,
+              "type": "PERSON"
+            },
+            {
+              "end": 115,
+              "ent": "Paul",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 111,
+              "type": "PERSON"
+            },
+            {
+              "end": 124,
+              "ent": "Anderson",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 116,
+              "type": "PERSON"
             }
           ],
-          "summary": "St Johnstone's Steven Anderson has said Rangers defender Kiernan should face a Scottish FA disciplinary hearing over an alleged punch."
+          "summary": "Rangers defender Kiernan is to face a Scottish FA disciplinary hearing over an alleged punch on St Johnstones' Paul Anderson."
         },
         "38983532": {
           "banned_phrases": [
@@ -8638,27 +8529,27 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 95,
-            "Intrinsic Hallucination": 16,
+            "Factual Hallucination": 90,
+            "Intrinsic Hallucination": 13,
             "Non-factual Hallucination": 23,
-            "Non-hallucinated": 177,
-            "Unknown": 0
+            "Non-hallucinated": 171,
+            "Unknown": 5
           },
           "type": {
             "CARDINAL": {
-              "Factual Hallucination": 8,
+              "Factual Hallucination": 7,
               "Intrinsic Hallucination": 2,
-              "Non-factual Hallucination": 1,
+              "Non-factual Hallucination": 2,
               "Non-hallucinated": 6,
               "Unknown": 0,
               "total": 17
             },
             "DATE": {
-              "Factual Hallucination": 13,
-              "Intrinsic Hallucination": 3,
-              "Non-factual Hallucination": 2,
-              "Non-hallucinated": 7,
-              "Unknown": 0,
+              "Factual Hallucination": 12,
+              "Intrinsic Hallucination": 1,
+              "Non-factual Hallucination": 3,
+              "Non-hallucinated": 8,
+              "Unknown": 1,
               "total": 25
             },
             "EVENT": {
@@ -8674,8 +8565,8 @@
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 2,
-              "Unknown": 0,
-              "total": 5
+              "Unknown": 1,
+              "total": 6
             },
             "GPE": {
               "Factual Hallucination": 17,
@@ -8726,12 +8617,12 @@
               "total": 5
             },
             "ORG": {
-              "Factual Hallucination": 17,
-              "Intrinsic Hallucination": 2,
+              "Factual Hallucination": 16,
+              "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 5,
               "Non-hallucinated": 29,
               "Unknown": 0,
-              "total": 53
+              "total": 51
             },
             "PERCENT": {
               "Factual Hallucination": 0,
@@ -8742,12 +8633,12 @@
               "total": 3
             },
             "PERSON": {
-              "Factual Hallucination": 26,
+              "Factual Hallucination": 24,
               "Intrinsic Hallucination": 4,
-              "Non-factual Hallucination": 8,
-              "Non-hallucinated": 62,
-              "Unknown": 0,
-              "total": 100
+              "Non-factual Hallucination": 6,
+              "Non-hallucinated": 55,
+              "Unknown": 3,
+              "total": 92
             },
             "TIME": {
               "Factual Hallucination": 0,
@@ -8769,11 +8660,11 @@
         },
         "summary": {
           "completed": 86,
-          "factual": 75,
+          "factual": 72,
           "failed": 7,
           "non_factual": 18,
           "total": 100,
-          "unknown": 0
+          "unknown": 3
         }
       },
       "summaries": {
@@ -8846,6 +8737,7 @@
             "Nkosi",
             "Olamide",
             "Ryan",
+            "the end of the League One season",
             "the end of the season"
           ],
           "generation_metadata": {
@@ -8857,13 +8749,14 @@
               "</s>Hartlepool United have signed Reading midfielder Ola Tshibola and Mansfield Town striker Jordan",
               "</s>Hartlepool United have signed Reading midfielder Ola Tshibola and Mansfield Town striker Ryan",
               "</s>Hartlepool United have signed Reading midfielder Alex Tshibola on loan until the end of the season",
-              "</s>Hartlepool United have signed Reading midfielder Alex Tshibola on loan until the end of the League One season and Mansfield Town striker Jordan",
-              "</s>Hartlepool United have signed Reading midfielder Alex Tshibola on loan until the end of the League One season and Mansfield Town striker Josh",
-              "</s>Hartlepool United have signed Reading midfielder Alex Tshibola on loan until the end of the League One season and Mansfield Town striker Ryan",
-              "</s>Hartlepool United have signed Reading midfielder Alex Tshibola on loan until the end of the League One season and Mansfield Town striker Joe Bingham until January"
+              "</s>Hartlepool United have signed Reading midfielder Alex Tshibola on loan until the end of the League One season",
+              "</s>Hartlepool United have signed Reading midfielder Alex Tshibola on loan until the end of the League Two season and Mansfield Town striker Jordan",
+              "</s>Hartlepool United have signed Reading midfielder Alex Tshibola on loan until the end of the League Two season and Mansfield Town striker Josh",
+              "</s>Hartlepool United have signed Reading midfielder Alex Tshibola on loan until the end of the League Two season and Mansfield Town striker Ryan",
+              "</s>Hartlepool United have signed Reading midfielder Alex Tshibola on loan until the end of the League Two season and Mansfield Town striker Joe Bingham until January"
             ],
             "n_words_checked": 121,
-            "score": -0.6711298227310181
+            "score": -0.6897880434989929
           },
           "labeled_entities": [
             {
@@ -8892,9 +8785,9 @@
             },
             {
               "end": 109,
-              "ent": "the end of the League One season",
+              "ent": "the end of the League Two season",
               "in_source": false,
-              "label": "Intrinsic Hallucination",
+              "label": "Unknown",
               "start": 77,
               "type": "DATE"
             },
@@ -8926,12 +8819,12 @@
               "end": 163,
               "ent": "one-month",
               "in_source": false,
-              "label": "Intrinsic Hallucination",
+              "label": "Non-factual Hallucination",
               "start": 154,
               "type": "DATE"
             }
           ],
-          "summary": "Hartlepool United have signed Reading midfielder Alex Tshibola on loan until the end of the League One season and Mansfield Town striker Joe Bingham on a one-month loan deal."
+          "summary": "Hartlepool United have signed Reading midfielder Alex Tshibola on loan until the end of the League Two season and Mansfield Town striker Joe Bingham on a one-month loan deal."
         },
         "32033856": {
           "banned_phrases": [
@@ -9240,41 +9133,6 @@
           ],
           "summary": "Wales' Six Nations win over France was \"baffling\", according to former team-mate Gareth Jenkins."
         },
-        "36061830": {
-          "banned_phrases": [
-            "Britain",
-            "Cilic",
-            "Dusan",
-            "Lendl",
-            "Marin",
-            "four years",
-            "third"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>Britain",
-              "</s>Andy Murray and Marcelo Melo beat Marin",
-              "</s>Jamie Murray and Marcelo Melo beat Marin",
-              "</s>Andy Murray and Marcelo Melo reached their third",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-3 win over Marin",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-3 victory over Marin",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-2 win over Marin",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-2 victory over Marin",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-3 win over Marin<s>",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-3 win over Marin<unk>",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-3 win over Marin<s><s>",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-3 win over Marin<s><unk>",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-3 win over Marin<s><s><s>",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-3 win over Marin<s><s><unk>",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-3 win over Marin<s><s><s><s>",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-3 win over Marin<s><s><s><unk>"
-            ],
-            "n_words_checked": 88,
-            "score": -Infinity
-          },
-          "labeled_entities": [],
-          "summary": "<Failed generation: blocked all beams>"
-        },
         "36635880": {
           "banned_phrases": [
             "the EuroHockey Championships",
@@ -9328,6 +9186,7 @@
         },
         "36730443": {
           "banned_phrases": [
+            "2",
             "Cardiff",
             "last-16",
             "the last 16"
@@ -9354,7 +9213,7 @@
               "end": 36,
               "ent": "2",
               "in_source": true,
-              "label": "Factual Hallucination",
+              "label": "Non-factual Hallucination",
               "start": 35,
               "type": "CARDINAL"
             },
@@ -9671,6 +9530,78 @@
           "labeled_entities": [],
           "summary": "<Failed generation: blocked all beams>"
         },
+        "38470818": {
+          "banned_phrases": [
+            "Gary",
+            "John",
+            "Kieran",
+            "Paul",
+            "Ryan",
+            "St Johnstone",
+            "St Johnstone's"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "</s>St Johnstone",
+              "</s>Rangers defender John",
+              "</s>Rangers defender Kieran",
+              "</s>Dundee United's Gary",
+              "</s>Rangers defender Kiernan will face a Scottish FA disciplinary hearing over an alleged punch on St Johnstone",
+              "</s>Rangers defender Kiernan will face a Scottish FA disciplinary hearing after being accused of punching St Johnstone",
+              "</s>Rangers defender Kiernan is to face a Scottish FA disciplinary hearing over an alleged punch on St Johnstone",
+              "</s>Rangers defender Kiernan is to face a Scottish FA disciplinary hearing after being accused of punching St Johnstone",
+              "</s>Rangers defender Kiernan is to face a Scottish FA disciplinary hearing over an alleged punch on St Johnstones' Gary",
+              "</s>Rangers defender Kiernan is to face a Scottish FA disciplinary hearing after being accused of punching St Johnstones' Gary",
+              "</s>Rangers defender Kiernan is to face a Scottish FA disciplinary hearing over an alleged punch on St Johnstones' Paul",
+              "</s>Rangers defender Kiernan is to face a Scottish FA disciplinary hearing over an alleged punch on St Johnstones' Steven Anderson, reports BBC Scotland's Paul"
+            ],
+            "n_words_checked": 110,
+            "score": -0.9645432233810425
+          },
+          "labeled_entities": [
+            {
+              "end": 24,
+              "ent": "Kiernan",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 17,
+              "type": "PERSON"
+            },
+            {
+              "end": 46,
+              "ent": "Scottish",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 38,
+              "type": "NORP"
+            },
+            {
+              "end": 110,
+              "ent": "St Johnstones'",
+              "in_source": false,
+              "label": "Unknown",
+              "start": 96,
+              "type": "PERSON"
+            },
+            {
+              "end": 117,
+              "ent": "Steven",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 111,
+              "type": "PERSON"
+            },
+            {
+              "end": 126,
+              "ent": "Anderson",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 118,
+              "type": "PERSON"
+            }
+          ],
+          "summary": "Rangers defender Kiernan is to face a Scottish FA disciplinary hearing over an alleged punch on St Johnstones' Steven Anderson."
+        },
         "38983532": {
           "banned_phrases": [
             "Attakora",
@@ -9878,27 +9809,27 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 98,
-            "Intrinsic Hallucination": 16,
-            "Non-factual Hallucination": 23,
-            "Non-hallucinated": 177,
-            "Unknown": 0
+            "Factual Hallucination": 93,
+            "Intrinsic Hallucination": 14,
+            "Non-factual Hallucination": 21,
+            "Non-hallucinated": 172,
+            "Unknown": 5
           },
           "type": {
             "CARDINAL": {
-              "Factual Hallucination": 9,
+              "Factual Hallucination": 8,
               "Intrinsic Hallucination": 2,
-              "Non-factual Hallucination": 1,
+              "Non-factual Hallucination": 2,
               "Non-hallucinated": 6,
               "Unknown": 0,
               "total": 18
             },
             "DATE": {
-              "Factual Hallucination": 13,
-              "Intrinsic Hallucination": 2,
+              "Factual Hallucination": 12,
+              "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 1,
-              "Non-hallucinated": 7,
-              "Unknown": 0,
+              "Non-hallucinated": 8,
+              "Unknown": 1,
               "total": 23
             },
             "EVENT": {
@@ -9914,8 +9845,8 @@
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 2,
-              "Unknown": 0,
-              "total": 5
+              "Unknown": 1,
+              "total": 6
             },
             "GPE": {
               "Factual Hallucination": 17,
@@ -9966,12 +9897,12 @@
               "total": 5
             },
             "ORG": {
-              "Factual Hallucination": 19,
-              "Intrinsic Hallucination": 2,
+              "Factual Hallucination": 18,
+              "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 2,
               "Non-hallucinated": 29,
               "Unknown": 0,
-              "total": 52
+              "total": 50
             },
             "PERCENT": {
               "Factual Hallucination": 0,
@@ -9982,12 +9913,12 @@
               "total": 3
             },
             "PERSON": {
-              "Factual Hallucination": 26,
+              "Factual Hallucination": 24,
               "Intrinsic Hallucination": 4,
-              "Non-factual Hallucination": 14,
-              "Non-hallucinated": 62,
-              "Unknown": 0,
-              "total": 106
+              "Non-factual Hallucination": 11,
+              "Non-hallucinated": 56,
+              "Unknown": 3,
+              "total": 98
             },
             "TIME": {
               "Factual Hallucination": 0,
@@ -10009,11 +9940,11 @@
         },
         "summary": {
           "completed": 88,
-          "factual": 77,
+          "factual": 74,
           "failed": 7,
           "non_factual": 16,
           "total": 100,
-          "unknown": 0
+          "unknown": 3
         }
       },
       "summaries": {
@@ -10092,6 +10023,8 @@
             "Nkosi",
             "Olamide",
             "Ryan",
+            "one-month",
+            "the end of the League One season",
             "the end of the season"
           ],
           "generation_metadata": {
@@ -10105,12 +10038,14 @@
               "</s>Hartlepool United have signed Reading midfielder Ola Tshibola and Mansfield Town striker Ryan",
               "</s>Hartlepool United have signed Reading midfielder Ola Tshibola on loan until the end of January",
               "</s>Hartlepool United have signed Reading midfielder Ola Tshibola on loan until the end of the season",
-              "</s>Hartlepool United have signed Reading midfielder Ola Tshibola on loan until the end of the League One season and Mansfield Town striker Josh",
-              "</s>Hartlepool United have signed Reading midfielder Ola Tshibola on loan until the end of the League One season and Mansfield Town striker Jordan",
-              "</s>Hartlepool United have signed Reading midfielder Ola Tshibola on loan until the end of the League One season and Mansfield Town striker Joe"
+              "</s>Hartlepool United have signed Reading midfielder Ola Tshibola on loan until the end of the League One season",
+              "</s>Hartlepool United have signed Reading midfielder Ola Tshibola on loan until the end of the League Two season and Mansfield Town striker Josh",
+              "</s>Hartlepool United have signed Reading midfielder Ola Tshibola on loan until the end of the League Two season and Mansfield Town striker Jordan",
+              "</s>Hartlepool United have signed Reading midfielder Ola Tshibola on loan until the end of the League Two season and Mansfield Town striker Joe",
+              "</s>Hartlepool United have signed Reading midfielder Ola Tshibola on loan until the end of the League Two season and Mansfield Town striker Callum Bingham on a one-month"
             ],
-            "n_words_checked": 127,
-            "score": -0.7086443305015564
+            "n_words_checked": 126,
+            "score": -0.7283596992492676
           },
           "labeled_entities": [
             {
@@ -10139,9 +10074,9 @@
             },
             {
               "end": 108,
-              "ent": "the end of the League One season",
+              "ent": "the end of the League Two season",
               "in_source": false,
-              "label": "Intrinsic Hallucination",
+              "label": "Unknown",
               "start": 76,
               "type": "DATE"
             },
@@ -10178,7 +10113,7 @@
               "type": "DATE"
             }
           ],
-          "summary": "Hartlepool United have signed Reading midfielder Ola Tshibola on loan until the end of the League One season and Mansfield Town striker Callum Bingham on a season-long loan."
+          "summary": "Hartlepool United have signed Reading midfielder Ola Tshibola on loan until the end of the League Two season and Mansfield Town striker Callum Bingham on a season-long loan."
         },
         "32033856": {
           "banned_phrases": [
@@ -10280,7 +10215,7 @@
               "end": 52,
               "ent": "\u00d3",
               "in_source": true,
-              "label": "Non-factual Hallucination",
+              "label": "Non-hallucinated",
               "start": 51,
               "type": "PERSON"
             },
@@ -10803,17 +10738,17 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 93,
-            "Intrinsic Hallucination": 15,
-            "Non-factual Hallucination": 10,
-            "Non-hallucinated": 172,
-            "Unknown": 6
+            "Factual Hallucination": 89,
+            "Intrinsic Hallucination": 14,
+            "Non-factual Hallucination": 7,
+            "Non-hallucinated": 165,
+            "Unknown": 10
           },
           "type": {
             "CARDINAL": {
-              "Factual Hallucination": 8,
+              "Factual Hallucination": 7,
               "Intrinsic Hallucination": 2,
-              "Non-factual Hallucination": 0,
+              "Non-factual Hallucination": 1,
               "Non-hallucinated": 5,
               "Unknown": 1,
               "total": 16
@@ -10822,8 +10757,8 @@
               "Factual Hallucination": 11,
               "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 0,
-              "Non-hallucinated": 6,
-              "Unknown": 2,
+              "Non-hallucinated": 7,
+              "Unknown": 1,
               "total": 20
             },
             "EVENT": {
@@ -10839,16 +10774,16 @@
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 2,
-              "Unknown": 0,
-              "total": 5
+              "Unknown": 1,
+              "total": 6
             },
             "GPE": {
               "Factual Hallucination": 16,
               "Intrinsic Hallucination": 2,
-              "Non-factual Hallucination": 3,
-              "Non-hallucinated": 46,
+              "Non-factual Hallucination": 1,
+              "Non-hallucinated": 45,
               "Unknown": 1,
-              "total": 68
+              "total": 65
             },
             "LAW": {
               "Factual Hallucination": 0,
@@ -10891,12 +10826,12 @@
               "total": 5
             },
             "ORG": {
-              "Factual Hallucination": 18,
-              "Intrinsic Hallucination": 2,
+              "Factual Hallucination": 17,
+              "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 2,
               "Non-hallucinated": 29,
-              "Unknown": 0,
-              "total": 51
+              "Unknown": 1,
+              "total": 50
             },
             "PERCENT": {
               "Factual Hallucination": 0,
@@ -10907,12 +10842,12 @@
               "total": 3
             },
             "PERSON": {
-              "Factual Hallucination": 26,
+              "Factual Hallucination": 24,
               "Intrinsic Hallucination": 4,
-              "Non-factual Hallucination": 3,
-              "Non-hallucinated": 61,
-              "Unknown": 2,
-              "total": 96
+              "Non-factual Hallucination": 1,
+              "Non-hallucinated": 54,
+              "Unknown": 5,
+              "total": 88
             },
             "TIME": {
               "Factual Hallucination": 0,
@@ -10933,12 +10868,12 @@
           }
         },
         "summary": {
-          "completed": 96,
-          "factual": 78,
+          "completed": 97,
+          "factual": 75,
           "failed": 12,
-          "non_factual": 8,
+          "non_factual": 7,
           "total": 100,
-          "unknown": 2
+          "unknown": 6
         }
       },
       "summaries": {
@@ -11011,6 +10946,8 @@
             "Ola",
             "Olamide",
             "Ryan",
+            "one-month",
+            "the end of the League One season",
             "the end of the season"
           ],
           "generation_metadata": {
@@ -11025,13 +10962,15 @@
               "</s>Hartlepool United have signed Reading midfielder Oumar Tshibola and Mansfield Town striker Ryan",
               "</s>Hartlepool United have signed Reading midfielder Oumar Tshibola on loan until the end of January",
               "</s>Hartlepool United have signed Reading midfielder Oumar Tshibola on loan until the end of the season",
-              "</s>Hartlepool United have signed Reading midfielder Oumar Tshibola on loan until the end of the League One season and Mansfield Town striker Jordan",
-              "</s>Hartlepool United have signed Reading midfielder Oumar Tshibola on loan until the end of the League One season and Mansfield Town striker Josh",
-              "</s>Hartlepool United have signed Reading midfielder Oumar Tshibola on loan until the end of the League One season and Mansfield Town striker Joe",
-              "</s>Hartlepool United have signed Reading midfielder Oumar Tshibola on loan until the end of the League One season and Mansfield Town striker Callum"
+              "</s>Hartlepool United have signed Reading midfielder Oumar Tshibola on loan until the end of the League One season",
+              "</s>Hartlepool United have signed Reading midfielder Oumar Tshibola on loan until the end of the League Two season and Mansfield Town striker Jordan",
+              "</s>Hartlepool United have signed Reading midfielder Oumar Tshibola on loan until the end of the League Two season and Mansfield Town striker Josh",
+              "</s>Hartlepool United have signed Reading midfielder Oumar Tshibola on loan until the end of the League Two season and Mansfield Town striker Joe",
+              "</s>Hartlepool United have signed Reading midfielder Oumar Tshibola on loan until the end of the League Two season and Mansfield Town striker Callum",
+              "</s>Hartlepool United have signed Reading midfielder Oumar Tshibola on loan until the end of the League Two season and Mansfield Town striker Callam Bingham on a one-month"
             ],
             "n_words_checked": 127,
-            "score": -0.8516778349876404
+            "score": -0.888876736164093
           },
           "labeled_entities": [
             {
@@ -11060,7 +10999,7 @@
             },
             {
               "end": 110,
-              "ent": "the end of the League One season",
+              "ent": "the end of the League Two season",
               "in_source": false,
               "label": "Unknown",
               "start": 78,
@@ -11091,15 +11030,15 @@
               "type": "PERSON"
             },
             {
-              "end": 167,
-              "ent": "one-month",
+              "end": 169,
+              "ent": "season-long",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 158,
               "type": "DATE"
             }
           ],
-          "summary": "Hartlepool United have signed Reading midfielder Oumar Tshibola on loan until the end of the League One season and Mansfield Town striker Callam Bingham on a one-month loan deal."
+          "summary": "Hartlepool United have signed Reading midfielder Oumar Tshibola on loan until the end of the League Two season and Mansfield Town striker Callam Bingham on a season-long loan."
         },
         "32033856": {
           "banned_phrases": [
@@ -11169,24 +11108,18 @@
             "M\u00e1irt\u00edn \u00d3 Murchu",
             "M\u00e1irt\u00edn \u00d3 Murchun",
             "M\u00e1irt\u00edn \u00d3 Murch\u00f4n",
-            "M\u00e1irt\u00edn \u00d3 Murch\u00fa",
-            "\u00d3"
+            "M\u00e1irt\u00edn \u00d3 Murch\u00fa"
           ],
           "generation_metadata": {
             "dropped_seqs": [
               "</s>The former RT\u00c9 broadcaster M\u00e1irt\u00edn",
               "</s>The former RT\u00c9 broadcaster, M\u00e1irt\u00edn",
               "</s>The former RT\u00c9 broadcaster and broadcaster M\u00e1irt\u00edn",
-              "</s>The former RT\u00c9 broadcaster, M\u00e1ir\u00edn \u00d3",
-              "</s>The former RT\u00c9 broadcaster, M\u00e1irt\u00ed \u00d3",
-              "</s>The former RT\u00c9 broadcaster and broadcaster M\u00e1irt\u00ed \u00d3",
-              "</s>The former RT\u00c9 broadcaster and broadcaster M\u00e1irt\u00edr \u00d3",
-              "</s>The former RT\u00c9 broadcaster and broadcaster M\u00e1irt\u00ed \ufffd \u00d3",
-              "</s>The former RT\u00c9 broadcaster and broadcaster M\u00e1irt\u00ed \u00e2 Murch\u00fa has died in Dublin",
-              "</s>The former RT\u00c9 broadcaster and broadcaster M\u00e1irt\u00ed \u00e2'Murch\u00fa has died in Dublin"
+              "</s>The former RT\u00c9 broadcaster, M\u00e1ir\u00edn \u00d3 Murch\u00fa, has died in Dublin",
+              "</s>The former RT\u00c9 broadcaster, M\u00e1irt\u00ed \u00d3 Murch\u00fa, has died in Dublin"
             ],
-            "n_words_checked": 62,
-            "score": -1.1647640466690063
+            "n_words_checked": 59,
+            "score": -0.7301375269889832
           },
           "labeled_entities": [
             {
@@ -11198,31 +11131,15 @@
               "type": "ORG"
             },
             {
-              "end": 49,
-              "ent": "M\u00e1irt\u00ed",
+              "end": 43,
+              "ent": "M\u00e1ir\u00edn \u00d3 Murch\u00fa",
               "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 43,
-              "type": "GPE"
-            },
-            {
-              "end": 58,
-              "ent": "Murch\u00fa",
-              "in_source": true,
-              "label": "Non-factual Hallucination",
-              "start": 52,
-              "type": "GPE"
-            },
-            {
-              "end": 75,
-              "ent": "Cork",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 71,
-              "type": "GPE"
+              "label": "Unknown",
+              "start": 28,
+              "type": "ORG"
             }
           ],
-          "summary": "The former RT\u00c9 broadcaster and broadcaster M\u00e1irt\u00ed \u00e2 Murch\u00fa has died in Cork."
+          "summary": "The former RT\u00c9 broadcaster, M\u00e1ir\u00edn \u00d3 Murch\u00fa, has died."
         },
         "33648595": {
           "banned_phrases": [
@@ -11536,17 +11453,17 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 93,
-            "Intrinsic Hallucination": 15,
-            "Non-factual Hallucination": 7,
-            "Non-hallucinated": 169,
-            "Unknown": 8
+            "Factual Hallucination": 89,
+            "Intrinsic Hallucination": 14,
+            "Non-factual Hallucination": 5,
+            "Non-hallucinated": 163,
+            "Unknown": 10
           },
           "type": {
             "CARDINAL": {
-              "Factual Hallucination": 8,
+              "Factual Hallucination": 7,
               "Intrinsic Hallucination": 2,
-              "Non-factual Hallucination": 0,
+              "Non-factual Hallucination": 1,
               "Non-hallucinated": 5,
               "Unknown": 1,
               "total": 16
@@ -11555,8 +11472,8 @@
               "Factual Hallucination": 11,
               "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 0,
-              "Non-hallucinated": 6,
-              "Unknown": 2,
+              "Non-hallucinated": 7,
+              "Unknown": 1,
               "total": 20
             },
             "EVENT": {
@@ -11572,16 +11489,16 @@
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 2,
-              "Unknown": 0,
-              "total": 5
+              "Unknown": 1,
+              "total": 6
             },
             "GPE": {
               "Factual Hallucination": 16,
               "Intrinsic Hallucination": 2,
-              "Non-factual Hallucination": 1,
+              "Non-factual Hallucination": 0,
               "Non-hallucinated": 45,
-              "Unknown": 2,
-              "total": 66
+              "Unknown": 1,
+              "total": 64
             },
             "LAW": {
               "Factual Hallucination": 0,
@@ -11612,8 +11529,8 @@
               "Intrinsic Hallucination": 2,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 12,
-              "Unknown": 1,
-              "total": 16
+              "Unknown": 0,
+              "total": 15
             },
             "ORDINAL": {
               "Factual Hallucination": 4,
@@ -11624,12 +11541,12 @@
               "total": 5
             },
             "ORG": {
-              "Factual Hallucination": 18,
-              "Intrinsic Hallucination": 2,
+              "Factual Hallucination": 17,
+              "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 2,
               "Non-hallucinated": 28,
-              "Unknown": 0,
-              "total": 50
+              "Unknown": 1,
+              "total": 49
             },
             "PERCENT": {
               "Factual Hallucination": 0,
@@ -11640,12 +11557,12 @@
               "total": 3
             },
             "PERSON": {
-              "Factual Hallucination": 26,
+              "Factual Hallucination": 24,
               "Intrinsic Hallucination": 4,
-              "Non-factual Hallucination": 2,
-              "Non-hallucinated": 60,
-              "Unknown": 2,
-              "total": 94
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 53,
+              "Unknown": 5,
+              "total": 86
             },
             "TIME": {
               "Factual Hallucination": 0,
@@ -11667,11 +11584,11 @@
         },
         "summary": {
           "completed": 99,
-          "factual": 78,
+          "factual": 75,
           "failed": 13,
-          "non_factual": 6,
+          "non_factual": 5,
           "total": 100,
-          "unknown": 3
+          "unknown": 7
         }
       },
       "summaries": {
@@ -11725,71 +11642,6 @@
           ],
           "summary": "Villagers in a Ceredigion village have objected to plans for more than 1,100 new homes."
         },
-        "33317600": {
-          "banned_phrases": [
-            "Dublin",
-            "Murch\u00f4s",
-            "Murch\u00fa",
-            "M\u00e1irt\u00ed",
-            "M\u00e1irt\u00edn",
-            "M\u00e1irt\u00edn \u00d3 Murchu",
-            "M\u00e1irt\u00edn \u00d3 Murchun",
-            "M\u00e1irt\u00edn \u00d3 Murch\u00f4n",
-            "M\u00e1irt\u00edn \u00d3 Murch\u00fa",
-            "\u00d3"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>The former RT\u00c9 broadcaster M\u00e1irt\u00edn",
-              "</s>The former RT\u00c9 broadcaster, M\u00e1irt\u00edn",
-              "</s>The former RT\u00c9 broadcaster, M\u00e1irt\u00ed",
-              "</s>The former RT\u00c9 broadcaster and broadcaster M\u00e1irt\u00edn",
-              "</s>The former RT\u00c9 broadcaster and broadcaster M\u00e1irt\u00ed",
-              "</s>The former RT\u00c9 broadcaster, M\u00e1ir\u00edn \u00d3",
-              "</s>The former RT\u00c9 broadcaster and broadcaster M\u00e1irt\u00eda \u00d3",
-              "</s>The former RT\u00c9 broadcaster, M\u00e1ir\u00edn \ufffd \u00d3",
-              "</s>The former RT\u00c9 broadcaster, M\u00e1ir\u00edn \u00e2 Murch\u00fa, has died in Dublin",
-              "</s>The former RT\u00c9 broadcaster, M\u00e1ir\u00edn \u00e2' Murch\u00fa, has died in Dublin"
-            ],
-            "n_words_checked": 71,
-            "score": -0.9699462652206421
-          },
-          "labeled_entities": [
-            {
-              "end": 14,
-              "ent": "RT\u00c9",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 11,
-              "type": "ORG"
-            },
-            {
-              "end": 34,
-              "ent": "M\u00e1ir\u00edn",
-              "in_source": false,
-              "label": "Unknown",
-              "start": 28,
-              "type": "NORP"
-            },
-            {
-              "end": 43,
-              "ent": "Murch\u00fa",
-              "in_source": true,
-              "label": "Non-factual Hallucination",
-              "start": 37,
-              "type": "GPE"
-            },
-            {
-              "end": 80,
-              "ent": "the Republic of Ireland",
-              "in_source": false,
-              "label": "Unknown",
-              "start": 57,
-              "type": "GPE"
-            }
-          ],
-          "summary": "The former RT\u00c9 broadcaster, M\u00e1ir\u00edn \u00e2 Murch\u00fa, has died in the Republic of Ireland."
-        },
         "33648595": {
           "banned_phrases": [
             "Kaizo",
@@ -11842,7 +11694,7 @@
               "</s>Great Britain's women produced their best performance of the EuroHockey"
             ],
             "n_words_checked": 95,
-            "score": -0.8646669983863831
+            "score": -0.8646672368049622
           },
           "labeled_entities": [
             {
@@ -11878,17 +11730,17 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 93,
-            "Intrinsic Hallucination": 15,
-            "Non-factual Hallucination": 6,
-            "Non-hallucinated": 170,
-            "Unknown": 10
+            "Factual Hallucination": 89,
+            "Intrinsic Hallucination": 14,
+            "Non-factual Hallucination": 4,
+            "Non-hallucinated": 164,
+            "Unknown": 12
           },
           "type": {
             "CARDINAL": {
-              "Factual Hallucination": 8,
+              "Factual Hallucination": 7,
               "Intrinsic Hallucination": 2,
-              "Non-factual Hallucination": 0,
+              "Non-factual Hallucination": 1,
               "Non-hallucinated": 5,
               "Unknown": 1,
               "total": 16
@@ -11897,8 +11749,8 @@
               "Factual Hallucination": 11,
               "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 0,
-              "Non-hallucinated": 6,
-              "Unknown": 3,
+              "Non-hallucinated": 7,
+              "Unknown": 2,
               "total": 21
             },
             "EVENT": {
@@ -11914,16 +11766,16 @@
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 2,
-              "Unknown": 0,
-              "total": 5
+              "Unknown": 1,
+              "total": 6
             },
             "GPE": {
               "Factual Hallucination": 16,
               "Intrinsic Hallucination": 2,
-              "Non-factual Hallucination": 1,
+              "Non-factual Hallucination": 0,
               "Non-hallucinated": 45,
-              "Unknown": 2,
-              "total": 66
+              "Unknown": 1,
+              "total": 64
             },
             "LAW": {
               "Factual Hallucination": 0,
@@ -11954,8 +11806,8 @@
               "Intrinsic Hallucination": 2,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 12,
-              "Unknown": 1,
-              "total": 16
+              "Unknown": 0,
+              "total": 15
             },
             "ORDINAL": {
               "Factual Hallucination": 4,
@@ -11966,12 +11818,12 @@
               "total": 6
             },
             "ORG": {
-              "Factual Hallucination": 18,
-              "Intrinsic Hallucination": 2,
+              "Factual Hallucination": 17,
+              "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 1,
               "Non-hallucinated": 28,
-              "Unknown": 1,
-              "total": 50
+              "Unknown": 2,
+              "total": 49
             },
             "PERCENT": {
               "Factual Hallucination": 0,
@@ -11982,12 +11834,12 @@
               "total": 3
             },
             "PERSON": {
-              "Factual Hallucination": 26,
+              "Factual Hallucination": 24,
               "Intrinsic Hallucination": 4,
-              "Non-factual Hallucination": 2,
-              "Non-hallucinated": 60,
-              "Unknown": 2,
-              "total": 94
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 53,
+              "Unknown": 5,
+              "total": 86
             },
             "TIME": {
               "Factual Hallucination": 0,
@@ -12009,11 +11861,11 @@
         },
         "summary": {
           "completed": 100,
-          "factual": 78,
+          "factual": 75,
           "failed": 13,
-          "non_factual": 5,
+          "non_factual": 4,
           "total": 100,
-          "unknown": 4
+          "unknown": 8
         }
       },
       "summaries": {
@@ -12085,5 +11937,5 @@
       }
     }
   },
-  "timestamp": 1655405460.6963649
+  "timestamp": 1655674526.506946
 }
