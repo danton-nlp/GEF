@@ -8,7 +8,7 @@ nlp = spacy.load("en_core_web_lg")
 
 def split_person_entity(entity: Span, source: str) -> List[MarkedEntity]:
     split_entity: List[MarkedEntity] = []
-    ent_parts: List[str] = entity.text.split(" ")
+    ent_parts = entity.text.split(" ")
     start_idx = entity[0].idx
     for sub_ent in ent_parts:
         split_entity.append(
