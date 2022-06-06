@@ -18,12 +18,14 @@ from src.entity_factuality import (
     ANNOTATION_LABELS,
 )
 from src.generation_utils import (
-    SUMMARY_FAILED_GENERATION,
-    generate_summaries,
     load_model_and_tokenizer,
 )
-from src.beam_validators import BannedPhrases
-from src.word_logits_processor import WordLogitsProcessor
+from transformers_phrase_limits import (
+    SUMMARY_FAILED_GENERATION,
+    generate_summaries_with_phrase_limits,
+    BannedPhrases,
+    PhraseLogitsProcessor
+)
 from sumtool.storage import get_summary_metrics
 from src.misc_utils import Timer, get_new_log_path
 import json
@@ -274,7 +276,7 @@ if __name__ == "__main__":
                         sum_id
                     ]
 
-                factuality_enforcer = WordLogitsProcessor(
+                factuality_enforcer = PhraseLogitsProcessor(
                     tokenizer,
                     num_beams,
                     BannedPhrases(
@@ -282,7 +284,7 @@ if __name__ == "__main__":
                     ),
                 )
                 with Timer(f"Generating {len(model_input)} summaries"):
-                    gen_summaries, generation_metadata = generate_summaries(
+                    gen_summaries, generation_metadata = generate_summaries_with_phrase_limits(
                         model,
                         tokenizer,
                         model_input,
