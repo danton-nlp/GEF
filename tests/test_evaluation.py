@@ -226,10 +226,10 @@ def test_evaluate_factuality_gold():
     assert agg_metrics["summaries"]["unknown"] == 0
     assert agg_metrics["entities"]["Non-factual Hallucination"] == 0
     assert agg_metrics["entities"]["Unknown"] == 0
-    assert agg_metrics["entities"]["Factual Hallucination"] == 173
+    assert agg_metrics["entities"]["Factual Hallucination"] == 193
     assert agg_metrics["entities"]["Intrinsic Hallucination"] == 0
-    assert agg_metrics["entities"]["Non-hallucinated"] == 193
-    assert agg_metrics["entities"]["total"] == 173 + 193
+    assert agg_metrics["entities"]["Non-hallucinated"] == 173
+    assert agg_metrics["entities"]["total"] == 193 + 173
 
     # Should sum to 1
     assert (
