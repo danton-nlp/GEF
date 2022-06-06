@@ -12,18 +12,16 @@ TEST_SIZE = 100
 
 
 def load_data(results_path: str):
-    sums_by_id, sum_ents_by_id = (
-        load_summaries_from_logs(results_path)
-        if "results" in results_path
+    if "results" in results_path:
+        # load fbs results
+        sums_by_id, sum_ents_by_id = load_summaries_from_logs(results_path)
+    else:
         # load from sumtool
-        else (
-            {
-                sum_id: x["summary"]
-                for sum_id, x in get_summaries("xsum", results_path).items()
-            },
-            {},
-        )
-    )
+        sums_by_id = {
+            sum_id: x["summary"]
+            for sum_id, x in get_summaries("xsum", results_path).items()
+        }
+        sum_ents_by_id = {}
     gold_sums, gold_metadata = get_gold_xsum_data()
     baseline_metadata = get_summary_metrics("xsum", "facebook-bart-large-xsum")
     xsum_test = load_xsum_dict("test")
