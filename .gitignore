@@ -4,3 +4,4 @@ __pycache__
 logs-iterative
 data/bart-large-cmlm-xsum/
 model-checkpoints
+*.egg-info

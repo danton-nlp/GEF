@@ -3,6 +3,8 @@ import json
 from datasets import load_dataset
 import random
 
+from src.entity_utils import MarkedEntity
+
 
 class XSumDoc(TypedDict):
     document: str
@@ -14,7 +16,7 @@ class XEntExample(TypedDict):
     source: str
     reference: str
     prediction: str
-    entities: List[Dict]
+    entities: List[MarkedEntity]
 
 
 def load_xsum_dict(split) -> Dict[str, XSumDoc]:

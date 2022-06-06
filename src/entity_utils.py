@@ -1,6 +1,8 @@
 from typing import Callable, Dict, List, TypedDict, Union
 import re
 
+from regex import D
+
 
 MarkedEntity = TypedDict(
     "MarkedEntity",
@@ -35,3 +37,7 @@ def is_entity_contained(entity, text):
     if entity.endswith("'s"):
         entity = entity.replace("'s", "")
     return re.search(re.escape(entity), text, re.IGNORECASE) is not None
+
+
+def mask_entity(summary: str, entity: MarkedEntity, mask_token="<mask>"):
+    return summary[0 : entity["start"]] + mask_token + summary[entity["end"] :]
