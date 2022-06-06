@@ -1,5 +1,5 @@
 import torch
-from transformers import AutoModelForSeq2SeqLM, AutoTokenizer, LogitsProcessorList
+from transformers import AutoModelForSeq2SeqLM, AutoTokenizer, LogitsProcessorList, PegasusTokenizerFast
 from src.word_logits_processor import WordLogitsProcessor
 
 
@@ -64,7 +64,7 @@ def generate_summaries(
     model.to(device)
     inputs = tokenizer(
         docs_to_summarize,
-        max_length=1024,
+        max_length=tokenizer.model_max_length,
         truncation=True,
         return_tensors="pt",
         padding=True,

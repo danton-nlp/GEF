@@ -57,7 +57,7 @@ DEBUG_IDS = {
     "32112735",  # One direction split
     "36203675",  # Dementia mobile game researchers
     "17996567",
-    "36396523",
+    "36396523",  # Kaka
     "39368095",
     "37066389",  # "Omar Martinez"
     "37615223",
@@ -159,7 +159,4 @@ def load_summaries_from_logs(path, max_iterations=5):
 
 
 def get_gold_xsum_data():
-    return (
-        get_summaries("xsum", "gold"),
-        get_summary_metrics("xsum", "gold")
-    )
+    return (get_summaries("xsum", "gold"), get_summary_metrics("xsum", "gold"))

@@ -7,8 +7,15 @@ from src.generation_utils import generate_summaries, load_model_and_tokenizer
 
 @pytest.fixture(scope="session")
 def bart_xsum():
-    print("Loading model...")
+    print("Loading BART model...")
     model, tokenizer = load_model_and_tokenizer("facebook/bart-large-xsum")
+    return model, tokenizer
+
+
+@pytest.fixture(scope="session")
+def pegasus_xsum():
+    print("Loading Pegasus model...")
+    model, tokenizer = load_model_and_tokenizer("google/pegasus-xsum")
     return model, tokenizer
 
 
@@ -37,16 +44,23 @@ def test_banned_word(bart_xsum, docs_to_summarize):
     factuality_enforcer = WordLogitsProcessor(
         tokenizer,
         num_beams,
-        BannedPhrases({
-            "Wales",
-        }),
+        BannedPhrases(
+            {
+                "Wales",
+            }
+        ),
     )
 
-    summary = generate_summaries(
-        model, tokenizer, docs_to_summarize, factuality_enforcer, num_beams
-    )[0]
+    summaries, metadata = generate_summaries(
+        model, tokenizer, docs_to_summarize, factuality_enforcer, num_beams,
+        return_beam_metadata=True
+    )
+    dropped_seq = tokenizer.decode(metadata[0]["dropped_seqs"][0][0])
 
-    assert "Wales" not in summary
+    assert "Wales" not in summaries[0]
+    assert dropped_seq.split(" ")[-1] == "Wales"
+    
+
 
 def test_banned_phrase(bart_xsum, docs_to_summarize):
     model, tokenizer = bart_xsum
@@ -55,9 +69,7 @@ def test_banned_phrase(bart_xsum, docs_to_summarize):
     factuality_enforcer = WordLogitsProcessor(
         tokenizer,
         num_beams,
-        BannedPhrases({
-            "former prison"
-        }),
+        BannedPhrases({"former prison"}),
     )
 
     summary = generate_summaries(
@@ -103,3 +115,49 @@ def test_failed_generation_multiple_beams(bart_xsum, docs_to_summarize):
 
     assert summary == "<Failed generation: blocked all beams>"
     assert 0 in factuality_enforcer.failed_sequences
+
+
+def test_pegasus_no_constraints(pegasus_xsum, docs_to_summarize):
+    model, tokenizer = pegasus_xsum
+    num_beams = 4
+
+    summary = generate_summaries(model, tokenizer, docs_to_summarize, None, num_beams)[
+        0
+    ]
+
+    assert "More" in summary
+    assert "homeless people" in summary
+
+
+def test_pegasus_word(pegasus_xsum, docs_to_summarize):
+    model, tokenizer = pegasus_xsum
+    num_beams = 4
+
+    factuality_enforcer = WordLogitsProcessor(
+        tokenizer,
+        num_beams,
+        BannedPhrases({"More"}),
+    )
+
+    summary = generate_summaries(
+        model, tokenizer, docs_to_summarize, factuality_enforcer, num_beams
+    )[0]
+
+    assert "More" not in summary
+
+
+def test_pegasus_phrase(pegasus_xsum, docs_to_summarize):
+    model, tokenizer = pegasus_xsum
+    num_beams = 4
+
+    factuality_enforcer = WordLogitsProcessor(
+        tokenizer,
+        num_beams,
+        BannedPhrases({"homeless people"}),
+    )
+
+    summary = generate_summaries(
+        model, tokenizer, docs_to_summarize, factuality_enforcer, num_beams
+    )[0]
+
+    assert "homeless people" not in summary
