@@ -1,5 +1,5 @@
 from collections import defaultdict
-from typing import List
+from typing import DefaultDict, List, TypedDict, Union
 from src.annotation import prompt_annotation_flow
 from src.detect_entities import detect_entities
 from src.entity_utils import MarkedEntity, count_entities, filter_entities
@@ -64,14 +64,26 @@ def mark_entities(summary, labeled_entities: List[MarkedEntity]):
     return marked_summary
 
 
+class SummaryEval(TypedDict):
+    skipped: bool
+    failed: bool
+    count_entity_total: int
+    count_entity_extrinsic: int
+    count_entity_label: DefaultDict[str, int]
+    has_predicted_non_factual: bool
+    rouge1: Union[float, None]
+    rouge2: Union[float, None]
+    rougeL: Union[float, None]
+
+
 def evaluate_summary(
     summary: str,
     source: str,
     reference: str,
     labeled_entities: List[MarkedEntity],
-):
+) -> SummaryEval:
     is_gold = summary == reference
-    summary_eval = {
+    summary_eval: SummaryEval = {
         "skipped": False,
         "failed": False,
         "count_entity_total": 0,
@@ -105,7 +117,7 @@ def evaluate_summary(
                         ANNOTATION_LABELS["Factual"]
                     ] += 1
             else:
-                summary_eval["count_entity_label"][ent["label"]] += 1
+                summary_eval["count_entity_label"][str(ent["label"])] += 1
 
                 # Detect non-factual predictions from FBS classifier
                 if (
