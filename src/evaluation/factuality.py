@@ -69,8 +69,6 @@ def evaluate_summary(
     source: str,
     reference: str,
     labeled_entities: List[MarkedEntity],
-    is_fbs,
-    is_oracle,
 ):
     is_gold = summary == reference
     summary_eval = {
@@ -172,8 +170,6 @@ def evaluate_factuality(
             xsum_test[sum_id]["document"],
             gold_sums[sum_id]["summary"],
             labeled_ents[sum_id],
-            is_fbs,
-            is_oracle,
         )
         count_non_factual_extrinsic = summary_eval["count_entity_label"][
             ANNOTATION_LABELS["Non-factual"]
