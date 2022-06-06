@@ -89,13 +89,13 @@ def build_masked_inputs_and_targets_for_inference(
 
     inputs, targets, entities, sources = [], [], [], []
 
-    for (prediction, source, marked_ents) in inference_input:
+    for (summary, source, marked_ents) in inference_input:
         for entity in marked_ents:
             masked_input = (
-                prediction[0 : entity["start"]] + "<mask>" + prediction[entity["end"] :]
+                summary[0 : entity["start"]] + "<mask>" + summary[entity["end"] :]
             )
             inputs.append(masked_input)
-            targets.append(prediction)
+            targets.append(summary)
             entities.append(entity["ent"])
             sources.append(source)
 

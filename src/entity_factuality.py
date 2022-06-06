@@ -104,13 +104,13 @@ class EntityFactualityClassifier:
                 if ent["in_source"]:
                     ent["predicted_label"] = ANNOTATION_LABELS["Non-hallucinated"]
 
-            ents_without_prediction = [ent for ent in updated_entities if not ent["in_source"]]
-            if len(ents_without_prediction) > 0:
+            ents_not_in_source = [ent for ent in updated_entities if not ent["in_source"]]
+            if len(ents_not_in_source) > 0:
                 ents_to_classify.append(
                     (
                         summary,
                         sources_by_id[sum_id],
-                        ents_without_prediction,
+                        ents_not_in_source,
                     )
                 )
             classified_entities[sum_id] = updated_entities
