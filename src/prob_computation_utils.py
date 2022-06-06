@@ -1,6 +1,6 @@
 from typing import List, Tuple, TypedDict
 from src.data_utils import XEntExample
-from src.entity_utils import MarkedEntity
+from src.entity_utils import MarkedEntity, mask_entity
 
 
 def build_causal_masked_inputs_and_targets(
@@ -52,9 +52,7 @@ def build_masked_inputs_and_targets(
     prediction = example["prediction"]
 
     for entity in example["entities"]:
-        masked_input = (
-            prediction[0 : entity["start"]] + "<mask>" + prediction[entity["end"] :]
-        )
+        masked_input = mask_entity(prediction, entity)
         inputs.append(masked_input)
         targets.append(prediction)
         entities.append(entity["ent"])

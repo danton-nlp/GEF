@@ -5,6 +5,7 @@
 conda create -n factual-beam-search python=3.8
 conda activate factual-beam-search
 pip install -r requirements.txt
+pip install -e .
 ```
 
 ## Run tests
