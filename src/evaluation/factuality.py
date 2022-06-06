@@ -100,11 +100,11 @@ def evaluate_summary(
             if is_gold:
                 if ent["in_source"]:
                     summary_eval["count_entity_label"][
-                        ANNOTATION_LABELS["Factual"]
+                        ANNOTATION_LABELS["Non-hallucinated"]
                     ] += 1
                 else:
                     summary_eval["count_entity_label"][
-                        ANNOTATION_LABELS["Non-hallucinated"]
+                        ANNOTATION_LABELS["Factual"]
                     ] += 1
             else:
                 summary_eval["count_entity_label"][ent["label"]] += 1
