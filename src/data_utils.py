@@ -52,7 +52,7 @@ def persist_example_with_probs(
 
 DEBUG_IDS = {
     "34361828",
-    "36456002",
+    "36456002",  # Lukaku
     "24403775",
     "32112735",  # One direction split
     "36203675",  # Dementia mobile game researchers
