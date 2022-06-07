@@ -100,6 +100,10 @@ class WordLogitsProcessor(LogitsProcessor):
                 return False
         return True
 
+    def is_beam_done(self, beam_input_ids: torch.Tensor):
+        # See https://github.com/huggingface/transformers/blob/5c8f6010071a02fc80d9862cda717288e23c3a69/src/transformers/generation_beam_search.py#L242
+        return bool(beam_input_ids[-1] == self.tokenizer.pad_token_id)
+
     def __call__(
         self, input_ids: torch.LongTensor, scores: torch.FloatTensor
     ) -> torch.FloatTensor:
@@ -111,7 +115,7 @@ class WordLogitsProcessor(LogitsProcessor):
             top_k = beam_scores.topk(k=1)
             for prob, idx in zip(top_k[0], top_k[1]):
                 input_idx = beam_idx // self.num_beams
-                if not self.is_valid_beam(
+                if not self.is_beam_done(beam_input_ids) and not self.is_valid_beam(
                     input_idx, beam_input_ids, idx.item(), scores[beam_idx]
                 ):
                     scores[beam_idx, :] = -float("inf")
