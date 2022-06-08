@@ -26,7 +26,7 @@ if __name__ == "__main__":
     def filter_xent_test(sum_id):
         return "xent-test" in gold_metadata[sum_id]
 
-    def filter_xent_extrinsic(sum_id):
+    def filter_xsum_extrinsic(sum_id):
         return (
             "xent-train" not in gold_metadata[sum_id]
             and len(
@@ -42,7 +42,7 @@ if __name__ == "__main__":
     test_subset_ids = {
         "xsum-test": construct_test_split(xsum_test, filter_xsum),
         "xent-test": construct_test_split(xsum_test, filter_xent_test),
-        "test-extrinsic": construct_test_split(xsum_test, filter_xent_extrinsic),
+        "test-extrinsic": construct_test_split(xsum_test, filter_xsum_extrinsic),
     }
 
     with open("./data/xsum_shuffled_test_splits.json", "w") as f:
