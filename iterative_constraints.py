@@ -2,8 +2,7 @@ from collections import defaultdict
 import argparse
 from src.data_utils import (
     load_debug_subset,
-    load_extrinsic_test_set,
-    load_xent_test_set,
+    load_shuffled_test_split,
     load_xsum_dict,
     split_batches,
 )
@@ -208,29 +207,10 @@ if __name__ == "__main__":
 
     if args.data_subset == "debug":
         docs_to_summarize = load_debug_subset(xsum_test)
-    elif args.data_subset == "xent-test":
-        docs_to_summarize = xent_test_summaries
-    elif "xent-test-" in args.data_subset:
-        docs_to_summarize = {
-            k: v
-            for k, v in list(xent_test_summaries.items())[
-                : int(args.data_subset.split("-")[-1])
-            ]
-        }
-    elif args.data_subset in ["test-xent"]:
-        test_set = load_xent_test_set(
-            xsum_test, summary_gold_metadata, N=args.test_size
-        )
-        docs_to_summarize = {k: v for (k, v) in test_set}
-    elif args.data_subset in ["test-extrinsic"]:
-        test_set = load_extrinsic_test_set(
-            xsum_test, baseline_metadata, summary_gold_metadata, N=args.test_size
-        )
-        docs_to_summarize = {k: v for (k, v) in test_set}
     elif args.data_subset == "full":
         docs_to_summarize = {sum_id: x["document"] for sum_id, x in xsum_test.items()}
     else:
-        raise argparse.ArgumentError(args.data_subset, message="Invalid argument")
+        docs_to_summarize = load_shuffled_test_split(xsum_test, args.data_subset, args.test_size)
 
     # initialize with no constraints
     banned_phrases_by_sum_id = defaultdict(lambda: set())

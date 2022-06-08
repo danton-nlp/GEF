@@ -70,68 +70,15 @@ def load_debug_subset(xsum_test):
     }
 
 
-def load_xent_test_set(xsum_test, gold_metadata, N=50, include_debug=False):
-    """
-    Construct test set from xent test.
-    Optionally add debug_ids.
-    """
-    xent_test_summaries = {
-        sum_id: x["document"]
-        for sum_id, x in xsum_test.items()
-        if "xent-test" in gold_metadata[sum_id]
-    }
-    rng_data_split = random.Random(42)
-    # shuffle and get first N
-    test_set = {
-        k: v
-        for (k, v) in rng_data_split.sample(
-            list(xent_test_summaries.items()), len(xent_test_summaries)
-        )[:N]
-    }
-    if include_debug:
-        for sum_id in DEBUG_IDS:
-            if sum_id not in test_set and "xent-train" not in gold_metadata[sum_id]:
-                test_set[sum_id] = xsum_test[sum_id]["document"]
+def load_shuffled_test_split(xsum_test, data_subset: str, N=100) -> Dict[str, str]:
+    with open("data/xsum_shuffled_test_splits.json", "r") as f:
+        shuffled_test_splits = json.load(f)
 
-    return rng_data_split.sample(list(test_set.items()), len(test_set))
+    summaries: List[Tuple[str, XSumDoc]] = [
+        (sum_id, xsum_test[sum_id]) for sum_id in shuffled_test_splits[data_subset]
+    ]
 
-
-def load_extrinsic_test_set(
-    xsum_test, baseline_metadata, gold_metadata, N, include_debug=False
-):
-    """
-    Construct test set from baseline summaries with extrinsic entities.
-    Exclude sums which are in xent train
-    Optionally add debug_ids.
-    """
-    test_summaries = {
-        sum_id: x["document"]
-        for sum_id, x in xsum_test.items()
-        if "xent-train" not in gold_metadata[sum_id]
-        and len(
-            [
-                ent
-                for ent in baseline_metadata[sum_id]["entities"]
-                if not ent["in_source"]
-            ]
-        )
-        > 0
-    }
-    print(f"Loading {N}/{len(test_summaries)} from extrinsic test set")
-    rng_data_split = random.Random(42)
-    # shuffle and get first N
-    test_set = {
-        k: v
-        for (k, v) in rng_data_split.sample(
-            list(test_summaries.items()), len(test_summaries)
-        )[:N]
-    }
-    if include_debug:
-        for sum_id in DEBUG_IDS:
-            if sum_id not in test_set and "xent-train" not in gold_metadata[sum_id]:
-                test_set[sum_id] = xsum_test[sum_id]["document"]
-
-    return rng_data_split.sample(list(test_set.items()), len(test_set))
+    return {k: v["document"] for (k, v) in summaries[:N]}
 
 
 def split_batches(lst, size):
@@ -159,7 +106,4 @@ def load_summaries_from_logs(path, max_iterations=5):
 
 
 def get_gold_xsum_data():
-    return (
-        get_summaries("xsum", "gold"),
-        get_summary_metrics("xsum", "gold")
-    )
+    return (get_summaries("xsum", "gold"), get_summary_metrics("xsum", "gold"))
