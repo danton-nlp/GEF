@@ -43,25 +43,25 @@ if __name__ == "__main__":
     if args.data_subset == "full" or args.data_subset == "full-extrinsic":
         MODEL_RESULTS = {
             "fbs_classifier": load_summaries_from_logs(
-                "results/full-classifier-knnv1.json", max_iterations=5
+                "results/fbs-logs/full-classifier-knnv1.json", max_iterations=5
             ),
         }
     else:
         MODEL_RESULTS = {
             # "Test FBS w/ oracle, i=2": load_summaries_from_logs(
-            #     f"results/{args.data_subset}-oracle.json", max_iterations=2
+            #     f"results/fbs-logs/{args.data_subset}-oracle.json", max_iterations=2
             # ),
             "fbs_oracle": load_summaries_from_logs(
-                f"results/{args.data_subset}-oracle.json", max_iterations=5
+                f"results/fbs-logs/{args.data_subset}-oracle.json", max_iterations=5
             ),
             # "Test FBS w/ classifier v0, i=5": load_summaries_from_logs(
-            #     f"results/{args.data_subset}-classifier-knnv0.json", max_iterations=5
+            #     f"results/fbs-logs/{args.data_subset}-classifier-knnv0.json", max_iterations=5
             # ),
             "fbs_classifier": load_summaries_from_logs(
-                f"results/{args.data_subset}-classifier-knnv1.json", max_iterations=5
+                f"results/fbs-logs/{args.data_subset}-classifier-knnv1.json", max_iterations=5
             ),
             "fbs_classifier_i10": load_summaries_from_logs(
-                f"results/{args.data_subset}-classifier-knnv1.json", max_iterations=10
+                f"results/fbs-logs/{args.data_subset}-classifier-knnv1.json", max_iterations=10
             ),
             # "Test FBS w/ bad classifier, i=5": load_summaries_from_logs(
             #     "results/test-bad-classifier.json", max_iterations=5
@@ -151,7 +151,7 @@ if __name__ == "__main__":
     )
 
     df_aggregated.to_csv(
-        f"results/{args.data_subset}-{args.test_size}.csv", index=False
+        f"results/evaluation/{args.data_subset}-{args.test_size}.csv", index=False
     )
     df_summaries = pd.DataFrame.from_dict(summary_results, orient="index")
-    df_summaries.to_json(f"results/{args.data_subset}-{args.test_size}-summaries.json")
+    df_summaries.to_json(f"results/evaluation/{args.data_subset}-{args.test_size}-summaries.json")
