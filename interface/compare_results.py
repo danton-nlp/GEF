@@ -3,12 +3,18 @@ import json
 import os
 import pandas as pd
 
-
-filename = "results/test-extrinsic-100"
 MODELS = []
 
 
 def render_compare_results():
+    col1, col2 = st.columns(2)
+    data_subset = col1.selectbox("Data subset", options=[
+        "test-extrinsic",
+        "xent-test",
+        "xsum-test"
+    ])
+    test_size = col2.number_input("Test size", value=100)
+    filename = f"results/evaluation/{data_subset}-{test_size}"
 
     df_aggregated = (
         pd.read_csv(f"{filename}.csv")
