@@ -1,7 +1,6 @@
 from src.data_utils import (
     get_gold_xsum_data,
-    load_extrinsic_test_set,
-    load_xent_test_set,
+    load_shuffled_test_split,
     load_xsum_dict,
     load_summaries_from_logs,
 )
@@ -31,19 +30,13 @@ if __name__ == "__main__":
     if args.data_subset == "full":
         test_set_ids = set(xsum_test.keys())
     elif args.data_subset == "full-extrinsic":
-        test_set = load_extrinsic_test_set(
-            xsum_test, baseline_metadata, gold_metadata, 10000
+        test_set_ids = set(
+            load_shuffled_test_split(xsum_test, "test-extrinsic", 10000).keys()
         )
-        test_set_ids = {k for (k, v) in test_set}
     else:
-        test_set = (
-            load_extrinsic_test_set(
-                xsum_test, baseline_metadata, gold_metadata, args.test_size
-            )
-            if args.data_subset == "test-extrinsic"
-            else load_xent_test_set(xsum_test, gold_metadata, args.test_size)
+        test_set_ids = set(
+            load_shuffled_test_split(xsum_test, args.data_subset, args.test_size).keys()
         )
-        test_set_ids = {k for (k, v) in test_set}
 
     print(f"Test results for {len(test_set_ids)} summaries")
 
