@@ -1,5 +1,5 @@
 {
-  "timestamp": 1654275341.997746,
+  "timestamp": 1654713047.171932,
   "args": {
     "pickled_classifier": "factuality-classifiers/v1-knn.pickle",
     "classifier_batch_size": 4,
@@ -165,7 +165,7 @@
           "generation_metadata": {
             "score": -0.48298680782318115,
             "dropped_seqs": [],
-            "n_words_checked": 77
+            "n_words_checked": 65
           },
           "labeled_entities": [
             {
@@ -241,7 +241,7 @@
           "generation_metadata": {
             "score": -0.5601837038993835,
             "dropped_seqs": [],
-            "n_words_checked": 89
+            "n_words_checked": 81
           },
           "labeled_entities": [
             {
@@ -317,7 +317,7 @@
           "generation_metadata": {
             "score": -0.45060160756111145,
             "dropped_seqs": [],
-            "n_words_checked": 81
+            "n_words_checked": 73
           },
           "labeled_entities": [
             {
@@ -373,7 +373,7 @@
           "generation_metadata": {
             "score": -0.8142673969268799,
             "dropped_seqs": [],
-            "n_words_checked": 96
+            "n_words_checked": 84
           },
           "labeled_entities": [
             {
@@ -550,7 +550,7 @@
               "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves at the Amex Stadium",
               "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium"
             ],
-            "n_words_checked": 89
+            "n_words_checked": 85
           },
           "labeled_entities": [
             {
@@ -584,8 +584,8 @@
         },
         "34361828": {
           "banned_phrases": [
-            "Pembrokeshire",
-            "the 1970s"
+            "the 1970s",
+            "Pembrokeshire"
           ],
           "summary": "A search is under way for the remains of a Gwynedd village which was wiped out by storms in the 1950s.",
           "generation_metadata": {
@@ -629,7 +629,7 @@
               "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
-            "n_words_checked": 81
+            "n_words_checked": 69
           },
           "labeled_entities": [
             {
@@ -717,7 +717,7 @@
               "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America",
               "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup in South America"
             ],
-            "n_words_checked": 82
+            "n_words_checked": 74
           },
           "labeled_entities": [
             {
@@ -802,7 +802,7 @@
             "dropped_seqs": [
               "</s>Abertay University in Dundee"
             ],
-            "n_words_checked": 101
+            "n_words_checked": 77
           },
           "labeled_entities": []
         }
@@ -936,9 +936,9 @@
         "34361828": {
           "banned_phrases": [
             "Gwynedd village",
-            "Pembrokeshire",
+            "the 1970s",
             "the 1950s",
-            "the 1970s"
+            "Pembrokeshire"
           ],
           "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
           "generation_metadata": {
@@ -976,8 +976,8 @@
         },
         "17996567": {
           "banned_phrases": [
-            "Flintshire",
-            "Gloucestershire"
+            "Gloucestershire",
+            "Flintshire"
           ],
           "summary": "Plans to cut home-to-school transport subsidies for children in Staffordshire have been put on hold.",
           "generation_metadata": {
@@ -1003,9 +1003,9 @@
         },
         "36396523": {
           "banned_phrases": [
-            "South America",
+            "Chile",
             "Copa America",
-            "Chile"
+            "South America"
           ],
           "summary": "Brazil have added Kaka to their squad for next month's Under-20 World Cup in South Africa.",
           "generation_metadata": {
@@ -1069,8 +1069,8 @@
         },
         "36203675": {
           "banned_phrases": [
-            "the University of Bristol",
-            "the University of Oxford"
+            "the University of Oxford",
+            "the University of Bristol"
           ],
           "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge.",
           "generation_metadata": {
@@ -1261,11 +1261,11 @@
         },
         "34361828": {
           "banned_phrases": [
-            "Gwynedd village",
-            "the 1970s",
+            "1950",
             "Pembrokeshire",
             "the 1950s",
-            "1950"
+            "Gwynedd village",
+            "the 1970s"
           ],
           "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
           "generation_metadata": {
@@ -1304,8 +1304,8 @@
         "17996567": {
           "banned_phrases": [
             "Gloucestershire",
-            "Flintshire",
-            "Staffordshire"
+            "Staffordshire",
+            "Flintshire"
           ],
           "summary": "Plans to cut home-to-school transport subsidies for children in Gloucesterse have been put on hold.",
           "generation_metadata": {
@@ -1332,10 +1332,10 @@
         },
         "36396523": {
           "banned_phrases": [
-            "South America",
-            "South Africa",
+            "Chile",
             "Copa America",
-            "Chile"
+            "South Africa",
+            "South America"
           ],
           "summary": "<Failed generation: blocked all beams>",
           "generation_metadata": {
@@ -1349,7 +1349,8 @@
               "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America",
               "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup in South America",
               "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup in South Africa",
-              "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South Africa"
+              "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South Africa",
+              "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America<s>"
             ],
             "n_words_checked": 80
           },
@@ -1358,8 +1359,8 @@
         "36203675": {
           "banned_phrases": [
             "the University of Cambridge",
-            "the University of Bristol",
-            "the University of Oxford"
+            "the University of Oxford",
+            "the University of Bristol"
           ],
           "summary": "A mobile game designed to help people with dementia is to be used by researchers at the University of Manchester.",
           "generation_metadata": {
@@ -1462,11 +1463,11 @@
         "37066389": {
           "banned_phrases": [
             "Omar",
-            "Carlos",
-            "Ruslan",
-            "Gabriel",
+            "Luis",
             "Jose",
-            "Luis"
+            "Carlos",
+            "Gabriel",
+            "Ruslan"
           ],
           "summary": "<Failed generation: blocked all beams>",
           "generation_metadata": {
@@ -1477,17 +1478,17 @@
               "</s>Colombia's Jose",
               "</s>Colombia's Gabriel"
             ],
-            "n_words_checked": 75
+            "n_words_checked": 27
           },
           "labeled_entities": []
         },
         "34361828": {
           "banned_phrases": [
-            "Gwynedd village",
-            "the 1970s",
+            "1950",
             "Pembrokeshire",
             "the 1950s",
-            "1950"
+            "Gwynedd village",
+            "the 1970s"
           ],
           "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's.",
           "generation_metadata": {
@@ -1525,10 +1526,10 @@
         },
         "36203675": {
           "banned_phrases": [
-            "the University of Cambridge",
-            "the University of Bristol",
             "the University of Manchester",
-            "the University of Oxford"
+            "the University of Cambridge",
+            "the University of Oxford",
+            "the University of Bristol"
           ],
           "summary": "<Failed generation: blocked all beams>",
           "generation_metadata": {
@@ -1540,7 +1541,8 @@
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol",
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford",
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge",
-              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Manchester"
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Manchester",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol<s>"
             ],
             "n_words_checked": 89
           },
