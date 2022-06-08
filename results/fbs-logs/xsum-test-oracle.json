@@ -1,0 +1,3807 @@
+{
+  "timestamp": 1654713564.1377654,
+  "args": {
+    "pickled_classifier": "",
+    "classifier_batch_size": 4,
+    "entity_label_match": "contained",
+    "model_summarization": "facebook/bart-large-xsum",
+    "model_prior": "facebook/bart-large",
+    "model_posterior": "entfa-cmlm",
+    "max_iterations": 5,
+    "annotate": false,
+    "verbose": false,
+    "batch_size": 8,
+    "test_size": 100,
+    "num_beams": 4,
+    "data_subset": "xsum-test"
+  },
+  "iterations": {
+    "0": {
+      "summaries": {
+        "27606486": {
+          "banned_phrases": [],
+          "summary": "Dozens of patients have experienced \"unusual level of discomfort\" after undergoing eye surgery at a Cardiff hospital.",
+          "generation_metadata": {
+            "score": -0.8116450905799866,
+            "dropped_seqs": [],
+            "n_words_checked": 84
+          },
+          "labeled_entities": [
+            {
+              "ent": "Dozens",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 6,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Cardiff",
+              "type": "GPE",
+              "start": 100,
+              "end": 107,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "33747125": {
+          "banned_phrases": [],
+          "summary": "Up to 100 World War Two Bomber Command veterans could be invited to the unveiling of a new memorial.",
+          "generation_metadata": {
+            "score": -0.6210041046142578,
+            "dropped_seqs": [],
+            "n_words_checked": 92
+          },
+          "labeled_entities": [
+            {
+              "ent": "Up to 100",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 9,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "World War Two Bomber Command",
+              "type": "EVENT",
+              "start": 10,
+              "end": 38,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "12570045": {
+          "banned_phrases": [],
+          "summary": "When Microsoft unveiled its Kinect system last year, it was hailed as a game-changer.",
+          "generation_metadata": {
+            "score": -0.7444140315055847,
+            "dropped_seqs": [],
+            "n_words_checked": 78
+          },
+          "labeled_entities": [
+            {
+              "ent": "Microsoft",
+              "type": "ORG",
+              "start": 5,
+              "end": 14,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kinect",
+              "type": "GPE",
+              "start": 28,
+              "end": 34,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "last year",
+              "type": "DATE",
+              "start": 42,
+              "end": 51,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "16205674": {
+          "banned_phrases": [],
+          "summary": "The future of a Leicestershire museum has been put in doubt after funding was withdrawn.",
+          "generation_metadata": {
+            "score": -0.5521523356437683,
+            "dropped_seqs": [],
+            "n_words_checked": 70
+          },
+          "labeled_entities": [
+            {
+              "ent": "Leicestershire",
+              "type": "GPE",
+              "start": 16,
+              "end": 30,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "19289360": {
+          "banned_phrases": [],
+          "summary": "Olympic gold medallist Ben Ainslie says he wants to challenge for the America's Cup in the future.",
+          "generation_metadata": {
+            "score": -0.44910308718681335,
+            "dropped_seqs": [],
+            "n_words_checked": 88
+          },
+          "labeled_entities": [
+            {
+              "ent": "Ben",
+              "type": "PERSON",
+              "start": 23,
+              "end": 26,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Ainslie",
+              "type": "PERSON",
+              "start": 27,
+              "end": 34,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35369658": {
+          "banned_phrases": [],
+          "summary": "Tens of thousands of football fans faced long queues to get into a FA Cup match on Wednesday night.",
+          "generation_metadata": {
+            "score": -0.6227264404296875,
+            "dropped_seqs": [],
+            "n_words_checked": 82
+          },
+          "labeled_entities": [
+            {
+              "ent": "Tens of thousands",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 17,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "FA Cup",
+              "type": "EVENT",
+              "start": 67,
+              "end": 73,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Wednesday night",
+              "type": "TIME",
+              "start": 83,
+              "end": 98,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37274510": {
+          "banned_phrases": [],
+          "summary": "A Labour MEP is to take up a top role at an international body that advises companies on how to report on their activities.",
+          "generation_metadata": {
+            "score": -0.8498846292495728,
+            "dropped_seqs": [],
+            "n_words_checked": 100
+          },
+          "labeled_entities": []
+        },
+        "32390756": {
+          "banned_phrases": [],
+          "summary": "Three brothers have been jailed for a total of 12 years after admitting a number of drugs offences.",
+          "generation_metadata": {
+            "score": -0.6077055931091309,
+            "dropped_seqs": [],
+            "n_words_checked": 72
+          },
+          "labeled_entities": [
+            {
+              "ent": "Three",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 5,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "12 years",
+              "type": "DATE",
+              "start": 47,
+              "end": 55,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "33721182": {
+          "banned_phrases": [],
+          "summary": "Paralympic champion Sarah Storey won the women's individual time trial at the Para-cycling World Championships for the 16th time.",
+          "generation_metadata": {
+            "score": -0.5585952401161194,
+            "dropped_seqs": [],
+            "n_words_checked": 96
+          },
+          "labeled_entities": [
+            {
+              "ent": "Paralympic",
+              "type": "ORG",
+              "start": 0,
+              "end": 10,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Sarah",
+              "type": "PERSON",
+              "start": 20,
+              "end": 25,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Storey",
+              "type": "PERSON",
+              "start": 26,
+              "end": 32,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Para",
+              "type": "PRODUCT",
+              "start": 78,
+              "end": 82,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "World Championships",
+              "type": "EVENT",
+              "start": 91,
+              "end": 110,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "16th",
+              "type": "ORDINAL",
+              "start": 119,
+              "end": 123,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "38717136": {
+          "banned_phrases": [],
+          "summary": "Gambian President Yahya Jammeh has been accused of stealing more than $2bn (\u00c2\u00a31.8bn) from the country's treasury while in power.",
+          "generation_metadata": {
+            "score": -0.5342204570770264,
+            "dropped_seqs": [],
+            "n_words_checked": 94
+          },
+          "labeled_entities": [
+            {
+              "ent": "Gambian",
+              "type": "NORP",
+              "start": 0,
+              "end": 7,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Yahya",
+              "type": "PERSON",
+              "start": 18,
+              "end": 23,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Jammeh",
+              "type": "PERSON",
+              "start": 24,
+              "end": 30,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "more than $2bn",
+              "type": "MONEY",
+              "start": 60,
+              "end": 74,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "39191815": {
+          "banned_phrases": [],
+          "summary": "Shares in bookmaker Paddy Power Betfair fell 6% after the company reported a loss for 2016.",
+          "generation_metadata": {
+            "score": -0.6419544816017151,
+            "dropped_seqs": [],
+            "n_words_checked": 77
+          },
+          "labeled_entities": [
+            {
+              "ent": "Paddy Power Betfair",
+              "type": "ORG",
+              "start": 20,
+              "end": 39,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "6%",
+              "type": "PERCENT",
+              "start": 45,
+              "end": 47,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "2016",
+              "type": "DATE",
+              "start": 86,
+              "end": 90,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "31924512": {
+          "banned_phrases": [],
+          "summary": "Ireland head coach Phil Simmons has been offered the vacant West Indies job, BBC Sport understands.",
+          "generation_metadata": {
+            "score": -0.5367857217788696,
+            "dropped_seqs": [],
+            "n_words_checked": 68
+          },
+          "labeled_entities": [
+            {
+              "ent": "Ireland",
+              "type": "GPE",
+              "start": 0,
+              "end": 7,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Phil",
+              "type": "PERSON",
+              "start": 19,
+              "end": 23,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Simmons",
+              "type": "PERSON",
+              "start": 24,
+              "end": 31,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "West Indies",
+              "type": "NORP",
+              "start": 60,
+              "end": 71,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "BBC Sport",
+              "type": "ORG",
+              "start": 77,
+              "end": 86,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37955861": {
+          "banned_phrases": [],
+          "summary": "Scotland's World Cup qualifying hopes suffered a further blow as they were beaten 2-0 by England at Hampden.",
+          "generation_metadata": {
+            "score": -0.5860496163368225,
+            "dropped_seqs": [],
+            "n_words_checked": 82
+          },
+          "labeled_entities": [
+            {
+              "ent": "Scotland",
+              "type": "GPE",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "World Cup",
+              "type": "EVENT",
+              "start": 11,
+              "end": 20,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "2",
+              "type": "CARDINAL",
+              "start": 82,
+              "end": 83,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "England",
+              "type": "GPE",
+              "start": 89,
+              "end": 96,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Hampden",
+              "type": "GPE",
+              "start": 100,
+              "end": 107,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "38232115": {
+          "banned_phrases": [],
+          "summary": "Nottingham Forest came from behind to earn a point against Preston North End at the City Ground.",
+          "generation_metadata": {
+            "score": -0.5310633778572083,
+            "dropped_seqs": [],
+            "n_words_checked": 72
+          },
+          "labeled_entities": [
+            {
+              "ent": "Nottingham Forest",
+              "type": "ORG",
+              "start": 0,
+              "end": 17,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Preston North End",
+              "type": "GPE",
+              "start": 59,
+              "end": 76,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the City Ground",
+              "type": "FAC",
+              "start": 80,
+              "end": 95,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "38772176": {
+          "banned_phrases": [],
+          "summary": "Wolves midfielder Conor Coady says he will not be distracted by the memories of his time at Liverpool.",
+          "generation_metadata": {
+            "score": -0.6469107270240784,
+            "dropped_seqs": [],
+            "n_words_checked": 90
+          },
+          "labeled_entities": [
+            {
+              "ent": "Conor",
+              "type": "PERSON",
+              "start": 18,
+              "end": 23,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Coady",
+              "type": "PERSON",
+              "start": 24,
+              "end": 29,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Liverpool",
+              "type": "GPE",
+              "start": 92,
+              "end": 101,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "33446741": {
+          "banned_phrases": [],
+          "summary": "Culture Minister Car\u00e1l N\u00ed Chuil\u00edn has ordered a full audit of Sport NI.",
+          "generation_metadata": {
+            "score": -0.3716408908367157,
+            "dropped_seqs": [],
+            "n_words_checked": 80
+          },
+          "labeled_entities": [
+            {
+              "ent": "Car\u00e1l",
+              "type": "PERSON",
+              "start": 17,
+              "end": 22,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "N\u00ed",
+              "type": "PERSON",
+              "start": 23,
+              "end": 25,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Chuil\u00edn",
+              "type": "PERSON",
+              "start": 26,
+              "end": 33,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Sport NI",
+              "type": "ORG",
+              "start": 62,
+              "end": 70,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "34159780": {
+          "banned_phrases": [],
+          "summary": "Hungary is to offer buses to thousands of migrants who have been stranded in the capital, Budapest, for days.",
+          "generation_metadata": {
+            "score": -0.7327253222465515,
+            "dropped_seqs": [],
+            "n_words_checked": 92
+          },
+          "labeled_entities": [
+            {
+              "ent": "Hungary",
+              "type": "GPE",
+              "start": 0,
+              "end": 7,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "thousands",
+              "type": "CARDINAL",
+              "start": 29,
+              "end": 38,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Budapest",
+              "type": "GPE",
+              "start": 90,
+              "end": 98,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "days",
+              "type": "DATE",
+              "start": 104,
+              "end": 108,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "39457880": {
+          "banned_phrases": [],
+          "summary": "The number of people prosecuted for careless and dangerous driving has fallen sharply, according to new figures.",
+          "generation_metadata": {
+            "score": -0.5792046785354614,
+            "dropped_seqs": [],
+            "n_words_checked": 88
+          },
+          "labeled_entities": []
+        },
+        "35971035": {
+          "banned_phrases": [],
+          "summary": "US Republican presidential candidate Donald Trump has said he would ban Mexicans from sending money overseas to pay for his proposed border wall with Mexico.",
+          "generation_metadata": {
+            "score": -0.581686794757843,
+            "dropped_seqs": [],
+            "n_words_checked": 103
+          },
+          "labeled_entities": [
+            {
+              "ent": "US",
+              "type": "GPE",
+              "start": 0,
+              "end": 2,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Republican",
+              "type": "NORP",
+              "start": 3,
+              "end": 13,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Donald",
+              "type": "PERSON",
+              "start": 37,
+              "end": 43,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Trump",
+              "type": "PERSON",
+              "start": 44,
+              "end": 49,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Mexicans",
+              "type": "NORP",
+              "start": 72,
+              "end": 80,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Mexico",
+              "type": "GPE",
+              "start": 150,
+              "end": 156,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "22064354": {
+          "banned_phrases": [],
+          "summary": "Margaret Thatcher's time as prime minister was marked by a series of economic reforms.",
+          "generation_metadata": {
+            "score": -0.8025789260864258,
+            "dropped_seqs": [],
+            "n_words_checked": 91
+          },
+          "labeled_entities": [
+            {
+              "ent": "Margaret",
+              "type": "PERSON",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Thatcher",
+              "type": "PERSON",
+              "start": 9,
+              "end": 17,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "28863328": {
+          "banned_phrases": [],
+          "summary": "Two British students who were among those rescued after a boat sank in Indonesia swam for eight hours to shore before being found by fishermen.",
+          "generation_metadata": {
+            "score": -0.5897139310836792,
+            "dropped_seqs": [],
+            "n_words_checked": 110
+          },
+          "labeled_entities": [
+            {
+              "ent": "Two",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 3,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "British",
+              "type": "NORP",
+              "start": 4,
+              "end": 11,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Indonesia",
+              "type": "GPE",
+              "start": 71,
+              "end": 80,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "eight hours",
+              "type": "TIME",
+              "start": 90,
+              "end": 101,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "18482415": {
+          "banned_phrases": [],
+          "summary": "Greece's pro-bailout party, New Democracy, has won the most seats in Sunday's elections, officials say.",
+          "generation_metadata": {
+            "score": -0.5858859419822693,
+            "dropped_seqs": [],
+            "n_words_checked": 139
+          },
+          "labeled_entities": [
+            {
+              "ent": "Greece",
+              "type": "GPE",
+              "start": 0,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "New Democracy",
+              "type": "ORG",
+              "start": 28,
+              "end": 41,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Sunday",
+              "type": "DATE",
+              "start": 69,
+              "end": 75,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "28565798": {
+          "banned_phrases": [],
+          "summary": "Nintendo has reported a bigger-than-expected loss for the second quarter of its financial year.",
+          "generation_metadata": {
+            "score": -0.5339527130126953,
+            "dropped_seqs": [],
+            "n_words_checked": 125
+          },
+          "labeled_entities": [
+            {
+              "ent": "Nintendo",
+              "type": "ORG",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the second quarter",
+              "type": "DATE",
+              "start": 54,
+              "end": 72,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "37384386": {
+          "banned_phrases": [],
+          "summary": "A new festival is being held to mark the 800th anniversary of the birth of one of Scotland's most important philosophers.",
+          "generation_metadata": {
+            "score": -0.5460031032562256,
+            "dropped_seqs": [],
+            "n_words_checked": 88
+          },
+          "labeled_entities": [
+            {
+              "ent": "one",
+              "type": "CARDINAL",
+              "start": 75,
+              "end": 78,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Scotland",
+              "type": "GPE",
+              "start": 82,
+              "end": 90,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37382503": {
+          "banned_phrases": [],
+          "summary": "Scottish Power is launching a new way of buying energy that will allow customers to buy packages of gas and electricity by the day.",
+          "generation_metadata": {
+            "score": -0.5730706453323364,
+            "dropped_seqs": [],
+            "n_words_checked": 116
+          },
+          "labeled_entities": [
+            {
+              "ent": "Scottish Power",
+              "type": "ORG",
+              "start": 0,
+              "end": 14,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the day",
+              "type": "DATE",
+              "start": 123,
+              "end": 130,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "18912627": {
+          "banned_phrases": [],
+          "summary": "Mexico stunned Brazil to win Olympic football gold for the first time with a 2-1 extra-time victory at Rio 2016.",
+          "generation_metadata": {
+            "score": -0.5842918157577515,
+            "dropped_seqs": [],
+            "n_words_checked": 89
+          },
+          "labeled_entities": [
+            {
+              "ent": "Mexico",
+              "type": "GPE",
+              "start": 0,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Brazil",
+              "type": "GPE",
+              "start": 15,
+              "end": 21,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Olympic",
+              "type": "EVENT",
+              "start": 29,
+              "end": 36,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "first",
+              "type": "ORDINAL",
+              "start": 59,
+              "end": 64,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "2016",
+              "type": "DATE",
+              "start": 107,
+              "end": 111,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "35292801": {
+          "banned_phrases": [],
+          "summary": "The Royal Yacht Britannia has been named Scotland's best tourist attraction for 10 years running.",
+          "generation_metadata": {
+            "score": -0.31449246406555176,
+            "dropped_seqs": [],
+            "n_words_checked": 73
+          },
+          "labeled_entities": [
+            {
+              "ent": "Scotland",
+              "type": "GPE",
+              "start": 41,
+              "end": 49,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "10 years",
+              "type": "DATE",
+              "start": 80,
+              "end": 88,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "38252819": {
+          "banned_phrases": [],
+          "summary": "The number of students going to further education colleges in Northern Ireland has fallen by more than 20% in the past three years.",
+          "generation_metadata": {
+            "score": -0.42802518606185913,
+            "dropped_seqs": [],
+            "n_words_checked": 94
+          },
+          "labeled_entities": [
+            {
+              "ent": "Northern Ireland",
+              "type": "GPE",
+              "start": 62,
+              "end": 78,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "more than 20%",
+              "type": "PERCENT",
+              "start": 93,
+              "end": 106,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "the past three years",
+              "type": "DATE",
+              "start": 110,
+              "end": 130,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "33512412": {
+          "banned_phrases": [],
+          "summary": "A man has pleaded not guilty to causing the death of a 15-year-old girl in a crash in Gwynedd.",
+          "generation_metadata": {
+            "score": -0.47844693064689636,
+            "dropped_seqs": [],
+            "n_words_checked": 88
+          },
+          "labeled_entities": [
+            {
+              "ent": "15-year-old",
+              "type": "DATE",
+              "start": 55,
+              "end": 66,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Gwynedd",
+              "type": "GPE",
+              "start": 86,
+              "end": 93,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "34157697": {
+          "banned_phrases": [],
+          "summary": "An oil and gas company has been granted a permit by Natural Resources Wales for exploratory drilling in Gwynedd.",
+          "generation_metadata": {
+            "score": -0.5000655651092529,
+            "dropped_seqs": [],
+            "n_words_checked": 89
+          },
+          "labeled_entities": [
+            {
+              "ent": "Natural Resources Wales",
+              "type": "ORG",
+              "start": 52,
+              "end": 75,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Gwynedd",
+              "type": "GPE",
+              "start": 104,
+              "end": 111,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "29210082": {
+          "banned_phrases": [],
+          "summary": "Two young people have become the first members of a new Benedictine order in Monmouthshire.",
+          "generation_metadata": {
+            "score": -0.45515671372413635,
+            "dropped_seqs": [],
+            "n_words_checked": 74
+          },
+          "labeled_entities": [
+            {
+              "ent": "Two",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 3,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "first",
+              "type": "ORDINAL",
+              "start": 33,
+              "end": 38,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Benedictine",
+              "type": "ORG",
+              "start": 56,
+              "end": 67,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Monmouthshire",
+              "type": "GPE",
+              "start": 77,
+              "end": 90,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "32811602": {
+          "banned_phrases": [],
+          "summary": "Mark Stoneman's century was not enough to save Warwickshire as they beat Durham by seven wickets at Edgbaston.",
+          "generation_metadata": {
+            "score": -0.48548734188079834,
+            "dropped_seqs": [],
+            "n_words_checked": 94
+          },
+          "labeled_entities": [
+            {
+              "ent": "Mark",
+              "type": "PERSON",
+              "start": 0,
+              "end": 4,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Stoneman",
+              "type": "PERSON",
+              "start": 5,
+              "end": 13,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "seven",
+              "type": "CARDINAL",
+              "start": 83,
+              "end": 88,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Edgbaston",
+              "type": "ORG",
+              "start": 100,
+              "end": 109,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "32296663": {
+          "banned_phrases": [],
+          "summary": "An Australian golfer has been bitten by a crocodile while playing at the Palmer Sea Reef golf course.",
+          "generation_metadata": {
+            "score": -0.4208935499191284,
+            "dropped_seqs": [],
+            "n_words_checked": 90
+          },
+          "labeled_entities": [
+            {
+              "ent": "Australian",
+              "type": "NORP",
+              "start": 3,
+              "end": 13,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the Palmer Sea Reef",
+              "type": "FAC",
+              "start": 69,
+              "end": 88,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "17625874": {
+          "banned_phrases": [],
+          "summary": "Amazon has been accused of using its European headquarters in Luxembourg to avoid paying tax in the UK.",
+          "generation_metadata": {
+            "score": -0.6979528665542603,
+            "dropped_seqs": [],
+            "n_words_checked": 88
+          },
+          "labeled_entities": [
+            {
+              "ent": "Amazon",
+              "type": "ORG",
+              "start": 0,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "European",
+              "type": "NORP",
+              "start": 37,
+              "end": 45,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Luxembourg",
+              "type": "GPE",
+              "start": 62,
+              "end": 72,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "UK",
+              "type": "GPE",
+              "start": 100,
+              "end": 102,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "34383037": {
+          "banned_phrases": [],
+          "summary": "The Nepalese government has announced new rules aimed at curbing the number of people climbing Mount Everest.",
+          "generation_metadata": {
+            "score": -0.6401695609092712,
+            "dropped_seqs": [],
+            "n_words_checked": 76
+          },
+          "labeled_entities": [
+            {
+              "ent": "Nepalese",
+              "type": "NORP",
+              "start": 4,
+              "end": 12,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Mount Everest",
+              "type": "LOC",
+              "start": 95,
+              "end": 108,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "40280345": {
+          "banned_phrases": [],
+          "summary": "When I arrived in Bangkok last month, I had no idea what I was in for.",
+          "generation_metadata": {
+            "score": -0.7070494294166565,
+            "dropped_seqs": [],
+            "n_words_checked": 70
+          },
+          "labeled_entities": [
+            {
+              "ent": "Bangkok",
+              "type": "GPE",
+              "start": 18,
+              "end": 25,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "last month",
+              "type": "DATE",
+              "start": 26,
+              "end": 36,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "38550149": {
+          "banned_phrases": [],
+          "summary": "Former England wicketkeeper Graeme Swann says the team are \"not far off\" in their preparations for their tour of India.",
+          "generation_metadata": {
+            "score": -0.6168596148490906,
+            "dropped_seqs": [],
+            "n_words_checked": 94
+          },
+          "labeled_entities": [
+            {
+              "ent": "England",
+              "type": "GPE",
+              "start": 7,
+              "end": 14,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Graeme",
+              "type": "PERSON",
+              "start": 28,
+              "end": 34,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Swann",
+              "type": "PERSON",
+              "start": 35,
+              "end": 40,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "India",
+              "type": "GPE",
+              "start": 113,
+              "end": 118,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "40420825": {
+          "banned_phrases": [],
+          "summary": "Arsenal Ladies have extended their partnership with Boreham Wood Ladies, with the Women's Super League One club receiving a \u00a31.5m grant from the Premier League.",
+          "generation_metadata": {
+            "score": -0.6987980008125305,
+            "dropped_seqs": [],
+            "n_words_checked": 111
+          },
+          "labeled_entities": [
+            {
+              "ent": "Boreham Wood Ladies",
+              "type": "ORG",
+              "start": 52,
+              "end": 71,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "One",
+              "type": "CARDINAL",
+              "start": 103,
+              "end": 106,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "35494015": {
+          "banned_phrases": [],
+          "summary": "Northamptonshire Police has referred itself to the police watchdog over its handling of the search for a missing woman.",
+          "generation_metadata": {
+            "score": -0.3902896046638489,
+            "dropped_seqs": [],
+            "n_words_checked": 108
+          },
+          "labeled_entities": [
+            {
+              "ent": "Northamptonshire Police",
+              "type": "ORG",
+              "start": 0,
+              "end": 23,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "25045335": {
+          "banned_phrases": [],
+          "summary": "Plans to turn a Ministry of Defence (MoD) depot in Shropshire into a multi-million pound development have been unveiled.",
+          "generation_metadata": {
+            "score": -0.5469197034835815,
+            "dropped_seqs": [],
+            "n_words_checked": 88
+          },
+          "labeled_entities": [
+            {
+              "ent": "Shropshire",
+              "type": "GPE",
+              "start": 51,
+              "end": 61,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "37663763": {
+          "banned_phrases": [],
+          "summary": "Partick Thistle's winless run extended to eight matches as they were held to a draw by Ross County at Firhill.",
+          "generation_metadata": {
+            "score": -0.38351738452911377,
+            "dropped_seqs": [],
+            "n_words_checked": 86
+          },
+          "labeled_entities": [
+            {
+              "ent": "Partick Thistle's",
+              "type": "ORG",
+              "start": 0,
+              "end": 17,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "eight",
+              "type": "CARDINAL",
+              "start": 42,
+              "end": 47,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Ross",
+              "type": "PERSON",
+              "start": 87,
+              "end": 91,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "County",
+              "type": "PERSON",
+              "start": 92,
+              "end": 98,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Firhill",
+              "type": "ORG",
+              "start": 102,
+              "end": 109,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "36576510": {
+          "banned_phrases": [],
+          "summary": "A UK charity has set up a virtual doctors project in Zambia, which uses volunteers in the UK to provide direct and individual support for health workers in the country.",
+          "generation_metadata": {
+            "score": -0.6927294135093689,
+            "dropped_seqs": [],
+            "n_words_checked": 130
+          },
+          "labeled_entities": [
+            {
+              "ent": "UK",
+              "type": "GPE",
+              "start": 2,
+              "end": 4,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Zambia",
+              "type": "GPE",
+              "start": 53,
+              "end": 59,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "UK",
+              "type": "GPE",
+              "start": 90,
+              "end": 92,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35903736": {
+          "banned_phrases": [],
+          "summary": "Police have appealed for witnesses after officers were attacked in County Down.",
+          "generation_metadata": {
+            "score": -0.6759355664253235,
+            "dropped_seqs": [],
+            "n_words_checked": 72
+          },
+          "labeled_entities": []
+        },
+        "36711337": {
+          "banned_phrases": [],
+          "summary": "A six-year-old boy's death was \"preventable\" and could have been prevented if an optometrist had done her job properly, a court has heard.",
+          "generation_metadata": {
+            "score": -0.36076292395591736,
+            "dropped_seqs": [],
+            "n_words_checked": 112
+          },
+          "labeled_entities": [
+            {
+              "ent": "six-year-old",
+              "type": "DATE",
+              "start": 2,
+              "end": 14,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "34683943": {
+          "banned_phrases": [],
+          "summary": "Scottish Labour leader Kezia Dugdale is to promise to restore tax credits for working families if her party wins the Holyrood election.",
+          "generation_metadata": {
+            "score": -0.4895280599594116,
+            "dropped_seqs": [],
+            "n_words_checked": 94
+          },
+          "labeled_entities": [
+            {
+              "ent": "Scottish Labour",
+              "type": "ORG",
+              "start": 0,
+              "end": 15,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kezia",
+              "type": "PERSON",
+              "start": 23,
+              "end": 28,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Dugdale",
+              "type": "PERSON",
+              "start": 29,
+              "end": 36,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Holyrood",
+              "type": "ORG",
+              "start": 117,
+              "end": 125,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35594184": {
+          "banned_phrases": [],
+          "summary": "The immune system of a bird can fight off a deadly fungus, scientists have found.",
+          "generation_metadata": {
+            "score": -0.8156992793083191,
+            "dropped_seqs": [],
+            "n_words_checked": 76
+          },
+          "labeled_entities": []
+        },
+        "35540579": {
+          "banned_phrases": [],
+          "summary": "Scottish pig farmers are facing a \"cash negative situation\" because of a sharp fall in the price of the meat, according to a farming body.",
+          "generation_metadata": {
+            "score": -0.598745584487915,
+            "dropped_seqs": [],
+            "n_words_checked": 109
+          },
+          "labeled_entities": [
+            {
+              "ent": "Scottish",
+              "type": "NORP",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35491587": {
+          "banned_phrases": [],
+          "summary": "A Gallipoli war veteran has been reunited with his suitbag after it was found in the wardrobe of a woman who had taken it.",
+          "generation_metadata": {
+            "score": -0.617477297782898,
+            "dropped_seqs": [],
+            "n_words_checked": 114
+          },
+          "labeled_entities": [
+            {
+              "ent": "Gallipoli",
+              "type": "GPE",
+              "start": 2,
+              "end": 11,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "32227367": {
+          "banned_phrases": [],
+          "summary": "More than 30 people had to be evacuated from their homes in West Lothian after a fire was started deliberately, police have said.",
+          "generation_metadata": {
+            "score": -0.5008810758590698,
+            "dropped_seqs": [],
+            "n_words_checked": 100
+          },
+          "labeled_entities": [
+            {
+              "ent": "More than 30",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 12,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "West Lothian",
+              "type": "GPE",
+              "start": 60,
+              "end": 72,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "34376652": {
+          "banned_phrases": [],
+          "summary": "British troops will be sent to Somalia to help with the fight against Islamist militants, Prime Minister David Cameron has said.",
+          "generation_metadata": {
+            "score": -0.5676494240760803,
+            "dropped_seqs": [],
+            "n_words_checked": 85
+          },
+          "labeled_entities": [
+            {
+              "ent": "British",
+              "type": "NORP",
+              "start": 0,
+              "end": 7,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Somalia",
+              "type": "GPE",
+              "start": 31,
+              "end": 38,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Islamist",
+              "type": "NORP",
+              "start": 70,
+              "end": 78,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "David",
+              "type": "PERSON",
+              "start": 105,
+              "end": 110,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Cameron",
+              "type": "PERSON",
+              "start": 111,
+              "end": 118,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35972298": {
+          "banned_phrases": [],
+          "summary": "The air is still as charged as it was when I first arrived in Ravenscraig 25 years ago.",
+          "generation_metadata": {
+            "score": -0.74540114402771,
+            "dropped_seqs": [],
+            "n_words_checked": 113
+          },
+          "labeled_entities": [
+            {
+              "ent": "first",
+              "type": "ORDINAL",
+              "start": 45,
+              "end": 50,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "25 years ago",
+              "type": "DATE",
+              "start": 74,
+              "end": 86,
+              "in_source": false,
+              "label": "Non-factual Hallucination"
+            }
+          ]
+        },
+        "36395400": {
+          "banned_phrases": [],
+          "summary": "Coventry City Council has taken in more Syrian refugees than any other local authority in England and Wales.",
+          "generation_metadata": {
+            "score": -0.370144248008728,
+            "dropped_seqs": [],
+            "n_words_checked": 82
+          },
+          "labeled_entities": [
+            {
+              "ent": "Coventry City Council",
+              "type": "ORG",
+              "start": 0,
+              "end": 21,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Syrian",
+              "type": "NORP",
+              "start": 40,
+              "end": 46,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "England",
+              "type": "GPE",
+              "start": 90,
+              "end": 97,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Wales",
+              "type": "GPE",
+              "start": 102,
+              "end": 107,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "34660518": {
+          "banned_phrases": [],
+          "summary": "Barclays has reported a fall in third-quarter profits after paying out \u00a3560m to settle claims in the US and foreign.",
+          "generation_metadata": {
+            "score": -0.41844746470451355,
+            "dropped_seqs": [],
+            "n_words_checked": 88
+          },
+          "labeled_entities": [
+            {
+              "ent": "Barclays",
+              "type": "ORG",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "third-quarter",
+              "type": "DATE",
+              "start": 32,
+              "end": 45,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "560",
+              "type": "MONEY",
+              "start": 72,
+              "end": 75,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "US",
+              "type": "GPE",
+              "start": 101,
+              "end": 103,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "34554596": {
+          "banned_phrases": [],
+          "summary": "More than a third of bus services in Wales could be withdrawn if the Welsh government makes cuts of up to 40%, the BBC has learned.",
+          "generation_metadata": {
+            "score": -0.597396731376648,
+            "dropped_seqs": [],
+            "n_words_checked": 115
+          },
+          "labeled_entities": [
+            {
+              "ent": "More than a third",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 17,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Wales",
+              "type": "GPE",
+              "start": 37,
+              "end": 42,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Welsh",
+              "type": "NORP",
+              "start": 69,
+              "end": 74,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "up to 40%",
+              "type": "PERCENT",
+              "start": 100,
+              "end": 109,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "BBC",
+              "type": "ORG",
+              "start": 115,
+              "end": 118,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "40469676": {
+          "banned_phrases": [],
+          "summary": "A woman has been left shaken after being hit with a crowbar during an attempted robbery in Londonderry.",
+          "generation_metadata": {
+            "score": -0.5749503970146179,
+            "dropped_seqs": [],
+            "n_words_checked": 86
+          },
+          "labeled_entities": [
+            {
+              "ent": "Londonderry",
+              "type": "GPE",
+              "start": 91,
+              "end": 102,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "39325318": {
+          "banned_phrases": [],
+          "summary": "A project to turn a quarry into an underground museum has received a \u00a31m grant from the Heritage Lottery Fund (HLF).",
+          "generation_metadata": {
+            "score": -0.6473360061645508,
+            "dropped_seqs": [],
+            "n_words_checked": 80
+          },
+          "labeled_entities": [
+            {
+              "ent": "\u00a31m",
+              "type": "MONEY",
+              "start": 69,
+              "end": 72,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "the Heritage Lottery Fund",
+              "type": "ORG",
+              "start": 84,
+              "end": 109,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "14357914": {
+          "banned_phrases": [],
+          "summary": "Angelina Jolie has received an honorary award for her film In the Land of Blood and Honey at the Sarajevo Film Festival.",
+          "generation_metadata": {
+            "score": -0.26721179485321045,
+            "dropped_seqs": [],
+            "n_words_checked": 94
+          },
+          "labeled_entities": [
+            {
+              "ent": "Angelina",
+              "type": "PERSON",
+              "start": 0,
+              "end": 8,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Jolie",
+              "type": "PERSON",
+              "start": 9,
+              "end": 14,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "In the Land of Blood and Honey",
+              "type": "WORK_OF_ART",
+              "start": 59,
+              "end": 89,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the Sarajevo Film Festival",
+              "type": "EVENT",
+              "start": 93,
+              "end": 119,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "39588453": {
+          "banned_phrases": [],
+          "summary": "Children who play with touchscreens are less likely to sleep well, according to the first study of its kind.",
+          "generation_metadata": {
+            "score": -0.5911950469017029,
+            "dropped_seqs": [],
+            "n_words_checked": 110
+          },
+          "labeled_entities": [
+            {
+              "ent": "first",
+              "type": "ORDINAL",
+              "start": 84,
+              "end": 89,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "36138998": {
+          "banned_phrases": [],
+          "summary": "Steam, the world's biggest digital games retailer, has struck a deal with film studio Lionsgate to release video content.",
+          "generation_metadata": {
+            "score": -0.6167481541633606,
+            "dropped_seqs": [],
+            "n_words_checked": 97
+          },
+          "labeled_entities": [
+            {
+              "ent": "Lionsgate",
+              "type": "ORG",
+              "start": 86,
+              "end": 95,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "30088961": {
+          "banned_phrases": [],
+          "summary": "The international police agency is asking the public for help in tracing nine suspects involved in wildlife crime.",
+          "generation_metadata": {
+            "score": -0.7191211581230164,
+            "dropped_seqs": [],
+            "n_words_checked": 75
+          },
+          "labeled_entities": [
+            {
+              "ent": "nine",
+              "type": "CARDINAL",
+              "start": 73,
+              "end": 77,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35307504": {
+          "banned_phrases": [],
+          "summary": "Venezuela's opposition-held National Assembly has voted to accept the resignation of three suspended legislators.",
+          "generation_metadata": {
+            "score": -0.515398383140564,
+            "dropped_seqs": [],
+            "n_words_checked": 79
+          },
+          "labeled_entities": [
+            {
+              "ent": "Venezuela",
+              "type": "GPE",
+              "start": 0,
+              "end": 9,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "National Assembly",
+              "type": "ORG",
+              "start": 28,
+              "end": 45,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "three",
+              "type": "CARDINAL",
+              "start": 85,
+              "end": 90,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37604151": {
+          "banned_phrases": [],
+          "summary": "Donald Trump has accused his Democratic rival Hillary Clinton of being an \"abusive\" woman.",
+          "generation_metadata": {
+            "score": -0.4797501266002655,
+            "dropped_seqs": [],
+            "n_words_checked": 68
+          },
+          "labeled_entities": [
+            {
+              "ent": "Donald",
+              "type": "PERSON",
+              "start": 0,
+              "end": 6,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Trump",
+              "type": "PERSON",
+              "start": 7,
+              "end": 12,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Democratic",
+              "type": "NORP",
+              "start": 29,
+              "end": 39,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Hillary",
+              "type": "PERSON",
+              "start": 46,
+              "end": 53,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Clinton",
+              "type": "PERSON",
+              "start": 54,
+              "end": 61,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37306736": {
+          "banned_phrases": [],
+          "summary": "The benefits of cholesterol-lowering statins outweigh the risk of side effects, according to an independent review.",
+          "generation_metadata": {
+            "score": -0.5959656834602356,
+            "dropped_seqs": [],
+            "n_words_checked": 86
+          },
+          "labeled_entities": []
+        },
+        "32978032": {
+          "banned_phrases": [],
+          "summary": "A row has broken out over the amount of money being spent on education by Scottish councils.",
+          "generation_metadata": {
+            "score": -0.611648678779602,
+            "dropped_seqs": [],
+            "n_words_checked": 70
+          },
+          "labeled_entities": [
+            {
+              "ent": "Scottish",
+              "type": "NORP",
+              "start": 74,
+              "end": 82,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "34391291": {
+          "banned_phrases": [],
+          "summary": "A father and son have appeared in court charged with the murder of a man in County Donegal.",
+          "generation_metadata": {
+            "score": -0.5095304846763611,
+            "dropped_seqs": [],
+            "n_words_checked": 82
+          },
+          "labeled_entities": [
+            {
+              "ent": "County Donegal",
+              "type": "GPE",
+              "start": 76,
+              "end": 90,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "32275107": {
+          "banned_phrases": [],
+          "summary": "The body of a man has been found at a flat in Edinburgh.",
+          "generation_metadata": {
+            "score": -0.5341576337814331,
+            "dropped_seqs": [],
+            "n_words_checked": 65
+          },
+          "labeled_entities": [
+            {
+              "ent": "Edinburgh",
+              "type": "GPE",
+              "start": 46,
+              "end": 55,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "29515182": {
+          "banned_phrases": [],
+          "summary": "It was supposed to be the story of the comeback.",
+          "generation_metadata": {
+            "score": -0.8364667296409607,
+            "dropped_seqs": [],
+            "n_words_checked": 131
+          },
+          "labeled_entities": []
+        },
+        "34918621": {
+          "banned_phrases": [],
+          "summary": "Scottish football could benefit from a move to Major League Soccer, according to Kris Boyd.",
+          "generation_metadata": {
+            "score": -0.5344529151916504,
+            "dropped_seqs": [],
+            "n_words_checked": 88
+          },
+          "labeled_entities": [
+            {
+              "ent": "Scottish",
+              "type": "NORP",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Major League Soccer",
+              "type": "ORG",
+              "start": 47,
+              "end": 66,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kris",
+              "type": "PERSON",
+              "start": 81,
+              "end": 85,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Boyd",
+              "type": "PERSON",
+              "start": 86,
+              "end": 90,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "33952113": {
+          "banned_phrases": [],
+          "summary": "Scottish Labour's new leader Kezia Dugdale has said she will make decisions about the party \"here in Scotland\".",
+          "generation_metadata": {
+            "score": -0.5349015593528748,
+            "dropped_seqs": [],
+            "n_words_checked": 88
+          },
+          "labeled_entities": [
+            {
+              "ent": "Scottish Labour's",
+              "type": "ORG",
+              "start": 0,
+              "end": 17,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kezia",
+              "type": "PERSON",
+              "start": 29,
+              "end": 34,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Dugdale",
+              "type": "PERSON",
+              "start": 35,
+              "end": 42,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Scotland",
+              "type": "GPE",
+              "start": 101,
+              "end": 109,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "32628709": {
+          "banned_phrases": [],
+          "summary": "More than 1,000 packets of cigarettes have been found dumped on a road in Dorset.",
+          "generation_metadata": {
+            "score": -0.6327183842658997,
+            "dropped_seqs": [],
+            "n_words_checked": 70
+          },
+          "labeled_entities": [
+            {
+              "ent": "More than 1,000",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 15,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Dorset",
+              "type": "GPE",
+              "start": 74,
+              "end": 80,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "33186428": {
+          "banned_phrases": [],
+          "summary": "Police investigating the death of a man in Manchester city centre have appealed for witnesses to come forward.",
+          "generation_metadata": {
+            "score": -0.5944708585739136,
+            "dropped_seqs": [],
+            "n_words_checked": 79
+          },
+          "labeled_entities": [
+            {
+              "ent": "Manchester",
+              "type": "GPE",
+              "start": 43,
+              "end": 53,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "33327177": {
+          "banned_phrases": [],
+          "summary": "Three men have been jailed after cannabis plants worth more than \u00a3800,000 were found at an industrial estate in Bridgend.",
+          "generation_metadata": {
+            "score": -0.42099621891975403,
+            "dropped_seqs": [],
+            "n_words_checked": 84
+          },
+          "labeled_entities": [
+            {
+              "ent": "Three",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 5,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "more than \u00a3800,000",
+              "type": "MONEY",
+              "start": 55,
+              "end": 73,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Bridgend",
+              "type": "GPE",
+              "start": 112,
+              "end": 120,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "32101255": {
+          "banned_phrases": [],
+          "summary": "The desk and chair used by Charles Dickens to write his final novel, A Christmas Carol, is to go on display for the first time after receiving a  \u00c2\u00a31.5m grant.",
+          "generation_metadata": {
+            "score": -0.7138844728469849,
+            "dropped_seqs": [],
+            "n_words_checked": 141
+          },
+          "labeled_entities": [
+            {
+              "ent": "Charles",
+              "type": "PERSON",
+              "start": 27,
+              "end": 34,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Dickens",
+              "type": "PERSON",
+              "start": 35,
+              "end": 42,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "A Christmas Carol",
+              "type": "WORK_OF_ART",
+              "start": 69,
+              "end": 86,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "first",
+              "type": "ORDINAL",
+              "start": 116,
+              "end": 121,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "\u00c2\u00a31.5",
+              "type": "PRODUCT",
+              "start": 146,
+              "end": 151,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "32324413": {
+          "banned_phrases": [],
+          "summary": "The art of making maps of dark matter is in a golden age, according to scientists at the University of Oxford.",
+          "generation_metadata": {
+            "score": -0.7390180230140686,
+            "dropped_seqs": [],
+            "n_words_checked": 97
+          },
+          "labeled_entities": [
+            {
+              "ent": "the University of Oxford",
+              "type": "ORG",
+              "start": 85,
+              "end": 109,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "35668277": {
+          "banned_phrases": [],
+          "summary": "The use of contactless payments in the UK reached a record level last year, according to the industry.",
+          "generation_metadata": {
+            "score": -0.6346071362495422,
+            "dropped_seqs": [],
+            "n_words_checked": 91
+          },
+          "labeled_entities": [
+            {
+              "ent": "UK",
+              "type": "GPE",
+              "start": 39,
+              "end": 41,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "last year",
+              "type": "DATE",
+              "start": 65,
+              "end": 74,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "30877629": {
+          "banned_phrases": [],
+          "summary": "Charli XCX says she's \"trying to take over the world\" as a songwriter.",
+          "generation_metadata": {
+            "score": -0.39461833238601685,
+            "dropped_seqs": [],
+            "n_words_checked": 71
+          },
+          "labeled_entities": [
+            {
+              "ent": "XCX",
+              "type": "ORG",
+              "start": 7,
+              "end": 10,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "37234297": {
+          "banned_phrases": [],
+          "summary": "Cambridge United have re-signed midfielder Chris Keane on a one-month loan deal from Oxford United.",
+          "generation_metadata": {
+            "score": -0.761317789554596,
+            "dropped_seqs": [],
+            "n_words_checked": 75
+          },
+          "labeled_entities": [
+            {
+              "ent": "Cambridge United",
+              "type": "GPE",
+              "start": 0,
+              "end": 16,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Chris",
+              "type": "PERSON",
+              "start": 43,
+              "end": 48,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Keane",
+              "type": "PERSON",
+              "start": 49,
+              "end": 54,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "one-month",
+              "type": "DATE",
+              "start": 60,
+              "end": 69,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Oxford United",
+              "type": "ORG",
+              "start": 85,
+              "end": 98,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "39870822": {
+          "banned_phrases": [],
+          "summary": "An independent review into the welfare of GB Taekwondo athletes found \"no evidence\" to support claims of poor treatment, the BBC has learned.",
+          "generation_metadata": {
+            "score": -0.6927549242973328,
+            "dropped_seqs": [],
+            "n_words_checked": 107
+          },
+          "labeled_entities": [
+            {
+              "ent": "GB Taekwondo",
+              "type": "GPE",
+              "start": 42,
+              "end": 54,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "BBC",
+              "type": "ORG",
+              "start": 125,
+              "end": 128,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "36793059": {
+          "banned_phrases": [],
+          "summary": "Kyle Edmund will lead Great Britain in their Davis Cup quarter-final against Serbia in Newport, Rhode Island on Friday.",
+          "generation_metadata": {
+            "score": -0.5102269053459167,
+            "dropped_seqs": [],
+            "n_words_checked": 86
+          },
+          "labeled_entities": [
+            {
+              "ent": "Kyle",
+              "type": "PERSON",
+              "start": 0,
+              "end": 4,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Edmund",
+              "type": "PERSON",
+              "start": 5,
+              "end": 11,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Great Britain",
+              "type": "GPE",
+              "start": 22,
+              "end": 35,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Davis Cup",
+              "type": "EVENT",
+              "start": 45,
+              "end": 54,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Serbia",
+              "type": "GPE",
+              "start": 77,
+              "end": 83,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Newport",
+              "type": "GPE",
+              "start": 87,
+              "end": 94,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Rhode Island",
+              "type": "GPE",
+              "start": 96,
+              "end": 108,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Friday",
+              "type": "DATE",
+              "start": 112,
+              "end": 118,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "11430795": {
+          "banned_phrases": [],
+          "summary": "Scientists say they have discovered a gene defect which may be responsible for male infertility.",
+          "generation_metadata": {
+            "score": -0.6718629002571106,
+            "dropped_seqs": [],
+            "n_words_checked": 64
+          },
+          "labeled_entities": []
+        },
+        "37953515": {
+          "banned_phrases": [],
+          "summary": "A west Wales radio station is to move to a new home in Carmarthenshire, BBC Wales understands.",
+          "generation_metadata": {
+            "score": -0.5878965258598328,
+            "dropped_seqs": [],
+            "n_words_checked": 82
+          },
+          "labeled_entities": [
+            {
+              "ent": "west Wales",
+              "type": "GPE",
+              "start": 2,
+              "end": 12,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Carmarthenshire",
+              "type": "GPE",
+              "start": 55,
+              "end": 70,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "BBC Wales",
+              "type": "ORG",
+              "start": 72,
+              "end": 81,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "34788695": {
+          "banned_phrases": [],
+          "summary": "London Irish scrum-half Ross Ford has been given a two-week ban after pleading guilty to violent conduct.",
+          "generation_metadata": {
+            "score": -0.6036117076873779,
+            "dropped_seqs": [],
+            "n_words_checked": 89
+          },
+          "labeled_entities": [
+            {
+              "ent": "London",
+              "type": "GPE",
+              "start": 0,
+              "end": 6,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Irish",
+              "type": "NORP",
+              "start": 7,
+              "end": 12,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Ross",
+              "type": "PERSON",
+              "start": 24,
+              "end": 28,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Ford",
+              "type": "PERSON",
+              "start": 29,
+              "end": 33,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "two-week",
+              "type": "DATE",
+              "start": 51,
+              "end": 59,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "36487483": {
+          "banned_phrases": [],
+          "summary": "(Close): The FTSE 100 closed lower, with mining and construction shares among the biggest fallers.",
+          "generation_metadata": {
+            "score": -0.49261006712913513,
+            "dropped_seqs": [],
+            "n_words_checked": 75
+          },
+          "labeled_entities": []
+        },
+        "32755065": {
+          "banned_phrases": [],
+          "summary": "A new treatment for cystic fibrosis has been described as \"groundbreaking\" by doctors.",
+          "generation_metadata": {
+            "score": -0.5156335830688477,
+            "dropped_seqs": [],
+            "n_words_checked": 67
+          },
+          "labeled_entities": []
+        },
+        "18944657": {
+          "banned_phrases": [],
+          "summary": "Welsh actress Angharad Rees, best known for her role as Demelza in Poldark, has died at the age of 72.",
+          "generation_metadata": {
+            "score": -0.4183904528617859,
+            "dropped_seqs": [],
+            "n_words_checked": 107
+          },
+          "labeled_entities": [
+            {
+              "ent": "Angharad",
+              "type": "PERSON",
+              "start": 14,
+              "end": 22,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Rees",
+              "type": "PERSON",
+              "start": 23,
+              "end": 27,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Demelza",
+              "type": "ORG",
+              "start": 56,
+              "end": 63,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Poldark",
+              "type": "ORG",
+              "start": 67,
+              "end": 74,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "the age of 72",
+              "type": "DATE",
+              "start": 88,
+              "end": 101,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "17916573": {
+          "banned_phrases": [],
+          "summary": "Bolivian President Evo Morales has nationalised the country's largest electricity company, Transportadora de Electricidad (TDE).",
+          "generation_metadata": {
+            "score": -0.3282666802406311,
+            "dropped_seqs": [],
+            "n_words_checked": 78
+          },
+          "labeled_entities": [
+            {
+              "ent": "Bolivian",
+              "type": "NORP",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Evo",
+              "type": "PERSON",
+              "start": 19,
+              "end": 22,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Morales",
+              "type": "PERSON",
+              "start": 23,
+              "end": 30,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Transportadora",
+              "type": "PERSON",
+              "start": 91,
+              "end": 105,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "de",
+              "type": "PERSON",
+              "start": 106,
+              "end": 108,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Electricidad",
+              "type": "PERSON",
+              "start": 109,
+              "end": 121,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "TDE",
+              "type": "ORG",
+              "start": 123,
+              "end": 126,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "16222940": {
+          "banned_phrases": [],
+          "summary": "Every year, BBC News School Report features the work of 11 to 16-year-olds in England, Wales and Northern Ireland.",
+          "generation_metadata": {
+            "score": -0.676840603351593,
+            "dropped_seqs": [],
+            "n_words_checked": 94
+          },
+          "labeled_entities": [
+            {
+              "ent": "Every year",
+              "type": "DATE",
+              "start": 0,
+              "end": 10,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "BBC News School Report",
+              "type": "ORG",
+              "start": 12,
+              "end": 34,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "11",
+              "type": "CARDINAL",
+              "start": 56,
+              "end": 58,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "16-year-olds",
+              "type": "DATE",
+              "start": 62,
+              "end": 74,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "England",
+              "type": "GPE",
+              "start": 78,
+              "end": 85,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Wales",
+              "type": "GPE",
+              "start": 87,
+              "end": 92,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Northern Ireland",
+              "type": "GPE",
+              "start": 97,
+              "end": 113,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "39761949": {
+          "banned_phrases": [],
+          "summary": "One of the oldest poppy collectors in Wales is celebrating his 100th birthday.",
+          "generation_metadata": {
+            "score": -0.48657119274139404,
+            "dropped_seqs": [],
+            "n_words_checked": 80
+          },
+          "labeled_entities": [
+            {
+              "ent": "One",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 3,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Wales",
+              "type": "GPE",
+              "start": 38,
+              "end": 43,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "100th",
+              "type": "ORDINAL",
+              "start": 63,
+              "end": 68,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "39261803": {
+          "banned_phrases": [],
+          "summary": "Loganair has been awarded a contract to continue flying between Dundee and London Stansted for another two years.",
+          "generation_metadata": {
+            "score": -0.41770875453948975,
+            "dropped_seqs": [],
+            "n_words_checked": 79
+          },
+          "labeled_entities": [
+            {
+              "ent": "Loganair",
+              "type": "ORG",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Dundee",
+              "type": "GPE",
+              "start": 64,
+              "end": 70,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "London Stansted",
+              "type": "GPE",
+              "start": 75,
+              "end": 90,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "another two years",
+              "type": "DATE",
+              "start": 95,
+              "end": 112,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "40320590": {
+          "banned_phrases": [],
+          "summary": "Senga won the Prix de l'Arc de Triomphe at Aintree as favourite Shutter Speed finished second.",
+          "generation_metadata": {
+            "score": -0.6143297553062439,
+            "dropped_seqs": [],
+            "n_words_checked": 84
+          },
+          "labeled_entities": [
+            {
+              "ent": "Senga",
+              "type": "ORG",
+              "start": 0,
+              "end": 5,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Prix",
+              "type": "ORG",
+              "start": 14,
+              "end": 18,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Shutter Speed",
+              "type": "ORG",
+              "start": 64,
+              "end": 77,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "second",
+              "type": "ORDINAL",
+              "start": 87,
+              "end": 93,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "26503920": {
+          "banned_phrases": [],
+          "summary": "Ricky has been travelling the world to find out more about the robots of the future.",
+          "generation_metadata": {
+            "score": -0.7888839244842529,
+            "dropped_seqs": [],
+            "n_words_checked": 94
+          },
+          "labeled_entities": []
+        },
+        "36059298": {
+          "banned_phrases": [],
+          "summary": "A man has been seriously injured in a \"vicious attack\" by two masked men at his home in Kilmarnock.",
+          "generation_metadata": {
+            "score": -0.4136488139629364,
+            "dropped_seqs": [],
+            "n_words_checked": 94
+          },
+          "labeled_entities": [
+            {
+              "ent": "two",
+              "type": "CARDINAL",
+              "start": 58,
+              "end": 61,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Kilmarnock",
+              "type": "GPE",
+              "start": 88,
+              "end": 98,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "40964969": {
+          "banned_phrases": [],
+          "summary": "A whale has been spotted swimming in Belfast Harbour.",
+          "generation_metadata": {
+            "score": -0.5554510354995728,
+            "dropped_seqs": [],
+            "n_words_checked": 59
+          },
+          "labeled_entities": [
+            {
+              "ent": "Belfast Harbour",
+              "type": "GPE",
+              "start": 37,
+              "end": 52,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "37299382": {
+          "banned_phrases": [],
+          "summary": "Universities in Wales must \"recapture a civic mission\" after the UK's vote to leave the EU, the education secretary has said.",
+          "generation_metadata": {
+            "score": -0.414543479681015,
+            "dropped_seqs": [],
+            "n_words_checked": 102
+          },
+          "labeled_entities": [
+            {
+              "ent": "Wales",
+              "type": "GPE",
+              "start": 16,
+              "end": 21,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "UK",
+              "type": "GPE",
+              "start": 65,
+              "end": 67,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "EU",
+              "type": "ORG",
+              "start": 88,
+              "end": 90,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "38736292": {
+          "banned_phrases": [],
+          "summary": "Nottingham Forest caretaker boss Gary Brazil says he is \"very well supported\" by the club's chairman.",
+          "generation_metadata": {
+            "score": -0.6122018694877625,
+            "dropped_seqs": [],
+            "n_words_checked": 90
+          },
+          "labeled_entities": [
+            {
+              "ent": "Nottingham Forest",
+              "type": "ORG",
+              "start": 0,
+              "end": 17,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Gary",
+              "type": "PERSON",
+              "start": 33,
+              "end": 37,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "Brazil",
+              "type": "PERSON",
+              "start": 38,
+              "end": 44,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "34787422": {
+          "banned_phrases": [],
+          "summary": "Astronomers have discovered the most distant object in our Solar System.",
+          "generation_metadata": {
+            "score": -0.4613903760910034,
+            "dropped_seqs": [],
+            "n_words_checked": 61
+          },
+          "labeled_entities": [
+            {
+              "ent": "Solar System",
+              "type": "FAC",
+              "start": 59,
+              "end": 71,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "39760419": {
+          "banned_phrases": [],
+          "summary": "Newcastle United clinched the Championship title with a comfortable win over Barnsley.",
+          "generation_metadata": {
+            "score": -0.504665195941925,
+            "dropped_seqs": [],
+            "n_words_checked": 70
+          },
+          "labeled_entities": [
+            {
+              "ent": "Newcastle United",
+              "type": "ORG",
+              "start": 0,
+              "end": 16,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Championship",
+              "type": "LAW",
+              "start": 30,
+              "end": 42,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "Barnsley",
+              "type": "GPE",
+              "start": 77,
+              "end": 85,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35610147": {
+          "banned_phrases": [],
+          "summary": "Ride-sharing firm Uber is losing more than $1bn (\u00c2\u00a3700m) a year in China, its chief executive has said.",
+          "generation_metadata": {
+            "score": -0.47397005558013916,
+            "dropped_seqs": [],
+            "n_words_checked": 80
+          },
+          "labeled_entities": [
+            {
+              "ent": "Uber",
+              "type": "ORG",
+              "start": 18,
+              "end": 22,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "more than $1bn",
+              "type": "MONEY",
+              "start": 33,
+              "end": 47,
+              "in_source": false,
+              "label": "Unknown"
+            },
+            {
+              "ent": "a year",
+              "type": "DATE",
+              "start": 57,
+              "end": 63,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "China",
+              "type": "GPE",
+              "start": 67,
+              "end": 72,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "31725402": {
+          "banned_phrases": [],
+          "summary": "An island in Japan has seen an increase in the number of people visiting it because of a colony of cats.",
+          "generation_metadata": {
+            "score": -0.8085926175117493,
+            "dropped_seqs": [],
+            "n_words_checked": 91
+          },
+          "labeled_entities": [
+            {
+              "ent": "Japan",
+              "type": "GPE",
+              "start": 13,
+              "end": 18,
+              "in_source": false,
+              "label": "Unknown"
+            }
+          ]
+        },
+        "38879671": {
+          "banned_phrases": [],
+          "summary": "A hacker has hijacked a large number of high-end printers to warn their owners that they have been hacked.",
+          "generation_metadata": {
+            "score": -0.7806547284126282,
+            "dropped_seqs": [],
+            "n_words_checked": 82
+          },
+          "labeled_entities": []
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 98,
+          "total": 100,
+          "factual": 43,
+          "non_factual": 2,
+          "failed": 0,
+          "unknown": 55
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 2,
+            "Factual Hallucination": 2,
+            "Unknown": 87,
+            "Non-hallucinated": 174,
+            "Intrinsic Hallucination": 0
+          },
+          "type": {
+            "CARDINAL": {
+              "total": 21,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 10,
+              "Non-hallucinated": 10,
+              "Intrinsic Hallucination": 0
+            },
+            "GPE": {
+              "total": 70,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 18,
+              "Non-hallucinated": 52,
+              "Intrinsic Hallucination": 0
+            },
+            "EVENT": {
+              "total": 7,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 4,
+              "Non-hallucinated": 2,
+              "Intrinsic Hallucination": 0
+            },
+            "ORG": {
+              "total": 44,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 11,
+              "Non-hallucinated": 33,
+              "Intrinsic Hallucination": 0
+            },
+            "DATE": {
+              "total": 24,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 11,
+              "Non-hallucinated": 12,
+              "Intrinsic Hallucination": 0
+            },
+            "PERSON": {
+              "total": 54,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 16,
+              "Non-hallucinated": 38,
+              "Intrinsic Hallucination": 0
+            },
+            "TIME": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2,
+              "Intrinsic Hallucination": 0
+            },
+            "PRODUCT": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 1,
+              "Intrinsic Hallucination": 0
+            },
+            "ORDINAL": {
+              "total": 8,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 2,
+              "Non-hallucinated": 5,
+              "Intrinsic Hallucination": 0
+            },
+            "NORP": {
+              "total": 18,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 5,
+              "Non-hallucinated": 13,
+              "Intrinsic Hallucination": 0
+            },
+            "MONEY": {
+              "total": 5,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 4,
+              "Non-hallucinated": 1,
+              "Intrinsic Hallucination": 0
+            },
+            "PERCENT": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 3,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "FAC": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 2,
+              "Intrinsic Hallucination": 0
+            },
+            "LOC": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1,
+              "Intrinsic Hallucination": 0
+            },
+            "WORK_OF_ART": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 1,
+              "Intrinsic Hallucination": 0
+            },
+            "LAW": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1,
+              "Intrinsic Hallucination": 0
+            }
+          }
+        }
+      }
+    },
+    "1": {
+      "summaries": {
+        "35369658": {
+          "banned_phrases": [
+            "Tens of thousands"
+          ],
+          "summary": "Thousands of football fans faced long queues to get into a FA Cup match on Wednesday night.",
+          "generation_metadata": {
+            "score": -0.6858903765678406,
+            "dropped_seqs": [
+              "</s>Tens of thousands"
+            ],
+            "n_words_checked": 73
+          },
+          "labeled_entities": [
+            {
+              "ent": "Thousands",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 9,
+              "in_source": true,
+              "label": "Non-factual Hallucination"
+            },
+            {
+              "ent": "FA Cup",
+              "type": "EVENT",
+              "start": 59,
+              "end": 65,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Wednesday night",
+              "type": "TIME",
+              "start": 75,
+              "end": 90,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        },
+        "35972298": {
+          "banned_phrases": [
+            "25 years ago"
+          ],
+          "summary": "The air is still as charged as it was when I first arrived in Ravenscraig, the site of the last British steelworks to close.",
+          "generation_metadata": {
+            "score": -0.8220512866973877,
+            "dropped_seqs": [
+              "</s>The air is still as charged as it was when I first arrived in Ravenscraig 25 years ago"
+            ],
+            "n_words_checked": 104
+          },
+          "labeled_entities": [
+            {
+              "ent": "first",
+              "type": "ORDINAL",
+              "start": 45,
+              "end": 50,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Ravenscraig",
+              "type": "ORG",
+              "start": 62,
+              "end": 73,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "British",
+              "type": "NORP",
+              "start": 96,
+              "end": 103,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 99,
+          "total": 100,
+          "factual": 44,
+          "non_factual": 1,
+          "failed": 0,
+          "unknown": 55
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 1,
+            "Factual Hallucination": 2,
+            "Unknown": 87,
+            "Non-hallucinated": 176,
+            "Intrinsic Hallucination": 0
+          },
+          "type": {
+            "CARDINAL": {
+              "total": 21,
+              "Non-factual Hallucination": 1,
+              "Factual Hallucination": 0,
+              "Unknown": 10,
+              "Non-hallucinated": 10,
+              "Intrinsic Hallucination": 0
+            },
+            "GPE": {
+              "total": 70,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 18,
+              "Non-hallucinated": 52,
+              "Intrinsic Hallucination": 0
+            },
+            "EVENT": {
+              "total": 7,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 4,
+              "Non-hallucinated": 2,
+              "Intrinsic Hallucination": 0
+            },
+            "ORG": {
+              "total": 45,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 11,
+              "Non-hallucinated": 34,
+              "Intrinsic Hallucination": 0
+            },
+            "DATE": {
+              "total": 23,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 11,
+              "Non-hallucinated": 12,
+              "Intrinsic Hallucination": 0
+            },
+            "PERSON": {
+              "total": 54,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 16,
+              "Non-hallucinated": 38,
+              "Intrinsic Hallucination": 0
+            },
+            "TIME": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2,
+              "Intrinsic Hallucination": 0
+            },
+            "PRODUCT": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 1,
+              "Intrinsic Hallucination": 0
+            },
+            "ORDINAL": {
+              "total": 8,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 2,
+              "Non-hallucinated": 5,
+              "Intrinsic Hallucination": 0
+            },
+            "NORP": {
+              "total": 19,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 5,
+              "Non-hallucinated": 14,
+              "Intrinsic Hallucination": 0
+            },
+            "MONEY": {
+              "total": 5,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 4,
+              "Non-hallucinated": 1,
+              "Intrinsic Hallucination": 0
+            },
+            "PERCENT": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 3,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "FAC": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 2,
+              "Intrinsic Hallucination": 0
+            },
+            "LOC": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1,
+              "Intrinsic Hallucination": 0
+            },
+            "WORK_OF_ART": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 1,
+              "Intrinsic Hallucination": 0
+            },
+            "LAW": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1,
+              "Intrinsic Hallucination": 0
+            }
+          }
+        }
+      }
+    },
+    "2": {
+      "summaries": {
+        "35369658": {
+          "banned_phrases": [
+            "Tens of thousands",
+            "Thousands"
+          ],
+          "summary": "Hundreds of football fans faced long queues to get into a FA Cup match on Wednesday night.",
+          "generation_metadata": {
+            "score": -0.7576088905334473,
+            "dropped_seqs": [
+              "</s>Thousands",
+              "</s>Tens of thousands"
+            ],
+            "n_words_checked": 81
+          },
+          "labeled_entities": [
+            {
+              "ent": "Hundreds",
+              "type": "CARDINAL",
+              "start": 0,
+              "end": 8,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            },
+            {
+              "ent": "FA Cup",
+              "type": "EVENT",
+              "start": 58,
+              "end": 64,
+              "in_source": false,
+              "label": "Factual Hallucination"
+            },
+            {
+              "ent": "Wednesday night",
+              "type": "TIME",
+              "start": 74,
+              "end": 89,
+              "in_source": true,
+              "label": "Non-hallucinated"
+            }
+          ]
+        }
+      },
+      "stats": {
+        "summary": {
+          "completed": 100,
+          "total": 100,
+          "factual": 45,
+          "non_factual": 0,
+          "failed": 0,
+          "unknown": 55
+        },
+        "entity": {
+          "label": {
+            "Non-factual Hallucination": 0,
+            "Factual Hallucination": 2,
+            "Unknown": 87,
+            "Non-hallucinated": 177,
+            "Intrinsic Hallucination": 0
+          },
+          "type": {
+            "CARDINAL": {
+              "total": 21,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 10,
+              "Non-hallucinated": 11,
+              "Intrinsic Hallucination": 0
+            },
+            "GPE": {
+              "total": 70,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 18,
+              "Non-hallucinated": 52,
+              "Intrinsic Hallucination": 0
+            },
+            "EVENT": {
+              "total": 7,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 4,
+              "Non-hallucinated": 2,
+              "Intrinsic Hallucination": 0
+            },
+            "ORG": {
+              "total": 45,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 11,
+              "Non-hallucinated": 34,
+              "Intrinsic Hallucination": 0
+            },
+            "DATE": {
+              "total": 23,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 11,
+              "Non-hallucinated": 12,
+              "Intrinsic Hallucination": 0
+            },
+            "PERSON": {
+              "total": 54,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 16,
+              "Non-hallucinated": 38,
+              "Intrinsic Hallucination": 0
+            },
+            "TIME": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 2,
+              "Intrinsic Hallucination": 0
+            },
+            "PRODUCT": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 1,
+              "Intrinsic Hallucination": 0
+            },
+            "ORDINAL": {
+              "total": 8,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 1,
+              "Unknown": 2,
+              "Non-hallucinated": 5,
+              "Intrinsic Hallucination": 0
+            },
+            "NORP": {
+              "total": 19,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 5,
+              "Non-hallucinated": 14,
+              "Intrinsic Hallucination": 0
+            },
+            "MONEY": {
+              "total": 5,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 4,
+              "Non-hallucinated": 1,
+              "Intrinsic Hallucination": 0
+            },
+            "PERCENT": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 3,
+              "Non-hallucinated": 0,
+              "Intrinsic Hallucination": 0
+            },
+            "FAC": {
+              "total": 3,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 2,
+              "Intrinsic Hallucination": 0
+            },
+            "LOC": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1,
+              "Intrinsic Hallucination": 0
+            },
+            "WORK_OF_ART": {
+              "total": 2,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 1,
+              "Non-hallucinated": 1,
+              "Intrinsic Hallucination": 0
+            },
+            "LAW": {
+              "total": 1,
+              "Non-factual Hallucination": 0,
+              "Factual Hallucination": 0,
+              "Unknown": 0,
+              "Non-hallucinated": 1,
+              "Intrinsic Hallucination": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}
