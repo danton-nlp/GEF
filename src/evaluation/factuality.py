@@ -126,14 +126,8 @@ def evaluate_summary(
                 ):
                     summary_eval["has_predicted_non_factual"] = True
 
-    # Derive count of extrinsic entities from label counts
-    for extrinsic_label in [
-        ANNOTATION_LABELS["Factual"],
-        ANNOTATION_LABELS["Non-factual"],
-    ]:
-        summary_eval["count_entity_extrinsic"] += summary_eval["count_entity_label"][
-            extrinsic_label
-        ]
+            if not ent["in_source"]:
+                summary_eval["count_entity_extrinsic"] += 1
 
     return summary_eval
 
