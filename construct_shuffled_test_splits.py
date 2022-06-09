@@ -12,7 +12,7 @@ def construct_test_split(xsum_test, filter_fn) -> List[str]:
     """
     filtered_sum_ids = [sum_id for sum_id in xsum_test.keys() if filter_fn(sum_id)]
     rng_data_split = random.Random(42)
-    return sorted(rng_data_split.sample(filtered_sum_ids, len(filtered_sum_ids)))
+    return rng_data_split.sample(filtered_sum_ids, len(filtered_sum_ids))
 
 
 if __name__ == "__main__":
