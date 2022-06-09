@@ -210,6 +210,9 @@ if __name__ == "__main__":
     elif args.data_subset == "full":
         docs_to_summarize = {sum_id: x["document"] for sum_id, x in xsum_test.items()}
     else:
+        if args.data_subset == "test-extrinsic":
+            model_prefix = "pegasus" if "pegasus" in args.model_summarization else "bart"
+            args.data_subset = f"{model_prefix}-{args.data_subset}"
         docs_to_summarize = load_shuffled_test_split(xsum_test, args.data_subset, args.test_size)
 
     # initialize with no constraints

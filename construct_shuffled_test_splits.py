@@ -12,12 +12,13 @@ def construct_test_split(xsum_test, filter_fn) -> List[str]:
     """
     filtered_sum_ids = [sum_id for sum_id in xsum_test.keys() if filter_fn(sum_id)]
     rng_data_split = random.Random(42)
-    return rng_data_split.sample(filtered_sum_ids, len(filtered_sum_ids))
+    return sorted(rng_data_split.sample(filtered_sum_ids, len(filtered_sum_ids)))
 
 
 if __name__ == "__main__":
     xsum_test = load_xsum_dict("test")
-    baseline_metadata = get_summary_metrics("xsum", "facebook-bart-large-xsum")
+    bart_baseline_metadata = get_summary_metrics("xsum", "facebook-bart-large-xsum")
+    pegasus_baseline_metadata = get_summary_metrics("xsum", "google-pegasus-xsum")
     gold_sums, gold_metadata = get_gold_xsum_data()
 
     def filter_xsum(sum_id):
@@ -26,7 +27,7 @@ if __name__ == "__main__":
     def filter_xent_test(sum_id):
         return "xent-test" in gold_metadata[sum_id]
 
-    def filter_xsum_extrinsic(sum_id):
+    def filter_xsum_extrinsic(baseline_metadata, sum_id):
         return (
             "xent-train" not in gold_metadata[sum_id]
             and len(
@@ -42,8 +43,15 @@ if __name__ == "__main__":
     test_subset_ids = {
         "xsum-test": construct_test_split(xsum_test, filter_xsum),
         "xent-test": construct_test_split(xsum_test, filter_xent_test),
-        "test-extrinsic": construct_test_split(xsum_test, filter_xsum_extrinsic),
+        "bart-test-extrinsic": construct_test_split(
+            xsum_test,
+            lambda sum_id: filter_xsum_extrinsic(bart_baseline_metadata, sum_id),
+        ),
+        "pegasus-test-extrinsic": construct_test_split(
+            xsum_test,
+            lambda sum_id: filter_xsum_extrinsic(pegasus_baseline_metadata, sum_id),
+        ),
     }
 
     with open("./data/xsum_shuffled_test_splits.json", "w") as f:
-        json.dump(test_subset_ids, f, indent=2)
+        json.dump(test_subset_ids, f, indent=2, sort_keys=True)

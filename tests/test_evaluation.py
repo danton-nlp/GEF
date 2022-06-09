@@ -52,7 +52,7 @@ def test_evaluate_factuality_oracle():
         gold_sums,
         gold_metadata,
         xsum_test,
-    ) = load_data("results/test-extrinsic-oracle.json")
+    ) = load_data("results/bart-test-extrinsic-oracle.json")
     agg_metrics, summaries = evaluate_factuality(
         sums_by_id,
         sum_ents_by_id,
@@ -107,7 +107,7 @@ def test_evaluate_factuality_classifier():
         gold_sums,
         gold_metadata,
         xsum_test,
-    ) = load_data("results/test-extrinsic-classifier-knnv1.json")
+    ) = load_data("results/bart-test-extrinsic-classifier-knnv1.json")
     agg_metrics, summaries = evaluate_factuality(
         sums_by_id,
         sum_ents_by_id,

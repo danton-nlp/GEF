@@ -9,7 +9,8 @@ MODELS = []
 def render_compare_results():
     col1, col2 = st.columns(2)
     data_subset = col1.selectbox("Data subset", options=[
-        "test-extrinsic",
+        "bart-test-extrinsic",
+        "pegasus-test-extrinsic",
         "xent-test",
         "xsum-test"
     ])
