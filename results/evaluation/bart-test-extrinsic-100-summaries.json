@@ -1542,7 +1542,7 @@
     "fbs_classifier_summary": "The former RT\u00c9 broadcaster, M\u00e1irt\u00edn \u00d3 Murchun, has died in Dublin.",
     "fbs_oracle_count_extrinsic": 0,
     "fbs_oracle_has_failed": false,
-    "fbs_oracle_has_unknown": true,
+    "fbs_oracle_has_unknown": false,
     "fbs_oracle_is_factual": false,
     "fbs_oracle_is_non_factual": false,
     "fbs_oracle_is_non_factual_extrinsic": false,
