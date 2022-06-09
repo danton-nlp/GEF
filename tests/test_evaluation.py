@@ -1,5 +1,5 @@
 from src.data_utils import (
-    load_extrinsic_test_set,
+    load_shuffled_test_split,
     load_summaries_from_logs,
     get_gold_xsum_data,
     load_xsum_dict,
@@ -23,12 +23,9 @@ def load_data(results_path: str):
         }
         sum_ents_by_id = {}
     gold_sums, gold_metadata = get_gold_xsum_data()
-    baseline_metadata = get_summary_metrics("xsum", "facebook-bart-large-xsum")
     xsum_test = load_xsum_dict("test")
-    test_set = load_extrinsic_test_set(
-        xsum_test, baseline_metadata, gold_metadata, TEST_SIZE
-    )
-    test_set_ids = {k for (k, v) in test_set}
+    test_set = load_shuffled_test_split(xsum_test, 'test-extrinsic', TEST_SIZE)
+    test_set_ids = {k for (k, v) in test_set.items()}
 
     filtered_sums_by_id = {
         sum_id: x for sum_id, x in sums_by_id.items() if sum_id in test_set_ids
@@ -52,7 +49,7 @@ def test_evaluate_factuality_oracle():
         gold_sums,
         gold_metadata,
         xsum_test,
-    ) = load_data("results/test-extrinsic-oracle.json")
+    ) = load_data("results/fbs-logs/test-extrinsic-oracle.json")
     agg_metrics, summaries = evaluate_factuality(
         sums_by_id,
         sum_ents_by_id,
@@ -107,7 +104,7 @@ def test_evaluate_factuality_classifier():
         gold_sums,
         gold_metadata,
         xsum_test,
-    ) = load_data("results/test-extrinsic-classifier-knnv1.json")
+    ) = load_data("results/fbs-logs/test-extrinsic-classifier-knnv1.json")
     agg_metrics, summaries = evaluate_factuality(
         sums_by_id,
         sum_ents_by_id,
