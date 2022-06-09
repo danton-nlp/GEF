@@ -1,8 +1,8 @@
 {
   "args": {
     "annotate": false,
-    "batch_size": 2,
-    "classifier_batch_size": 4,
+    "batch_size": 10,
+    "classifier_batch_size": 16,
     "data_subset": "debug",
     "entity_label_match": "contained",
     "max_iterations": 5,
@@ -99,7 +99,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 81,
-            "score": -0.5601837038993835
+            "score": -0.5601843595504761
           },
           "labeled_entities": [
             {
@@ -118,8 +118,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 80,
-            "score": -0.559841513633728
+            "n_words_checked": 84,
+            "score": -0.5598479509353638
           },
           "labeled_entities": [
             {
@@ -148,7 +148,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 65,
-            "score": -0.48298680782318115
+            "score": -0.4829917550086975
           },
           "labeled_entities": [
             {
@@ -195,7 +195,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 95,
-            "score": -0.692768931388855
+            "score": -0.6927700638771057
           },
           "labeled_entities": [
             {
@@ -224,7 +224,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 84,
-            "score": -0.8142673969268799
+            "score": -0.8142690658569336
           },
           "labeled_entities": [
             {
@@ -244,7 +244,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 73,
-            "score": -0.45060160756111145
+            "score": -0.4506027400493622
           },
           "labeled_entities": [
             {
@@ -299,8 +299,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 86,
-            "score": -0.36631321907043457
+            "n_words_checked": 89,
+            "score": -0.3663136661052704
           },
           "labeled_entities": [
             {
@@ -355,8 +355,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 81,
-            "score": -0.6497074365615845
+            "n_words_checked": 83,
+            "score": -0.6497119665145874
           },
           "labeled_entities": [
             {
@@ -411,8 +411,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 82,
-            "score": -0.5099020004272461
+            "n_words_checked": 86,
+            "score": -0.509904146194458
           },
           "labeled_entities": [
             {
@@ -468,7 +468,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 87,
-            "score": -0.5155394673347473
+            "score": -0.5155402421951294
           },
           "labeled_entities": [
             {
@@ -566,7 +566,7 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
             "n_words_checked": 69,
-            "score": -0.6140730381011963
+            "score": -0.6140735745429993
           },
           "labeled_entities": [
             {
@@ -592,8 +592,8 @@
               "</s>A search is under way for the remains of a Gwynedd village which was wiped out by storms in the 1970s",
               "</s>A search is under way for the remains of a Gwynedd village which was wiped out by Storm Desmond in the 1970s"
             ],
-            "n_words_checked": 86,
-            "score": -0.7429369688034058
+            "n_words_checked": 88,
+            "score": -0.7429376840591431
           },
           "labeled_entities": [
             {
@@ -627,7 +627,7 @@
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol"
             ],
             "n_words_checked": 110,
-            "score": -0.8211338520050049
+            "score": -0.8211351037025452
           },
           "labeled_entities": [
             {
@@ -653,7 +653,7 @@
               "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup in South America"
             ],
             "n_words_checked": 74,
-            "score": -0.4901454448699951
+            "score": -0.4901479482650757
           },
           "labeled_entities": [
             {
@@ -714,8 +714,8 @@
               "</s>Eden Hazard scored twice as Belgium came from behind to beat Norway 3-2 in their final World Cup",
               "</s>Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final World Cup"
             ],
-            "n_words_checked": 94,
-            "score": -0.37551578879356384
+            "n_words_checked": 96,
+            "score": -0.37551549077033997
           },
           "labeled_entities": [
             {
@@ -774,8 +774,8 @@
             "dropped_seqs": [
               "</s>Colombia's Omar"
             ],
-            "n_words_checked": 85,
-            "score": -0.66920405626297
+            "n_words_checked": 87,
+            "score": -0.6692059636116028
           },
           "labeled_entities": [
             {
@@ -827,7 +827,7 @@
               "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium"
             ],
             "n_words_checked": 85,
-            "score": -0.5327224135398865
+            "score": -0.5327231287956238
           },
           "labeled_entities": [
             {
@@ -869,7 +869,7 @@
               "</s>Abertay University in Dundee"
             ],
             "n_words_checked": 77,
-            "score": -0.5877702832221985
+            "score": -0.587770402431488
           },
           "labeled_entities": [],
           "summary": "Abertay University has been named the best university in the world for its graduate courses in computer games design."
@@ -966,8 +966,8 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Flintshire",
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
-            "n_words_checked": 70,
-            "score": -0.6207175254821777
+            "n_words_checked": 73,
+            "score": -0.6207176446914673
           },
           "labeled_entities": [
             {
@@ -999,7 +999,7 @@
               "</s>A search is under way to find the remains of a Gower village that was destroyed by the sea in the 1950s"
             ],
             "n_words_checked": 85,
-            "score": -1.0076082944869995
+            "score": -1.0076085329055786
           },
           "labeled_entities": [
             {
@@ -1036,7 +1036,7 @@
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford"
             ],
             "n_words_checked": 110,
-            "score": -0.8350397348403931
+            "score": -0.8350411057472229
           },
           "labeled_entities": [
             {
@@ -1066,7 +1066,7 @@
               "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup in South America"
             ],
             "n_words_checked": 75,
-            "score": -0.4966789186000824
+            "score": -0.49668043851852417
           },
           "labeled_entities": [
             {
@@ -1128,8 +1128,8 @@
               "</s>Colombia's Carlos",
               "</s>Colombia's Jose Carlos"
             ],
-            "n_words_checked": 86,
-            "score": -0.7071731686592102
+            "n_words_checked": 88,
+            "score": -0.7071751952171326
           },
           "labeled_entities": [
             {
@@ -1257,8 +1257,8 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Staffordshire",
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
-            "n_words_checked": 72,
-            "score": -0.8472769260406494
+            "n_words_checked": 76,
+            "score": -0.8472774624824524
           },
           "labeled_entities": [
             {
@@ -1291,7 +1291,7 @@
               "</s>A search is under way to find the remains of a Gower village that was destroyed by the sea in the 1950s"
             ],
             "n_words_checked": 85,
-            "score": -1.0076082944869995
+            "score": -1.0076085329055786
           },
           "labeled_entities": [
             {
@@ -1330,8 +1330,8 @@
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford",
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge"
             ],
-            "n_words_checked": 104,
-            "score": -0.842137336730957
+            "n_words_checked": 107,
+            "score": -0.8421388864517212
           },
           "labeled_entities": [
             {
@@ -1364,9 +1364,15 @@
               "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup in South America",
               "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup in South Africa",
               "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South Africa",
-              "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America<s>"
+              "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America<s>",
+              "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America<unk>",
+              "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America<s><s>",
+              "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America<s><s><s>",
+              "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America<s><s><unk>",
+              "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America<s><s><s><s>",
+              "</s>Brazil have added Kaka to their squad for next month's Under-20 World Cup in South America<s><s><s><unk>"
             ],
-            "n_words_checked": 80,
+            "n_words_checked": 75,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -1386,7 +1392,7 @@
               "</s>Colombia's Jose Carlos"
             ],
             "n_words_checked": 87,
-            "score": -0.7542144060134888
+            "score": -0.754216730594635
           },
           "labeled_entities": [
             {
@@ -1546,7 +1552,7 @@
               "</s>A search is under way to find the remains of a Gower village that was destroyed by the sea in the 1950s"
             ],
             "n_words_checked": 85,
-            "score": -1.0076082944869995
+            "score": -1.0076086521148682
           },
           "labeled_entities": [
             {
@@ -1586,9 +1592,16 @@
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford",
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge",
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Manchester",
-              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol<s>"
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol<s>",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol<unk>",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol<s><s>",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol<s><unk>",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol<s><s><s>",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol<s><s><unk>",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol<s><s><s><s>",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol<s><s><s><unk>"
             ],
-            "n_words_checked": 89,
+            "n_words_checked": 88,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -1608,9 +1621,12 @@
               "</s>Colombia's Omar",
               "</s>Colombia's Carlos",
               "</s>Colombia's Jose",
-              "</s>Colombia's Gabriel"
+              "</s>Colombia's Gabriel",
+              "</s>Colombia's Omar<unk>",
+              "</s>Colombia's Omar<s><unk>",
+              "</s>Colombia's Omar<s><s><s><unk>"
             ],
-            "n_words_checked": 27,
+            "n_words_checked": 19,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -1619,5 +1635,5 @@
       }
     }
   },
-  "timestamp": 1654792827.189522
+  "timestamp": 1654806497.1465328
 }

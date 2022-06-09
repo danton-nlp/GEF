@@ -10,7 +10,7 @@
     "model_prior": "facebook/bart-large",
     "model_summarization": "google/pegasus-xsum",
     "num_beams": 4,
-    "pickled_classifier": "",
+    "pickled_classifier": "factuality-classifiers/v1-knn.pickle",
     "test_size": 100,
     "verbose": false
   },
@@ -19,9 +19,433 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 6,
+            "Factual Hallucination": 4,
             "Intrinsic Hallucination": 0,
-            "Non-factual Hallucination": 3,
+            "Non-factual Hallucination": 5,
+            "Non-hallucinated": 17,
+            "Unknown": 0
+          },
+          "type": {
+            "CARDINAL": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 2,
+              "Unknown": 0,
+              "total": 2
+            },
+            "DATE": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 0,
+              "Unknown": 0,
+              "total": 1
+            },
+            "FAC": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 1,
+              "Unknown": 0,
+              "total": 1
+            },
+            "GPE": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 3,
+              "Non-hallucinated": 6,
+              "Unknown": 0,
+              "total": 10
+            },
+            "LAW": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 1,
+              "Unknown": 0,
+              "total": 1
+            },
+            "ORG": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 1,
+              "Non-hallucinated": 0,
+              "Unknown": 0,
+              "total": 2
+            },
+            "PERSON": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 1,
+              "Non-hallucinated": 7,
+              "Unknown": 0,
+              "total": 9
+            }
+          }
+        },
+        "summary": {
+          "completed": 6,
+          "factual": 6,
+          "failed": 0,
+          "non_factual": 4,
+          "total": 10,
+          "unknown": 0
+        }
+      },
+      "summaries": {
+        "17996567": {
+          "banned_phrases": [],
+          "generation_metadata": {
+            "dropped_seqs": [],
+            "n_words_checked": 68,
+            "score": -2.020644187927246
+          },
+          "labeled_entities": [
+            {
+              "end": 46,
+              "ent": "Hampshire",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "predicted_label": "Non-factual Hallucination",
+              "start": 37,
+              "type": "GPE"
+            },
+            {
+              "end": 86,
+              "ent": "the county council",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "predicted_label": "Factual Hallucination",
+              "start": 68,
+              "type": "ORG"
+            }
+          ],
+          "summary": "Plans to cut school bus subsidies in Hampshire have been shelved by the county council."
+        },
+        "24403775": {
+          "banned_phrases": [],
+          "generation_metadata": {
+            "dropped_seqs": [],
+            "n_words_checked": 103,
+            "score": -2.1893985271453857
+          },
+          "labeled_entities": [
+            {
+              "end": 111,
+              "ent": "Stonehenge",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "predicted_label": "Non-hallucinated",
+              "start": 101,
+              "type": "FAC"
+            }
+          ],
+          "summary": "Villagers are calling for action to tackle \"nightmare\" traffic caused by the dualling of the A303 at Stonehenge."
+        },
+        "32112735": {
+          "banned_phrases": [],
+          "generation_metadata": {
+            "dropped_seqs": [],
+            "n_words_checked": 61,
+            "score": -1.793282389640808
+          },
+          "labeled_entities": [
+            {
+              "end": 3,
+              "ent": "One",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "predicted_label": "Non-hallucinated",
+              "start": 0,
+              "type": "CARDINAL"
+            },
+            {
+              "end": 55,
+              "ent": "four",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "predicted_label": "Non-hallucinated",
+              "start": 51,
+              "type": "CARDINAL"
+            }
+          ],
+          "summary": "One Direction have told fans they'll continue as a four-piece."
+        },
+        "34361828": {
+          "banned_phrases": [],
+          "generation_metadata": {
+            "dropped_seqs": [],
+            "n_words_checked": 103,
+            "score": -2.6305298805236816
+          },
+          "labeled_entities": [
+            {
+              "end": 98,
+              "ent": "Gower",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "predicted_label": "Non-hallucinated",
+              "start": 93,
+              "type": "GPE"
+            }
+          ],
+          "summary": "A search is under way for the remains of a medieval village which was destroyed by storms in Gower."
+        },
+        "36203675": {
+          "banned_phrases": [],
+          "generation_metadata": {
+            "dropped_seqs": [],
+            "n_words_checked": 51,
+            "score": -2.248680353164673
+          },
+          "labeled_entities": [],
+          "summary": "A new mobile game is being used to help dementia research."
+        },
+        "36396523": {
+          "banned_phrases": [],
+          "generation_metadata": {
+            "dropped_seqs": [],
+            "n_words_checked": 78,
+            "score": -1.2077487707138062
+          },
+          "labeled_entities": [
+            {
+              "end": 4,
+              "ent": "Kaka",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "predicted_label": "Non-hallucinated",
+              "start": 0,
+              "type": "PERSON"
+            },
+            {
+              "end": 29,
+              "ent": "Brazil",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "predicted_label": "Non-hallucinated",
+              "start": 23,
+              "type": "GPE"
+            },
+            {
+              "end": 58,
+              "ent": "the Copa America",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "predicted_label": "Non-factual Hallucination",
+              "start": 42,
+              "type": "ORG"
+            },
+            {
+              "end": 79,
+              "ent": "the United States",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "predicted_label": "Non-factual Hallucination",
+              "start": 62,
+              "type": "GPE"
+            }
+          ],
+          "summary": "Kaka has been added to Brazil's squad for the Copa America in the United States."
+        },
+        "36456002": {
+          "banned_phrases": [],
+          "generation_metadata": {
+            "dropped_seqs": [],
+            "n_words_checked": 92,
+            "score": -0.9375077486038208
+          },
+          "labeled_entities": [
+            {
+              "end": 6,
+              "ent": "Romelu",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "predicted_label": "Non-hallucinated",
+              "start": 0,
+              "type": "PERSON"
+            },
+            {
+              "end": 13,
+              "ent": "Lukaku",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "predicted_label": "Non-hallucinated",
+              "start": 7,
+              "type": "PERSON"
+            },
+            {
+              "end": 47,
+              "ent": "Belgium",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "predicted_label": "Non-hallucinated",
+              "start": 40,
+              "type": "GPE"
+            },
+            {
+              "end": 79,
+              "ent": "Norway",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "predicted_label": "Non-hallucinated",
+              "start": 73,
+              "type": "GPE"
+            },
+            {
+              "end": 124,
+              "ent": "Euro 2016",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "predicted_label": "Non-hallucinated",
+              "start": 115,
+              "type": "LAW"
+            }
+          ],
+          "summary": "Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final warm-up game before Euro 2016."
+        },
+        "37066389": {
+          "banned_phrases": [],
+          "generation_metadata": {
+            "dropped_seqs": [],
+            "n_words_checked": 105,
+            "score": -1.780522346496582
+          },
+          "labeled_entities": [
+            {
+              "end": 10,
+              "ent": "Uzbekistan",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "predicted_label": "Factual Hallucination",
+              "start": 0,
+              "type": "GPE"
+            },
+            {
+              "end": 24,
+              "ent": "Shakhobidin",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "predicted_label": "Factual Hallucination",
+              "start": 13,
+              "type": "PERSON"
+            },
+            {
+              "end": 33,
+              "ent": "Dusmatov",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "predicted_label": "Non-hallucinated",
+              "start": 25,
+              "type": "PERSON"
+            },
+            {
+              "end": 107,
+              "ent": "Colombia",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "predicted_label": "Non-hallucinated",
+              "start": 99,
+              "type": "GPE"
+            },
+            {
+              "end": 114,
+              "ent": "Ivan",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "predicted_label": "Non-factual Hallucination",
+              "start": 110,
+              "type": "PERSON"
+            },
+            {
+              "end": 123,
+              "ent": "Martinez",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "predicted_label": "Non-hallucinated",
+              "start": 115,
+              "type": "PERSON"
+            }
+          ],
+          "summary": "Uzbekistan's Shakhobidin Dusmatov won Olympic gold in the men's flyweight boxing with victory over Colombia's Ivan Martinez."
+        },
+        "37615223": {
+          "banned_phrases": [],
+          "generation_metadata": {
+            "dropped_seqs": [],
+            "n_words_checked": 104,
+            "score": -1.3465012311935425
+          },
+          "labeled_entities": [
+            {
+              "end": 3,
+              "ent": "Sam",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "predicted_label": "Non-hallucinated",
+              "start": 0,
+              "type": "PERSON"
+            },
+            {
+              "end": 11,
+              "ent": "Baldock",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "predicted_label": "Non-hallucinated",
+              "start": 4,
+              "type": "PERSON"
+            },
+            {
+              "end": 24,
+              "ent": "first-half",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "predicted_label": "Factual Hallucination",
+              "start": 14,
+              "type": "DATE"
+            },
+            {
+              "end": 59,
+              "ent": "Brighton",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "predicted_label": "Non-hallucinated",
+              "start": 51,
+              "type": "GPE"
+            }
+          ],
+          "summary": "Sam Baldock's first-half header was enough to give Brighton victory over Wolves."
+        },
+        "39368095": {
+          "banned_phrases": [],
+          "generation_metadata": {
+            "dropped_seqs": [],
+            "n_words_checked": 94,
+            "score": -1.5793757438659668
+          },
+          "labeled_entities": [
+            {
+              "end": 28,
+              "ent": "Dundee",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "predicted_label": "Non-factual Hallucination",
+              "start": 22,
+              "type": "GPE"
+            }
+          ],
+          "summary": "Abertay University in Dundee has been named the best university in the world for its postgraduate courses in computer games development."
+        }
+      }
+    },
+    "1": {
+      "stats": {
+        "entity": {
+          "label": {
+            "Factual Hallucination": 7,
+            "Intrinsic Hallucination": 0,
+            "Non-factual Hallucination": 1,
             "Non-hallucinated": 17,
             "Unknown": 0
           },
@@ -53,10 +477,10 @@
             "GPE": {
               "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 1,
+              "Non-factual Hallucination": 0,
               "Non-hallucinated": 6,
               "Unknown": 0,
-              "total": 10
+              "total": 9
             },
             "LAW": {
               "Factual Hallucination": 0,
@@ -75,9 +499,9 @@
               "total": 2
             },
             "PERSON": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 2,
+              "Non-factual Hallucination": 1,
               "Non-hallucinated": 7,
               "Unknown": 0,
               "total": 9
@@ -85,123 +509,53 @@
           }
         },
         "summary": {
-          "completed": 8,
-          "factual": 8,
+          "completed": 9,
+          "factual": 9,
           "failed": 0,
-          "non_factual": 2,
+          "non_factual": 1,
           "total": 10,
           "unknown": 0
         }
       },
       "summaries": {
         "17996567": {
-          "banned_phrases": [],
+          "banned_phrases": [
+            "Hampshire"
+          ],
           "generation_metadata": {
-            "dropped_seqs": [],
+            "dropped_seqs": [
+              "<pad> Plans to cut school bus subsidies in Hampshire",
+              "<pad> Plans to cut school transport subsidies in Hampshire"
+            ],
             "n_words_checked": 68,
-            "score": -2.020644187927246
+            "score": -1.9710404872894287
           },
           "labeled_entities": [
             {
-              "end": 46,
-              "ent": "Hampshire",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 37,
-              "type": "GPE"
-            },
-            {
-              "end": 86,
+              "end": 81,
               "ent": "the county council",
               "in_source": false,
               "label": "Factual Hallucination",
-              "start": 68,
+              "predicted_label": "Factual Hallucination",
+              "start": 63,
               "type": "ORG"
             }
           ],
-          "summary": "Plans to cut school bus subsidies in Hampshire have been shelved by the county council."
-        },
-        "24403775": {
-          "banned_phrases": [],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 103,
-            "score": -2.1893985271453857
-          },
-          "labeled_entities": [
-            {
-              "end": 111,
-              "ent": "Stonehenge",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 101,
-              "type": "FAC"
-            }
-          ],
-          "summary": "Villagers are calling for action to tackle \"nightmare\" traffic caused by the dualling of the A303 at Stonehenge."
-        },
-        "32112735": {
-          "banned_phrases": [],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 61,
-            "score": -1.793282389640808
-          },
-          "labeled_entities": [
-            {
-              "end": 3,
-              "ent": "One",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 0,
-              "type": "CARDINAL"
-            },
-            {
-              "end": 55,
-              "ent": "four",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 51,
-              "type": "CARDINAL"
-            }
-          ],
-          "summary": "One Direction have told fans they'll continue as a four-piece."
-        },
-        "34361828": {
-          "banned_phrases": [],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 103,
-            "score": -2.6305298805236816
-          },
-          "labeled_entities": [
-            {
-              "end": 98,
-              "ent": "Gower",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 93,
-              "type": "GPE"
-            }
-          ],
-          "summary": "A search is under way for the remains of a medieval village which was destroyed by storms in Gower."
-        },
-        "36203675": {
-          "banned_phrases": [],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 51,
-            "score": -2.248680353164673
-          },
-          "labeled_entities": [],
-          "summary": "A new mobile game is being used to help dementia research."
+          "summary": "Plans to cut school bus subsidies in Kent have been shelved by the county council."
         },
         "36396523": {
-          "banned_phrases": [],
+          "banned_phrases": [
+            "the Copa America",
+            "the United States"
+          ],
           "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 78,
-            "score": -1.2077487707138062
+            "dropped_seqs": [
+              "<pad> Kaka has been added to Brazil's squad for the Copa America",
+              "<pad> Kaka has been called up to the Brazil squad for the Copa America",
+              "<pad> Kaka has been called up to Brazil's squad for the Copa America"
+            ],
+            "n_words_checked": 94,
+            "score": -1.3225460052490234
           },
           "labeled_entities": [
             {
@@ -209,6 +563,7 @@
               "ent": "Kaka",
               "in_source": true,
               "label": "Non-hallucinated",
+              "predicted_label": "Non-hallucinated",
               "start": 0,
               "type": "PERSON"
             },
@@ -217,85 +572,46 @@
               "ent": "Brazil",
               "in_source": true,
               "label": "Non-hallucinated",
+              "predicted_label": "Non-hallucinated",
               "start": 23,
               "type": "GPE"
             },
             {
-              "end": 58,
-              "ent": "the Copa America",
+              "end": 64,
+              "ent": "the Confederations Cup",
               "in_source": false,
-              "label": "Factual Hallucination",
+              "label": "Unknown",
+              "predicted_label": "Factual Hallucination",
               "start": 42,
               "type": "ORG"
             },
             {
-              "end": 79,
-              "ent": "the United States",
+              "end": 74,
+              "ent": "Russia",
               "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 62,
+              "label": "Unknown",
+              "predicted_label": "Factual Hallucination",
+              "start": 68,
               "type": "GPE"
             }
           ],
-          "summary": "Kaka has been added to Brazil's squad for the Copa America in the United States."
-        },
-        "36456002": {
-          "banned_phrases": [],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 92,
-            "score": -0.9375077486038208
-          },
-          "labeled_entities": [
-            {
-              "end": 6,
-              "ent": "Romelu",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 0,
-              "type": "PERSON"
-            },
-            {
-              "end": 13,
-              "ent": "Lukaku",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 7,
-              "type": "PERSON"
-            },
-            {
-              "end": 47,
-              "ent": "Belgium",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 40,
-              "type": "GPE"
-            },
-            {
-              "end": 79,
-              "ent": "Norway",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 73,
-              "type": "GPE"
-            },
-            {
-              "end": 124,
-              "ent": "Euro 2016",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 115,
-              "type": "LAW"
-            }
-          ],
-          "summary": "Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final warm-up game before Euro 2016."
+          "summary": "Kaka has been added to Brazil's squad for the Confederations Cup in Russia."
         },
         "37066389": {
-          "banned_phrases": [],
+          "banned_phrases": [
+            "Ivan"
+          ],
           "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 105,
-            "score": -1.780522346496582
+            "dropped_seqs": [
+              "<pad> Uzbekistan's Islam Dusmatov beat Colombia's Ivan",
+              "<pad> Uzbekistan's Shakhobidin Dusmatov beat Colombia's Ivan",
+              "<pad> Uzbekistan's Islam Dusmatov won Olympic gold in the men's light-flyweight boxing with victory over Colombia's Ivan",
+              "<pad> Uzbekistan's Shakhobidin Dusmatov won Olympic gold in the men's flyweight boxing with victory over Colombia's Ivan",
+              "<pad> Uzbekistan's Shakhobidin Dusmatov won Olympic gold in the men's light-flyweight boxing with victory over Colombia's Ivan",
+              "<pad> Uzbekistan's Shakhobidin Dusmatov won Olympic gold in the men's light-heavyweight boxing with victory over Colombia's Ivan"
+            ],
+            "n_words_checked": 109,
+            "score": -1.9921514987945557
           },
           "labeled_entities": [
             {
@@ -303,6 +619,7 @@
               "ent": "Uzbekistan",
               "in_source": false,
               "label": "Factual Hallucination",
+              "predicted_label": "Factual Hallucination",
               "start": 0,
               "type": "GPE"
             },
@@ -311,6 +628,7 @@
               "ent": "Shakhobidin",
               "in_source": false,
               "label": "Non-factual Hallucination",
+              "predicted_label": "Factual Hallucination",
               "start": 13,
               "type": "PERSON"
             },
@@ -319,109 +637,77 @@
               "ent": "Dusmatov",
               "in_source": true,
               "label": "Non-hallucinated",
+              "predicted_label": "Non-hallucinated",
               "start": 25,
               "type": "PERSON"
             },
             {
-              "end": 107,
+              "end": 113,
               "ent": "Colombia",
               "in_source": true,
               "label": "Non-hallucinated",
-              "start": 99,
+              "predicted_label": "Non-hallucinated",
+              "start": 105,
               "type": "GPE"
             },
             {
-              "end": 114,
-              "ent": "Ivan",
+              "end": 120,
+              "ent": "Jose",
               "in_source": false,
               "label": "Non-factual Hallucination",
-              "start": 110,
+              "predicted_label": "Non-factual Hallucination",
+              "start": 116,
               "type": "PERSON"
             },
             {
-              "end": 123,
+              "end": 129,
               "ent": "Martinez",
               "in_source": true,
               "label": "Non-hallucinated",
-              "start": 115,
+              "predicted_label": "Non-hallucinated",
+              "start": 121,
               "type": "PERSON"
             }
           ],
-          "summary": "Uzbekistan's Shakhobidin Dusmatov won Olympic gold in the men's flyweight boxing with victory over Colombia's Ivan Martinez."
-        },
-        "37615223": {
-          "banned_phrases": [],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 104,
-            "score": -1.3465012311935425
-          },
-          "labeled_entities": [
-            {
-              "end": 3,
-              "ent": "Sam",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 0,
-              "type": "PERSON"
-            },
-            {
-              "end": 11,
-              "ent": "Baldock",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 4,
-              "type": "PERSON"
-            },
-            {
-              "end": 24,
-              "ent": "first-half",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 14,
-              "type": "DATE"
-            },
-            {
-              "end": 59,
-              "ent": "Brighton",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 51,
-              "type": "GPE"
-            }
-          ],
-          "summary": "Sam Baldock's first-half header was enough to give Brighton victory over Wolves."
+          "summary": "Uzbekistan's Shakhobidin Dusmatov won Olympic gold in the men's light-flyweight boxing with victory over Colombia's Jose Martinez."
         },
         "39368095": {
-          "banned_phrases": [],
+          "banned_phrases": [
+            "Dundee"
+          ],
           "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 94,
-            "score": -1.5793757438659668
+            "dropped_seqs": [
+              "<pad> Dundee",
+              "<pad> Abertay University in Dundee",
+              "<pad> The University of Abertay in Dundee"
+            ],
+            "n_words_checked": 85,
+            "score": -1.5729546546936035
           },
           "labeled_entities": [
             {
-              "end": 28,
-              "ent": "Dundee",
+              "end": 65,
+              "ent": "Scotland",
               "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 22,
+              "label": "Unknown",
+              "predicted_label": "Factual Hallucination",
+              "start": 57,
               "type": "GPE"
             }
           ],
-          "summary": "Abertay University in Dundee has been named the best university in the world for its postgraduate courses in computer games development."
+          "summary": "Abertay University has been named the best university in Scotland for its postgraduate courses in computer games development."
         }
       }
     },
-    "1": {
+    "2": {
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 6,
+            "Factual Hallucination": 5,
             "Intrinsic Hallucination": 0,
             "Non-factual Hallucination": 0,
-            "Non-hallucinated": 15,
-            "Unknown": 1
+            "Non-hallucinated": 14,
+            "Unknown": 0
           },
           "type": {
             "CARDINAL": {
@@ -449,12 +735,12 @@
               "total": 1
             },
             "GPE": {
-              "Factual Hallucination": 3,
+              "Factual Hallucination": 2,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
-              "Non-hallucinated": 6,
-              "Unknown": 1,
-              "total": 10
+              "Non-hallucinated": 5,
+              "Unknown": 0,
+              "total": 7
             },
             "LAW": {
               "Factual Hallucination": 0,
@@ -485,85 +771,39 @@
         "summary": {
           "completed": 10,
           "factual": 9,
-          "failed": 0,
+          "failed": 1,
           "non_factual": 0,
           "total": 10,
-          "unknown": 1
+          "unknown": 0
         }
       },
       "summaries": {
-        "17996567": {
-          "banned_phrases": [
-            "Hampshire"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "<pad> Plans to cut school bus subsidies in Hampshire",
-              "<pad> Plans to cut school transport subsidies in Hampshire"
-            ],
-            "n_words_checked": 68,
-            "score": -1.9710404872894287
-          },
-          "labeled_entities": [
-            {
-              "end": 81,
-              "ent": "the county council",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 63,
-              "type": "ORG"
-            }
-          ],
-          "summary": "Plans to cut school bus subsidies in Kent have been shelved by the county council."
-        },
         "37066389": {
           "banned_phrases": [
             "Ivan",
-            "Shakhobidin"
+            "Jose"
           ],
           "generation_metadata": {
             "dropped_seqs": [
-              "<pad> Uzbekistan's Shakhobidin",
               "<pad> Uzbekistan's Islam Dusmatov beat Colombia's Ivan",
-              "<pad> Uzbekistan's Fedor Dusmatov beat Colombia's Ivan",
-              "<pad> Uzbekistan's Islam Dusmatov won Olympic gold in the men's flyweight boxing with victory over Colombia's Ivan",
-              "<pad> Uzbekistan's Fedor Dusmatov won Olympic gold in the men's flyweight boxing with victory over Colombia's Ivan",
+              "<pad> Uzbekistan's Shakhobidin Dusmatov beat Colombia's Ivan",
+              "<pad> Uzbekistan's Shakhobidin Dusmatov beat Colombia's Jose",
               "<pad> Uzbekistan's Islam Dusmatov won Olympic gold in the men's light-flyweight boxing with victory over Colombia's Ivan",
-              "<pad> Uzbekistan's Fedor Dusmatov won Olympic gold in the men's light-flyweight boxing with victory over Colombia's Ivan"
+              "<pad> Uzbekistan's Shakhobidin Dusmatov won Olympic gold in the men's flyweight boxing with victory over Colombia's Ivan",
+              "<pad> Uzbekistan's Shakhobidin Dusmatov won Olympic gold in the men's flyweight boxing with victory over Colombia's Jose",
+              "<pad> Uzbekistan's Shakhobidin Dusmatov won Olympic gold in the men's light-flyweight boxing with victory over Colombia's Ivan",
+              "<pad> Uzbekistan's Shakhobidin Dusmatov won Olympic gold in the men's light-heavyweight boxing with victory over Colombia's Ivan",
+              "<pad> Uzbekistan's Shakhobidin Dusmatov won Olympic gold in the men's light-flyweight boxing with victory over Colombia's Jose",
+              "<pad> Uzbekistan's Shakhobidin Dusmatov won Olympic gold in the men's light-heavyweight boxing with victory over Colombia's Jose"
             ],
-            "n_words_checked": 99,
-            "score": -1.9592467546463013
+            "n_words_checked": 91,
+            "score": -Infinity
           },
-          "labeled_entities": [
-            {
-              "end": 10,
-              "ent": "Uzbekistan",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 0,
-              "type": "GPE"
-            },
-            {
-              "end": 107,
-              "ent": "Colombia",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 99,
-              "type": "GPE"
-            },
-            {
-              "end": 128,
-              "ent": "Francisco Martinez",
-              "in_source": false,
-              "label": "Unknown",
-              "start": 110,
-              "type": "GPE"
-            }
-          ],
-          "summary": "Uzbekistan's Islam Dusmatov won Olympic gold in the men's light-flyweight boxing with victory over Colombia's Francisco Martinez."
+          "labeled_entities": [],
+          "summary": "<Failed generation: blocked all beams>"
         }
       }
     }
   },
-  "timestamp": 1654806616.757077
+  "timestamp": 1654806656.9391057
 }

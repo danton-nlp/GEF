@@ -1,8 +1,8 @@
 {
   "args": {
     "annotate": false,
-    "batch_size": 2,
-    "classifier_batch_size": 4,
+    "batch_size": 10,
+    "classifier_batch_size": 16,
     "data_subset": "debug",
     "entity_label_match": "contained",
     "max_iterations": 5,
@@ -99,7 +99,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 81,
-            "score": -0.5601837038993835
+            "score": -0.5601843595504761
           },
           "labeled_entities": [
             {
@@ -117,8 +117,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 80,
-            "score": -0.559841513633728
+            "n_words_checked": 84,
+            "score": -0.5598479509353638
           },
           "labeled_entities": [
             {
@@ -145,7 +145,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 65,
-            "score": -0.48298680782318115
+            "score": -0.4829917550086975
           },
           "labeled_entities": [
             {
@@ -188,7 +188,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 95,
-            "score": -0.692768931388855
+            "score": -0.6927700638771057
           },
           "labeled_entities": [
             {
@@ -215,7 +215,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 84,
-            "score": -0.8142673969268799
+            "score": -0.8142690658569336
           },
           "labeled_entities": [
             {
@@ -234,7 +234,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 73,
-            "score": -0.45060160756111145
+            "score": -0.4506027400493622
           },
           "labeled_entities": [
             {
@@ -284,8 +284,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 86,
-            "score": -0.36631321907043457
+            "n_words_checked": 89,
+            "score": -0.3663136661052704
           },
           "labeled_entities": [
             {
@@ -335,8 +335,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 81,
-            "score": -0.6497074365615845
+            "n_words_checked": 83,
+            "score": -0.6497119665145874
           },
           "labeled_entities": [
             {
@@ -386,8 +386,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 82,
-            "score": -0.5099020004272461
+            "n_words_checked": 86,
+            "score": -0.509904146194458
           },
           "labeled_entities": [
             {
@@ -438,7 +438,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 87,
-            "score": -0.5155394673347473
+            "score": -0.5155402421951294
           },
           "labeled_entities": [
             {
@@ -535,7 +535,7 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
             "n_words_checked": 69,
-            "score": -0.6140730381011963
+            "score": -0.6140735745429993
           },
           "labeled_entities": [
             {
@@ -558,7 +558,7 @@
               "</s>Villagers in Shropshire"
             ],
             "n_words_checked": 90,
-            "score": -0.5977228879928589
+            "score": -0.5977275967597961
           },
           "labeled_entities": [
             {
@@ -590,7 +590,7 @@
               "</s>Liam Payne and Niall"
             ],
             "n_words_checked": 65,
-            "score": -0.5388206243515015
+            "score": -0.5388251543045044
           },
           "labeled_entities": [
             {
@@ -639,8 +639,8 @@
               "</s>A search is under way for the remains of a Gwynedd village which was wiped out by storms in the 1970s",
               "</s>A search is under way for the remains of a Gwynedd village which was wiped out by Storm Desmond in the 1970s"
             ],
-            "n_words_checked": 86,
-            "score": -0.7429369688034058
+            "n_words_checked": 88,
+            "score": -0.7429376840591431
           },
           "labeled_entities": [
             {
@@ -672,7 +672,7 @@
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol"
             ],
             "n_words_checked": 110,
-            "score": -0.8211338520050049
+            "score": -0.8211351037025452
           },
           "labeled_entities": [
             {
@@ -700,7 +700,7 @@
               "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup"
             ],
             "n_words_checked": 64,
-            "score": -0.5828989744186401
+            "score": -0.5829026103019714
           },
           "labeled_entities": [
             {
@@ -748,8 +748,8 @@
               "</s>Eden Hazard scored twice as Belgium came from behind to beat Norway 3-2 in their final World Cup",
               "</s>Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final World Cup"
             ],
-            "n_words_checked": 94,
-            "score": -0.37551578879356384
+            "n_words_checked": 96,
+            "score": -0.37551549077033997
           },
           "labeled_entities": [
             {
@@ -810,7 +810,7 @@
               "</s>Colombia's Carlos Martinez has been knocked out of the Olympic men's flyweight final by Kazakhstan"
             ],
             "n_words_checked": 85,
-            "score": -0.6965238451957703
+            "score": -0.696525514125824
           },
           "labeled_entities": [
             {
@@ -857,8 +857,8 @@
               "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves at the Amex Stadium",
               "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium"
             ],
-            "n_words_checked": 83,
-            "score": -0.5327222347259521
+            "n_words_checked": 85,
+            "score": -0.5327231287956238
           },
           "labeled_entities": [
             {
@@ -981,7 +981,7 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
             "n_words_checked": 73,
-            "score": -0.6207175850868225
+            "score": -0.6207175254821777
           },
           "labeled_entities": [
             {
@@ -1006,7 +1006,7 @@
               "</s>Villagers in Shrewsbury"
             ],
             "n_words_checked": 79,
-            "score": -0.7396910786628723
+            "score": -0.7396929264068604
           },
           "labeled_entities": [
             {
@@ -1034,7 +1034,7 @@
               "</s>Liam Payne and Niall"
             ],
             "n_words_checked": 42,
-            "score": -0.7054998278617859
+            "score": -0.7054997086524963
           },
           "labeled_entities": [
             {
@@ -1065,7 +1065,7 @@
               "</s>A search is under way to find the remains of a Gower village that was destroyed by the sea in the 1950s"
             ],
             "n_words_checked": 85,
-            "score": -1.00760817527771
+            "score": -1.0076082944869995
           },
           "labeled_entities": [
             {
@@ -1100,7 +1100,7 @@
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford"
             ],
             "n_words_checked": 110,
-            "score": -0.8350398540496826
+            "score": -0.8350409865379333
           },
           "labeled_entities": [
             {
@@ -1131,7 +1131,7 @@
               "</s>Kaka has been called up to the Brazil squad for the Copa America in Chile next month"
             ],
             "n_words_checked": 93,
-            "score": -0.6230838298797607
+            "score": -0.6230868697166443
           },
           "labeled_entities": [
             {
@@ -1195,7 +1195,7 @@
               "</s>Colombia's Gabriel Martinez has been knocked out of the Olympic men's flyweight final by Kazakhstan"
             ],
             "n_words_checked": 86,
-            "score": -0.7325229048728943
+            "score": -0.7325243949890137
           },
           "labeled_entities": [
             {
@@ -1244,8 +1244,8 @@
               "</s>Sam Baldock scored the only goal of the game as Brighton beat Wolves to move up to third",
               "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium"
             ],
-            "n_words_checked": 81,
-            "score": -0.53695148229599
+            "n_words_checked": 84,
+            "score": -0.536952555179596
           },
           "labeled_entities": [
             {
@@ -1362,7 +1362,7 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
             "n_words_checked": 76,
-            "score": -0.8472769260406494
+            "score": -0.8472777009010315
           },
           "labeled_entities": [
             {
@@ -1394,7 +1394,7 @@
               "</s>A search is under way to find the remains of a Gower village that was destroyed by the sea in the 1950s"
             ],
             "n_words_checked": 85,
-            "score": -1.00760817527771
+            "score": -1.0076082944869995
           },
           "labeled_entities": [
             {
@@ -1431,8 +1431,8 @@
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford",
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge"
             ],
-            "n_words_checked": 104,
-            "score": -0.8421373963356018
+            "n_words_checked": 107,
+            "score": -0.8421392440795898
           },
           "labeled_entities": [
             {
@@ -1465,7 +1465,7 @@
               "</s>Kaka has been called up to the Brazil squad for the Copa America in Brazil next month"
             ],
             "n_words_checked": 93,
-            "score": -0.6635534763336182
+            "score": -0.6635569334030151
           },
           "labeled_entities": [
             {
@@ -1533,7 +1533,7 @@
               "</s>Colombia's Jose Luis Martinez has been knocked out of the Olympic men's flyweight final by Kazakhstan"
             ],
             "n_words_checked": 92,
-            "score": -0.7803317904472351
+            "score": -0.7803342938423157
           },
           "labeled_entities": [
             {
@@ -1596,7 +1596,7 @@
               "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex stadium and move the Seagulls up to fourth"
             ],
             "n_words_checked": 114,
-            "score": -0.7147307991981506
+            "score": -0.7147328853607178
           },
           "labeled_entities": [
             {
@@ -1739,7 +1739,7 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucesterse"
             ],
             "n_words_checked": 79,
-            "score": -0.8587636351585388
+            "score": -0.858764111995697
           },
           "labeled_entities": [
             {
@@ -1809,9 +1809,16 @@
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford",
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Cambridge",
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Manchester",
-              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol<s>"
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol<s>",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol<unk>",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol<s><s>",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol<s><unk>",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol<s><s><s>",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol<s><s><unk>",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol<s><s><s><s>",
+              "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol<s><s><s><unk>"
             ],
-            "n_words_checked": 89,
+            "n_words_checked": 88,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -1832,9 +1839,12 @@
               "</s>Colombia's Omar",
               "</s>Colombia's Carlos",
               "</s>Colombia's Jose",
-              "</s>Colombia's Gabriel"
+              "</s>Colombia's Gabriel",
+              "</s>Colombia's Omar<unk>",
+              "</s>Colombia's Omar<s><unk>",
+              "</s>Colombia's Omar<s><s><s><unk>"
             ],
-            "n_words_checked": 27,
+            "n_words_checked": 19,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -1856,8 +1866,8 @@
               "</s>Sam Baldock's first-half header was enough for Brighton to beat Wolves and move up to third",
               "</s>Sam Baldock's first-half header was enough for Brighton to beat Wolves and move up to fourth"
             ],
-            "n_words_checked": 86,
-            "score": -0.595047116279602
+            "n_words_checked": 89,
+            "score": -0.5950486660003662
           },
           "labeled_entities": [
             {
@@ -1906,5 +1916,5 @@
       }
     }
   },
-  "timestamp": 1654792484.066489
+  "timestamp": 1654806343.2844522
 }
