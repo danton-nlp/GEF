@@ -1,19 +1,31 @@
 import streamlit as st
 import json
-import os
 import pandas as pd
 
 MODELS = []
 
 
+def load_summaries_df(path: str):
+    with open(path, "r") as f:
+        json_sums = json.load(f)
+        df = pd.DataFrame(
+            json_sums.values(),
+            index=list(json_sums.keys())
+        )
+        return df
+
+
 def render_compare_results():
     col1, col2 = st.columns(2)
-    data_subset = col1.selectbox("Data subset", options=[
-        "bart-test-extrinsic",
-        "pegasus-test-extrinsic",
-        "xent-test",
-        "xsum-test"
-    ])
+    data_subset = col1.selectbox(
+        "Data subset",
+        options=[
+            "bart-test-extrinsic",
+            "pegasus-test-extrinsic",
+            "xent-test",
+            "xsum-test",
+        ],
+    )
     test_size = col2.number_input("Test size", value=100)
     filename = f"results/evaluation/{data_subset}-{test_size}"
 
@@ -22,7 +34,7 @@ def render_compare_results():
         .sort_values("model", ascending=True)
         .set_index("model")
     )
-    df_sums = pd.read_json(f"{filename}-summaries.json")
+    df_sums = load_summaries_df(f"{filename}-summaries.json")
     st.title("Compare Results")
 
     st.subheader("Human annotation")
@@ -41,7 +53,4 @@ def render_compare_results():
         & df_sums[f"{factual_model}_is_factual"]
     ]
 
-    st.table(df_inspect[[
-        f"{non_factual_model}_summary",
-        f"{factual_model}_summary"
-    ]])
+    st.table(df_inspect[[f"{non_factual_model}_summary", f"{factual_model}_summary"]])

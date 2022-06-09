@@ -19,59 +19,59 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 3,
+            "Factual Hallucination": 25,
             "Intrinsic Hallucination": 0,
-            "Non-factual Hallucination": 2,
+            "Non-factual Hallucination": 19,
             "Non-hallucinated": 188,
-            "Unknown": 162
+            "Unknown": 123
           },
           "type": {
             "CARDINAL": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 0,
+              "Non-factual Hallucination": 1,
               "Non-hallucinated": 5,
-              "Unknown": 15,
+              "Unknown": 13,
               "total": 20
             },
             "DATE": {
               "Factual Hallucination": 2,
               "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 0,
+              "Non-factual Hallucination": 6,
               "Non-hallucinated": 4,
-              "Unknown": 35,
+              "Unknown": 29,
               "total": 41
             },
             "EVENT": {
               "Factual Hallucination": 0,
               "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 0,
+              "Non-factual Hallucination": 1,
               "Non-hallucinated": 3,
-              "Unknown": 5,
+              "Unknown": 4,
               "total": 8
             },
             "FAC": {
-              "Factual Hallucination": 0,
-              "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 0,
-              "Non-hallucinated": 3,
-              "Unknown": 4,
-              "total": 7
-            },
-            "GPE": {
               "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
+              "Non-hallucinated": 3,
+              "Unknown": 3,
+              "total": 7
+            },
+            "GPE": {
+              "Factual Hallucination": 7,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 1,
               "Non-hallucinated": 52,
-              "Unknown": 30,
+              "Unknown": 23,
               "total": 83
             },
             "LOC": {
               "Factual Hallucination": 0,
               "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 0,
+              "Non-factual Hallucination": 1,
               "Non-hallucinated": 0,
-              "Unknown": 5,
+              "Unknown": 4,
               "total": 5
             },
             "MONEY": {
@@ -85,25 +85,25 @@
             "NORP": {
               "Factual Hallucination": 0,
               "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 0,
+              "Non-factual Hallucination": 3,
               "Non-hallucinated": 10,
-              "Unknown": 7,
+              "Unknown": 4,
               "total": 17
             },
             "ORDINAL": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 0,
+              "Non-factual Hallucination": 1,
               "Non-hallucinated": 4,
-              "Unknown": 4,
+              "Unknown": 2,
               "total": 8
             },
             "ORG": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 4,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 22,
-              "Unknown": 21,
+              "Unknown": 17,
               "total": 43
             },
             "PERCENT": {
@@ -115,11 +115,11 @@
               "total": 1
             },
             "PERSON": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 8,
               "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 2,
+              "Non-factual Hallucination": 5,
               "Non-hallucinated": 81,
-              "Unknown": 34,
+              "Unknown": 23,
               "total": 117
             },
             "PRODUCT": {
@@ -131,22 +131,22 @@
               "total": 2
             },
             "WORK_OF_ART": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 0,
-              "Unknown": 1,
+              "Unknown": 0,
               "total": 1
             }
           }
         },
         "summary": {
-          "completed": 99,
-          "factual": 3,
+          "completed": 85,
+          "factual": 14,
           "failed": 0,
-          "non_factual": 1,
+          "non_factual": 15,
           "total": 100,
-          "unknown": 96
+          "unknown": 71
         }
       },
       "summaries": {
@@ -256,7 +256,7 @@
               "end": 7,
               "ent": "Stephen",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 0,
               "type": "PERSON"
             },
@@ -280,7 +280,7 @@
               "end": 71,
               "ent": "first",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 66,
               "type": "ORDINAL"
             }
@@ -361,7 +361,7 @@
               "end": 15,
               "ent": "Manchester City",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 0,
               "type": "GPE"
             },
@@ -369,7 +369,7 @@
               "end": 31,
               "ent": "Roberto",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 24,
               "type": "PERSON"
             },
@@ -648,7 +648,7 @@
               "end": 112,
               "ent": "London",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 106,
               "type": "GPE"
             }
@@ -742,7 +742,7 @@
               "end": 20,
               "ent": "Helen",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 15,
               "type": "PERSON"
             },
@@ -774,7 +774,7 @@
               "end": 102,
               "ent": "weekend",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 95,
               "type": "DATE"
             },
@@ -825,7 +825,7 @@
               "end": 36,
               "ent": "Steve",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 31,
               "type": "PERSON"
             },
@@ -938,7 +938,7 @@
               "end": 96,
               "ent": "Silicon Valley",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 82,
               "type": "LOC"
             }
@@ -992,7 +992,7 @@
               "end": 8,
               "ent": "first",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 3,
               "type": "ORDINAL"
             }
@@ -1054,7 +1054,7 @@
               "end": 8,
               "ent": "Hundreds",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 0,
               "type": "CARDINAL"
             },
@@ -1070,7 +1070,7 @@
               "end": 85,
               "ent": "500",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 82,
               "type": "CARDINAL"
             }
@@ -1089,7 +1089,7 @@
               "end": 13,
               "ent": "A Nobel Prize",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 0,
               "type": "WORK_OF_ART"
             }
@@ -1170,7 +1170,7 @@
               "end": 13,
               "ent": "19-year-old",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 2,
               "type": "DATE"
             },
@@ -1248,7 +1248,7 @@
               "end": 26,
               "ent": "John",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 22,
               "type": "PERSON"
             },
@@ -1356,7 +1356,7 @@
               "end": 13,
               "ent": "70-year-old",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 2,
               "type": "DATE"
             }
@@ -1429,7 +1429,7 @@
               "end": 15,
               "ent": "Scotland",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 7,
               "type": "GPE"
             },
@@ -1437,7 +1437,7 @@
               "end": 69,
               "ent": "six months",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 59,
               "type": "DATE"
             }
@@ -1784,7 +1784,7 @@
               "end": 6,
               "ent": "Audley",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 0,
               "type": "PERSON"
             },
@@ -1867,7 +1867,7 @@
               "end": 41,
               "ent": "Rodrigo",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 34,
               "type": "PERSON"
             },
@@ -1883,7 +1883,7 @@
               "end": 139,
               "ent": "Catholic",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 131,
               "type": "NORP"
             }
@@ -2426,7 +2426,7 @@
               "end": 27,
               "ent": "Aitor",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 22,
               "type": "PERSON"
             },
@@ -2453,7 +2453,7 @@
               "end": 82,
               "ent": "Norfolk",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 75,
               "type": "GPE"
             }
@@ -2690,7 +2690,7 @@
               "end": 75,
               "ent": "Scottish",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 67,
               "type": "NORP"
             }
@@ -2822,7 +2822,7 @@
               "end": 14,
               "ent": "New Year's Eve",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 0,
               "type": "EVENT"
             },
@@ -2830,7 +2830,7 @@
               "end": 42,
               "ent": "Chinese",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 35,
               "type": "NORP"
             },
@@ -2838,7 +2838,7 @@
               "end": 59,
               "ent": "Beijing",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 52,
               "type": "GPE"
             }
@@ -3096,7 +3096,7 @@
               "end": 37,
               "ent": "three years",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 26,
               "type": "DATE"
             }
@@ -3169,7 +3169,7 @@
               "end": 15,
               "ent": "Carrick Rangers",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 0,
               "type": "ORG"
             },
@@ -3185,7 +3185,7 @@
               "end": 57,
               "ent": "Jamie",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 52,
               "type": "PERSON"
             },
@@ -3201,7 +3201,7 @@
               "end": 106,
               "ent": "the end of the season",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 85,
               "type": "DATE"
             }
@@ -3271,7 +3271,7 @@
               "end": 17,
               "ent": "Manchester United",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 0,
               "type": "GPE"
             },
@@ -3279,7 +3279,7 @@
               "end": 30,
               "ent": "Jose",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 26,
               "type": "PERSON"
             },
@@ -3306,7 +3306,7 @@
               "end": 14,
               "ent": "The Met Office",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 0,
               "type": "ORG"
             },
@@ -3314,7 +3314,7 @@
               "end": 64,
               "ent": "Wales",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 59,
               "type": "GPE"
             },
@@ -3637,7 +3637,7 @@
               "end": 17,
               "ent": "Newcastle Falcons",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 0,
               "type": "ORG"
             },
@@ -3653,7 +3653,7 @@
               "end": 60,
               "ent": "Toby Flood",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 50,
               "type": "ORG"
             },
@@ -3777,7 +3777,7 @@
               "end": 13,
               "ent": "Leyton Orient",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 0,
               "type": "FAC"
             },
@@ -3785,7 +3785,7 @@
               "end": 36,
               "ent": "Paul",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 32,
               "type": "PERSON"
             },
@@ -4096,60 +4096,60 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 3,
+            "Factual Hallucination": 25,
             "Intrinsic Hallucination": 0,
-            "Non-factual Hallucination": 1,
-            "Non-hallucinated": 188,
-            "Unknown": 162
+            "Non-factual Hallucination": 9,
+            "Non-hallucinated": 187,
+            "Unknown": 122
           },
           "type": {
             "CARDINAL": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 5,
-              "Unknown": 15,
-              "total": 20
+              "Unknown": 13,
+              "total": 19
             },
             "DATE": {
               "Factual Hallucination": 2,
               "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 0,
-              "Non-hallucinated": 4,
-              "Unknown": 35,
-              "total": 41
+              "Non-factual Hallucination": 3,
+              "Non-hallucinated": 5,
+              "Unknown": 28,
+              "total": 38
             },
             "EVENT": {
               "Factual Hallucination": 0,
               "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 0,
-              "Non-hallucinated": 3,
-              "Unknown": 5,
-              "total": 8
+              "Non-factual Hallucination": 1,
+              "Non-hallucinated": 2,
+              "Unknown": 4,
+              "total": 7
             },
             "FAC": {
-              "Factual Hallucination": 0,
-              "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 0,
-              "Non-hallucinated": 3,
-              "Unknown": 3,
-              "total": 6
-            },
-            "GPE": {
               "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
-              "Non-hallucinated": 52,
-              "Unknown": 30,
-              "total": 83
+              "Non-hallucinated": 3,
+              "Unknown": 2,
+              "total": 6
+            },
+            "GPE": {
+              "Factual Hallucination": 7,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 2,
+              "Non-hallucinated": 50,
+              "Unknown": 23,
+              "total": 82
             },
             "LOC": {
               "Factual Hallucination": 0,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 0,
-              "Unknown": 5,
-              "total": 5
+              "Unknown": 4,
+              "total": 4
             },
             "MONEY": {
               "Factual Hallucination": 0,
@@ -4164,23 +4164,23 @@
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 10,
-              "Unknown": 7,
-              "total": 17
+              "Unknown": 4,
+              "total": 14
             },
             "ORDINAL": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 4,
-              "Unknown": 4,
-              "total": 8
+              "Unknown": 2,
+              "total": 7
             },
             "ORG": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 4,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 22,
-              "Unknown": 21,
+              "Unknown": 17,
               "total": 43
             },
             "PERCENT": {
@@ -4192,11 +4192,11 @@
               "total": 1
             },
             "PERSON": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 8,
               "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 1,
-              "Non-hallucinated": 81,
-              "Unknown": 35,
+              "Non-factual Hallucination": 3,
+              "Non-hallucinated": 82,
+              "Unknown": 24,
               "total": 117
             },
             "PRODUCT": {
@@ -4208,25 +4208,518 @@
               "total": 2
             },
             "WORK_OF_ART": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 0,
-              "Unknown": 1,
+              "Unknown": 0,
               "total": 1
             }
           }
         },
         "summary": {
-          "completed": 99,
-          "factual": 3,
+          "completed": 94,
+          "factual": 23,
           "failed": 0,
-          "non_factual": 1,
+          "non_factual": 6,
           "total": 100,
-          "unknown": 96
+          "unknown": 71
         }
       },
       "summaries": {
+        "27422441": {
+          "banned_phrases": [
+            "weekend"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> World champion Helen Glover says she and new partner Polly Swann are \" clicking\" ahead of this weekend",
+              "<pad> World champion Helen Glover says she and new partner Polly Swann are \" clicking\" ahead of the World Cup in Amsterdam this weekend",
+              "<pad> World champion Helen Glover says she and new partner Polly Swann are \" clicking\" ahead of the World Cup regatta in Amsterdam this weekend",
+              "<pad> World champion Helen Glover says she is looking forward to the start of the new season with new partner Polly Swann in Amsterdam this weekend"
+            ],
+            "n_words_checked": 97,
+            "score": -2.2926766872406006
+          },
+          "labeled_entities": [
+            {
+              "end": 20,
+              "ent": "Helen",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 15,
+              "type": "PERSON"
+            },
+            {
+              "end": 27,
+              "ent": "Glover",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 21,
+              "type": "PERSON"
+            },
+            {
+              "end": 109,
+              "ent": "Polly",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 104,
+              "type": "PERSON"
+            },
+            {
+              "end": 115,
+              "ent": "Swann",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 110,
+              "type": "PERSON"
+            }
+          ],
+          "summary": "World champion Helen Glover says she is looking forward to the start of the new season with new partner Polly Swann."
+        },
+        "32201626": {
+          "banned_phrases": [
+            "Silicon Valley"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> County Longford, in the Republic of Ireland's midlands, was once dubbed Ireland's Silicon Valley"
+            ],
+            "n_words_checked": 124,
+            "score": -2.7217795848846436
+          },
+          "labeled_entities": [
+            {
+              "end": 45,
+              "ent": "the Republic of Ireland's",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 20,
+              "type": "GPE"
+            },
+            {
+              "end": 54,
+              "ent": "midlands",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 46,
+              "type": "GPE"
+            }
+          ],
+          "summary": "County Longford, in the Republic of Ireland's midlands, was once dubbed the \"land of enchantment\" because of its abundant natural beauty."
+        },
+        "32882502": {
+          "banned_phrases": [
+            "first"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> At first",
+              "<pad> The first"
+            ],
+            "n_words_checked": 67,
+            "score": -2.4263694286346436
+          },
+          "labeled_entities": [],
+          "summary": "The quiet of the morning had lulled us into a false sense of security."
+        },
+        "32974091": {
+          "banned_phrases": [
+            "Hundreds"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> Hundreds"
+            ],
+            "n_words_checked": 59,
+            "score": -1.5817424058914185
+          },
+          "labeled_entities": [
+            {
+              "end": 45,
+              "ent": "500",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 42,
+              "type": "CARDINAL"
+            }
+          ],
+          "summary": "A public inquiry has begun into plans for 500 new homes in Kent."
+        },
+        "34717572": {
+          "banned_phrases": [
+            "19-year-old"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> A 19-year-old"
+            ],
+            "n_words_checked": 80,
+            "score": -1.1617300510406494
+          },
+          "labeled_entities": [
+            {
+              "end": 13,
+              "ent": "20-year-old",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 2,
+              "type": "DATE"
+            },
+            {
+              "end": 30,
+              "ent": "Norwich",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 23,
+              "type": "GPE"
+            },
+            {
+              "end": 80,
+              "ent": "TalkTalk",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 72,
+              "type": "PRODUCT"
+            }
+          ],
+          "summary": "A 20-year-old man from Norwich has been arrested in connection with the TalkTalk hacking attack."
+        },
+        "34786804": {
+          "banned_phrases": [
+            "John"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> John",
+              "<pad> Former world champion John",
+              "<pad> Former BDO world champion John",
+              "<pad> Former world number one John"
+            ],
+            "n_words_checked": 83,
+            "score": -2.3363635540008545
+          },
+          "labeled_entities": [
+            {
+              "end": 27,
+              "ent": "Barry",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 22,
+              "type": "PERSON"
+            },
+            {
+              "end": 35,
+              "ent": "Fordham",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 28,
+              "type": "PERSON"
+            },
+            {
+              "end": 71,
+              "ent": "Lakeside",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 63,
+              "type": "GPE"
+            }
+          ],
+          "summary": "Former world champion Barry Fordham says he wants to return to Lakeside to play again."
+        },
+        "34985442": {
+          "banned_phrases": [
+            "70-year-old"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> A 70-year-old"
+            ],
+            "n_words_checked": 140,
+            "score": -2.563840389251709
+          },
+          "labeled_entities": [],
+          "summary": "A woman with terminal cancer who tried to kill herself because she did not want \"to live in a council flat, be poor or be ugly\" has won the right to refuse dialysis."
+        },
+        "35291436": {
+          "banned_phrases": [
+            "six months"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> One of Scotland's busiest railway stations is to close for six months",
+              "<pad> One of Scotland's busiest railway stations is to be closed for six months",
+              "<pad> One of Scotland's busiest railway stations is to close for more than six months",
+              "<pad> One of Scotland's busiest railway stations is to be closed for more than six months"
+            ],
+            "n_words_checked": 90,
+            "score": -2.085658073425293
+          },
+          "labeled_entities": [
+            {
+              "end": 3,
+              "ent": "One",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 0,
+              "type": "CARDINAL"
+            },
+            {
+              "end": 15,
+              "ent": "Scotland",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 7,
+              "type": "GPE"
+            },
+            {
+              "end": 76,
+              "ent": "more than a month",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 59,
+              "type": "DATE"
+            }
+          ],
+          "summary": "One of Scotland's busiest railway stations is to close for more than a month for major engineering work."
+        },
+        "36067011": {
+          "banned_phrases": [
+            "Catholic"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> Philippine presidential candidate Rodrigo Duterte has been criticised for a video in which he jokes about raping and murdering a Catholic",
+              "<pad> Philippine presidential candidate Rodrigo Duterte has been criticised for a video in which he jokes about the rape and murder of a Catholic",
+              "<pad> Philippine presidential candidate Rodrigo Duterte has been criticised for a video in which he refers to the rape and murder of a Catholic",
+              "<pad> Philippine presidential candidate Rodrigo Duterte has been accused of misogyny after a video emerged showing him mocking the rape and murder of a Catholic",
+              "<pad> Philippine presidential candidate Rodrigo Duterte has been criticised for a video in which he jokes about the rape and murder of a Roman Catholic",
+              "<pad> Philippine presidential candidate Rodrigo Duterte has been accused of misogyny after a video emerged showing him mocking the rape and murder of a Roman Catholic"
+            ],
+            "n_words_checked": 112,
+            "score": -1.8929688930511475
+          },
+          "labeled_entities": [
+            {
+              "end": 10,
+              "ent": "Philippine",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 0,
+              "type": "NORP"
+            },
+            {
+              "end": 41,
+              "ent": "Rodrigo",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 34,
+              "type": "PERSON"
+            },
+            {
+              "end": 49,
+              "ent": "Duterte",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 42,
+              "type": "PERSON"
+            }
+          ],
+          "summary": "Philippine presidential candidate Rodrigo Duterte has been accused of misogyny after a video emerged showing him mocking the rape and murder of a missionary."
+        },
+        "37631654": {
+          "banned_phrases": [
+            "Scottish"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> The Scottish",
+              "<pad> Plans for a new main stand at Tynecastle have been approved by the Scottish",
+              "<pad> Plans to build a new main stand at Tynecastle have been approved by the Scottish",
+              "<pad> Plans for a new main stand at Tynecastle stadium have been approved by the Scottish",
+              "<pad> Plans for a new main stand at Tynecastle have been given the go-ahead by the Scottish",
+              "<pad> Plans for a new main stand at Tynecastle have been given the go-ahead by councillors in the Scottish"
+            ],
+            "n_words_checked": 82,
+            "score": -1.5860686302185059
+          },
+          "labeled_entities": [],
+          "summary": "Plans for a new main stand at Tynecastle have been given the go-ahead by councillors."
+        },
+        "37819847": {
+          "banned_phrases": [
+            "Beijing",
+            "Chinese",
+            "New Year's Eve"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> New Year's Eve",
+              "<pad> New Year revellers in Beijing",
+              "<pad> New Year revellers in the Chinese",
+              "<pad> New Year celebrations have been cancelled in Beijing",
+              "<pad> New Year celebrations have been cancelled in the Chinese",
+              "<pad> New Year celebrations have been cancelled in parts of Beijing",
+              "<pad> New Year celebrations have been cancelled in parts of the Chinese",
+              "<pad> New Year celebrations have been cancelled in parts of China's capital Beijing",
+              "<pad> New Year celebrations have been cancelled in parts of China's capital, Beijing",
+              "<pad> New Year celebrations have been cancelled in parts of China's capital,Beijing",
+              "<pad> New Year celebrations have been cancelled in parts of China's largest city, Beijing",
+              "<pad> New Year's Day has been shrouded in a thick smog that has enveloped Beijing",
+              "<pad> New Year's Day has been shrouded in a thick smog that has enveloped the Chinese"
+            ],
+            "n_words_checked": 95,
+            "score": -3.06268048286438
+          },
+          "labeled_entities": [
+            {
+              "end": 8,
+              "ent": "New Year",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 0,
+              "type": "EVENT"
+            },
+            {
+              "end": 59,
+              "ent": "China",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 54,
+              "type": "GPE"
+            },
+            {
+              "end": 84,
+              "ent": "Shanghai",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 76,
+              "type": "GPE"
+            }
+          ],
+          "summary": "New Year celebrations have been cancelled in parts of China's largest city, Shanghai."
+        },
+        "38264015": {
+          "banned_phrases": [
+            "three years"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> A man has been jailed for three years"
+            ],
+            "n_words_checked": 92,
+            "score": -1.8489779233932495
+          },
+          "labeled_entities": [
+            {
+              "end": 35,
+              "ent": "two years",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 26,
+              "type": "DATE"
+            }
+          ],
+          "summary": "A man has been jailed for two years for causing the death of a teenager in a car crash."
+        },
+        "38605405": {
+          "banned_phrases": [
+            "Jamie",
+            "the end of the season"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> Carrick Rangers have signed former Crusaders player Jamie",
+              "<pad> Carrick Rangers have completed the signing of former Crusaders player Jamie",
+              "<pad> Carrick Rangers have signed former Crusaders player Gary McAllister on a deal until the end of the season",
+              "<pad> Carrick Rangers have signed former Crusaders player David McAllister on a deal until the end of the season"
+            ],
+            "n_words_checked": 74,
+            "score": -1.629262924194336
+          },
+          "labeled_entities": [
+            {
+              "end": 15,
+              "ent": "Carrick Rangers",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 0,
+              "type": "ORG"
+            },
+            {
+              "end": 44,
+              "ent": "Crusaders",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 35,
+              "type": "PRODUCT"
+            },
+            {
+              "end": 56,
+              "ent": "Gary",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 52,
+              "type": "PERSON"
+            },
+            {
+              "end": 67,
+              "ent": "McAllister",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 57,
+              "type": "PERSON"
+            },
+            {
+              "end": 81,
+              "ent": "one-year",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 73,
+              "type": "DATE"
+            }
+          ],
+          "summary": "Carrick Rangers have signed former Crusaders player Gary McAllister on a one-year deal."
+        },
+        "40424712": {
+          "banned_phrases": [
+            "Paul"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> Leyton Orient have re-appointed Paul"
+            ],
+            "n_words_checked": 83,
+            "score": -2.2306275367736816
+          },
+          "labeled_entities": [
+            {
+              "end": 13,
+              "ent": "Leyton Orient",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 0,
+              "type": "FAC"
+            },
+            {
+              "end": 38,
+              "ent": "Martin",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 32,
+              "type": "PERSON"
+            },
+            {
+              "end": 45,
+              "ent": "Porter",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 39,
+              "type": "PERSON"
+            }
+          ],
+          "summary": "Leyton Orient have re-appointed Martin Porter as their new chairman."
+        },
         "40426136": {
           "banned_phrases": [
             "Andy",
@@ -4243,7 +4736,7 @@
               "<pad> Northamptonshire's Jim Wakely and Andy",
               "<pad> Northamptonshire's Ben Wakely and Andy"
             ],
-            "n_words_checked": 96,
+            "n_words_checked": 100,
             "score": -2.764544725418091
           },
           "labeled_entities": [
@@ -4312,60 +4805,60 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 3,
+            "Factual Hallucination": 29,
             "Intrinsic Hallucination": 0,
-            "Non-factual Hallucination": 1,
-            "Non-hallucinated": 188,
-            "Unknown": 163
+            "Non-factual Hallucination": 6,
+            "Non-hallucinated": 187,
+            "Unknown": 123
           },
           "type": {
             "CARDINAL": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 5,
-              "Unknown": 15,
-              "total": 20
+              "Unknown": 13,
+              "total": 19
             },
             "DATE": {
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 0,
-              "Non-hallucinated": 4,
-              "Unknown": 35,
-              "total": 41
+              "Non-factual Hallucination": 3,
+              "Non-hallucinated": 5,
+              "Unknown": 28,
+              "total": 39
             },
             "EVENT": {
               "Factual Hallucination": 0,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
-              "Non-hallucinated": 3,
-              "Unknown": 5,
-              "total": 8
+              "Non-hallucinated": 2,
+              "Unknown": 4,
+              "total": 6
             },
             "FAC": {
-              "Factual Hallucination": 0,
-              "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 0,
-              "Non-hallucinated": 3,
-              "Unknown": 4,
-              "total": 7
-            },
-            "GPE": {
               "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
-              "Non-hallucinated": 52,
-              "Unknown": 30,
-              "total": 83
+              "Non-hallucinated": 3,
+              "Unknown": 3,
+              "total": 7
+            },
+            "GPE": {
+              "Factual Hallucination": 8,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 50,
+              "Unknown": 23,
+              "total": 81
             },
             "LOC": {
               "Factual Hallucination": 0,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 0,
-              "Unknown": 5,
-              "total": 5
+              "Unknown": 4,
+              "total": 4
             },
             "MONEY": {
               "Factual Hallucination": 0,
@@ -4376,27 +4869,27 @@
               "total": 2
             },
             "NORP": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 10,
-              "Unknown": 7,
-              "total": 17
+              "Unknown": 4,
+              "total": 15
             },
             "ORDINAL": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 4,
-              "Unknown": 4,
-              "total": 8
+              "Unknown": 2,
+              "total": 7
             },
             "ORG": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 4,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 22,
-              "Unknown": 21,
+              "Unknown": 17,
               "total": 43
             },
             "PERCENT": {
@@ -4408,11 +4901,11 @@
               "total": 1
             },
             "PERSON": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 8,
               "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 1,
-              "Non-hallucinated": 81,
-              "Unknown": 35,
+              "Non-factual Hallucination": 3,
+              "Non-hallucinated": 82,
+              "Unknown": 24,
               "total": 117
             },
             "PRODUCT": {
@@ -4423,26 +4916,295 @@
               "Unknown": 0,
               "total": 2
             },
-            "WORK_OF_ART": {
-              "Factual Hallucination": 0,
+            "TIME": {
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 0,
-              "Unknown": 1,
+              "Unknown": 0,
+              "total": 1
+            },
+            "WORK_OF_ART": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 0,
+              "Unknown": 0,
               "total": 1
             }
           }
         },
         "summary": {
-          "completed": 99,
-          "factual": 3,
+          "completed": 95,
+          "factual": 24,
           "failed": 0,
-          "non_factual": 1,
+          "non_factual": 5,
           "total": 100,
-          "unknown": 96
+          "unknown": 71
         }
       },
       "summaries": {
+        "34717572": {
+          "banned_phrases": [
+            "19-year-old",
+            "20-year-old"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> A 19-year-old",
+              "<pad> A 20-year-old"
+            ],
+            "n_words_checked": 80,
+            "score": -1.221415400505066
+          },
+          "labeled_entities": [
+            {
+              "end": 13,
+              "ent": "21-year-old",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 2,
+              "type": "DATE"
+            },
+            {
+              "end": 30,
+              "ent": "Norwich",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 23,
+              "type": "GPE"
+            },
+            {
+              "end": 80,
+              "ent": "TalkTalk",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 72,
+              "type": "PRODUCT"
+            }
+          ],
+          "summary": "A 21-year-old man from Norwich has been arrested in connection with the TalkTalk hacking attack."
+        },
+        "35291436": {
+          "banned_phrases": [
+            "more than a month",
+            "six months"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> One of Scotland's busiest railway stations is to close for six months",
+              "<pad> One of Scotland's busiest railway stations is to be closed for six months",
+              "<pad> One of Scotland's busiest railway stations is to close for more than six months",
+              "<pad> One of Scotland's busiest railway stations is to close for more than a month",
+              "<pad> One of Scotland's busiest railway stations is to be closed for more than six months",
+              "<pad> One of Scotland's busiest railway stations is to be closed for more than a month"
+            ],
+            "n_words_checked": 88,
+            "score": -2.3370299339294434
+          },
+          "labeled_entities": [
+            {
+              "end": 3,
+              "ent": "One",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 0,
+              "type": "CARDINAL"
+            },
+            {
+              "end": 15,
+              "ent": "Scotland",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 7,
+              "type": "GPE"
+            },
+            {
+              "end": 79,
+              "ent": "more than a year",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 63,
+              "type": "DATE"
+            }
+          ],
+          "summary": "One of Scotland's busiest railway stations is to be closed for more than a year for major engineering work."
+        },
+        "37819847": {
+          "banned_phrases": [
+            "Beijing",
+            "China",
+            "Chinese",
+            "New Year",
+            "New Year's Eve",
+            "Shanghai"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> China",
+              "<pad> New Year",
+              "<pad> Parts of China",
+              "<pad> Parts of the Chinese",
+              "<pad> A thick smog descended on Beijing",
+              "<pad> A thick smog blanketed China",
+              "<pad> A thick smog descended on the Chinese",
+              "<pad> A thick smog blanketed the Chinese",
+              "<pad> A thick smog blanketed the eastern Chinese",
+              "<pad> A thick smog blanketed the northern Chinese",
+              "<pad> A thick smog blanketed the northern part of China",
+              "<pad> A thick smog blanketed the northern part of Beijing",
+              "<pad> A thick smog blanketed the northern part of the Chinese",
+              "<pad> A thick smog blanketed the northern parts of the Chinese",
+              "<pad> A thick smog blanketed the northern part of the Indian city of Kanpur on New Year",
+              "<pad> A thick smog blanketed the northern part of the Indian city of Delhi on New Year",
+              "<pad> A thick smog blanketed the northern part of the Indian capital, Delhi, on New Year",
+              "<pad> A thick smog blanketed the northern part of the Indian capital, Delhi, on Monday morning after New Year",
+              "<pad> A thick smog blanketed the northern part of the Indian capital, Delhi, on Monday morning as the city celebrated the New Year"
+            ],
+            "n_words_checked": 131,
+            "score": -4.052089214324951
+          },
+          "labeled_entities": [
+            {
+              "end": 54,
+              "ent": "Indian",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 48,
+              "type": "NORP"
+            },
+            {
+              "end": 69,
+              "ent": "Delhi",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 64,
+              "type": "GPE"
+            },
+            {
+              "end": 80,
+              "ent": "Monday",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 74,
+              "type": "DATE"
+            },
+            {
+              "end": 88,
+              "ent": "morning",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 81,
+              "type": "TIME"
+            }
+          ],
+          "summary": "A thick smog blanketed the northern part of the Indian capital, Delhi, on Monday morning."
+        },
+        "38605405": {
+          "banned_phrases": [
+            "Gary",
+            "Jamie",
+            "one-year",
+            "the end of the season"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> Carrick Rangers have signed former Crusaders player Jamie",
+              "<pad> Carrick Rangers have signed former Crusaders player Gary",
+              "<pad> Carrick Rangers have completed the signing of former Crusaders player Jamie",
+              "<pad> Carrick Rangers have completed the signing of former Crusaders player Gary",
+              "<pad> Carrick Rangers have signed former Crusaders player David McAllister on a one-year",
+              "<pad> Carrick Rangers have signed former Crusaders player David McAllister until the end of the season",
+              "<pad> Carrick Rangers have signed former Crusaders player David McAllister on a deal until the end of the season"
+            ],
+            "n_words_checked": 74,
+            "score": -1.7159297466278076
+          },
+          "labeled_entities": [
+            {
+              "end": 15,
+              "ent": "Carrick Rangers",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 0,
+              "type": "ORG"
+            },
+            {
+              "end": 44,
+              "ent": "Crusaders",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 35,
+              "type": "PRODUCT"
+            },
+            {
+              "end": 57,
+              "ent": "David",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 52,
+              "type": "PERSON"
+            },
+            {
+              "end": 68,
+              "ent": "McAllister",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 58,
+              "type": "PERSON"
+            },
+            {
+              "end": 82,
+              "ent": "two-year",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 74,
+              "type": "DATE"
+            }
+          ],
+          "summary": "Carrick Rangers have signed former Crusaders player David McAllister on a two-year deal."
+        },
+        "40424712": {
+          "banned_phrases": [
+            "Martin",
+            "Paul"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> Leyton Orient have re-appointed Paul",
+              "<pad> Leyton Orient have re-appointed Martin"
+            ],
+            "n_words_checked": 75,
+            "score": -2.2365903854370117
+          },
+          "labeled_entities": [
+            {
+              "end": 13,
+              "ent": "Leyton Orient",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 0,
+              "type": "FAC"
+            },
+            {
+              "end": 36,
+              "ent": "Mark",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 32,
+              "type": "PERSON"
+            },
+            {
+              "end": 43,
+              "ent": "Porter",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 37,
+              "type": "PERSON"
+            }
+          ],
+          "summary": "Leyton Orient have re-appointed Mark Porter as their new chairman."
+        },
         "40426136": {
           "banned_phrases": [
             "Andy",
@@ -4462,8 +5224,8 @@
               "<pad> Northamptonshire's Ben Wakely and Andy",
               "<pad> Northamptonshire's Jim Wakely and Richard"
             ],
-            "n_words_checked": 99,
-            "score": -2.5867209434509277
+            "n_words_checked": 103,
+            "score": -2.586719274520874
           },
           "labeled_entities": [
             {
@@ -4539,60 +5301,60 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 1,
+            "Factual Hallucination": 27,
             "Intrinsic Hallucination": 0,
-            "Non-factual Hallucination": 0,
-            "Non-hallucinated": 185,
-            "Unknown": 161
+            "Non-factual Hallucination": 4,
+            "Non-hallucinated": 184,
+            "Unknown": 121
           },
           "type": {
             "CARDINAL": {
-              "Factual Hallucination": 0,
-              "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 0,
-              "Non-hallucinated": 5,
-              "Unknown": 15,
-              "total": 20
-            },
-            "DATE": {
               "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
-              "Non-hallucinated": 4,
-              "Unknown": 35,
-              "total": 40
+              "Non-hallucinated": 5,
+              "Unknown": 13,
+              "total": 19
+            },
+            "DATE": {
+              "Factual Hallucination": 2,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 2,
+              "Non-hallucinated": 5,
+              "Unknown": 28,
+              "total": 37
             },
             "EVENT": {
               "Factual Hallucination": 0,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
-              "Non-hallucinated": 3,
-              "Unknown": 5,
-              "total": 8
+              "Non-hallucinated": 2,
+              "Unknown": 4,
+              "total": 6
             },
             "FAC": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 3,
-              "Unknown": 3,
+              "Unknown": 2,
               "total": 6
             },
             "GPE": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 7,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
-              "Non-hallucinated": 51,
-              "Unknown": 30,
-              "total": 81
+              "Non-hallucinated": 49,
+              "Unknown": 23,
+              "total": 79
             },
             "LOC": {
               "Factual Hallucination": 0,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 0,
-              "Unknown": 5,
-              "total": 5
+              "Unknown": 4,
+              "total": 4
             },
             "MONEY": {
               "Factual Hallucination": 0,
@@ -4603,27 +5365,27 @@
               "total": 2
             },
             "NORP": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 10,
-              "Unknown": 7,
-              "total": 17
+              "Unknown": 4,
+              "total": 15
             },
             "ORDINAL": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 4,
-              "Unknown": 4,
-              "total": 8
+              "Unknown": 2,
+              "total": 7
             },
             "ORG": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 4,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 22,
-              "Unknown": 21,
+              "Unknown": 17,
               "total": 43
             },
             "PERCENT": {
@@ -4635,11 +5397,11 @@
               "total": 1
             },
             "PERSON": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 8,
               "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 0,
-              "Non-hallucinated": 79,
-              "Unknown": 34,
+              "Non-factual Hallucination": 2,
+              "Non-hallucinated": 80,
+              "Unknown": 23,
               "total": 113
             },
             "PRODUCT": {
@@ -4650,26 +5412,238 @@
               "Unknown": 0,
               "total": 2
             },
-            "WORK_OF_ART": {
-              "Factual Hallucination": 0,
+            "TIME": {
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 0,
-              "Unknown": 1,
+              "Unknown": 0,
+              "total": 1
+            },
+            "WORK_OF_ART": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 0,
+              "Unknown": 0,
               "total": 1
             }
           }
         },
         "summary": {
-          "completed": 100,
-          "factual": 3,
+          "completed": 96,
+          "factual": 24,
           "failed": 1,
-          "non_factual": 0,
+          "non_factual": 4,
           "total": 100,
-          "unknown": 96
+          "unknown": 71
         }
       },
       "summaries": {
+        "34717572": {
+          "banned_phrases": [
+            "19-year-old",
+            "20-year-old",
+            "21-year-old"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> A 19-year-old",
+              "<pad> A 20-year-old",
+              "<pad> A 21-year-old"
+            ],
+            "n_words_checked": 80,
+            "score": -1.2745463848114014
+          },
+          "labeled_entities": [
+            {
+              "end": 13,
+              "ent": "17-year-old",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 2,
+              "type": "DATE"
+            },
+            {
+              "end": 30,
+              "ent": "Norwich",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 23,
+              "type": "GPE"
+            },
+            {
+              "end": 80,
+              "ent": "TalkTalk",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 72,
+              "type": "PRODUCT"
+            }
+          ],
+          "summary": "A 17-year-old boy from Norwich has been arrested in connection with the TalkTalk hacking attack."
+        },
+        "35291436": {
+          "banned_phrases": [
+            "more than a month",
+            "more than a year",
+            "six months"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> One of Scotland's busiest railway stations is to close for six months",
+              "<pad> One of Scotland's busiest railway stations is to be closed for six months",
+              "<pad> One of Scotland's busiest railway stations is to close for more than six months",
+              "<pad> One of Scotland's busiest railway stations is to close for more than a month",
+              "<pad> One of Scotland's busiest railway stations is to be closed for more than six months",
+              "<pad> One of Scotland's busiest railway stations is to be closed for more than a month",
+              "<pad> One of Scotland's busiest railway stations is to be closed for more than a year"
+            ],
+            "n_words_checked": 92,
+            "score": -2.394779920578003
+          },
+          "labeled_entities": [
+            {
+              "end": 3,
+              "ent": "One",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 0,
+              "type": "CARDINAL"
+            },
+            {
+              "end": 15,
+              "ent": "Scotland",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 7,
+              "type": "GPE"
+            },
+            {
+              "end": 82,
+              "ent": "more than six weeks",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 63,
+              "type": "DATE"
+            }
+          ],
+          "summary": "One of Scotland's busiest railway stations is to be closed for more than six weeks for major engineering work."
+        },
+        "38605405": {
+          "banned_phrases": [
+            "David",
+            "Gary",
+            "Jamie",
+            "one-year",
+            "the end of the season",
+            "two-year"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> Carrick Rangers have signed former Crusaders player Jamie",
+              "<pad> Carrick Rangers have signed former Crusaders player Gary",
+              "<pad> Carrick Rangers have signed former Crusaders player David",
+              "<pad> Carrick Rangers have completed the signing of former Crusaders player Jamie",
+              "<pad> Carrick Rangers have completed the signing of former Crusaders player Gary",
+              "<pad> Carrick Rangers have completed the signing of former Crusaders player David",
+              "<pad> Carrick Rangers have completed the signing of former Crusaders player Darren McAllister on a one-year",
+              "<pad> Carrick Rangers have completed the signing of former Crusaders player Darren McAllister on a two-year",
+              "<pad> Carrick Rangers have completed the signing of former Crusaders player Darren McAllister until the end of the season",
+              "<pad> Carrick Rangers have completed the signing of former Crusaders player Darren McAllister on a deal until the end of the season"
+            ],
+            "n_words_checked": 85,
+            "score": -2.139652967453003
+          },
+          "labeled_entities": [
+            {
+              "end": 15,
+              "ent": "Carrick Rangers",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 0,
+              "type": "ORG"
+            },
+            {
+              "end": 62,
+              "ent": "Crusaders",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 53,
+              "type": "PRODUCT"
+            },
+            {
+              "end": 76,
+              "ent": "Darren",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 70,
+              "type": "PERSON"
+            },
+            {
+              "end": 87,
+              "ent": "McAllister",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 77,
+              "type": "PERSON"
+            }
+          ],
+          "summary": "Carrick Rangers have completed the signing of former Crusaders player Darren McAllister."
+        },
+        "40424712": {
+          "banned_phrases": [
+            "Mark",
+            "Martin",
+            "Paul"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> Leyton Orient have re-appointed Paul",
+              "<pad> Leyton Orient have re-appointed Martin",
+              "<pad> Leyton Orient have re-appointed Mark",
+              "<pad> Leyton Orient have re-appointed former player Martin",
+              "<pad> Leyton Orient have re-appointed former player and manager Paul",
+              "<pad> Leyton Orient have re-appointed former player and boss Paul",
+              "<pad> Leyton Orient have re-appointed former player and manager Mark",
+              "<pad> Leyton Orient have re-appointed former player and director of darts Paul",
+              "<pad> Leyton Orient have re-appointed former player and director of Darts Martin",
+              "<pad> Leyton Orient have re-appointed former player and director of Darts Mark",
+              "<pad> Leyton Orient have re-appointed former player and director of Darts Paul",
+              "<pad> Leyton Orient have re-appointed former player and director of professional Darts Martin",
+              "<pad> Leyton Orient have re-appointed former player and director of professional Darts Paul"
+            ],
+            "n_words_checked": 87,
+            "score": -3.5160560607910156
+          },
+          "labeled_entities": [
+            {
+              "end": 13,
+              "ent": "Leyton Orient",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 0,
+              "type": "FAC"
+            },
+            {
+              "end": 86,
+              "ent": "David",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 81,
+              "type": "PERSON"
+            },
+            {
+              "end": 93,
+              "ent": "Porter",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 87,
+              "type": "PERSON"
+            }
+          ],
+          "summary": "Leyton Orient have re-appointed former player and director of professional Darts David Porter as their new chief executive."
+        },
         "40426136": {
           "banned_phrases": [
             "Andy",
@@ -4698,7 +5672,447 @@
           "summary": "<Failed generation: blocked all beams>"
         }
       }
+    },
+    "4": {
+      "stats": {
+        "entity": {
+          "label": {
+            "Factual Hallucination": 25,
+            "Intrinsic Hallucination": 0,
+            "Non-factual Hallucination": 1,
+            "Non-hallucinated": 179,
+            "Unknown": 121
+          },
+          "type": {
+            "CARDINAL": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 4,
+              "Unknown": 13,
+              "total": 18
+            },
+            "DATE": {
+              "Factual Hallucination": 2,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 5,
+              "Unknown": 28,
+              "total": 35
+            },
+            "EVENT": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 2,
+              "Unknown": 4,
+              "total": 6
+            },
+            "FAC": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 3,
+              "Unknown": 2,
+              "total": 6
+            },
+            "GPE": {
+              "Factual Hallucination": 6,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 48,
+              "Unknown": 23,
+              "total": 77
+            },
+            "LOC": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 0,
+              "Unknown": 4,
+              "total": 4
+            },
+            "MONEY": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 1,
+              "Unknown": 1,
+              "total": 2
+            },
+            "NORP": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 10,
+              "Unknown": 4,
+              "total": 15
+            },
+            "ORDINAL": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 4,
+              "Unknown": 2,
+              "total": 7
+            },
+            "ORG": {
+              "Factual Hallucination": 3,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 22,
+              "Unknown": 17,
+              "total": 42
+            },
+            "PERCENT": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 1,
+              "Unknown": 0,
+              "total": 1
+            },
+            "PERSON": {
+              "Factual Hallucination": 8,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 1,
+              "Non-hallucinated": 79,
+              "Unknown": 23,
+              "total": 111
+            },
+            "TIME": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 0,
+              "Unknown": 0,
+              "total": 1
+            },
+            "WORK_OF_ART": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 0,
+              "Unknown": 0,
+              "total": 1
+            }
+          }
+        },
+        "summary": {
+          "completed": 99,
+          "factual": 24,
+          "failed": 4,
+          "non_factual": 1,
+          "total": 100,
+          "unknown": 71
+        }
+      },
+      "summaries": {
+        "34717572": {
+          "banned_phrases": [
+            "17-year-old",
+            "19-year-old",
+            "20-year-old",
+            "21-year-old"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> A 19-year-old",
+              "<pad> A 20-year-old",
+              "<pad> A 21-year-old",
+              "<pad> A 17-year-old"
+            ],
+            "n_words_checked": 8,
+            "score": -Infinity
+          },
+          "labeled_entities": [],
+          "summary": "<Failed generation: blocked all beams>"
+        },
+        "35291436": {
+          "banned_phrases": [
+            "more than a month",
+            "more than a year",
+            "more than six weeks",
+            "six months"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> One of Scotland's busiest railway stations is to close for six months",
+              "<pad> One of Scotland's busiest railway stations is to be closed for six months",
+              "<pad> One of Scotland's busiest railway stations is to close for more than six months",
+              "<pad> One of Scotland's busiest railway stations is to close for more than a month",
+              "<pad> One of Scotland's busiest railway stations is to be closed for more than six months",
+              "<pad> One of Scotland's busiest railway stations is to be closed for more than a month",
+              "<pad> One of Scotland's busiest railway stations is to be closed for more than a year",
+              "<pad> One of Scotland's busiest railway stations is to be closed for more than six weeks",
+              "<pad> One of Scotland's busiest railway stations is to be closed for more than six months<pad><mask_2>",
+              "<pad> One of Scotland's busiest railway stations is to be closed for more than six months<pad><unk_2>",
+              "<pad> One of Scotland's busiest railway stations is to be closed for more than six months<pad><pad><mask_2>",
+              "<pad> One of Scotland's busiest railway stations is to be closed for more than six months<pad><pad><pad><mask_2>",
+              "<pad> One of Scotland's busiest railway stations is to be closed for more than six months<pad><pad><pad><unk_2>"
+            ],
+            "n_words_checked": 73,
+            "score": -Infinity
+          },
+          "labeled_entities": [],
+          "summary": "<Failed generation: blocked all beams>"
+        },
+        "38605405": {
+          "banned_phrases": [
+            "Darren",
+            "David",
+            "Gary",
+            "Jamie",
+            "one-year",
+            "the end of the season",
+            "two-year"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> Carrick Rangers have signed former Crusaders player Jamie",
+              "<pad> Carrick Rangers have signed former Crusaders player Gary",
+              "<pad> Carrick Rangers have signed former Crusaders player David",
+              "<pad> Carrick Rangers have completed the signing of former Crusaders player Jamie",
+              "<pad> Carrick Rangers have completed the signing of former Crusaders player Gary",
+              "<pad> Carrick Rangers have completed the signing of former Crusaders player David",
+              "<pad> Carrick Rangers have completed the signing of former Crusaders player Darren"
+            ],
+            "n_words_checked": 42,
+            "score": -Infinity
+          },
+          "labeled_entities": [],
+          "summary": "<Failed generation: blocked all beams>"
+        },
+        "40424712": {
+          "banned_phrases": [
+            "David",
+            "Mark",
+            "Martin",
+            "Paul"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> Leyton Orient have re-appointed Paul",
+              "<pad> Leyton Orient have re-appointed Martin",
+              "<pad> Leyton Orient have re-appointed Mark",
+              "<pad> Leyton Orient have re-appointed former player Martin",
+              "<pad> Leyton Orient have re-appointed former player and manager Paul",
+              "<pad> Leyton Orient have re-appointed former player and boss Paul",
+              "<pad> Leyton Orient have re-appointed former player and manager Mark",
+              "<pad> Leyton Orient have re-appointed former player and director of darts Paul",
+              "<pad> Leyton Orient have re-appointed former player and director of Darts Martin",
+              "<pad> Leyton Orient have re-appointed former player and director of Darts Mark",
+              "<pad> Leyton Orient have re-appointed former player and director of Darts Paul",
+              "<pad> Leyton Orient have re-appointed former player and director of professional Darts Martin",
+              "<pad> Leyton Orient have re-appointed former player and director of professional Darts Paul",
+              "<pad> Leyton Orient have re-appointed former player and director of professional Darts David"
+            ],
+            "n_words_checked": 78,
+            "score": -3.5793702602386475
+          },
+          "labeled_entities": [
+            {
+              "end": 13,
+              "ent": "Leyton Orient",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 0,
+              "type": "FAC"
+            },
+            {
+              "end": 85,
+              "ent": "John",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 81,
+              "type": "PERSON"
+            },
+            {
+              "end": 92,
+              "ent": "Porter",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 86,
+              "type": "PERSON"
+            }
+          ],
+          "summary": "Leyton Orient have re-appointed former player and director of professional Darts John Porter as their new chairman."
+        }
+      }
+    },
+    "5": {
+      "stats": {
+        "entity": {
+          "label": {
+            "Factual Hallucination": 24,
+            "Intrinsic Hallucination": 0,
+            "Non-factual Hallucination": 0,
+            "Non-hallucinated": 178,
+            "Unknown": 121
+          },
+          "type": {
+            "CARDINAL": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 4,
+              "Unknown": 13,
+              "total": 18
+            },
+            "DATE": {
+              "Factual Hallucination": 2,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 5,
+              "Unknown": 28,
+              "total": 35
+            },
+            "EVENT": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 2,
+              "Unknown": 4,
+              "total": 6
+            },
+            "FAC": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 3,
+              "Unknown": 2,
+              "total": 5
+            },
+            "GPE": {
+              "Factual Hallucination": 6,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 48,
+              "Unknown": 23,
+              "total": 77
+            },
+            "LOC": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 0,
+              "Unknown": 4,
+              "total": 4
+            },
+            "MONEY": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 1,
+              "Unknown": 1,
+              "total": 2
+            },
+            "NORP": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 10,
+              "Unknown": 4,
+              "total": 15
+            },
+            "ORDINAL": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 4,
+              "Unknown": 2,
+              "total": 7
+            },
+            "ORG": {
+              "Factual Hallucination": 3,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 22,
+              "Unknown": 17,
+              "total": 42
+            },
+            "PERCENT": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 1,
+              "Unknown": 0,
+              "total": 1
+            },
+            "PERSON": {
+              "Factual Hallucination": 8,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 78,
+              "Unknown": 23,
+              "total": 109
+            },
+            "TIME": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 0,
+              "Unknown": 0,
+              "total": 1
+            },
+            "WORK_OF_ART": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 0,
+              "Unknown": 0,
+              "total": 1
+            }
+          }
+        },
+        "summary": {
+          "completed": 100,
+          "factual": 24,
+          "failed": 5,
+          "non_factual": 0,
+          "total": 100,
+          "unknown": 71
+        }
+      },
+      "summaries": {
+        "40424712": {
+          "banned_phrases": [
+            "David",
+            "John",
+            "Mark",
+            "Martin",
+            "Paul"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> Leyton Orient have re-appointed Paul",
+              "<pad> Leyton Orient have re-appointed Martin",
+              "<pad> Leyton Orient have re-appointed Mark",
+              "<pad> Leyton Orient have re-appointed former player Martin",
+              "<pad> Leyton Orient have re-appointed former player and manager Paul",
+              "<pad> Leyton Orient have re-appointed former player and boss Paul",
+              "<pad> Leyton Orient have re-appointed former player and manager Mark",
+              "<pad> Leyton Orient have re-appointed former player and director of darts Paul",
+              "<pad> Leyton Orient have re-appointed former player and director of Darts Martin",
+              "<pad> Leyton Orient have re-appointed former player and director of Darts Mark",
+              "<pad> Leyton Orient have re-appointed former player and director of Darts Paul",
+              "<pad> Leyton Orient have re-appointed former player and director of professional Darts Martin",
+              "<pad> Leyton Orient have re-appointed former player and director of professional Darts Paul",
+              "<pad> Leyton Orient have re-appointed former player and director of professional Darts David",
+              "<pad> Leyton Orient have re-appointed former player and director of professional Darts John",
+              "<pad> Leyton Orient have re-appointed former player and director of professional Darts Martin<pad><mask_2>",
+              "<pad> Leyton Orient have re-appointed former player and director of professional Darts Martin<pad><unk_2>",
+              "<pad> Leyton Orient have re-appointed former player and director of professional Darts Martin<pad><pad><mask_2>",
+              "<pad> Leyton Orient have re-appointed former player and director of professional Darts Martin<pad><pad><unk_2>"
+            ],
+            "n_words_checked": 59,
+            "score": -Infinity
+          },
+          "labeled_entities": [],
+          "summary": "<Failed generation: blocked all beams>"
+        }
+      }
     }
   },
-  "timestamp": 1654812220.5745437
+  "timestamp": 1654815564.353962
 }
