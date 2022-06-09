@@ -1,3 +1,4 @@
+
 """
   Run FBS generation for a data subset
   with BART, Pegasus (Oracle & Classifier).
@@ -36,6 +37,7 @@ def run_iterative_constraints(args, model_summarization, is_oracle):
                 f"--batch_size {args.batch_size}",
                 f"--classifier_batch_size {args.classifier_batch_size}",
                 f"--model_summarization {model_summarization}",
+                "--max_iterations 10",
                 f"--test_size {TEST_SIZE}",
                 (
                     f"--pickled_classifier {args.pickled_classifier}"
