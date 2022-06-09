@@ -10,7 +10,6 @@ from sumtool.storage import get_summary_metrics
 
 TEST_SIZE = 100
 
-
 def load_data(results_path: str):
     if "results" in results_path:
         # load fbs results
@@ -24,10 +23,19 @@ def load_data(results_path: str):
         sum_ents_by_id = {}
     gold_sums, gold_metadata = get_gold_xsum_data()
     xsum_test = load_xsum_dict("test")
+    test_set_ids = set(
+            load_shuffled_test_split(xsum_test, "bart-test-extrinsic", 100).keys()
+    )
 
+    filtered_sums_by_id = {
+        sum_id: x for sum_id, x in sums_by_id.items() if sum_id in test_set_ids
+    }
+    filtered_ents_by_id = {
+        sum_id: x for sum_id, x in sum_ents_by_id.items() if sum_id in test_set_ids
+    }
     return (
-        sums_by_id,
-        sum_ents_by_id,
+        filtered_sums_by_id,
+        filtered_ents_by_id,
         gold_sums,
         gold_metadata,
         xsum_test,
