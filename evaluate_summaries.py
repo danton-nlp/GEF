@@ -18,7 +18,7 @@ pp = pprint.PrettyPrinter(indent=2)
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--annotate", type=bool, default=False)
-    parser.add_argument("--data_subset", type=str, default="test-extrinsic")
+    parser.add_argument("--data_subset", type=str, default="bart-test-extrinsic")
     parser.add_argument("--test_size", type=int, default=100)
     parser.add_argument("--entity_label_match", type=str, default="strict_intrinsic")
     parser.add_argument("--print_first_n", type=int, default=0)
@@ -32,7 +32,7 @@ if __name__ == "__main__":
         test_set_ids = set(xsum_test.keys())
     elif args.data_subset == "full-extrinsic":
         test_set_ids = set(
-            load_shuffled_test_split(xsum_test, "test-extrinsic", 10000).keys()
+            load_shuffled_test_split(xsum_test, "bart-test-extrinsic", 10000).keys()
         )
     else:
         test_set_ids = set(

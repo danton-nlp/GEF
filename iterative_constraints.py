@@ -51,7 +51,7 @@ def persist_iteration(
     iteration_log[iteration_idx]["stats"] = iteration_stats
     for sum_id in gen_summaries_by_id.keys():
         iteration_log[iteration_idx]["summaries"][sum_id] = {
-            "banned_phrases": list(banned_phrases_by_sum_id[sum_id]),
+            "banned_phrases": sorted(list(banned_phrases_by_sum_id[sum_id])),
             "summary": gen_summaries_by_id[sum_id],
             "generation_metadata": {
                 "score": generation_metadata[id_to_idx[sum_id]]["score"],
@@ -76,6 +76,7 @@ def persist_iteration(
             },
             f,
             indent=2,
+            sort_keys=True
         )
 
 
@@ -210,6 +211,9 @@ if __name__ == "__main__":
     elif args.data_subset == "full":
         docs_to_summarize = {sum_id: x["document"] for sum_id, x in xsum_test.items()}
     else:
+        if args.data_subset == "test-extrinsic":
+            model_prefix = "pegasus" if "pegasus" in args.model_summarization else "bart"
+            args.data_subset = f"{model_prefix}-{args.data_subset}"
         docs_to_summarize = load_shuffled_test_split(xsum_test, args.data_subset, args.test_size)
 
     # initialize with no constraints
