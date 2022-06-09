@@ -9,6 +9,7 @@ from sumtool.storage import get_summary_metrics, get_summaries
 import argparse
 import pprint
 import pandas as pd
+import json
 
 
 pp = pprint.PrettyPrinter(indent=2)
@@ -58,10 +59,12 @@ if __name__ == "__main__":
             #     f"results/fbs-logs/{args.data_subset}-classifier-knnv0.json", max_iterations=5
             # ),
             "fbs_classifier": load_summaries_from_logs(
-                f"results/fbs-logs/{args.data_subset}-classifier-knnv1.json", max_iterations=5
+                f"results/fbs-logs/{args.data_subset}-classifier-knnv1.json",
+                max_iterations=5,
             ),
             "fbs_classifier_i10": load_summaries_from_logs(
-                f"results/fbs-logs/{args.data_subset}-classifier-knnv1.json", max_iterations=10
+                f"results/fbs-logs/{args.data_subset}-classifier-knnv1.json",
+                max_iterations=10,
             ),
             # "Test FBS w/ bad classifier, i=5": load_summaries_from_logs(
             #     "results/test-bad-classifier.json", max_iterations=5
@@ -154,4 +157,9 @@ if __name__ == "__main__":
         f"results/evaluation/{args.data_subset}-{args.test_size}.csv", index=False
     )
     df_summaries = pd.DataFrame.from_dict(summary_results, orient="index")
-    df_summaries.to_json(f"results/evaluation/{args.data_subset}-{args.test_size}-summaries.json")
+    with open(
+        f"results/evaluation/{args.data_subset}-{args.test_size}-summaries.json", "w"
+    ) as f:
+        json.dump(df_summaries.to_dict(
+            orient="index"
+        ), f, indent=2, sort_keys=True)
