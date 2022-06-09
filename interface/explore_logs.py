@@ -4,9 +4,10 @@ import os
 import pandas as pd
 
 
-def st_select_results(folder="results"):
+def st_select_results(folder="results/fbs-logs/"):
     return os.path.join(
-        "results", st.selectbox("Select run", options=sorted(os.listdir(folder)))
+        folder,
+        st.selectbox("Select run", options=sorted(os.listdir(folder)))
     )
 
 
