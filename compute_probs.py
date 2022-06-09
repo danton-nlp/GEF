@@ -7,8 +7,7 @@ from tqdm import tqdm
 from transformers.tokenization_utils_base import BatchEncoding
 
 from src.data_utils import persist_example_with_probs, split_batches
-from src.generation_utils import (load_bart_xsum_cmlm,
-                                  load_prior_model_and_tokenizer)
+from src.generation_utils import load_bart_xsum_cmlm, load_prior_model_and_tokenizer
 from src.prob_computation_utils import build_masked_inputs_and_targets
 
 
@@ -131,7 +130,7 @@ def compute_entitity_probability(
         early_stopping=True,
         return_dict_in_generate=True,
         output_scores=True,
-        max_length=200,
+        max_length=min(200, target_input_ids.shape[1] + 1),
         prefix_allowed_tokens_fn=prefix_allowed_tokens_fn,
     )
 

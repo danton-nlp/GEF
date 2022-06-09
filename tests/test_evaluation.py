@@ -120,9 +120,9 @@ def test_evaluate_factuality_classifier():
     assert agg_metrics["summaries"]["total"] == 100
     assert agg_metrics["summaries"]["factual"] == 0.48
     assert agg_metrics["summaries"]["non_factual"] == 0.26
-    assert agg_metrics["summaries"]["non_factual_extrinsic"] == 0.19
+    assert agg_metrics["summaries"]["non_factual_extrinsic"] == 0.2
     assert agg_metrics["summaries"]["non_factual_intrinsic"] == 0.1
-    assert agg_metrics["summaries"]["skipped"] == 0.26
+    assert agg_metrics["summaries"]["skipped"] == 0.27
     assert agg_metrics["summaries"]["failed"] == 14
     assert agg_metrics["summaries"]["unknown"] == 0
     assert agg_metrics["entities"]["Unknown"] == 0
