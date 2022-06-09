@@ -51,7 +51,7 @@ def persist_iteration(
     iteration_log[iteration_idx]["stats"] = iteration_stats
     for sum_id in gen_summaries_by_id.keys():
         iteration_log[iteration_idx]["summaries"][sum_id] = {
-            "banned_phrases": list(banned_phrases_by_sum_id[sum_id]),
+            "banned_phrases": sorted(list(banned_phrases_by_sum_id[sum_id])),
             "summary": gen_summaries_by_id[sum_id],
             "generation_metadata": {
                 "score": generation_metadata[id_to_idx[sum_id]]["score"],
@@ -76,6 +76,7 @@ def persist_iteration(
             },
             f,
             indent=2,
+            sort_keys=True
         )
 
 
