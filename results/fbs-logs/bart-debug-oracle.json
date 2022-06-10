@@ -5,7 +5,7 @@
     "classifier_batch_size": 16,
     "data_subset": "debug",
     "entity_label_match": "contained",
-    "max_iterations": 5,
+    "max_iterations": 10,
     "model_posterior": "entfa-cmlm",
     "model_prior": "facebook/bart-large",
     "model_summarization": "facebook/bart-large-xsum",
@@ -99,7 +99,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 81,
-            "score": -0.5601843595504761
+            "score": -0.5601844787597656
           },
           "labeled_entities": [
             {
@@ -118,7 +118,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 84,
-            "score": -0.5598479509353638
+            "score": -0.559847891330719
           },
           "labeled_entities": [
             {
@@ -145,7 +145,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 65,
-            "score": -0.4829917550086975
+            "score": -0.4829918444156647
           },
           "labeled_entities": [
             {
@@ -188,7 +188,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 95,
-            "score": -0.6927700638771057
+            "score": -0.6927701234817505
           },
           "labeled_entities": [
             {
@@ -215,7 +215,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 84,
-            "score": -0.8142690658569336
+            "score": -0.8142692446708679
           },
           "labeled_entities": [
             {
@@ -234,7 +234,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 73,
-            "score": -0.4506027400493622
+            "score": -0.45060309767723083
           },
           "labeled_entities": [
             {
@@ -285,7 +285,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 89,
-            "score": -0.3663136661052704
+            "score": -0.3663135766983032
           },
           "labeled_entities": [
             {
@@ -336,7 +336,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 83,
-            "score": -0.6497119665145874
+            "score": -0.6497118473052979
           },
           "labeled_entities": [
             {
@@ -387,7 +387,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 86,
-            "score": -0.509904146194458
+            "score": -0.5099042654037476
           },
           "labeled_entities": [
             {
@@ -438,7 +438,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 87,
-            "score": -0.5155402421951294
+            "score": -0.5155400633811951
           },
           "labeled_entities": [
             {
@@ -535,7 +535,7 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
             "n_words_checked": 69,
-            "score": -0.6140735745429993
+            "score": -0.6140739917755127
           },
           "labeled_entities": [
             {
@@ -558,7 +558,7 @@
               "</s>Villagers in Shropshire"
             ],
             "n_words_checked": 90,
-            "score": -0.5977275967597961
+            "score": -0.5977279543876648
           },
           "labeled_entities": [
             {
@@ -590,7 +590,7 @@
               "</s>Liam Payne and Niall"
             ],
             "n_words_checked": 65,
-            "score": -0.5388251543045044
+            "score": -0.5388252139091492
           },
           "labeled_entities": [
             {
@@ -640,7 +640,7 @@
               "</s>A search is under way for the remains of a Gwynedd village which was wiped out by Storm Desmond in the 1970s"
             ],
             "n_words_checked": 88,
-            "score": -0.7429376840591431
+            "score": -0.742937445640564
           },
           "labeled_entities": [
             {
@@ -672,7 +672,7 @@
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Bristol"
             ],
             "n_words_checked": 110,
-            "score": -0.8211351037025452
+            "score": -0.8211360573768616
           },
           "labeled_entities": [
             {
@@ -700,7 +700,7 @@
               "</s>Kaka has been called up to the Brazil squad for the Under-20 World Cup"
             ],
             "n_words_checked": 64,
-            "score": -0.5829026103019714
+            "score": -0.5829024910926819
           },
           "labeled_entities": [
             {
@@ -749,7 +749,7 @@
               "</s>Romelu Lukaku and Eden Hazard scored as Belgium came from behind to beat Norway in their final World Cup"
             ],
             "n_words_checked": 96,
-            "score": -0.37551549077033997
+            "score": -0.3755159378051758
           },
           "labeled_entities": [
             {
@@ -810,7 +810,7 @@
               "</s>Colombia's Carlos Martinez has been knocked out of the Olympic men's flyweight final by Kazakhstan"
             ],
             "n_words_checked": 85,
-            "score": -0.696525514125824
+            "score": -0.6965255737304688
           },
           "labeled_entities": [
             {
@@ -858,7 +858,7 @@
               "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium"
             ],
             "n_words_checked": 85,
-            "score": -0.5327231287956238
+            "score": -0.5327232480049133
           },
           "labeled_entities": [
             {
@@ -981,7 +981,7 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
             "n_words_checked": 73,
-            "score": -0.6207175254821777
+            "score": -0.6207176446914673
           },
           "labeled_entities": [
             {
@@ -1006,7 +1006,7 @@
               "</s>Villagers in Shrewsbury"
             ],
             "n_words_checked": 79,
-            "score": -0.7396929264068604
+            "score": -0.7396930456161499
           },
           "labeled_entities": [
             {
@@ -1034,7 +1034,7 @@
               "</s>Liam Payne and Niall"
             ],
             "n_words_checked": 42,
-            "score": -0.7054997086524963
+            "score": -0.7055004239082336
           },
           "labeled_entities": [
             {
@@ -1065,7 +1065,7 @@
               "</s>A search is under way to find the remains of a Gower village that was destroyed by the sea in the 1950s"
             ],
             "n_words_checked": 85,
-            "score": -1.0076082944869995
+            "score": -1.00760817527771
           },
           "labeled_entities": [
             {
@@ -1100,7 +1100,7 @@
               "</s>A mobile game designed to help people with dementia is to be used by researchers at the University of Oxford"
             ],
             "n_words_checked": 110,
-            "score": -0.8350409865379333
+            "score": -0.8350416421890259
           },
           "labeled_entities": [
             {
@@ -1131,7 +1131,7 @@
               "</s>Kaka has been called up to the Brazil squad for the Copa America in Chile next month"
             ],
             "n_words_checked": 93,
-            "score": -0.6230868697166443
+            "score": -0.6230869293212891
           },
           "labeled_entities": [
             {
@@ -1195,7 +1195,7 @@
               "</s>Colombia's Gabriel Martinez has been knocked out of the Olympic men's flyweight final by Kazakhstan"
             ],
             "n_words_checked": 86,
-            "score": -0.7325243949890137
+            "score": -0.732524573802948
           },
           "labeled_entities": [
             {
@@ -1245,7 +1245,7 @@
               "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex Stadium"
             ],
             "n_words_checked": 84,
-            "score": -0.536952555179596
+            "score": -0.536952793598175
           },
           "labeled_entities": [
             {
@@ -1394,7 +1394,7 @@
               "</s>A search is under way to find the remains of a Gower village that was destroyed by the sea in the 1950s"
             ],
             "n_words_checked": 85,
-            "score": -1.0076082944869995
+            "score": -1.00760817527771
           },
           "labeled_entities": [
             {
@@ -1465,7 +1465,7 @@
               "</s>Kaka has been called up to the Brazil squad for the Copa America in Brazil next month"
             ],
             "n_words_checked": 93,
-            "score": -0.6635569334030151
+            "score": -0.6635565757751465
           },
           "labeled_entities": [
             {
@@ -1533,7 +1533,7 @@
               "</s>Colombia's Jose Luis Martinez has been knocked out of the Olympic men's flyweight final by Kazakhstan"
             ],
             "n_words_checked": 92,
-            "score": -0.7803342938423157
+            "score": -0.7803340554237366
           },
           "labeled_entities": [
             {
@@ -1596,7 +1596,7 @@
               "</s>Sam Baldock's first-half header was enough to give Brighton victory over Wolves at the Amex stadium and move the Seagulls up to fourth"
             ],
             "n_words_checked": 114,
-            "score": -0.7147328853607178
+            "score": -0.7147333025932312
           },
           "labeled_entities": [
             {
@@ -1739,7 +1739,7 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucesterse"
             ],
             "n_words_checked": 79,
-            "score": -0.858764111995697
+            "score": -0.8587644696235657
           },
           "labeled_entities": [
             {
@@ -1867,7 +1867,7 @@
               "</s>Sam Baldock's first-half header was enough for Brighton to beat Wolves and move up to fourth"
             ],
             "n_words_checked": 89,
-            "score": -0.5950486660003662
+            "score": -0.5950482487678528
           },
           "labeled_entities": [
             {
@@ -1914,7 +1914,151 @@
           "summary": "Sam Baldock's first-half header was enough for Brighton to beat Wolves and move up to second in the Championship."
         }
       }
+    },
+    "5": {
+      "stats": {
+        "entity": {
+          "label": {
+            "Factual Hallucination": 4,
+            "Intrinsic Hallucination": 0,
+            "Non-factual Hallucination": 1,
+            "Non-hallucinated": 15,
+            "Unknown": 0
+          },
+          "type": {
+            "CARDINAL": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 1,
+              "Unknown": 0,
+              "total": 1
+            },
+            "DATE": {
+              "Factual Hallucination": 2,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 1,
+              "Non-hallucinated": 1,
+              "Unknown": 0,
+              "total": 4
+            },
+            "FAC": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 1,
+              "Unknown": 0,
+              "total": 1
+            },
+            "GPE": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 6,
+              "Unknown": 0,
+              "total": 7
+            },
+            "ORDINAL": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 1,
+              "Unknown": 0,
+              "total": 1
+            },
+            "ORG": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 0,
+              "Unknown": 0,
+              "total": 1
+            },
+            "PERSON": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 5,
+              "Unknown": 0,
+              "total": 5
+            }
+          }
+        },
+        "summary": {
+          "completed": 9,
+          "factual": 7,
+          "failed": 2,
+          "non_factual": 1,
+          "total": 10,
+          "unknown": 0
+        }
+      },
+      "summaries": {
+        "17996567": {
+          "banned_phrases": [
+            "Flintshire",
+            "Gloucesterse",
+            "Gloucestersfield",
+            "Gloucestershire",
+            "Staffordshire"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "</s>Plans to cut home-to-school transport subsidies in Gloucestershire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Flintshire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Staffordshire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire",
+              "</s>Plans to cut home-to-school transport subsidies for children in Gloucesterse",
+              "</s>Plans to cut home-to-school transport subsidies for children in Gloucestersfield"
+            ],
+            "n_words_checked": 81,
+            "score": -0.8725069165229797
+          },
+          "labeled_entities": [],
+          "summary": "Plans to cut home-to-school transport subsidies for children in Gloucestersshire have been put on hold."
+        },
+        "34361828": {
+          "banned_phrases": [
+            "1950",
+            "Gwynedd village",
+            "Pembrokeshire",
+            "the 1950s",
+            "the 1970s"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "</s>A search is under way for the remains of a Gwynedd village",
+              "</s>A search is under way for the remains of a Pembrokeshire",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by storms in the 1950s",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by storms in the 1970s",
+              "</s>A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950s",
+              "</s>A search is under way to find the remains of a Gower village that was destroyed by the sea in the 1950s"
+            ],
+            "n_words_checked": 85,
+            "score": -1.0076079368591309
+          },
+          "labeled_entities": [
+            {
+              "end": 52,
+              "ent": "Gower",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 47,
+              "type": "GPE"
+            },
+            {
+              "end": 103,
+              "ent": "1950",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 99,
+              "type": "DATE"
+            }
+          ],
+          "summary": "A search is under way to find the remains of a Gower village which was destroyed by the sea in the 1950's."
+        }
+      }
     }
   },
-  "timestamp": 1654806343.2844522
+  "timestamp": 1654893050.3377755
 }

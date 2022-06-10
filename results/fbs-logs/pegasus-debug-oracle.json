@@ -5,7 +5,7 @@
     "classifier_batch_size": 16,
     "data_subset": "debug",
     "entity_label_match": "contained",
-    "max_iterations": 5,
+    "max_iterations": 10,
     "model_posterior": "entfa-cmlm",
     "model_prior": "facebook/bart-large",
     "model_summarization": "google/pegasus-xsum",
@@ -99,7 +99,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 68,
-            "score": -2.020644187927246
+            "score": -2.0206449031829834
           },
           "labeled_entities": [
             {
@@ -126,7 +126,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 103,
-            "score": -2.1893985271453857
+            "score": -2.1893975734710693
           },
           "labeled_entities": [
             {
@@ -145,7 +145,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 61,
-            "score": -1.793282389640808
+            "score": -1.7932838201522827
           },
           "labeled_entities": [
             {
@@ -172,7 +172,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 103,
-            "score": -2.6305298805236816
+            "score": -2.6305294036865234
           },
           "labeled_entities": [
             {
@@ -191,7 +191,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 51,
-            "score": -2.248680353164673
+            "score": -2.248680591583252
           },
           "labeled_entities": [],
           "summary": "A new mobile game is being used to help dementia research."
@@ -201,7 +201,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 78,
-            "score": -1.2077487707138062
+            "score": -1.2077488899230957
           },
           "labeled_entities": [
             {
@@ -244,7 +244,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 92,
-            "score": -0.9375077486038208
+            "score": -0.9375079274177551
           },
           "labeled_entities": [
             {
@@ -295,7 +295,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 105,
-            "score": -1.780522346496582
+            "score": -1.7805222272872925
           },
           "labeled_entities": [
             {
@@ -354,7 +354,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 104,
-            "score": -1.3465012311935425
+            "score": -1.3464999198913574
           },
           "labeled_entities": [
             {
@@ -397,7 +397,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 94,
-            "score": -1.5793757438659668
+            "score": -1.5793753862380981
           },
           "labeled_entities": [
             {
@@ -502,7 +502,7 @@
               "<pad> Plans to cut school transport subsidies in Hampshire"
             ],
             "n_words_checked": 68,
-            "score": -1.9710404872894287
+            "score": -1.9710416793823242
           },
           "labeled_entities": [
             {
@@ -532,7 +532,7 @@
               "<pad> Uzbekistan's Fedor Dusmatov won Olympic gold in the men's light-flyweight boxing with victory over Colombia's Ivan"
             ],
             "n_words_checked": 99,
-            "score": -1.9592467546463013
+            "score": -1.959246039390564
           },
           "labeled_entities": [
             {
@@ -565,5 +565,5 @@
       }
     }
   },
-  "timestamp": 1654806616.757077
+  "timestamp": 1654893148.3137064
 }

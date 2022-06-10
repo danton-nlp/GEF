@@ -19,11 +19,11 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 25,
-            "Intrinsic Hallucination": 0,
-            "Non-factual Hallucination": 19,
-            "Non-hallucinated": 188,
-            "Unknown": 123
+            "Factual Hallucination": 27,
+            "Intrinsic Hallucination": 1,
+            "Non-factual Hallucination": 20,
+            "Non-hallucinated": 185,
+            "Unknown": 122
           },
           "type": {
             "CARDINAL": {
@@ -35,18 +35,18 @@
               "total": 20
             },
             "DATE": {
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 6,
-              "Non-hallucinated": 4,
-              "Unknown": 29,
+              "Non-factual Hallucination": 7,
+              "Non-hallucinated": 3,
+              "Unknown": 28,
               "total": 41
             },
             "EVENT": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 1,
-              "Non-hallucinated": 3,
+              "Non-hallucinated": 2,
               "Unknown": 4,
               "total": 8
             },
@@ -60,9 +60,9 @@
             },
             "GPE": {
               "Factual Hallucination": 7,
-              "Intrinsic Hallucination": 0,
+              "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 1,
-              "Non-hallucinated": 52,
+              "Non-hallucinated": 51,
               "Unknown": 23,
               "total": 83
             },
@@ -155,7 +155,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 118,
-            "score": -1.9929863214492798
+            "score": -1.9929884672164917
           },
           "labeled_entities": [
             {
@@ -190,7 +190,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 86,
-            "score": -1.4238284826278687
+            "score": -1.4238290786743164
           },
           "labeled_entities": [
             {
@@ -292,7 +292,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 101,
-            "score": -2.55422043800354
+            "score": -2.5542190074920654
           },
           "labeled_entities": [
             {
@@ -319,7 +319,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 97,
-            "score": -1.0292778015136719
+            "score": -1.0292785167694092
           },
           "labeled_entities": [
             {
@@ -354,7 +354,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 130,
-            "score": -1.8980157375335693
+            "score": -1.8980164527893066
           },
           "labeled_entities": [
             {
@@ -413,7 +413,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 126,
-            "score": -2.293689250946045
+            "score": -2.293689489364624
           },
           "labeled_entities": [
             {
@@ -448,7 +448,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 129,
-            "score": -1.443785548210144
+            "score": -1.443784236907959
           },
           "labeled_entities": [
             {
@@ -547,7 +547,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 72,
-            "score": -2.4622304439544678
+            "score": -2.4622297286987305
           },
           "labeled_entities": [
             {
@@ -574,7 +574,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 119,
-            "score": -1.8036185503005981
+            "score": -1.8036190271377563
           },
           "labeled_entities": [
             {
@@ -617,7 +617,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 86,
-            "score": -1.3718492984771729
+            "score": -1.3718496561050415
           },
           "labeled_entities": [
             {
@@ -660,7 +660,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 112,
-            "score": -1.3535888195037842
+            "score": -1.3535887002944946
           },
           "labeled_entities": [
             {
@@ -735,7 +735,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 109,
-            "score": -2.116978883743286
+            "score": -2.1169769763946533
           },
           "labeled_entities": [
             {
@@ -782,7 +782,7 @@
               "end": 122,
               "ent": "World Cup",
               "in_source": true,
-              "label": "Non-hallucinated",
+              "label": "Factual Hallucination",
               "start": 113,
               "type": "EVENT"
             },
@@ -790,7 +790,7 @@
               "end": 143,
               "ent": "Amsterdam",
               "in_source": true,
-              "label": "Non-hallucinated",
+              "label": "Intrinsic Hallucination",
               "start": 134,
               "type": "GPE"
             }
@@ -802,14 +802,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 110,
-            "score": -1.8618921041488647
+            "score": -1.861891746520996
           },
           "labeled_entities": [
             {
               "end": 12,
               "ent": "2010",
               "in_source": true,
-              "label": "Non-hallucinated",
+              "label": "Factual Hallucination",
               "start": 8,
               "type": "DATE"
             },
@@ -845,7 +845,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 84,
-            "score": -1.891068458557129
+            "score": -1.8910678625106812
           },
           "labeled_entities": [
             {
@@ -880,7 +880,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 84,
-            "score": -1.2889338731765747
+            "score": -1.288934588432312
           },
           "labeled_entities": [
             {
@@ -907,7 +907,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 108,
-            "score": -2.1747772693634033
+            "score": -2.174776792526245
           },
           "labeled_entities": [
             {
@@ -950,7 +950,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 66,
-            "score": -1.64482843875885
+            "score": -1.6448298692703247
           },
           "labeled_entities": [
             {
@@ -985,7 +985,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 59,
-            "score": -2.398632049560547
+            "score": -2.3986287117004395
           },
           "labeled_entities": [
             {
@@ -1004,7 +1004,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 124,
-            "score": -2.1893670558929443
+            "score": -2.1893675327301025
           },
           "labeled_entities": [
             {
@@ -1047,7 +1047,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 87,
-            "score": -1.5695589780807495
+            "score": -1.5695583820343018
           },
           "labeled_entities": [
             {
@@ -1062,7 +1062,7 @@
               "end": 46,
               "ent": "the first day",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 33,
               "type": "DATE"
             },
@@ -1082,7 +1082,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 67,
-            "score": -1.5788936614990234
+            "score": -1.5788941383361816
           },
           "labeled_entities": [
             {
@@ -1101,7 +1101,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 74,
-            "score": -1.0844395160675049
+            "score": -1.0844401121139526
           },
           "labeled_entities": [
             {
@@ -1120,7 +1120,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 106,
-            "score": -2.1105105876922607
+            "score": -2.11051082611084
           },
           "labeled_entities": [
             {
@@ -1163,7 +1163,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 84,
-            "score": -1.0786322355270386
+            "score": -1.0786325931549072
           },
           "labeled_entities": [
             {
@@ -1198,7 +1198,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 109,
-            "score": -1.7712830305099487
+            "score": -1.771284580230713
           },
           "labeled_entities": [
             {
@@ -1241,7 +1241,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 82,
-            "score": -2.2993335723876953
+            "score": -2.2993323802948
           },
           "labeled_entities": [
             {
@@ -1276,7 +1276,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 121,
-            "score": -1.7553725242614746
+            "score": -1.755372166633606
           },
           "labeled_entities": [
             {
@@ -1295,7 +1295,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 92,
-            "score": -1.7455788850784302
+            "score": -1.745577096939087
           },
           "labeled_entities": [
             {
@@ -1330,7 +1330,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 106,
-            "score": -1.6501219272613525
+            "score": -1.6501230001449585
           },
           "labeled_entities": [
             {
@@ -1349,7 +1349,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 157,
-            "score": -2.753117561340332
+            "score": -2.753119945526123
           },
           "labeled_entities": [
             {
@@ -1368,7 +1368,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 96,
-            "score": -2.656794548034668
+            "score": -2.6567938327789307
           },
           "labeled_entities": [
             {
@@ -1387,7 +1387,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 84,
-            "score": -0.19310946762561798
+            "score": -0.19310961663722992
           },
           "labeled_entities": [
             {
@@ -1414,7 +1414,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 87,
-            "score": -1.8714951276779175
+            "score": -1.8714932203292847
           },
           "labeled_entities": [
             {
@@ -1449,7 +1449,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -0.9120542407035828
+            "score": -0.9120540618896484
           },
           "labeled_entities": [
             {
@@ -1476,7 +1476,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 83,
-            "score": -1.4214049577713013
+            "score": -1.4214062690734863
           },
           "labeled_entities": [
             {
@@ -1527,7 +1527,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 95,
-            "score": -1.1471014022827148
+            "score": -1.147101879119873
           },
           "labeled_entities": [
             {
@@ -1562,7 +1562,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 111,
-            "score": -1.1031184196472168
+            "score": -1.1031183004379272
           },
           "labeled_entities": [
             {
@@ -1597,7 +1597,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 100,
-            "score": -1.4913980960845947
+            "score": -1.491398811340332
           },
           "labeled_entities": [
             {
@@ -1648,7 +1648,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 129,
-            "score": -1.8565541505813599
+            "score": -1.8565534353256226
           },
           "labeled_entities": [
             {
@@ -1699,7 +1699,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -1.7201476097106934
+            "score": -1.7201478481292725
           },
           "labeled_entities": [
             {
@@ -1758,7 +1758,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 123,
-            "score": -2.015348196029663
+            "score": -2.015347957611084
           },
           "labeled_entities": [
             {
@@ -1777,7 +1777,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 78,
-            "score": -1.1314785480499268
+            "score": -1.1314795017242432
           },
           "labeled_entities": [
             {
@@ -1852,7 +1852,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 104,
-            "score": -1.4464415311813354
+            "score": -1.446442723274231
           },
           "labeled_entities": [
             {
@@ -1895,7 +1895,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 92,
-            "score": -1.7620445489883423
+            "score": -1.762044906616211
           },
           "labeled_entities": [
             {
@@ -1922,7 +1922,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 120,
-            "score": -2.192856788635254
+            "score": -2.192857027053833
           },
           "labeled_entities": [
             {
@@ -1957,7 +1957,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 82,
-            "score": -0.972525954246521
+            "score": -0.9725255370140076
           },
           "labeled_entities": [
             {
@@ -1992,7 +1992,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 99,
-            "score": -1.0121705532073975
+            "score": -1.0121710300445557
           },
           "labeled_entities": [
             {
@@ -2035,7 +2035,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 108,
-            "score": -1.5450929403305054
+            "score": -1.5450938940048218
           },
           "labeled_entities": [
             {
@@ -2070,7 +2070,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 112,
-            "score": -1.3485465049743652
+            "score": -1.348547101020813
           },
           "labeled_entities": [
             {
@@ -2121,7 +2121,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 91,
-            "score": -2.317859172821045
+            "score": -2.317859411239624
           },
           "labeled_entities": [
             {
@@ -2140,7 +2140,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 169,
-            "score": -1.8663661479949951
+            "score": -1.8663668632507324
           },
           "labeled_entities": [
             {
@@ -2191,7 +2191,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 92,
-            "score": -2.2482376098632812
+            "score": -2.2482359409332275
           },
           "labeled_entities": [
             {
@@ -2234,7 +2234,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -1.5979520082473755
+            "score": -1.5979502201080322
           },
           "labeled_entities": [
             {
@@ -2293,7 +2293,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 120,
-            "score": -1.9583649635314941
+            "score": -1.9583625793457031
           },
           "labeled_entities": [
             {
@@ -2360,7 +2360,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 137,
-            "score": -2.065809488296509
+            "score": -2.065809965133667
           },
           "labeled_entities": [
             {
@@ -2411,7 +2411,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 97,
-            "score": -1.7198461294174194
+            "score": -1.719846248626709
           },
           "labeled_entities": [
             {
@@ -2446,7 +2446,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -2.166121006011963
+            "score": -2.1661224365234375
           },
           "labeled_entities": [
             {
@@ -2465,7 +2465,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 100,
-            "score": -1.2030457258224487
+            "score": -1.2030454874038696
           },
           "labeled_entities": [
             {
@@ -2508,7 +2508,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 65,
-            "score": -1.2588562965393066
+            "score": -1.2588589191436768
           },
           "labeled_entities": [
             {
@@ -2535,7 +2535,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 92,
-            "score": -1.4830214977264404
+            "score": -1.483021855354309
           },
           "labeled_entities": [
             {
@@ -2586,7 +2586,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 81,
-            "score": -1.8782070875167847
+            "score": -1.878208875656128
           },
           "labeled_entities": [
             {
@@ -2613,7 +2613,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 88,
-            "score": -1.943070411682129
+            "score": -1.9430729150772095
           },
           "labeled_entities": [
             {
@@ -2640,7 +2640,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -0.8529055714607239
+            "score": -0.8529055118560791
           },
           "labeled_entities": [
             {
@@ -2683,7 +2683,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 75,
-            "score": -1.4670158624649048
+            "score": -1.4670159816741943
           },
           "labeled_entities": [
             {
@@ -2702,7 +2702,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 88,
-            "score": -1.6510646343231201
+            "score": -1.6510658264160156
           },
           "labeled_entities": [
             {
@@ -2753,7 +2753,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 123,
-            "score": -1.871009349822998
+            "score": -1.8710099458694458
           },
           "labeled_entities": [
             {
@@ -2780,7 +2780,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 91,
-            "score": -1.1629929542541504
+            "score": -1.1629915237426758
           },
           "labeled_entities": [
             {
@@ -2815,7 +2815,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -2.230156183242798
+            "score": -2.2301552295684814
           },
           "labeled_entities": [
             {
@@ -2850,7 +2850,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 87,
-            "score": -1.2219719886779785
+            "score": -1.2219724655151367
           },
           "labeled_entities": [
             {
@@ -2909,7 +2909,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 68,
-            "score": -1.1335430145263672
+            "score": -1.1335422992706299
           },
           "labeled_entities": [
             {
@@ -2928,7 +2928,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 100,
-            "score": -1.4862897396087646
+            "score": -1.4862886667251587
           },
           "labeled_entities": [
             {
@@ -2971,7 +2971,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 104,
-            "score": -2.0328855514526367
+            "score": -2.0328850746154785
           },
           "labeled_entities": [
             {
@@ -3014,7 +3014,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 109,
-            "score": -2.097618341445923
+            "score": -2.097618818283081
           },
           "labeled_entities": [
             {
@@ -3108,7 +3108,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 71,
-            "score": -0.7896826267242432
+            "score": -0.7896820306777954
           },
           "labeled_entities": [
             {
@@ -3135,7 +3135,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -1.8153200149536133
+            "score": -1.8153196573257446
           },
           "labeled_entities": [
             {
@@ -3162,7 +3162,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 74,
-            "score": -1.301242470741272
+            "score": -1.3012417554855347
           },
           "labeled_entities": [
             {
@@ -3213,7 +3213,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 78,
-            "score": -1.1067674160003662
+            "score": -1.106768250465393
           },
           "labeled_entities": [
             {
@@ -3264,7 +3264,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 101,
-            "score": -1.0361298322677612
+            "score": -1.036130666732788
           },
           "labeled_entities": [
             {
@@ -3299,7 +3299,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 60,
-            "score": -1.8000730276107788
+            "score": -1.8000738620758057
           },
           "labeled_entities": [
             {
@@ -3334,7 +3334,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 63,
-            "score": -1.6486760377883911
+            "score": -1.6486763954162598
           },
           "labeled_entities": [
             {
@@ -3353,7 +3353,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 88,
-            "score": -2.095644474029541
+            "score": -2.0956430435180664
           },
           "labeled_entities": [
             {
@@ -3396,7 +3396,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 91,
-            "score": -1.8205955028533936
+            "score": -1.8205947875976562
           },
           "labeled_entities": [
             {
@@ -3423,7 +3423,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 70,
-            "score": -1.467421531677246
+            "score": -1.467422366142273
           },
           "labeled_entities": [
             {
@@ -3509,7 +3509,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 71,
-            "score": -2.028643846511841
+            "score": -2.028644561767578
           },
           "labeled_entities": [
             {
@@ -3552,7 +3552,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 71,
-            "score": -0.9848644137382507
+            "score": -0.9848648905754089
           },
           "labeled_entities": [
             {
@@ -3603,7 +3603,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 67,
-            "score": -2.1598610877990723
+            "score": -2.159860849380493
           },
           "labeled_entities": [
             {
@@ -3630,7 +3630,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 59,
-            "score": -0.8646009564399719
+            "score": -0.8646013140678406
           },
           "labeled_entities": [
             {
@@ -3700,7 +3700,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 103,
-            "score": -1.988852620124817
+            "score": -1.9888514280319214
           },
           "labeled_entities": [
             {
@@ -3735,7 +3735,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 100,
-            "score": -2.4680240154266357
+            "score": -2.4680261611938477
           },
           "labeled_entities": [
             {
@@ -3770,7 +3770,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 57,
-            "score": -2.220883369445801
+            "score": -2.22088360786438
           },
           "labeled_entities": [
             {
@@ -3805,7 +3805,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 76,
-            "score": -1.4260207414627075
+            "score": -1.426020860671997
           },
           "labeled_entities": [
             {
@@ -3880,7 +3880,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 55,
-            "score": -1.2503893375396729
+            "score": -1.2503911256790161
           },
           "labeled_entities": [
             {
@@ -3931,7 +3931,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 102,
-            "score": -1.400797724723816
+            "score": -1.4007970094680786
           },
           "labeled_entities": [
             {
@@ -3966,7 +3966,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 76,
-            "score": -1.1697320938110352
+            "score": -1.1697309017181396
           },
           "labeled_entities": [
             {
@@ -3993,7 +3993,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 110,
-            "score": -2.214362144470215
+            "score": -2.214362382888794
           },
           "labeled_entities": [
             {
@@ -4044,7 +4044,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 75,
-            "score": -1.1768604516983032
+            "score": -1.1768598556518555
           },
           "labeled_entities": [
             {
@@ -4096,10 +4096,10 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 25,
-            "Intrinsic Hallucination": 0,
+            "Factual Hallucination": 26,
+            "Intrinsic Hallucination": 2,
             "Non-factual Hallucination": 9,
-            "Non-hallucinated": 187,
+            "Non-hallucinated": 184,
             "Unknown": 122
           },
           "type": {
@@ -4112,10 +4112,10 @@
               "total": 19
             },
             "DATE": {
-              "Factual Hallucination": 2,
-              "Intrinsic Hallucination": 0,
+              "Factual Hallucination": 3,
+              "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 3,
-              "Non-hallucinated": 5,
+              "Non-hallucinated": 3,
               "Unknown": 28,
               "total": 38
             },
@@ -4193,9 +4193,9 @@
             },
             "PERSON": {
               "Factual Hallucination": 8,
-              "Intrinsic Hallucination": 0,
+              "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 3,
-              "Non-hallucinated": 82,
+              "Non-hallucinated": 81,
               "Unknown": 24,
               "total": 117
             },
@@ -4286,7 +4286,7 @@
               "<pad> County Longford, in the Republic of Ireland's midlands, was once dubbed Ireland's Silicon Valley"
             ],
             "n_words_checked": 124,
-            "score": -2.7217795848846436
+            "score": -2.721780300140381
           },
           "labeled_entities": [
             {
@@ -4318,21 +4318,22 @@
               "<pad> The first"
             ],
             "n_words_checked": 67,
-            "score": -2.4263694286346436
+            "score": -2.4263710975646973
           },
           "labeled_entities": [],
           "summary": "The quiet of the morning had lulled us into a false sense of security."
         },
         "32974091": {
           "banned_phrases": [
-            "Hundreds"
+            "Hundreds",
+            "the first day"
           ],
           "generation_metadata": {
             "dropped_seqs": [
               "<pad> Hundreds"
             ],
             "n_words_checked": 59,
-            "score": -1.5817424058914185
+            "score": -1.5817426443099976
           },
           "labeled_entities": [
             {
@@ -4355,7 +4356,7 @@
               "<pad> A 19-year-old"
             ],
             "n_words_checked": 80,
-            "score": -1.1617300510406494
+            "score": -1.161730170249939
           },
           "labeled_entities": [
             {
@@ -4397,14 +4398,14 @@
               "<pad> Former world number one John"
             ],
             "n_words_checked": 83,
-            "score": -2.3363635540008545
+            "score": -2.336364269256592
           },
           "labeled_entities": [
             {
               "end": 27,
               "ent": "Barry",
               "in_source": true,
-              "label": "Non-hallucinated",
+              "label": "Intrinsic Hallucination",
               "start": 22,
               "type": "PERSON"
             },
@@ -4436,7 +4437,7 @@
               "<pad> A 70-year-old"
             ],
             "n_words_checked": 140,
-            "score": -2.563840389251709
+            "score": -2.563839912414551
           },
           "labeled_entities": [],
           "summary": "A woman with terminal cancer who tried to kill herself because she did not want \"to live in a council flat, be poor or be ugly\" has won the right to refuse dialysis."
@@ -4453,7 +4454,7 @@
               "<pad> One of Scotland's busiest railway stations is to be closed for more than six months"
             ],
             "n_words_checked": 90,
-            "score": -2.085658073425293
+            "score": -2.0856566429138184
           },
           "labeled_entities": [
             {
@@ -4497,7 +4498,7 @@
               "<pad> Philippine presidential candidate Rodrigo Duterte has been accused of misogyny after a video emerged showing him mocking the rape and murder of a Roman Catholic"
             ],
             "n_words_checked": 112,
-            "score": -1.8929688930511475
+            "score": -1.8929698467254639
           },
           "labeled_entities": [
             {
@@ -4541,7 +4542,7 @@
               "<pad> Plans for a new main stand at Tynecastle have been given the go-ahead by councillors in the Scottish"
             ],
             "n_words_checked": 82,
-            "score": -1.5860686302185059
+            "score": -1.5860687494277954
           },
           "labeled_entities": [],
           "summary": "Plans for a new main stand at Tynecastle have been given the go-ahead by councillors."
@@ -4569,7 +4570,7 @@
               "<pad> New Year's Day has been shrouded in a thick smog that has enveloped the Chinese"
             ],
             "n_words_checked": 95,
-            "score": -3.06268048286438
+            "score": -3.0626816749572754
           },
           "labeled_entities": [
             {
@@ -4608,14 +4609,14 @@
               "<pad> A man has been jailed for three years"
             ],
             "n_words_checked": 92,
-            "score": -1.8489779233932495
+            "score": -1.8489773273468018
           },
           "labeled_entities": [
             {
               "end": 35,
               "ent": "two years",
               "in_source": true,
-              "label": "Non-hallucinated",
+              "label": "Intrinsic Hallucination",
               "start": 26,
               "type": "DATE"
             }
@@ -4635,7 +4636,7 @@
               "<pad> Carrick Rangers have signed former Crusaders player David McAllister on a deal until the end of the season"
             ],
             "n_words_checked": 74,
-            "score": -1.629262924194336
+            "score": -1.6292619705200195
           },
           "labeled_entities": [
             {
@@ -4690,7 +4691,7 @@
               "<pad> Leyton Orient have re-appointed Paul"
             ],
             "n_words_checked": 83,
-            "score": -2.2306275367736816
+            "score": -2.230628728866577
           },
           "labeled_entities": [
             {
@@ -4737,7 +4738,7 @@
               "<pad> Northamptonshire's Ben Wakely and Andy"
             ],
             "n_words_checked": 100,
-            "score": -2.764544725418091
+            "score": -2.764542818069458
           },
           "labeled_entities": [
             {
@@ -4805,10 +4806,10 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 29,
-            "Intrinsic Hallucination": 0,
+            "Factual Hallucination": 30,
+            "Intrinsic Hallucination": 2,
             "Non-factual Hallucination": 6,
-            "Non-hallucinated": 187,
+            "Non-hallucinated": 184,
             "Unknown": 123
           },
           "type": {
@@ -4821,10 +4822,10 @@
               "total": 19
             },
             "DATE": {
-              "Factual Hallucination": 3,
-              "Intrinsic Hallucination": 0,
+              "Factual Hallucination": 4,
+              "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 3,
-              "Non-hallucinated": 5,
+              "Non-hallucinated": 3,
               "Unknown": 28,
               "total": 39
             },
@@ -4902,9 +4903,9 @@
             },
             "PERSON": {
               "Factual Hallucination": 8,
-              "Intrinsic Hallucination": 0,
+              "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 3,
-              "Non-hallucinated": 82,
+              "Non-hallucinated": 81,
               "Unknown": 24,
               "total": 117
             },
@@ -4955,7 +4956,7 @@
               "<pad> A 20-year-old"
             ],
             "n_words_checked": 80,
-            "score": -1.221415400505066
+            "score": -1.2214163541793823
           },
           "labeled_entities": [
             {
@@ -5000,7 +5001,7 @@
               "<pad> One of Scotland's busiest railway stations is to be closed for more than a month"
             ],
             "n_words_checked": 88,
-            "score": -2.3370299339294434
+            "score": -2.3370296955108643
           },
           "labeled_entities": [
             {
@@ -5062,7 +5063,7 @@
               "<pad> A thick smog blanketed the northern part of the Indian capital, Delhi, on Monday morning as the city celebrated the New Year"
             ],
             "n_words_checked": 131,
-            "score": -4.052089214324951
+            "score": -4.052091121673584
           },
           "labeled_entities": [
             {
@@ -5118,7 +5119,7 @@
               "<pad> Carrick Rangers have signed former Crusaders player David McAllister on a deal until the end of the season"
             ],
             "n_words_checked": 74,
-            "score": -1.7159297466278076
+            "score": -1.7159301042556763
           },
           "labeled_entities": [
             {
@@ -5225,7 +5226,7 @@
               "<pad> Northamptonshire's Jim Wakely and Richard"
             ],
             "n_words_checked": 103,
-            "score": -2.586719274520874
+            "score": -2.586719512939453
           },
           "labeled_entities": [
             {
@@ -5301,10 +5302,10 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 27,
-            "Intrinsic Hallucination": 0,
+            "Factual Hallucination": 28,
+            "Intrinsic Hallucination": 2,
             "Non-factual Hallucination": 4,
-            "Non-hallucinated": 184,
+            "Non-hallucinated": 181,
             "Unknown": 121
           },
           "type": {
@@ -5317,10 +5318,10 @@
               "total": 19
             },
             "DATE": {
-              "Factual Hallucination": 2,
-              "Intrinsic Hallucination": 0,
+              "Factual Hallucination": 3,
+              "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 2,
-              "Non-hallucinated": 5,
+              "Non-hallucinated": 3,
               "Unknown": 28,
               "total": 37
             },
@@ -5398,9 +5399,9 @@
             },
             "PERSON": {
               "Factual Hallucination": 8,
-              "Intrinsic Hallucination": 0,
+              "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 2,
-              "Non-hallucinated": 80,
+              "Non-hallucinated": 79,
               "Unknown": 23,
               "total": 113
             },
@@ -5453,7 +5454,7 @@
               "<pad> A 21-year-old"
             ],
             "n_words_checked": 80,
-            "score": -1.2745463848114014
+            "score": -1.274547815322876
           },
           "labeled_entities": [
             {
@@ -5500,7 +5501,7 @@
               "<pad> One of Scotland's busiest railway stations is to be closed for more than a year"
             ],
             "n_words_checked": 92,
-            "score": -2.394779920578003
+            "score": -2.3947806358337402
           },
           "labeled_entities": [
             {
@@ -5553,7 +5554,7 @@
               "<pad> Carrick Rangers have completed the signing of former Crusaders player Darren McAllister on a deal until the end of the season"
             ],
             "n_words_checked": 85,
-            "score": -2.139652967453003
+            "score": -2.1396536827087402
           },
           "labeled_entities": [
             {
@@ -5614,7 +5615,7 @@
               "<pad> Leyton Orient have re-appointed former player and director of professional Darts Paul"
             ],
             "n_words_checked": 87,
-            "score": -3.5160560607910156
+            "score": -3.5160553455352783
           },
           "labeled_entities": [
             {
@@ -5677,10 +5678,10 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 25,
-            "Intrinsic Hallucination": 0,
+            "Factual Hallucination": 26,
+            "Intrinsic Hallucination": 2,
             "Non-factual Hallucination": 1,
-            "Non-hallucinated": 179,
+            "Non-hallucinated": 176,
             "Unknown": 121
           },
           "type": {
@@ -5693,10 +5694,10 @@
               "total": 18
             },
             "DATE": {
-              "Factual Hallucination": 2,
-              "Intrinsic Hallucination": 0,
+              "Factual Hallucination": 3,
+              "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 0,
-              "Non-hallucinated": 5,
+              "Non-hallucinated": 3,
               "Unknown": 28,
               "total": 35
             },
@@ -5774,9 +5775,9 @@
             },
             "PERSON": {
               "Factual Hallucination": 8,
-              "Intrinsic Hallucination": 0,
+              "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 1,
-              "Non-hallucinated": 79,
+              "Non-hallucinated": 78,
               "Unknown": 23,
               "total": 111
             },
@@ -5908,7 +5909,7 @@
               "<pad> Leyton Orient have re-appointed former player and director of professional Darts David"
             ],
             "n_words_checked": 78,
-            "score": -3.5793702602386475
+            "score": -3.5793697834014893
           },
           "labeled_entities": [
             {
@@ -5944,10 +5945,10 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 24,
-            "Intrinsic Hallucination": 0,
+            "Factual Hallucination": 25,
+            "Intrinsic Hallucination": 2,
             "Non-factual Hallucination": 0,
-            "Non-hallucinated": 178,
+            "Non-hallucinated": 175,
             "Unknown": 121
           },
           "type": {
@@ -5960,10 +5961,10 @@
               "total": 18
             },
             "DATE": {
-              "Factual Hallucination": 2,
-              "Intrinsic Hallucination": 0,
+              "Factual Hallucination": 3,
+              "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 0,
-              "Non-hallucinated": 5,
+              "Non-hallucinated": 3,
               "Unknown": 28,
               "total": 35
             },
@@ -6041,9 +6042,9 @@
             },
             "PERSON": {
               "Factual Hallucination": 8,
-              "Intrinsic Hallucination": 0,
+              "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 0,
-              "Non-hallucinated": 78,
+              "Non-hallucinated": 77,
               "Unknown": 23,
               "total": 109
             },
@@ -6114,5 +6115,5 @@
       }
     }
   },
-  "timestamp": 1654815564.353962
+  "timestamp": 1654893628.5765016
 }
