@@ -71,6 +71,7 @@ class SummaryEval(TypedDict):
     count_entity_extrinsic: int
     count_entity_label: DefaultDict[str, int]
     has_predicted_non_factual: bool
+    incorrectly_predicted_non_factual: bool
     rouge1: Union[float, None]
     rouge2: Union[float, None]
     rougeL: Union[float, None]
@@ -90,6 +91,7 @@ def evaluate_summary(
         "count_entity_extrinsic": 0,
         "count_entity_label": defaultdict(lambda: 0),
         "has_predicted_non_factual": False,
+        "incorrectly_predicted_non_factual": False,
         "rouge1": None,
         "rouge2": None,
         "rougeL": None,
@@ -125,6 +127,8 @@ def evaluate_summary(
                     and ent["predicted_label"] == ANNOTATION_LABELS["Non-factual"]
                 ):
                     summary_eval["has_predicted_non_factual"] = True
+                    if ent['label'] != ANNOTATION_LABELS["Non-factual"]:
+                        summary_eval['incorrectly_predicted_non_factual'] = True
 
             if not ent["in_source"]:
                 summary_eval["count_entity_extrinsic"] += 1
@@ -160,7 +164,8 @@ def evaluate_factuality(
         "non_factual_extrinsic": 0,
         "unknown": 0,
         "entities": 0,
-        "skipped": 0,
+        "skipped": 0,  # total number skipped
+        "incorrectly_skipped": 0,
         "failed": 0,
         "rouge1": [],
         "rouge2": [],
@@ -195,12 +200,16 @@ def evaluate_factuality(
 
         # Skip logic
         is_skipped = False
+        is_incorrectly_skipped = False
         if summary_eval["failed"]:
             is_skipped = True
         elif is_fbs and is_oracle and count_non_factual_extrinsic:
             is_skipped = True
         elif is_fbs and summary_eval["has_predicted_non_factual"]:
             is_skipped = True
+
+        if summary_eval["incorrectly_predicted_non_factual"]:
+            is_incorrectly_skipped = True
 
         # Update evaluation state if summary is not skipped
         if not is_skipped:
@@ -216,6 +225,7 @@ def evaluate_factuality(
             "is_non_factual_intrinsic": non_factual_intrinsic,
             "is_factual": not is_skipped and not non_factual and not has_unknown,
             "is_skipped": is_skipped,
+            "is_incorrectly_skipped": is_incorrectly_skipped,
             "has_unknown": has_unknown,
             "has_failed": summary_eval["failed"],
             "count_extrinsic": count_extrinsic,
@@ -240,6 +250,9 @@ def evaluate_factuality(
         # Only increment counts if summary is NOT skipped!
         if is_skipped:
             agg_results["skipped"] += 1
+
+            if is_incorrectly_skipped:
+                agg_results["incorrectly_skipped"] += 1
         else:
             agg_results["entities"] += summary_eval["count_entity_total"]
             for key, value in summary_eval["count_entity_label"].items():
@@ -273,6 +286,7 @@ def evaluate_factuality(
             "non_factual_extrinsic": agg_results["non_factual_extrinsic"] / total,
             "non_factual_intrinsic": agg_results["non_factual_intrinsic"] / total,
             "skipped": agg_results["skipped"] / total,
+            "incorrectly_skipped": agg_results["incorrectly_skipped"] / total,
             "failed": agg_results["failed"],
             "unknown": agg_results["unknown"] / total,
             "sum_with_extrinsic": agg_results["sum_with_extrinsic"] / total,
