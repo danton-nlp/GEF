@@ -130,7 +130,7 @@ def compute_entitity_probability(
         early_stopping=True,
         return_dict_in_generate=True,
         output_scores=True,
-        max_length=min(200, target_input_ids.shape[1] + 1),
+        max_length=target_input_ids.shape[1] + 1,
         prefix_allowed_tokens_fn=prefix_allowed_tokens_fn,
     )
 
