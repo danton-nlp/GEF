@@ -71,7 +71,7 @@ if __name__ == "__main__":
             # ),
         }
     for sumtool_name, model_label in [
-        ("facebook-bart-large-xsum", "baseline"),
+        ("facebook-bart-large-xsum", "baseline-bart"),
         ("google-pegasus-xsum", "baseline-pegasus"),
         ("chen-corrector", "corrector"),  # Chen. et al replication project
         ("gold", "gold"),  # Chen. et al replication project
