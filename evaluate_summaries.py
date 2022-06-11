@@ -74,7 +74,8 @@ if __name__ == "__main__":
     for sumtool_name, model_label in [
         ("facebook-bart-large-xsum", "baseline-bart"),
         ("google-pegasus-xsum", "baseline-pegasus"),
-        ("meng-rl", "meng-rl"),  # Hallucinated, but factual! Paper
+        ("meng-test", "meng-test"),  # Hallucinated, but factual! Paper
+        ("meng-test_last", "meng-test_last"),  # Hallucinated, but factual! Paper
         ("chen-corrector", "corrector"),  # Chen. et al replication project
         ("gold", "gold"),
         # ("entity-filter-v2", "filtered"),  # Nan. et al
