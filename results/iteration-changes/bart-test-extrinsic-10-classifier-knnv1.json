@@ -1,0 +1,538 @@
+[
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 6,
+      "Intrinsic Hallucination": 0,
+      "Non-factual Hallucination": 0,
+      "Non-hallucinated": 8,
+      "Unknown": 0,
+      "total": 14,
+      "type": {
+        "DATE": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 3
+        },
+        "FAC": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "GPE": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 3
+        },
+        "ORG": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 3
+        },
+        "PERSON": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 4
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 2.8,
+      "factual": 0.5,
+      "failed": 0,
+      "non_factual": 0.0,
+      "non_factual_extrinsic": 0.0,
+      "non_factual_intrinsic": 0.0,
+      "skipped": 0.5,
+      "sum_with_extrinsic": 0.5,
+      "total": 10,
+      "unknown": 0.0
+    },
+    "iteration": 0,
+    "summary": {
+      "26398483": {
+        "summary": "Police have released an image of a man they want to speak to in connection with a sexual assault on a 15-year-old girl in Hertfordshire."
+      },
+      "31113635": {
+        "summary": "The amount of money spent on film production in the UK reached an all-time high last year, according to figures from the British Film Institute."
+      },
+      "32557344": {
+        "summary": "The RSPCA has appealed for information after an injured pony was found dumped in a field in Lincolnshire."
+      },
+      "34614991": {
+        "summary": "Nicola Sturgeon has said she will always work with Plaid Cymru leader Leanne Wood."
+      },
+      "34898778": {
+        "summary": "Nour, a 15-year-old girl, was caught up in the fighting between so-called Islamic State (IS) and government forces in the Syrian city of Raqqa in 2014."
+      },
+      "36341722": {
+        "summary": "Three men have been found guilty of blowing up cash machines and stealing more than \u00a3200,000."
+      },
+      "36772094": {
+        "summary": "The RSPCA has reported a fall in the number of animal cruelty cases in Wales last year."
+      },
+      "39593375": {
+        "summary": "A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for 12 years."
+      },
+      "39807248": {
+        "summary": "An under-performing academy in Southampton is to be merged with another in the city."
+      },
+      "40243246": {
+        "summary": "A 19-year-old man has been arrested as part of the investigation into the London Bridge terror attack, police have said."
+      }
+    },
+    "summary_completed": 0,
+    "summary_remaining": 10
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 6,
+      "Intrinsic Hallucination": 0,
+      "Non-factual Hallucination": 1,
+      "Non-hallucinated": 8,
+      "Unknown": 0,
+      "total": 15,
+      "type": {
+        "DATE": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 3
+        },
+        "FAC": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "GPE": {
+          "Factual Hallucination": 1,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 4
+        },
+        "ORG": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 3
+        },
+        "PERSON": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 4
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 2.5,
+      "factual": 0.5,
+      "failed": 0,
+      "non_factual": 0.1,
+      "non_factual_extrinsic": 0.1,
+      "non_factual_intrinsic": 0.0,
+      "skipped": 0.4,
+      "sum_with_extrinsic": 0.6,
+      "total": 10,
+      "unknown": 0.0
+    },
+    "iteration": 1,
+    "summary": {
+      "26398483": {
+        "edit_stats": {
+          "edit_distance_token": 2,
+          "rouge1": 0.9285714285714286,
+          "rouge2": 0.8518518518518519,
+          "rougeL": 0.9285714285714286
+        },
+        "summary": "Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 14-year-old girl in Hertfordshire."
+      },
+      "34898778": {
+        "edit_stats": {
+          "edit_distance_token": 7,
+          "rouge1": 0.8333333333333334,
+          "rouge2": 0.6551724137931035,
+          "rougeL": 0.8333333333333334
+        },
+        "summary": "Nour is a 23-year-old woman who was caught up in the fighting between so-called Islamic State (IS) and government forces in the Iraqi city of Mosul in 2014."
+      },
+      "36341722": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9411764705882353,
+          "rouge2": 0.875,
+          "rougeL": 0.9411764705882353
+        },
+        "summary": "Three men have been found guilty of blowing up cash machines and stealing more than \u00a3100,000."
+      },
+      "39593375": {
+        "edit_stats": {
+          "edit_distance_token": 2,
+          "rouge1": 0.9047619047619048,
+          "rouge2": 0.8000000000000002,
+          "rougeL": 0.9047619047619048
+        },
+        "summary": "A paedophile who groomed a 10-year-old boy on Facebook before sexually abusing him has been jailed for eight years."
+      },
+      "39807248": {
+        "edit_stats": {
+          "edit_distance_token": 8,
+          "rouge1": 0.6666666666666666,
+          "rouge2": 0.5294117647058824,
+          "rougeL": 0.6666666666666666
+        },
+        "summary": "An under-performing academy school in south-west London is to be merged with another in a bid to save money."
+      }
+    },
+    "summary_completed": 5,
+    "summary_remaining": 5
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 6,
+      "Intrinsic Hallucination": 0,
+      "Non-factual Hallucination": 1,
+      "Non-hallucinated": 8,
+      "Unknown": 0,
+      "total": 15,
+      "type": {
+        "DATE": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 3
+        },
+        "FAC": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "GPE": {
+          "Factual Hallucination": 1,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 4
+        },
+        "ORG": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 3
+        },
+        "PERSON": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 4
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 2.5,
+      "factual": 0.5,
+      "failed": 0,
+      "non_factual": 0.1,
+      "non_factual_extrinsic": 0.1,
+      "non_factual_intrinsic": 0.0,
+      "skipped": 0.4,
+      "sum_with_extrinsic": 0.6,
+      "total": 10,
+      "unknown": 0.0
+    },
+    "iteration": 2,
+    "summary": {
+      "26398483": {
+        "edit_stats": {
+          "edit_distance_token": 3,
+          "rouge1": 0.9642857142857143,
+          "rouge2": 0.9259259259259259,
+          "rougeL": 0.9642857142857143
+        },
+        "summary": "Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 15- year-old girl in Hertfordshire."
+      },
+      "34898778": {
+        "edit_stats": {
+          "edit_distance_token": 12,
+          "rouge1": 0.830188679245283,
+          "rouge2": 0.7450980392156864,
+          "rougeL": 0.679245283018868
+        },
+        "summary": "Nour, from the Syrian city of Aleppo, was caught up in the fighting between so-called Islamic State (IS) and government forces in 2014."
+      },
+      "36341722": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9411764705882353,
+          "rouge2": 0.875,
+          "rougeL": 0.9411764705882353
+        },
+        "summary": "Three men have been found guilty of blowing up cash machines and stealing more than \u00a3150,000."
+      },
+      "39593375": {
+        "edit_stats": {
+          "edit_distance_token": 4,
+          "rouge1": 0.9302325581395349,
+          "rouge2": 0.8292682926829269,
+          "rougeL": 0.9302325581395349
+        },
+        "summary": "A \"depraved\" paedophile who groomed a 12-year old boy on Facebook before sexually abusing him has been jailed for seven years."
+      }
+    },
+    "summary_completed": 6,
+    "summary_remaining": 4
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 6,
+      "Intrinsic Hallucination": 0,
+      "Non-factual Hallucination": 1,
+      "Non-hallucinated": 8,
+      "Unknown": 0,
+      "total": 15,
+      "type": {
+        "DATE": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 3
+        },
+        "FAC": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "GPE": {
+          "Factual Hallucination": 1,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 4
+        },
+        "ORG": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 3
+        },
+        "PERSON": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 4
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 2.5,
+      "factual": 0.5,
+      "failed": 2,
+      "non_factual": 0.1,
+      "non_factual_extrinsic": 0.1,
+      "non_factual_intrinsic": 0.0,
+      "skipped": 0.4,
+      "sum_with_extrinsic": 0.6,
+      "total": 10,
+      "unknown": 0.0
+    },
+    "iteration": 3,
+    "summary": {
+      "26398483": {
+        "summary": "<Failed generation: blocked all beams>"
+      },
+      "34898778": {
+        "edit_stats": {
+          "edit_distance_token": 13,
+          "rouge1": 0.7924528301886793,
+          "rouge2": 0.7058823529411765,
+          "rougeL": 0.6415094339622641
+        },
+        "summary": "Nour, from the Syrian city of Aleppo, was caught up in the fighting between so-called Islamic State (IS) and government forces in June."
+      },
+      "36341722": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9411764705882353,
+          "rouge2": 0.875,
+          "rougeL": 0.9411764705882353
+        },
+        "summary": "Three men have been found guilty of blowing up cash machines and stealing more than \u00a3300,000."
+      },
+      "39593375": {
+        "summary": "<Failed generation: blocked all beams>"
+      }
+    },
+    "summary_completed": 6,
+    "summary_remaining": 4
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 6,
+      "Intrinsic Hallucination": 0,
+      "Non-factual Hallucination": 1,
+      "Non-hallucinated": 8,
+      "Unknown": 0,
+      "total": 15,
+      "type": {
+        "DATE": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 3
+        },
+        "FAC": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "GPE": {
+          "Factual Hallucination": 1,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 4
+        },
+        "ORG": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 3
+        },
+        "PERSON": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 4
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 2.5,
+      "factual": 0.5,
+      "failed": 3,
+      "non_factual": 0.1,
+      "non_factual_extrinsic": 0.1,
+      "non_factual_intrinsic": 0.0,
+      "skipped": 0.4,
+      "sum_with_extrinsic": 0.6,
+      "total": 10,
+      "unknown": 0.0
+    },
+    "iteration": 4,
+    "summary": {
+      "34898778": {
+        "edit_stats": {
+          "edit_distance_token": 14,
+          "rouge1": 0.7636363636363636,
+          "rouge2": 0.6415094339622641,
+          "rougeL": 0.6181818181818182
+        },
+        "summary": "Nour, from the Syrian city of Aleppo, was caught up in the fighting between the so-called Islamic State (IS) and government forces in March 2015."
+      },
+      "36341722": {
+        "summary": "<Failed generation: blocked all beams>"
+      }
+    },
+    "summary_completed": 8,
+    "summary_remaining": 2
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 6,
+      "Intrinsic Hallucination": 0,
+      "Non-factual Hallucination": 1,
+      "Non-hallucinated": 8,
+      "Unknown": 0,
+      "total": 15,
+      "type": {
+        "DATE": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 3
+        },
+        "FAC": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "GPE": {
+          "Factual Hallucination": 1,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 4
+        },
+        "ORG": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 3
+        },
+        "PERSON": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 4
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 2.5,
+      "factual": 0.5,
+      "failed": 3,
+      "non_factual": 0.1,
+      "non_factual_extrinsic": 0.1,
+      "non_factual_intrinsic": 0.0,
+      "skipped": 0.4,
+      "sum_with_extrinsic": 0.6,
+      "total": 10,
+      "unknown": 0.0
+    },
+    "iteration": 5,
+    "summary": {
+      "34898778": {
+        "edit_stats": {
+          "edit_distance_token": 12,
+          "rouge1": 0.736842105263158,
+          "rouge2": 0.6545454545454545,
+          "rougeL": 0.6666666666666666
+        },
+        "summary": "Nour, from the Syrian city of Aleppo, was caught up in the fighting between the so-called Islamic State (IS) and government forces in the summer of 2015."
+      }
+    },
+    "summary_completed": 9,
+    "summary_remaining": 1
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 6,
+      "Intrinsic Hallucination": 0,
+      "Non-factual Hallucination": 1,
+      "Non-hallucinated": 8,
+      "Unknown": 0,
+      "total": 15,
+      "type": {
+        "DATE": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 3
+        },
+        "FAC": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "GPE": {
+          "Factual Hallucination": 1,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 4
+        },
+        "ORG": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 3
+        },
+        "PERSON": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 4
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 2.5,
+      "factual": 0.5,
+      "failed": 4,
+      "non_factual": 0.1,
+      "non_factual_extrinsic": 0.1,
+      "non_factual_intrinsic": 0.0,
+      "skipped": 0.4,
+      "sum_with_extrinsic": 0.6,
+      "total": 10,
+      "unknown": 0.0
+    },
+    "iteration": 6,
+    "summary": {
+      "34898778": {
+        "summary": "<Failed generation: blocked all beams>"
+      }
+    },
+    "summary_completed": 9,
+    "summary_remaining": 1
+  }
+]

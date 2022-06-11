@@ -16,3 +16,4 @@ rouge_score
 bert_score
 termcolor
 sentencepiece
+editdistance
