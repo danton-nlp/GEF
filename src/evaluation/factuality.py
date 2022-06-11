@@ -70,6 +70,7 @@ class SummaryEval(TypedDict):
     count_entity_total: int
     count_entity_extrinsic: int
     count_entity_label: DefaultDict[str, int]
+    count_entity_type: DefaultDict[str, DefaultDict[str, int]]
     has_predicted_non_factual: bool
     rouge1: Union[float, None]
     rouge2: Union[float, None]
@@ -81,6 +82,7 @@ def evaluate_summary(
     source: str,
     reference: str,
     labeled_entities: List[MarkedEntity],
+    compute_rouge: bool,
 ) -> SummaryEval:
     is_gold = summary == reference
     summary_eval: SummaryEval = {
@@ -89,6 +91,7 @@ def evaluate_summary(
         "count_entity_total": 0,
         "count_entity_extrinsic": 0,
         "count_entity_label": defaultdict(lambda: 0),
+        "count_entity_type": defaultdict(lambda: defaultdict(lambda: 0)),
         "has_predicted_non_factual": False,
         "rouge1": None,
         "rouge2": None,
@@ -98,26 +101,22 @@ def evaluate_summary(
         summary_eval["failed"] = True
         summary_eval["skipped"] = True
     else:
-        rouge_scores = rouge([summary], [reference])
-        summary_eval["rouge1"] = rouge_scores["rouge1"]["f1"]
-        summary_eval["rouge2"] = rouge_scores["rouge2"]["f1"]
-        summary_eval["rougeL"] = rouge_scores["rougeL"]["f1"]
+        if compute_rouge:
+            rouge_scores = rouge([summary], [reference])
+            summary_eval["rouge1"] = rouge_scores["rouge1"]["f1"]
+            summary_eval["rouge2"] = rouge_scores["rouge2"]["f1"]
+            summary_eval["rougeL"] = rouge_scores["rougeL"]["f1"]
 
         for ent in labeled_entities:
             summary_eval["count_entity_total"] += 1
 
-            # Increment entity label count
             if is_gold:
                 if ent["in_source"]:
-                    summary_eval["count_entity_label"][
-                        ANNOTATION_LABELS["Non-hallucinated"]
-                    ] += 1
+                    entity_label = ANNOTATION_LABELS["Non-hallucinated"]
                 else:
-                    summary_eval["count_entity_label"][
-                        ANNOTATION_LABELS["Factual"]
-                    ] += 1
+                    entity_label = ANNOTATION_LABELS["Factual"]
             else:
-                summary_eval["count_entity_label"][str(ent["label"])] += 1
+                entity_label = str(ent["label"])
 
                 # Detect non-factual predictions from FBS classifier
                 if (
@@ -125,6 +124,11 @@ def evaluate_summary(
                     and ent["predicted_label"] == ANNOTATION_LABELS["Non-factual"]
                 ):
                     summary_eval["has_predicted_non_factual"] = True
+
+            # Increment entity label count
+            summary_eval["count_entity_label"][entity_label] += 1
+            summary_eval["count_entity_type"][ent["type"]][entity_label] += 1
+            summary_eval["count_entity_type"][ent["type"]]["total"] += 1
 
             if not ent["in_source"]:
                 summary_eval["count_entity_extrinsic"] += 1
@@ -143,6 +147,7 @@ def evaluate_factuality(
     print_first_n,
     is_fbs,
     is_oracle,
+    compute_rouge=True,
 ):
     labeled_ents = get_labeled_entities(
         sums_by_id,
@@ -166,7 +171,8 @@ def evaluate_factuality(
         "rouge2": [],
         "rougeL": [],
         "sum_with_extrinsic": 0,
-        "count_entity_label": defaultdict(lambda: 0)
+        "count_entity_label": defaultdict(lambda: 0),
+        "count_entity_type": defaultdict(lambda: defaultdict(lambda: 0)),
     }
 
     print_counter = 0
@@ -176,6 +182,7 @@ def evaluate_factuality(
             xsum_test[sum_id]["document"],
             gold_sums[sum_id]["summary"],
             labeled_ents[sum_id],
+            compute_rouge,
         )
         count_non_factual_extrinsic = summary_eval["count_entity_label"][
             ANNOTATION_LABELS["Non-factual"]
@@ -245,6 +252,10 @@ def evaluate_factuality(
             for key, value in summary_eval["count_entity_label"].items():
                 agg_results["count_entity_label"][key] += value
 
+            for type, label_counts in summary_eval["count_entity_type"].items():
+                for label, counts in label_counts.items():
+                    agg_results["count_entity_type"][type][label] += counts
+
             if non_factual:
                 agg_results["non_factual"] += 1
             elif has_unknown:
@@ -260,9 +271,10 @@ def evaluate_factuality(
             if count_extrinsic > 0:
                 agg_results["sum_with_extrinsic"] += 1
 
-            agg_results["rouge1"].append(summary_eval["rouge1"])
-            agg_results["rouge2"].append(summary_eval["rouge2"])
-            agg_results["rougeL"].append(summary_eval["rougeL"])
+            if compute_rouge:
+                agg_results["rouge1"].append(summary_eval["rouge1"])
+                agg_results["rouge2"].append(summary_eval["rouge2"])
+                agg_results["rougeL"].append(summary_eval["rougeL"])
 
     total = len(sums_by_id)
     metrics = {
@@ -280,6 +292,7 @@ def evaluate_factuality(
         },
         "entities": {
             "total": agg_results["entities"],
+            "type": {},
         },
         "rouge1": np.mean(agg_results["rouge1"]),
         "rouge2": np.mean(agg_results["rouge2"]),
@@ -287,5 +300,8 @@ def evaluate_factuality(
     }
     for value in ANNOTATION_LABELS.values():
         metrics["entities"][value] = agg_results["count_entity_label"][value]
+    
+    for type, label_counts in agg_results["count_entity_type"].items():
+        metrics["entities"]["type"][type] = dict(label_counts)
 
     return metrics, summary_results
