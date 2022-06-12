@@ -39,7 +39,9 @@ def render_compare_results():
         options=df_aggregated.index,
         default=[
             "fbs_classifier",
-            "fbs_oracle"
+            "fbs_oracle",
+            "baseline-pegasus",
+            "baseline-bart"
         ],
     )
     selected_columns = st.multiselect(
