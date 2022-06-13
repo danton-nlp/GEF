@@ -153,15 +153,42 @@ if __name__ == "__main__":
             "rouge2",
             "rougeL",
         ],
-    )
+    ).set_index("model")
 
-    df_aggregated.to_csv(
-        f"results/evaluation/{args.data_subset}-{args.test_size}.csv", index=False
-    )
+    df_aggregated.to_csv(f"results/evaluation/{args.data_subset}-{args.test_size}.csv")
     df_summaries = pd.DataFrame.from_dict(summary_results, orient="index")
     with open(
         f"results/evaluation/{args.data_subset}-{args.test_size}-summaries.json", "w"
     ) as f:
-        json.dump(df_summaries.to_dict(
-            orient="index"
-        ), f, indent=2, sort_keys=True)
+        json.dump(df_summaries.to_dict(orient="index"), f, indent=2, sort_keys=True)
+
+    # Export to latex
+    model_mapping = [
+        ("fbs_oracle", "FbsOracle"),
+        ("fbs_classifier", "FbsClassifier"),
+        (
+            "baseline-bart" if "bart" in args.data_subset else "baseline-pegasus",
+            "Baseline",
+        ),
+        ("corrector", "Corrector"),
+    ]
+    label_mapping = [
+        ("factual", "Factual"),
+        ("non_factual", "NonFactual"),
+        ("non_factual_extrinsic", "NonFactualExtrinsic"),
+        ("non_factual_intrinsic", "NonFactualIntrinsic"),
+        ("skipped", "Skipped"),
+    ]
+    with open(f"results/latex/{args.data_subset}-{args.test_size}.tex", "w") as f:
+        for model_index, model_label in model_mapping:
+            if "pegasus" in args.data_subset:
+                model_label = "pegasus" + model_label
+            elif "bart" in args.data_subset:
+                model_label = "bart" + model_label
+            for metric_index, metric_label in label_mapping:
+                metric = df_aggregated.loc[model_index][metric_index]
+                str = (
+                    f"\\newcommand{{\\{model_label}{metric_label}}}{{{metric:.0%}}}"
+                    + "\n"
+                )
+                f.write(str.replace("%", "\\%"))
