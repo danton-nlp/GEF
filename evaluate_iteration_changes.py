@@ -102,7 +102,7 @@ def collect_iteration_stats(
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--annotate", type=bool, default=False)
-    parser.add_argument("--data_subset", type=str, default="bart-debug")
+    parser.add_argument("--data_subset", type=str, default="bart-test-extrinsic")
     parser.add_argument("--test_size", type=int, default=100)
     args = parser.parse_args()
 

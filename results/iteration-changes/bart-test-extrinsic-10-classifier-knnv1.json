@@ -1,31 +1,45 @@
 [
   {
     "factuality_entities": {
-      "Factual Hallucination": 6,
+      "Factual Hallucination": 11,
       "Intrinsic Hallucination": 0,
-      "Non-factual Hallucination": 0,
-      "Non-hallucinated": 8,
+      "Non-factual Hallucination": 6,
+      "Non-hallucinated": 10,
       "Unknown": 0,
-      "total": 14,
+      "total": 27,
       "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
         "DATE": {
-          "Factual Hallucination": 2,
+          "Factual Hallucination": 3,
+          "Non-factual Hallucination": 4,
           "Non-hallucinated": 1,
-          "total": 3
+          "total": 8
         },
         "FAC": {
           "Factual Hallucination": 1,
           "total": 1
         },
         "GPE": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 6
+        },
+        "MONEY": {
+          "Non-factual Hallucination": 1,
+          "total": 1
+        },
+        "NORP": {
           "Factual Hallucination": 1,
-          "Non-hallucinated": 2,
-          "total": 3
+          "total": 1
         },
         "ORG": {
-          "Factual Hallucination": 1,
-          "Non-hallucinated": 2,
-          "total": 3
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 3,
+          "total": 5
         },
         "PERSON": {
           "Factual Hallucination": 1,
@@ -35,14 +49,14 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 2.8,
+      "ents_per_sum": 2.7,
       "factual": 0.5,
       "failed": 0,
-      "non_factual": 0.0,
-      "non_factual_extrinsic": 0.0,
+      "non_factual": 0.5,
+      "non_factual_extrinsic": 0.5,
       "non_factual_intrinsic": 0.0,
-      "skipped": 0.5,
-      "sum_with_extrinsic": 0.5,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 1.0,
       "total": 10,
       "unknown": 0.0
     },
@@ -84,17 +98,23 @@
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 6,
+      "Factual Hallucination": 10,
       "Intrinsic Hallucination": 0,
-      "Non-factual Hallucination": 1,
-      "Non-hallucinated": 8,
-      "Unknown": 0,
-      "total": 15,
+      "Non-factual Hallucination": 4,
+      "Non-hallucinated": 10,
+      "Unknown": 3,
+      "total": 27,
       "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
         "DATE": {
-          "Factual Hallucination": 2,
+          "Factual Hallucination": 3,
+          "Non-factual Hallucination": 3,
           "Non-hallucinated": 1,
-          "total": 3
+          "Unknown": 1,
+          "total": 8
         },
         "FAC": {
           "Factual Hallucination": 1,
@@ -103,30 +123,39 @@
         "GPE": {
           "Factual Hallucination": 1,
           "Non-factual Hallucination": 1,
-          "Non-hallucinated": 2,
-          "total": 4
+          "Non-hallucinated": 3,
+          "Unknown": 1,
+          "total": 6
+        },
+        "MONEY": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "NORP": {
+          "Unknown": 1,
+          "total": 1
         },
         "ORG": {
-          "Factual Hallucination": 1,
+          "Factual Hallucination": 2,
           "Non-hallucinated": 2,
-          "total": 3
+          "total": 4
         },
         "PERSON": {
           "Factual Hallucination": 1,
-          "Non-hallucinated": 3,
-          "total": 4
+          "Non-hallucinated": 4,
+          "total": 5
         }
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 2.5,
-      "factual": 0.5,
+      "ents_per_sum": 2.7,
+      "factual": 0.7,
       "failed": 0,
-      "non_factual": 0.1,
-      "non_factual_extrinsic": 0.1,
+      "non_factual": 0.3,
+      "non_factual_extrinsic": 0.3,
       "non_factual_intrinsic": 0.0,
-      "skipped": 0.4,
-      "sum_with_extrinsic": 0.6,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 1.0,
       "total": 10,
       "unknown": 0.0
     },
@@ -183,17 +212,23 @@
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 6,
+      "Factual Hallucination": 10,
       "Intrinsic Hallucination": 0,
-      "Non-factual Hallucination": 1,
-      "Non-hallucinated": 8,
-      "Unknown": 0,
-      "total": 15,
+      "Non-factual Hallucination": 4,
+      "Non-hallucinated": 10,
+      "Unknown": 2,
+      "total": 26,
       "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
         "DATE": {
-          "Factual Hallucination": 2,
+          "Factual Hallucination": 3,
+          "Non-factual Hallucination": 2,
           "Non-hallucinated": 1,
-          "total": 3
+          "Unknown": 1,
+          "total": 7
         },
         "FAC": {
           "Factual Hallucination": 1,
@@ -201,33 +236,41 @@
         },
         "GPE": {
           "Factual Hallucination": 1,
-          "Non-factual Hallucination": 1,
-          "Non-hallucinated": 2,
-          "total": 4
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 3,
+          "total": 6
+        },
+        "MONEY": {
+          "Unknown": 1,
+          "total": 1
+        },
+        "NORP": {
+          "Factual Hallucination": 1,
+          "total": 1
         },
         "ORG": {
-          "Factual Hallucination": 1,
+          "Factual Hallucination": 2,
           "Non-hallucinated": 2,
-          "total": 3
+          "total": 4
         },
         "PERSON": {
           "Factual Hallucination": 1,
-          "Non-hallucinated": 3,
-          "total": 4
+          "Non-hallucinated": 4,
+          "total": 5
         }
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 2.5,
-      "factual": 0.5,
+      "ents_per_sum": 2.6,
+      "factual": 0.6,
       "failed": 0,
-      "non_factual": 0.1,
-      "non_factual_extrinsic": 0.1,
+      "non_factual": 0.3,
+      "non_factual_extrinsic": 0.3,
       "non_factual_intrinsic": 0.0,
-      "skipped": 0.4,
-      "sum_with_extrinsic": 0.6,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 1.0,
       "total": 10,
-      "unknown": 0.0
+      "unknown": 0.1
     },
     "iteration": 2,
     "summary": {
@@ -273,17 +316,22 @@
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 6,
+      "Factual Hallucination": 9,
       "Intrinsic Hallucination": 0,
-      "Non-factual Hallucination": 1,
-      "Non-hallucinated": 8,
+      "Non-factual Hallucination": 4,
+      "Non-hallucinated": 9,
       "Unknown": 0,
-      "total": 15,
+      "total": 22,
       "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
         "DATE": {
           "Factual Hallucination": 2,
+          "Non-factual Hallucination": 1,
           "Non-hallucinated": 1,
-          "total": 3
+          "total": 4
         },
         "FAC": {
           "Factual Hallucination": 1,
@@ -291,31 +339,39 @@
         },
         "GPE": {
           "Factual Hallucination": 1,
-          "Non-factual Hallucination": 1,
+          "Non-factual Hallucination": 2,
           "Non-hallucinated": 2,
-          "total": 4
+          "total": 5
+        },
+        "MONEY": {
+          "Non-factual Hallucination": 1,
+          "total": 1
+        },
+        "NORP": {
+          "Factual Hallucination": 1,
+          "total": 1
         },
         "ORG": {
-          "Factual Hallucination": 1,
+          "Factual Hallucination": 2,
           "Non-hallucinated": 2,
-          "total": 3
+          "total": 4
         },
         "PERSON": {
           "Factual Hallucination": 1,
-          "Non-hallucinated": 3,
-          "total": 4
+          "Non-hallucinated": 4,
+          "total": 5
         }
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 2.5,
+      "ents_per_sum": 2.2,
       "factual": 0.5,
       "failed": 2,
-      "non_factual": 0.1,
-      "non_factual_extrinsic": 0.1,
+      "non_factual": 0.5,
+      "non_factual_extrinsic": 0.3,
       "non_factual_intrinsic": 0.0,
-      "skipped": 0.4,
-      "sum_with_extrinsic": 0.6,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.8,
       "total": 10,
       "unknown": 0.0
     },
@@ -351,17 +407,18 @@
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 6,
+      "Factual Hallucination": 8,
       "Intrinsic Hallucination": 0,
-      "Non-factual Hallucination": 1,
-      "Non-hallucinated": 8,
+      "Non-factual Hallucination": 3,
+      "Non-hallucinated": 9,
       "Unknown": 0,
-      "total": 15,
+      "total": 20,
       "type": {
         "DATE": {
           "Factual Hallucination": 2,
+          "Non-factual Hallucination": 1,
           "Non-hallucinated": 1,
-          "total": 3
+          "total": 4
         },
         "FAC": {
           "Factual Hallucination": 1,
@@ -369,31 +426,35 @@
         },
         "GPE": {
           "Factual Hallucination": 1,
-          "Non-factual Hallucination": 1,
+          "Non-factual Hallucination": 2,
           "Non-hallucinated": 2,
-          "total": 4
+          "total": 5
+        },
+        "NORP": {
+          "Factual Hallucination": 1,
+          "total": 1
         },
         "ORG": {
-          "Factual Hallucination": 1,
+          "Factual Hallucination": 2,
           "Non-hallucinated": 2,
-          "total": 3
+          "total": 4
         },
         "PERSON": {
           "Factual Hallucination": 1,
-          "Non-hallucinated": 3,
-          "total": 4
+          "Non-hallucinated": 4,
+          "total": 5
         }
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 2.5,
+      "ents_per_sum": 2.0,
       "factual": 0.5,
       "failed": 3,
-      "non_factual": 0.1,
-      "non_factual_extrinsic": 0.1,
+      "non_factual": 0.5,
+      "non_factual_extrinsic": 0.2,
       "non_factual_intrinsic": 0.0,
-      "skipped": 0.4,
-      "sum_with_extrinsic": 0.6,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.7,
       "total": 10,
       "unknown": 0.0
     },
@@ -417,17 +478,18 @@
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 6,
+      "Factual Hallucination": 8,
       "Intrinsic Hallucination": 0,
-      "Non-factual Hallucination": 1,
-      "Non-hallucinated": 8,
-      "Unknown": 0,
-      "total": 15,
+      "Non-factual Hallucination": 2,
+      "Non-hallucinated": 9,
+      "Unknown": 1,
+      "total": 20,
       "type": {
         "DATE": {
           "Factual Hallucination": 2,
           "Non-hallucinated": 1,
-          "total": 3
+          "Unknown": 1,
+          "total": 4
         },
         "FAC": {
           "Factual Hallucination": 1,
@@ -435,31 +497,35 @@
         },
         "GPE": {
           "Factual Hallucination": 1,
-          "Non-factual Hallucination": 1,
+          "Non-factual Hallucination": 2,
           "Non-hallucinated": 2,
-          "total": 4
+          "total": 5
+        },
+        "NORP": {
+          "Factual Hallucination": 1,
+          "total": 1
         },
         "ORG": {
-          "Factual Hallucination": 1,
+          "Factual Hallucination": 2,
           "Non-hallucinated": 2,
-          "total": 3
+          "total": 4
         },
         "PERSON": {
           "Factual Hallucination": 1,
-          "Non-hallucinated": 3,
-          "total": 4
+          "Non-hallucinated": 4,
+          "total": 5
         }
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 2.5,
+      "ents_per_sum": 2.0,
       "factual": 0.5,
       "failed": 3,
-      "non_factual": 0.1,
-      "non_factual_extrinsic": 0.1,
+      "non_factual": 0.5,
+      "non_factual_extrinsic": 0.2,
       "non_factual_intrinsic": 0.0,
-      "skipped": 0.4,
-      "sum_with_extrinsic": 0.6,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.7,
       "total": 10,
       "unknown": 0.0
     },
@@ -515,13 +581,13 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 2.5,
+      "ents_per_sum": 1.5,
       "factual": 0.5,
       "failed": 4,
-      "non_factual": 0.1,
+      "non_factual": 0.5,
       "non_factual_extrinsic": 0.1,
       "non_factual_intrinsic": 0.0,
-      "skipped": 0.4,
+      "skipped": 0.0,
       "sum_with_extrinsic": 0.6,
       "total": 10,
       "unknown": 0.0
