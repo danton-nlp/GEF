@@ -23,6 +23,7 @@ if __name__ == "__main__":
     parser.add_argument("--entity_label_match", type=str, default="strict_intrinsic")
     parser.add_argument("--print_first_n", type=int, default=0)
     parser.add_argument("--model_filter", type=str, default="")
+    parser.add_argument("--count_skips", type=bool, default=False)
     args = parser.parse_args()
 
     baseline_metadata = get_summary_metrics("xsum", "facebook-bart-large-xsum")
@@ -107,6 +108,7 @@ if __name__ == "__main__":
                 args.print_first_n,
                 is_fbs="fbs" in model_label.lower(),
                 is_oracle="oracle" in model_label.lower(),
+                count_skips=args.count_skips,
             )
             pp.pprint(agg_metrics)
             aggregated_results.append(

@@ -148,6 +148,7 @@ def evaluate_factuality(
     is_fbs,
     is_oracle,
     compute_rouge=True,
+    count_skips=False,
 ):
     labeled_ents = get_labeled_entities(
         sums_by_id,
@@ -202,12 +203,13 @@ def evaluate_factuality(
 
         # Skip logic
         is_skipped = False
-        if summary_eval["failed"]:
-            is_skipped = True
-        elif is_fbs and is_oracle and count_non_factual_extrinsic:
-            is_skipped = True
-        elif is_fbs and summary_eval["has_predicted_non_factual"]:
-            is_skipped = True
+        if count_skips:
+            if summary_eval["failed"]:
+                is_skipped = True
+            elif is_fbs and is_oracle and count_non_factual_extrinsic:
+                is_skipped = True
+            elif is_fbs and summary_eval["has_predicted_non_factual"]:
+                is_skipped = True
 
         # Update evaluation state if summary is not skipped
         if not is_skipped:
@@ -256,7 +258,7 @@ def evaluate_factuality(
                 for label, counts in label_counts.items():
                     agg_results["count_entity_type"][type][label] += counts
 
-            if non_factual:
+            if non_factual or summary_eval["failed"]:
                 agg_results["non_factual"] += 1
             elif has_unknown:
                 agg_results["unknown"] += 1
@@ -271,7 +273,7 @@ def evaluate_factuality(
             if count_extrinsic > 0:
                 agg_results["sum_with_extrinsic"] += 1
 
-            if compute_rouge:
+            if compute_rouge and not summary_eval["failed"]:
                 agg_results["rouge1"].append(summary_eval["rouge1"])
                 agg_results["rouge2"].append(summary_eval["rouge2"])
                 agg_results["rougeL"].append(summary_eval["rougeL"])
