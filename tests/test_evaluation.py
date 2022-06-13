@@ -10,6 +10,7 @@ from sumtool.storage import get_summary_metrics
 
 TEST_SIZE = 100
 
+
 def load_data(results_path: str):
     if "results" in results_path:
         # load fbs results
@@ -24,7 +25,7 @@ def load_data(results_path: str):
     gold_sums, gold_metadata = get_gold_xsum_data()
     xsum_test = load_xsum_dict("test")
     test_set_ids = set(
-            load_shuffled_test_split(xsum_test, "bart-test-extrinsic", 100).keys()
+        load_shuffled_test_split(xsum_test, "bart-test-extrinsic", 100).keys()
     )
 
     filtered_sums_by_id = {
@@ -61,6 +62,7 @@ def test_evaluate_factuality_oracle():
         print_first_n=0,
         is_fbs=True,
         is_oracle=True,
+        count_skips=True,
     )
     # These metrics might change if the dataset changes
     assert agg_metrics["summaries"]["total"] == 100
@@ -97,6 +99,42 @@ def test_evaluate_factuality_oracle():
     )
 
 
+def test_evaluate_factuality_oracle_no_skips():
+    (
+        sums_by_id,
+        sum_ents_by_id,
+        gold_sums,
+        gold_metadata,
+        xsum_test,
+    ) = load_data("results/fbs-logs/bart-test-extrinsic-oracle.json")
+    agg_metrics, summaries = evaluate_factuality(
+        sums_by_id,
+        sum_ents_by_id,
+        gold_sums,
+        gold_metadata,
+        xsum_test,
+        should_annotate=False,
+        entity_match_type="strict_intrinsic",
+        print_first_n=0,
+        is_fbs=True,
+        is_oracle=True,
+        count_skips=False,
+    )
+    # These metrics might change if the dataset changes
+    assert agg_metrics["summaries"]["total"] == 100
+    assert agg_metrics["summaries"]["factual"] == 0.65
+    assert agg_metrics["summaries"]["non_factual"] == 0.35
+    assert agg_metrics["summaries"]["failed"] == 7
+    assert agg_metrics["rouge1"] > 0.46
+    assert agg_metrics["rouge2"] > 0.22
+    assert agg_metrics["entities"]["Unknown"] == 0
+    assert agg_metrics["entities"]["Factual Hallucination"] == 98
+    assert agg_metrics["entities"]["Intrinsic Hallucination"] == 16
+    assert agg_metrics["entities"]["Non-factual Hallucination"] == 23
+    assert agg_metrics["entities"]["Non-hallucinated"] == 177
+    assert agg_metrics["entities"]["total"] == 98 + 16 + 23 + 177
+
+
 def test_evaluate_factuality_classifier():
     (
         sums_by_id,
@@ -116,6 +154,7 @@ def test_evaluate_factuality_classifier():
         print_first_n=0,
         is_fbs=True,
         is_oracle=False,
+        count_skips=True
     )
     assert agg_metrics["summaries"]["total"] == 100
     assert agg_metrics["summaries"]["factual"] == 0.48
@@ -143,6 +182,44 @@ def test_evaluate_factuality_classifier():
         )
         == 1
     )
+
+
+def test_evaluate_factuality_classifier_no_skips():
+    (
+        sums_by_id,
+        sum_ents_by_id,
+        gold_sums,
+        gold_metadata,
+        xsum_test,
+    ) = load_data("results/fbs-logs/bart-test-extrinsic-classifier-knnv1.json")
+    agg_metrics, summaries = evaluate_factuality(
+        sums_by_id,
+        sum_ents_by_id,
+        gold_sums,
+        gold_metadata,
+        xsum_test,
+        should_annotate=False,
+        entity_match_type="strict_intrinsic",
+        print_first_n=0,
+        is_fbs=True,
+        is_oracle=False,
+        count_skips=False,
+    )
+    # These metrics might change if the dataset changes
+    assert agg_metrics["summaries"]["total"] == 100
+    assert agg_metrics["summaries"]["factual"] == 0.50
+    assert agg_metrics["summaries"]["non_factual"] == 0.50
+    assert agg_metrics["summaries"]["non_factual_extrinsic"] == 0.29
+    assert agg_metrics["summaries"]["non_factual_intrinsic"] == 0.13
+    assert agg_metrics["summaries"]["skipped"] == 0
+    assert agg_metrics["summaries"]["failed"] == 14
+    assert agg_metrics["summaries"]["unknown"] == 0
+    assert agg_metrics["entities"]["Unknown"] == 0
+    assert agg_metrics["entities"]["Factual Hallucination"] == 76
+    assert agg_metrics["entities"]["Intrinsic Hallucination"] == 14
+    assert agg_metrics["entities"]["Non-factual Hallucination"] == 37
+    assert agg_metrics["entities"]["Non-hallucinated"] == 164
+    assert agg_metrics["entities"]["total"] == 76 + 14 + 37 + 164
 
 
 def test_evaluate_factuality_baseline():
