@@ -17,3 +17,4 @@ bert_score
 termcolor
 sentencepiece
 editdistance
+matplotlib
