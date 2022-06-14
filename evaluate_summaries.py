@@ -71,14 +71,21 @@ if __name__ == "__main__":
             #     "results/test-bad-classifier.json", max_iterations=5
             # ),
         }
-    for sumtool_name, model_label in [
-        ("facebook-bart-large-xsum", "baseline-bart") if "bart" in args.data_subset else ("google-pegasus-xsum", "baseline-pegasus"),
+
+    bart_models = [
         ("meng-3000", "meng-3000"),  # Hallucinated, but factual! Paper
         ("pinocchio", "pinocchio"),  # King et. al paper
         ("chen-corrector", "corrector"),  # Chen. et al replication project
-        ("gold", "gold"),
         # ("entity-filter-v2", "filtered"),  # Nan. et al
-    ]:
+        ("gold", "gold"),
+    ]
+    pegasus_models = [
+        ("google-pegasus-xsum", "baseline-pegasus"),
+        ("gold", "gold"),
+    ]
+    for (sumtool_name, model_label) in (
+        bart_models if "bart" in args.data_subset else pegasus_models
+    ):
         dataset = get_summaries("xsum", sumtool_name)
         MODEL_RESULTS[model_label] = (
             {sum_id: x["summary"] for sum_id, x in dataset.items()},
@@ -172,6 +179,8 @@ if __name__ == "__main__":
             "Baseline",
         ),
         ("corrector", "Corrector"),
+        ("pinocchio", "Pinocchio"),
+        ("meng-3000", "MengRL"),
     ]
     label_mapping = [
         ("factual", "Factual"),
@@ -182,14 +191,15 @@ if __name__ == "__main__":
     ]
     with open(f"results/latex/{args.data_subset}-{args.test_size}.tex", "w") as f:
         for model_index, model_label in model_mapping:
-            if "pegasus" in args.data_subset:
-                model_label = "pegasus" + model_label
-            elif "bart" in args.data_subset:
-                model_label = "bart" + model_label
-            for metric_index, metric_label in label_mapping:
-                metric = df_aggregated.loc[model_index][metric_index]
-                str = (
-                    f"\\newcommand{{\\{model_label}{metric_label}}}{{{metric:.0%}}}"
-                    + "\n"
-                )
-                f.write(str.replace("%", "\\%"))
+            if model_index in df_aggregated.index:
+                if "pegasus" in args.data_subset:
+                    model_label = "pegasus" + model_label
+                elif "bart" in args.data_subset:
+                    model_label = "bart" + model_label
+                for metric_index, metric_label in label_mapping:
+                    metric = df_aggregated.loc[model_index][metric_index]
+                    str = (
+                        f"\\newcommand{{\\{model_label}{metric_label}}}{{{metric:.0%}}}"
+                        + "\n"
+                    )
+                    f.write(str.replace("%", "\\%"))
