@@ -72,9 +72,9 @@ if __name__ == "__main__":
             # ),
         }
     for sumtool_name, model_label in [
-        ("facebook-bart-large-xsum", "baseline-bart"),
-        ("google-pegasus-xsum", "baseline-pegasus"),
+        ("facebook-bart-large-xsum", "baseline-bart") if "bart" in args.data_subset else ("google-pegasus-xsum", "baseline-pegasus"),
         ("meng-3000", "meng-3000"),  # Hallucinated, but factual! Paper
+        ("pinocchio", "pinocchio"),  # King et. al paper
         ("chen-corrector", "corrector"),  # Chen. et al replication project
         ("gold", "gold"),
         # ("entity-filter-v2", "filtered"),  # Nan. et al
