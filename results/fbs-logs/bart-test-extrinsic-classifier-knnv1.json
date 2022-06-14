@@ -1,8 +1,8 @@
 {
   "args": {
     "annotate": false,
-    "batch_size": 10,
-    "classifier_batch_size": 16,
+    "batch_size": 4,
+    "classifier_batch_size": 8,
     "data_subset": "bart-test-extrinsic",
     "entity_label_match": "contained",
     "max_iterations": 10,
@@ -171,7 +171,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 78,
-            "score": -0.5494645237922668
+            "score": -0.5494641661643982
           },
           "labeled_entities": [
             {
@@ -191,7 +191,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 90,
-            "score": -0.44982439279556274
+            "score": -0.4498242735862732
           },
           "labeled_entities": [
             {
@@ -220,7 +220,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 81,
-            "score": -0.5601844787597656
+            "score": -0.5601842999458313
           },
           "labeled_entities": [
             {
@@ -240,7 +240,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 118,
-            "score": -0.5875488519668579
+            "score": -0.5875491499900818
           },
           "labeled_entities": [
             {
@@ -259,8 +259,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 113,
-            "score": -0.7699747681617737
+            "n_words_checked": 109,
+            "score": -0.7699748277664185
           },
           "labeled_entities": [
             {
@@ -297,7 +297,7 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 88,
+            "n_words_checked": 85,
             "score": -0.5458996295928955
           },
           "labeled_entities": [
@@ -318,7 +318,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 143,
-            "score": -0.5799760818481445
+            "score": -0.5799765586853027
           },
           "labeled_entities": [
             {
@@ -392,7 +392,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -0.4129003882408142
+            "score": -0.41290050745010376
           },
           "labeled_entities": [
             {
@@ -421,7 +421,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 95,
-            "score": -0.6849997639656067
+            "score": -0.6849997043609619
           },
           "labeled_entities": [
             {
@@ -488,7 +488,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 111,
-            "score": -0.4824241101741791
+            "score": -0.48242440819740295
           },
           "labeled_entities": [
             {
@@ -535,7 +535,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 114,
-            "score": -0.8808416724205017
+            "score": -0.8808414936065674
           },
           "labeled_entities": [
             {
@@ -573,7 +573,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 90,
-            "score": -0.46715396642684937
+            "score": -0.4671538770198822
           },
           "labeled_entities": [
             {
@@ -647,7 +647,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 97,
-            "score": -0.7004219889640808
+            "score": -0.7004221677780151
           },
           "labeled_entities": [
             {
@@ -676,7 +676,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 103,
-            "score": -0.42965590953826904
+            "score": -0.42965587973594666
           },
           "labeled_entities": [
             {
@@ -714,7 +714,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -0.7618754506111145
+            "score": -0.761876106262207
           },
           "labeled_entities": [
             {
@@ -761,7 +761,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 74,
-            "score": -0.6646241545677185
+            "score": -0.6646236777305603
           },
           "labeled_entities": [
             {
@@ -790,7 +790,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 63,
-            "score": -0.49171140789985657
+            "score": -0.49171188473701477
           },
           "labeled_entities": [
             {
@@ -810,7 +810,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 92,
-            "score": -0.5797638893127441
+            "score": -0.579764187335968
           },
           "labeled_entities": [
             {
@@ -839,7 +839,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 62,
-            "score": -0.39621350169181824
+            "score": -0.3962137699127197
           },
           "labeled_entities": [
             {
@@ -886,7 +886,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 113,
-            "score": -0.5437455177307129
+            "score": -0.5437449812889099
           },
           "labeled_entities": [
             {
@@ -923,8 +923,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 102,
-            "score": -0.4491569995880127
+            "n_words_checked": 99,
+            "score": -0.4491567015647888
           },
           "labeled_entities": [
             {
@@ -980,7 +980,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 50,
-            "score": -0.5891700983047485
+            "score": -0.5891697406768799
           },
           "labeled_entities": [
             {
@@ -1018,7 +1018,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 50,
-            "score": -0.5073918104171753
+            "score": -0.507392168045044
           },
           "labeled_entities": [
             {
@@ -1056,7 +1056,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 89,
-            "score": -0.6760815978050232
+            "score": -0.6760814189910889
           },
           "labeled_entities": [
             {
@@ -1102,8 +1102,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 76,
-            "score": -0.424357533454895
+            "n_words_checked": 73,
+            "score": -0.4243582487106323
           },
           "labeled_entities": [
             {
@@ -1251,7 +1251,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 84,
-            "score": -0.6981939673423767
+            "score": -0.6981934905052185
           },
           "labeled_entities": [
             {
@@ -1280,7 +1280,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 104,
-            "score": -0.5673395395278931
+            "score": -0.5673392415046692
           },
           "labeled_entities": [
             {
@@ -1327,7 +1327,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 81,
-            "score": -0.29399505257606506
+            "score": -0.2939951419830322
           },
           "labeled_entities": [
             {
@@ -1373,8 +1373,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 115,
-            "score": -0.5719600319862366
+            "n_words_checked": 113,
+            "score": -0.5719601511955261
           },
           "labeled_entities": [
             {
@@ -1412,7 +1412,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 93,
-            "score": -0.5321323275566101
+            "score": -0.5321325063705444
           },
           "labeled_entities": [
             {
@@ -1441,7 +1441,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 97,
-            "score": -0.4836839437484741
+            "score": -0.48368415236473083
           },
           "labeled_entities": [
             {
@@ -1461,7 +1461,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 61,
-            "score": -0.4990573823451996
+            "score": -0.4990573525428772
           },
           "labeled_entities": [
             {
@@ -1517,7 +1517,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 128,
-            "score": -0.5832833051681519
+            "score": -0.5832830667495728
           },
           "labeled_entities": [
             {
@@ -1581,8 +1581,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 114,
-            "score": -0.6526375412940979
+            "n_words_checked": 111,
+            "score": -0.6526374816894531
           },
           "labeled_entities": [
             {
@@ -1602,7 +1602,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -0.7039956450462341
+            "score": -0.7039954662322998
           },
           "labeled_entities": [
             {
@@ -1622,7 +1622,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 83,
-            "score": -0.8481481671333313
+            "score": -0.8481479287147522
           },
           "labeled_entities": [
             {
@@ -1668,8 +1668,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 60,
-            "score": -0.4034212529659271
+            "n_words_checked": 56,
+            "score": -0.40342092514038086
           },
           "labeled_entities": [
             {
@@ -1716,7 +1716,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 83,
-            "score": -0.37571847438812256
+            "score": -0.3757184147834778
           },
           "labeled_entities": [
             {
@@ -1753,8 +1753,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 85,
-            "score": -0.49763691425323486
+            "n_words_checked": 81,
+            "score": -0.49763697385787964
           },
           "labeled_entities": [
             {
@@ -1792,7 +1792,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 82,
-            "score": -0.6227263808250427
+            "score": -0.6227258443832397
           },
           "labeled_entities": [
             {
@@ -1830,7 +1830,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 77,
-            "score": -0.5678786635398865
+            "score": -0.5678789615631104
           },
           "labeled_entities": [
             {
@@ -1868,7 +1868,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 104,
-            "score": -0.6966072916984558
+            "score": -0.6966069340705872
           },
           "labeled_entities": [
             {
@@ -1914,8 +1914,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 86,
-            "score": -0.5740675926208496
+            "n_words_checked": 82,
+            "score": -0.5740678310394287
           },
           "labeled_entities": [
             {
@@ -1971,7 +1971,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 105,
-            "score": -0.5638529062271118
+            "score": -0.5638521313667297
           },
           "labeled_entities": [
             {
@@ -2009,7 +2009,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 68,
-            "score": -0.3235474228858948
+            "score": -0.3235478103160858
           },
           "labeled_entities": [
             {
@@ -2085,7 +2085,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 101,
-            "score": -0.7071085572242737
+            "score": -0.7071086168289185
           },
           "labeled_entities": [
             {
@@ -2113,8 +2113,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 90,
-            "score": -0.4268588423728943
+            "n_words_checked": 88,
+            "score": -0.4268585741519928
           },
           "labeled_entities": [
             {
@@ -2197,7 +2197,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 129,
-            "score": -0.49600842595100403
+            "score": -0.4960084557533264
           },
           "labeled_entities": [
             {
@@ -2253,7 +2253,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 79,
-            "score": -0.48485708236694336
+            "score": -0.4848577380180359
           },
           "labeled_entities": [
             {
@@ -2344,8 +2344,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 114,
-            "score": -0.43952906131744385
+            "n_words_checked": 111,
+            "score": -0.4395291805267334
           },
           "labeled_entities": [
             {
@@ -2383,7 +2383,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 90,
-            "score": -0.4738999903202057
+            "score": -0.4738999307155609
           },
           "labeled_entities": [
             {
@@ -2439,7 +2439,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 89,
-            "score": -0.44832703471183777
+            "score": -0.4483271837234497
           },
           "labeled_entities": [
             {
@@ -2504,7 +2504,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 75,
-            "score": -0.436616986989975
+            "score": -0.43661683797836304
           },
           "labeled_entities": [
             {
@@ -2571,7 +2571,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 103,
-            "score": -0.580333411693573
+            "score": -0.5803333520889282
           },
           "labeled_entities": [
             {
@@ -2691,8 +2691,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 77,
-            "score": -0.4973892867565155
+            "n_words_checked": 74,
+            "score": -0.497389554977417
           },
           "labeled_entities": [
             {
@@ -2739,7 +2739,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 105,
-            "score": -0.5653570890426636
+            "score": -0.5653573870658875
           },
           "labeled_entities": [
             {
@@ -2776,8 +2776,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 84,
-            "score": -0.534149706363678
+            "n_words_checked": 80,
+            "score": -0.5341499447822571
           },
           "labeled_entities": [
             {
@@ -2842,7 +2842,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 85,
-            "score": -0.41874343156814575
+            "score": -0.41874322295188904
           },
           "labeled_entities": [
             {
@@ -2897,8 +2897,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 113,
-            "score": -0.6133346557617188
+            "n_words_checked": 111,
+            "score": -0.6133347153663635
           },
           "labeled_entities": [
             {
@@ -2945,7 +2945,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 127,
-            "score": -0.4725244343280792
+            "score": -0.47252464294433594
           },
           "labeled_entities": [
             {
@@ -3037,7 +3037,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 92,
-            "score": -0.784127950668335
+            "score": -0.7841282486915588
           },
           "labeled_entities": [
             {
@@ -3104,7 +3104,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 103,
-            "score": -0.4728350341320038
+            "score": -0.47283509373664856
           },
           "labeled_entities": [
             {
@@ -3133,7 +3133,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 71,
-            "score": -0.5009816884994507
+            "score": -0.5009814500808716
           },
           "labeled_entities": [
             {
@@ -3180,7 +3180,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -0.4425817131996155
+            "score": -0.4425818920135498
           },
           "labeled_entities": [
             {
@@ -3218,7 +3218,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 117,
-            "score": -0.6075206995010376
+            "score": -0.6075208187103271
           },
           "labeled_entities": [
             {
@@ -3292,7 +3292,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 87,
-            "score": -0.6245480179786682
+            "score": -0.6245472431182861
           },
           "labeled_entities": [
             {
@@ -3330,7 +3330,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 88,
-            "score": -0.5387279987335205
+            "score": -0.5387277007102966
           },
           "labeled_entities": [
             {
@@ -3350,7 +3350,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 86,
-            "score": -0.5584115386009216
+            "score": -0.5584117770195007
           },
           "labeled_entities": [
             {
@@ -3388,7 +3388,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 74,
-            "score": -0.44698119163513184
+            "score": -0.4469810426235199
           },
           "labeled_entities": [
             {
@@ -3426,7 +3426,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 79,
-            "score": -0.3727416694164276
+            "score": -0.37274178862571716
           },
           "labeled_entities": [
             {
@@ -3445,8 +3445,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 84,
-            "score": -0.4126327931880951
+            "n_words_checked": 80,
+            "score": -0.4126325249671936
           },
           "labeled_entities": [
             {
@@ -3475,7 +3475,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 110,
-            "score": -0.7542532086372375
+            "score": -0.7542527914047241
           },
           "labeled_entities": [
             {
@@ -3531,7 +3531,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 79,
-            "score": -0.2855236828327179
+            "score": -0.285523384809494
           },
           "labeled_entities": [
             {
@@ -3569,7 +3569,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 85,
-            "score": -0.7630774974822998
+            "score": -0.7630773782730103
           },
           "labeled_entities": [
             {
@@ -3643,7 +3643,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 71,
-            "score": -0.4578031003475189
+            "score": -0.45780283212661743
           },
           "labeled_entities": [
             {
@@ -3681,7 +3681,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 58,
-            "score": -0.9300481081008911
+            "score": -0.930047333240509
           },
           "labeled_entities": [
             {
@@ -3728,7 +3728,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 112,
-            "score": -0.368579626083374
+            "score": -0.3685798645019531
           },
           "labeled_entities": [
             {
@@ -3802,7 +3802,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 90,
-            "score": -0.5934110283851624
+            "score": -0.5934107303619385
           },
           "labeled_entities": [
             {
@@ -3831,7 +3831,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 88,
-            "score": -0.785538375377655
+            "score": -0.7855384349822998
           },
           "labeled_entities": [
             {
@@ -3860,7 +3860,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 59,
-            "score": -0.4365847408771515
+            "score": -0.43658462166786194
           },
           "labeled_entities": [
             {
@@ -3889,7 +3889,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 78,
-            "score": -0.4513847231864929
+            "score": -0.4513850808143616
           },
           "labeled_entities": [
             {
@@ -3918,7 +3918,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 91,
-            "score": -0.33391809463500977
+            "score": -0.33391815423965454
           },
           "labeled_entities": [
             {
@@ -3974,7 +3974,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 106,
-            "score": -0.5387622714042664
+            "score": -0.538762629032135
           },
           "labeled_entities": [
             {
@@ -4021,7 +4021,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 75,
-            "score": -0.7381946444511414
+            "score": -0.7381943464279175
           },
           "labeled_entities": [
             {
@@ -4041,7 +4041,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 75,
-            "score": -0.6079258322715759
+            "score": -0.6079262495040894
           },
           "labeled_entities": [
             {
@@ -4088,7 +4088,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 42,
-            "score": -0.423641175031662
+            "score": -0.4236412048339844
           },
           "labeled_entities": [
             {
@@ -4126,7 +4126,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 94,
-            "score": -0.5277835130691528
+            "score": -0.5277834534645081
           },
           "labeled_entities": [
             {
@@ -4182,7 +4182,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -0.42941781878471375
+            "score": -0.42941778898239136
           },
           "labeled_entities": [
             {
@@ -4211,7 +4211,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 77,
-            "score": -0.5373176336288452
+            "score": -0.5373173952102661
           },
           "labeled_entities": [
             {
@@ -4239,8 +4239,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 98,
-            "score": -0.7842153310775757
+            "n_words_checked": 95,
+            "score": -0.7842150926589966
           },
           "labeled_entities": [
             {
@@ -4323,7 +4323,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 97,
-            "score": -0.654184103012085
+            "score": -0.6541839241981506
           },
           "labeled_entities": [
             {
@@ -4406,7 +4406,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 77,
-            "score": -0.730568528175354
+            "score": -0.7305685877799988
           },
           "labeled_entities": [
             {
@@ -4462,7 +4462,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -0.4245925545692444
+            "score": -0.4245927035808563
           },
           "labeled_entities": [
             {
@@ -4733,7 +4733,7 @@
               "</s>An 18-year-old"
             ],
             "n_words_checked": 90,
-            "score": -0.4605553150177002
+            "score": -0.46055540442466736
           },
           "labeled_entities": [
             {
@@ -4767,7 +4767,7 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
             "n_words_checked": 69,
-            "score": -0.6140739917755127
+            "score": -0.6140735149383545
           },
           "labeled_entities": [
             {
@@ -4793,8 +4793,8 @@
               "</s>There is a \"pattern of behaviour\" within the police service where officers who make complaints about race are treated unfairly, the National Police Chiefs' Association",
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association"
             ],
-            "n_words_checked": 123,
-            "score": -0.6519455313682556
+            "n_words_checked": 126,
+            "score": -0.6519454121589661
           },
           "labeled_entities": [
             {
@@ -4822,7 +4822,7 @@
               "</s>Plans have been drawn up to turn one of Wales"
             ],
             "n_words_checked": 87,
-            "score": -0.5862992405891418
+            "score": -0.5862994194030762
           },
           "labeled_entities": [
             {
@@ -4848,8 +4848,8 @@
               "</s>Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 15-year-old",
               "</s>Police have released an E-fit image of a man they want to speak to in connection with the sexual assault of a 15-year-old"
             ],
-            "n_words_checked": 107,
-            "score": -0.4024296700954437
+            "n_words_checked": 106,
+            "score": -0.402429461479187
           },
           "labeled_entities": [
             {
@@ -4887,7 +4887,7 @@
               "</s>Ireland's economy grew by 7.7% in the three months to the end of September, compared with a 0.5% rise in the same period last year"
             ],
             "n_words_checked": 125,
-            "score": -0.5550142526626587
+            "score": -0.5550144910812378
           },
           "labeled_entities": [
             {
@@ -5035,7 +5035,7 @@
               "</s>A drugs expert has warned people not to take'superman' ecstasy pills following the deaths of four men in recent weeks"
             ],
             "n_words_checked": 94,
-            "score": -0.7391308546066284
+            "score": -0.7391306161880493
           },
           "labeled_entities": [
             {
@@ -5063,7 +5063,7 @@
               "</s>More than 1,000 people have objected to plans for 1,200"
             ],
             "n_words_checked": 97,
-            "score": -0.7765332460403442
+            "score": -0.7765331268310547
           },
           "labeled_entities": [
             {
@@ -5106,7 +5106,7 @@
               "</s>A man has been jailed for life for the murder of his six-year-old"
             ],
             "n_words_checked": 75,
-            "score": -0.5387647151947021
+            "score": -0.5387654900550842
           },
           "labeled_entities": [
             {
@@ -5131,7 +5131,7 @@
               "</s>The world premiere of the new animated film Minions has taken place in Los Angeles, USA"
             ],
             "n_words_checked": 58,
-            "score": -0.5608223080635071
+            "score": -0.5608227252960205
           },
           "labeled_entities": [
             {
@@ -5157,7 +5157,7 @@
               "</s>The former RT\u00c9 broadcaster and broadcaster M\u00e1irt\u00edn \u00d3 Murch\u00fa"
             ],
             "n_words_checked": 54,
-            "score": -0.7584992051124573
+            "score": -0.7584993243217468
           },
           "labeled_entities": [
             {
@@ -5199,7 +5199,7 @@
               "</s>The man behind the takeover of the Financial Times is one of Japan's richest men, Shigeru"
             ],
             "n_words_checked": 94,
-            "score": -0.7048116326332092
+            "score": -0.7048113346099854
           },
           "labeled_entities": [
             {
@@ -5257,7 +5257,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 76,
-            "score": -0.424357533454895
+            "score": -0.4243582487106323
           },
           "labeled_entities": [
             {
@@ -5317,7 +5317,7 @@
               "</s>Scotland scrum-half"
             ],
             "n_words_checked": 95,
-            "score": -0.5821099281311035
+            "score": -0.5821101069450378
           },
           "labeled_entities": [
             {
@@ -5385,7 +5385,7 @@
             "dropped_seqs": [
               "</s>The US astronaut who's been living on the International Space Station for more than a year"
             ],
-            "n_words_checked": 111,
+            "n_words_checked": 110,
             "score": -0.6445138454437256
           },
           "labeled_entities": [
@@ -5469,7 +5469,7 @@
               "</s>The wife of a sports journalist who was seriously injured in an attack outside a London Tube"
             ],
             "n_words_checked": 118,
-            "score": -0.546681821346283
+            "score": -0.5466820001602173
           },
           "labeled_entities": [
             {
@@ -5558,7 +5558,7 @@
               "</s>Nour is a 23-year-old mother of two who was caught up in the fighting between so-called Islamic State (IS) and government forces in the Syrian city of Raqqa"
             ],
             "n_words_checked": 132,
-            "score": -0.6170552372932434
+            "score": -0.6170554757118225
           },
           "labeled_entities": [
             {
@@ -5628,7 +5628,7 @@
               "</s>Thousands of animals are being counted at Chester Zoo"
             ],
             "n_words_checked": 65,
-            "score": -0.8908213973045349
+            "score": -0.8908218145370483
           },
           "labeled_entities": [
             {
@@ -5674,7 +5674,7 @@
               "</s>Tens of thousands of football fans faced long queues to get into a Premier League match on Wednesday night, leading to a FA Cup"
             ],
             "n_words_checked": 102,
-            "score": -0.6496571898460388
+            "score": -0.6496568322181702
           },
           "labeled_entities": [
             {
@@ -5716,7 +5716,7 @@
               "</s>Wales coach Huw"
             ],
             "n_words_checked": 104,
-            "score": -0.7287610769271851
+            "score": -0.7287612557411194
           },
           "labeled_entities": [
             {
@@ -5767,7 +5767,7 @@
               "</s>Byron Rhodes, the leader of Derbyshire County Council"
             ],
             "n_words_checked": 102,
-            "score": -0.5396249294281006
+            "score": -0.5396247506141663
           },
           "labeled_entities": [
             {
@@ -5808,8 +5808,8 @@
             "dropped_seqs": [
               "</s>The air is still as charged as it was when I first arrived in Ravenscraig 25 years ago"
             ],
-            "n_words_checked": 108,
-            "score": -0.8220512866973877
+            "n_words_checked": 104,
+            "score": -0.8220511078834534
           },
           "labeled_entities": [
             {
@@ -5963,8 +5963,8 @@
               "</s>World number one Mark Selby will face Ding Junhui in the World Championship semi-finals after beating Marco Fu 6-4",
               "</s>World number one Mark Selby will play Ding Junhui in the World Championship semi-finals after beating Marco Fu 6-4"
             ],
-            "n_words_checked": 90,
-            "score": -0.5046677589416504
+            "n_words_checked": 87,
+            "score": -0.5046685934066772
           },
           "labeled_entities": [
             {
@@ -6062,7 +6062,7 @@
               "</s>Three men have been found guilty of blowing up cash machines and stealing more than \u00a3200,000"
             ],
             "n_words_checked": 68,
-            "score": -0.46260756254196167
+            "score": -0.46260762214660645
           },
           "labeled_entities": [
             {
@@ -6103,7 +6103,7 @@
               "</s>A collection of photographs taken by a photographer who was involved with the Rock Against Racism (RAR) movement in the 1970s"
             ],
             "n_words_checked": 91,
-            "score": -0.7390300631523132
+            "score": -0.739029586315155
           },
           "labeled_entities": [
             {
@@ -6127,8 +6127,8 @@
             "dropped_seqs": [
               "</s>Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner"
             ],
-            "n_words_checked": 108,
-            "score": -0.5892919898033142
+            "n_words_checked": 105,
+            "score": -0.5892914533615112
           },
           "labeled_entities": [
             {
@@ -6206,7 +6206,7 @@
               "</s>Great Britain's women produced their best performance of the EuroHockey Championships"
             ],
             "n_words_checked": 90,
-            "score": -0.6199770569801331
+            "score": -0.6199769973754883
           },
           "labeled_entities": [
             {
@@ -6257,7 +6257,7 @@
               "</s>Wales are out of Euro 2016 after a 2-0 defeat by Portugal in their last-16"
             ],
             "n_words_checked": 68,
-            "score": -0.5164400935173035
+            "score": -0.5164402723312378
           },
           "labeled_entities": [
             {
@@ -6311,7 +6311,7 @@
               "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes"
             ],
             "n_words_checked": 89,
-            "score": -0.5488238334655762
+            "score": -0.5488235354423523
           },
           "labeled_entities": [
             {
@@ -6435,7 +6435,7 @@
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 500,000 euro (\u00a3353,176) were seized by police in Paris"
             ],
             "n_words_checked": 116,
-            "score": -0.6349271535873413
+            "score": -0.6349270939826965
           },
           "labeled_entities": [
             {
@@ -6488,7 +6488,7 @@
               "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2017"
             ],
             "n_words_checked": 126,
-            "score": -0.49018147587776184
+            "score": -0.4901813268661499
           },
           "labeled_entities": [
             {
@@ -6585,7 +6585,7 @@
               "</s>Police are \"extremely concerned\" for the welfare of a 13-year-old"
             ],
             "n_words_checked": 101,
-            "score": -0.5013990998268127
+            "score": -0.5013992190361023
           },
           "labeled_entities": [
             {
@@ -6628,7 +6628,7 @@
               "</s>Polish film director Andrzej"
             ],
             "n_words_checked": 65,
-            "score": -0.5568311214447021
+            "score": -0.5568308234214783
           },
           "labeled_entities": [
             {
@@ -6680,7 +6680,7 @@
               "</s>An outbreak of Dengue fever in Burkina Faso has killed at least 11"
             ],
             "n_words_checked": 94,
-            "score": -0.558978796005249
+            "score": -0.5589789748191833
           },
           "labeled_entities": [
             {
@@ -6723,7 +6723,7 @@
               "</s>A man has been charged with causing death by dangerous driving after the death of a six-year-old"
             ],
             "n_words_checked": 81,
-            "score": -0.35199835896492004
+            "score": -0.35199856758117676
           },
           "labeled_entities": [
             {
@@ -6747,7 +6747,7 @@
               "</s>A 33-year-old"
             ],
             "n_words_checked": 84,
-            "score": -0.41393712162971497
+            "score": -0.41393721103668213
           },
           "labeled_entities": [
             {
@@ -6784,7 +6784,7 @@
               "</s>Ex-Crewe Alexandra footballer Ian"
             ],
             "n_words_checked": 106,
-            "score": -0.7844361662864685
+            "score": -0.7844363451004028
           },
           "labeled_entities": [
             {
@@ -6832,7 +6832,7 @@
               "</s>St Johnstone's Paul Anderson has said Rangers defender John"
             ],
             "n_words_checked": 93,
-            "score": -0.8810803890228271
+            "score": -0.881080687046051
           },
           "labeled_entities": [
             {
@@ -6910,8 +6910,8 @@
             "dropped_seqs": [
               "</s>Arsenal Ladies have signed Ivory Coast international midfielder Nana"
             ],
-            "n_words_checked": 99,
-            "score": -0.7615131735801697
+            "n_words_checked": 97,
+            "score": -0.7615128755569458
           },
           "labeled_entities": [
             {
@@ -6980,8 +6980,8 @@
               "</s>A bid to stop a wind farm operator from installing overhead cables in Snowdonia",
               "</s>Campaigners have launched a legal challenge to a wind farm operator's plans to install overhead cables in Snowdonia"
             ],
-            "n_words_checked": 102,
-            "score": -0.8367190361022949
+            "n_words_checked": 100,
+            "score": -0.8367195129394531
           },
           "labeled_entities": [
             {
@@ -7010,7 +7010,7 @@
               "</s>A \"depraved\" paedophile who groomed a 10-year-old boy on Facebook before sexually abusing him has been jailed for 12 years"
             ],
             "n_words_checked": 91,
-            "score": -0.4825596511363983
+            "score": -0.4825598895549774
           },
           "labeled_entities": [
             {
@@ -7043,8 +7043,8 @@
               "</s>Inverness Caledonian Thistle extended their lead at the top of the Scottish Premiership",
               "</s>Inverness Caledonian Thistle moved four points clear at the top of the Scottish Premiership"
             ],
-            "n_words_checked": 90,
-            "score": -0.34451109170913696
+            "n_words_checked": 88,
+            "score": -0.34451091289520264
           },
           "labeled_entities": [
             {
@@ -7098,7 +7098,7 @@
               "</s>An under-performing academy school in Southampton"
             ],
             "n_words_checked": 84,
-            "score": -0.7206813097000122
+            "score": -0.7206817865371704
           },
           "labeled_entities": [
             {
@@ -7124,7 +7124,7 @@
               "</s>Peterborough United have completed the signing of striker Jordan"
             ],
             "n_words_checked": 73,
-            "score": -0.6184428930282593
+            "score": -0.6184431314468384
           },
           "labeled_entities": [
             {
@@ -7176,7 +7176,7 @@
               "</s>Plans for a new McDonald's restaurant in Bristol"
             ],
             "n_words_checked": 75,
-            "score": -0.5491100549697876
+            "score": -0.5491099953651428
           },
           "labeled_entities": [
             {
@@ -7218,7 +7218,7 @@
               "</s>Welshman Jamie Evans retained his WBO International lightweight title with a unanimous points victory over England"
             ],
             "n_words_checked": 102,
-            "score": -0.8825045228004456
+            "score": -0.8825041055679321
           },
           "labeled_entities": [
             {
@@ -7322,7 +7322,7 @@
               "</s>James Wakely and Richard Keogh hit centuries as Northamptonshire took control against Leicestershire at Grace Road"
             ],
             "n_words_checked": 80,
-            "score": -0.5822513699531555
+            "score": -0.5822515487670898
           },
           "labeled_entities": [
             {
@@ -7550,7 +7550,7 @@
               "</s>Police investigating phone hacking in the News of the World have arrested a 45-year-old"
             ],
             "n_words_checked": 78,
-            "score": -0.7241514325141907
+            "score": -0.724151611328125
           },
           "labeled_entities": [
             {
@@ -7577,7 +7577,7 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
             "n_words_checked": 73,
-            "score": -0.6207176446914673
+            "score": -0.6207178831100464
           },
           "labeled_entities": [
             {
@@ -7637,7 +7637,7 @@
               "</s>Police have released an E-fit image of a man they want to speak to in connection with the sexual assault of a 15-year-old"
             ],
             "n_words_checked": 106,
-            "score": -0.5669080018997192
+            "score": -0.5669078230857849
           },
           "labeled_entities": [
             {
@@ -7675,7 +7675,7 @@
               "</s>Ireland's economy grew by 7.7% in the three months to the end of June compared with the same period last year"
             ],
             "n_words_checked": 116,
-            "score": -0.533890962600708
+            "score": -0.5338911414146423
           },
           "labeled_entities": [
             {
@@ -7762,7 +7762,7 @@
               "</s>More than 1,000 people have objected to plans to build more than 200"
             ],
             "n_words_checked": 98,
-            "score": -0.791120707988739
+            "score": -0.7911206483840942
           },
           "labeled_entities": [
             {
@@ -7824,7 +7824,7 @@
               "</s>The world premiere of the new animated film Minions has taken place in New York, USA"
             ],
             "n_words_checked": 64,
-            "score": -0.628720760345459
+            "score": -0.6287205219268799
           },
           "labeled_entities": [
             {
@@ -7850,8 +7850,8 @@
               "</s>The man behind the takeover of the Financial Times is one of Japan's richest men, Shigeru",
               "</s>The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Shigeru"
             ],
-            "n_words_checked": 105,
-            "score": -0.726016640663147
+            "n_words_checked": 103,
+            "score": -0.7260164618492126
           },
           "labeled_entities": [
             {
@@ -7900,7 +7900,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 76,
-            "score": -0.424357533454895
+            "score": -0.4243582487106323
           },
           "labeled_entities": [
             {
@@ -7968,7 +7968,7 @@
               "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run incident in Dundee"
             ],
             "n_words_checked": 107,
-            "score": -0.693516194820404
+            "score": -0.6935162544250488
           },
           "labeled_entities": [
             {
@@ -8077,7 +8077,7 @@
               "</s>Nour, from the Syrian city of Raqqa"
             ],
             "n_words_checked": 102,
-            "score": -0.6247029304504395
+            "score": -0.6247033476829529
           },
           "labeled_entities": [
             {
@@ -8141,7 +8141,7 @@
               "</s>Thousands of animals are being counted at Chester Zoo"
             ],
             "n_words_checked": 59,
-            "score": -0.9039440155029297
+            "score": -0.9039441347122192
           },
           "labeled_entities": [
             {
@@ -8192,7 +8192,7 @@
               "</s>Tens of thousands of football fans had to wait up to 20 minutes to get into a match at one of the biggest stadiums in the Premier League"
             ],
             "n_words_checked": 109,
-            "score": -0.7593986988067627
+            "score": -0.7593987584114075
           },
           "labeled_entities": [
             {
@@ -8245,7 +8245,7 @@
               "</s>Wales coach Huw"
             ],
             "n_words_checked": 75,
-            "score": -0.7128846049308777
+            "score": -0.7128849029541016
           },
           "labeled_entities": [
             {
@@ -8319,7 +8319,7 @@
               "</s>World number one Andy Murray and Marcelos Melo beat world number two Marin Dodig 7-6 (7-4) 6-4"
             ],
             "n_words_checked": 100,
-            "score": -0.6944402456283569
+            "score": -0.6944400072097778
           },
           "labeled_entities": [
             {
@@ -8457,7 +8457,7 @@
               "</s>World number one Mark Selby will face Ding Junhui in the World Championship semi-finals after beating Marco Fu 6-5"
             ],
             "n_words_checked": 98,
-            "score": -0.5045504570007324
+            "score": -0.5045509934425354
           },
           "labeled_entities": [
             {
@@ -8590,8 +8590,8 @@
             "dropped_seqs": [
               "</s>Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner"
             ],
-            "n_words_checked": 108,
-            "score": -0.5892919898033142
+            "n_words_checked": 105,
+            "score": -0.5892916917800903
           },
           "labeled_entities": [
             {
@@ -8671,7 +8671,7 @@
               "</s>Great Britain's women produced their best performance of the EuroHockey Championships"
             ],
             "n_words_checked": 85,
-            "score": -0.630692720413208
+            "score": -0.6306924819946289
           },
           "labeled_entities": [
             {
@@ -8724,7 +8724,7 @@
               "</s>Wales are out of Euro 2016 after a 2-0 defeat by Portugal in their last-16"
             ],
             "n_words_checked": 81,
-            "score": -0.5286746025085449
+            "score": -0.5286749005317688
           },
           "labeled_entities": [
             {
@@ -8808,8 +8808,8 @@
               "</s>The Indiana Pacers will play the Denver Nuggets at London's O2 Arena next month",
               "</s>The Indiana Pacers will play the Denver Nuggets at London's O2 Arena in the first of two regular-season games staged in the UK next month"
             ],
-            "n_words_checked": 113,
-            "score": -0.5235921144485474
+            "n_words_checked": 109,
+            "score": -0.5235927104949951
           },
           "labeled_entities": [
             {
@@ -8901,8 +8901,8 @@
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 400,000 euros (\u00a3353,176) were seized in Paris",
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 400,000 euros (\u00a3353,176) were seized by police in Paris"
             ],
-            "n_words_checked": 118,
-            "score": -0.6456096172332764
+            "n_words_checked": 115,
+            "score": -0.6456093192100525
           },
           "labeled_entities": [
             {
@@ -8957,7 +8957,7 @@
               "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2016"
             ],
             "n_words_checked": 115,
-            "score": -0.5024815201759338
+            "score": -0.5024812817573547
           },
           "labeled_entities": [
             {
@@ -9050,7 +9050,7 @@
               "</s>Concerns are rising for a 12-year-old girl who has been missing from her home in Greater Manchester for more than a week"
             ],
             "n_words_checked": 93,
-            "score": -0.5432122945785522
+            "score": -0.5432119965553284
           },
           "labeled_entities": [
             {
@@ -9150,7 +9150,7 @@
               "</s>An outbreak of Dengue fever in Burkina Faso has killed more than 100"
             ],
             "n_words_checked": 94,
-            "score": -0.561191976070404
+            "score": -0.5611920356750488
           },
           "labeled_entities": [
             {
@@ -9196,7 +9196,7 @@
               "</s>A man has been charged with causing death by dangerous driving after the death of a six-year-old"
             ],
             "n_words_checked": 75,
-            "score": -0.3609134256839752
+            "score": -0.36091339588165283
           },
           "labeled_entities": [
             {
@@ -9222,7 +9222,7 @@
               "</s>A 33-year-old"
             ],
             "n_words_checked": 84,
-            "score": -0.4155004620552063
+            "score": -0.415500670671463
           },
           "labeled_entities": [
             {
@@ -9260,8 +9260,8 @@
               "</s>Ex-Crewe Alexandra footballer Ian",
               "</s>Ex-Crewe Alexandra footballer Lee"
             ],
-            "n_words_checked": 106,
-            "score": -0.7997146844863892
+            "n_words_checked": 104,
+            "score": -0.7997139692306519
           },
           "labeled_entities": [
             {
@@ -9313,7 +9313,7 @@
               "</s>St Johnstone's Steven Anderson has said Rangers' Kieran"
             ],
             "n_words_checked": 80,
-            "score": -0.9007701277732849
+            "score": -0.900770366191864
           },
           "labeled_entities": [
             {
@@ -9384,8 +9384,8 @@
               "</s>Arsenal Ladies have signed Ivory Coast international midfielder Nana",
               "</s>Arsenal Ladies have confirmed that Ivory Coast midfielder Nkosi Nkoudou has signed a new three-year"
             ],
-            "n_words_checked": 95,
-            "score": -0.7694458365440369
+            "n_words_checked": 91,
+            "score": -0.7694460153579712
           },
           "labeled_entities": [
             {
@@ -9455,7 +9455,7 @@
               "</s>A \"depraved\" paedophile who groomed a 12-year old boy on Facebook before sexually abusing him has been jailed for eight years"
             ],
             "n_words_checked": 91,
-            "score": -0.6952794194221497
+            "score": -0.6952795386314392
           },
           "labeled_entities": [
             {
@@ -9495,7 +9495,7 @@
               "</s>Peterborough United have completed the signing of Walsall striker Josh"
             ],
             "n_words_checked": 69,
-            "score": -0.7351995706558228
+            "score": -0.735199511051178
           },
           "labeled_entities": [
             {
@@ -9551,7 +9551,7 @@
               "</s>Plans for a new McDonald's restaurant in a Gloucestershire"
             ],
             "n_words_checked": 70,
-            "score": -0.6698938012123108
+            "score": -0.6698936820030212
           },
           "labeled_entities": [
             {
@@ -9635,8 +9635,8 @@
               "</s>James Wakely and James Keogh hit centuries as Northants took control against Leicestershire at Edgbaston",
               "</s>James Wakely and James Keogh shared an unbeaten century stand to put Northants in control against Leicestershire at Grace Road"
             ],
-            "n_words_checked": 76,
-            "score": -0.6794057488441467
+            "n_words_checked": 75,
+            "score": -0.6794061660766602
           },
           "labeled_entities": [
             {
@@ -9873,7 +9873,7 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
             "n_words_checked": 76,
-            "score": -0.8472775220870972
+            "score": -0.8472775816917419
           },
           "labeled_entities": [
             {
@@ -9906,7 +9906,7 @@
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Council"
             ],
             "n_words_checked": 122,
-            "score": -0.7194839715957642
+            "score": -0.7194837331771851
           },
           "labeled_entities": [
             {
@@ -9967,8 +9967,8 @@
               "</s>Ireland's economy grew by 7.7% in the three months to the end of December compared with the same period last year",
               "</s>Ireland's economy grew by 7.7% in the three months to the end of March compared with the same period a year ago"
             ],
-            "n_words_checked": 116,
-            "score": -0.5466285347938538
+            "n_words_checked": 120,
+            "score": -0.5466281771659851
           },
           "labeled_entities": [
             {
@@ -10027,7 +10027,7 @@
               "</s>More than 1,000 people have objected to plans to build more than 100"
             ],
             "n_words_checked": 98,
-            "score": -0.791130006313324
+            "score": -0.7911299467086792
           },
           "labeled_entities": [
             {
@@ -10074,7 +10074,7 @@
               "</s>The world premiere of the new animated film Minions has taken place in New York"
             ],
             "n_words_checked": 67,
-            "score": -0.6801658868789673
+            "score": -0.6801657676696777
           },
           "labeled_entities": [
             {
@@ -10103,7 +10103,7 @@
               "</s>The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Shigeru",
               "</s>The man behind the takeover of the Financial Times is one of the world's richest men, and his name is Kaori"
             ],
-            "n_words_checked": 104,
+            "n_words_checked": 102,
             "score": -0.7617736458778381
           },
           "labeled_entities": [
@@ -10153,7 +10153,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 76,
-            "score": -0.4243577718734741
+            "score": -0.4243582487106323
           },
           "labeled_entities": [
             {
@@ -10217,8 +10217,8 @@
               "</s>Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Shonan",
               "</s>Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Nagoya Grampus"
             ],
-            "n_words_checked": 92,
-            "score": -0.6333823204040527
+            "n_words_checked": 89,
+            "score": -0.6333826184272766
           },
           "labeled_entities": [
             {
@@ -10288,8 +10288,8 @@
               "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between the so-called Islamic State (IS) and government forces in 2014",
               "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between the so-called Islamic State (IS) and government forces in June 2014"
             ],
-            "n_words_checked": 110,
-            "score": -0.6944924592971802
+            "n_words_checked": 106,
+            "score": -0.6944926381111145
           },
           "labeled_entities": [
             {
@@ -10355,7 +10355,7 @@
               "</s>Thousands of animals are being counted at London's Natural History Museum"
             ],
             "n_words_checked": 58,
-            "score": -1.0579899549484253
+            "score": -1.057989239692688
           },
           "labeled_entities": [
             {
@@ -10405,7 +10405,7 @@
               "</s>Tens of thousands of football fans faced long queues to get into the stadium for a Premier League"
             ],
             "n_words_checked": 93,
-            "score": -0.7828956842422485
+            "score": -0.7828953266143799
           },
           "labeled_entities": [
             {
@@ -10443,7 +10443,7 @@
               "</s>Wales' Six Nations win over France was \"baffling\", according to ex-Wales captain Martyn"
             ],
             "n_words_checked": 95,
-            "score": -0.728168249130249
+            "score": -0.7281686663627625
           },
           "labeled_entities": [
             {
@@ -10562,7 +10562,7 @@
               "</s>World number one Mark Selby will face Ding Junhui in the World Championship semi-finals after he led 6-3 against Marco"
             ],
             "n_words_checked": 105,
-            "score": -0.6348460912704468
+            "score": -0.6348462700843811
           },
           "labeled_entities": [
             {
@@ -10655,7 +10655,7 @@
               "</s>Three men have been found guilty of blowing up cash machines and stealing more than \u00a3150,000"
             ],
             "n_words_checked": 72,
-            "score": -0.4755295217037201
+            "score": -0.4755297601222992
           },
           "labeled_entities": [
             {
@@ -10688,8 +10688,8 @@
             "dropped_seqs": [
               "</s>Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner"
             ],
-            "n_words_checked": 108,
-            "score": -0.5892919898033142
+            "n_words_checked": 105,
+            "score": -0.5892916917800903
           },
           "labeled_entities": [
             {
@@ -10771,7 +10771,7 @@
               "</s>Great Britain's women produced their best performance of the EuroHockey Championships"
             ],
             "n_words_checked": 92,
-            "score": -0.6728397607803345
+            "score": -0.6728395819664001
           },
           "labeled_entities": [
             {
@@ -10875,7 +10875,7 @@
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 1m euros (\u00a31.2m) were seized in Paris",
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 1m euros (\u00a31.1m) were seized by police in Paris"
             ],
-            "n_words_checked": 110,
+            "n_words_checked": 113,
             "score": -0.7418636679649353
           },
           "labeled_entities": [
@@ -10933,7 +10933,7 @@
               "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2016"
             ],
             "n_words_checked": 112,
-            "score": -0.5436191558837891
+            "score": -0.5436189770698547
           },
           "labeled_entities": [
             {
@@ -11030,8 +11030,8 @@
               "</s>Police are \"extremely concerned\" for the welfare of a 13-month-old girl who has been missing from her home in Greater Manchester for more than a week",
               "</s>Police are \"extremely concerned\" for the welfare of a 15-month-old girl who has been missing from her home in Greater Manchester for more than a week"
             ],
-            "n_words_checked": 98,
-            "score": -0.6656963229179382
+            "n_words_checked": 94,
+            "score": -0.6656960248947144
           },
           "labeled_entities": [
             {
@@ -11080,7 +11080,7 @@
               "</s>An outbreak of Dengue fever in Burkina Faso has killed at least 20 people and left more than 100"
             ],
             "n_words_checked": 96,
-            "score": -0.5623416304588318
+            "score": -0.5623418688774109
           },
           "labeled_entities": [
             {
@@ -11128,7 +11128,7 @@
               "</s>A man has been charged with causing death by dangerous driving after the death of a five-year-old"
             ],
             "n_words_checked": 78,
-            "score": -0.3638579547405243
+            "score": -0.36385777592658997
           },
           "labeled_entities": [
             {
@@ -11156,7 +11156,7 @@
               "</s>A 37-year-old"
             ],
             "n_words_checked": 69,
-            "score": -0.5004554390907288
+            "score": -0.5004550814628601
           },
           "labeled_entities": [
             {
@@ -11313,7 +11313,7 @@
               "</s>Plans for a new McDonald's restaurant in a Gloucestershire"
             ],
             "n_words_checked": 75,
-            "score": -0.8843065500259399
+            "score": -0.8843067288398743
           },
           "labeled_entities": [
             {
@@ -11531,7 +11531,7 @@
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Union"
             ],
             "n_words_checked": 126,
-            "score": -0.7390041351318359
+            "score": -0.7390041947364807
           },
           "labeled_entities": [
             {
@@ -11568,7 +11568,7 @@
               "</s>Ireland's economy grew by 7.7% in the three months to the end of December compared with the same period a year earlier"
             ],
             "n_words_checked": 124,
-            "score": -0.5804927349090576
+            "score": -0.5804930925369263
           },
           "labeled_entities": [
             {
@@ -11629,7 +11629,7 @@
               "</s>More than 1,000 people have objected to plans to build more than 300"
             ],
             "n_words_checked": 96,
-            "score": -1.0176373720169067
+            "score": -1.0176371335983276
           },
           "labeled_entities": [
             {
@@ -11679,7 +11679,7 @@
               "</s>The man behind the takeover of the Financial Times is one of the world's richest men, and his name is Kaori"
             ],
             "n_words_checked": 110,
-            "score": -0.764350414276123
+            "score": -0.7643505334854126
           },
           "labeled_entities": [
             {
@@ -11728,7 +11728,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 76,
-            "score": -0.4243575930595398
+            "score": -0.4243582487106323
           },
           "labeled_entities": [
             {
@@ -11882,7 +11882,7 @@
               "</s>Thousands of animals are being counted every year at the UK's largest zoo, the Natural Heritage Zoo in London"
             ],
             "n_words_checked": 91,
-            "score": -1.1781656742095947
+            "score": -1.1781647205352783
           },
           "labeled_entities": [
             {
@@ -11943,7 +11943,7 @@
               "</s>Tens of thousands of football fans faced long queues to get into the stadium for a Premier League"
             ],
             "n_words_checked": 89,
-            "score": -0.9451001286506653
+            "score": -0.9451003074645996
           },
           "labeled_entities": [
             {
@@ -12006,8 +12006,8 @@
             "dropped_seqs": [
               "</s>Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner"
             ],
-            "n_words_checked": 108,
-            "score": -0.5892919898033142
+            "n_words_checked": 105,
+            "score": -0.5892917513847351
           },
           "labeled_entities": [
             {
@@ -12091,7 +12091,7 @@
               "</s>Great Britain's women produced their best performance of the EuroHockey Championships"
             ],
             "n_words_checked": 96,
-            "score": -0.6858389973640442
+            "score": -0.6858391761779785
           },
           "labeled_entities": [
             {
@@ -12156,8 +12156,8 @@
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 500,000 euros (\u00a3353,176) were seized in Londonderry",
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 500,000 euros (\u00a3353,176) were seized by police in Londonderry"
             ],
-            "n_words_checked": 126,
-            "score": -0.6877617239952087
+            "n_words_checked": 122,
+            "score": -0.6877616047859192
           },
           "labeled_entities": [
             {
@@ -12214,7 +12214,7 @@
               "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2016"
             ],
             "n_words_checked": 112,
-            "score": -0.5436191558837891
+            "score": -0.5436189770698547
           },
           "labeled_entities": [
             {
@@ -12319,7 +12319,7 @@
               "</s>Police are \"extremely concerned\" for the welfare of a 13-month-old girl who has been missing from her home in Greater Manchester for more than a week<s><unk>"
             ],
             "n_words_checked": 96,
-            "score": -0.6760895252227783
+            "score": -0.6760894060134888
           },
           "labeled_entities": [],
           "summary": "<Failed generation: blocked all beams>"
@@ -12544,11 +12544,9 @@
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s><s>",
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s><unk>",
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s><s><s>",
-              "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s><s><unk>",
-              "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s><s><s><s>",
-              "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s><s><s><unk>"
+              "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s><s><unk>"
             ],
-            "n_words_checked": 126,
+            "n_words_checked": 124,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -12578,9 +12576,11 @@
               "</s>Ireland's economy grew by 7.7% in the three months to the end of September<s><s>",
               "</s>Ireland's economy grew by 7.7% in the three months to the end of September<s><unk>",
               "</s>Ireland's economy grew by 7.7% in the three months to the end of September<s><s><s>",
-              "</s>Ireland's economy grew by 7.7% in the three months to the end of September<s><s><unk>"
+              "</s>Ireland's economy grew by 7.7% in the three months to the end of September<s><s><unk>",
+              "</s>Ireland's economy grew by 7.7% in the three months to the end of September<s><s><s><s>",
+              "</s>Ireland's economy grew by 7.7% in the three months to the end of September<s><s><s><unk>"
             ],
-            "n_words_checked": 71,
+            "n_words_checked": 73,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -12640,7 +12640,7 @@
               "</s>The man behind the takeover of the Financial Times is one of the world's richest men, and his name is Kaoru"
             ],
             "n_words_checked": 108,
-            "score": -0.8081478476524353
+            "score": -0.8081474900245667
           },
           "labeled_entities": [
             {
@@ -12680,7 +12680,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 76,
-            "score": -0.4243575930595398
+            "score": -0.4243582487106323
           },
           "labeled_entities": [
             {
@@ -12758,7 +12758,7 @@
               "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between the so-called Islamic State (IS) and government forces in the city in June"
             ],
             "n_words_checked": 146,
-            "score": -0.7633085250854492
+            "score": -0.7633088231086731
           },
           "labeled_entities": [
             {
@@ -12829,7 +12829,7 @@
               "</s>Thousands of animals are being counted at Chester zoo every year"
             ],
             "n_words_checked": 56,
-            "score": -1.186271071434021
+            "score": -1.186270833015442
           },
           "labeled_entities": [
             {
@@ -12871,8 +12871,8 @@
             "dropped_seqs": [
               "</s>Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner"
             ],
-            "n_words_checked": 108,
-            "score": -0.589292049407959
+            "n_words_checked": 105,
+            "score": -0.5892917513847351
           },
           "labeled_entities": [
             {
@@ -13039,7 +13039,7 @@
               "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2016"
             ],
             "n_words_checked": 112,
-            "score": -0.5436191558837891
+            "score": -0.5436189770698547
           },
           "labeled_entities": [
             {
@@ -13261,7 +13261,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 76,
-            "score": -0.4243575930595398
+            "score": -0.42435771226882935
           },
           "labeled_entities": [
             {
@@ -13377,7 +13377,7 @@
               "</s>Thousands of animals are being counted at Chester zoo in the West Midlands, in the UK"
             ],
             "n_words_checked": 61,
-            "score": -1.2622569799423218
+            "score": -1.2622567415237427
           },
           "labeled_entities": [
             {
@@ -13419,8 +13419,8 @@
             "dropped_seqs": [
               "</s>Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner"
             ],
-            "n_words_checked": 108,
-            "score": -0.589292049407959
+            "n_words_checked": 105,
+            "score": -0.5892912745475769
           },
           "labeled_entities": [
             {
@@ -13506,7 +13506,7 @@
               "</s>Great Britain's women produced their best performance of the EuroHockey"
             ],
             "n_words_checked": 99,
-            "score": -0.8646671772003174
+            "score": -0.8646673560142517
           },
           "labeled_entities": [
             {
@@ -13554,7 +13554,7 @@
               "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2016"
             ],
             "n_words_checked": 112,
-            "score": -0.5436191558837891
+            "score": -0.5436189770698547
           },
           "labeled_entities": [
             {
@@ -13776,7 +13776,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 76,
-            "score": -0.4243575930595398
+            "score": -0.42435798048973083
           },
           "labeled_entities": [
             {
@@ -13855,7 +13855,7 @@
               "</s>Thousands of animals are being counted at the National Zoological Park in London"
             ],
             "n_words_checked": 63,
-            "score": -1.0985009670257568
+            "score": -1.0985016822814941
           },
           "labeled_entities": [
             {
@@ -13907,7 +13907,7 @@
               "</s>Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner"
             ],
             "n_words_checked": 105,
-            "score": -0.589292049407959
+            "score": -0.5892917513847351
           },
           "labeled_entities": [
             {
@@ -13991,7 +13991,7 @@
               "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2016"
             ],
             "n_words_checked": 112,
-            "score": -0.5436191558837891
+            "score": -0.5436189770698547
           },
           "labeled_entities": [
             {
@@ -14213,7 +14213,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 76,
-            "score": -0.4243575930595398
+            "score": -0.42435798048973083
           },
           "labeled_entities": [
             {
@@ -14294,7 +14294,7 @@
               "</s>Thousands of animals are being counted at the National Zoological Park in London"
             ],
             "n_words_checked": 66,
-            "score": -1.1018762588500977
+            "score": -1.1018763780593872
           },
           "labeled_entities": [
             {
@@ -14346,7 +14346,7 @@
               "</s>Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner"
             ],
             "n_words_checked": 105,
-            "score": -0.589292049407959
+            "score": -0.5892917513847351
           },
           "labeled_entities": [
             {
@@ -14430,7 +14430,7 @@
               "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2016"
             ],
             "n_words_checked": 112,
-            "score": -0.5436191558837891
+            "score": -0.5436189770698547
           },
           "labeled_entities": [
             {
@@ -14652,7 +14652,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 76,
-            "score": -0.4243575930595398
+            "score": -0.42435798048973083
           },
           "labeled_entities": [
             {
@@ -14735,7 +14735,7 @@
               "</s>Thousands of animals are being counted at the National Zoological Park in Washington DC"
             ],
             "n_words_checked": 71,
-            "score": -1.1386224031448364
+            "score": -1.1386229991912842
           },
           "labeled_entities": [
             {
@@ -14787,7 +14787,7 @@
               "</s>Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner"
             ],
             "n_words_checked": 105,
-            "score": -0.589292049407959
+            "score": -0.5892917513847351
           },
           "labeled_entities": [
             {
@@ -14871,7 +14871,7 @@
               "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2016"
             ],
             "n_words_checked": 112,
-            "score": -0.5436191558837891
+            "score": -0.5436189770698547
           },
           "labeled_entities": [
             {
@@ -14952,5 +14952,5 @@
       }
     }
   },
-  "timestamp": 1654893552.436208
+  "timestamp": 1655054293.5737336
 }
