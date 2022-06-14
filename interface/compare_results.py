@@ -37,12 +37,12 @@ def render_compare_results():
     selected_models = st.multiselect(
         "Select models",
         options=df_aggregated.index,
-        default=[
+        default=[x for x in [
             "fbs_classifier",
             "fbs_oracle",
             "baseline-pegasus",
             "baseline-bart"
-        ],
+        ] if x in df_aggregated.index],
     )
     selected_columns = st.multiselect(
         "Select columns",
