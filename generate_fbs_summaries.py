@@ -21,7 +21,7 @@ def run_iterative_constraints(args, model_summarization, is_oracle):
     model_prefix = "pegasus" if "pegasus" in model_summarization else "bart"
     fbs_suffix = "oracle" if is_oracle else args.classifier_results_suffix
     if args.num_beams != 4:
-        fbs_suffix += f"beams-{args.num_beams}"
+        fbs_suffix += f"-beams-{args.num_beams}"
     if args.data_subset == "test-extrinsic":
         data_subset = f"{model_prefix}-{args.data_subset}"
         results_path = f"results/fbs-logs/{data_subset}-{fbs_suffix}.json"
