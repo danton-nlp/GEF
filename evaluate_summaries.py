@@ -22,6 +22,7 @@ if __name__ == "__main__":
     parser.add_argument("--test_size", type=int, default=100)
     parser.add_argument("--entity_label_match", type=str, default="strict_intrinsic")
     parser.add_argument("--print_first_n", type=int, default=0)
+    parser.add_argument("--num_beams", type=int, default=4)
     parser.add_argument("--model_filter", type=str, default="")
     parser.add_argument("--count_skips", type=bool, default=False)
     args = parser.parse_args()
@@ -41,7 +42,7 @@ if __name__ == "__main__":
         )
 
     print(f"Test results for {len(test_set_ids)} summaries")
-
+    beam_suffix = "" if args.num_beams == 4 else f"-beams-{args.num_beams}"
     if args.data_subset == "full" or args.data_subset == "full-extrinsic":
         MODEL_RESULTS = {
             "fbs_classifier": load_summaries_from_logs(
@@ -54,17 +55,17 @@ if __name__ == "__main__":
             #     f"results/fbs-logs/{args.data_subset}-oracle.json", max_iterations=2
             # ),
             "fbs_oracle": load_summaries_from_logs(
-                f"results/fbs-logs/{args.data_subset}-oracle.json", max_iterations=5
+                f"results/fbs-logs/{args.data_subset}-oracle{beam_suffix}.json", max_iterations=5
             ),
             # "Test FBS w/ classifier v0, i=5": load_summaries_from_logs(
             #     f"results/fbs-logs/{args.data_subset}-classifier-knnv0.json", max_iterations=5
             # ),
             "fbs_classifier": load_summaries_from_logs(
-                f"results/fbs-logs/{args.data_subset}-classifier-knnv1.json",
+                f"results/fbs-logs/{args.data_subset}-classifier-knnv1{beam_suffix}.json",
                 max_iterations=5,
             ),
             "fbs_classifier_i10": load_summaries_from_logs(
-                f"results/fbs-logs/{args.data_subset}-classifier-knnv1.json",
+                f"results/fbs-logs/{args.data_subset}-classifier-knnv1{beam_suffix}.json",
                 max_iterations=10,
             ),
             # "Test FBS w/ bad classifier, i=5": load_summaries_from_logs(
@@ -154,11 +155,11 @@ if __name__ == "__main__":
             "rougeL",
         ],
     ).set_index("model")
-
-    df_aggregated.to_csv(f"results/evaluation/{args.data_subset}-{args.test_size}.csv")
+    filename = f"{args.data_subset}-{args.test_size}{beam_suffix}"
+    df_aggregated.to_csv(f"results/evaluation/{filename}.csv")
     df_summaries = pd.DataFrame.from_dict(summary_results, orient="index")
     with open(
-        f"results/evaluation/{args.data_subset}-{args.test_size}-summaries.json", "w"
+        f"results/evaluation/{filename}-summaries.json", "w"
     ) as f:
         json.dump(df_summaries.to_dict(orient="index"), f, indent=2, sort_keys=True)
 
@@ -179,7 +180,7 @@ if __name__ == "__main__":
         ("non_factual_intrinsic", "NonFactualIntrinsic"),
         ("skipped", "Skipped"),
     ]
-    with open(f"results/latex/{args.data_subset}-{args.test_size}.tex", "w") as f:
+    with open(f"results/latex/{filename}.tex", "w") as f:
         for model_index, model_label in model_mapping:
             if "pegasus" in args.data_subset:
                 model_label = "pegasus" + model_label

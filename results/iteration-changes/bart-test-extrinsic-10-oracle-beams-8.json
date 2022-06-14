@@ -1,0 +1,306 @@
+[
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 11,
+      "Intrinsic Hallucination": 0,
+      "Non-factual Hallucination": 6,
+      "Non-hallucinated": 10,
+      "Unknown": 0,
+      "total": 27,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "DATE": {
+          "Factual Hallucination": 3,
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 1,
+          "total": 8
+        },
+        "FAC": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "GPE": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 6
+        },
+        "MONEY": {
+          "Non-factual Hallucination": 1,
+          "total": 1
+        },
+        "NORP": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "ORG": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 3,
+          "total": 5
+        },
+        "PERSON": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 4
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 2.7,
+      "factual": 0.5,
+      "failed": 0,
+      "non_factual": 0.5,
+      "non_factual_extrinsic": 0.5,
+      "non_factual_intrinsic": 0.0,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 1.0,
+      "total": 10,
+      "unknown": 0.0
+    },
+    "iteration": 0,
+    "summary": {
+      "26398483": {
+        "summary": "Police have released an image of a man they want to speak to in connection with a sexual assault on a 15-year-old girl in Hertfordshire."
+      },
+      "31113635": {
+        "summary": "The amount of money spent on film production in the UK reached an all-time high last year, according to figures from the British Film Institute."
+      },
+      "32557344": {
+        "summary": "The RSPCA has appealed for information after a pony was found seriously injured in a field in Lincolnshire."
+      },
+      "34614991": {
+        "summary": "Nicola Sturgeon has said she will always work with Plaid Cymru leader Leanne Wood."
+      },
+      "34898778": {
+        "summary": "Nour, a 15-year-old girl, was caught up in the fighting between so-called Islamic State (IS) and government forces in the Syrian city of Raqqa in 2014."
+      },
+      "36341722": {
+        "summary": "Three men have been found guilty of blowing up cash machines and stealing more than \u00a3200,000."
+      },
+      "36772094": {
+        "summary": "The number of animal cruelty cases in Wales fell last year, the RSPCA has said."
+      },
+      "39593375": {
+        "summary": "A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for 12 years."
+      },
+      "39807248": {
+        "summary": "An under-performing academy in south-west London is to be merged with another in a bid to save money."
+      },
+      "40243246": {
+        "summary": "A 19-year-old man has been arrested as part of the investigation into the London Bridge terror attack, police have said."
+      }
+    },
+    "summary_completed": 0,
+    "summary_remaining": 10
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 13,
+      "Intrinsic Hallucination": 0,
+      "Non-factual Hallucination": 4,
+      "Non-hallucinated": 11,
+      "Unknown": 0,
+      "total": 28,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "DATE": {
+          "Factual Hallucination": 4,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 1,
+          "total": 8
+        },
+        "FAC": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "GPE": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 6
+        },
+        "MONEY": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "NORP": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "ORG": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 2,
+          "total": 4
+        },
+        "PERSON": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 4,
+          "total": 5
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 2.8,
+      "factual": 0.7,
+      "failed": 0,
+      "non_factual": 0.3,
+      "non_factual_extrinsic": 0.3,
+      "non_factual_intrinsic": 0.0,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 1.0,
+      "total": 10,
+      "unknown": 0.0
+    },
+    "iteration": 1,
+    "summary": {
+      "26398483": {
+        "edit_stats": {
+          "edit_distance_token": 2,
+          "rouge1": 0.9285714285714286,
+          "rouge2": 0.8518518518518519,
+          "rougeL": 0.9285714285714286
+        },
+        "summary": "Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 14-year-old girl in Hertfordshire."
+      },
+      "34898778": {
+        "edit_stats": {
+          "edit_distance_token": 8,
+          "rouge1": 0.8387096774193549,
+          "rouge2": 0.7333333333333334,
+          "rougeL": 0.8387096774193549
+        },
+        "summary": "Nour is a 23-year-old mother of two who was caught up in the fighting between so-called Islamic State (IS) and government forces in the Syrian city of Raqqa in June."
+      },
+      "36341722": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9411764705882353,
+          "rouge2": 0.875,
+          "rougeL": 0.9411764705882353
+        },
+        "summary": "Three men have been found guilty of blowing up cash machines and stealing more than \u00a3100,000."
+      },
+      "39593375": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9523809523809523,
+          "rouge2": 0.9,
+          "rougeL": 0.9523809523809523
+        },
+        "summary": "A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for eight years."
+      },
+      "39807248": {
+        "edit_stats": {
+          "edit_distance_token": 10,
+          "rouge1": 0.5714285714285715,
+          "rouge2": 0.36363636363636365,
+          "rougeL": 0.5142857142857143
+        },
+        "summary": "A troubled academy school in Southampton is to be merged with another in the city."
+      }
+    },
+    "summary_completed": 5,
+    "summary_remaining": 5
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 14,
+      "Intrinsic Hallucination": 0,
+      "Non-factual Hallucination": 2,
+      "Non-hallucinated": 12,
+      "Unknown": 0,
+      "total": 28,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "DATE": {
+          "Factual Hallucination": 5,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 8
+        },
+        "FAC": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "GPE": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 4,
+          "total": 6
+        },
+        "MONEY": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "NORP": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "ORG": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 3,
+          "total": 5
+        },
+        "PERSON": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 4
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 2.8,
+      "factual": 0.9,
+      "failed": 0,
+      "non_factual": 0.1,
+      "non_factual_extrinsic": 0.1,
+      "non_factual_intrinsic": 0.0,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.9,
+      "total": 10,
+      "unknown": 0.0
+    },
+    "iteration": 2,
+    "summary": {
+      "34898778": {
+        "edit_stats": {
+          "edit_distance_token": 5,
+          "rouge1": 0.8666666666666666,
+          "rouge2": 0.793103448275862,
+          "rougeL": 0.8666666666666666
+        },
+        "summary": "Nour, a 20-year-old mother of two, was caught up in the fighting between so-called Islamic State (IS) and government forces in the Syrian city of Raqqa in July."
+      },
+      "39593375": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9523809523809523,
+          "rouge2": 0.9,
+          "rougeL": 0.9523809523809523
+        },
+        "summary": "A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for 13 years."
+      },
+      "39807248": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9500000000000001,
+          "rouge2": 0.8947368421052632,
+          "rougeL": 0.9500000000000001
+        },
+        "summary": "An under-performing academy in south-west England is to be merged with another in a bid to save money."
+      }
+    },
+    "summary_completed": 7,
+    "summary_remaining": 3
+  }
+]

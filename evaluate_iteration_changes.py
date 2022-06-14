@@ -104,9 +104,11 @@ if __name__ == "__main__":
     parser.add_argument("--annotate", type=bool, default=False)
     parser.add_argument("--data_subset", type=str, default="bart-test-extrinsic")
     parser.add_argument("--test_size", type=int, default=100)
+    parser.add_argument("--num_beams", type=int, default=4)
     args = parser.parse_args()
 
     xsum_test = load_xsum_dict("test")
+    beam_suffix = "" if args.num_beams == 4 else f"-beams-{args.num_beams}"
     test_set_ids = (
         set(
             load_shuffled_test_split(xsum_test, args.data_subset, args.test_size).keys()
@@ -116,16 +118,15 @@ if __name__ == "__main__":
     )
 
     for model in ["oracle", "classifier-knnv1"]:
-        print(model)
         iteration_stats = collect_iteration_stats(
-            f"results/fbs-logs/{args.data_subset}-{model}.json",
+            f"results/fbs-logs/{args.data_subset}-{model}{beam_suffix}.json",
             xsum_test,
             test_set_ids,
             should_annotate=args.annotate,
         )
 
         with open(
-            f"results/iteration-changes/{args.data_subset}-{args.test_size}-{model}.json",
+            f"results/iteration-changes/{args.data_subset}-{args.test_size}-{model}{beam_suffix}.json",
             "w",
         ) as f:
             json.dump(iteration_stats, f, indent=2, sort_keys=True)
