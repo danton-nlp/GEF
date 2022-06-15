@@ -247,6 +247,7 @@ def evaluate_factuality(
             "has_unknown": has_unknown,
             "has_failed": summary_eval["failed"],
             "count_extrinsic": count_extrinsic,
+            "count_extrinsic_factual": summary_eval['count_entity_label']['Factual Hallucination'],
             "extrinsic_factuality_ratio": summary_eval[
                 "entity_extrinsic_factuality_ratio"
             ],
