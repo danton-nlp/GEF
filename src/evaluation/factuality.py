@@ -135,19 +135,22 @@ def evaluate_summary(
             if not ent["in_source"]:
                 summary_eval["count_entity_extrinsic"] += 1
 
-        # if the summary isn't failed, then default ratio to 1.0 -- 1 then
-        # serves as the sensible "default value" for when there are no
-        # extrinsic hallucations in the summary.
+        # If there are any extrinsic hallucinations, then keep the ratio set to
+        # None to flag that the ratio isn't helpful.
+        #
+        # Alternative could be that if there are no extrinsic hallucinations
+        # that we set the ratio to 1, but we think that unfairly inflates the
+        # the aggregate stat for models that include fewer extrinsic
+        # hallucinations.
         count_entity_labels = summary_eval["count_entity_label"]
-        summary_eval['entity_extrinsic_factuality_ratio'] = 1.0
-        if count_entity_labels["Non-factual Hallucination"] > 0:
+        count_total_extrinsic_hallucinations = (
+            count_entity_labels['Factual Hallucination']
+            + count_entity_labels['Non-factual Hallucination']
+        )
+        if count_total_extrinsic_hallucinations > 0:
             summary_eval["entity_extrinsic_factuality_ratio"] = count_entity_labels[
                 "Factual Hallucination"
-            ] / (
-                count_entity_labels["Factual Hallucination"]
-                + count_entity_labels["Non-factual Hallucination"]
-            )
-
+            ] / count_total_extrinsic_hallucinations
     return summary_eval
 
 
@@ -292,7 +295,7 @@ def evaluate_factuality(
             if count_extrinsic > 0:
                 agg_results["sum_with_extrinsic"] += 1
 
-            if not summary_eval['failed']:
+            if summary_eval["entity_extrinsic_factuality_ratio"]:
                 agg_results["extrinsic_factuality_ratios"].append(
                     summary_eval["entity_extrinsic_factuality_ratio"]
                 )

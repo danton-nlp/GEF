@@ -140,8 +140,7 @@ def test_evaluate_factuality_oracle_no_skips():
 
     # This isn't exactly 1 because we only run 5 iterations, and it's possible
     # to stil no have fully factual entities after 5 iterations.
-    assert agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"] == 0.856989247311828
-    assert agg_metrics["entities"]["extrinsic_factuality_ratio"]["stdev"] == 0.3306552144638303
+    assert agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"] == 0.9661764705882353
 
 
 def test_evaluate_factuality_classifier():
@@ -180,8 +179,7 @@ def test_evaluate_factuality_classifier():
     assert agg_metrics["entities"]["Non-hallucinated"] == 145
     assert agg_metrics["entities"]["total"] == 23 + 63 + 11 + 145
 
-    assert agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"] == 0.776
-    assert agg_metrics["entities"]["extrinsic_factuality_ratio"]["stdev"] == 0.39390015655408583
+    assert agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"] == 0.9450980392156864
 
     # Should sum to 1
     assert (
@@ -233,8 +231,7 @@ def test_evaluate_factuality_classifier_no_skips():
     assert agg_metrics["entities"]["Non-hallucinated"] == 164
     assert agg_metrics["entities"]["total"] == 76 + 14 + 37 + 164
 
-    assert agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"] == 0.7329457364341085
-    assert agg_metrics["entities"]["extrinsic_factuality_ratio"]["stdev"] == 0.40371319757059554
+    assert agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"] == 0.8988700564971751
 
 
 def test_evaluate_factuality_baseline():
@@ -272,8 +269,7 @@ def test_evaluate_factuality_baseline():
     assert agg_metrics["entities"]["Non-hallucinated"] == 188
     assert agg_metrics["entities"]["total"] == 74 + 94 + 13 + 188
 
-    assert agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"] == 0.619
-    assert agg_metrics["entities"]["extrinsic_factuality_ratio"]["stdev"] == 0.41385732914724244
+    assert agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"] == 0.8128571428571428
 
     # Should sum to 1
     assert (
