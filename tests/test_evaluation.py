@@ -6,7 +6,6 @@ from src.data_utils import (
 )
 from sumtool.storage import get_summaries
 from src.evaluation.factuality import evaluate_factuality
-from sumtool.storage import get_summary_metrics
 
 TEST_SIZE = 100
 
