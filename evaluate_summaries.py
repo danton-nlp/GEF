@@ -73,6 +73,7 @@ if __name__ == "__main__":
         }
 
     bart_models = [
+        ("facebook-bart-large-xsum", "baseline-bart"),
         ("meng-3000", "meng-3000"),  # Hallucinated, but factual! Paper
         ("pinocchio", "pinocchio"),  # King et. al paper
         ("chen-corrector", "corrector"),  # Chen. et al replication project
