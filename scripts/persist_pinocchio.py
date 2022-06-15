@@ -4,10 +4,16 @@ import json
 
 if __name__ == "__main__":
     sums_by_id = {}
+    n_missing = 0
     with open("./data/results-pinocchio/xsum-pinocchio-results.jsonl", "r") as f:
         for line in f:
             obj = json.loads(line)
-            sums_by_id[obj["id"]] = obj["pinocchio_predicted"]
+            summary = obj["pinocchio_predicted"].strip()
+            if summary == "":
+                n_missing += 1
+                summary = obj["bart_predicted"].strip()
+            sums_by_id[obj["id"]] = summary
+    print(f"{n_missing} reverted to baseline")
     store_model_summaries(
         "xsum",
         "pinocchio",
