@@ -1,5 +1,5 @@
 from collections import defaultdict
-from typing import DefaultDict, List, TypedDict, Union
+from typing import DefaultDict, List, Optional, TypedDict, Union
 from src.annotation import prompt_annotation_flow
 from src.detect_entities import detect_entities
 from src.entity_utils import MarkedEntity, count_entities, filter_entities
@@ -69,6 +69,7 @@ class SummaryEval(TypedDict):
     failed: bool
     count_entity_total: int
     count_entity_extrinsic: int
+    entity_extrinsic_factuality_ratio: Optional[float]
     count_entity_label: DefaultDict[str, int]
     count_entity_type: DefaultDict[str, DefaultDict[str, int]]
     has_predicted_non_factual: bool
@@ -90,6 +91,7 @@ def evaluate_summary(
         "failed": False,
         "count_entity_total": 0,
         "count_entity_extrinsic": 0,
+        "entity_extrinsic_factuality_ratio": None,
         "count_entity_label": defaultdict(lambda: 0),
         "count_entity_type": defaultdict(lambda: defaultdict(lambda: 0)),
         "has_predicted_non_factual": False,
@@ -133,6 +135,19 @@ def evaluate_summary(
             if not ent["in_source"]:
                 summary_eval["count_entity_extrinsic"] += 1
 
+        # if the summary isn't failed, then default ratio to 1.0 -- 1 then
+        # serves as the sensible "default value" for when there are no
+        # extrinsic hallucations in the summary.
+        count_entity_labels = summary_eval["count_entity_label"]
+        summary_eval['entity_extrinsic_factuality_ratio'] = 1.0
+        if count_entity_labels["Non-factual Hallucination"] > 0:
+            summary_eval["entity_extrinsic_factuality_ratio"] = count_entity_labels[
+                "Factual Hallucination"
+            ] / (
+                count_entity_labels["Factual Hallucination"]
+                + count_entity_labels["Non-factual Hallucination"]
+            )
+
     return summary_eval
 
 
@@ -172,6 +187,7 @@ def evaluate_factuality(
         "rouge2": [],
         "rougeL": [],
         "sum_with_extrinsic": 0,
+        "extrinsic_factuality_ratios": [],
         "count_entity_label": defaultdict(lambda: 0),
         "count_entity_type": defaultdict(lambda: defaultdict(lambda: 0)),
     }
@@ -228,6 +244,9 @@ def evaluate_factuality(
             "has_unknown": has_unknown,
             "has_failed": summary_eval["failed"],
             "count_extrinsic": count_extrinsic,
+            "extrinsic_factuality_ratio": summary_eval[
+                "entity_extrinsic_factuality_ratio"
+            ],
         }
 
         if print_counter < print_first_n:
@@ -273,6 +292,11 @@ def evaluate_factuality(
             if count_extrinsic > 0:
                 agg_results["sum_with_extrinsic"] += 1
 
+            if not summary_eval['failed']:
+                agg_results["extrinsic_factuality_ratios"].append(
+                    summary_eval["entity_extrinsic_factuality_ratio"]
+                )
+
             if compute_rouge and not summary_eval["failed"]:
                 agg_results["rouge1"].append(summary_eval["rouge1"])
                 agg_results["rouge2"].append(summary_eval["rouge2"])
@@ -294,6 +318,11 @@ def evaluate_factuality(
         },
         "entities": {
             "total": agg_results["entities"],
+            "extrinsic_entity_ratio": {
+                "mean": np.mean(agg_results["extrinsic_factuality_ratios"]),
+                "median": np.median(agg_results["extrinsic_factuality_ratios"]),
+                "stdev": np.std(agg_results["extrinsic_factuality_ratios"]),
+            },
             "type": {},
         },
         "rouge1": np.mean(agg_results["rouge1"]),
@@ -302,7 +331,7 @@ def evaluate_factuality(
     }
     for value in ANNOTATION_LABELS.values():
         metrics["entities"][value] = agg_results["count_entity_label"][value]
-    
+
     for type, label_counts in agg_results["count_entity_type"].items():
         metrics["entities"]["type"][type] = dict(label_counts)
 
