@@ -128,6 +128,7 @@ if __name__ == "__main__":
                     agg_metrics["summaries"]["non_factual"],
                     agg_metrics["summaries"]["non_factual_extrinsic"],
                     agg_metrics["summaries"]["non_factual_intrinsic"],
+                    agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"],
                     agg_metrics["summaries"]["unknown"],
                     agg_metrics["summaries"]["skipped"],
                     agg_metrics["summaries"]["failed"],
@@ -153,6 +154,7 @@ if __name__ == "__main__":
             "non_factual",
             "non_factual_extrinsic",
             "non_factual_intrinsic",
+            "extrinsic_factuality_ratio",
             "unknown",
             "skipped",
             "failed",
@@ -188,6 +190,7 @@ if __name__ == "__main__":
         ("non_factual", "NonFactual"),
         ("non_factual_extrinsic", "NonFactualExtrinsic"),
         ("non_factual_intrinsic", "NonFactualIntrinsic"),
+        ("extrinsic_factuality_ratio", "FactualExtrinsicRatio"),
         ("skipped", "Skipped"),
     ]
     with open(f"results/latex/{args.data_subset}-{args.test_size}.tex", "w") as f:
