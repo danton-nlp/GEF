@@ -318,7 +318,7 @@ def evaluate_factuality(
         },
         "entities": {
             "total": agg_results["entities"],
-            "extrinsic_entity_ratio": {
+            "extrinsic_factuality_ratio": {
                 "mean": np.mean(agg_results["extrinsic_factuality_ratios"]),
                 "median": np.median(agg_results["extrinsic_factuality_ratios"]),
                 "stdev": np.std(agg_results["extrinsic_factuality_ratios"]),
