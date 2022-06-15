@@ -1,5 +1,5 @@
 from collections import defaultdict
-from typing import DefaultDict, List, Optional, TypedDict, Union
+from typing import DefaultDict, List, Optional, TypedDict
 from src.annotation import prompt_annotation_flow
 from src.detect_entities import detect_entities
 from src.entity_utils import MarkedEntity, count_entities, filter_entities
@@ -73,9 +73,9 @@ class SummaryEval(TypedDict):
     count_entity_label: DefaultDict[str, int]
     count_entity_type: DefaultDict[str, DefaultDict[str, int]]
     has_predicted_non_factual: bool
-    rouge1: Union[float, None]
-    rouge2: Union[float, None]
-    rougeL: Union[float, None]
+    rouge1: Optional[float]
+    rouge2: Optional[float]
+    rougeL: Optional[float]
 
 
 def evaluate_summary(
