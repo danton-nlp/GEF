@@ -1,0 +1,1182 @@
+[
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 94,
+      "Intrinsic Hallucination": 2,
+      "Non-factual Hallucination": 36,
+      "Non-hallucinated": 121,
+      "Unknown": 0,
+      "total": 253,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 8,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 3,
+          "total": 14
+        },
+        "DATE": {
+          "Factual Hallucination": 14,
+          "Non-factual Hallucination": 16,
+          "Non-hallucinated": 3,
+          "total": 33
+        },
+        "EVENT": {
+          "Factual Hallucination": 3,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 6
+        },
+        "FAC": {
+          "Factual Hallucination": 3,
+          "Non-hallucinated": 2,
+          "total": 5
+        },
+        "GPE": {
+          "Factual Hallucination": 20,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 38,
+          "total": 62
+        },
+        "LOC": {
+          "Factual Hallucination": 3,
+          "Non-factual Hallucination": 1,
+          "total": 4
+        },
+        "MONEY": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "NORP": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 5,
+          "total": 10
+        },
+        "ORDINAL": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 5
+        },
+        "ORG": {
+          "Factual Hallucination": 14,
+          "Non-hallucinated": 10,
+          "total": 24
+        },
+        "PERCENT": {
+          "Non-hallucinated": 1,
+          "total": 1
+        },
+        "PERSON": {
+          "Factual Hallucination": 23,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 7,
+          "Non-hallucinated": 53,
+          "total": 84
+        },
+        "PRODUCT": {
+          "Non-hallucinated": 2,
+          "total": 2
+        },
+        "WORK_OF_ART": {
+          "Factual Hallucination": 1,
+          "total": 1
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 3.3733333333333335,
+      "factual": 0.6,
+      "failed": 0,
+      "non_factual": 0.4,
+      "non_factual_extrinsic": 0.38666666666666666,
+      "non_factual_intrinsic": 0.02666666666666667,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.9866666666666667,
+      "total": 75,
+      "unknown": 0.0
+    },
+    "iteration": 0,
+    "summary": {
+      "12640645": {
+        "summary": "India's Maoist rebels began their insurgency more than 40 years ago."
+      },
+      "15247419": {
+        "summary": "Stephen Hawking has been named as one of the judges for YouTube's first international science competition."
+      },
+      "15446659": {
+        "summary": "Palau is a chain of coral islands in the western Pacific Ocean."
+      },
+      "16425054": {
+        "summary": "Israeli prosecutors have charged former Prime Minister Ehud Olmert with fraud and breach of trust."
+      },
+      "16866624": {
+        "summary": "Manchester City manager Roberto Mancini has hinted Carlos Tevez could return to the first team."
+      },
+      "18460302": {
+        "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the government in March 2009."
+      },
+      "21980945": {
+        "summary": "Manchester United manager Sir Alex Ferguson says his side's focus is on winning the Premier League title."
+      },
+      "24011795": {
+        "summary": "Britain is \"turning a corner\" in the economic recovery, Chancellor George Osborne has said in a speech in London."
+      },
+      "25267130": {
+        "summary": "Ukraine's President Viktor Yanukovych has held talks with Russian President Vladimir Putin in the Black Sea resort of Sochi."
+      },
+      "27422441": {
+        "summary": "World champion Helen Glover says she and new partner Polly Swann are \" clicking\" ahead of this weekend's opening World Cup regatta in Amsterdam."
+      },
+      "27536258": {
+        "summary": "Back in 2010, Saracens captain Steve Borthwick found himself in a bit of a bind."
+      },
+      "31126597": {
+        "summary": "More than two years have passed since 43 students went missing in southern Mexico."
+      },
+      "31566848": {
+        "summary": "A woman's hair was set on fire in a McDonald's restaurant in Kent, police have said."
+      },
+      "32201626": {
+        "summary": "County Longford, in the Republic of Ireland's midlands, was once dubbed Ireland's Silicon Valley."
+      },
+      "32461058": {
+        "summary": "Hundreds of people have been killed in an earthquake in Nepal, South Asia."
+      },
+      "32882502": {
+        "summary": "At first it was a quiet moment."
+      },
+      "32918219": {
+        "summary": "Over the past few weeks we've been following the story of the thousands of migrants who have landed on the shores of Thailand and Malaysia."
+      },
+      "32974091": {
+        "summary": "Hundreds of people have attended the first day of a public inquiry into plans for 500 new homes in Kent."
+      },
+      "33077107": {
+        "summary": "A Nobel Prize-winning scientist has apologised for remarks he made about female colleagues."
+      },
+      "33565781": {
+        "summary": "A takeaway delivery driver has been attacked and robbed in West Lothian."
+      },
+      "34592719": {
+        "summary": "Charlton Athletic head coach Guy Luzon says he is not concerned about his future ahead of Saturday's Championship game against Reading."
+      },
+      "34717572": {
+        "summary": "A 19-year-old man from Norwich has been arrested in connection with the TalkTalk hacking attack."
+      },
+      "34786804": {
+        "summary": "Former world champion John Fordham says he wants to return to Lakeside to play again."
+      },
+      "34789973": {
+        "summary": "A police officer has described the \"absolute carnage\" as he tried to move people out of a nightclub where two students died in a crush."
+      },
+      "34886105": {
+        "summary": "Chipotle Mexican Grill has been linked to an E. coli outbreak in five US states."
+      },
+      "34945354": {
+        "summary": "There is \"anxiety\" among staff at the Office for National Statistics (ONS) ahead of the publication of a review, a union has said."
+      },
+      "34985442": {
+        "summary": "A 70-year-old woman with terminal cancer who tried to kill herself because she did not want \"to live in a council flat, be poor or be ugly\" has won the right to refuse dialysis."
+      },
+      "35280935": {
+        "summary": "Each day we feature a photograph sent in from across England - the gallery will grow during the week."
+      },
+      "35291436": {
+        "summary": "One of Scotland's busiest railway stations is to close for six months for major engineering work."
+      },
+      "35401697": {
+        "summary": "Three people have been arrested after a man was found with serious head injuries in Brighton."
+      },
+      "35447721": {
+        "summary": "Brian Graham scored a late winner as Ross County beat Linlithgow Rose to reach the Scottish Cup quarter-finals."
+      },
+      "35650258": {
+        "summary": "Peterborough United manager Graham Westley says his side have \"lost their way\" following their FA Cup exit at the hands of Oldham."
+      },
+      "35706703": {
+        "summary": "The number of motorcyclists killed or injured on London's roads has risen by more than a third in the past five years, Transport for London (TfL) has said."
+      },
+      "35894212": {
+        "summary": "Wales manager Chris Coleman was pleased with his side's battling 1-1 draw with Northern Ireland in Cardiff."
+      },
+      "35918470": {
+        "summary": "A council has said it would be \"absolute madness\" to move a boulder believed to be thousands of years old after it was hit by a car."
+      },
+      "35976033": {
+        "summary": "Audley Harrison says Anthony Joshua has the \"brutish strength\" of George Foreman and Frank Bruno."
+      },
+      "36067011": {
+        "summary": "Philippine presidential candidate Rodrigo Duterte has been criticised for a video in which he jokes about the rape and murder of a Catholic missionary."
+      },
+      "36170590": {
+        "summary": "When West Ham United play their final game at Upton Park on Saturday, it will be the end of an era."
+      },
+      "36211762": {
+        "summary": "Sale Sharks forward Nick Easter has announced he will retire at the end of the season."
+      },
+      "36301083": {
+        "summary": "West Ham have signed Norway midfielder Havard Nordtveit from Borussia Monchengladbach for an undisclosed fee."
+      },
+      "36303577": {
+        "summary": "The price of oil has risen above $50 a barrel for the first time in six months."
+      },
+      "36404232": {
+        "summary": "Republic of Ireland manager Martin O'Neill was pleased with his side's performance in their 1-1 friendly draw with the Netherlands in Dublin."
+      },
+      "36469958": {
+        "summary": "Alliance Trust has taken a step towards a possible takeover after a potential suitor said it would not make a bid."
+      },
+      "36498934": {
+        "summary": "Spain's left-wing Podemos (We Can) party and the Socialists (PSOE) have launched their campaigns for next month's general election."
+      },
+      "36693122": {
+        "summary": "Manchester City have made Everton defender John Stones their number one transfer target this summer."
+      },
+      "36842524": {
+        "summary": "Companies in the southern Indian city of Chennai (Madras) and the city of Bangalore have declared a day off to celebrate the release of a new film starring superstar Rajinikanth."
+      },
+      "36942136": {
+        "summary": "Middlesbrough manager Aitor Karanka says the club are not in a rush to sign new players ahead of the new season."
+      },
+      "36988778": {
+        "summary": "Firefighters have been tackling a large blaze at a former indoor market in Norfolk."
+      },
+      "37031227": {
+        "summary": "Wildlife officials in India have fined cricketer Ravindra Jadeja for taking selfies with Asiatic lions."
+      },
+      "37046813": {
+        "summary": "Three men have been jailed for child sex offences in Hertfordshire."
+      },
+      "37068879": {
+        "summary": "Great Britain's Greg Rutherford is through to the long jump final at the World Championships in Beijing."
+      },
+      "37219542": {
+        "summary": "Edinburgh City Council has said it is \"100% committed\" to building a cycle path across the city."
+      },
+      "37328905": {
+        "summary": "Olympic champion Greg Rutherford won the long jump at the Great North City Games in Newcastle."
+      },
+      "37631654": {
+        "summary": "Plans for a new main stand at Tynecastle have been approved by the Scottish government."
+      },
+      "37726408": {
+        "summary": "A paedophile who was confronted by a vigilante group when he tried to meet an 11-year-old girl has been jailed for four years."
+      },
+      "37819847": {
+        "summary": "New Year's Eve celebrations in the Chinese capital, Beijing, have been marred by hazardous levels of pollution."
+      },
+      "37904959": {
+        "summary": "Jordan Williams scored twice as Barrow beat non-league Taunton Town to reach the second round of the FA Cup."
+      },
+      "38068400": {
+        "summary": "A teenager has admitted killing a man who was stabbed to death in County Durham."
+      },
+      "38073287": {
+        "summary": "Former Respect MP George Galloway has said he was attacked by five people on a platform at Aberdeen University."
+      },
+      "38110941": {
+        "summary": "In our series of letters from England players, Heather Knight reflects on her year as captain of the women's team."
+      },
+      "38264015": {
+        "summary": "A man has been jailed for three years for causing the death of a teenager in a car crash."
+      },
+      "38306416": {
+        "summary": "A man has been arrested following the death of a man in Coleraine, County Londonderry."
+      },
+      "38605405": {
+        "summary": "Carrick Rangers have signed former Crusaders player Jamie McAllister on a deal until the end of the season."
+      },
+      "38651116": {
+        "summary": "Shrewsbury Town have signed West Bromwich Albion youngster Lloyd Roberts on loan until the end of the season."
+      },
+      "38858499": {
+        "summary": "Manchester United manager Jose Mourinho says some of his players \"don't think the aim is to win\"."
+      },
+      "38955255": {
+        "summary": "The Met Office has warned of high winds affecting parts of Wales on Monday."
+      },
+      "38957383": {
+        "summary": "Women's Super League One side Durham Ladies have signed goalkeeper Gemma Laws."
+      },
+      "38980980": {
+        "summary": "A man has been jailed for five years for assaulting a post office worker during an armed robbery in South Lanarkshire."
+      },
+      "39442533": {
+        "summary": "A year on from the death of her three-year-old son Kayden, Julie and her daughter Shannon are still struggling to come to terms with his death."
+      },
+      "39507079": {
+        "summary": "New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2018 season."
+      },
+      "39627689": {
+        "summary": "Labour is promising to increase the weekly allowance paid to carers by \u00a310."
+      },
+      "39865311": {
+        "summary": "Newcastle Falcons have re-signed England fly-half Toby Flood from Toulouse."
+      },
+      "40424712": {
+        "summary": "Leyton Orient have re-appointed Paul Porter as their new chairman."
+      },
+      "40426136": {
+        "summary": "Chris Wakely and Andy Keogh hit centuries as Northamptonshire took control against Leicestershire at Wantage Road."
+      },
+      "40625655": {
+        "summary": "A man who raped and killed a 12-year-old girl in 1976 has been jailed for life."
+      }
+    },
+    "summary_completed": 0,
+    "summary_remaining": 75
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 94,
+      "Intrinsic Hallucination": 3,
+      "Non-factual Hallucination": 25,
+      "Non-hallucinated": 122,
+      "Unknown": 0,
+      "total": 244,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 8,
+          "Non-hallucinated": 3,
+          "total": 11
+        },
+        "DATE": {
+          "Factual Hallucination": 14,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 12,
+          "Non-hallucinated": 4,
+          "total": 31
+        },
+        "EVENT": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 4
+        },
+        "FAC": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 5
+        },
+        "GPE": {
+          "Factual Hallucination": 20,
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 38,
+          "total": 62
+        },
+        "LOC": {
+          "Factual Hallucination": 3,
+          "total": 3
+        },
+        "MONEY": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "NORP": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 5,
+          "total": 7
+        },
+        "ORDINAL": {
+          "Factual Hallucination": 3,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 6
+        },
+        "ORG": {
+          "Factual Hallucination": 14,
+          "Non-hallucinated": 10,
+          "total": 24
+        },
+        "PERCENT": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "PERSON": {
+          "Factual Hallucination": 23,
+          "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 6,
+          "Non-hallucinated": 53,
+          "total": 84
+        },
+        "PRODUCT": {
+          "Non-hallucinated": 2,
+          "total": 2
+        },
+        "WORK_OF_ART": {
+          "Factual Hallucination": 1,
+          "total": 1
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 3.2533333333333334,
+      "factual": 0.72,
+      "failed": 0,
+      "non_factual": 0.28,
+      "non_factual_extrinsic": 0.24,
+      "non_factual_intrinsic": 0.04,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.9066666666666666,
+      "total": 75,
+      "unknown": 0.0
+    },
+    "iteration": 1,
+    "summary": {
+      "27422441": {
+        "edit_stats": {
+          "edit_distance_token": 17,
+          "rouge1": 0.4888888888888889,
+          "rouge2": 0.37209302325581395,
+          "rougeL": 0.4444444444444445
+        },
+        "summary": "World champion Helen Glover says she is looking forward to the start of the new season with new partner Polly Swann."
+      },
+      "31126597": {
+        "edit_stats": {
+          "edit_distance_token": 8,
+          "rouge1": 0.7142857142857143,
+          "rouge2": 0.46153846153846156,
+          "rougeL": 0.7142857142857143
+        },
+        "summary": "It has been more than a year since 43 students went missing in Mexico."
+      },
+      "32201626": {
+        "edit_stats": {
+          "edit_distance_token": 10,
+          "rouge1": 0.631578947368421,
+          "rouge2": 0.611111111111111,
+          "rougeL": 0.631578947368421
+        },
+        "summary": "County Longford, in the Republic of Ireland's midlands, was once dubbed the \"land of enchantment\" because of its abundant natural beauty."
+      },
+      "32882502": {
+        "edit_stats": {
+          "edit_distance_token": 13,
+          "rouge1": 0.19047619047619047,
+          "rouge2": 0.0,
+          "rougeL": 0.09523809523809523
+        },
+        "summary": "The quiet of the morning had lulled us into a false sense of security."
+      },
+      "32974091": {
+        "edit_stats": {
+          "edit_distance_token": 11,
+          "rouge1": 0.6666666666666667,
+          "rouge2": 0.5806451612903226,
+          "rougeL": 0.6666666666666667
+        },
+        "summary": "A public inquiry has begun into plans for 500 new homes in Kent."
+      },
+      "34717572": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9411764705882353,
+          "rouge2": 0.875,
+          "rougeL": 0.9411764705882353
+        },
+        "summary": "A 20-year-old man from Norwich has been arrested in connection with the TalkTalk hacking attack."
+      },
+      "34786804": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9333333333333333,
+          "rouge2": 0.8571428571428571,
+          "rougeL": 0.9333333333333333
+        },
+        "summary": "Former world champion Barry Fordham says he wants to return to Lakeside to play again."
+      },
+      "34886105": {
+        "edit_stats": {
+          "edit_distance_token": 13,
+          "rouge1": 0.42424242424242425,
+          "rouge2": 0.1935483870967742,
+          "rougeL": 0.3636363636363636
+        },
+        "summary": "Chipotle Mexican Grill is facing a second outbreak of E. coli this month, US health officials have said."
+      },
+      "34985442": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9565217391304348,
+          "rouge2": 0.9253731343283582,
+          "rougeL": 0.9565217391304348
+        },
+        "summary": "A woman with terminal cancer who tried to kill herself because she did not want \"to live in a council flat, be poor or be ugly\" has won the right to refuse dialysis."
+      },
+      "35291436": {
+        "edit_stats": {
+          "edit_distance_token": 4,
+          "rouge1": 0.8888888888888888,
+          "rouge2": 0.823529411764706,
+          "rougeL": 0.8888888888888888
+        },
+        "summary": "One of Scotland's busiest railway stations is to close for more than a month for major engineering work."
+      },
+      "35706703": {
+        "edit_stats": {
+          "edit_distance_token": 3,
+          "rouge1": 0.9310344827586207,
+          "rouge2": 0.8571428571428571,
+          "rougeL": 0.9310344827586207
+        },
+        "summary": "The number of motorcyclists killed or seriously injured on London's roads has risen by more than 20% in the past five years, Transport for London (TfL) has said."
+      },
+      "36067011": {
+        "edit_stats": {
+          "edit_distance_token": 10,
+          "rouge1": 0.6666666666666666,
+          "rouge2": 0.5217391304347826,
+          "rougeL": 0.6666666666666666
+        },
+        "summary": "Philippine presidential candidate Rodrigo Duterte has been accused of misogyny after a video emerged showing him mocking the rape and murder of a missionary."
+      },
+      "36498934": {
+        "edit_stats": {
+          "edit_distance_token": 16,
+          "rouge1": 0.6666666666666667,
+          "rouge2": 0.48979591836734687,
+          "rougeL": 0.6274509803921569
+        },
+        "summary": "Spain's left-wing Podemos (We Can) party and the Socialists (PSOE) are campaigning together for the first time, as the country prepares for a repeat election next month."
+      },
+      "37068879": {
+        "edit_stats": {
+          "edit_distance_token": 3,
+          "rouge1": 0.8947368421052632,
+          "rouge2": 0.8333333333333333,
+          "rougeL": 0.8947368421052632
+        },
+        "summary": "Great Britain's Greg Rutherford is through to the long jump final at the World Indoor Championships in Portland, Oregon."
+      },
+      "37631654": {
+        "edit_stats": {
+          "edit_distance_token": 5,
+          "rouge1": 0.7741935483870969,
+          "rouge2": 0.6206896551724138,
+          "rougeL": 0.7096774193548386
+        },
+        "summary": "Plans for a new main stand at Tynecastle have been given the go-ahead by councillors."
+      },
+      "37726408": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.96,
+          "rouge2": 0.9166666666666666,
+          "rougeL": 0.96
+        },
+        "summary": "A paedophile who was confronted by a vigilante group when he tried to meet an 11-year-old girl has been jailed for three years."
+      },
+      "37819847": {
+        "edit_stats": {
+          "edit_distance_token": 15,
+          "rouge1": 0.5,
+          "rouge2": 0.13333333333333333,
+          "rougeL": 0.375
+        },
+        "summary": "New Year celebrations have been cancelled in parts of China's largest city, Shanghai."
+      },
+      "38264015": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9473684210526315,
+          "rouge2": 0.8888888888888888,
+          "rougeL": 0.9473684210526315
+        },
+        "summary": "A man has been jailed for two years for causing the death of a teenager in a car crash."
+      },
+      "38605405": {
+        "edit_stats": {
+          "edit_distance_token": 8,
+          "rouge1": 0.6875000000000001,
+          "rouge2": 0.5333333333333333,
+          "rougeL": 0.6875000000000001
+        },
+        "summary": "Carrick Rangers have signed former Crusaders player Gary McAllister on a one-year deal."
+      },
+      "38980980": {
+        "edit_stats": {
+          "edit_distance_token": 3,
+          "rouge1": 0.8780487804878048,
+          "rouge2": 0.8205128205128205,
+          "rougeL": 0.8780487804878048
+        },
+        "summary": "A man has been jailed for six years for assaulting a post office worker during an armed robbery in Edinburgh."
+      },
+      "40424712": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9090909090909091,
+          "rouge2": 0.8000000000000002,
+          "rougeL": 0.9090909090909091
+        },
+        "summary": "Leyton Orient have re-appointed Martin Porter as their new chairman."
+      },
+      "40426136": {
+        "edit_stats": {
+          "edit_distance_token": 13,
+          "rouge1": 0.45714285714285713,
+          "rouge2": 0.2424242424242424,
+          "rougeL": 0.39999999999999997
+        },
+        "summary": "Northamptonshire's Jim Wakely and Richard Keogh hit centuries to put their side in a strong position against Leicestershire."
+      },
+      "40625655": {
+        "edit_stats": {
+          "edit_distance_token": 16,
+          "rouge1": 0.7894736842105262,
+          "rouge2": 0.5,
+          "rougeL": 0.4736842105263158
+        },
+        "summary": "A man has been jailed for life for the manslaughter and rape of a 13-year-old girl in 1976."
+      }
+    },
+    "summary_completed": 52,
+    "summary_remaining": 23
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 99,
+      "Intrinsic Hallucination": 3,
+      "Non-factual Hallucination": 21,
+      "Non-hallucinated": 122,
+      "Unknown": 0,
+      "total": 245,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 8,
+          "Non-hallucinated": 3,
+          "total": 11
+        },
+        "DATE": {
+          "Factual Hallucination": 15,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 12,
+          "Non-hallucinated": 4,
+          "total": 32
+        },
+        "EVENT": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 3
+        },
+        "FAC": {
+          "Factual Hallucination": 3,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 6
+        },
+        "GPE": {
+          "Factual Hallucination": 21,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 38,
+          "total": 61
+        },
+        "LOC": {
+          "Factual Hallucination": 3,
+          "total": 3
+        },
+        "MONEY": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "NORP": {
+          "Factual Hallucination": 3,
+          "Non-hallucinated": 5,
+          "total": 8
+        },
+        "ORDINAL": {
+          "Factual Hallucination": 3,
+          "Non-hallucinated": 2,
+          "total": 5
+        },
+        "ORG": {
+          "Factual Hallucination": 14,
+          "Non-hallucinated": 10,
+          "total": 24
+        },
+        "PERCENT": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "PERSON": {
+          "Factual Hallucination": 23,
+          "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 6,
+          "Non-hallucinated": 53,
+          "total": 84
+        },
+        "PRODUCT": {
+          "Non-hallucinated": 2,
+          "total": 2
+        },
+        "TIME": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "WORK_OF_ART": {
+          "Factual Hallucination": 1,
+          "total": 1
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 3.2666666666666666,
+      "factual": 0.7333333333333333,
+      "failed": 0,
+      "non_factual": 0.26666666666666666,
+      "non_factual_extrinsic": 0.22666666666666666,
+      "non_factual_intrinsic": 0.04,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.9066666666666666,
+      "total": 75,
+      "unknown": 0.0
+    },
+    "iteration": 2,
+    "summary": {
+      "34717572": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9411764705882353,
+          "rouge2": 0.875,
+          "rougeL": 0.9411764705882353
+        },
+        "summary": "A 21-year-old man from Norwich has been arrested in connection with the TalkTalk hacking attack."
+      },
+      "35291436": {
+        "edit_stats": {
+          "edit_distance_token": 6,
+          "rouge1": 0.8108108108108107,
+          "rouge2": 0.6857142857142857,
+          "rougeL": 0.8108108108108107
+        },
+        "summary": "One of Scotland's busiest railway stations is to be closed for more than a year for major engineering work."
+      },
+      "36498934": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9545454545454546,
+          "rouge2": 0.9047619047619048,
+          "rougeL": 0.9545454545454546
+        },
+        "summary": "Spain's left-wing Podemos (We Can) party and the Socialists (PSOE) have launched their campaigns for next week's general election."
+      },
+      "37819847": {
+        "edit_stats": {
+          "edit_distance_token": 16,
+          "rouge1": 0.1818181818181818,
+          "rouge2": 0.0,
+          "rougeL": 0.1212121212121212
+        },
+        "summary": "A thick smog blanketed the northern part of the Indian capital, Delhi, on Monday morning."
+      },
+      "38605405": {
+        "edit_stats": {
+          "edit_distance_token": 8,
+          "rouge1": 0.6875000000000001,
+          "rouge2": 0.5333333333333333,
+          "rougeL": 0.6875000000000001
+        },
+        "summary": "Carrick Rangers have signed former Crusaders player David McAllister on a two-year deal."
+      },
+      "40424712": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9090909090909091,
+          "rouge2": 0.8000000000000002,
+          "rougeL": 0.9090909090909091
+        },
+        "summary": "Leyton Orient have re-appointed Mark Porter as their new chairman."
+      },
+      "40426136": {
+        "edit_stats": {
+          "edit_distance_token": 11,
+          "rouge1": 0.5789473684210527,
+          "rouge2": 0.3888888888888889,
+          "rougeL": 0.5263157894736842
+        },
+        "summary": "Northamptonshire's Jim Wakely and Tom Keogh hit centuries to put their side in a strong position against Leicestershire at Wantage Road."
+      }
+    },
+    "summary_completed": 68,
+    "summary_remaining": 7
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 96,
+      "Intrinsic Hallucination": 3,
+      "Non-factual Hallucination": 18,
+      "Non-hallucinated": 119,
+      "Unknown": 0,
+      "total": 236,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 8,
+          "Non-hallucinated": 3,
+          "total": 11
+        },
+        "DATE": {
+          "Factual Hallucination": 14,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 11,
+          "Non-hallucinated": 4,
+          "total": 30
+        },
+        "EVENT": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 3
+        },
+        "FAC": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 5
+        },
+        "GPE": {
+          "Factual Hallucination": 20,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 37,
+          "total": 59
+        },
+        "LOC": {
+          "Factual Hallucination": 3,
+          "total": 3
+        },
+        "MONEY": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "NORP": {
+          "Factual Hallucination": 3,
+          "Non-hallucinated": 5,
+          "total": 8
+        },
+        "ORDINAL": {
+          "Factual Hallucination": 3,
+          "Non-hallucinated": 2,
+          "total": 5
+        },
+        "ORG": {
+          "Factual Hallucination": 14,
+          "Non-hallucinated": 10,
+          "total": 24
+        },
+        "PERCENT": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "PERSON": {
+          "Factual Hallucination": 23,
+          "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 51,
+          "total": 80
+        },
+        "PRODUCT": {
+          "Non-hallucinated": 2,
+          "total": 2
+        },
+        "TIME": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "WORK_OF_ART": {
+          "Factual Hallucination": 1,
+          "total": 1
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 3.1466666666666665,
+      "factual": 0.7333333333333333,
+      "failed": 1,
+      "non_factual": 0.26666666666666666,
+      "non_factual_extrinsic": 0.21333333333333335,
+      "non_factual_intrinsic": 0.04,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.8933333333333333,
+      "total": 75,
+      "unknown": 0.0
+    },
+    "iteration": 3,
+    "summary": {
+      "34717572": {
+        "edit_stats": {
+          "edit_distance_token": 2,
+          "rouge1": 0.8823529411764706,
+          "rouge2": 0.75,
+          "rougeL": 0.8823529411764706
+        },
+        "summary": "A 17-year-old boy from Norwich has been arrested in connection with the TalkTalk hacking attack."
+      },
+      "35291436": {
+        "edit_stats": {
+          "edit_distance_token": 5,
+          "rouge1": 0.8648648648648648,
+          "rouge2": 0.6857142857142857,
+          "rougeL": 0.8648648648648648
+        },
+        "summary": "One of Scotland's busiest railway stations is to be closed for more than six weeks for major engineering work."
+      },
+      "38605405": {
+        "edit_stats": {
+          "edit_distance_token": 15,
+          "rouge1": 0.6666666666666667,
+          "rouge2": 0.2857142857142857,
+          "rougeL": 0.5333333333333333
+        },
+        "summary": "Carrick Rangers have completed the signing of former Crusaders player Darren McAllister."
+      },
+      "40424712": {
+        "edit_stats": {
+          "edit_distance_token": 10,
+          "rouge1": 0.6,
+          "rouge2": 0.5,
+          "rougeL": 0.6
+        },
+        "summary": "Leyton Orient have re-appointed former player and director of professional Darts David Porter as their new chief executive."
+      },
+      "40426136": {
+        "summary": "<Failed generation: blocked all beams>"
+      }
+    },
+    "summary_completed": 70,
+    "summary_remaining": 5
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 94,
+      "Intrinsic Hallucination": 3,
+      "Non-factual Hallucination": 15,
+      "Non-hallucinated": 114,
+      "Unknown": 0,
+      "total": 226,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 8,
+          "Non-hallucinated": 2,
+          "total": 10
+        },
+        "DATE": {
+          "Factual Hallucination": 14,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 9,
+          "Non-hallucinated": 4,
+          "total": 28
+        },
+        "EVENT": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 3
+        },
+        "FAC": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 5
+        },
+        "GPE": {
+          "Factual Hallucination": 19,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 36,
+          "total": 57
+        },
+        "LOC": {
+          "Factual Hallucination": 3,
+          "total": 3
+        },
+        "MONEY": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "NORP": {
+          "Factual Hallucination": 3,
+          "Non-hallucinated": 5,
+          "total": 8
+        },
+        "ORDINAL": {
+          "Factual Hallucination": 3,
+          "Non-hallucinated": 2,
+          "total": 5
+        },
+        "ORG": {
+          "Factual Hallucination": 13,
+          "Non-hallucinated": 10,
+          "total": 23
+        },
+        "PERCENT": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "PERSON": {
+          "Factual Hallucination": 23,
+          "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 50,
+          "total": 78
+        },
+        "TIME": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "WORK_OF_ART": {
+          "Factual Hallucination": 1,
+          "total": 1
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 3.013333333333333,
+      "factual": 0.7333333333333333,
+      "failed": 4,
+      "non_factual": 0.26666666666666666,
+      "non_factual_extrinsic": 0.17333333333333334,
+      "non_factual_intrinsic": 0.04,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.8533333333333334,
+      "total": 75,
+      "unknown": 0.0
+    },
+    "iteration": 4,
+    "summary": {
+      "34717572": {
+        "summary": "<Failed generation: blocked all beams>"
+      },
+      "35291436": {
+        "summary": "<Failed generation: blocked all beams>"
+      },
+      "38605405": {
+        "summary": "<Failed generation: blocked all beams>"
+      },
+      "40424712": {
+        "edit_stats": {
+          "edit_distance_token": 8,
+          "rouge1": 0.6896551724137931,
+          "rouge2": 0.5925925925925927,
+          "rougeL": 0.6896551724137931
+        },
+        "summary": "Leyton Orient have re-appointed former player and director of professional Darts John Porter as their new chairman."
+      }
+    },
+    "summary_completed": 71,
+    "summary_remaining": 4
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 93,
+      "Intrinsic Hallucination": 3,
+      "Non-factual Hallucination": 14,
+      "Non-hallucinated": 113,
+      "Unknown": 0,
+      "total": 223,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 8,
+          "Non-hallucinated": 2,
+          "total": 10
+        },
+        "DATE": {
+          "Factual Hallucination": 14,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 9,
+          "Non-hallucinated": 4,
+          "total": 28
+        },
+        "EVENT": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 3
+        },
+        "FAC": {
+          "Factual Hallucination": 1,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 4
+        },
+        "GPE": {
+          "Factual Hallucination": 19,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 36,
+          "total": 57
+        },
+        "LOC": {
+          "Factual Hallucination": 3,
+          "total": 3
+        },
+        "MONEY": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "NORP": {
+          "Factual Hallucination": 3,
+          "Non-hallucinated": 5,
+          "total": 8
+        },
+        "ORDINAL": {
+          "Factual Hallucination": 3,
+          "Non-hallucinated": 2,
+          "total": 5
+        },
+        "ORG": {
+          "Factual Hallucination": 13,
+          "Non-hallucinated": 10,
+          "total": 23
+        },
+        "PERCENT": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "PERSON": {
+          "Factual Hallucination": 23,
+          "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 49,
+          "total": 76
+        },
+        "TIME": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "WORK_OF_ART": {
+          "Factual Hallucination": 1,
+          "total": 1
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 2.973333333333333,
+      "factual": 0.7333333333333333,
+      "failed": 5,
+      "non_factual": 0.26666666666666666,
+      "non_factual_extrinsic": 0.16,
+      "non_factual_intrinsic": 0.04,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.84,
+      "total": 75,
+      "unknown": 0.0
+    },
+    "iteration": 5,
+    "summary": {
+      "40424712": {
+        "summary": "<Failed generation: blocked all beams>"
+      }
+    },
+    "summary_completed": 74,
+    "summary_remaining": 1
+  }
+]

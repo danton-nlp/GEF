@@ -1,0 +1,2043 @@
+[
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 94,
+      "Intrinsic Hallucination": 2,
+      "Non-factual Hallucination": 36,
+      "Non-hallucinated": 121,
+      "Unknown": 0,
+      "total": 253,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 8,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 3,
+          "total": 14
+        },
+        "DATE": {
+          "Factual Hallucination": 14,
+          "Non-factual Hallucination": 16,
+          "Non-hallucinated": 3,
+          "total": 33
+        },
+        "EVENT": {
+          "Factual Hallucination": 3,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 6
+        },
+        "FAC": {
+          "Factual Hallucination": 3,
+          "Non-hallucinated": 2,
+          "total": 5
+        },
+        "GPE": {
+          "Factual Hallucination": 20,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 38,
+          "total": 62
+        },
+        "LOC": {
+          "Factual Hallucination": 3,
+          "Non-factual Hallucination": 1,
+          "total": 4
+        },
+        "MONEY": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "NORP": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 5,
+          "total": 10
+        },
+        "ORDINAL": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 5
+        },
+        "ORG": {
+          "Factual Hallucination": 14,
+          "Non-hallucinated": 10,
+          "total": 24
+        },
+        "PERCENT": {
+          "Non-hallucinated": 1,
+          "total": 1
+        },
+        "PERSON": {
+          "Factual Hallucination": 23,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 7,
+          "Non-hallucinated": 53,
+          "total": 84
+        },
+        "PRODUCT": {
+          "Non-hallucinated": 2,
+          "total": 2
+        },
+        "WORK_OF_ART": {
+          "Factual Hallucination": 1,
+          "total": 1
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 3.3733333333333335,
+      "factual": 0.6,
+      "failed": 0,
+      "non_factual": 0.4,
+      "non_factual_extrinsic": 0.38666666666666666,
+      "non_factual_intrinsic": 0.02666666666666667,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.9866666666666667,
+      "total": 75,
+      "unknown": 0.0
+    },
+    "iteration": 0,
+    "summary": {
+      "12640645": {
+        "summary": "India's Maoist rebels began their insurgency more than 40 years ago."
+      },
+      "15247419": {
+        "summary": "Stephen Hawking has been named as one of the judges for YouTube's first international science competition."
+      },
+      "15446659": {
+        "summary": "Palau is a chain of coral islands in the western Pacific Ocean."
+      },
+      "16425054": {
+        "summary": "Israeli prosecutors have charged former Prime Minister Ehud Olmert with fraud and breach of trust."
+      },
+      "16866624": {
+        "summary": "Manchester City manager Roberto Mancini has hinted Carlos Tevez could return to the first team."
+      },
+      "18460302": {
+        "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the government in March 2009."
+      },
+      "21980945": {
+        "summary": "Manchester United manager Sir Alex Ferguson says his side's focus is on winning the Premier League title."
+      },
+      "24011795": {
+        "summary": "Britain is \"turning a corner\" in the economic recovery, Chancellor George Osborne has said in a speech in London."
+      },
+      "25267130": {
+        "summary": "Ukraine's President Viktor Yanukovych has held talks with Russian President Vladimir Putin in the Black Sea resort of Sochi."
+      },
+      "27422441": {
+        "summary": "World champion Helen Glover says she and new partner Polly Swann are \" clicking\" ahead of this weekend's opening World Cup regatta in Amsterdam."
+      },
+      "27536258": {
+        "summary": "Back in 2010, Saracens captain Steve Borthwick found himself in a bit of a bind."
+      },
+      "31126597": {
+        "summary": "More than two years have passed since 43 students went missing in southern Mexico."
+      },
+      "31566848": {
+        "summary": "A woman's hair was set on fire in a McDonald's restaurant in Kent, police have said."
+      },
+      "32201626": {
+        "summary": "County Longford, in the Republic of Ireland's midlands, was once dubbed Ireland's Silicon Valley."
+      },
+      "32461058": {
+        "summary": "Hundreds of people have been killed in an earthquake in Nepal, South Asia."
+      },
+      "32882502": {
+        "summary": "At first it was a quiet moment."
+      },
+      "32918219": {
+        "summary": "Over the past few weeks we've been following the story of the thousands of migrants who have landed on the shores of Thailand and Malaysia."
+      },
+      "32974091": {
+        "summary": "Hundreds of people have attended the first day of a public inquiry into plans for 500 new homes in Kent."
+      },
+      "33077107": {
+        "summary": "A Nobel Prize-winning scientist has apologised for remarks he made about female colleagues."
+      },
+      "33565781": {
+        "summary": "A takeaway delivery driver has been attacked and robbed in West Lothian."
+      },
+      "34592719": {
+        "summary": "Charlton Athletic head coach Guy Luzon says he is not concerned about his future ahead of Saturday's Championship game against Reading."
+      },
+      "34717572": {
+        "summary": "A 19-year-old man from Norwich has been arrested in connection with the TalkTalk hacking attack."
+      },
+      "34786804": {
+        "summary": "Former world champion John Fordham says he wants to return to Lakeside to play again."
+      },
+      "34789973": {
+        "summary": "A police officer has described the \"absolute carnage\" as he tried to move people out of a nightclub where two students died in a crush."
+      },
+      "34886105": {
+        "summary": "Chipotle Mexican Grill has been linked to an E. coli outbreak in five US states."
+      },
+      "34945354": {
+        "summary": "There is \"anxiety\" among staff at the Office for National Statistics (ONS) ahead of the publication of a review, a union has said."
+      },
+      "34985442": {
+        "summary": "A 70-year-old woman with terminal cancer who tried to kill herself because she did not want \"to live in a council flat, be poor or be ugly\" has won the right to refuse dialysis."
+      },
+      "35280935": {
+        "summary": "Each day we feature a photograph sent in from across England - the gallery will grow during the week."
+      },
+      "35291436": {
+        "summary": "One of Scotland's busiest railway stations is to close for six months for major engineering work."
+      },
+      "35401697": {
+        "summary": "Three people have been arrested after a man was found with serious head injuries in Brighton."
+      },
+      "35447721": {
+        "summary": "Brian Graham scored a late winner as Ross County beat Linlithgow Rose to reach the Scottish Cup quarter-finals."
+      },
+      "35650258": {
+        "summary": "Peterborough United manager Graham Westley says his side have \"lost their way\" following their FA Cup exit at the hands of Oldham."
+      },
+      "35706703": {
+        "summary": "The number of motorcyclists killed or injured on London's roads has risen by more than a third in the past five years, Transport for London (TfL) has said."
+      },
+      "35894212": {
+        "summary": "Wales manager Chris Coleman was pleased with his side's battling 1-1 draw with Northern Ireland in Cardiff."
+      },
+      "35918470": {
+        "summary": "A council has said it would be \"absolute madness\" to move a boulder believed to be thousands of years old after it was hit by a car."
+      },
+      "35976033": {
+        "summary": "Audley Harrison says Anthony Joshua has the \"brutish strength\" of George Foreman and Frank Bruno."
+      },
+      "36067011": {
+        "summary": "Philippine presidential candidate Rodrigo Duterte has been criticised for a video in which he jokes about the rape and murder of a Catholic missionary."
+      },
+      "36170590": {
+        "summary": "When West Ham United play their final game at Upton Park on Saturday, it will be the end of an era."
+      },
+      "36211762": {
+        "summary": "Sale Sharks forward Nick Easter has announced he will retire at the end of the season."
+      },
+      "36301083": {
+        "summary": "West Ham have signed Norway midfielder Havard Nordtveit from Borussia Monchengladbach for an undisclosed fee."
+      },
+      "36303577": {
+        "summary": "The price of oil has risen above $50 a barrel for the first time in six months."
+      },
+      "36404232": {
+        "summary": "Republic of Ireland manager Martin O'Neill was pleased with his side's performance in their 1-1 friendly draw with the Netherlands in Dublin."
+      },
+      "36469958": {
+        "summary": "Alliance Trust has taken a step towards a possible takeover after a potential suitor said it would not make a bid."
+      },
+      "36498934": {
+        "summary": "Spain's left-wing Podemos (We Can) party and the Socialists (PSOE) have launched their campaigns for next month's general election."
+      },
+      "36693122": {
+        "summary": "Manchester City have made Everton defender John Stones their number one transfer target this summer."
+      },
+      "36842524": {
+        "summary": "Companies in the southern Indian city of Chennai (Madras) and the city of Bangalore have declared a day off to celebrate the release of a new film starring superstar Rajinikanth."
+      },
+      "36942136": {
+        "summary": "Middlesbrough manager Aitor Karanka says the club are not in a rush to sign new players ahead of the new season."
+      },
+      "36988778": {
+        "summary": "Firefighters have been tackling a large blaze at a former indoor market in Norfolk."
+      },
+      "37031227": {
+        "summary": "Wildlife officials in India have fined cricketer Ravindra Jadeja for taking selfies with Asiatic lions."
+      },
+      "37046813": {
+        "summary": "Three men have been jailed for child sex offences in Hertfordshire."
+      },
+      "37068879": {
+        "summary": "Great Britain's Greg Rutherford is through to the long jump final at the World Championships in Beijing."
+      },
+      "37219542": {
+        "summary": "Edinburgh City Council has said it is \"100% committed\" to building a cycle path across the city."
+      },
+      "37328905": {
+        "summary": "Olympic champion Greg Rutherford won the long jump at the Great North City Games in Newcastle."
+      },
+      "37631654": {
+        "summary": "Plans for a new main stand at Tynecastle have been approved by the Scottish government."
+      },
+      "37726408": {
+        "summary": "A paedophile who was confronted by a vigilante group when he tried to meet an 11-year-old girl has been jailed for four years."
+      },
+      "37819847": {
+        "summary": "New Year's Eve celebrations in the Chinese capital, Beijing, have been marred by hazardous levels of pollution."
+      },
+      "37904959": {
+        "summary": "Jordan Williams scored twice as Barrow beat non-league Taunton Town to reach the second round of the FA Cup."
+      },
+      "38068400": {
+        "summary": "A teenager has admitted killing a man who was stabbed to death in County Durham."
+      },
+      "38073287": {
+        "summary": "Former Respect MP George Galloway has said he was attacked by five people on a platform at Aberdeen University."
+      },
+      "38110941": {
+        "summary": "In our series of letters from England players, Heather Knight reflects on her year as captain of the women's team."
+      },
+      "38264015": {
+        "summary": "A man has been jailed for three years for causing the death of a teenager in a car crash."
+      },
+      "38306416": {
+        "summary": "A man has been arrested following the death of a man in Coleraine, County Londonderry."
+      },
+      "38605405": {
+        "summary": "Carrick Rangers have signed former Crusaders player Jamie McAllister on a deal until the end of the season."
+      },
+      "38651116": {
+        "summary": "Shrewsbury Town have signed West Bromwich Albion youngster Lloyd Roberts on loan until the end of the season."
+      },
+      "38858499": {
+        "summary": "Manchester United manager Jose Mourinho says some of his players \"don't think the aim is to win\"."
+      },
+      "38955255": {
+        "summary": "The Met Office has warned of high winds affecting parts of Wales on Monday."
+      },
+      "38957383": {
+        "summary": "Women's Super League One side Durham Ladies have signed goalkeeper Gemma Laws."
+      },
+      "38980980": {
+        "summary": "A man has been jailed for five years for assaulting a post office worker during an armed robbery in South Lanarkshire."
+      },
+      "39442533": {
+        "summary": "A year on from the death of her three-year-old son Kayden, Julie and her daughter Shannon are still struggling to come to terms with his death."
+      },
+      "39507079": {
+        "summary": "New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2018 season."
+      },
+      "39627689": {
+        "summary": "Labour is promising to increase the weekly allowance paid to carers by \u00a310."
+      },
+      "39865311": {
+        "summary": "Newcastle Falcons have re-signed England fly-half Toby Flood from Toulouse."
+      },
+      "40424712": {
+        "summary": "Leyton Orient have re-appointed Paul Porter as their new chairman."
+      },
+      "40426136": {
+        "summary": "Chris Wakely and Andy Keogh hit centuries as Northamptonshire took control against Leicestershire at Wantage Road."
+      },
+      "40625655": {
+        "summary": "A man who raped and killed a 12-year-old girl in 1976 has been jailed for life."
+      }
+    },
+    "summary_completed": 0,
+    "summary_remaining": 75
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 76,
+      "Intrinsic Hallucination": 5,
+      "Non-factual Hallucination": 22,
+      "Non-hallucinated": 127,
+      "Unknown": 13,
+      "total": 243,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 4,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 4,
+          "Unknown": 2,
+          "total": 11
+        },
+        "DATE": {
+          "Factual Hallucination": 8,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 8,
+          "Non-hallucinated": 6,
+          "Unknown": 8,
+          "total": 31
+        },
+        "EVENT": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 5
+        },
+        "FAC": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 2,
+          "total": 4
+        },
+        "GPE": {
+          "Factual Hallucination": 19,
+          "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 36,
+          "total": 59
+        },
+        "LOC": {
+          "Factual Hallucination": 3,
+          "total": 3
+        },
+        "MONEY": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "NORP": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 6,
+          "total": 10
+        },
+        "ORDINAL": {
+          "Factual Hallucination": 3,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 7
+        },
+        "ORG": {
+          "Factual Hallucination": 13,
+          "Non-hallucinated": 14,
+          "Unknown": 1,
+          "total": 28
+        },
+        "PERCENT": {
+          "Non-hallucinated": 1,
+          "total": 1
+        },
+        "PERSON": {
+          "Factual Hallucination": 18,
+          "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 6,
+          "Non-hallucinated": 51,
+          "Unknown": 2,
+          "total": 79
+        },
+        "PRODUCT": {
+          "Non-hallucinated": 2,
+          "total": 2
+        },
+        "WORK_OF_ART": {
+          "Factual Hallucination": 1,
+          "total": 1
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 3.24,
+      "factual": 0.6133333333333333,
+      "failed": 1,
+      "non_factual": 0.28,
+      "non_factual_extrinsic": 0.22666666666666666,
+      "non_factual_intrinsic": 0.06666666666666667,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.88,
+      "total": 75,
+      "unknown": 0.10666666666666667
+    },
+    "iteration": 1,
+    "summary": {
+      "12640645": {
+        "edit_stats": {
+          "edit_distance_token": 20,
+          "rouge1": 0.2222222222222222,
+          "rouge2": 0.1764705882352941,
+          "rougeL": 0.2222222222222222
+        },
+        "summary": "India's Maoist rebels first emerged in the 1960s as a fringe group fighting for the rights of indigenous tribespeople and the rural poor."
+      },
+      "18460302": {
+        "edit_stats": {
+          "edit_distance_token": 31,
+          "rouge1": 0.5217391304347826,
+          "rouge2": 0.5074626865671642,
+          "rougeL": 0.5217391304347826
+        },
+        "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the government in September 2008. The commercial banks are then able to use these bits of paper as top quality backing with which to borrow cash in the wholesale financial markets, from other lenders."
+      },
+      "27422441": {
+        "summary": "<Failed generation: blocked all beams>"
+      },
+      "27536258": {
+        "edit_stats": {
+          "edit_distance_token": 2,
+          "rouge1": 0.9032258064516129,
+          "rouge2": 0.7586206896551724,
+          "rougeL": 0.9032258064516129
+        },
+        "summary": "Back in October 2010, Saracens captain Steven Borthwick found himself in a bit of a bind."
+      },
+      "31126597": {
+        "edit_stats": {
+          "edit_distance_token": 18,
+          "rouge1": 0.2631578947368421,
+          "rouge2": 0.1111111111111111,
+          "rougeL": 0.2105263157894737
+        },
+        "summary": "Mexico's attorney general has declared that the 46 students who went missing in the south-western state of Guerrero in September are dead."
+      },
+      "32201626": {
+        "edit_stats": {
+          "edit_distance_token": 10,
+          "rouge1": 0.631578947368421,
+          "rouge2": 0.611111111111111,
+          "rougeL": 0.631578947368421
+        },
+        "summary": "County Longford, in the Republic of Ireland's midlands, was once dubbed the \"land of enchantment\" because of its abundant natural beauty."
+      },
+      "32461058": {
+        "edit_stats": {
+          "edit_distance_token": 11,
+          "rouge1": 0.46153846153846156,
+          "rouge2": 0.0,
+          "rougeL": 0.3076923076923077
+        },
+        "summary": "A massive earthquake has hit the country of Nepal in south-west Asia."
+      },
+      "32918219": {
+        "edit_stats": {
+          "edit_distance_token": 3,
+          "rouge1": 0.9056603773584906,
+          "rouge2": 0.8627450980392156,
+          "rougeL": 0.9056603773584906
+        },
+        "summary": "Over the past few weeks we've been following the story of the Rohingya and Bangladeshi migrants who have landed on the shores of Thailand and Malaysia."
+      },
+      "32974091": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9500000000000001,
+          "rouge2": 0.8947368421052632,
+          "rougeL": 0.9500000000000001
+        },
+        "summary": "Hundreds of people have attended the first day of a public inquiry into plans for 400 new homes in Kent."
+      },
+      "34592719": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9545454545454546,
+          "rouge2": 0.9047619047619048,
+          "rougeL": 0.9545454545454546
+        },
+        "summary": "Charlton Athletic head coach Avi Luzon says he is not concerned about his future ahead of Saturday's Championship game against Reading."
+      },
+      "34717572": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9411764705882353,
+          "rouge2": 0.875,
+          "rougeL": 0.9411764705882353
+        },
+        "summary": "A 20-year-old man from Norwich has been arrested in connection with the TalkTalk hacking attack."
+      },
+      "34786804": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9333333333333333,
+          "rouge2": 0.8571428571428571,
+          "rougeL": 0.9333333333333333
+        },
+        "summary": "Former world champion Barry Fordham says he wants to return to Lakeside to play again."
+      },
+      "34886105": {
+        "edit_stats": {
+          "edit_distance_token": 13,
+          "rouge1": 0.42424242424242425,
+          "rouge2": 0.1935483870967742,
+          "rougeL": 0.3636363636363636
+        },
+        "summary": "Chipotle Mexican Grill is facing a second outbreak of E. coli this month, US health officials have said."
+      },
+      "34985442": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9565217391304348,
+          "rouge2": 0.9253731343283582,
+          "rougeL": 0.9565217391304348
+        },
+        "summary": "A woman with terminal cancer who tried to kill herself because she did not want \"to live in a council flat, be poor or be ugly\" has won the right to refuse dialysis."
+      },
+      "35291436": {
+        "edit_stats": {
+          "edit_distance_token": 4,
+          "rouge1": 0.8888888888888888,
+          "rouge2": 0.823529411764706,
+          "rougeL": 0.8888888888888888
+        },
+        "summary": "One of Scotland's busiest railway stations is to close for more than a month for major engineering work."
+      },
+      "35650258": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9545454545454546,
+          "rouge2": 0.9047619047619048,
+          "rougeL": 0.9545454545454546
+        },
+        "summary": "Peterborough United manager Frank Westley says his side have \"lost their way\" following their FA Cup exit at the hands of Oldham."
+      },
+      "35706703": {
+        "edit_stats": {
+          "edit_distance_token": 4,
+          "rouge1": 0.9310344827586207,
+          "rouge2": 0.8214285714285714,
+          "rougeL": 0.9310344827586207
+        },
+        "summary": "The number of motorcyclists killed or seriously injured on London's roads has risen by more than a quarter in the past year, Transport for London (TfL) has said."
+      },
+      "35918470": {
+        "edit_stats": {
+          "edit_distance_token": 12,
+          "rouge1": 0.6399999999999999,
+          "rouge2": 0.5833333333333334,
+          "rougeL": 0.6399999999999999
+        },
+        "summary": "A council has said it would be \"absolute madness\" to move a boulder believed to date back to the time of the devil."
+      },
+      "36067011": {
+        "edit_stats": {
+          "edit_distance_token": 10,
+          "rouge1": 0.6666666666666666,
+          "rouge2": 0.5217391304347826,
+          "rougeL": 0.6666666666666666
+        },
+        "summary": "Philippine presidential candidate Rodrigo Duterte has been accused of misogyny after a video emerged showing him mocking the rape and murder of a missionary."
+      },
+      "36170590": {
+        "edit_stats": {
+          "edit_distance_token": 20,
+          "rouge1": 0.3333333333333333,
+          "rouge2": 0.17391304347826086,
+          "rougeL": 0.3333333333333333
+        },
+        "summary": "As West Ham prepare for their final game at the Boleyn Ground, BBC Radio London looks at the impact the club has had on the local economy."
+      },
+      "36301083": {
+        "edit_stats": {
+          "edit_distance_token": 6,
+          "rouge1": 0.8235294117647058,
+          "rouge2": 0.6250000000000001,
+          "rougeL": 0.8235294117647058
+        },
+        "summary": "West Ham have completed the signing of Norway midfielder Per Mertes Nordtveit from Borussia Monchengladbach for an undisclosed fee."
+      },
+      "36303577": {
+        "edit_stats": {
+          "edit_distance_token": 3,
+          "rouge1": 0.8484848484848485,
+          "rouge2": 0.8387096774193549,
+          "rougeL": 0.8484848484848485
+        },
+        "summary": "The price of oil has risen above $50 a barrel for the first time since November."
+      },
+      "37068879": {
+        "edit_stats": {
+          "edit_distance_token": 3,
+          "rouge1": 0.8947368421052632,
+          "rouge2": 0.8888888888888888,
+          "rougeL": 0.8947368421052632
+        },
+        "summary": "Great Britain's Greg Rutherford is through to the long jump final at the World Championships in London on Saturday."
+      },
+      "37726408": {
+        "edit_stats": {
+          "edit_distance_token": 12,
+          "rouge1": 0.6511627906976745,
+          "rouge2": 0.48780487804878053,
+          "rougeL": 0.6511627906976745
+        },
+        "summary": "A paedophile who was caught after being confronted by a vigilante group has been jailed for three years."
+      },
+      "38110941": {
+        "edit_stats": {
+          "edit_distance_token": 12,
+          "rouge1": 0.7346938775510204,
+          "rouge2": 0.46808510638297873,
+          "rougeL": 0.6530612244897959
+        },
+        "summary": "In our series of letters from England players, captain Heather Knight reflects on a year in which she led her side to the ICC Women's Championship title."
+      },
+      "38264015": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9473684210526315,
+          "rouge2": 0.8888888888888888,
+          "rougeL": 0.9473684210526315
+        },
+        "summary": "A man has been jailed for two years for causing the death of a teenager in a car crash."
+      },
+      "38306416": {
+        "edit_stats": {
+          "edit_distance_token": 6,
+          "rouge1": 0.8000000000000002,
+          "rouge2": 0.7142857142857143,
+          "rougeL": 0.8000000000000002
+        },
+        "summary": "A man has been arrested in connection with the death of a man in Coleraine."
+      },
+      "38605405": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9444444444444444,
+          "rouge2": 0.8823529411764706,
+          "rougeL": 0.9444444444444444
+        },
+        "summary": "Carrick Rangers have signed former Crusaders player Gary McAllister on a deal until the end of the season."
+      },
+      "38651116": {
+        "edit_stats": {
+          "edit_distance_token": 9,
+          "rouge1": 0.6666666666666666,
+          "rouge2": 0.45161290322580644,
+          "rougeL": 0.606060606060606
+        },
+        "summary": "Shrewsbury Town have signed West Brom youngster Lloyd Roberts on a season-long loan deal."
+      },
+      "38980980": {
+        "edit_stats": {
+          "edit_distance_token": 3,
+          "rouge1": 0.8780487804878048,
+          "rouge2": 0.8205128205128205,
+          "rougeL": 0.8780487804878048
+        },
+        "summary": "A man has been jailed for six years for assaulting a post office worker during an armed robbery in Edinburgh."
+      },
+      "39442533": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9642857142857143,
+          "rouge2": 0.9259259259259259,
+          "rougeL": 0.9642857142857143
+        },
+        "summary": "A year on from the death of her four-year-old son Kayden, Julie and her daughter Shannon are still struggling to come to terms with his death."
+      },
+      "39507079": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9411764705882353,
+          "rouge2": 0.875,
+          "rougeL": 0.9411764705882353
+        },
+        "summary": "New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2017 season."
+      },
+      "40424712": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9090909090909091,
+          "rouge2": 0.8000000000000002,
+          "rougeL": 0.9090909090909091
+        },
+        "summary": "Leyton Orient have re-appointed Martin Porter as their new chairman."
+      },
+      "40426136": {
+        "edit_stats": {
+          "edit_distance_token": 14,
+          "rouge1": 0.4324324324324324,
+          "rouge2": 0.28571428571428575,
+          "rougeL": 0.4324324324324324
+        },
+        "summary": "Chris Wakely and Richard Keogh hit centuries as Northants set Leicestershire a target of 350 to win their Division Two match."
+      },
+      "40625655": {
+        "edit_stats": {
+          "edit_distance_token": 16,
+          "rouge1": 0.7894736842105262,
+          "rouge2": 0.5,
+          "rougeL": 0.4736842105263158
+        },
+        "summary": "A man has been jailed for life for the manslaughter and rape of a 13-year-old girl in 1976."
+      }
+    },
+    "summary_completed": 40,
+    "summary_remaining": 35
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 78,
+      "Intrinsic Hallucination": 7,
+      "Non-factual Hallucination": 22,
+      "Non-hallucinated": 123,
+      "Unknown": 5,
+      "total": 235,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 4,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 9
+        },
+        "DATE": {
+          "Factual Hallucination": 10,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 8,
+          "Non-hallucinated": 7,
+          "Unknown": 4,
+          "total": 30
+        },
+        "EVENT": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 5
+        },
+        "FAC": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 2,
+          "total": 4
+        },
+        "GPE": {
+          "Factual Hallucination": 17,
+          "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 35,
+          "total": 56
+        },
+        "LOC": {
+          "Factual Hallucination": 3,
+          "total": 3
+        },
+        "MONEY": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "NORP": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 6,
+          "total": 10
+        },
+        "ORDINAL": {
+          "Factual Hallucination": 3,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 7
+        },
+        "ORG": {
+          "Factual Hallucination": 14,
+          "Non-hallucinated": 14,
+          "total": 28
+        },
+        "PERCENT": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "PERSON": {
+          "Factual Hallucination": 18,
+          "Intrinsic Hallucination": 3,
+          "Non-factual Hallucination": 6,
+          "Non-hallucinated": 48,
+          "Unknown": 1,
+          "total": 76
+        },
+        "PRODUCT": {
+          "Non-hallucinated": 2,
+          "total": 2
+        },
+        "WORK_OF_ART": {
+          "Factual Hallucination": 1,
+          "total": 1
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 3.1333333333333333,
+      "factual": 0.64,
+      "failed": 2,
+      "non_factual": 0.29333333333333333,
+      "non_factual_extrinsic": 0.21333333333333335,
+      "non_factual_intrinsic": 0.09333333333333334,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.84,
+      "total": 75,
+      "unknown": 0.06666666666666667
+    },
+    "iteration": 2,
+    "summary": {
+      "18460302": {
+        "edit_stats": {
+          "edit_distance_token": 12,
+          "rouge1": 0.7450980392156863,
+          "rouge2": 0.6938775510204083,
+          "rougeL": 0.7058823529411764
+        },
+        "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2010 as part of the government's response to the financial crisis."
+      },
+      "27536258": {
+        "edit_stats": {
+          "edit_distance_token": 5,
+          "rouge1": 0.8749999999999999,
+          "rouge2": 0.6666666666666666,
+          "rougeL": 0.8125
+        },
+        "summary": "Back in 2010, the captain of Saracens, Chris Borthwick, found himself in a bit of a bind."
+      },
+      "31126597": {
+        "summary": "<Failed generation: blocked all beams>"
+      },
+      "32918219": {
+        "edit_stats": {
+          "edit_distance_token": 4,
+          "rouge1": 0.8679245283018868,
+          "rouge2": 0.7843137254901961,
+          "rougeL": 0.8679245283018868
+        },
+        "summary": "Over the past few days we've been following the story of the Rohingya and Bangladeshi migrants who have landed on the shores of Thailand and Malaysia."
+      },
+      "32974091": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9500000000000001,
+          "rouge2": 0.8947368421052632,
+          "rougeL": 0.9500000000000001
+        },
+        "summary": "Hundreds of people have attended the first day of a public inquiry into plans for 600 new homes in Kent."
+      },
+      "34592719": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9545454545454546,
+          "rouge2": 0.9047619047619048,
+          "rougeL": 0.9545454545454546
+        },
+        "summary": "Charlton Athletic head coach Bibiana Luzon says he is not concerned about his future ahead of Saturday's Championship game against Reading."
+      },
+      "34717572": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9411764705882353,
+          "rouge2": 0.875,
+          "rougeL": 0.9411764705882353
+        },
+        "summary": "A 21-year-old man from Norwich has been arrested in connection with the TalkTalk hacking attack."
+      },
+      "35291436": {
+        "edit_stats": {
+          "edit_distance_token": 6,
+          "rouge1": 0.8108108108108107,
+          "rouge2": 0.6857142857142857,
+          "rougeL": 0.8108108108108107
+        },
+        "summary": "One of Scotland's busiest railway stations is to be closed for more than a year for major engineering work."
+      },
+      "35706703": {
+        "edit_stats": {
+          "edit_distance_token": 5,
+          "rouge1": 0.8928571428571429,
+          "rouge2": 0.7777777777777779,
+          "rougeL": 0.8928571428571429
+        },
+        "summary": "The number of motorcyclists killed or seriously injured on London's roads has risen by more than 20% in five years, Transport for London (TfL) has said."
+      },
+      "37726408": {
+        "edit_stats": {
+          "edit_distance_token": 8,
+          "rouge1": 0.8727272727272728,
+          "rouge2": 0.7924528301886793,
+          "rougeL": 0.8727272727272728
+        },
+        "summary": "A paedophile who was confronted by a vigilante group when he tried to meet an 11-year- old girl he thought was his daughter has been jailed for eight years."
+      },
+      "38110941": {
+        "edit_stats": {
+          "edit_distance_token": 18,
+          "rouge1": 0.15789473684210528,
+          "rouge2": 0.0,
+          "rougeL": 0.10526315789473684
+        },
+        "summary": "As 2016 draws to a close, I'm looking forward to another busy year of international cricket."
+      },
+      "38605405": {
+        "edit_stats": {
+          "edit_distance_token": 4,
+          "rouge1": 0.8484848484848485,
+          "rouge2": 0.7096774193548386,
+          "rougeL": 0.8484848484848485
+        },
+        "summary": "Carrick Rangers have signed former Crusaders player David McAllister until the end of the season."
+      },
+      "38651116": {
+        "edit_stats": {
+          "edit_distance_token": 15,
+          "rouge1": 0.6666666666666666,
+          "rouge2": 0.45,
+          "rougeL": 0.5238095238095238
+        },
+        "summary": "Shrewsbury Town have signed teenage midfielder Joe Roberts on loan from Premier League side West Bromwich Bromwich Albion for the rest of the season."
+      },
+      "38980980": {
+        "edit_stats": {
+          "edit_distance_token": 3,
+          "rouge1": 0.8780487804878048,
+          "rouge2": 0.8205128205128205,
+          "rougeL": 0.8780487804878048
+        },
+        "summary": "A man has been jailed for seven years for assaulting a post office worker during an armed robbery in Edinburgh."
+      },
+      "39442533": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9433962264150945,
+          "rouge2": 0.9019607843137256,
+          "rougeL": 0.9433962264150945
+        },
+        "summary": "A year on from the death of her son Kayden, Julie and her daughter Shannon are still struggling to come to terms with his death."
+      },
+      "39507079": {
+        "edit_stats": {
+          "edit_distance_token": 2,
+          "rouge1": 0.9142857142857143,
+          "rouge2": 0.9090909090909091,
+          "rougeL": 0.9142857142857143
+        },
+        "summary": "Former New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2018 campaign."
+      },
+      "40424712": {
+        "edit_stats": {
+          "edit_distance_token": 1,
+          "rouge1": 0.9090909090909091,
+          "rouge2": 0.8000000000000002,
+          "rougeL": 0.9090909090909091
+        },
+        "summary": "Leyton Orient have re-appointed Mark Porter as their new chairman."
+      },
+      "40426136": {
+        "edit_stats": {
+          "edit_distance_token": 6,
+          "rouge1": 0.7586206896551724,
+          "rouge2": 0.5925925925925926,
+          "rougeL": 0.7586206896551724
+        },
+        "summary": "Chris Wakely and Tom Keogh hit centuries as Northants took control against Leicestershire."
+      },
+      "40625655": {
+        "edit_stats": {
+          "edit_distance_token": 17,
+          "rouge1": 0.8421052631578948,
+          "rouge2": 0.6111111111111113,
+          "rougeL": 0.5263157894736842
+        },
+        "summary": "A man has been jailed for life for the manslaughter and rape of a 12-year old girl in 1976."
+      }
+    },
+    "summary_completed": 56,
+    "summary_remaining": 19
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 73,
+      "Intrinsic Hallucination": 7,
+      "Non-factual Hallucination": 22,
+      "Non-hallucinated": 124,
+      "Unknown": 7,
+      "total": 233,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 4,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 3,
+          "Unknown": 1,
+          "total": 11
+        },
+        "DATE": {
+          "Factual Hallucination": 6,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 7,
+          "Non-hallucinated": 7,
+          "Unknown": 4,
+          "total": 25
+        },
+        "EVENT": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 5
+        },
+        "FAC": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 2,
+          "total": 4
+        },
+        "GPE": {
+          "Factual Hallucination": 17,
+          "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 34,
+          "total": 55
+        },
+        "LOC": {
+          "Factual Hallucination": 3,
+          "total": 3
+        },
+        "MONEY": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "NORP": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 6,
+          "total": 10
+        },
+        "ORDINAL": {
+          "Factual Hallucination": 3,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 7
+        },
+        "ORG": {
+          "Factual Hallucination": 14,
+          "Non-hallucinated": 14,
+          "Unknown": 1,
+          "total": 29
+        },
+        "PERCENT": {
+          "Non-hallucinated": 1,
+          "total": 1
+        },
+        "PERSON": {
+          "Factual Hallucination": 18,
+          "Intrinsic Hallucination": 3,
+          "Non-factual Hallucination": 6,
+          "Non-hallucinated": 50,
+          "Unknown": 1,
+          "total": 78
+        },
+        "PRODUCT": {
+          "Non-hallucinated": 2,
+          "total": 2
+        },
+        "WORK_OF_ART": {
+          "Factual Hallucination": 1,
+          "total": 1
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 3.1066666666666665,
+      "factual": 0.6266666666666667,
+      "failed": 2,
+      "non_factual": 0.32,
+      "non_factual_extrinsic": 0.24,
+      "non_factual_intrinsic": 0.09333333333333334,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.8266666666666667,
+      "total": 75,
+      "unknown": 0.05333333333333334
+    },
+    "iteration": 3,
+    "summary": {
+      "18460302": {
+        "edit_stats": {
+          "edit_distance_token": 12,
+          "rouge1": 0.7843137254901961,
+          "rouge2": 0.7346938775510204,
+          "rougeL": 0.7450980392156863
+        },
+        "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009, as part of the government's response to the financial crisis."
+      },
+      "32918219": {
+        "edit_stats": {
+          "edit_distance_token": 4,
+          "rouge1": 0.8679245283018868,
+          "rouge2": 0.7843137254901961,
+          "rougeL": 0.8679245283018868
+        },
+        "summary": "Over the last few weeks we've been following the story of the Rohingya and Bangladeshi migrants who have landed on the shores of Thailand and Malaysia."
+      },
+      "34717572": {
+        "edit_stats": {
+          "edit_distance_token": 2,
+          "rouge1": 0.8823529411764706,
+          "rouge2": 0.75,
+          "rougeL": 0.8823529411764706
+        },
+        "summary": "A 17-year-old boy from Norwich has been arrested in connection with the TalkTalk hacking attack."
+      },
+      "35291436": {
+        "edit_stats": {
+          "edit_distance_token": 5,
+          "rouge1": 0.8648648648648648,
+          "rouge2": 0.6857142857142857,
+          "rougeL": 0.8648648648648648
+        },
+        "summary": "One of Scotland's busiest railway stations is to be closed for more than six weeks for major engineering work."
+      },
+      "35706703": {
+        "edit_stats": {
+          "edit_distance_token": 6,
+          "rouge1": 0.8771929824561403,
+          "rouge2": 0.7636363636363638,
+          "rougeL": 0.8771929824561403
+        },
+        "summary": "The number of motorcyclists killed or seriously injured on London's roads has risen by more than a fifth in a year, Transport for London (TfL) has said."
+      },
+      "37726408": {
+        "edit_stats": {
+          "edit_distance_token": 8,
+          "rouge1": 0.8727272727272728,
+          "rouge2": 0.7924528301886793,
+          "rougeL": 0.8727272727272728
+        },
+        "summary": "A paedophile who was confronted by a vigilante group when he tried to meet an 11-year- old girl he thought was his daughter has been jailed for five years."
+      },
+      "38110941": {
+        "edit_stats": {
+          "edit_distance_token": 11,
+          "rouge1": 0.717948717948718,
+          "rouge2": 0.48648648648648646,
+          "rougeL": 0.6153846153846153
+        },
+        "summary": "In our series of letters from England's cricketers, captain Heather Knight reflects on the past 12 months."
+      },
+      "38605405": {
+        "edit_stats": {
+          "edit_distance_token": 8,
+          "rouge1": 0.7777777777777778,
+          "rouge2": 0.5294117647058824,
+          "rougeL": 0.7777777777777778
+        },
+        "summary": "Carrick Rangers have completed the signing of former Crusaders player Darren McAllister until the end of the season."
+      },
+      "38651116": {
+        "edit_stats": {
+          "edit_distance_token": 4,
+          "rouge1": 0.8421052631578948,
+          "rouge2": 0.7222222222222222,
+          "rougeL": 0.8421052631578948
+        },
+        "summary": "Shrewsbury Town have signed teenage West Bromwich Bromwich Albion player Lloyd Roberts on loan until the end of the campaign."
+      },
+      "38980980": {
+        "edit_stats": {
+          "edit_distance_token": 18,
+          "rouge1": 0.5714285714285714,
+          "rouge2": 0.35,
+          "rougeL": 0.38095238095238093
+        },
+        "summary": "A man who robbed a post office andbistro in a Borders town has been jailed for five-and-a-half years."
+      },
+      "39507079": {
+        "edit_stats": {
+          "edit_distance_token": 8,
+          "rouge1": 0.6060606060606061,
+          "rouge2": 0.5806451612903225,
+          "rougeL": 0.6060606060606061
+        },
+        "summary": "Former New Zealand captain Brendon McCullum has re-signed for Middlesex on a one-year deal."
+      },
+      "40424712": {
+        "edit_stats": {
+          "edit_distance_token": 10,
+          "rouge1": 0.6,
+          "rouge2": 0.5,
+          "rougeL": 0.6
+        },
+        "summary": "Leyton Orient have re-appointed former player and director of professional Darts David Porter as their new chief executive."
+      },
+      "40426136": {
+        "edit_stats": {
+          "edit_distance_token": 13,
+          "rouge1": 0.45161290322580644,
+          "rouge2": 0.20689655172413796,
+          "rougeL": 0.38709677419354843
+        },
+        "summary": "Centuries from Chris Wakely and Matt Keogh put Northants in a strong position against Leicestershire."
+      }
+    },
+    "summary_completed": 62,
+    "summary_remaining": 13
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 73,
+      "Intrinsic Hallucination": 7,
+      "Non-factual Hallucination": 20,
+      "Non-hallucinated": 108,
+      "Unknown": 0,
+      "total": 208,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 4,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 8
+        },
+        "DATE": {
+          "Factual Hallucination": 6,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 7,
+          "Non-hallucinated": 7,
+          "total": 21
+        },
+        "EVENT": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 5
+        },
+        "FAC": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 2,
+          "total": 4
+        },
+        "GPE": {
+          "Factual Hallucination": 16,
+          "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 28,
+          "total": 49
+        },
+        "LOC": {
+          "Factual Hallucination": 5,
+          "total": 5
+        },
+        "MONEY": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "NORP": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 5,
+          "total": 9
+        },
+        "ORDINAL": {
+          "Factual Hallucination": 3,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 7
+        },
+        "ORG": {
+          "Factual Hallucination": 13,
+          "Non-hallucinated": 11,
+          "total": 24
+        },
+        "PERCENT": {
+          "Non-hallucinated": 1,
+          "total": 1
+        },
+        "PERSON": {
+          "Factual Hallucination": 18,
+          "Intrinsic Hallucination": 3,
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 47,
+          "total": 72
+        },
+        "WORK_OF_ART": {
+          "Factual Hallucination": 1,
+          "total": 1
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 2.7733333333333334,
+      "factual": 0.6266666666666667,
+      "failed": 8,
+      "non_factual": 0.37333333333333335,
+      "non_factual_extrinsic": 0.21333333333333335,
+      "non_factual_intrinsic": 0.09333333333333334,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.7466666666666667,
+      "total": 75,
+      "unknown": 0.0
+    },
+    "iteration": 4,
+    "summary": {
+      "18460302": {
+        "edit_stats": {
+          "edit_distance_token": 12,
+          "rouge1": 0.7843137254901961,
+          "rouge2": 0.7346938775510204,
+          "rougeL": 0.7450980392156863
+        },
+        "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009, as part of the government's response to the financial crisis."
+      },
+      "32918219": {
+        "edit_stats": {
+          "edit_distance_token": 21,
+          "rouge1": 0.3,
+          "rouge2": 0.2105263157894737,
+          "rougeL": 0.3
+        },
+        "summary": "We've been following the migrant boat crisis in South East Asia for months."
+      },
+      "34717572": {
+        "summary": "<Failed generation: blocked all beams>"
+      },
+      "35291436": {
+        "summary": "<Failed generation: blocked all beams>"
+      },
+      "35706703": {
+        "summary": "<Failed generation: blocked all beams>"
+      },
+      "37726408": {
+        "summary": "<Failed generation: blocked all beams>"
+      },
+      "38605405": {
+        "summary": "<Failed generation: blocked all beams>"
+      },
+      "38980980": {
+        "edit_stats": {
+          "edit_distance_token": 18,
+          "rouge1": 0.5365853658536585,
+          "rouge2": 0.3076923076923077,
+          "rougeL": 0.3414634146341463
+        },
+        "summary": "A man who robbed a post office andbistro in a Perthshire village at knifepoint has been jailed for eight years."
+      },
+      "39507079": {
+        "edit_stats": {
+          "edit_distance_token": 2,
+          "rouge1": 0.9142857142857143,
+          "rouge2": 0.8484848484848485,
+          "rougeL": 0.9142857142857143
+        },
+        "summary": "Former New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2019 season."
+      },
+      "40424712": {
+        "edit_stats": {
+          "edit_distance_token": 8,
+          "rouge1": 0.6896551724137931,
+          "rouge2": 0.5925925925925927,
+          "rougeL": 0.6896551724137931
+        },
+        "summary": "Leyton Orient have re-appointed former player and director of professional Darts John Porter as their new chairman."
+      },
+      "40426136": {
+        "summary": "<Failed generation: blocked all beams>"
+      }
+    },
+    "summary_completed": 64,
+    "summary_remaining": 11
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 71,
+      "Intrinsic Hallucination": 7,
+      "Non-factual Hallucination": 16,
+      "Non-hallucinated": 112,
+      "Unknown": 1,
+      "total": 207,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 5,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 9
+        },
+        "DATE": {
+          "Factual Hallucination": 6,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 5,
+          "Non-hallucinated": 7,
+          "Unknown": 1,
+          "total": 20
+        },
+        "EVENT": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 5
+        },
+        "FAC": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 3
+        },
+        "GPE": {
+          "Factual Hallucination": 16,
+          "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 31,
+          "total": 51
+        },
+        "LOC": {
+          "Factual Hallucination": 3,
+          "total": 3
+        },
+        "MONEY": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "NORP": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 6,
+          "total": 10
+        },
+        "ORDINAL": {
+          "Factual Hallucination": 3,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 7
+        },
+        "ORG": {
+          "Factual Hallucination": 13,
+          "Non-hallucinated": 12,
+          "total": 25
+        },
+        "PERCENT": {
+          "Non-hallucinated": 1,
+          "total": 1
+        },
+        "PERSON": {
+          "Factual Hallucination": 18,
+          "Intrinsic Hallucination": 3,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 46,
+          "total": 70
+        },
+        "WORK_OF_ART": {
+          "Factual Hallucination": 1,
+          "total": 1
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 2.76,
+      "factual": 0.6533333333333333,
+      "failed": 9,
+      "non_factual": 0.3466666666666667,
+      "non_factual_extrinsic": 0.17333333333333334,
+      "non_factual_intrinsic": 0.09333333333333334,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.72,
+      "total": 75,
+      "unknown": 0.0
+    },
+    "iteration": 5,
+    "summary": {
+      "18460302": {
+        "edit_stats": {
+          "edit_distance_token": 12,
+          "rouge1": 0.7843137254901961,
+          "rouge2": 0.7346938775510204,
+          "rougeL": 0.7450980392156863
+        },
+        "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009, as part of the government's response to the financial crisis."
+      },
+      "32918219": {
+        "edit_stats": {
+          "edit_distance_token": 8,
+          "rouge1": 0.7916666666666666,
+          "rouge2": 0.7391304347826089,
+          "rougeL": 0.7916666666666666
+        },
+        "summary": "We've been following the story of the Rohingya and Bangladeshi migrants who have landed on the shores of Thailand and Malaysia."
+      },
+      "38980980": {
+        "edit_stats": {
+          "edit_distance_token": 19,
+          "rouge1": 0.5238095238095238,
+          "rouge2": 0.3,
+          "rougeL": 0.3333333333333333
+        },
+        "summary": "A man who robbed a post office andbistro in Balerno at knifepoint has been jailed for seven-and-a-half years."
+      },
+      "39507079": {
+        "edit_stats": {
+          "edit_distance_token": 3,
+          "rouge1": 0.8571428571428571,
+          "rouge2": 0.8484848484848485,
+          "rougeL": 0.8571428571428571
+        },
+        "summary": "Former New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2017 campaign."
+      },
+      "40424712": {
+        "summary": "<Failed generation: blocked all beams>"
+      }
+    },
+    "summary_completed": 70,
+    "summary_remaining": 5
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 70,
+      "Intrinsic Hallucination": 7,
+      "Non-factual Hallucination": 16,
+      "Non-hallucinated": 111,
+      "Unknown": 1,
+      "total": 205,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 4,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 2,
+          "total": 9
+        },
+        "DATE": {
+          "Factual Hallucination": 6,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 7,
+          "total": 18
+        },
+        "EVENT": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 5
+        },
+        "FAC": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 3
+        },
+        "GPE": {
+          "Factual Hallucination": 16,
+          "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 30,
+          "Unknown": 1,
+          "total": 51
+        },
+        "LOC": {
+          "Factual Hallucination": 3,
+          "total": 3
+        },
+        "MONEY": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "NORP": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 6,
+          "total": 10
+        },
+        "ORDINAL": {
+          "Factual Hallucination": 3,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 7
+        },
+        "ORG": {
+          "Factual Hallucination": 13,
+          "Non-hallucinated": 12,
+          "total": 25
+        },
+        "PERCENT": {
+          "Non-hallucinated": 1,
+          "total": 1
+        },
+        "PERSON": {
+          "Factual Hallucination": 18,
+          "Intrinsic Hallucination": 3,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 46,
+          "total": 70
+        },
+        "WORK_OF_ART": {
+          "Factual Hallucination": 1,
+          "total": 1
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 2.7333333333333334,
+      "factual": 0.6533333333333333,
+      "failed": 9,
+      "non_factual": 0.3466666666666667,
+      "non_factual_extrinsic": 0.17333333333333334,
+      "non_factual_intrinsic": 0.09333333333333334,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.72,
+      "total": 75,
+      "unknown": 0.0
+    },
+    "iteration": 6,
+    "summary": {
+      "18460302": {
+        "edit_stats": {
+          "edit_distance_token": 12,
+          "rouge1": 0.7843137254901961,
+          "rouge2": 0.7346938775510204,
+          "rougeL": 0.7450980392156863
+        },
+        "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009, as part of the government's response to the financial crisis."
+      },
+      "38980980": {
+        "edit_stats": {
+          "edit_distance_token": 11,
+          "rouge1": 0.6046511627906977,
+          "rouge2": 0.3902439024390244,
+          "rougeL": 0.5581395348837208
+        },
+        "summary": "A man has been jailed for six-and-a-half years for a knifepoint robbery at a post office in East Lothian."
+      },
+      "39507079": {
+        "edit_stats": {
+          "edit_distance_token": 2,
+          "rouge1": 0.9142857142857143,
+          "rouge2": 0.8484848484848485,
+          "rougeL": 0.9142857142857143
+        },
+        "summary": "Former New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2020 season."
+      }
+    },
+    "summary_completed": 72,
+    "summary_remaining": 3
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 70,
+      "Intrinsic Hallucination": 7,
+      "Non-factual Hallucination": 15,
+      "Non-hallucinated": 112,
+      "Unknown": 1,
+      "total": 205,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 4,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 8
+        },
+        "DATE": {
+          "Factual Hallucination": 6,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 7,
+          "Unknown": 1,
+          "total": 19
+        },
+        "EVENT": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 5
+        },
+        "FAC": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 3
+        },
+        "GPE": {
+          "Factual Hallucination": 16,
+          "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 31,
+          "total": 51
+        },
+        "LOC": {
+          "Factual Hallucination": 3,
+          "total": 3
+        },
+        "MONEY": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "NORP": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 6,
+          "total": 10
+        },
+        "ORDINAL": {
+          "Factual Hallucination": 3,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 7
+        },
+        "ORG": {
+          "Factual Hallucination": 13,
+          "Non-hallucinated": 12,
+          "total": 25
+        },
+        "PERCENT": {
+          "Non-hallucinated": 1,
+          "total": 1
+        },
+        "PERSON": {
+          "Factual Hallucination": 18,
+          "Intrinsic Hallucination": 3,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 46,
+          "total": 70
+        },
+        "WORK_OF_ART": {
+          "Factual Hallucination": 1,
+          "total": 1
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 2.7333333333333334,
+      "factual": 0.6533333333333333,
+      "failed": 9,
+      "non_factual": 0.3333333333333333,
+      "non_factual_extrinsic": 0.16,
+      "non_factual_intrinsic": 0.09333333333333334,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.72,
+      "total": 75,
+      "unknown": 0.013333333333333334
+    },
+    "iteration": 7,
+    "summary": {
+      "18460302": {
+        "edit_stats": {
+          "edit_distance_token": 12,
+          "rouge1": 0.7843137254901961,
+          "rouge2": 0.7346938775510204,
+          "rougeL": 0.7450980392156863
+        },
+        "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009, as part of the government's response to the financial crisis."
+      },
+      "38980980": {
+        "edit_stats": {
+          "edit_distance_token": 19,
+          "rouge1": 0.5238095238095238,
+          "rouge2": 0.3,
+          "rougeL": 0.3333333333333333
+        },
+        "summary": "A man who robbed a post office andbistro in Balerno at knifepoint has been jailed for eight and a half years."
+      }
+    },
+    "summary_completed": 73,
+    "summary_remaining": 2
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 70,
+      "Intrinsic Hallucination": 7,
+      "Non-factual Hallucination": 16,
+      "Non-hallucinated": 112,
+      "Unknown": 0,
+      "total": 205,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 4,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 2,
+          "total": 9
+        },
+        "DATE": {
+          "Factual Hallucination": 6,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 7,
+          "total": 18
+        },
+        "EVENT": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 5
+        },
+        "FAC": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 3
+        },
+        "GPE": {
+          "Factual Hallucination": 16,
+          "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 31,
+          "total": 51
+        },
+        "LOC": {
+          "Factual Hallucination": 3,
+          "total": 3
+        },
+        "MONEY": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "NORP": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 6,
+          "total": 10
+        },
+        "ORDINAL": {
+          "Factual Hallucination": 3,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 7
+        },
+        "ORG": {
+          "Factual Hallucination": 13,
+          "Non-hallucinated": 12,
+          "total": 25
+        },
+        "PERCENT": {
+          "Non-hallucinated": 1,
+          "total": 1
+        },
+        "PERSON": {
+          "Factual Hallucination": 18,
+          "Intrinsic Hallucination": 3,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 46,
+          "total": 70
+        },
+        "WORK_OF_ART": {
+          "Factual Hallucination": 1,
+          "total": 1
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 2.7333333333333334,
+      "factual": 0.6533333333333333,
+      "failed": 9,
+      "non_factual": 0.3466666666666667,
+      "non_factual_extrinsic": 0.17333333333333334,
+      "non_factual_intrinsic": 0.09333333333333334,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.72,
+      "total": 75,
+      "unknown": 0.0
+    },
+    "iteration": 8,
+    "summary": {
+      "18460302": {
+        "edit_stats": {
+          "edit_distance_token": 12,
+          "rouge1": 0.7843137254901961,
+          "rouge2": 0.7346938775510204,
+          "rougeL": 0.7450980392156863
+        },
+        "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009, as part of the government's response to the financial crisis."
+      },
+      "38980980": {
+        "edit_stats": {
+          "edit_distance_token": 19,
+          "rouge1": 0.5238095238095238,
+          "rouge2": 0.3,
+          "rougeL": 0.3333333333333333
+        },
+        "summary": "A man who robbed a post office andbistro in Balerno at knifepoint has been jailed for eight-and-a-half years."
+      }
+    },
+    "summary_completed": 73,
+    "summary_remaining": 2
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 70,
+      "Intrinsic Hallucination": 7,
+      "Non-factual Hallucination": 15,
+      "Non-hallucinated": 111,
+      "Unknown": 0,
+      "total": 203,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 4,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 8
+        },
+        "DATE": {
+          "Factual Hallucination": 6,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 7,
+          "total": 18
+        },
+        "EVENT": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 1,
+          "total": 5
+        },
+        "FAC": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 2,
+          "total": 3
+        },
+        "GPE": {
+          "Factual Hallucination": 16,
+          "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 30,
+          "total": 50
+        },
+        "LOC": {
+          "Factual Hallucination": 3,
+          "total": 3
+        },
+        "MONEY": {
+          "Factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "NORP": {
+          "Factual Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 6,
+          "total": 10
+        },
+        "ORDINAL": {
+          "Factual Hallucination": 3,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 3,
+          "total": 7
+        },
+        "ORG": {
+          "Factual Hallucination": 13,
+          "Non-hallucinated": 12,
+          "total": 25
+        },
+        "PERCENT": {
+          "Non-hallucinated": 1,
+          "total": 1
+        },
+        "PERSON": {
+          "Factual Hallucination": 18,
+          "Intrinsic Hallucination": 3,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 46,
+          "total": 70
+        },
+        "WORK_OF_ART": {
+          "Factual Hallucination": 1,
+          "total": 1
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 2.7066666666666666,
+      "factual": 0.6533333333333333,
+      "failed": 10,
+      "non_factual": 0.3466666666666667,
+      "non_factual_extrinsic": 0.16,
+      "non_factual_intrinsic": 0.09333333333333334,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.7066666666666667,
+      "total": 75,
+      "unknown": 0.0
+    },
+    "iteration": 9,
+    "summary": {
+      "18460302": {
+        "edit_stats": {
+          "edit_distance_token": 12,
+          "rouge1": 0.7843137254901961,
+          "rouge2": 0.7346938775510204,
+          "rougeL": 0.7450980392156863
+        },
+        "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009, as part of the government's response to the financial crisis."
+      },
+      "38980980": {
+        "summary": "<Failed generation: blocked all beams>"
+      }
+    },
+    "summary_completed": 73,
+    "summary_remaining": 2
+  }
+]
