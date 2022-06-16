@@ -1,7 +1,7 @@
 {
   "args": {
     "annotate": false,
-    "batch_size": 8,
+    "batch_size": 10,
     "classifier_batch_size": 16,
     "data_subset": "pegasus-test-extrinsic",
     "entity_label_match": "contained",
@@ -19,91 +19,91 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 56,
-            "Intrinsic Hallucination": 2,
-            "Non-factual Hallucination": 30,
-            "Non-hallucinated": 183,
-            "Unknown": 84
+            "Factual Hallucination": 105,
+            "Intrinsic Hallucination": 6,
+            "Non-factual Hallucination": 39,
+            "Non-hallucinated": 178,
+            "Unknown": 27
           },
           "type": {
             "CARDINAL": {
-              "Factual Hallucination": 4,
+              "Factual Hallucination": 9,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 3,
               "Non-hallucinated": 5,
-              "Unknown": 8,
+              "Unknown": 3,
               "total": 20
             },
             "DATE": {
-              "Factual Hallucination": 8,
+              "Factual Hallucination": 14,
               "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 12,
+              "Non-factual Hallucination": 18,
               "Non-hallucinated": 3,
-              "Unknown": 18,
+              "Unknown": 6,
               "total": 41
             },
             "EVENT": {
-              "Factual Hallucination": 3,
+              "Factual Hallucination": 4,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 2,
               "Non-hallucinated": 2,
-              "Unknown": 1,
+              "Unknown": 0,
               "total": 8
             },
             "FAC": {
-              "Factual Hallucination": 1,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 3,
-              "Unknown": 3,
+              "Unknown": 1,
               "total": 7
             },
             "GPE": {
-              "Factual Hallucination": 12,
+              "Factual Hallucination": 22,
               "Intrinsic Hallucination": 1,
-              "Non-factual Hallucination": 3,
+              "Non-factual Hallucination": 4,
               "Non-hallucinated": 51,
-              "Unknown": 16,
+              "Unknown": 5,
               "total": 83
             },
             "LOC": {
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 1,
               "Non-hallucinated": 0,
-              "Unknown": 2,
+              "Unknown": 1,
               "total": 5
             },
             "MONEY": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 1,
-              "Unknown": 1,
+              "Unknown": 0,
               "total": 2
             },
             "NORP": {
-              "Factual Hallucination": 1,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 3,
               "Non-hallucinated": 10,
-              "Unknown": 3,
+              "Unknown": 1,
               "total": 17
             },
             "ORDINAL": {
-              "Factual Hallucination": 1,
+              "Factual Hallucination": 2,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 1,
               "Non-hallucinated": 4,
-              "Unknown": 2,
+              "Unknown": 1,
               "total": 8
             },
             "ORG": {
-              "Factual Hallucination": 8,
+              "Factual Hallucination": 17,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 22,
-              "Unknown": 13,
+              "Unknown": 4,
               "total": 43
             },
             "PERCENT": {
@@ -115,11 +115,11 @@
               "total": 1
             },
             "PERSON": {
-              "Factual Hallucination": 15,
-              "Intrinsic Hallucination": 1,
-              "Non-factual Hallucination": 5,
-              "Non-hallucinated": 79,
-              "Unknown": 17,
+              "Factual Hallucination": 26,
+              "Intrinsic Hallucination": 5,
+              "Non-factual Hallucination": 7,
+              "Non-hallucinated": 74,
+              "Unknown": 5,
               "total": 117
             },
             "PRODUCT": {
@@ -141,12 +141,12 @@
           }
         },
         "summary": {
-          "completed": 77,
-          "factual": 29,
+          "completed": 68,
+          "factual": 52,
           "failed": 0,
-          "non_factual": 23,
+          "non_factual": 32,
           "total": 100,
-          "unknown": 48
+          "unknown": 16
         }
       },
       "summaries": {
@@ -155,7 +155,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 118,
-            "score": -1.9929869174957275
+            "score": -1.9929863214492798
           },
           "labeled_entities": [
             {
@@ -190,7 +190,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 86,
-            "score": -1.4238289594650269
+            "score": -1.4238284826278687
           },
           "labeled_entities": [
             {
@@ -237,7 +237,7 @@
               "end": 107,
               "ent": "Berlin",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 101,
               "type": "GPE"
             }
@@ -249,7 +249,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 83,
-            "score": -2.305833101272583
+            "score": -2.305833578109741
           },
           "labeled_entities": [
             {
@@ -292,7 +292,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 101,
-            "score": -2.5542185306549072
+            "score": -2.55422043800354
           },
           "labeled_entities": [
             {
@@ -307,7 +307,7 @@
               "end": 62,
               "ent": "Pacific Ocean",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 49,
               "type": "LOC"
             }
@@ -319,7 +319,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 97,
-            "score": -1.029278039932251
+            "score": -1.0292778015136719
           },
           "labeled_entities": [
             {
@@ -334,7 +334,7 @@
               "end": 59,
               "ent": "Ehud",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 55,
               "type": "PERSON"
             },
@@ -353,8 +353,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 126,
-            "score": -1.8980159759521484
+            "n_words_checked": 130,
+            "score": -1.8980157375335693
           },
           "labeled_entities": [
             {
@@ -413,14 +413,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 126,
-            "score": -2.2936882972717285
+            "score": -2.293689250946045
           },
           "labeled_entities": [
             {
               "end": 30,
               "ent": "The Funding for Lending Scheme",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 0,
               "type": "ORG"
             },
@@ -436,7 +436,7 @@
               "end": 103,
               "ent": "March 2009",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 93,
               "type": "DATE"
             }
@@ -448,14 +448,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 129,
-            "score": -1.4437841176986694
+            "score": -1.443785548210144
           },
           "labeled_entities": [
             {
               "end": 19,
               "ent": "Bradley",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 12,
               "type": "PERSON"
             },
@@ -471,7 +471,7 @@
               "end": 41,
               "ent": "Helen",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 36,
               "type": "PERSON"
             },
@@ -487,7 +487,7 @@
               "end": 60,
               "ent": "Heather",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 53,
               "type": "PERSON"
             },
@@ -503,7 +503,7 @@
               "end": 89,
               "ent": "Michael",
               "in_source": true,
-              "label": "Non-hallucinated",
+              "label": "Intrinsic Hallucination",
               "start": 82,
               "type": "PERSON"
             },
@@ -511,7 +511,7 @@
               "end": 98,
               "ent": "Jamieson",
               "in_source": true,
-              "label": "Non-hallucinated",
+              "label": "Intrinsic Hallucination",
               "start": 90,
               "type": "PERSON"
             },
@@ -519,7 +519,7 @@
               "end": 141,
               "ent": "Great Britain",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 128,
               "type": "GPE"
             },
@@ -527,7 +527,7 @@
               "end": 153,
               "ent": "day four",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 145,
               "type": "DATE"
             },
@@ -547,7 +547,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 72,
-            "score": -2.462231159210205
+            "score": -2.4622304439544678
           },
           "labeled_entities": [
             {
@@ -562,7 +562,7 @@
               "end": 46,
               "ent": "the past 10 years",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 29,
               "type": "DATE"
             }
@@ -574,7 +574,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 119,
-            "score": -1.8036179542541504
+            "score": -1.8036185503005981
           },
           "labeled_entities": [
             {
@@ -589,7 +589,7 @@
               "end": 34,
               "ent": "Alex",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 30,
               "type": "PERSON"
             },
@@ -617,7 +617,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 86,
-            "score": -1.3718498945236206
+            "score": -1.3718492984771729
           },
           "labeled_entities": [
             {
@@ -660,7 +660,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 112,
-            "score": -1.353588342666626
+            "score": -1.3535888195037842
           },
           "labeled_entities": [
             {
@@ -734,8 +734,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 112,
-            "score": -2.1169791221618652
+            "n_words_checked": 109,
+            "score": -2.116978883743286
           },
           "labeled_entities": [
             {
@@ -801,8 +801,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 106,
-            "score": -1.8618906736373901
+            "n_words_checked": 110,
+            "score": -1.8618921041488647
           },
           "labeled_entities": [
             {
@@ -845,7 +845,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 84,
-            "score": -1.8910671472549438
+            "score": -1.891068458557129
           },
           "labeled_entities": [
             {
@@ -880,7 +880,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 84,
-            "score": -1.288934588432312
+            "score": -1.2889338731765747
           },
           "labeled_entities": [
             {
@@ -907,7 +907,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 108,
-            "score": -2.1747751235961914
+            "score": -2.1747772693634033
           },
           "labeled_entities": [
             {
@@ -950,7 +950,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 66,
-            "score": -1.6448297500610352
+            "score": -1.64482843875885
           },
           "labeled_entities": [
             {
@@ -985,7 +985,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 59,
-            "score": -2.3986308574676514
+            "score": -2.398632049560547
           },
           "labeled_entities": [
             {
@@ -1003,15 +1003,15 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 126,
-            "score": -2.1893677711486816
+            "n_words_checked": 124,
+            "score": -2.1893670558929443
           },
           "labeled_entities": [
             {
               "end": 23,
               "ent": "the past few weeks",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 5,
               "type": "DATE"
             },
@@ -1019,7 +1019,7 @@
               "end": 71,
               "ent": "thousands",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 62,
               "type": "CARDINAL"
             },
@@ -1047,7 +1047,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 87,
-            "score": -1.5695587396621704
+            "score": -1.5695589780807495
           },
           "labeled_entities": [
             {
@@ -1082,7 +1082,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 67,
-            "score": -1.578892707824707
+            "score": -1.5788936614990234
           },
           "labeled_entities": [
             {
@@ -1120,7 +1120,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 106,
-            "score": -2.1105098724365234
+            "score": -2.1105105876922607
           },
           "labeled_entities": [
             {
@@ -1163,7 +1163,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 84,
-            "score": -1.0786330699920654
+            "score": -1.0786322355270386
           },
           "labeled_entities": [
             {
@@ -1198,14 +1198,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 109,
-            "score": -1.7712841033935547
+            "score": -1.7712830305099487
           },
           "labeled_entities": [
             {
               "end": 33,
               "ent": "Jonathan",
               "in_source": true,
-              "label": "Non-hallucinated",
+              "label": "Intrinsic Hallucination",
               "start": 25,
               "type": "PERSON"
             },
@@ -1213,7 +1213,7 @@
               "end": 38,
               "ent": "Bell",
               "in_source": true,
-              "label": "Non-hallucinated",
+              "label": "Intrinsic Hallucination",
               "start": 34,
               "type": "PERSON"
             },
@@ -1229,7 +1229,7 @@
               "end": 152,
               "ent": "County Antrim",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 139,
               "type": "GPE"
             }
@@ -1241,7 +1241,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 82,
-            "score": -2.299333095550537
+            "score": -2.2993335723876953
           },
           "labeled_entities": [
             {
@@ -1276,14 +1276,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 121,
-            "score": -1.7553716897964478
+            "score": -1.7553725242614746
           },
           "labeled_entities": [
             {
               "end": 109,
               "ent": "two",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 106,
               "type": "CARDINAL"
             }
@@ -1295,7 +1295,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 92,
-            "score": -1.745577096939087
+            "score": -1.7455788850784302
           },
           "labeled_entities": [
             {
@@ -1330,7 +1330,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 106,
-            "score": -1.6501227617263794
+            "score": -1.6501219272613525
           },
           "labeled_entities": [
             {
@@ -1349,7 +1349,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 157,
-            "score": -2.7531163692474365
+            "score": -2.753117561340332
           },
           "labeled_entities": [
             {
@@ -1375,7 +1375,7 @@
               "end": 33,
               "ent": "2015",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 29,
               "type": "CARDINAL"
             }
@@ -1387,7 +1387,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 84,
-            "score": -0.19310928881168365
+            "score": -0.19310946762561798
           },
           "labeled_entities": [
             {
@@ -1414,7 +1414,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 87,
-            "score": -1.871492624282837
+            "score": -1.8714951276779175
           },
           "labeled_entities": [
             {
@@ -1449,14 +1449,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -0.9120544195175171
+            "score": -0.9120542407035828
           },
           "labeled_entities": [
             {
               "end": 5,
               "ent": "Three",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 0,
               "type": "CARDINAL"
             },
@@ -1476,7 +1476,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 83,
-            "score": -1.4214056730270386
+            "score": -1.4214049577713013
           },
           "labeled_entities": [
             {
@@ -1527,7 +1527,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 95,
-            "score": -1.1471017599105835
+            "score": -1.1471014022827148
           },
           "labeled_entities": [
             {
@@ -1550,7 +1550,7 @@
               "end": 83,
               "ent": "Islamic",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 76,
               "type": "NORP"
             }
@@ -1562,7 +1562,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 111,
-            "score": -1.1031196117401123
+            "score": -1.1031184196472168
           },
           "labeled_entities": [
             {
@@ -1577,7 +1577,7 @@
               "end": 45,
               "ent": "Serie A",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 38,
               "type": "ORG"
             },
@@ -1585,7 +1585,7 @@
               "end": 93,
               "ent": "AC Milan",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 85,
               "type": "ORG"
             }
@@ -1597,14 +1597,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 100,
-            "score": -1.491398811340332
+            "score": -1.4913980960845947
           },
           "labeled_entities": [
             {
               "end": 19,
               "ent": "Peterborough United",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 0,
               "type": "GPE"
             },
@@ -1612,7 +1612,7 @@
               "end": 34,
               "ent": "Graham",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 28,
               "type": "PERSON"
             },
@@ -1648,7 +1648,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 129,
-            "score": -1.8565534353256226
+            "score": -1.8565541505813599
           },
           "labeled_entities": [
             {
@@ -1699,7 +1699,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -1.7201478481292725
+            "score": -1.7201476097106934
           },
           "labeled_entities": [
             {
@@ -1714,7 +1714,7 @@
               "end": 19,
               "ent": "Chris",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 14,
               "type": "PERSON"
             },
@@ -1730,7 +1730,7 @@
               "end": 68,
               "ent": "1-1",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 65,
               "type": "CARDINAL"
             },
@@ -1746,7 +1746,7 @@
               "end": 106,
               "ent": "Cardiff",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 99,
               "type": "GPE"
             }
@@ -1758,14 +1758,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 123,
-            "score": -2.0153486728668213
+            "score": -2.015348196029663
           },
           "labeled_entities": [
             {
               "end": 105,
               "ent": "thousands of years old",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 83,
               "type": "DATE"
             }
@@ -1777,7 +1777,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 78,
-            "score": -1.1314791440963745
+            "score": -1.1314785480499268
           },
           "labeled_entities": [
             {
@@ -1852,7 +1852,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 104,
-            "score": -1.4464417695999146
+            "score": -1.4464415311813354
           },
           "labeled_entities": [
             {
@@ -1895,14 +1895,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 92,
-            "score": -1.7620452642440796
+            "score": -1.7620445489883423
           },
           "labeled_entities": [
             {
               "end": 18,
               "ent": "The European Union",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 0,
               "type": "ORG"
             },
@@ -1910,7 +1910,7 @@
               "end": 92,
               "ent": "the Panama Papers",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 75,
               "type": "EVENT"
             }
@@ -1922,14 +1922,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 120,
-            "score": -2.192857503890991
+            "score": -2.192856788635254
           },
           "labeled_entities": [
             {
               "end": 20,
               "ent": "West Ham United",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 5,
               "type": "GPE"
             },
@@ -1945,7 +1945,7 @@
               "end": 68,
               "ent": "Saturday",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 60,
               "type": "DATE"
             }
@@ -1957,7 +1957,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 82,
-            "score": -0.9725250601768494
+            "score": -0.972525954246521
           },
           "labeled_entities": [
             {
@@ -1991,8 +1991,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 96,
-            "score": -1.0121707916259766
+            "n_words_checked": 99,
+            "score": -1.0121705532073975
           },
           "labeled_entities": [
             {
@@ -2007,7 +2007,7 @@
               "end": 45,
               "ent": "Havard",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 39,
               "type": "PERSON"
             },
@@ -2015,7 +2015,7 @@
               "end": 55,
               "ent": "Nordtveit",
               "in_source": true,
-              "label": "Non-hallucinated",
+              "label": "Non-factual Hallucination",
               "start": 46,
               "type": "PERSON"
             },
@@ -2023,7 +2023,7 @@
               "end": 85,
               "ent": "Borussia Monchengladbach",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 61,
               "type": "ORG"
             }
@@ -2035,14 +2035,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 108,
-            "score": -1.5450925827026367
+            "score": -1.5450929403305054
           },
           "labeled_entities": [
             {
               "end": 36,
               "ent": "above $50",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 27,
               "type": "MONEY"
             },
@@ -2050,7 +2050,7 @@
               "end": 59,
               "ent": "first",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 54,
               "type": "ORDINAL"
             },
@@ -2058,7 +2058,7 @@
               "end": 78,
               "ent": "six months",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 68,
               "type": "DATE"
             }
@@ -2070,14 +2070,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 112,
-            "score": -1.3485461473464966
+            "score": -1.3485465049743652
           },
           "labeled_entities": [
             {
               "end": 19,
               "ent": "Republic of Ireland",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 0,
               "type": "GPE"
             },
@@ -2085,7 +2085,7 @@
               "end": 34,
               "ent": "Martin",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 28,
               "type": "PERSON"
             },
@@ -2101,7 +2101,7 @@
               "end": 130,
               "ent": "Netherlands",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 119,
               "type": "GPE"
             },
@@ -2109,7 +2109,7 @@
               "end": 140,
               "ent": "Dublin",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 134,
               "type": "GPE"
             }
@@ -2121,7 +2121,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 91,
-            "score": -2.3178584575653076
+            "score": -2.317859172821045
           },
           "labeled_entities": [
             {
@@ -2140,7 +2140,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 169,
-            "score": -1.8663662672042847
+            "score": -1.8663661479949951
           },
           "labeled_entities": [
             {
@@ -2191,7 +2191,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 92,
-            "score": -2.248237133026123
+            "score": -2.2482376098632812
           },
           "labeled_entities": [
             {
@@ -2293,7 +2293,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 120,
-            "score": -1.9583631753921509
+            "score": -1.9583649635314941
           },
           "labeled_entities": [
             {
@@ -2360,14 +2360,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 137,
-            "score": -2.065809965133667
+            "score": -2.065809488296509
           },
           "labeled_entities": [
             {
               "end": 32,
               "ent": "Indian",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 26,
               "type": "NORP"
             },
@@ -2383,7 +2383,7 @@
               "end": 56,
               "ent": "Madras",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 50,
               "type": "GPE"
             },
@@ -2411,7 +2411,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 97,
-            "score": -1.7198460102081299
+            "score": -1.7198461294174194
           },
           "labeled_entities": [
             {
@@ -2446,7 +2446,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -2.1661217212677
+            "score": -2.166121006011963
           },
           "labeled_entities": [
             {
@@ -2465,7 +2465,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 100,
-            "score": -1.2030465602874756
+            "score": -1.2030457258224487
           },
           "labeled_entities": [
             {
@@ -2480,7 +2480,7 @@
               "end": 57,
               "ent": "Ravindra",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 49,
               "type": "PERSON"
             },
@@ -2508,7 +2508,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 65,
-            "score": -1.258855938911438
+            "score": -1.2588562965393066
           },
           "labeled_entities": [
             {
@@ -2535,7 +2535,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 92,
-            "score": -1.483020544052124
+            "score": -1.4830214977264404
           },
           "labeled_entities": [
             {
@@ -2593,7 +2593,7 @@
               "end": 22,
               "ent": "Edinburgh City Council",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 0,
               "type": "ORG"
             },
@@ -2613,7 +2613,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 88,
-            "score": -1.9430712461471558
+            "score": -1.943070411682129
           },
           "labeled_entities": [
             {
@@ -2640,14 +2640,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -0.8529043197631836
+            "score": -0.8529055714607239
           },
           "labeled_entities": [
             {
               "end": 21,
               "ent": "Greg",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 17,
               "type": "PERSON"
             },
@@ -2663,7 +2663,7 @@
               "end": 80,
               "ent": "the Great North City Games",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 54,
               "type": "FAC"
             },
@@ -2683,7 +2683,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 75,
-            "score": -1.4670156240463257
+            "score": -1.4670158624649048
           },
           "labeled_entities": [
             {
@@ -2702,7 +2702,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 88,
-            "score": -1.6510649919509888
+            "score": -1.6510646343231201
           },
           "labeled_entities": [
             {
@@ -2753,7 +2753,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 123,
-            "score": -1.871010661125183
+            "score": -1.871009349822998
           },
           "labeled_entities": [
             {
@@ -2780,7 +2780,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 91,
-            "score": -1.162993311882019
+            "score": -1.1629929542541504
           },
           "labeled_entities": [
             {
@@ -2815,7 +2815,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -2.230154275894165
+            "score": -2.230156183242798
           },
           "labeled_entities": [
             {
@@ -2850,7 +2850,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 87,
-            "score": -1.2219717502593994
+            "score": -1.2219719886779785
           },
           "labeled_entities": [
             {
@@ -2909,7 +2909,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 68,
-            "score": -1.1335426568984985
+            "score": -1.1335430145263672
           },
           "labeled_entities": [
             {
@@ -2971,7 +2971,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 104,
-            "score": -2.032886266708374
+            "score": -2.0328855514526367
           },
           "labeled_entities": [
             {
@@ -3002,7 +3002,7 @@
               "end": 82,
               "ent": "her year",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 74,
               "type": "DATE"
             }
@@ -3014,7 +3014,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 109,
-            "score": -2.0976173877716064
+            "score": -2.097618341445923
           },
           "labeled_entities": [
             {
@@ -3089,7 +3089,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 91,
-            "score": -1.8081344366073608
+            "score": -1.8081350326538086
           },
           "labeled_entities": [
             {
@@ -3108,7 +3108,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 71,
-            "score": -0.7896830439567566
+            "score": -0.7896826267242432
           },
           "labeled_entities": [
             {
@@ -3135,7 +3135,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -1.8153207302093506
+            "score": -1.8153200149536133
           },
           "labeled_entities": [
             {
@@ -3162,7 +3162,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 74,
-            "score": -1.3012425899505615
+            "score": -1.301242470741272
           },
           "labeled_entities": [
             {
@@ -3220,7 +3220,7 @@
               "end": 15,
               "ent": "Shrewsbury Town",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 0,
               "type": "ORG"
             },
@@ -3228,7 +3228,7 @@
               "end": 48,
               "ent": "West Bromwich Albion",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 28,
               "type": "ORG"
             },
@@ -3236,7 +3236,7 @@
               "end": 64,
               "ent": "Lloyd",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 59,
               "type": "PERSON"
             },
@@ -3252,7 +3252,7 @@
               "end": 108,
               "ent": "the end of the season",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 87,
               "type": "DATE"
             }
@@ -3264,7 +3264,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 101,
-            "score": -1.036130666732788
+            "score": -1.0361298322677612
           },
           "labeled_entities": [
             {
@@ -3299,7 +3299,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 60,
-            "score": -1.8000725507736206
+            "score": -1.8000730276107788
           },
           "labeled_entities": [
             {
@@ -3334,14 +3334,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 63,
-            "score": -1.648677945137024
+            "score": -1.6486760377883911
           },
           "labeled_entities": [
             {
               "end": 24,
               "ent": "Women's Super League One",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 0,
               "type": "ORG"
             }
@@ -3353,7 +3353,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 88,
-            "score": -2.095644235610962
+            "score": -2.095644474029541
           },
           "labeled_entities": [
             {
@@ -3396,7 +3396,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 91,
-            "score": -1.8205939531326294
+            "score": -1.8205955028533936
           },
           "labeled_entities": [
             {
@@ -3423,7 +3423,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 70,
-            "score": -1.467422604560852
+            "score": -1.467421531677246
           },
           "labeled_entities": [
             {
@@ -3473,15 +3473,15 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 121,
-            "score": -2.383810520172119
+            "n_words_checked": 125,
+            "score": -2.38381028175354
           },
           "labeled_entities": [
             {
               "end": 46,
               "ent": "three-year-old",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 32,
               "type": "DATE"
             },
@@ -3509,7 +3509,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 71,
-            "score": -2.028644561767578
+            "score": -2.028643846511841
           },
           "labeled_entities": [
             {
@@ -3552,14 +3552,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 71,
-            "score": -0.9848645329475403
+            "score": -0.9848644137382507
           },
           "labeled_entities": [
             {
               "end": 11,
               "ent": "New Zealand",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 0,
               "type": "GPE"
             },
@@ -3591,7 +3591,7 @@
               "end": 97,
               "ent": "the end of the 2018 season",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 71,
               "type": "DATE"
             }
@@ -3603,14 +3603,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 67,
-            "score": -2.1598620414733887
+            "score": -2.1598610877990723
           },
           "labeled_entities": [
             {
               "end": 42,
               "ent": "weekly",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 36,
               "type": "DATE"
             },
@@ -3630,7 +3630,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 59,
-            "score": -0.8646011352539062
+            "score": -0.8646009564399719
           },
           "labeled_entities": [
             {
@@ -3673,7 +3673,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 82,
-            "score": -1.3507483005523682
+            "score": -1.3507487773895264
           },
           "labeled_entities": [
             {
@@ -3700,7 +3700,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 103,
-            "score": -1.9888513088226318
+            "score": -1.988852620124817
           },
           "labeled_entities": [
             {
@@ -3735,7 +3735,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 100,
-            "score": -2.4680259227752686
+            "score": -2.4680240154266357
           },
           "labeled_entities": [
             {
@@ -3770,7 +3770,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 57,
-            "score": -2.2208845615386963
+            "score": -2.220883369445801
           },
           "labeled_entities": [
             {
@@ -3805,7 +3805,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 76,
-            "score": -1.4260225296020508
+            "score": -1.4260207414627075
           },
           "labeled_entities": [
             {
@@ -3868,7 +3868,7 @@
               "end": 113,
               "ent": "Wantage Road",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 101,
               "type": "FAC"
             }
@@ -3880,7 +3880,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 55,
-            "score": -1.2503902912139893
+            "score": -1.2503893375396729
           },
           "labeled_entities": [
             {
@@ -3931,7 +3931,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 102,
-            "score": -1.4007986783981323
+            "score": -1.400797724723816
           },
           "labeled_entities": [
             {
@@ -3966,7 +3966,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 76,
-            "score": -1.1697319746017456
+            "score": -1.1697320938110352
           },
           "labeled_entities": [
             {
@@ -3992,8 +3992,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 106,
-            "score": -2.2143630981445312
+            "n_words_checked": 110,
+            "score": -2.214362144470215
           },
           "labeled_entities": [
             {
@@ -4044,7 +4044,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 75,
-            "score": -1.1768600940704346
+            "score": -1.1768604516983032
           },
           "labeled_entities": [
             {
@@ -4096,107 +4096,107 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 56,
-            "Intrinsic Hallucination": 3,
-            "Non-factual Hallucination": 11,
-            "Non-hallucinated": 184,
-            "Unknown": 92
+            "Factual Hallucination": 105,
+            "Intrinsic Hallucination": 7,
+            "Non-factual Hallucination": 20,
+            "Non-hallucinated": 179,
+            "Unknown": 34
           },
           "type": {
             "CARDINAL": {
-              "Factual Hallucination": 4,
+              "Factual Hallucination": 9,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 5,
-              "Unknown": 8,
+              "Unknown": 3,
               "total": 17
             },
             "DATE": {
-              "Factual Hallucination": 8,
+              "Factual Hallucination": 14,
               "Intrinsic Hallucination": 1,
-              "Non-factual Hallucination": 4,
+              "Non-factual Hallucination": 8,
               "Non-hallucinated": 4,
-              "Unknown": 22,
-              "total": 39
+              "Unknown": 11,
+              "total": 38
             },
             "EVENT": {
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 1,
               "Non-hallucinated": 2,
-              "Unknown": 1,
+              "Unknown": 0,
               "total": 6
             },
             "FAC": {
-              "Factual Hallucination": 1,
-              "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 0,
-              "Non-hallucinated": 3,
-              "Unknown": 3,
-              "total": 7
-            },
-            "GPE": {
-              "Factual Hallucination": 12,
-              "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 2,
-              "Non-hallucinated": 51,
-              "Unknown": 18,
-              "total": 83
-            },
-            "LOC": {
-              "Factual Hallucination": 2,
-              "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 0,
-              "Non-hallucinated": 0,
-              "Unknown": 2,
-              "total": 4
-            },
-            "MONEY": {
-              "Factual Hallucination": 0,
-              "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 0,
-              "Non-hallucinated": 1,
-              "Unknown": 1,
-              "total": 2
-            },
-            "NORP": {
-              "Factual Hallucination": 1,
-              "Intrinsic Hallucination": 0,
-              "Non-factual Hallucination": 0,
-              "Non-hallucinated": 10,
-              "Unknown": 3,
-              "total": 14
-            },
-            "ORDINAL": {
               "Factual Hallucination": 2,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 1,
-              "Non-hallucinated": 4,
-              "Unknown": 2,
-              "total": 9
+              "Non-hallucinated": 3,
+              "Unknown": 1,
+              "total": 7
             },
-            "ORG": {
-              "Factual Hallucination": 8,
+            "GPE": {
+              "Factual Hallucination": 22,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 4,
+              "Non-hallucinated": 51,
+              "Unknown": 6,
+              "total": 83
+            },
+            "LOC": {
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
-              "Non-hallucinated": 22,
-              "Unknown": 13,
-              "total": 43
+              "Non-hallucinated": 0,
+              "Unknown": 1,
+              "total": 4
             },
-            "PERCENT": {
-              "Factual Hallucination": 0,
+            "MONEY": {
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 1,
+              "Unknown": 0,
+              "total": 2
+            },
+            "NORP": {
+              "Factual Hallucination": 3,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 10,
               "Unknown": 1,
+              "total": 14
+            },
+            "ORDINAL": {
+              "Factual Hallucination": 3,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 1,
+              "Non-hallucinated": 4,
+              "Unknown": 1,
+              "total": 9
+            },
+            "ORG": {
+              "Factual Hallucination": 17,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 22,
+              "Unknown": 4,
+              "total": 43
+            },
+            "PERCENT": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 1,
+              "Unknown": 0,
               "total": 2
             },
             "PERSON": {
-              "Factual Hallucination": 15,
-              "Intrinsic Hallucination": 2,
-              "Non-factual Hallucination": 3,
-              "Non-hallucinated": 79,
-              "Unknown": 18,
+              "Factual Hallucination": 26,
+              "Intrinsic Hallucination": 6,
+              "Non-factual Hallucination": 5,
+              "Non-hallucinated": 74,
+              "Unknown": 6,
               "total": 117
             },
             "PRODUCT": {
@@ -4218,15 +4218,262 @@
           }
         },
         "summary": {
-          "completed": 93,
-          "factual": 39,
+          "completed": 87,
+          "factual": 64,
           "failed": 0,
-          "non_factual": 7,
+          "non_factual": 13,
           "total": 100,
-          "unknown": 54
+          "unknown": 23
         }
       },
       "summaries": {
+        "13907777": {
+          "banned_phrases": [
+            "Berlin"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> Felix Sturm retained his WBA middleweight title with a thrilling points victory over Matt Macklin in Berlin",
+              "<pad> Felix Sturm retained his WBA middleweight title with a hard-fought victory over Matt Macklin in Berlin",
+              "<pad> Felix Sturm retained his WBA world middleweight title with a thrilling points victory over Matt Macklin in Berlin",
+              "<pad> Felix Sturm retained his WBA middleweight title with a thrilling points victory over Matt Macklin in his home city of Berlin",
+              "<pad> Felix Sturm retained his WBA middleweight title with a hard-fought victory over Matt Macklin in his home city of Berlin"
+            ],
+            "n_words_checked": 98,
+            "score": -1.56632399559021
+          },
+          "labeled_entities": [
+            {
+              "end": 5,
+              "ent": "Felix",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 0,
+              "type": "PERSON"
+            },
+            {
+              "end": 11,
+              "ent": "Sturm",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 6,
+              "type": "PERSON"
+            },
+            {
+              "end": 28,
+              "ent": "WBA",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 25,
+              "type": "ORG"
+            },
+            {
+              "end": 89,
+              "ent": "Matt",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 85,
+              "type": "PERSON"
+            },
+            {
+              "end": 97,
+              "ent": "Macklin",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 90,
+              "type": "PERSON"
+            },
+            {
+              "end": 127,
+              "ent": "Stuttgart",
+              "in_source": false,
+              "label": "Unknown",
+              "start": 118,
+              "type": "GPE"
+            }
+          ],
+          "summary": "Felix Sturm retained his WBA middleweight title with a thrilling points victory over Matt Macklin in his home city of Stuttgart."
+        },
+        "18460302": {
+          "banned_phrases": [
+            "March 2009"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> In March",
+              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England in March 2009",
+              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the government in March",
+              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009",
+              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009."
+            ],
+            "n_words_checked": 210,
+            "score": -2.20749568939209
+          },
+          "labeled_entities": [
+            {
+              "end": 30,
+              "ent": "The Funding for Lending Scheme",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 0,
+              "type": "ORG"
+            },
+            {
+              "end": 70,
+              "ent": "the Bank of England",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 51,
+              "type": "ORG"
+            },
+            {
+              "end": 107,
+              "ent": "September 2008",
+              "in_source": false,
+              "label": "Unknown",
+              "start": 93,
+              "type": "DATE"
+            }
+          ],
+          "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the government in September 2008. The commercial banks are then able to use these bits of paper as top quality backing with which to borrow cash in the wholesale financial markets, from other lenders."
+        },
+        "19079529": {
+          "banned_phrases": [
+            "day four"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> Cyclist Sir Bradley Wiggins, rowers Helen Glover and Heather Stanning and swimmer Michael Jamieson have won gold medals for Great Britain on day four",
+              "<pad> Cyclist Sir Bradley Wiggins, rowers Helen Glover and Heather Stanning and swimmer Michael Jamieson have won gold medals for Team GB on day four",
+              "<pad> Cyclist Sir Bradley Wiggins, rowers Helen Glover and Heather Stanning and swimmer Michael Jamieson have all won gold medals for Great Britain on day four",
+              "<pad> Cyclist Sir Bradley Wiggins, rowers Helen Glover and Heather Stanning and swimmer Michael Jamieson have all won gold medals for Team GB on day four"
+            ],
+            "n_words_checked": 129,
+            "score": -1.9862784147262573
+          },
+          "labeled_entities": [
+            {
+              "end": 19,
+              "ent": "Bradley",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 12,
+              "type": "PERSON"
+            },
+            {
+              "end": 27,
+              "ent": "Wiggins",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 20,
+              "type": "PERSON"
+            },
+            {
+              "end": 41,
+              "ent": "Helen",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 36,
+              "type": "PERSON"
+            },
+            {
+              "end": 48,
+              "ent": "Glover",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 42,
+              "type": "PERSON"
+            },
+            {
+              "end": 60,
+              "ent": "Heather",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 53,
+              "type": "PERSON"
+            },
+            {
+              "end": 69,
+              "ent": "Stanning",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 61,
+              "type": "PERSON"
+            },
+            {
+              "end": 89,
+              "ent": "Michael",
+              "in_source": true,
+              "label": "Intrinsic Hallucination",
+              "start": 82,
+              "type": "PERSON"
+            },
+            {
+              "end": 98,
+              "ent": "Jamieson",
+              "in_source": true,
+              "label": "Intrinsic Hallucination",
+              "start": 90,
+              "type": "PERSON"
+            },
+            {
+              "end": 141,
+              "ent": "Great Britain",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 128,
+              "type": "GPE"
+            },
+            {
+              "end": 154,
+              "ent": "day three",
+              "in_source": false,
+              "label": "Unknown",
+              "start": 145,
+              "type": "DATE"
+            },
+            {
+              "end": 170,
+              "ent": "Olympics",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 162,
+              "type": "EVENT"
+            }
+          ],
+          "summary": "Cyclist Sir Bradley Wiggins, rowers Helen Glover and Heather Stanning and swimmer Michael Jamieson have all won gold medals for Great Britain on day three of the Olympics."
+        },
+        "21972989": {
+          "banned_phrases": [
+            "the past 10 years"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> India's economic growth over the past 10 years"
+            ],
+            "n_words_checked": 68,
+            "score": -2.526468276977539
+          },
+          "labeled_entities": [
+            {
+              "end": 5,
+              "ent": "India",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 0,
+              "type": "GPE"
+            },
+            {
+              "end": 46,
+              "ent": "the last 10 years",
+              "in_source": false,
+              "label": "Unknown",
+              "start": 29,
+              "type": "DATE"
+            }
+          ],
+          "summary": "India's economic growth over the last 10 years has been a mixed bag."
+        },
         "27422441": {
           "banned_phrases": [
             "weekend"
@@ -4239,7 +4486,7 @@
               "<pad> World champion Helen Glover says she is looking forward to the start of the new season with new partner Polly Swann in Amsterdam this weekend"
             ],
             "n_words_checked": 97,
-            "score": -2.292677879333496
+            "score": -2.2926766872406006
           },
           "labeled_entities": [
             {
@@ -4286,14 +4533,14 @@
               "<pad> More than two years"
             ],
             "n_words_checked": 84,
-            "score": -2.0430164337158203
+            "score": -2.0430173873901367
           },
           "labeled_entities": [
             {
               "end": 28,
               "ent": "more than a year",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 12,
               "type": "DATE"
             },
@@ -4324,8 +4571,8 @@
             "dropped_seqs": [
               "<pad> County Longford, in the Republic of Ireland's midlands, was once dubbed Ireland's Silicon Valley"
             ],
-            "n_words_checked": 124,
-            "score": -2.7217788696289062
+            "n_words_checked": 127,
+            "score": -2.7217793464660645
           },
           "labeled_entities": [
             {
@@ -4357,7 +4604,7 @@
               "<pad> The first"
             ],
             "n_words_checked": 67,
-            "score": -2.4263696670532227
+            "score": -2.4263694286346436
           },
           "labeled_entities": [],
           "summary": "The quiet of the morning had lulled us into a false sense of security."
@@ -4372,7 +4619,7 @@
               "<pad> Hundreds"
             ],
             "n_words_checked": 59,
-            "score": -1.581741452217102
+            "score": -1.5817420482635498
           },
           "labeled_entities": [
             {
@@ -4395,7 +4642,7 @@
               "<pad> A 19-year-old"
             ],
             "n_words_checked": 80,
-            "score": -1.1617295742034912
+            "score": -1.1617300510406494
           },
           "labeled_entities": [
             {
@@ -4437,7 +4684,7 @@
               "<pad> Former world number one John"
             ],
             "n_words_checked": 83,
-            "score": -2.336364269256592
+            "score": -2.3363635540008545
           },
           "labeled_entities": [
             {
@@ -4480,7 +4727,7 @@
               "<pad> Chipotle Mexican Grill has been linked to an outbreak of E. coli that has made dozens of people ill across five"
             ],
             "n_words_checked": 100,
-            "score": -1.77751624584198
+            "score": -1.777517557144165
           },
           "labeled_entities": [
             {
@@ -4527,7 +4774,7 @@
               "<pad> A 70-year-old"
             ],
             "n_words_checked": 140,
-            "score": -2.5638372898101807
+            "score": -2.563840389251709
           },
           "labeled_entities": [],
           "summary": "A woman with terminal cancer who tried to kill herself because she did not want \"to live in a council flat, be poor or be ugly\" has won the right to refuse dialysis."
@@ -4544,7 +4791,7 @@
               "<pad> One of Scotland's busiest railway stations is to be closed for more than six months"
             ],
             "n_words_checked": 90,
-            "score": -2.085657835006714
+            "score": -2.085658073425293
           },
           "labeled_entities": [
             {
@@ -4584,7 +4831,7 @@
               "<pad> The number of motorcyclists killed or seriously injured on London's roads has risen by more than a third"
             ],
             "n_words_checked": 130,
-            "score": -1.8830229043960571
+            "score": -1.8830214738845825
           },
           "labeled_entities": [
             {
@@ -4599,7 +4846,7 @@
               "end": 100,
               "ent": "more than 20%",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "start": 87,
               "type": "PERCENT"
             },
@@ -4644,7 +4891,7 @@
               "<pad> Philippine presidential candidate Rodrigo Duterte has been accused of misogyny after a video emerged showing him mocking the rape and murder of a Roman Catholic"
             ],
             "n_words_checked": 112,
-            "score": -1.8929671049118042
+            "score": -1.8929688930511475
           },
           "labeled_entities": [
             {
@@ -4674,6 +4921,88 @@
           ],
           "summary": "Philippine presidential candidate Rodrigo Duterte has been accused of misogyny after a video emerged showing him mocking the rape and murder of a missionary."
         },
+        "36170590": {
+          "banned_phrases": [
+            "Saturday"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> When West Ham United play their final game at Upton Park on Saturday",
+              "<pad> When West Ham United play their final home game at Upton Park on Saturday"
+            ],
+            "n_words_checked": 120,
+            "score": -2.795311689376831
+          },
+          "labeled_entities": [
+            {
+              "end": 18,
+              "ent": "West Ham United",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 3,
+              "type": "GPE"
+            },
+            {
+              "end": 65,
+              "ent": "Upton Park",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 55,
+              "type": "FAC"
+            }
+          ],
+          "summary": "As West Ham United prepare to play their final game at Upton Park, the club's supporters and businesses will be looking to the future."
+        },
+        "36301083": {
+          "banned_phrases": [
+            "Nordtveit"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> West Ham have signed Norway midfielder Havard Nordtveit",
+              "<pad> West Ham have signed Norway winger Havard Nordtveit",
+              "<pad> West Ham United have signed Norway midfielder Havard Nordtveit",
+              "<pad> West Ham have completed the signing of Norway midfielder Havard Nordtveit"
+            ],
+            "n_words_checked": 112,
+            "score": -2.0668249130249023
+          },
+          "labeled_entities": [
+            {
+              "end": 45,
+              "ent": "Norway",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 39,
+              "type": "GPE"
+            },
+            {
+              "end": 63,
+              "ent": "Havard",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 57,
+              "type": "PERSON"
+            },
+            {
+              "end": 73,
+              "ent": "NordtveIt",
+              "in_source": true,
+              "label": "Non-factual Hallucination",
+              "start": 64,
+              "type": "PERSON"
+            },
+            {
+              "end": 103,
+              "ent": "Borussia Monchengladbach",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 79,
+              "type": "ORG"
+            }
+          ],
+          "summary": "West Ham have completed the signing of Norway midfielder Havard NordtveIt from Borussia Monchengladbach for an undisclosed fee."
+        },
         "36498934": {
           "banned_phrases": [
             "next month's"
@@ -4683,7 +5012,7 @@
               "<pad> Spain's left-wing Podemos (We Can) party and the Socialists (PSOE) have launched their campaigns for next month's"
             ],
             "n_words_checked": 143,
-            "score": -2.3297150135040283
+            "score": -2.329716682434082
           },
           "labeled_entities": [
             {
@@ -4749,7 +5078,7 @@
               "<pad> Great Britain's Greg Rutherford is through to the long jump final at the World Athletics Championships in Beijing"
             ],
             "n_words_checked": 96,
-            "score": -1.8065423965454102
+            "score": -1.8065418004989624
           },
           "labeled_entities": [
             {
@@ -4780,7 +5109,7 @@
               "end": 99,
               "ent": "the World Indoor Championships",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 69,
               "type": "FAC"
             },
@@ -4788,7 +5117,7 @@
               "end": 111,
               "ent": "Portland",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 103,
               "type": "GPE"
             },
@@ -4796,7 +5125,7 @@
               "end": 119,
               "ent": "Oregon",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 113,
               "type": "GPE"
             }
@@ -4817,7 +5146,7 @@
               "<pad> Plans for a new main stand at Tynecastle have been given the go-ahead by councillors in the Scottish"
             ],
             "n_words_checked": 82,
-            "score": -1.5860692262649536
+            "score": -1.5860686302185059
           },
           "labeled_entities": [],
           "summary": "Plans for a new main stand at Tynecastle have been given the go-ahead by councillors."
@@ -4833,8 +5162,8 @@
               "<pad> A paedophile who was confronted by a vigilante group when he tried to meet an 11-year-old girl has been jailed for four years",
               "<pad> A paedophile who was confronted by a vigilante group when he tried to meet an 11-year-old girl he thought was his daughter has been jailed for four years"
             ],
-            "n_words_checked": 127,
-            "score": -1.9270426034927368
+            "n_words_checked": 131,
+            "score": -1.9270415306091309
           },
           "labeled_entities": [
             {
@@ -4849,7 +5178,7 @@
               "end": 126,
               "ent": "three years",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 115,
               "type": "DATE"
             }
@@ -4879,7 +5208,7 @@
               "<pad> New Year's Day has been shrouded in a thick smog that has enveloped the Chinese"
             ],
             "n_words_checked": 95,
-            "score": -3.06268048286438
+            "score": -3.062682628631592
           },
           "labeled_entities": [
             {
@@ -4918,7 +5247,7 @@
               "<pad> A man has been jailed for three years"
             ],
             "n_words_checked": 92,
-            "score": -1.848976731300354
+            "score": -1.8489776849746704
           },
           "labeled_entities": [
             {
@@ -4945,7 +5274,7 @@
               "<pad> Carrick Rangers have signed former Crusaders player David McAllister on a deal until the end of the season"
             ],
             "n_words_checked": 74,
-            "score": -1.629263162612915
+            "score": -1.629262924194336
           },
           "labeled_entities": [
             {
@@ -4991,6 +5320,62 @@
           ],
           "summary": "Carrick Rangers have signed former Crusaders player Gary McAllister on a one-year deal."
         },
+        "38651116": {
+          "banned_phrases": [
+            "Lloyd"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> Shrewsbury Town have signed West Bromwich Albion youngster Lloyd",
+              "<pad> Shrewsbury Town have signed teenage West Bromwich Albion player Lloyd"
+            ],
+            "n_words_checked": 78,
+            "score": -1.1316959857940674
+          },
+          "labeled_entities": [
+            {
+              "end": 15,
+              "ent": "Shrewsbury Town",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 0,
+              "type": "ORG"
+            },
+            {
+              "end": 48,
+              "ent": "West Bromwich Albion",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 28,
+              "type": "ORG"
+            },
+            {
+              "end": 62,
+              "ent": "Joe",
+              "in_source": false,
+              "label": "Unknown",
+              "start": 59,
+              "type": "PERSON"
+            },
+            {
+              "end": 70,
+              "ent": "Roberts",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 63,
+              "type": "PERSON"
+            },
+            {
+              "end": 106,
+              "ent": "the end of the season",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 85,
+              "type": "DATE"
+            }
+          ],
+          "summary": "Shrewsbury Town have signed West Bromwich Albion youngster Joe Roberts on loan until the end of the season."
+        },
         "38980980": {
           "banned_phrases": [
             "South Lanarkshire",
@@ -5004,14 +5389,14 @@
               "<pad> A man has been jailed for seven years for assaulting a post office worker during an armed robbery in South Lanarkshire"
             ],
             "n_words_checked": 89,
-            "score": -1.93622624874115
+            "score": -1.9362239837646484
           },
           "labeled_entities": [
             {
               "end": 35,
               "ent": "six years",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 26,
               "type": "DATE"
             },
@@ -5026,6 +5411,101 @@
           ],
           "summary": "A man has been jailed for six years for assaulting a post office worker during an armed robbery in Edinburgh."
         },
+        "39442533": {
+          "banned_phrases": [
+            "three-year-old"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> A year on from the death of her three-year-old"
+            ],
+            "n_words_checked": 125,
+            "score": -2.4407269954681396
+          },
+          "labeled_entities": [
+            {
+              "end": 45,
+              "ent": "four-year-old",
+              "in_source": false,
+              "label": "Unknown",
+              "start": 32,
+              "type": "DATE"
+            },
+            {
+              "end": 56,
+              "ent": "Kayden",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 50,
+              "type": "PERSON"
+            },
+            {
+              "end": 88,
+              "ent": "Shannon",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 81,
+              "type": "PERSON"
+            }
+          ],
+          "summary": "A year on from the death of her four-year-old son Kayden, Julie and her daughter Shannon are still struggling to come to terms with his death."
+        },
+        "39507079": {
+          "banned_phrases": [
+            "the end of the 2018 season"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2018 season",
+              "<pad> Former New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2018 season"
+            ],
+            "n_words_checked": 86,
+            "score": -1.0411890745162964
+          },
+          "labeled_entities": [
+            {
+              "end": 11,
+              "ent": "New Zealand",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 0,
+              "type": "GPE"
+            },
+            {
+              "end": 27,
+              "ent": "Brendon",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 20,
+              "type": "PERSON"
+            },
+            {
+              "end": 36,
+              "ent": "McCullum",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 28,
+              "type": "PERSON"
+            },
+            {
+              "end": 64,
+              "ent": "Middlesex",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 55,
+              "type": "GPE"
+            },
+            {
+              "end": 97,
+              "ent": "the end of the 2017 season",
+              "in_source": false,
+              "label": "Unknown",
+              "start": 71,
+              "type": "DATE"
+            }
+          ],
+          "summary": "New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2017 season."
+        },
         "40424712": {
           "banned_phrases": [
             "Paul"
@@ -5035,7 +5515,7 @@
               "<pad> Leyton Orient have re-appointed Paul"
             ],
             "n_words_checked": 83,
-            "score": -2.2306292057037354
+            "score": -2.2306275367736816
           },
           "labeled_entities": [
             {
@@ -5082,7 +5562,7 @@
               "<pad> Northamptonshire's Ben Wakely and Andy"
             ],
             "n_words_checked": 100,
-            "score": -2.7645442485809326
+            "score": -2.7645440101623535
           },
           "labeled_entities": [
             {
@@ -5097,7 +5577,7 @@
               "end": 22,
               "ent": "Jim",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 19,
               "type": "PERSON"
             },
@@ -5156,14 +5636,14 @@
               "<pad> A man has been jailed for life for the rape and manslaughter of a 12-year-old"
             ],
             "n_words_checked": 84,
-            "score": -1.3888901472091675
+            "score": -1.3888896703720093
           },
           "labeled_entities": [
             {
               "end": 77,
               "ent": "13-year-old",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 66,
               "type": "DATE"
             },
@@ -5184,107 +5664,107 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 60,
-            "Intrinsic Hallucination": 3,
-            "Non-factual Hallucination": 6,
-            "Non-hallucinated": 184,
-            "Unknown": 94
+            "Factual Hallucination": 110,
+            "Intrinsic Hallucination": 7,
+            "Non-factual Hallucination": 9,
+            "Non-hallucinated": 179,
+            "Unknown": 39
           },
           "type": {
             "CARDINAL": {
-              "Factual Hallucination": 4,
+              "Factual Hallucination": 9,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 5,
-              "Unknown": 8,
+              "Unknown": 3,
               "total": 17
             },
             "DATE": {
-              "Factual Hallucination": 9,
+              "Factual Hallucination": 16,
               "Intrinsic Hallucination": 1,
-              "Non-factual Hallucination": 3,
+              "Non-factual Hallucination": 5,
               "Non-hallucinated": 4,
-              "Unknown": 23,
-              "total": 40
+              "Unknown": 13,
+              "total": 39
             },
             "EVENT": {
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 2,
-              "Unknown": 1,
+              "Unknown": 0,
               "total": 5
             },
             "FAC": {
-              "Factual Hallucination": 1,
+              "Factual Hallucination": 2,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 3,
-              "Unknown": 4,
-              "total": 8
+              "Unknown": 1,
+              "total": 6
             },
             "GPE": {
-              "Factual Hallucination": 13,
+              "Factual Hallucination": 23,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 51,
-              "Unknown": 18,
-              "total": 82
+              "Unknown": 7,
+              "total": 81
             },
             "LOC": {
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 0,
-              "Unknown": 2,
+              "Unknown": 1,
               "total": 4
             },
             "MONEY": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 1,
-              "Unknown": 1,
+              "Unknown": 0,
               "total": 2
             },
             "NORP": {
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 4,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 10,
-              "Unknown": 3,
+              "Unknown": 1,
               "total": 15
             },
             "ORDINAL": {
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 4,
-              "Unknown": 2,
+              "Unknown": 1,
               "total": 8
             },
             "ORG": {
-              "Factual Hallucination": 8,
+              "Factual Hallucination": 17,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 22,
-              "Unknown": 13,
-              "total": 43
+              "Unknown": 5,
+              "total": 44
             },
             "PERCENT": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 1,
-              "Unknown": 1,
+              "Unknown": 0,
               "total": 2
             },
             "PERSON": {
-              "Factual Hallucination": 15,
-              "Intrinsic Hallucination": 2,
-              "Non-factual Hallucination": 3,
-              "Non-hallucinated": 79,
-              "Unknown": 18,
+              "Factual Hallucination": 26,
+              "Intrinsic Hallucination": 6,
+              "Non-factual Hallucination": 4,
+              "Non-hallucinated": 74,
+              "Unknown": 7,
               "total": 117
             },
             "PRODUCT": {
@@ -5314,15 +5794,56 @@
           }
         },
         "summary": {
-          "completed": 95,
-          "factual": 40,
+          "completed": 92,
+          "factual": 66,
           "failed": 0,
-          "non_factual": 5,
+          "non_factual": 8,
           "total": 100,
-          "unknown": 55
+          "unknown": 26
         }
       },
       "summaries": {
+        "31126597": {
+          "banned_phrases": [
+            "More than two years",
+            "more than a year"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> More than two years",
+              "<pad> It has been more than a year"
+            ],
+            "n_words_checked": 110,
+            "score": -2.089360475540161
+          },
+          "labeled_entities": [
+            {
+              "end": 25,
+              "ent": "almost a year",
+              "in_source": false,
+              "label": "Unknown",
+              "start": 12,
+              "type": "DATE"
+            },
+            {
+              "end": 34,
+              "ent": "43",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 32,
+              "type": "CARDINAL"
+            },
+            {
+              "end": 78,
+              "ent": "Mexico",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 72,
+              "type": "GPE"
+            }
+          ],
+          "summary": "It has been almost a year since 43 students from a teachers' college in Mexico went missing."
+        },
         "34717572": {
           "banned_phrases": [
             "19-year-old",
@@ -5334,7 +5855,7 @@
               "<pad> A 20-year-old"
             ],
             "n_words_checked": 80,
-            "score": -1.2214161157608032
+            "score": -1.2214158773422241
           },
           "labeled_entities": [
             {
@@ -5379,7 +5900,7 @@
               "<pad> One of Scotland's busiest railway stations is to be closed for more than a month"
             ],
             "n_words_checked": 88,
-            "score": -2.3370304107666016
+            "score": -2.3370301723480225
           },
           "labeled_entities": [
             {
@@ -5409,6 +5930,67 @@
           ],
           "summary": "One of Scotland's busiest railway stations is to be closed for more than a year for major engineering work."
         },
+        "36301083": {
+          "banned_phrases": [
+            "NordtveIt",
+            "Nordtveit"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> West Ham have signed Norway midfielder Havard Nordtveit",
+              "<pad> West Ham have signed Norway winger Havard Nordtveit",
+              "<pad> West Ham United have signed Norway midfielder Havard Nordtveit",
+              "<pad> West Ham United have signed Norway midfielder Havard NordtveIt",
+              "<pad> West Ham have completed the signing of Norway midfielder Havard Nordtveit",
+              "<pad> West Ham have completed the signing of Norway midfielder Havard NordtveIt"
+            ],
+            "n_words_checked": 92,
+            "score": -2.0373294353485107
+          },
+          "labeled_entities": [
+            {
+              "end": 15,
+              "ent": "West Ham United",
+              "in_source": false,
+              "label": "Unknown",
+              "start": 0,
+              "type": "GPE"
+            },
+            {
+              "end": 34,
+              "ent": "Norway",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 28,
+              "type": "GPE"
+            },
+            {
+              "end": 52,
+              "ent": "Havard",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 46,
+              "type": "PERSON"
+            },
+            {
+              "end": 60,
+              "ent": "Nordtve",
+              "in_source": true,
+              "label": "Non-factual Hallucination",
+              "start": 53,
+              "type": "PERSON"
+            },
+            {
+              "end": 112,
+              "ent": "Borussia Monchengladbach",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 88,
+              "type": "ORG"
+            }
+          ],
+          "summary": "West Ham United have signed Norway midfielder Havard Nordtve It on a free transfer from Borussia Monchengladbach for an undisclosed fee."
+        },
         "36498934": {
           "banned_phrases": [
             "first",
@@ -5423,7 +6005,7 @@
               "<pad> Spain's left-wing Podemos (We Can) party and the centre-left Socialist (PSOE) are campaigning together for the second time in six months, ahead of a general election next month"
             ],
             "n_words_checked": 145,
-            "score": -2.091074228286743
+            "score": -2.091073751449585
           },
           "labeled_entities": [
             {
@@ -5462,12 +6044,104 @@
               "end": 112,
               "ent": "next week's",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "start": 101,
               "type": "DATE"
             }
           ],
           "summary": "Spain's left-wing Podemos (We Can) party and the Socialists (PSOE) have launched their campaigns for next week's general election."
+        },
+        "37068879": {
+          "banned_phrases": [
+            "Beijing",
+            "Oregon",
+            "Portland",
+            "the World Championships",
+            "the World Indoor Championships"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> Britain's Greg Rutherford is through to the long jump final at the World Championships",
+              "<pad> Great Britain's Greg Rutherford is through to the long jump final at the World Championships",
+              "<pad> Great Britain's Greg Rutherford is through to the long jump final at the World Indoor Championships",
+              "<pad> Great Britain's Greg Rutherford is through to the long jump final at the World Athletics Championships in Beijing"
+            ],
+            "n_words_checked": 96,
+            "score": -1.8587958812713623
+          },
+          "labeled_entities": [
+            {
+              "end": 15,
+              "ent": "Great Britain's",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 0,
+              "type": "GPE"
+            },
+            {
+              "end": 20,
+              "ent": "Greg",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 16,
+              "type": "PERSON"
+            },
+            {
+              "end": 31,
+              "ent": "Rutherford",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 21,
+              "type": "PERSON"
+            },
+            {
+              "end": 102,
+              "ent": "the World Athletics Championships",
+              "in_source": false,
+              "label": "Unknown",
+              "start": 69,
+              "type": "ORG"
+            }
+          ],
+          "summary": "Great Britain's Greg Rutherford is through to the long jump final at the World Athletics Championships."
+        },
+        "37726408": {
+          "banned_phrases": [
+            "four years",
+            "three years"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> A paedophile has been jailed for four years",
+              "<pad> A paedophile who was caught after being confronted by a vigilante group has been jailed for four years",
+              "<pad> A paedophile who was caught after being confronted by a vigilante group has been jailed for three years",
+              "<pad> A paedophile who was confronted by a vigilante group when he tried to meet an 11-year-old girl has been jailed for four years",
+              "<pad> A paedophile who was confronted by a vigilante group when he tried to meet an 11-year-old girl has been jailed for three years",
+              "<pad> A paedophile who was confronted by a vigilante group when he tried to meet an 11-year-old girl he thought was his daughter has been jailed for four years",
+              "<pad> A paedophile who was confronted by a vigilante group when he tried to meet an 11-year-old girl he thought was his daughter has been jailed for three years"
+            ],
+            "n_words_checked": 141,
+            "score": -1.9365886449813843
+          },
+          "labeled_entities": [
+            {
+              "end": 89,
+              "ent": "11-year-old",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 78,
+              "type": "DATE"
+            },
+            {
+              "end": 154,
+              "ent": "eight years",
+              "in_source": false,
+              "label": "Unknown",
+              "start": 143,
+              "type": "DATE"
+            }
+          ],
+          "summary": "A paedophile who was confronted by a vigilante group when he tried to meet an 11-year-old girl he thought was his daughter has been jailed for eight years."
         },
         "37819847": {
           "banned_phrases": [
@@ -5501,7 +6175,7 @@
               "<pad> A thick smog blanketed the northern part of the Indian capital, Delhi, on Monday morning as the city celebrated the New Year"
             ],
             "n_words_checked": 135,
-            "score": -4.052090644836426
+            "score": -4.052091598510742
           },
           "labeled_entities": [
             {
@@ -5557,7 +6231,7 @@
               "<pad> Carrick Rangers have signed former Crusaders player David McAllister on a deal until the end of the season"
             ],
             "n_words_checked": 74,
-            "score": -1.7159297466278076
+            "score": -1.7159302234649658
           },
           "labeled_entities": [
             {
@@ -5603,6 +6277,43 @@
           ],
           "summary": "Carrick Rangers have signed former Crusaders player David McAllister on a two-year deal."
         },
+        "38980980": {
+          "banned_phrases": [
+            "South Lanarkshire",
+            "five years",
+            "six years"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> A man has been jailed for five years",
+              "<pad> A man has been jailed for six years",
+              "<pad> A man who robbed a post office andbistro in South Lanarkshire",
+              "<pad> A man has been jailed for seven years for assaulting a post office worker during an armed robbery in South Lanarkshire",
+              "<pad> A man has been jailed for seven years after being convicted of a knifepoint robbery at a post office in South Lanarkshire"
+            ],
+            "n_words_checked": 98,
+            "score": -1.9418158531188965
+          },
+          "labeled_entities": [
+            {
+              "end": 37,
+              "ent": "seven years",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 26,
+              "type": "DATE"
+            },
+            {
+              "end": 110,
+              "ent": "Edinburgh",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 101,
+              "type": "GPE"
+            }
+          ],
+          "summary": "A man has been jailed for seven years for assaulting a post office worker during an armed robbery in Edinburgh."
+        },
         "40424712": {
           "banned_phrases": [
             "Martin",
@@ -5614,7 +6325,7 @@
               "<pad> Leyton Orient have re-appointed Martin"
             ],
             "n_words_checked": 75,
-            "score": -2.2365903854370117
+            "score": -2.236588954925537
           },
           "labeled_entities": [
             {
@@ -5648,6 +6359,7 @@
           "banned_phrases": [
             "Andy",
             "Chris",
+            "Jim",
             "Richard"
           ],
           "generation_metadata": {
@@ -5656,15 +6368,16 @@
               "<pad> Centuries from Chris",
               "<pad> Openers Chris",
               "<pad> Northamptonshire pair Chris",
+              "<pad> Northamptonshire pair Jim",
               "<pad> Northamptonshire's Chris",
-              "<pad> Northamptonshire pair Jim Wakely and Andy",
-              "<pad> Northamptonshire pair Jim Wakely and Richard",
-              "<pad> Northamptonshire's Jim Wakely and Andy",
+              "<pad> Northamptonshire's Jim",
+              "<pad> Northamptonshire pair Ben Wakely and Andy",
+              "<pad> Northamptonshire pair Ben Wakely and Richard",
               "<pad> Northamptonshire's Ben Wakely and Andy",
-              "<pad> Northamptonshire's Jim Wakely and Richard"
+              "<pad> Northamptonshire's Ben Wakely and Richard"
             ],
-            "n_words_checked": 103,
-            "score": -2.5867202281951904
+            "n_words_checked": 101,
+            "score": -2.860877752304077
           },
           "labeled_entities": [
             {
@@ -5677,7 +6390,7 @@
             },
             {
               "end": 22,
-              "ent": "Jim",
+              "ent": "Ben",
               "in_source": false,
               "label": "Unknown",
               "start": 19,
@@ -5722,17 +6435,45 @@
               "label": "Non-hallucinated",
               "start": 105,
               "type": "GPE"
-            },
-            {
-              "end": 135,
-              "ent": "Wantage Road",
-              "in_source": false,
-              "label": "Unknown",
-              "start": 123,
-              "type": "FAC"
             }
           ],
-          "summary": "Northamptonshire's Jim Wakely and Tom Keogh hit centuries to put their side in a strong position against Leicestershire at Wantage Road."
+          "summary": "Northamptonshire's Ben Wakely and Tom Keogh hit centuries to put their side in a strong position against Leicestershire."
+        },
+        "40625655": {
+          "banned_phrases": [
+            "12-year-old",
+            "13-year-old"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> A man who raped and killed a 12-year-old",
+              "<pad> A man has been jailed for life for killing and raping a 12-year-old",
+              "<pad> A man has been jailed for life for the manslaughter and rape of a 12-year-old",
+              "<pad> A man has been jailed for life for the rape and manslaughter of a 12-year-old",
+              "<pad> A man has been jailed for life for the manslaughter and rape of a 13-year-old"
+            ],
+            "n_words_checked": 85,
+            "score": -2.190124750137329
+          },
+          "labeled_entities": [
+            {
+              "end": 77,
+              "ent": "12-year old",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "start": 66,
+              "type": "DATE"
+            },
+            {
+              "end": 90,
+              "ent": "1976",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 86,
+              "type": "DATE"
+            }
+          ],
+          "summary": "A man has been jailed for life for the manslaughter and rape of a 12-year old girl in 1976."
         }
       }
     },
@@ -5740,108 +6481,108 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 58,
-            "Intrinsic Hallucination": 3,
-            "Non-factual Hallucination": 4,
-            "Non-hallucinated": 181,
-            "Unknown": 92
+            "Factual Hallucination": 111,
+            "Intrinsic Hallucination": 7,
+            "Non-factual Hallucination": 6,
+            "Non-hallucinated": 179,
+            "Unknown": 40
           },
           "type": {
             "CARDINAL": {
-              "Factual Hallucination": 4,
+              "Factual Hallucination": 9,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 5,
-              "Unknown": 8,
+              "Unknown": 3,
               "total": 17
             },
             "DATE": {
-              "Factual Hallucination": 8,
+              "Factual Hallucination": 16,
               "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 2,
               "Non-hallucinated": 4,
-              "Unknown": 23,
-              "total": 38
+              "Unknown": 13,
+              "total": 36
             },
             "EVENT": {
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 2,
-              "Unknown": 1,
+              "Unknown": 0,
               "total": 5
             },
             "FAC": {
-              "Factual Hallucination": 1,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 3,
-              "Unknown": 3,
+              "Unknown": 1,
               "total": 7
             },
             "GPE": {
-              "Factual Hallucination": 12,
+              "Factual Hallucination": 23,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
-              "Non-hallucinated": 50,
-              "Unknown": 18,
-              "total": 80
+              "Non-hallucinated": 51,
+              "Unknown": 7,
+              "total": 81
             },
             "LOC": {
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 0,
-              "Unknown": 2,
+              "Unknown": 1,
               "total": 4
             },
             "MONEY": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 1,
-              "Unknown": 1,
+              "Unknown": 0,
               "total": 2
             },
             "NORP": {
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 4,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 10,
-              "Unknown": 3,
+              "Unknown": 1,
               "total": 15
             },
             "ORDINAL": {
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 4,
-              "Unknown": 2,
+              "Unknown": 1,
               "total": 8
             },
             "ORG": {
-              "Factual Hallucination": 8,
+              "Factual Hallucination": 17,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 22,
-              "Unknown": 13,
-              "total": 43
+              "Unknown": 5,
+              "total": 44
             },
             "PERCENT": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 1,
-              "Unknown": 1,
+              "Unknown": 0,
               "total": 2
             },
             "PERSON": {
-              "Factual Hallucination": 15,
-              "Intrinsic Hallucination": 2,
-              "Non-factual Hallucination": 2,
-              "Non-hallucinated": 77,
-              "Unknown": 17,
-              "total": 113
+              "Factual Hallucination": 26,
+              "Intrinsic Hallucination": 6,
+              "Non-factual Hallucination": 3,
+              "Non-hallucinated": 74,
+              "Unknown": 8,
+              "total": 117
             },
             "PRODUCT": {
               "Factual Hallucination": 0,
@@ -5850,6 +6591,14 @@
               "Non-hallucinated": 2,
               "Unknown": 0,
               "total": 2
+            },
+            "QUANTITY": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 1,
+              "Non-hallucinated": 0,
+              "Unknown": 0,
+              "total": 1
             },
             "TIME": {
               "Factual Hallucination": 1,
@@ -5870,12 +6619,12 @@
           }
         },
         "summary": {
-          "completed": 96,
-          "factual": 40,
-          "failed": 1,
-          "non_factual": 4,
+          "completed": 95,
+          "factual": 67,
+          "failed": 0,
+          "non_factual": 6,
           "total": 100,
-          "unknown": 55
+          "unknown": 27
         }
       },
       "summaries": {
@@ -5891,8 +6640,8 @@
               "<pad> A 20-year-old",
               "<pad> A 21-year-old"
             ],
-            "n_words_checked": 80,
-            "score": -1.27454674243927
+            "n_words_checked": 84,
+            "score": -1.2745475769042969
           },
           "labeled_entities": [
             {
@@ -5939,7 +6688,7 @@
               "<pad> One of Scotland's busiest railway stations is to be closed for more than a year"
             ],
             "n_words_checked": 92,
-            "score": -2.394779920578003
+            "score": -2.3947808742523193
           },
           "labeled_entities": [
             {
@@ -5969,6 +6718,123 @@
           ],
           "summary": "One of Scotland's busiest railway stations is to be closed for more than six weeks for major engineering work."
         },
+        "36301083": {
+          "banned_phrases": [
+            "Nordtve",
+            "NordtveIt",
+            "Nordtveit"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> West Ham have signed Norway midfielder Havard Nordtveit",
+              "<pad> West Ham have signed Norway winger Havard Nordtveit",
+              "<pad> West Ham United have signed Norway midfielder Havard Nordtveit",
+              "<pad> West Ham United have signed Norway midfielder Havard NordtveIt",
+              "<pad> West Ham have completed the signing of Norway midfielder Havard Nordtveit",
+              "<pad> West Ham have completed the signing of Norway midfielder Havard NordtveIt"
+            ],
+            "n_words_checked": 96,
+            "score": -2.037328004837036
+          },
+          "labeled_entities": [
+            {
+              "end": 15,
+              "ent": "West Ham United",
+              "in_source": false,
+              "label": "Unknown",
+              "start": 0,
+              "type": "GPE"
+            },
+            {
+              "end": 34,
+              "ent": "Norway",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 28,
+              "type": "GPE"
+            },
+            {
+              "end": 52,
+              "ent": "Havard",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 46,
+              "type": "PERSON"
+            },
+            {
+              "end": 60,
+              "ent": "Nordtve",
+              "in_source": true,
+              "label": "Non-factual Hallucination",
+              "start": 53,
+              "type": "PERSON"
+            },
+            {
+              "end": 112,
+              "ent": "Borussia Monchengladbach",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 88,
+              "type": "ORG"
+            }
+          ],
+          "summary": "West Ham United have signed Norway midfielder Havard Nordtve It on a free transfer from Borussia Monchengladbach for an undisclosed fee."
+        },
+        "36498934": {
+          "banned_phrases": [
+            "first",
+            "next month",
+            "next month's",
+            "next week's"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> Spain's left-wing Podemos (We Can) party and the Socialists (PSOE) are campaigning together for the first",
+              "<pad> Spain's left-wing Podemos (We Can) party and the Socialists (PSOE) have launched their campaigns for next month",
+              "<pad> Spain's left-wing Podemos (We Can) party and the centre-left Socialist (PSOE) are campaigning together for the first",
+              "<pad> Spain's left-wing Podemos (We Can) party and the Socialists (PSOE) have launched their campaigns for next week's",
+              "<pad> Spain's left-wing Podemos (We Can) party and the centre-left Socialist (PSOE) are campaigning together for the second time in six months ahead of a general election next month",
+              "<pad> Spain's left-wing Podemos (We Can) party and the centre-left Socialist (PSOE) are campaigning together for the second time in six months, ahead of a general election next month"
+            ],
+            "n_words_checked": 143,
+            "score": -2.3594186305999756
+          },
+          "labeled_entities": [
+            {
+              "end": 5,
+              "ent": "Spain",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 0,
+              "type": "GPE"
+            },
+            {
+              "end": 40,
+              "ent": "Podemos (We Can) party",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 18,
+              "type": "ORG"
+            },
+            {
+              "end": 59,
+              "ent": "Socialists",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 49,
+              "type": "NORP"
+            },
+            {
+              "end": 65,
+              "ent": "PSOE",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 61,
+              "type": "ORG"
+            }
+          ],
+          "summary": "Spain's left-wing Podemos (We Can) party and the Socialists (PSOE) have launched their campaigns for the country's general election."
+        },
         "38605405": {
           "banned_phrases": [
             "David",
@@ -5992,7 +6858,7 @@
               "<pad> Carrick Rangers have completed the signing of former Crusaders player Darren McAllister on a deal until the end of the season"
             ],
             "n_words_checked": 85,
-            "score": -2.139652967453003
+            "score": -2.139653444290161
           },
           "labeled_entities": [
             {
@@ -6053,7 +6919,7 @@
               "<pad> Leyton Orient have re-appointed former player and director of professional Darts Paul"
             ],
             "n_words_checked": 87,
-            "score": -3.516052722930908
+            "score": -3.516056537628174
           },
           "labeled_entities": [
             {
@@ -6087,6 +6953,7 @@
           "banned_phrases": [
             "Andy",
             "Chris",
+            "Jim",
             "Richard",
             "Tom"
           ],
@@ -6096,19 +6963,124 @@
               "<pad> Centuries from Chris",
               "<pad> Openers Chris",
               "<pad> Northamptonshire pair Chris",
+              "<pad> Northamptonshire pair Jim",
               "<pad> Northamptonshire's Chris",
-              "<pad> Northamptonshire pair Jim Wakely and Andy",
-              "<pad> Northamptonshire pair Jim Wakely and Richard",
-              "<pad> Northamptonshire's Jim Wakely and Andy",
+              "<pad> Northamptonshire's Jim",
+              "<pad> Northamptonshire pair Ben Wakely and Andy",
+              "<pad> Northamptonshire pair Ben Wakely and Tom",
+              "<pad> Northamptonshire pair Ben Wakely and Richard",
               "<pad> Northamptonshire's Ben Wakely and Andy",
-              "<pad> Northamptonshire's Jim Wakely and Richard",
-              "<pad> Northamptonshire's Jim Wakely and Tom"
+              "<pad> Northamptonshire's Ben Wakely and Tom",
+              "<pad> Northamptonshire's Ben Wakely and Richard"
             ],
-            "n_words_checked": 30,
-            "score": -Infinity
+            "n_words_checked": 104,
+            "score": -2.663126230239868
           },
-          "labeled_entities": [],
-          "summary": "<Failed generation: blocked all beams>"
+          "labeled_entities": [
+            {
+              "end": 16,
+              "ent": "Northamptonshire",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 0,
+              "type": "GPE"
+            },
+            {
+              "end": 22,
+              "ent": "Ben",
+              "in_source": false,
+              "label": "Unknown",
+              "start": 19,
+              "type": "PERSON"
+            },
+            {
+              "end": 29,
+              "ent": "Wakely",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 23,
+              "type": "PERSON"
+            },
+            {
+              "end": 38,
+              "ent": "Matt",
+              "in_source": false,
+              "label": "Unknown",
+              "start": 34,
+              "type": "PERSON"
+            },
+            {
+              "end": 44,
+              "ent": "Keogh",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 39,
+              "type": "PERSON"
+            },
+            {
+              "end": 58,
+              "ent": "centuries",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 49,
+              "type": "DATE"
+            },
+            {
+              "end": 120,
+              "ent": "Leicestershire",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 106,
+              "type": "GPE"
+            },
+            {
+              "end": 136,
+              "ent": "Wantage Road",
+              "in_source": false,
+              "label": "Factual Hallucination",
+              "start": 124,
+              "type": "FAC"
+            }
+          ],
+          "summary": "Northamptonshire's Ben Wakely and Matt Keogh hit centuries to put their side in a strong position against Leicestershire at Wantage Road."
+        },
+        "40625655": {
+          "banned_phrases": [
+            "12-year old",
+            "12-year-old",
+            "13-year-old"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> A man who raped and killed a 12-year-old",
+              "<pad> A man has been jailed for life for killing and raping a 12-year-old",
+              "<pad> A man has been jailed for life for the manslaughter and rape of a 12-year old",
+              "<pad> A man has been jailed for life for the manslaughter and rape of a 12-year-old",
+              "<pad> A man has been jailed for life for the rape and manslaughter of a 12-year-old",
+              "<pad> A man has been jailed for life for the manslaughter and rape of a 13-year-old"
+            ],
+            "n_words_checked": 84,
+            "score": -2.273081064224243
+          },
+          "labeled_entities": [
+            {
+              "end": 69,
+              "ent": "12-",
+              "in_source": true,
+              "label": "Non-factual Hallucination",
+              "start": 66,
+              "type": "QUANTITY"
+            },
+            {
+              "end": 91,
+              "ent": "1976",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 87,
+              "type": "DATE"
+            }
+          ],
+          "summary": "A man has been jailed for life for the manslaughter and rape of a 12-year- old girl in 1976."
         }
       }
     },
@@ -6116,108 +7088,116 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 56,
-            "Intrinsic Hallucination": 3,
-            "Non-factual Hallucination": 1,
-            "Non-hallucinated": 176,
-            "Unknown": 92
+            "Factual Hallucination": 109,
+            "Intrinsic Hallucination": 7,
+            "Non-factual Hallucination": 3,
+            "Non-hallucinated": 174,
+            "Unknown": 40
           },
           "type": {
             "CARDINAL": {
-              "Factual Hallucination": 4,
+              "Factual Hallucination": 9,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 4,
-              "Unknown": 8,
+              "Unknown": 3,
               "total": 16
             },
             "DATE": {
-              "Factual Hallucination": 8,
+              "Factual Hallucination": 16,
               "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 4,
-              "Unknown": 23,
-              "total": 36
+              "Unknown": 13,
+              "total": 34
             },
             "EVENT": {
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 2,
-              "Unknown": 1,
+              "Unknown": 0,
               "total": 5
             },
             "FAC": {
-              "Factual Hallucination": 1,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 3,
-              "Unknown": 3,
+              "Unknown": 1,
               "total": 7
             },
             "GPE": {
-              "Factual Hallucination": 11,
+              "Factual Hallucination": 22,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
-              "Non-hallucinated": 49,
-              "Unknown": 18,
-              "total": 78
+              "Non-hallucinated": 50,
+              "Unknown": 7,
+              "total": 79
             },
             "LOC": {
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 0,
-              "Unknown": 2,
+              "Unknown": 1,
               "total": 4
             },
             "MONEY": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 1,
-              "Unknown": 1,
+              "Unknown": 0,
               "total": 2
             },
             "NORP": {
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 4,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 10,
-              "Unknown": 3,
+              "Unknown": 1,
               "total": 15
             },
             "ORDINAL": {
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 4,
-              "Unknown": 2,
+              "Unknown": 1,
               "total": 8
             },
             "ORG": {
-              "Factual Hallucination": 7,
+              "Factual Hallucination": 16,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 22,
-              "Unknown": 13,
-              "total": 42
+              "Unknown": 5,
+              "total": 43
             },
             "PERCENT": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 1,
-              "Unknown": 1,
+              "Unknown": 0,
               "total": 2
             },
             "PERSON": {
-              "Factual Hallucination": 15,
-              "Intrinsic Hallucination": 2,
+              "Factual Hallucination": 26,
+              "Intrinsic Hallucination": 6,
+              "Non-factual Hallucination": 2,
+              "Non-hallucinated": 73,
+              "Unknown": 8,
+              "total": 115
+            },
+            "QUANTITY": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 1,
-              "Non-hallucinated": 76,
-              "Unknown": 17,
-              "total": 111
+              "Non-hallucinated": 0,
+              "Unknown": 0,
+              "total": 1
             },
             "TIME": {
               "Factual Hallucination": 1,
@@ -6239,11 +7219,11 @@
         },
         "summary": {
           "completed": 99,
-          "factual": 40,
-          "failed": 4,
-          "non_factual": 1,
+          "factual": 67,
+          "failed": 3,
+          "non_factual": 3,
           "total": 100,
-          "unknown": 55
+          "unknown": 27
         }
       },
       "summaries": {
@@ -6346,8 +7326,8 @@
               "<pad> Leyton Orient have re-appointed former player and director of professional Darts Paul",
               "<pad> Leyton Orient have re-appointed former player and director of professional Darts David"
             ],
-            "n_words_checked": 78,
-            "score": -3.5793702602386475
+            "n_words_checked": 82,
+            "score": -3.579371213912964
           },
           "labeled_entities": [
             {
@@ -6376,6 +7356,45 @@
             }
           ],
           "summary": "Leyton Orient have re-appointed former player and director of professional Darts John Porter as their new chairman."
+        },
+        "40625655": {
+          "banned_phrases": [
+            "12-",
+            "12-year old",
+            "12-year-old",
+            "13-year-old"
+          ],
+          "generation_metadata": {
+            "dropped_seqs": [
+              "<pad> A man who raped and killed a 12-year-old",
+              "<pad> A man has been jailed for life for killing and raping a 12-year-old",
+              "<pad> A man has been jailed for life for the manslaughter and rape of a 12-year old",
+              "<pad> A man has been jailed for life for the manslaughter and rape of a 12-year-old",
+              "<pad> A man has been jailed for life for the rape and manslaughter of a 12-year-old",
+              "<pad> A man has been jailed for life for the manslaughter and rape of a 13-year-old"
+            ],
+            "n_words_checked": 80,
+            "score": -2.2730798721313477
+          },
+          "labeled_entities": [
+            {
+              "end": 69,
+              "ent": "12-",
+              "in_source": true,
+              "label": "Non-factual Hallucination",
+              "start": 66,
+              "type": "QUANTITY"
+            },
+            {
+              "end": 91,
+              "ent": "1976",
+              "in_source": true,
+              "label": "Non-hallucinated",
+              "start": 87,
+              "type": "DATE"
+            }
+          ],
+          "summary": "A man has been jailed for life for the manslaughter and rape of a 12-year- old girl in 1976."
         }
       }
     },
@@ -6383,108 +7402,116 @@
       "stats": {
         "entity": {
           "label": {
-            "Factual Hallucination": 55,
-            "Intrinsic Hallucination": 3,
-            "Non-factual Hallucination": 0,
-            "Non-hallucinated": 175,
-            "Unknown": 92
+            "Factual Hallucination": 108,
+            "Intrinsic Hallucination": 7,
+            "Non-factual Hallucination": 2,
+            "Non-hallucinated": 173,
+            "Unknown": 40
           },
           "type": {
             "CARDINAL": {
-              "Factual Hallucination": 4,
+              "Factual Hallucination": 9,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 4,
-              "Unknown": 8,
+              "Unknown": 3,
               "total": 16
             },
             "DATE": {
-              "Factual Hallucination": 8,
+              "Factual Hallucination": 16,
               "Intrinsic Hallucination": 1,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 4,
-              "Unknown": 23,
-              "total": 36
+              "Unknown": 13,
+              "total": 34
             },
             "EVENT": {
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 2,
-              "Unknown": 1,
+              "Unknown": 0,
               "total": 5
             },
             "FAC": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 2,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 3,
-              "Unknown": 3,
+              "Unknown": 1,
               "total": 6
             },
             "GPE": {
-              "Factual Hallucination": 11,
+              "Factual Hallucination": 22,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
-              "Non-hallucinated": 49,
-              "Unknown": 18,
-              "total": 78
+              "Non-hallucinated": 50,
+              "Unknown": 7,
+              "total": 79
             },
             "LOC": {
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 0,
-              "Unknown": 2,
+              "Unknown": 1,
               "total": 4
             },
             "MONEY": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 1,
-              "Unknown": 1,
+              "Unknown": 0,
               "total": 2
             },
             "NORP": {
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 4,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 10,
-              "Unknown": 3,
+              "Unknown": 1,
               "total": 15
             },
             "ORDINAL": {
-              "Factual Hallucination": 2,
+              "Factual Hallucination": 3,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 4,
-              "Unknown": 2,
+              "Unknown": 1,
               "total": 8
             },
             "ORG": {
-              "Factual Hallucination": 7,
+              "Factual Hallucination": 16,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 22,
-              "Unknown": 13,
-              "total": 42
+              "Unknown": 5,
+              "total": 43
             },
             "PERCENT": {
-              "Factual Hallucination": 0,
+              "Factual Hallucination": 1,
               "Intrinsic Hallucination": 0,
               "Non-factual Hallucination": 0,
               "Non-hallucinated": 1,
-              "Unknown": 1,
+              "Unknown": 0,
               "total": 2
             },
             "PERSON": {
-              "Factual Hallucination": 15,
-              "Intrinsic Hallucination": 2,
-              "Non-factual Hallucination": 0,
-              "Non-hallucinated": 75,
-              "Unknown": 17,
-              "total": 109
+              "Factual Hallucination": 26,
+              "Intrinsic Hallucination": 6,
+              "Non-factual Hallucination": 1,
+              "Non-hallucinated": 72,
+              "Unknown": 8,
+              "total": 113
+            },
+            "QUANTITY": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 1,
+              "Non-hallucinated": 0,
+              "Unknown": 0,
+              "total": 1
             },
             "TIME": {
               "Factual Hallucination": 1,
@@ -6506,11 +7533,11 @@
         },
         "summary": {
           "completed": 100,
-          "factual": 40,
-          "failed": 5,
-          "non_factual": 0,
+          "factual": 67,
+          "failed": 4,
+          "non_factual": 2,
           "total": 100,
-          "unknown": 55
+          "unknown": 27
         }
       },
       "summaries": {
@@ -6553,5 +7580,5 @@
       }
     }
   },
-  "timestamp": 1655055453.833816
+  "timestamp": 1655405711.1710794
 }

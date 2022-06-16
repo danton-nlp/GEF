@@ -1,8 +1,8 @@
 {
   "args": {
     "annotate": false,
-    "batch_size": 2,
-    "classifier_batch_size": 4,
+    "batch_size": 10,
+    "classifier_batch_size": 16,
     "data_subset": "pegasus-test-extrinsic",
     "entity_label_match": "contained",
     "max_iterations": 10,
@@ -154,8 +154,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 114,
-            "score": -1.9929869174957275
+            "n_words_checked": 118,
+            "score": -1.9929863214492798
           },
           "labeled_entities": [
             {
@@ -245,7 +245,7 @@
               "end": 107,
               "ent": "Berlin",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 101,
               "type": "GPE"
@@ -257,8 +257,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 79,
-            "score": -2.3058340549468994
+            "n_words_checked": 83,
+            "score": -2.305833578109741
           },
           "labeled_entities": [
             {
@@ -304,8 +304,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 97,
-            "score": -2.5542197227478027
+            "n_words_checked": 101,
+            "score": -2.55422043800354
           },
           "labeled_entities": [
             {
@@ -321,7 +321,7 @@
               "end": 62,
               "ent": "Pacific Ocean",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 49,
               "type": "LOC"
@@ -334,7 +334,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 97,
-            "score": -1.0292785167694092
+            "score": -1.0292778015136719
           },
           "labeled_entities": [
             {
@@ -350,7 +350,7 @@
               "end": 59,
               "ent": "Ehud",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 55,
               "type": "PERSON"
@@ -371,8 +371,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 126,
-            "score": -1.8980169296264648
+            "n_words_checked": 130,
+            "score": -1.8980157375335693
           },
           "labeled_entities": [
             {
@@ -437,14 +437,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 126,
-            "score": -2.2936885356903076
+            "score": -2.293689250946045
           },
           "labeled_entities": [
             {
               "end": 30,
               "ent": "The Funding for Lending Scheme",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 0,
               "type": "ORG"
@@ -462,7 +462,7 @@
               "end": 103,
               "ent": "March 2009",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 93,
               "type": "DATE"
@@ -482,7 +482,7 @@
               "end": 19,
               "ent": "Bradley",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 12,
               "type": "PERSON"
@@ -500,7 +500,7 @@
               "end": 41,
               "ent": "Helen",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 36,
               "type": "PERSON"
@@ -518,7 +518,7 @@
               "end": 60,
               "ent": "Heather",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 53,
               "type": "PERSON"
@@ -536,7 +536,7 @@
               "end": 89,
               "ent": "Michael",
               "in_source": true,
-              "label": "Non-hallucinated",
+              "label": "Intrinsic Hallucination",
               "predicted_label": "Non-hallucinated",
               "start": 82,
               "type": "PERSON"
@@ -545,7 +545,7 @@
               "end": 98,
               "ent": "Jamieson",
               "in_source": true,
-              "label": "Non-hallucinated",
+              "label": "Intrinsic Hallucination",
               "predicted_label": "Non-hallucinated",
               "start": 90,
               "type": "PERSON"
@@ -554,7 +554,7 @@
               "end": 141,
               "ent": "Great Britain",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 128,
               "type": "GPE"
@@ -563,7 +563,7 @@
               "end": 153,
               "ent": "day four",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 145,
               "type": "DATE"
@@ -585,7 +585,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 72,
-            "score": -2.4622302055358887
+            "score": -2.4622304439544678
           },
           "labeled_entities": [
             {
@@ -601,7 +601,7 @@
               "end": 46,
               "ent": "the past 10 years",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 29,
               "type": "DATE"
@@ -614,7 +614,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 119,
-            "score": -1.8036192655563354
+            "score": -1.8036185503005981
           },
           "labeled_entities": [
             {
@@ -630,7 +630,7 @@
               "end": 34,
               "ent": "Alex",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 30,
               "type": "PERSON"
@@ -660,8 +660,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 84,
-            "score": -1.3718485832214355
+            "n_words_checked": 86,
+            "score": -1.3718492984771729
           },
           "labeled_entities": [
             {
@@ -707,8 +707,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 108,
-            "score": -1.3535889387130737
+            "n_words_checked": 112,
+            "score": -1.3535888195037842
           },
           "labeled_entities": [
             {
@@ -791,7 +791,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 109,
-            "score": -2.1169793605804443
+            "score": -2.116978883743286
           },
           "labeled_entities": [
             {
@@ -864,8 +864,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 106,
-            "score": -1.8618916273117065
+            "n_words_checked": 110,
+            "score": -1.8618921041488647
           },
           "labeled_entities": [
             {
@@ -949,8 +949,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 82,
-            "score": -1.288934588432312
+            "n_words_checked": 84,
+            "score": -1.2889338731765747
           },
           "labeled_entities": [
             {
@@ -978,8 +978,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 104,
-            "score": -2.1747751235961914
+            "n_words_checked": 108,
+            "score": -2.1747772693634033
           },
           "labeled_entities": [
             {
@@ -1026,7 +1026,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 66,
-            "score": -1.6448308229446411
+            "score": -1.64482843875885
           },
           "labeled_entities": [
             {
@@ -1064,7 +1064,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 59,
-            "score": -2.3986306190490723
+            "score": -2.398632049560547
           },
           "labeled_entities": [
             {
@@ -1084,14 +1084,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 124,
-            "score": -2.1893677711486816
+            "score": -2.1893670558929443
           },
           "labeled_entities": [
             {
               "end": 23,
               "ent": "the past few weeks",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 5,
               "type": "DATE"
@@ -1100,7 +1100,7 @@
               "end": 71,
               "ent": "thousands",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 62,
               "type": "CARDINAL"
@@ -1131,7 +1131,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 87,
-            "score": -1.569557785987854
+            "score": -1.5695589780807495
           },
           "labeled_entities": [
             {
@@ -1169,7 +1169,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 67,
-            "score": -1.5788934230804443
+            "score": -1.5788936614990234
           },
           "labeled_entities": [
             {
@@ -1189,7 +1189,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 74,
-            "score": -1.0844398736953735
+            "score": -1.0844395160675049
           },
           "labeled_entities": [
             {
@@ -1208,8 +1208,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 104,
-            "score": -2.110511064529419
+            "n_words_checked": 106,
+            "score": -2.1105105876922607
           },
           "labeled_entities": [
             {
@@ -1255,8 +1255,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 80,
-            "score": -1.07863187789917
+            "n_words_checked": 84,
+            "score": -1.0786322355270386
           },
           "labeled_entities": [
             {
@@ -1293,15 +1293,15 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 105,
-            "score": -1.7712829113006592
+            "n_words_checked": 109,
+            "score": -1.7712830305099487
           },
           "labeled_entities": [
             {
               "end": 33,
               "ent": "Jonathan",
               "in_source": true,
-              "label": "Non-hallucinated",
+              "label": "Intrinsic Hallucination",
               "predicted_label": "Non-hallucinated",
               "start": 25,
               "type": "PERSON"
@@ -1310,7 +1310,7 @@
               "end": 38,
               "ent": "Bell",
               "in_source": true,
-              "label": "Non-hallucinated",
+              "label": "Intrinsic Hallucination",
               "predicted_label": "Non-hallucinated",
               "start": 34,
               "type": "PERSON"
@@ -1328,7 +1328,7 @@
               "end": 152,
               "ent": "County Antrim",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 139,
               "type": "GPE"
@@ -1340,8 +1340,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 78,
-            "score": -2.299333095550537
+            "n_words_checked": 82,
+            "score": -2.2993335723876953
           },
           "labeled_entities": [
             {
@@ -1378,15 +1378,15 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 118,
-            "score": -1.7553728818893433
+            "n_words_checked": 121,
+            "score": -1.7553725242614746
           },
           "labeled_entities": [
             {
               "end": 109,
               "ent": "two",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 106,
               "type": "CARDINAL"
@@ -1398,8 +1398,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 88,
-            "score": -1.7455785274505615
+            "n_words_checked": 92,
+            "score": -1.7455788850784302
           },
           "labeled_entities": [
             {
@@ -1436,8 +1436,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 103,
-            "score": -1.650121808052063
+            "n_words_checked": 106,
+            "score": -1.6501219272613525
           },
           "labeled_entities": [
             {
@@ -1457,7 +1457,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 157,
-            "score": -2.7531187534332275
+            "score": -2.753117561340332
           },
           "labeled_entities": [
             {
@@ -1477,14 +1477,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 96,
-            "score": -2.656795024871826
+            "score": -2.656794548034668
           },
           "labeled_entities": [
             {
               "end": 33,
               "ent": "2015",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 29,
               "type": "CARDINAL"
@@ -1497,7 +1497,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 84,
-            "score": -0.19310928881168365
+            "score": -0.19310946762561798
           },
           "labeled_entities": [
             {
@@ -1526,7 +1526,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 87,
-            "score": -1.8714936971664429
+            "score": -1.8714951276779175
           },
           "labeled_entities": [
             {
@@ -1564,14 +1564,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -0.9120534062385559
+            "score": -0.9120542407035828
           },
           "labeled_entities": [
             {
               "end": 5,
               "ent": "Three",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 0,
               "type": "CARDINAL"
@@ -1592,8 +1592,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 79,
-            "score": -1.421406865119934
+            "n_words_checked": 83,
+            "score": -1.4214049577713013
           },
           "labeled_entities": [
             {
@@ -1648,8 +1648,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 92,
-            "score": -1.1471017599105835
+            "n_words_checked": 95,
+            "score": -1.1471014022827148
           },
           "labeled_entities": [
             {
@@ -1674,7 +1674,7 @@
               "end": 83,
               "ent": "Islamic",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 76,
               "type": "NORP"
@@ -1686,8 +1686,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 108,
-            "score": -1.1031193733215332
+            "n_words_checked": 111,
+            "score": -1.1031184196472168
           },
           "labeled_entities": [
             {
@@ -1703,7 +1703,7 @@
               "end": 45,
               "ent": "Serie A",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 38,
               "type": "ORG"
@@ -1712,7 +1712,7 @@
               "end": 93,
               "ent": "AC Milan",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 85,
               "type": "ORG"
@@ -1724,15 +1724,15 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 96,
-            "score": -1.491398572921753
+            "n_words_checked": 100,
+            "score": -1.4913980960845947
           },
           "labeled_entities": [
             {
               "end": 19,
               "ent": "Peterborough United",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 0,
               "type": "GPE"
@@ -1741,7 +1741,7 @@
               "end": 34,
               "ent": "Graham",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 28,
               "type": "PERSON"
@@ -1781,7 +1781,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 129,
-            "score": -1.856553316116333
+            "score": -1.8565541505813599
           },
           "labeled_entities": [
             {
@@ -1837,7 +1837,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -1.7201480865478516
+            "score": -1.7201476097106934
           },
           "labeled_entities": [
             {
@@ -1853,7 +1853,7 @@
               "end": 19,
               "ent": "Chris",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 14,
               "type": "PERSON"
@@ -1871,7 +1871,7 @@
               "end": 68,
               "ent": "1-1",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 65,
               "type": "CARDINAL"
@@ -1889,7 +1889,7 @@
               "end": 106,
               "ent": "Cardiff",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 99,
               "type": "GPE"
@@ -1901,15 +1901,15 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 120,
-            "score": -2.0153491497039795
+            "n_words_checked": 123,
+            "score": -2.015348196029663
           },
           "labeled_entities": [
             {
               "end": 105,
               "ent": "thousands of years old",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 83,
               "type": "DATE"
@@ -1921,8 +1921,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 75,
-            "score": -1.1314791440963745
+            "n_words_checked": 78,
+            "score": -1.1314785480499268
           },
           "labeled_entities": [
             {
@@ -2005,7 +2005,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 104,
-            "score": -1.4464420080184937
+            "score": -1.4464415311813354
           },
           "labeled_entities": [
             {
@@ -2052,14 +2052,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 92,
-            "score": -1.7620437145233154
+            "score": -1.7620445489883423
           },
           "labeled_entities": [
             {
               "end": 18,
               "ent": "The European Union",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 0,
               "type": "ORG"
@@ -2068,7 +2068,7 @@
               "end": 92,
               "ent": "the Panama Papers",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 75,
               "type": "EVENT"
@@ -2080,15 +2080,15 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 116,
-            "score": -2.192857503890991
+            "n_words_checked": 120,
+            "score": -2.192856788635254
           },
           "labeled_entities": [
             {
               "end": 20,
               "ent": "West Ham United",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 5,
               "type": "GPE"
@@ -2106,7 +2106,7 @@
               "end": 68,
               "ent": "Saturday",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 60,
               "type": "DATE"
@@ -2119,7 +2119,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 82,
-            "score": -0.9725254774093628
+            "score": -0.972525954246521
           },
           "labeled_entities": [
             {
@@ -2156,8 +2156,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 96,
-            "score": -1.0121707916259766
+            "n_words_checked": 99,
+            "score": -1.0121705532073975
           },
           "labeled_entities": [
             {
@@ -2173,7 +2173,7 @@
               "end": 45,
               "ent": "Havard",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 39,
               "type": "PERSON"
@@ -2182,7 +2182,7 @@
               "end": 55,
               "ent": "Nordtveit",
               "in_source": true,
-              "label": "Non-hallucinated",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-hallucinated",
               "start": 46,
               "type": "PERSON"
@@ -2191,7 +2191,7 @@
               "end": 85,
               "ent": "Borussia Monchengladbach",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 61,
               "type": "ORG"
@@ -2203,15 +2203,15 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 104,
-            "score": -1.5450931787490845
+            "n_words_checked": 108,
+            "score": -1.5450929403305054
           },
           "labeled_entities": [
             {
               "end": 36,
               "ent": "above $50",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 27,
               "type": "MONEY"
@@ -2220,7 +2220,7 @@
               "end": 59,
               "ent": "first",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 54,
               "type": "ORDINAL"
@@ -2229,7 +2229,7 @@
               "end": 78,
               "ent": "six months",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 68,
               "type": "DATE"
@@ -2242,14 +2242,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 112,
-            "score": -1.348547339439392
+            "score": -1.3485465049743652
           },
           "labeled_entities": [
             {
               "end": 19,
               "ent": "Republic of Ireland",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 0,
               "type": "GPE"
@@ -2258,7 +2258,7 @@
               "end": 34,
               "ent": "Martin",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 28,
               "type": "PERSON"
@@ -2276,7 +2276,7 @@
               "end": 130,
               "ent": "Netherlands",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 119,
               "type": "GPE"
@@ -2285,7 +2285,7 @@
               "end": 140,
               "ent": "Dublin",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 134,
               "type": "GPE"
@@ -2298,7 +2298,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 91,
-            "score": -2.317859649658203
+            "score": -2.317859172821045
           },
           "labeled_entities": [
             {
@@ -2318,7 +2318,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 169,
-            "score": -1.8663675785064697
+            "score": -1.8663661479949951
           },
           "labeled_entities": [
             {
@@ -2374,7 +2374,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 92,
-            "score": -2.248236656188965
+            "score": -2.2482376098632812
           },
           "labeled_entities": [
             {
@@ -2421,7 +2421,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -1.597952127456665
+            "score": -1.5979520082473755
           },
           "labeled_entities": [
             {
@@ -2485,8 +2485,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 117,
-            "score": -1.95836341381073
+            "n_words_checked": 120,
+            "score": -1.9583649635314941
           },
           "labeled_entities": [
             {
@@ -2560,14 +2560,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 137,
-            "score": -2.0658090114593506
+            "score": -2.065809488296509
           },
           "labeled_entities": [
             {
               "end": 32,
               "ent": "Indian",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 26,
               "type": "NORP"
@@ -2585,7 +2585,7 @@
               "end": 56,
               "ent": "Madras",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 50,
               "type": "GPE"
@@ -2615,8 +2615,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 93,
-            "score": -1.7198468446731567
+            "n_words_checked": 97,
+            "score": -1.7198461294174194
           },
           "labeled_entities": [
             {
@@ -2654,7 +2654,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -2.1661221981048584
+            "score": -2.166121006011963
           },
           "labeled_entities": [
             {
@@ -2673,8 +2673,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 96,
-            "score": -1.203046441078186
+            "n_words_checked": 100,
+            "score": -1.2030457258224487
           },
           "labeled_entities": [
             {
@@ -2690,7 +2690,7 @@
               "end": 57,
               "ent": "Ravindra",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 49,
               "type": "PERSON"
@@ -2721,7 +2721,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 65,
-            "score": -1.2588552236557007
+            "score": -1.2588562965393066
           },
           "labeled_entities": [
             {
@@ -2749,8 +2749,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 88,
-            "score": -1.4830207824707031
+            "n_words_checked": 92,
+            "score": -1.4830214977264404
           },
           "labeled_entities": [
             {
@@ -2806,14 +2806,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 81,
-            "score": -1.8782072067260742
+            "score": -1.8782070875167847
           },
           "labeled_entities": [
             {
               "end": 22,
               "ent": "Edinburgh City Council",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 0,
               "type": "ORG"
@@ -2834,8 +2834,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 84,
-            "score": -1.943071961402893
+            "n_words_checked": 88,
+            "score": -1.943070411682129
           },
           "labeled_entities": [
             {
@@ -2864,14 +2864,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -0.8529053330421448
+            "score": -0.8529055714607239
           },
           "labeled_entities": [
             {
               "end": 21,
               "ent": "Greg",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 17,
               "type": "PERSON"
@@ -2889,7 +2889,7 @@
               "end": 80,
               "ent": "the Great North City Games",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 54,
               "type": "FAC"
@@ -2911,7 +2911,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 75,
-            "score": -1.4670146703720093
+            "score": -1.4670158624649048
           },
           "labeled_entities": [
             {
@@ -2930,8 +2930,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 84,
-            "score": -1.651065707206726
+            "n_words_checked": 88,
+            "score": -1.6510646343231201
           },
           "labeled_entities": [
             {
@@ -2987,7 +2987,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 123,
-            "score": -1.8710108995437622
+            "score": -1.871009349822998
           },
           "labeled_entities": [
             {
@@ -3016,7 +3016,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 91,
-            "score": -1.1629927158355713
+            "score": -1.1629929542541504
           },
           "labeled_entities": [
             {
@@ -3054,7 +3054,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -2.2301549911499023
+            "score": -2.230156183242798
           },
           "labeled_entities": [
             {
@@ -3157,7 +3157,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 68,
-            "score": -1.1335426568984985
+            "score": -1.1335430145263672
           },
           "labeled_entities": [
             {
@@ -3177,7 +3177,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 100,
-            "score": -1.4862902164459229
+            "score": -1.4862897396087646
           },
           "labeled_entities": [
             {
@@ -3224,7 +3224,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 104,
-            "score": -2.032886266708374
+            "score": -2.0328855514526367
           },
           "labeled_entities": [
             {
@@ -3258,7 +3258,7 @@
               "end": 82,
               "ent": "her year",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 74,
               "type": "DATE"
@@ -3270,8 +3270,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 105,
-            "score": -2.0976181030273438
+            "n_words_checked": 109,
+            "score": -2.097618341445923
           },
           "labeled_entities": [
             {
@@ -3353,8 +3353,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 88,
-            "score": -1.8081356287002563
+            "n_words_checked": 91,
+            "score": -1.8081350326538086
           },
           "labeled_entities": [
             {
@@ -3374,7 +3374,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 71,
-            "score": -0.7896833419799805
+            "score": -0.7896826267242432
           },
           "labeled_entities": [
             {
@@ -3432,7 +3432,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 74,
-            "score": -1.3012433052062988
+            "score": -1.301242470741272
           },
           "labeled_entities": [
             {
@@ -3495,7 +3495,7 @@
               "end": 15,
               "ent": "Shrewsbury Town",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 0,
               "type": "ORG"
@@ -3504,7 +3504,7 @@
               "end": 48,
               "ent": "West Bromwich Albion",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 28,
               "type": "ORG"
@@ -3513,7 +3513,7 @@
               "end": 64,
               "ent": "Lloyd",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 59,
               "type": "PERSON"
@@ -3531,7 +3531,7 @@
               "end": 108,
               "ent": "the end of the season",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 87,
               "type": "DATE"
@@ -3543,8 +3543,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 97,
-            "score": -1.0361310243606567
+            "n_words_checked": 101,
+            "score": -1.0361298322677612
           },
           "labeled_entities": [
             {
@@ -3582,7 +3582,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 60,
-            "score": -1.8000738620758057
+            "score": -1.8000730276107788
           },
           "labeled_entities": [
             {
@@ -3620,14 +3620,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 63,
-            "score": -1.6486761569976807
+            "score": -1.6486760377883911
           },
           "labeled_entities": [
             {
               "end": 24,
               "ent": "Women's Super League One",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 0,
               "type": "ORG"
@@ -3640,7 +3640,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 88,
-            "score": -2.09564471244812
+            "score": -2.095644474029541
           },
           "labeled_entities": [
             {
@@ -3687,7 +3687,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 91,
-            "score": -1.8205933570861816
+            "score": -1.8205955028533936
           },
           "labeled_entities": [
             {
@@ -3716,7 +3716,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 70,
-            "score": -1.4674227237701416
+            "score": -1.467421531677246
           },
           "labeled_entities": [
             {
@@ -3771,15 +3771,15 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 121,
-            "score": -2.3838095664978027
+            "n_words_checked": 125,
+            "score": -2.38381028175354
           },
           "labeled_entities": [
             {
               "end": 46,
               "ent": "three-year-old",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 32,
               "type": "DATE"
@@ -3810,7 +3810,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 71,
-            "score": -2.0286431312561035
+            "score": -2.028643846511841
           },
           "labeled_entities": [
             {
@@ -3857,14 +3857,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 71,
-            "score": -0.9848639965057373
+            "score": -0.9848644137382507
           },
           "labeled_entities": [
             {
               "end": 11,
               "ent": "New Zealand",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 0,
               "type": "GPE"
@@ -3900,7 +3900,7 @@
               "end": 97,
               "ent": "the end of the 2018 season",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 71,
               "type": "DATE"
@@ -3913,14 +3913,14 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 67,
-            "score": -2.1598620414733887
+            "score": -2.1598610877990723
           },
           "labeled_entities": [
             {
               "end": 42,
               "ent": "weekly",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 36,
               "type": "DATE"
@@ -3942,7 +3942,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 59,
-            "score": -0.8646013140678406
+            "score": -0.8646009564399719
           },
           "labeled_entities": [
             {
@@ -3989,7 +3989,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 82,
-            "score": -1.3507490158081055
+            "score": -1.3507487773895264
           },
           "labeled_entities": [
             {
@@ -4018,7 +4018,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 103,
-            "score": -1.9888527393341064
+            "score": -1.988852620124817
           },
           "labeled_entities": [
             {
@@ -4055,8 +4055,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 96,
-            "score": -2.468024969100952
+            "n_words_checked": 100,
+            "score": -2.4680240154266357
           },
           "labeled_entities": [
             {
@@ -4094,7 +4094,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 57,
-            "score": -2.2208855152130127
+            "score": -2.220883369445801
           },
           "labeled_entities": [
             {
@@ -4132,7 +4132,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 76,
-            "score": -1.4260205030441284
+            "score": -1.4260207414627075
           },
           "labeled_entities": [
             {
@@ -4202,7 +4202,7 @@
               "end": 113,
               "ent": "Wantage Road",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 101,
               "type": "FAC"
@@ -4215,7 +4215,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 55,
-            "score": -1.2503904104232788
+            "score": -1.2503893375396729
           },
           "labeled_entities": [
             {
@@ -4270,8 +4270,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 98,
-            "score": -1.4007985591888428
+            "n_words_checked": 102,
+            "score": -1.400797724723816
           },
           "labeled_entities": [
             {
@@ -4308,8 +4308,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 72,
-            "score": -1.1697314977645874
+            "n_words_checked": 76,
+            "score": -1.1697320938110352
           },
           "labeled_entities": [
             {
@@ -4337,8 +4337,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 106,
-            "score": -2.214362621307373
+            "n_words_checked": 110,
+            "score": -2.214362144470215
           },
           "labeled_entities": [
             {
@@ -4394,7 +4394,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 75,
-            "score": -1.1768592596054077
+            "score": -1.1768604516983032
           },
           "labeled_entities": [
             {
@@ -4590,8 +4590,8 @@
             "dropped_seqs": [
               "<pad> India's Maoist rebels began their insurgency more than 40 years ago"
             ],
-            "n_words_checked": 105,
-            "score": -2.285062074661255
+            "n_words_checked": 109,
+            "score": -2.2850639820098877
           },
           "labeled_entities": [
             {
@@ -4645,8 +4645,8 @@
               "<pad> Felix Sturm retained his WBA middleweight title with a thrilling points victory over Matt Macklin in his home city of Berlin",
               "<pad> Felix Sturm retained his WBA middleweight title with a hard-fought victory over Matt Macklin in his home city of Berlin"
             ],
-            "n_words_checked": 94,
-            "score": -1.5663244724273682
+            "n_words_checked": 98,
+            "score": -1.5663233995437622
           },
           "labeled_entities": [
             {
@@ -4719,14 +4719,14 @@
               "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009."
             ],
             "n_words_checked": 210,
-            "score": -2.207495927810669
+            "score": -2.20749568939209
           },
           "labeled_entities": [
             {
               "end": 30,
               "ent": "The Funding for Lending Scheme",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 0,
               "type": "ORG"
@@ -4771,15 +4771,15 @@
               "<pad> Cyclist Sir Bradley Wiggins, rower Helen Glover and swimmer Susie Stanning have won gold medals for Team GB on day four",
               "<pad> Cyclist Sir Bradley Wiggins, rower Helen Glover and swimmer Susie Stanning have all won gold medals for Team GB on day four"
             ],
-            "n_words_checked": 111,
-            "score": -2.1807966232299805
+            "n_words_checked": 115,
+            "score": -2.1807961463928223
           },
           "labeled_entities": [
             {
               "end": 19,
               "ent": "Bradley",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 12,
               "type": "PERSON"
@@ -4797,7 +4797,7 @@
               "end": 40,
               "ent": "Helen",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 35,
               "type": "PERSON"
@@ -4859,7 +4859,7 @@
               "<pad> India's economic growth over the past 10 years"
             ],
             "n_words_checked": 68,
-            "score": -2.5264675617218018
+            "score": -2.526468276977539
           },
           "labeled_entities": [
             {
@@ -4916,8 +4916,8 @@
               "<pad> Back in October 2010, Saracens captain Steve",
               "<pad> It was October 2010 and Saracens captain Steve"
             ],
-            "n_words_checked": 102,
-            "score": -2.500119686126709
+            "n_words_checked": 106,
+            "score": -2.5001180171966553
           },
           "labeled_entities": [
             {
@@ -4972,8 +4972,8 @@
               "<pad> Mexico's attorney general has declared that the 43",
               "<pad> Mexico's attorney general has said that the 43"
             ],
-            "n_words_checked": 104,
-            "score": -2.6040680408477783
+            "n_words_checked": 108,
+            "score": -2.6040663719177246
           },
           "labeled_entities": [
             {
@@ -5024,7 +5024,7 @@
               "<pad> County Longford, in the Republic of Ireland's midlands, was once dubbed Ireland's Silicon Valley"
             ],
             "n_words_checked": 124,
-            "score": -2.72177791595459
+            "score": -2.7217793464660645
           },
           "labeled_entities": [
             {
@@ -5059,8 +5059,8 @@
               "<pad> Hundreds of people have been killed in an earthquake in Nepal, in South Asia",
               "<pad> A massive earthquake has hit the country of Nepal in south-west Asia, in South Asia"
             ],
-            "n_words_checked": 94,
-            "score": -1.6955317258834839
+            "n_words_checked": 98,
+            "score": -1.6955327987670898
           },
           "labeled_entities": [
             {
@@ -5087,14 +5087,14 @@
               "<pad> Over the past few weeks we've been following the story of the thousands"
             ],
             "n_words_checked": 120,
-            "score": -2.4024603366851807
+            "score": -2.402459144592285
           },
           "labeled_entities": [
             {
               "end": 23,
               "ent": "the past few weeks",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 5,
               "type": "DATE"
@@ -5150,7 +5150,7 @@
               "<pad> Hundreds of people have attended the first day of a public inquiry into plans to build 500"
             ],
             "n_words_checked": 86,
-            "score": -1.6132185459136963
+            "score": -1.6132190227508545
           },
           "labeled_entities": [
             {
@@ -5205,7 +5205,7 @@
               "<pad> Charlton Athletic head coach Guy"
             ],
             "n_words_checked": 105,
-            "score": -2.6811115741729736
+            "score": -2.681112766265869
           },
           "labeled_entities": [
             {
@@ -5255,7 +5255,7 @@
             "dropped_seqs": [
               "<pad> A 19-year-old"
             ],
-            "n_words_checked": 76,
+            "n_words_checked": 80,
             "score": -1.1617300510406494
           },
           "labeled_entities": [
@@ -5301,7 +5301,7 @@
               "<pad> Former world number one John"
             ],
             "n_words_checked": 83,
-            "score": -2.3363630771636963
+            "score": -2.3363635540008545
           },
           "labeled_entities": [
             {
@@ -5347,7 +5347,7 @@
               "<pad> Chipotle Mexican Grill has been linked to an outbreak of E. coli that has made dozens of people ill across five"
             ],
             "n_words_checked": 100,
-            "score": -1.777516484260559
+            "score": -1.777517557144165
           },
           "labeled_entities": [
             {
@@ -5398,7 +5398,7 @@
               "<pad> A 70-year-old"
             ],
             "n_words_checked": 140,
-            "score": -2.5638372898101807
+            "score": -2.563840389251709
           },
           "labeled_entities": [],
           "summary": "A woman with terminal cancer who tried to kill herself because she did not want \"to live in a council flat, be poor or be ugly\" has won the right to refuse dialysis."
@@ -5414,8 +5414,8 @@
               "<pad> One of Scotland's busiest railway stations is to close for more than six months",
               "<pad> One of Scotland's busiest railway stations is to be closed for more than six months"
             ],
-            "n_words_checked": 87,
-            "score": -2.085657835006714
+            "n_words_checked": 90,
+            "score": -2.085658073425293
           },
           "labeled_entities": [
             {
@@ -5460,15 +5460,15 @@
               "<pad> Peterborough United manager Graham",
               "<pad> Peterborough United boss Graham"
             ],
-            "n_words_checked": 96,
-            "score": -2.5962131023406982
+            "n_words_checked": 100,
+            "score": -2.5962138175964355
           },
           "labeled_entities": [
             {
               "end": 19,
               "ent": "Peterborough United",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 0,
               "type": "GPE"
@@ -5477,7 +5477,7 @@
               "end": 33,
               "ent": "Frank",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 28,
               "type": "PERSON"
@@ -5504,7 +5504,7 @@
               "end": 128,
               "ent": "Oldham",
               "in_source": true,
-              "label": "Non-hallucinated",
+              "label": "Intrinsic Hallucination",
               "predicted_label": "Non-hallucinated",
               "start": 122,
               "type": "GPE"
@@ -5524,8 +5524,8 @@
               "<pad> The number of motorcyclists killed or seriously injured on London's roads has risen by more than 20% in the past five years",
               "<pad> The number of motorcyclists killed or seriously injured on London's roads has risen by more than a fifth in the past five years"
             ],
-            "n_words_checked": 133,
-            "score": -1.8949580192565918
+            "n_words_checked": 135,
+            "score": -1.8949588537216187
           },
           "labeled_entities": [
             {
@@ -5584,8 +5584,8 @@
             "dropped_seqs": [
               "<pad> A council has said it would be \"absolute madness\" to move a boulder believed to be thousands of years old"
             ],
-            "n_words_checked": 132,
-            "score": -2.13403058052063
+            "n_words_checked": 135,
+            "score": -2.134030342102051
           },
           "labeled_entities": [],
           "summary": "A council has said it would be \"absolute madness\" to move a boulder believed to date back to the time of the devil."
@@ -5603,8 +5603,8 @@
               "<pad> Philippine presidential candidate Rodrigo Duterte has been criticised for a video in which he jokes about the rape and murder of a Roman Catholic",
               "<pad> Philippine presidential candidate Rodrigo Duterte has been accused of misogyny after a video emerged showing him mocking the rape and murder of a Roman Catholic"
             ],
-            "n_words_checked": 108,
-            "score": -1.892967939376831
+            "n_words_checked": 112,
+            "score": -1.8929688930511475
           },
           "labeled_entities": [
             {
@@ -5704,7 +5704,7 @@
               "end": 77,
               "ent": "Per Mertes Nordtveit",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 57,
               "type": "GPE"
@@ -5713,7 +5713,7 @@
               "end": 107,
               "ent": "Borussia Monchengladbach",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 83,
               "type": "ORG"
@@ -5729,15 +5729,15 @@
             "dropped_seqs": [
               "<pad> The price of oil has risen above $50 a barrel for the first time in six months"
             ],
-            "n_words_checked": 108,
-            "score": -1.5720024108886719
+            "n_words_checked": 112,
+            "score": -1.5720025300979614
           },
           "labeled_entities": [
             {
               "end": 36,
               "ent": "above $50",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 27,
               "type": "MONEY"
@@ -5746,7 +5746,7 @@
               "end": 59,
               "ent": "first",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 54,
               "type": "ORDINAL"
@@ -5774,7 +5774,7 @@
               "<pad> Great Britain's Greg Rutherford is through to the long jump final at the World Athletics Championships in Beijing"
             ],
             "n_words_checked": 92,
-            "score": -1.757047176361084
+            "score": -1.7570470571517944
           },
           "labeled_entities": [
             {
@@ -5843,8 +5843,8 @@
               "<pad> A suicide prevention app has been launched in the north east",
               "<pad> An app has been launched to help people working in the oil and gas industry in the north east"
             ],
-            "n_words_checked": 99,
-            "score": -2.2153513431549072
+            "n_words_checked": 103,
+            "score": -2.215351104736328
           },
           "labeled_entities": [],
           "summary": "An app has been launched to help people working in the oil and gas industry who are at risk of taking their own life."
@@ -5859,7 +5859,7 @@
               "<pad> Scotland and Hull City defender Andrew Robertson could be out for up to a month"
             ],
             "n_words_checked": 88,
-            "score": -1.727123498916626
+            "score": -1.7271229028701782
           },
           "labeled_entities": [
             {
@@ -5923,14 +5923,14 @@
               "<pad> A paedophile who was caught by a vigilante group when he tried to meet an 11-year-old"
             ],
             "n_words_checked": 91,
-            "score": -1.937939167022705
+            "score": -1.937937617301941
           },
           "labeled_entities": [
             {
               "end": 103,
               "ent": "three years",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 92,
               "type": "DATE"
@@ -5946,8 +5946,8 @@
             "dropped_seqs": [
               "<pad> In our series of letters from England players, Heather Knight reflects on her year"
             ],
-            "n_words_checked": 120,
-            "score": -2.4473516941070557
+            "n_words_checked": 124,
+            "score": -2.4473519325256348
           },
           "labeled_entities": [
             {
@@ -6019,7 +6019,7 @@
               "<pad> Gary Madine scored his first Bolton goal in more than two months as the Championship side reached the EFL Cup fourth round with a 3-2 win over League One"
             ],
             "n_words_checked": 133,
-            "score": -2.5753283500671387
+            "score": -2.575329065322876
           },
           "labeled_entities": [
             {
@@ -6115,7 +6115,7 @@
               "<pad> A man has been jailed for three years"
             ],
             "n_words_checked": 92,
-            "score": -1.8489775657653809
+            "score": -1.8489776849746704
           },
           "labeled_entities": [
             {
@@ -6142,7 +6142,7 @@
               "<pad> A man has been arrested on suspicion of murder following the death of a man in Coleraine in County Londonderry"
             ],
             "n_words_checked": 77,
-            "score": -0.968194305896759
+            "score": -0.9681951999664307
           },
           "labeled_entities": [
             {
@@ -6167,7 +6167,7 @@
               "<pad> Carrick Rangers have completed the signing of former Crusaders player Jamie"
             ],
             "n_words_checked": 74,
-            "score": -1.354392409324646
+            "score": -1.3543918132781982
           },
           "labeled_entities": [
             {
@@ -6232,14 +6232,14 @@
               "<pad> Shrewsbury Town have signed West Brom youngster James Roberts on loan until the end of the season"
             ],
             "n_words_checked": 90,
-            "score": -1.7608520984649658
+            "score": -1.760851263999939
           },
           "labeled_entities": [
             {
               "end": 15,
               "ent": "Shrewsbury Town",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 0,
               "type": "ORG"
@@ -6248,7 +6248,7 @@
               "end": 37,
               "ent": "West Brom",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 28,
               "type": "GPE"
@@ -6257,7 +6257,7 @@
               "end": 53,
               "ent": "Lloyd",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 48,
               "type": "PERSON"
@@ -6293,7 +6293,7 @@
               "<pad> Plans for a new Church in Wales school campus in Bala"
             ],
             "n_words_checked": 83,
-            "score": -2.1147308349609375
+            "score": -2.114731788635254
           },
           "labeled_entities": [
             {
@@ -6339,14 +6339,14 @@
               "<pad> A man has been jailed for seven years for assaulting a post office worker during an armed robbery in South Lanarkshire"
             ],
             "n_words_checked": 89,
-            "score": -1.9362244606018066
+            "score": -1.9362239837646484
           },
           "labeled_entities": [
             {
               "end": 35,
               "ent": "six years",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 26,
               "type": "DATE"
@@ -6374,7 +6374,7 @@
               "<pad> Frankie Raymond's late strike gave Dagenham and Redbridge a 1-0 win over York at Victoria Road"
             ],
             "n_words_checked": 78,
-            "score": -1.6443568468093872
+            "score": -1.6443551778793335
           },
           "labeled_entities": [
             {
@@ -6434,7 +6434,7 @@
               "<pad> A year on from the death of her three-year-old"
             ],
             "n_words_checked": 121,
-            "score": -2.440725564956665
+            "score": -2.4407269954681396
           },
           "labeled_entities": [
             {
@@ -6529,14 +6529,14 @@
               "<pad> Former New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2018 season"
             ],
             "n_words_checked": 86,
-            "score": -1.0411876440048218
+            "score": -1.0411890745162964
           },
           "labeled_entities": [
             {
               "end": 11,
               "ent": "New Zealand",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 0,
               "type": "GPE"
@@ -6589,8 +6589,8 @@
               "<pad> The One Show presenter Alex",
               "<pad> The One Show host Alex"
             ],
-            "n_words_checked": 91,
-            "score": -2.1539993286132812
+            "n_words_checked": 95,
+            "score": -2.1539995670318604
           },
           "labeled_entities": [
             {
@@ -6641,7 +6641,7 @@
               "<pad> Leyton Orient have re-appointed Paul"
             ],
             "n_words_checked": 83,
-            "score": -2.2306277751922607
+            "score": -2.2306275367736816
           },
           "labeled_entities": [
             {
@@ -6690,10 +6690,12 @@
               "<pad> Chris Wakely and Richard Keogh hit centuries as Northants took control against Leicestershire at Wantage Road",
               "<pad> Chris Wakely and Tom Keogh hit centuries as Northants took control against Leicestershire at Wantage Road",
               "<pad> Chris Wakely and Richard Keogh hit centuries as Northants set Leicestershire a target of 350 to win at Wantage Road",
-              "<pad> Chris Wakely and Tom Keogh hit centuries as Northants set Leicestershire a target of 350 to win at Wantage Road"
+              "<pad> Chris Wakely and Tom Keogh hit centuries as Northants set Leicestershire a target of 350 to win at Wantage Road",
+              "<pad> Chris Wakely and Tom Keogh hit centuries as Northants set Leicestershire a target of 350 to win their Division Two match at Wantage Road",
+              "<pad> Chris Wakely and Richard Keogh hit centuries as Northants set Leicestershire a target of 350 to win their Division Two match at Wantage Road"
             ],
-            "n_words_checked": 89,
-            "score": -2.332643508911133
+            "n_words_checked": 93,
+            "score": -2.332644462585449
           },
           "labeled_entities": [
             {
@@ -6795,7 +6797,7 @@
               "<pad> League Two side Crewe Alexandra have signed former Scunthorpe United midfielder Kevin Nolan on a one-year"
             ],
             "n_words_checked": 74,
-            "score": -1.476638913154602
+            "score": -1.4766398668289185
           },
           "labeled_entities": [
             {
@@ -6866,15 +6868,15 @@
               "<pad> A man has been jailed for life for the manslaughter and rape of a 12-year-old",
               "<pad> A man has been jailed for life for the rape and manslaughter of a 12-year-old"
             ],
-            "n_words_checked": 80,
-            "score": -1.3888901472091675
+            "n_words_checked": 84,
+            "score": -1.3888896703720093
           },
           "labeled_entities": [
             {
               "end": 77,
               "ent": "13-year-old",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 66,
               "type": "DATE"
@@ -7044,14 +7046,14 @@
               "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009."
             ],
             "n_words_checked": 142,
-            "score": -2.620086669921875
+            "score": -2.6200854778289795
           },
           "labeled_entities": [
             {
               "end": 30,
               "ent": "The Funding for Lending Scheme",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 0,
               "type": "ORG"
@@ -7108,14 +7110,14 @@
               "<pad> Cyclist Sir Bradley Wiggins, rower Helen Glover and swimmer Susie Stanning have all won gold medals for Team GB at the London 2012 Olympics"
             ],
             "n_words_checked": 115,
-            "score": -2.2357020378112793
+            "score": -2.235701084136963
           },
           "labeled_entities": [
             {
               "end": 19,
               "ent": "Bradley",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 12,
               "type": "PERSON"
@@ -7133,7 +7135,7 @@
               "end": 40,
               "ent": "Helen",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 35,
               "type": "PERSON"
@@ -7197,7 +7199,7 @@
               "<pad> India's economic growth over the last 10 years"
             ],
             "n_words_checked": 78,
-            "score": -2.552985429763794
+            "score": -2.552985191345215
           },
           "labeled_entities": [
             {
@@ -7242,8 +7244,8 @@
               "<pad> Back in 2010, the captain of Saracens at the time Steve",
               "<pad> Back in 2010, the captain of Saracens at the time, Steve"
             ],
-            "n_words_checked": 113,
-            "score": -2.953662395477295
+            "n_words_checked": 117,
+            "score": -2.9536631107330322
           },
           "labeled_entities": [
             {
@@ -7320,8 +7322,8 @@
               "<pad> Over the past few days we've been following the story of thousands",
               "<pad> Over the past few days we've been following the story of the thousands"
             ],
-            "n_words_checked": 115,
-            "score": -2.5516035556793213
+            "n_words_checked": 118,
+            "score": -2.551602602005005
           },
           "labeled_entities": [
             {
@@ -7388,7 +7390,7 @@
               "<pad> Hundreds of people have attended the first day of a public inquiry into plans to build 500"
             ],
             "n_words_checked": 89,
-            "score": -1.6139527559280396
+            "score": -1.613952398300171
           },
           "labeled_entities": [
             {
@@ -7437,7 +7439,7 @@
               "<pad> Charlton Athletic head coach Avi"
             ],
             "n_words_checked": 108,
-            "score": -2.9514434337615967
+            "score": -2.9514427185058594
           },
           "labeled_entities": [
             {
@@ -7489,7 +7491,7 @@
               "<pad> A 19-year-old",
               "<pad> A 20-year-old"
             ],
-            "n_words_checked": 76,
+            "n_words_checked": 80,
             "score": -1.2214158773422241
           },
           "labeled_entities": [
@@ -7586,8 +7588,8 @@
               "<pad> The number of motorcyclists killed or seriously injured on London's roads has risen by more than 20% in the past five years",
               "<pad> The number of motorcyclists killed or seriously injured on London's roads has risen by more than a fifth in the past five years"
             ],
-            "n_words_checked": 134,
-            "score": -1.889424443244934
+            "n_words_checked": 135,
+            "score": -1.889424204826355
           },
           "labeled_entities": [
             {
@@ -7603,7 +7605,7 @@
               "end": 100,
               "ent": "more than 20%",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 87,
               "type": "PERCENT"
@@ -7650,7 +7652,7 @@
               "<pad> Scotland and Hull City defender Andrew Robertson could be out for up to two months"
             ],
             "n_words_checked": 84,
-            "score": -1.7529534101486206
+            "score": -1.7529524564743042
           },
           "labeled_entities": [
             {
@@ -7748,7 +7750,7 @@
               "<pad> In our series of letters from England players, captain Heather Knight reflects on a year"
             ],
             "n_words_checked": 94,
-            "score": -2.0614349842071533
+            "score": -2.061434030532837
           },
           "labeled_entities": [
             {
@@ -7792,8 +7794,8 @@
               "<pad> Gary Madine scored his first Bolton goal in more than three months as the Championship side saw off League One",
               "<pad> Gary Madine scored his first Bolton goal in more than three months as the Championship side beat Sheffield United at the Macron Stadium"
             ],
-            "n_words_checked": 108,
-            "score": -2.4766194820404053
+            "n_words_checked": 112,
+            "score": -2.4766182899475098
           },
           "labeled_entities": [
             {
@@ -7875,7 +7877,7 @@
               "<pad> Carrick Rangers have completed the signing of former Crusaders player Gary"
             ],
             "n_words_checked": 74,
-            "score": -1.3696402311325073
+            "score": -1.3696397542953491
           },
           "labeled_entities": [
             {
@@ -7951,14 +7953,14 @@
               "<pad> Shrewsbury Town have signed teenage midfielder Joe Roberts on loan from Premier League side West Bromwich Bromwich Albion until the end of the season"
             ],
             "n_words_checked": 122,
-            "score": -2.9973840713500977
+            "score": -2.9973838329315186
           },
           "labeled_entities": [
             {
               "end": 15,
               "ent": "Shrewsbury Town",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 0,
               "type": "ORG"
@@ -7994,7 +7996,7 @@
               "end": 121,
               "ent": "West Bromwich Bromwich Albion",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 92,
               "type": "ORG"
@@ -8003,7 +8005,7 @@
               "end": 148,
               "ent": "the season",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 138,
               "type": "DATE"
@@ -8023,7 +8025,7 @@
               "<pad> Plans for a new Church in Wales school campus in Caerphilly county"
             ],
             "n_words_checked": 90,
-            "score": -2.3503341674804688
+            "score": -2.3503332138061523
           },
           "labeled_entities": [
             {
@@ -8071,7 +8073,7 @@
               "<pad> A man has been jailed for seven years after being convicted of a knifepoint robbery at a post office in South Lanarkshire"
             ],
             "n_words_checked": 98,
-            "score": -1.9418152570724487
+            "score": -1.9418158531188965
           },
           "labeled_entities": [
             {
@@ -8105,8 +8107,8 @@
               "<pad> A year on from the death of her three-year-old",
               "<pad> A year on from the death of her four-year-old"
             ],
-            "n_words_checked": 102,
-            "score": -2.5680782794952393
+            "n_words_checked": 106,
+            "score": -2.568080186843872
           },
           "labeled_entities": [
             {
@@ -8144,8 +8146,8 @@
               "<pad> A female red kites at Loch of the Lowes has laid an egg for the first",
               "<pad> A female red kites at Loch of the Lowes has laid an egg for a third"
             ],
-            "n_words_checked": 79,
-            "score": -2.162287473678589
+            "n_words_checked": 83,
+            "score": -2.162287950515747
           },
           "labeled_entities": [
             {
@@ -8181,15 +8183,15 @@
               "<pad> Former New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2018 season",
               "<pad> Former New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2017 season"
             ],
-            "n_words_checked": 87,
-            "score": -1.5632799863815308
+            "n_words_checked": 89,
+            "score": -1.5632809400558472
           },
           "labeled_entities": [
             {
               "end": 18,
               "ent": "New Zealand",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 7,
               "type": "GPE"
@@ -8225,7 +8227,7 @@
               "end": 92,
               "ent": "the end of the",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 78,
               "type": "DATE"
@@ -8234,7 +8236,7 @@
               "end": 97,
               "ent": "2018",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 93,
               "type": "DATE"
@@ -8253,7 +8255,7 @@
               "<pad> Leyton Orient have re-appointed Martin"
             ],
             "n_words_checked": 75,
-            "score": -2.236588716506958
+            "score": -2.236588954925537
           },
           "labeled_entities": [
             {
@@ -8401,7 +8403,7 @@
               "<pad> League Two side Crewe Alexandra have signed former Scunthorpe United midfielder Paul Nolan on a two-year"
             ],
             "n_words_checked": 73,
-            "score": -2.0929789543151855
+            "score": -2.0929787158966064
           },
           "labeled_entities": [
             {
@@ -8465,8 +8467,8 @@
               "<pad> A man has been jailed for life for the rape and manslaughter of a 12-year-old",
               "<pad> A man has been jailed for life for the manslaughter and rape of a 13-year-old"
             ],
-            "n_words_checked": 81,
-            "score": -2.1901254653930664
+            "n_words_checked": 85,
+            "score": -2.190124750137329
           },
           "labeled_entities": [
             {
@@ -8618,7 +8620,7 @@
           }
         },
         "summary": {
-          "completed": 88,
+          "completed": 89,
           "factual": 85,
           "failed": 3,
           "non_factual": 12,
@@ -8645,14 +8647,14 @@
               "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2010"
             ],
             "n_words_checked": 142,
-            "score": -2.6424801349639893
+            "score": -2.642479181289673
           },
           "labeled_entities": [
             {
               "end": 30,
               "ent": "The Funding for Lending Scheme",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 0,
               "type": "ORG"
@@ -8679,7 +8681,7 @@
               "end": 101,
               "ent": "March 2009",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 91,
               "type": "DATE"
@@ -8710,15 +8712,15 @@
               "<pad> Cyclist Sir Bradley Wiggins, rower Helen Glover and swimmer Susie Stanning have all won gold medals for Team GB at the London Olympics",
               "<pad> Cyclist Sir Bradley Wiggins, rower Helen Glover and swimmer Susie Stanning have all won gold medals for Team GB at the London 2012 Olympics"
             ],
-            "n_words_checked": 115,
-            "score": -2.238523244857788
+            "n_words_checked": 119,
+            "score": -2.2385218143463135
           },
           "labeled_entities": [
             {
               "end": 19,
               "ent": "Bradley",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 12,
               "type": "PERSON"
@@ -8736,7 +8738,7 @@
               "end": 40,
               "ent": "Helen",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 35,
               "type": "PERSON"
@@ -8802,7 +8804,7 @@
               "<pad> India's economic growth over the last 10 years"
             ],
             "n_words_checked": 67,
-            "score": -2.4579660892486572
+            "score": -2.457965612411499
           },
           "labeled_entities": [
             {
@@ -8842,7 +8844,7 @@
               "<pad> Over the last few weeks we've been following the story of the thousands"
             ],
             "n_words_checked": 120,
-            "score": -2.568589210510254
+            "score": -2.5685880184173584
           },
           "labeled_entities": [
             {
@@ -8905,8 +8907,8 @@
               "<pad> A 20-year-old",
               "<pad> A 21-year-old"
             ],
-            "n_words_checked": 80,
-            "score": -1.2745469808578491
+            "n_words_checked": 84,
+            "score": -1.2745476961135864
           },
           "labeled_entities": [
             {
@@ -8955,8 +8957,8 @@
               "<pad> One of Scotland's busiest railway stations is to be closed for more than a month",
               "<pad> One of Scotland's busiest railway stations is to be closed for more than a year"
             ],
-            "n_words_checked": 88,
-            "score": -2.394780397415161
+            "n_words_checked": 92,
+            "score": -2.3947808742523193
           },
           "labeled_entities": [
             {
@@ -9008,7 +9010,7 @@
               "<pad> The number of motorcyclists killed or seriously injured on London's roads has risen by more than a fifth in the past five years"
             ],
             "n_words_checked": 124,
-            "score": -1.854081392288208
+            "score": -1.854081153869629
           },
           "labeled_entities": [
             {
@@ -9081,7 +9083,7 @@
               "<pad> A paedophile who was confronted by a vigilante group when he tried to meet an 11-year- old girl he thought was his daughter has been jailed for three years"
             ],
             "n_words_checked": 139,
-            "score": -2.72377610206604
+            "score": -2.723775625228882
           },
           "labeled_entities": [
             {
@@ -9112,7 +9114,7 @@
               "<pad> In our series of letters from England's cricketers, captain Heather Knight reflects on her year"
             ],
             "n_words_checked": 100,
-            "score": -2.0693774223327637
+            "score": -2.0693771839141846
           },
           "labeled_entities": [
             {
@@ -9177,7 +9179,7 @@
               "<pad> Gary Madine's first-half goal was enough to give Bolton victory over Championship rivals Sheffield United in the EFL Cup first round at the Macron Stadium"
             ],
             "n_words_checked": 182,
-            "score": -2.058847427368164
+            "score": -2.0588457584381104
           },
           "labeled_entities": [
             {
@@ -9298,7 +9300,7 @@
               "<pad> Carrick Rangers have completed the signing of former Crusaders player David"
             ],
             "n_words_checked": 73,
-            "score": -1.8730392456054688
+            "score": -1.8730393648147583
           },
           "labeled_entities": [
             {
@@ -9370,15 +9372,15 @@
               "<pad> Shrewsbury Town have signed teenage West Bromwich Bromwich Albion player James Roberts on loan until the end of the season",
               "<pad> Shrewsbury Town have signed teenage West Bromwich Bromwich Albion player George Roberts on loan until the end of the season"
             ],
-            "n_words_checked": 101,
-            "score": -3.293722629547119
+            "n_words_checked": 104,
+            "score": -3.29372239112854
           },
           "labeled_entities": [
             {
               "end": 15,
               "ent": "Shrewsbury Town",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 0,
               "type": "ORG"
@@ -9387,7 +9389,7 @@
               "end": 65,
               "ent": "West Bromwich Bromwich Albion",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 36,
               "type": "ORG"
@@ -9396,7 +9398,7 @@
               "end": 78,
               "ent": "Lloyd",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 73,
               "type": "PERSON"
@@ -9427,7 +9429,7 @@
               "<pad> Plans for a new Church in Wales school campus in Caerphilly county"
             ],
             "n_words_checked": 79,
-            "score": -2.3555970191955566
+            "score": -2.3555965423583984
           },
           "labeled_entities": [
             {
@@ -9481,7 +9483,7 @@
               "<pad> A man who robbed a post office andbistro in a Perthshire village has been jailed for five years"
             ],
             "n_words_checked": 112,
-            "score": -2.0735015869140625
+            "score": -2.0735018253326416
           },
           "labeled_entities": [
             {
@@ -9518,15 +9520,15 @@
               "<pad> Former New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2018",
               "<pad> Former New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2017 season"
             ],
-            "n_words_checked": 85,
-            "score": -1.2114348411560059
+            "n_words_checked": 89,
+            "score": -1.2114336490631104
           },
           "labeled_entities": [
             {
               "end": 18,
               "ent": "New Zealand",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 7,
               "type": "GPE"
@@ -9593,7 +9595,7 @@
               "<pad> Leyton Orient have re-appointed former player and director of professional Darts Paul"
             ],
             "n_words_checked": 87,
-            "score": -3.516054630279541
+            "score": -3.516054391860962
           },
           "labeled_entities": [
             {
@@ -9651,7 +9653,7 @@
               "<pad> Centuries from Chris Wakely and Matt Keogh put Northants in a commanding position against Leicestershire at Wantage Road"
             ],
             "n_words_checked": 79,
-            "score": -1.90047025680542
+            "score": -1.900469422340393
           },
           "labeled_entities": [
             {
@@ -9859,7 +9861,7 @@
           }
         },
         "summary": {
-          "completed": 94,
+          "completed": 95,
           "factual": 85,
           "failed": 9,
           "non_factual": 6,
@@ -9868,66 +9870,6 @@
         }
       },
       "summaries": {
-        "18460302": {
-          "banned_phrases": [
-            "March 2009",
-            "March 2010",
-            "September 2008"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "<pad> In March",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England in March 2009",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the government in March",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in September",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the government in September",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009.",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2010"
-            ],
-            "n_words_checked": 142,
-            "score": -2.6424801349639893
-          },
-          "labeled_entities": [
-            {
-              "end": 30,
-              "ent": "The Funding for Lending Scheme",
-              "in_source": false,
-              "label": "Unknown",
-              "predicted_label": "Factual Hallucination",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 70,
-              "ent": "the Bank of England",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 51,
-              "type": "ORG"
-            },
-            {
-              "end": 87,
-              "ent": "Treasury",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 79,
-              "type": "ORG"
-            },
-            {
-              "end": 101,
-              "ent": "March 2009",
-              "in_source": false,
-              "label": "Unknown",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 91,
-              "type": "DATE"
-            }
-          ],
-          "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009, as part of the government's response to the financial crisis."
-        },
         "32918219": {
           "banned_phrases": [
             "the last few weeks",
@@ -9944,15 +9886,15 @@
               "<pad> We've been following the plight of thousands",
               "<pad> We've been following the story of the thousands"
             ],
-            "n_words_checked": 96,
-            "score": -2.3252506256103516
+            "n_words_checked": 100,
+            "score": -2.3252480030059814
           },
           "labeled_entities": [
             {
               "end": 58,
               "ent": "South East",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 48,
               "type": "LOC"
@@ -9961,7 +9903,7 @@
               "end": 63,
               "ent": "Asia",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 59,
               "type": "LOC"
@@ -9970,7 +9912,7 @@
               "end": 74,
               "ent": "months",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 68,
               "type": "DATE"
@@ -10017,9 +9959,11 @@
               "<pad> One of Scotland's busiest railway stations is to be closed for more than six weeks",
               "<pad> One of Scotland's busiest railway stations is to be closed for more than six months<pad><mask_2>",
               "<pad> One of Scotland's busiest railway stations is to be closed for more than six months<pad><unk_2>",
-              "<pad> One of Scotland's busiest railway stations is to be closed for more than six months<pad><pad><mask_2>"
+              "<pad> One of Scotland's busiest railway stations is to be closed for more than six months<pad><pad><mask_2>",
+              "<pad> One of Scotland's busiest railway stations is to be closed for more than six months<pad><pad><pad><mask_2>",
+              "<pad> One of Scotland's busiest railway stations is to be closed for more than six months<pad><pad><pad><unk_2>"
             ],
-            "n_words_checked": 71,
+            "n_words_checked": 73,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -10128,8 +10072,8 @@
               "<pad> Plans for a new Church in Wales school campus in Caernarfon",
               "<pad> Plans for a new Church in Wales school campus in Caerphilly county"
             ],
-            "n_words_checked": 84,
-            "score": -2.4106948375701904
+            "n_words_checked": 80,
+            "score": -2.410696268081665
           },
           "labeled_entities": [
             {
@@ -10189,7 +10133,7 @@
               "<pad> A man who robbed a post office andbistro in a Perthshire village at knifepoint has been jailed for six years"
             ],
             "n_words_checked": 102,
-            "score": -2.1419320106506348
+            "score": -2.1419315338134766
           },
           "labeled_entities": [
             {
@@ -10230,15 +10174,15 @@
               "<pad> Former New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2018",
               "<pad> Former New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2017 season"
             ],
-            "n_words_checked": 85,
-            "score": -1.1787768602371216
+            "n_words_checked": 88,
+            "score": -1.1787761449813843
           },
           "labeled_entities": [
             {
               "end": 18,
               "ent": "New Zealand",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 7,
               "type": "GPE"
@@ -10274,7 +10218,7 @@
               "end": 104,
               "ent": "the end of the 2019 season",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 78,
               "type": "DATE"
@@ -10306,8 +10250,8 @@
               "<pad> Leyton Orient have re-appointed former player and director of professional Darts Paul",
               "<pad> Leyton Orient have re-appointed former player and director of professional Darts David"
             ],
-            "n_words_checked": 78,
-            "score": -3.579369306564331
+            "n_words_checked": 82,
+            "score": -3.5793697834014893
           },
           "labeled_entities": [
             {
@@ -10489,7 +10433,7 @@
           }
         },
         "summary": {
-          "completed": 96,
+          "completed": 97,
           "factual": 86,
           "failed": 10,
           "non_factual": 4,
@@ -10498,66 +10442,6 @@
         }
       },
       "summaries": {
-        "18460302": {
-          "banned_phrases": [
-            "March 2009",
-            "March 2010",
-            "September 2008"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "<pad> In March",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England in March 2009",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the government in March",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in September",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the government in September",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009.",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2010"
-            ],
-            "n_words_checked": 142,
-            "score": -2.6424801349639893
-          },
-          "labeled_entities": [
-            {
-              "end": 30,
-              "ent": "The Funding for Lending Scheme",
-              "in_source": false,
-              "label": "Unknown",
-              "predicted_label": "Factual Hallucination",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 70,
-              "ent": "the Bank of England",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 51,
-              "type": "ORG"
-            },
-            {
-              "end": 87,
-              "ent": "Treasury",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 79,
-              "type": "ORG"
-            },
-            {
-              "end": 101,
-              "ent": "March 2009",
-              "in_source": false,
-              "label": "Unknown",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 91,
-              "type": "DATE"
-            }
-          ],
-          "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009, as part of the government's response to the financial crisis."
-        },
         "32918219": {
           "banned_phrases": [
             "South East",
@@ -10639,7 +10523,7 @@
               "<pad> Plans for a new Church in Wales school campus in Caernarfon"
             ],
             "n_words_checked": 74,
-            "score": -2.2556915283203125
+            "score": -2.25569224357605
           },
           "labeled_entities": [
             {
@@ -10712,7 +10596,7 @@
               "<pad> A man who robbed a post office andbistro in Balerno at knifepoint has been jailed for eight years"
             ],
             "n_words_checked": 100,
-            "score": -1.9976884126663208
+            "score": -1.9976866245269775
           },
           "labeled_entities": [
             {
@@ -10755,15 +10639,15 @@
               "<pad> Former New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2017 season",
               "<pad> Former New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2019 season"
             ],
-            "n_words_checked": 85,
-            "score": -1.5974479913711548
+            "n_words_checked": 87,
+            "score": -1.5974478721618652
           },
           "labeled_entities": [
             {
               "end": 18,
               "ent": "New Zealand",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 7,
               "type": "GPE"
@@ -10799,7 +10683,7 @@
               "end": 92,
               "ent": "the end of the",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 78,
               "type": "DATE"
@@ -10972,7 +10856,7 @@
           }
         },
         "summary": {
-          "completed": 97,
+          "completed": 98,
           "factual": 87,
           "failed": 10,
           "non_factual": 3,
@@ -10981,66 +10865,6 @@
         }
       },
       "summaries": {
-        "18460302": {
-          "banned_phrases": [
-            "March 2009",
-            "March 2010",
-            "September 2008"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "<pad> In March",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England in March 2009",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the government in March",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in September",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the government in September",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009.",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2010"
-            ],
-            "n_words_checked": 142,
-            "score": -2.6424801349639893
-          },
-          "labeled_entities": [
-            {
-              "end": 30,
-              "ent": "The Funding for Lending Scheme",
-              "in_source": false,
-              "label": "Unknown",
-              "predicted_label": "Factual Hallucination",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 70,
-              "ent": "the Bank of England",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 51,
-              "type": "ORG"
-            },
-            {
-              "end": 87,
-              "ent": "Treasury",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 79,
-              "type": "ORG"
-            },
-            {
-              "end": 101,
-              "ent": "March 2009",
-              "in_source": false,
-              "label": "Unknown",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 91,
-              "type": "DATE"
-            }
-          ],
-          "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009, as part of the government's response to the financial crisis."
-        },
         "38974185": {
           "banned_phrases": [
             "Bala",
@@ -11062,7 +10886,7 @@
               "<pad> Plans for a new Church in Wales school campus in Caerphilly",
               "<pad> Plans for a new Church in Wales school campus in Caernarfon"
             ],
-            "n_words_checked": 93,
+            "n_words_checked": 97,
             "score": -2.3856022357940674
           },
           "labeled_entities": [
@@ -11128,15 +10952,15 @@
               "<pad> A man has been jailed for six-and-a-half years for a knifepoint robbery at a post office in South Lanarkshire",
               "<pad> A man has been jailed for six-and-a-half years for assaulting a post office worker during an armed robbery in South Lanarkshire"
             ],
-            "n_words_checked": 105,
-            "score": -1.8357888460159302
+            "n_words_checked": 101,
+            "score": -1.8357895612716675
           },
           "labeled_entities": [
             {
               "end": 29,
               "ent": "six",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Non-factual Hallucination",
               "start": 26,
               "type": "CARDINAL"
@@ -11174,14 +10998,14 @@
               "<pad> Former New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2019 season"
             ],
             "n_words_checked": 88,
-            "score": -1.3613688945770264
+            "score": -1.3613677024841309
           },
           "labeled_entities": [
             {
               "end": 18,
               "ent": "New Zealand",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 7,
               "type": "GPE"
@@ -11336,7 +11160,7 @@
           }
         },
         "summary": {
-          "completed": 98,
+          "completed": 99,
           "factual": 88,
           "failed": 10,
           "non_factual": 2,
@@ -11345,66 +11169,6 @@
         }
       },
       "summaries": {
-        "18460302": {
-          "banned_phrases": [
-            "March 2009",
-            "March 2010",
-            "September 2008"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "<pad> In March",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England in March 2009",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the government in March",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in September",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the government in September",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009.",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2010"
-            ],
-            "n_words_checked": 142,
-            "score": -2.6424801349639893
-          },
-          "labeled_entities": [
-            {
-              "end": 30,
-              "ent": "The Funding for Lending Scheme",
-              "in_source": false,
-              "label": "Unknown",
-              "predicted_label": "Factual Hallucination",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 70,
-              "ent": "the Bank of England",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 51,
-              "type": "ORG"
-            },
-            {
-              "end": 87,
-              "ent": "Treasury",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 79,
-              "type": "ORG"
-            },
-            {
-              "end": 101,
-              "ent": "March 2009",
-              "in_source": false,
-              "label": "Unknown",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 91,
-              "type": "DATE"
-            }
-          ],
-          "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009, as part of the government's response to the financial crisis."
-        },
         "38974185": {
           "banned_phrases": [
             "Bala",
@@ -11430,8 +11194,8 @@
               "<pad> Plans for a new Church in Wales school campus in Llanbedrog, near Bala",
               "<pad> Plans for a new Church in Wales school campus in Llanbedrog, Caerphilly"
             ],
-            "n_words_checked": 89,
-            "score": -2.457937240600586
+            "n_words_checked": 93,
+            "score": -2.457937717437744
           },
           "labeled_entities": [
             {
@@ -11506,8 +11270,8 @@
               "<pad> A man who robbed a post office andbistro in Balerno at knifepoint has been jailed for six",
               "<pad> A man who robbed a post office andbistro in Balerno at knifepoint has been jailed for eight years"
             ],
-            "n_words_checked": 103,
-            "score": -2.3870744705200195
+            "n_words_checked": 99,
+            "score": -2.387075424194336
           },
           "labeled_entities": [
             {
@@ -11651,7 +11415,7 @@
           }
         },
         "summary": {
-          "completed": 98,
+          "completed": 99,
           "factual": 88,
           "failed": 10,
           "non_factual": 2,
@@ -11660,66 +11424,6 @@
         }
       },
       "summaries": {
-        "18460302": {
-          "banned_phrases": [
-            "March 2009",
-            "March 2010",
-            "September 2008"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "<pad> In March",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England in March 2009",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the government in March",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in September",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the government in September",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009.",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2010"
-            ],
-            "n_words_checked": 142,
-            "score": -2.6424801349639893
-          },
-          "labeled_entities": [
-            {
-              "end": 30,
-              "ent": "The Funding for Lending Scheme",
-              "in_source": false,
-              "label": "Unknown",
-              "predicted_label": "Factual Hallucination",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 70,
-              "ent": "the Bank of England",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 51,
-              "type": "ORG"
-            },
-            {
-              "end": 87,
-              "ent": "Treasury",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 79,
-              "type": "ORG"
-            },
-            {
-              "end": 101,
-              "ent": "March 2009",
-              "in_source": false,
-              "label": "Unknown",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 91,
-              "type": "DATE"
-            }
-          ],
-          "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009, as part of the government's response to the financial crisis."
-        },
         "38980980": {
           "banned_phrases": [
             "Borders",
@@ -11755,8 +11459,8 @@
               "<pad> A man who robbed a post office andbistro in Balerno at knifepoint has been jailed for eight years",
               "<pad> A man who robbed a post office andbistro in Balerno at knifepoint has been jailed for eight and a half years"
             ],
-            "n_words_checked": 110,
-            "score": -2.124783515930176
+            "n_words_checked": 106,
+            "score": -2.1247832775115967
           },
           "labeled_entities": [
             {
@@ -11900,7 +11604,7 @@
           }
         },
         "summary": {
-          "completed": 99,
+          "completed": 100,
           "factual": 88,
           "failed": 11,
           "non_factual": 1,
@@ -11909,66 +11613,6 @@
         }
       },
       "summaries": {
-        "18460302": {
-          "banned_phrases": [
-            "March 2009",
-            "March 2010",
-            "September 2008"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "<pad> In March",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England in March 2009",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the government in March",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in September",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the government in September",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009.",
-              "<pad> The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2010"
-            ],
-            "n_words_checked": 142,
-            "score": -2.6424801349639893
-          },
-          "labeled_entities": [
-            {
-              "end": 30,
-              "ent": "The Funding for Lending Scheme",
-              "in_source": false,
-              "label": "Unknown",
-              "predicted_label": "Factual Hallucination",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 70,
-              "ent": "the Bank of England",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 51,
-              "type": "ORG"
-            },
-            {
-              "end": 87,
-              "ent": "Treasury",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 79,
-              "type": "ORG"
-            },
-            {
-              "end": 101,
-              "ent": "March 2009",
-              "in_source": false,
-              "label": "Unknown",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 91,
-              "type": "DATE"
-            }
-          ],
-          "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009, as part of the government's response to the financial crisis."
-        },
         "38980980": {
           "banned_phrases": [
             "Borders",
@@ -12002,11 +11646,9 @@
               "<pad> A man who robbed a post office andbistro in Balerno at knifepoint has been jailed for seven",
               "<pad> A man who robbed a post office andbistro in Balerno at knifepoint has been jailed for five",
               "<pad> A man who robbed a post office andbistro in Balerno at knifepoint has been jailed for six",
-              "<pad> A man who robbed a post office andbistro in Balerno at knifepoint has been jailed for eight",
-              "<pad> A man who robbed a post office andbistro in Balerno at knifepoint has been jailed for seven<pad><pad><pad><mask_2>",
-              "<pad> A man who robbed a post office andbistro in Balerno at knifepoint has been jailed for seven<pad><pad><pad><unk_2>"
+              "<pad> A man who robbed a post office andbistro in Balerno at knifepoint has been jailed for eight"
             ],
-            "n_words_checked": 82,
+            "n_words_checked": 80,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -12015,5 +11657,5 @@
       }
     }
   },
-  "timestamp": 1655058544.3940313
+  "timestamp": 1655405861.6138594
 }
