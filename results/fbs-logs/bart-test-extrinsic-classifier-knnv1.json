@@ -1,11 +1,11 @@
 {
   "args": {
     "annotate": false,
-    "batch_size": 4,
-    "classifier_batch_size": 8,
+    "batch_size": 16,
+    "classifier_batch_size": 16,
     "data_subset": "bart-test-extrinsic",
     "entity_label_match": "contained",
-    "max_iterations": 10,
+    "max_iterations": 25,
     "model_posterior": "entfa-cmlm",
     "model_prior": "facebook/bart-large",
     "model_summarization": "facebook/bart-large-xsum",
@@ -171,7 +171,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 78,
-            "score": -0.5494641661643982
+            "score": -0.5494641065597534
           },
           "labeled_entities": [
             {
@@ -191,7 +191,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 90,
-            "score": -0.4498242735862732
+            "score": -0.44982418417930603
           },
           "labeled_entities": [
             {
@@ -220,7 +220,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 81,
-            "score": -0.5601842999458313
+            "score": -0.5601842403411865
           },
           "labeled_entities": [
             {
@@ -239,8 +239,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 118,
-            "score": -0.5875491499900818
+            "n_words_checked": 121,
+            "score": -0.5875487327575684
           },
           "labeled_entities": [
             {
@@ -259,7 +259,7 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 109,
+            "n_words_checked": 113,
             "score": -0.7699748277664185
           },
           "labeled_entities": [
@@ -297,8 +297,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 85,
-            "score": -0.5458996295928955
+            "n_words_checked": 88,
+            "score": -0.5458995699882507
           },
           "labeled_entities": [
             {
@@ -318,7 +318,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 143,
-            "score": -0.5799765586853027
+            "score": -0.5799763202667236
           },
           "labeled_entities": [
             {
@@ -392,7 +392,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -0.41290050745010376
+            "score": -0.4129003584384918
           },
           "labeled_entities": [
             {
@@ -421,7 +421,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 95,
-            "score": -0.6849997043609619
+            "score": -0.6850001215934753
           },
           "labeled_entities": [
             {
@@ -450,7 +450,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 92,
-            "score": -0.6228481531143188
+            "score": -0.6228485703468323
           },
           "labeled_entities": [
             {
@@ -488,7 +488,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 111,
-            "score": -0.48242440819740295
+            "score": -0.48242419958114624
           },
           "labeled_entities": [
             {
@@ -535,7 +535,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 114,
-            "score": -0.8808414936065674
+            "score": -0.880841851234436
           },
           "labeled_entities": [
             {
@@ -573,7 +573,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 90,
-            "score": -0.4671538770198822
+            "score": -0.46715405583381653
           },
           "labeled_entities": [
             {
@@ -647,7 +647,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 97,
-            "score": -0.7004221677780151
+            "score": -0.700421929359436
           },
           "labeled_entities": [
             {
@@ -676,7 +676,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 103,
-            "score": -0.42965587973594666
+            "score": -0.42965584993362427
           },
           "labeled_entities": [
             {
@@ -714,7 +714,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -0.761876106262207
+            "score": -0.7618755102157593
           },
           "labeled_entities": [
             {
@@ -761,7 +761,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 74,
-            "score": -0.6646236777305603
+            "score": -0.6646240949630737
           },
           "labeled_entities": [
             {
@@ -790,7 +790,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 63,
-            "score": -0.49171188473701477
+            "score": -0.49171125888824463
           },
           "labeled_entities": [
             {
@@ -810,7 +810,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 92,
-            "score": -0.579764187335968
+            "score": -0.5797638893127441
           },
           "labeled_entities": [
             {
@@ -839,7 +839,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 62,
-            "score": -0.3962137699127197
+            "score": -0.3962133824825287
           },
           "labeled_entities": [
             {
@@ -886,7 +886,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 113,
-            "score": -0.5437449812889099
+            "score": -0.5437455773353577
           },
           "labeled_entities": [
             {
@@ -923,8 +923,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 99,
-            "score": -0.4491567015647888
+            "n_words_checked": 102,
+            "score": -0.4491567611694336
           },
           "labeled_entities": [
             {
@@ -980,7 +980,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 50,
-            "score": -0.5891697406768799
+            "score": -0.589169979095459
           },
           "labeled_entities": [
             {
@@ -1018,7 +1018,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 50,
-            "score": -0.507392168045044
+            "score": -0.5073918104171753
           },
           "labeled_entities": [
             {
@@ -1056,7 +1056,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 89,
-            "score": -0.6760814189910889
+            "score": -0.6760818958282471
           },
           "labeled_entities": [
             {
@@ -1102,8 +1102,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 73,
-            "score": -0.4243582487106323
+            "n_words_checked": 76,
+            "score": -0.42435771226882935
           },
           "labeled_entities": [
             {
@@ -1251,7 +1251,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 84,
-            "score": -0.6981934905052185
+            "score": -0.6981940865516663
           },
           "labeled_entities": [
             {
@@ -1280,7 +1280,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 104,
-            "score": -0.5673392415046692
+            "score": -0.5673397183418274
           },
           "labeled_entities": [
             {
@@ -1327,7 +1327,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 81,
-            "score": -0.2939951419830322
+            "score": -0.293995201587677
           },
           "labeled_entities": [
             {
@@ -1373,8 +1373,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 113,
-            "score": -0.5719601511955261
+            "n_words_checked": 115,
+            "score": -0.5719603300094604
           },
           "labeled_entities": [
             {
@@ -1412,7 +1412,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 93,
-            "score": -0.5321325063705444
+            "score": -0.5321323871612549
           },
           "labeled_entities": [
             {
@@ -1441,7 +1441,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 97,
-            "score": -0.48368415236473083
+            "score": -0.4836840033531189
           },
           "labeled_entities": [
             {
@@ -1461,7 +1461,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 61,
-            "score": -0.4990573525428772
+            "score": -0.4990575611591339
           },
           "labeled_entities": [
             {
@@ -1581,8 +1581,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 111,
-            "score": -0.6526374816894531
+            "n_words_checked": 114,
+            "score": -0.6526376605033875
           },
           "labeled_entities": [
             {
@@ -1602,7 +1602,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -0.7039954662322998
+            "score": -0.7039957642555237
           },
           "labeled_entities": [
             {
@@ -1622,7 +1622,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 83,
-            "score": -0.8481479287147522
+            "score": -0.8481481075286865
           },
           "labeled_entities": [
             {
@@ -1668,8 +1668,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 56,
-            "score": -0.40342092514038086
+            "n_words_checked": 60,
+            "score": -0.4034211337566376
           },
           "labeled_entities": [
             {
@@ -1716,7 +1716,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 83,
-            "score": -0.3757184147834778
+            "score": -0.37571844458580017
           },
           "labeled_entities": [
             {
@@ -1753,8 +1753,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 81,
-            "score": -0.49763697385787964
+            "n_words_checked": 85,
+            "score": -0.497637003660202
           },
           "labeled_entities": [
             {
@@ -1792,7 +1792,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 82,
-            "score": -0.6227258443832397
+            "score": -0.6227260231971741
           },
           "labeled_entities": [
             {
@@ -1830,7 +1830,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 77,
-            "score": -0.5678789615631104
+            "score": -0.5678788423538208
           },
           "labeled_entities": [
             {
@@ -1868,7 +1868,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 104,
-            "score": -0.6966069340705872
+            "score": -0.6966072916984558
           },
           "labeled_entities": [
             {
@@ -1914,8 +1914,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 82,
-            "score": -0.5740678310394287
+            "n_words_checked": 86,
+            "score": -0.5740676522254944
           },
           "labeled_entities": [
             {
@@ -1971,7 +1971,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 105,
-            "score": -0.5638521313667297
+            "score": -0.5638526082038879
           },
           "labeled_entities": [
             {
@@ -2009,7 +2009,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 68,
-            "score": -0.3235478103160858
+            "score": -0.3235474228858948
           },
           "labeled_entities": [
             {
@@ -2055,8 +2055,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 113,
-            "score": -0.74540114402771
+            "n_words_checked": 116,
+            "score": -0.7454013228416443
           },
           "labeled_entities": [
             {
@@ -2085,7 +2085,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 101,
-            "score": -0.7071086168289185
+            "score": -0.7071085572242737
           },
           "labeled_entities": [
             {
@@ -2113,8 +2113,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 88,
-            "score": -0.4268585741519928
+            "n_words_checked": 90,
+            "score": -0.4268588423728943
           },
           "labeled_entities": [
             {
@@ -2197,7 +2197,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 129,
-            "score": -0.4960084557533264
+            "score": -0.49600863456726074
           },
           "labeled_entities": [
             {
@@ -2253,7 +2253,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 79,
-            "score": -0.4848577380180359
+            "score": -0.48485708236694336
           },
           "labeled_entities": [
             {
@@ -2344,8 +2344,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 111,
-            "score": -0.4395291805267334
+            "n_words_checked": 114,
+            "score": -0.4395291209220886
           },
           "labeled_entities": [
             {
@@ -2383,7 +2383,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 90,
-            "score": -0.4738999307155609
+            "score": -0.47390007972717285
           },
           "labeled_entities": [
             {
@@ -2439,7 +2439,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 89,
-            "score": -0.4483271837234497
+            "score": -0.4483272135257721
           },
           "labeled_entities": [
             {
@@ -2504,7 +2504,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 75,
-            "score": -0.43661683797836304
+            "score": -0.43661680817604065
           },
           "labeled_entities": [
             {
@@ -2533,7 +2533,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -0.6792298555374146
+            "score": -0.679230272769928
           },
           "labeled_entities": [
             {
@@ -2571,7 +2571,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 103,
-            "score": -0.5803333520889282
+            "score": -0.5803332328796387
           },
           "labeled_entities": [
             {
@@ -2691,8 +2691,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 74,
-            "score": -0.497389554977417
+            "n_words_checked": 77,
+            "score": -0.49738946557044983
           },
           "labeled_entities": [
             {
@@ -2739,7 +2739,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 105,
-            "score": -0.5653573870658875
+            "score": -0.5653570294380188
           },
           "labeled_entities": [
             {
@@ -2776,8 +2776,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 80,
-            "score": -0.5341499447822571
+            "n_words_checked": 84,
+            "score": -0.5341492891311646
           },
           "labeled_entities": [
             {
@@ -2842,7 +2842,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 85,
-            "score": -0.41874322295188904
+            "score": -0.4187432527542114
           },
           "labeled_entities": [
             {
@@ -2897,7 +2897,7 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 111,
+            "n_words_checked": 113,
             "score": -0.6133347153663635
           },
           "labeled_entities": [
@@ -2944,8 +2944,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 127,
-            "score": -0.47252464294433594
+            "n_words_checked": 129,
+            "score": -0.4725247621536255
           },
           "labeled_entities": [
             {
@@ -3037,7 +3037,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 92,
-            "score": -0.7841282486915588
+            "score": -0.784127950668335
           },
           "labeled_entities": [
             {
@@ -3104,7 +3104,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 103,
-            "score": -0.47283509373664856
+            "score": -0.47283488512039185
           },
           "labeled_entities": [
             {
@@ -3133,7 +3133,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 71,
-            "score": -0.5009814500808716
+            "score": -0.5009819269180298
           },
           "labeled_entities": [
             {
@@ -3180,7 +3180,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -0.4425818920135498
+            "score": -0.4425816237926483
           },
           "labeled_entities": [
             {
@@ -3218,7 +3218,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 117,
-            "score": -0.6075208187103271
+            "score": -0.6075206398963928
           },
           "labeled_entities": [
             {
@@ -3292,7 +3292,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 87,
-            "score": -0.6245472431182861
+            "score": -0.6245482563972473
           },
           "labeled_entities": [
             {
@@ -3330,7 +3330,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 88,
-            "score": -0.5387277007102966
+            "score": -0.538727879524231
           },
           "labeled_entities": [
             {
@@ -3388,7 +3388,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 74,
-            "score": -0.4469810426235199
+            "score": -0.44698160886764526
           },
           "labeled_entities": [
             {
@@ -3445,8 +3445,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 80,
-            "score": -0.4126325249671936
+            "n_words_checked": 84,
+            "score": -0.41263294219970703
           },
           "labeled_entities": [
             {
@@ -3475,7 +3475,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 110,
-            "score": -0.7542527914047241
+            "score": -0.7542528510093689
           },
           "labeled_entities": [
             {
@@ -3531,7 +3531,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 79,
-            "score": -0.285523384809494
+            "score": -0.2855237126350403
           },
           "labeled_entities": [
             {
@@ -3569,7 +3569,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 85,
-            "score": -0.7630773782730103
+            "score": -0.7630775570869446
           },
           "labeled_entities": [
             {
@@ -3643,7 +3643,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 71,
-            "score": -0.45780283212661743
+            "score": -0.45780301094055176
           },
           "labeled_entities": [
             {
@@ -3681,7 +3681,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 58,
-            "score": -0.930047333240509
+            "score": -0.9300479888916016
           },
           "labeled_entities": [
             {
@@ -3728,7 +3728,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 112,
-            "score": -0.3685798645019531
+            "score": -0.3685796558856964
           },
           "labeled_entities": [
             {
@@ -3802,7 +3802,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 90,
-            "score": -0.5934107303619385
+            "score": -0.5934110879898071
           },
           "labeled_entities": [
             {
@@ -3860,7 +3860,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 59,
-            "score": -0.43658462166786194
+            "score": -0.4365846812725067
           },
           "labeled_entities": [
             {
@@ -3889,7 +3889,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 78,
-            "score": -0.4513850808143616
+            "score": -0.4513848125934601
           },
           "labeled_entities": [
             {
@@ -3917,8 +3917,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 91,
-            "score": -0.33391815423965454
+            "n_words_checked": 93,
+            "score": -0.33391791582107544
           },
           "labeled_entities": [
             {
@@ -3974,7 +3974,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 106,
-            "score": -0.538762629032135
+            "score": -0.5387624502182007
           },
           "labeled_entities": [
             {
@@ -4021,7 +4021,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 75,
-            "score": -0.7381943464279175
+            "score": -0.73819500207901
           },
           "labeled_entities": [
             {
@@ -4041,7 +4041,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 75,
-            "score": -0.6079262495040894
+            "score": -0.6079261898994446
           },
           "labeled_entities": [
             {
@@ -4088,7 +4088,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 42,
-            "score": -0.4236412048339844
+            "score": -0.42364102602005005
           },
           "labeled_entities": [
             {
@@ -4126,7 +4126,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 94,
-            "score": -0.5277834534645081
+            "score": -0.527783215045929
           },
           "labeled_entities": [
             {
@@ -4182,7 +4182,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -0.42941778898239136
+            "score": -0.4294177293777466
           },
           "labeled_entities": [
             {
@@ -4211,7 +4211,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 77,
-            "score": -0.5373173952102661
+            "score": -0.5373176336288452
           },
           "labeled_entities": [
             {
@@ -4239,8 +4239,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 95,
-            "score": -0.7842150926589966
+            "n_words_checked": 98,
+            "score": -0.7842153310775757
           },
           "labeled_entities": [
             {
@@ -4323,7 +4323,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 97,
-            "score": -0.6541839241981506
+            "score": -0.6541841626167297
           },
           "labeled_entities": [
             {
@@ -4406,7 +4406,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 77,
-            "score": -0.7305685877799988
+            "score": -0.7305686473846436
           },
           "labeled_entities": [
             {
@@ -4462,7 +4462,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -0.4245927035808563
+            "score": -0.42459261417388916
           },
           "labeled_entities": [
             {
@@ -4536,7 +4536,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -0.44816356897354126
+            "score": -0.4481634795665741
           },
           "labeled_entities": [
             {
@@ -4715,7 +4715,7 @@
           }
         },
         "summary": {
-          "completed": 60,
+          "completed": 62,
           "factual": 60,
           "failed": 0,
           "non_factual": 40,
@@ -4733,7 +4733,7 @@
               "</s>An 18-year-old"
             ],
             "n_words_checked": 90,
-            "score": -0.46055540442466736
+            "score": -0.4605553448200226
           },
           "labeled_entities": [
             {
@@ -4767,7 +4767,7 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
             "n_words_checked": 69,
-            "score": -0.6140735149383545
+            "score": -0.6140739321708679
           },
           "labeled_entities": [
             {
@@ -4794,7 +4794,7 @@
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association"
             ],
             "n_words_checked": 126,
-            "score": -0.6519454121589661
+            "score": -0.6519452333450317
           },
           "labeled_entities": [
             {
@@ -4822,7 +4822,7 @@
               "</s>Plans have been drawn up to turn one of Wales"
             ],
             "n_words_checked": 87,
-            "score": -0.5862994194030762
+            "score": -0.5862992405891418
           },
           "labeled_entities": [
             {
@@ -4848,8 +4848,8 @@
               "</s>Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 15-year-old",
               "</s>Police have released an E-fit image of a man they want to speak to in connection with the sexual assault of a 15-year-old"
             ],
-            "n_words_checked": 106,
-            "score": -0.402429461479187
+            "n_words_checked": 107,
+            "score": -0.4024294912815094
           },
           "labeled_entities": [
             {
@@ -4887,7 +4887,7 @@
               "</s>Ireland's economy grew by 7.7% in the three months to the end of September, compared with a 0.5% rise in the same period last year"
             ],
             "n_words_checked": 125,
-            "score": -0.5550144910812378
+            "score": -0.5550142526626587
           },
           "labeled_entities": [
             {
@@ -4953,7 +4953,7 @@
               "</s>Hartlepool United have signed Reading midfielder Nkosi Tshibola and Mansfield Town striker Jordan Bingham on loan until the end of the season"
             ],
             "n_words_checked": 99,
-            "score": -0.6012749671936035
+            "score": -0.6012750267982483
           },
           "labeled_entities": [
             {
@@ -5063,7 +5063,7 @@
               "</s>More than 1,000 people have objected to plans for 1,200"
             ],
             "n_words_checked": 97,
-            "score": -0.7765331268310547
+            "score": -0.776533305644989
           },
           "labeled_entities": [
             {
@@ -5106,7 +5106,7 @@
               "</s>A man has been jailed for life for the murder of his six-year-old"
             ],
             "n_words_checked": 75,
-            "score": -0.5387654900550842
+            "score": -0.5387646555900574
           },
           "labeled_entities": [
             {
@@ -5131,7 +5131,7 @@
               "</s>The world premiere of the new animated film Minions has taken place in Los Angeles, USA"
             ],
             "n_words_checked": 58,
-            "score": -0.5608227252960205
+            "score": -0.5608222484588623
           },
           "labeled_entities": [
             {
@@ -5157,7 +5157,7 @@
               "</s>The former RT\u00c9 broadcaster and broadcaster M\u00e1irt\u00edn \u00d3 Murch\u00fa"
             ],
             "n_words_checked": 54,
-            "score": -0.7584993243217468
+            "score": -0.7584997415542603
           },
           "labeled_entities": [
             {
@@ -5199,7 +5199,7 @@
               "</s>The man behind the takeover of the Financial Times is one of Japan's richest men, Shigeru"
             ],
             "n_words_checked": 94,
-            "score": -0.7048113346099854
+            "score": -0.7048117518424988
           },
           "labeled_entities": [
             {
@@ -5257,7 +5257,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 76,
-            "score": -0.4243582487106323
+            "score": -0.42435771226882935
           },
           "labeled_entities": [
             {
@@ -5317,7 +5317,7 @@
               "</s>Scotland scrum-half"
             ],
             "n_words_checked": 95,
-            "score": -0.5821101069450378
+            "score": -0.5821101665496826
           },
           "labeled_entities": [
             {
@@ -5385,8 +5385,8 @@
             "dropped_seqs": [
               "</s>The US astronaut who's been living on the International Space Station for more than a year"
             ],
-            "n_words_checked": 110,
-            "score": -0.6445138454437256
+            "n_words_checked": 111,
+            "score": -0.6445140242576599
           },
           "labeled_entities": [
             {
@@ -5433,7 +5433,7 @@
               "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run incident in Dundee"
             ],
             "n_words_checked": 104,
-            "score": -0.6278497576713562
+            "score": -0.627849817276001
           },
           "labeled_entities": [
             {
@@ -5468,8 +5468,8 @@
               "</s>A sports journalist is in a critical condition in hospital after being attacked outside a London Tube",
               "</s>The wife of a sports journalist who was seriously injured in an attack outside a London Tube"
             ],
-            "n_words_checked": 118,
-            "score": -0.5466820001602173
+            "n_words_checked": 120,
+            "score": -0.546681821346283
           },
           "labeled_entities": [
             {
@@ -5494,7 +5494,7 @@
               "</s>Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Vegalta"
             ],
             "n_words_checked": 66,
-            "score": -0.5247330665588379
+            "score": -0.5247330069541931
           },
           "labeled_entities": [
             {
@@ -5558,7 +5558,7 @@
               "</s>Nour is a 23-year-old mother of two who was caught up in the fighting between so-called Islamic State (IS) and government forces in the Syrian city of Raqqa"
             ],
             "n_words_checked": 132,
-            "score": -0.6170554757118225
+            "score": -0.6170551180839539
           },
           "labeled_entities": [
             {
@@ -5601,7 +5601,7 @@
               "end": 147,
               "ent": "Mosul",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 142,
               "type": "GPE"
@@ -5628,7 +5628,7 @@
               "</s>Thousands of animals are being counted at Chester Zoo"
             ],
             "n_words_checked": 65,
-            "score": -0.8908218145370483
+            "score": -0.8908213973045349
           },
           "labeled_entities": [
             {
@@ -5653,7 +5653,7 @@
               "end": 76,
               "ent": "annual",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 70,
               "type": "DATE"
@@ -5674,7 +5674,7 @@
               "</s>Tens of thousands of football fans faced long queues to get into a Premier League match on Wednesday night, leading to a FA Cup"
             ],
             "n_words_checked": 102,
-            "score": -0.6496568322181702
+            "score": -0.6496571898460388
           },
           "labeled_entities": [
             {
@@ -5716,7 +5716,7 @@
               "</s>Wales coach Huw"
             ],
             "n_words_checked": 104,
-            "score": -0.7287612557411194
+            "score": -0.7287614345550537
           },
           "labeled_entities": [
             {
@@ -5767,7 +5767,7 @@
               "</s>Byron Rhodes, the leader of Derbyshire County Council"
             ],
             "n_words_checked": 102,
-            "score": -0.5396247506141663
+            "score": -0.5396249294281006
           },
           "labeled_entities": [
             {
@@ -5808,8 +5808,8 @@
             "dropped_seqs": [
               "</s>The air is still as charged as it was when I first arrived in Ravenscraig 25 years ago"
             ],
-            "n_words_checked": 104,
-            "score": -0.8220511078834534
+            "n_words_checked": 108,
+            "score": -0.822051465511322
           },
           "labeled_entities": [
             {
@@ -5855,8 +5855,8 @@
               "</s>World number one Andy Murray beat Marcelo",
               "</s>World number one Andy Murray and partner Marcelo"
             ],
-            "n_words_checked": 103,
-            "score": -0.6692749857902527
+            "n_words_checked": 105,
+            "score": -0.6692749261856079
           },
           "labeled_entities": [
             {
@@ -5908,7 +5908,7 @@
               "end": 68,
               "ent": "two",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 65,
               "type": "CARDINAL"
@@ -5963,8 +5963,8 @@
               "</s>World number one Mark Selby will face Ding Junhui in the World Championship semi-finals after beating Marco Fu 6-4",
               "</s>World number one Mark Selby will play Ding Junhui in the World Championship semi-finals after beating Marco Fu 6-4"
             ],
-            "n_words_checked": 87,
-            "score": -0.5046685934066772
+            "n_words_checked": 90,
+            "score": -0.5046678185462952
           },
           "labeled_entities": [
             {
@@ -6062,7 +6062,7 @@
               "</s>Three men have been found guilty of blowing up cash machines and stealing more than \u00a3200,000"
             ],
             "n_words_checked": 68,
-            "score": -0.46260762214660645
+            "score": -0.46260738372802734
           },
           "labeled_entities": [
             {
@@ -6103,7 +6103,7 @@
               "</s>A collection of photographs taken by a photographer who was involved with the Rock Against Racism (RAR) movement in the 1970s"
             ],
             "n_words_checked": 91,
-            "score": -0.739029586315155
+            "score": -0.7390300035476685
           },
           "labeled_entities": [
             {
@@ -6128,7 +6128,7 @@
               "</s>Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner"
             ],
             "n_words_checked": 105,
-            "score": -0.5892914533615112
+            "score": -0.5892919898033142
           },
           "labeled_entities": [
             {
@@ -6206,7 +6206,7 @@
               "</s>Great Britain's women produced their best performance of the EuroHockey Championships"
             ],
             "n_words_checked": 90,
-            "score": -0.6199769973754883
+            "score": -0.6199766993522644
           },
           "labeled_entities": [
             {
@@ -6257,7 +6257,7 @@
               "</s>Wales are out of Euro 2016 after a 2-0 defeat by Portugal in their last-16"
             ],
             "n_words_checked": 68,
-            "score": -0.5164402723312378
+            "score": -0.5164401531219482
           },
           "labeled_entities": [
             {
@@ -6311,7 +6311,7 @@
               "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes"
             ],
             "n_words_checked": 89,
-            "score": -0.5488235354423523
+            "score": -0.5488238334655762
           },
           "labeled_entities": [
             {
@@ -6371,7 +6371,7 @@
               "</s>The Indiana Pacers will host the Denver Nuggets in a pre-season"
             ],
             "n_words_checked": 82,
-            "score": -0.5129489302635193
+            "score": -0.5129491090774536
           },
           "labeled_entities": [
             {
@@ -6435,7 +6435,7 @@
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 500,000 euro (\u00a3353,176) were seized by police in Paris"
             ],
             "n_words_checked": 116,
-            "score": -0.6349270939826965
+            "score": -0.6349271535873413
           },
           "labeled_entities": [
             {
@@ -6487,8 +6487,8 @@
               "</s>Armed officers will be patrolling the streets of London and the rest of England and Wales by the end of 2017",
               "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2017"
             ],
-            "n_words_checked": 126,
-            "score": -0.4901813268661499
+            "n_words_checked": 128,
+            "score": -0.4901812672615051
           },
           "labeled_entities": [
             {
@@ -6585,7 +6585,7 @@
               "</s>Police are \"extremely concerned\" for the welfare of a 13-year-old"
             ],
             "n_words_checked": 101,
-            "score": -0.5013992190361023
+            "score": -0.5013991594314575
           },
           "labeled_entities": [
             {
@@ -6628,7 +6628,7 @@
               "</s>Polish film director Andrzej"
             ],
             "n_words_checked": 65,
-            "score": -0.5568308234214783
+            "score": -0.5568310618400574
           },
           "labeled_entities": [
             {
@@ -6680,7 +6680,7 @@
               "</s>An outbreak of Dengue fever in Burkina Faso has killed at least 11"
             ],
             "n_words_checked": 94,
-            "score": -0.5589789748191833
+            "score": -0.5589790940284729
           },
           "labeled_entities": [
             {
@@ -6723,7 +6723,7 @@
               "</s>A man has been charged with causing death by dangerous driving after the death of a six-year-old"
             ],
             "n_words_checked": 81,
-            "score": -0.35199856758117676
+            "score": -0.3519982695579529
           },
           "labeled_entities": [
             {
@@ -6747,7 +6747,7 @@
               "</s>A 33-year-old"
             ],
             "n_words_checked": 84,
-            "score": -0.41393721103668213
+            "score": -0.41393688321113586
           },
           "labeled_entities": [
             {
@@ -6784,7 +6784,7 @@
               "</s>Ex-Crewe Alexandra footballer Ian"
             ],
             "n_words_checked": 106,
-            "score": -0.7844363451004028
+            "score": -0.7844357490539551
           },
           "labeled_entities": [
             {
@@ -6832,7 +6832,7 @@
               "</s>St Johnstone's Paul Anderson has said Rangers defender John"
             ],
             "n_words_checked": 93,
-            "score": -0.881080687046051
+            "score": -0.8810800909996033
           },
           "labeled_entities": [
             {
@@ -6910,8 +6910,8 @@
             "dropped_seqs": [
               "</s>Arsenal Ladies have signed Ivory Coast international midfielder Nana"
             ],
-            "n_words_checked": 97,
-            "score": -0.7615128755569458
+            "n_words_checked": 99,
+            "score": -0.7615135908126831
           },
           "labeled_entities": [
             {
@@ -6980,8 +6980,8 @@
               "</s>A bid to stop a wind farm operator from installing overhead cables in Snowdonia",
               "</s>Campaigners have launched a legal challenge to a wind farm operator's plans to install overhead cables in Snowdonia"
             ],
-            "n_words_checked": 100,
-            "score": -0.8367195129394531
+            "n_words_checked": 102,
+            "score": -0.8367191553115845
           },
           "labeled_entities": [
             {
@@ -7010,7 +7010,7 @@
               "</s>A \"depraved\" paedophile who groomed a 10-year-old boy on Facebook before sexually abusing him has been jailed for 12 years"
             ],
             "n_words_checked": 91,
-            "score": -0.4825598895549774
+            "score": -0.4825597405433655
           },
           "labeled_entities": [
             {
@@ -7043,8 +7043,8 @@
               "</s>Inverness Caledonian Thistle extended their lead at the top of the Scottish Premiership",
               "</s>Inverness Caledonian Thistle moved four points clear at the top of the Scottish Premiership"
             ],
-            "n_words_checked": 88,
-            "score": -0.34451091289520264
+            "n_words_checked": 90,
+            "score": -0.3445110023021698
           },
           "labeled_entities": [
             {
@@ -7098,7 +7098,7 @@
               "</s>An under-performing academy school in Southampton"
             ],
             "n_words_checked": 84,
-            "score": -0.7206817865371704
+            "score": -0.7206813097000122
           },
           "labeled_entities": [
             {
@@ -7124,7 +7124,7 @@
               "</s>Peterborough United have completed the signing of striker Jordan"
             ],
             "n_words_checked": 73,
-            "score": -0.6184431314468384
+            "score": -0.6184428334236145
           },
           "labeled_entities": [
             {
@@ -7176,7 +7176,7 @@
               "</s>Plans for a new McDonald's restaurant in Bristol"
             ],
             "n_words_checked": 75,
-            "score": -0.5491099953651428
+            "score": -0.5491098165512085
           },
           "labeled_entities": [
             {
@@ -7218,7 +7218,7 @@
               "</s>Welshman Jamie Evans retained his WBO International lightweight title with a unanimous points victory over England"
             ],
             "n_words_checked": 102,
-            "score": -0.8825041055679321
+            "score": -0.8825044631958008
           },
           "labeled_entities": [
             {
@@ -7322,7 +7322,7 @@
               "</s>James Wakely and Richard Keogh hit centuries as Northamptonshire took control against Leicestershire at Grace Road"
             ],
             "n_words_checked": 80,
-            "score": -0.5822515487670898
+            "score": -0.5822510719299316
           },
           "labeled_entities": [
             {
@@ -7528,7 +7528,7 @@
           }
         },
         "summary": {
-          "completed": 69,
+          "completed": 71,
           "factual": 66,
           "failed": 3,
           "non_factual": 31,
@@ -7577,7 +7577,7 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
             "n_words_checked": 73,
-            "score": -0.6207178831100464
+            "score": -0.6207175850868225
           },
           "labeled_entities": [
             {
@@ -7636,8 +7636,8 @@
               "</s>Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 14-year-old",
               "</s>Police have released an E-fit image of a man they want to speak to in connection with the sexual assault of a 15-year-old"
             ],
-            "n_words_checked": 106,
-            "score": -0.5669078230857849
+            "n_words_checked": 107,
+            "score": -0.5669077634811401
           },
           "labeled_entities": [
             {
@@ -7675,7 +7675,7 @@
               "</s>Ireland's economy grew by 7.7% in the three months to the end of June compared with the same period last year"
             ],
             "n_words_checked": 116,
-            "score": -0.5338911414146423
+            "score": -0.533890962600708
           },
           "labeled_entities": [
             {
@@ -7731,17 +7731,9 @@
               "</s>Hartlepool United have signed Reading midfielder Olamide Tshibola and Mansfield Town striker Jordan",
               "</s>Hartlepool United have signed Reading midfielder Nkosi Tshibola and Mansfield Town striker Josh",
               "</s>Hartlepool United have signed Reading midfielder Olamide Tshibola and Mansfield Town striker Josh",
-              "</s>Hartlepool United have signed Reading midfielder Nkosi Tshibola and Mansfield Town striker Jordan",
-              "</s>Hartlepool United have signed Reading midfielder Olamide Tshibola and Mansfield Town striker Jordan<s>",
-              "</s>Hartlepool United have signed Reading midfielder Olamide Tshibola and Mansfield Town striker Jordan<unk>",
-              "</s>Hartlepool United have signed Reading midfielder Olamide Tshibola and Mansfield Town striker Jordan<s><s>",
-              "</s>Hartlepool United have signed Reading midfielder Olamide Tshibola and Mansfield Town striker Jordan<s><unk>",
-              "</s>Hartlepool United have signed Reading midfielder Olamide Tshibola and Mansfield Town striker Jordan<s><s><s>",
-              "</s>Hartlepool United have signed Reading midfielder Olamide Tshibola and Mansfield Town striker Jordan<s><s><unk>",
-              "</s>Hartlepool United have signed Reading midfielder Olamide Tshibola and Mansfield Town striker Jordan<s><s><s><s>",
-              "</s>Hartlepool United have signed Reading midfielder Olamide Tshibola and Mansfield Town striker Jordan<s><s><s><unk>"
+              "</s>Hartlepool United have signed Reading midfielder Nkosi Tshibola and Mansfield Town striker Jordan"
             ],
-            "n_words_checked": 67,
+            "n_words_checked": 170,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -7762,7 +7754,7 @@
               "</s>More than 1,000 people have objected to plans to build more than 200"
             ],
             "n_words_checked": 98,
-            "score": -0.7911206483840942
+            "score": -0.791120707988739
           },
           "labeled_entities": [
             {
@@ -7824,7 +7816,7 @@
               "</s>The world premiere of the new animated film Minions has taken place in New York, USA"
             ],
             "n_words_checked": 64,
-            "score": -0.6287205219268799
+            "score": -0.6287205815315247
           },
           "labeled_entities": [
             {
@@ -7850,7 +7842,7 @@
               "</s>The man behind the takeover of the Financial Times is one of Japan's richest men, Shigeru",
               "</s>The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Shigeru"
             ],
-            "n_words_checked": 103,
+            "n_words_checked": 105,
             "score": -0.7260164618492126
           },
           "labeled_entities": [
@@ -7893,64 +7885,6 @@
           ],
           "summary": "The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Kaori Kita."
         },
-        "34193568": {
-          "banned_phrases": [
-            "Claude"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 76,
-            "score": -0.4243582487106323
-          },
-          "labeled_entities": [
-            {
-              "end": 19,
-              "ent": "European Commission",
-              "in_source": true,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 34,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 30,
-              "type": "PERSON"
-            },
-            {
-              "end": 35,
-              "ent": "-",
-              "in_source": true,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 34,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 49,
-              "ent": "Juncker",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 42,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
-        },
         "34694547": {
           "banned_phrases": [
             "Dundee",
@@ -7967,8 +7901,8 @@
               "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run crash in Dundee",
               "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run incident in Dundee"
             ],
-            "n_words_checked": 107,
-            "score": -0.6935162544250488
+            "n_words_checked": 109,
+            "score": -0.6935163736343384
           },
           "labeled_entities": [
             {
@@ -8004,7 +7938,7 @@
               "</s>Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Nagoya Grampus"
             ],
             "n_words_checked": 94,
-            "score": -0.5294700264930725
+            "score": -0.529469907283783
           },
           "labeled_entities": [
             {
@@ -8077,7 +8011,7 @@
               "</s>Nour, from the Syrian city of Raqqa"
             ],
             "n_words_checked": 102,
-            "score": -0.6247033476829529
+            "score": -0.6247031092643738
           },
           "labeled_entities": [
             {
@@ -8141,7 +8075,7 @@
               "</s>Thousands of animals are being counted at Chester Zoo"
             ],
             "n_words_checked": 59,
-            "score": -0.9039441347122192
+            "score": -0.903944194316864
           },
           "labeled_entities": [
             {
@@ -8192,7 +8126,7 @@
               "</s>Tens of thousands of football fans had to wait up to 20 minutes to get into a match at one of the biggest stadiums in the Premier League"
             ],
             "n_words_checked": 109,
-            "score": -0.7593987584114075
+            "score": -0.7593986988067627
           },
           "labeled_entities": [
             {
@@ -8245,7 +8179,7 @@
               "</s>Wales coach Huw"
             ],
             "n_words_checked": 75,
-            "score": -0.7128849029541016
+            "score": -0.7128847241401672
           },
           "labeled_entities": [
             {
@@ -8318,8 +8252,8 @@
               "</s>World number one Andy Murray and Marcelos Melo beat world number two Marin Dodig 6-2 6-4",
               "</s>World number one Andy Murray and Marcelos Melo beat world number two Marin Dodig 7-6 (7-4) 6-4"
             ],
-            "n_words_checked": 100,
-            "score": -0.6944400072097778
+            "n_words_checked": 103,
+            "score": -0.6944401860237122
           },
           "labeled_entities": [
             {
@@ -8371,7 +8305,7 @@
               "end": 68,
               "ent": "two",
               "in_source": false,
-              "label": "Unknown",
+              "label": "Non-factual Hallucination",
               "predicted_label": "Factual Hallucination",
               "start": 65,
               "type": "CARDINAL"
@@ -8457,7 +8391,7 @@
               "</s>World number one Mark Selby will face Ding Junhui in the World Championship semi-finals after beating Marco Fu 6-5"
             ],
             "n_words_checked": 98,
-            "score": -0.5045509934425354
+            "score": -0.5045504570007324
           },
           "labeled_entities": [
             {
@@ -8557,7 +8491,7 @@
               "</s>Three men have been found guilty of blowing up cash machines and stealing more than \u00a3100,000"
             ],
             "n_words_checked": 71,
-            "score": -0.4658443331718445
+            "score": -0.46584442257881165
           },
           "labeled_entities": [
             {
@@ -8581,85 +8515,6 @@
           ],
           "summary": "Three men have been found guilty of blowing up cash machines and stealing more than \u00a3150,000."
         },
-        "36555657": {
-          "banned_phrases": [
-            "Claude",
-            "Sumner"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner"
-            ],
-            "n_words_checked": 105,
-            "score": -0.5892916917800903
-          },
-          "labeled_entities": [
-            {
-              "end": 6,
-              "ent": "Viacom",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 27,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 23,
-              "type": "PERSON"
-            },
-            {
-              "end": 28,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 27,
-              "type": "PERSON"
-            },
-            {
-              "end": 34,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 28,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Dauman",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 113,
-              "ent": "Shari",
-              "in_source": true,
-              "label": "Intrinsic Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 108,
-              "type": "PERSON"
-            },
-            {
-              "end": 122,
-              "ent": "Redstone",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 114,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
-        },
         "36635880": {
           "banned_phrases": [
             "the EuroHockey Championships",
@@ -8671,7 +8526,7 @@
               "</s>Great Britain's women produced their best performance of the EuroHockey Championships"
             ],
             "n_words_checked": 85,
-            "score": -0.6306924819946289
+            "score": -0.6306928396224976
           },
           "labeled_entities": [
             {
@@ -8724,7 +8579,7 @@
               "</s>Wales are out of Euro 2016 after a 2-0 defeat by Portugal in their last-16"
             ],
             "n_words_checked": 81,
-            "score": -0.5286749005317688
+            "score": -0.528674304485321
           },
           "labeled_entities": [
             {
@@ -8781,17 +8636,9 @@
               "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes",
               "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBO world champion Johannes",
               "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Christian",
-              "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBO world champion Christian",
-              "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes<s>",
-              "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes<unk>",
-              "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes<s><s>",
-              "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes<s><unk>",
-              "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes<s><s><s>",
-              "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes<s><s><unk>",
-              "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes<s><s><s><s>",
-              "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes<s><s><s><unk>"
+              "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBO world champion Christian"
             ],
-            "n_words_checked": 71,
+            "n_words_checked": 186,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -8808,8 +8655,8 @@
               "</s>The Indiana Pacers will play the Denver Nuggets at London's O2 Arena next month",
               "</s>The Indiana Pacers will play the Denver Nuggets at London's O2 Arena in the first of two regular-season games staged in the UK next month"
             ],
-            "n_words_checked": 109,
-            "score": -0.5235927104949951
+            "n_words_checked": 113,
+            "score": -0.5235923528671265
           },
           "labeled_entities": [
             {
@@ -8901,8 +8748,8 @@
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 400,000 euros (\u00a3353,176) were seized in Paris",
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 400,000 euros (\u00a3353,176) were seized by police in Paris"
             ],
-            "n_words_checked": 115,
-            "score": -0.6456093192100525
+            "n_words_checked": 118,
+            "score": -0.645609438419342
           },
           "labeled_entities": [
             {
@@ -8957,7 +8804,7 @@
               "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2016"
             ],
             "n_words_checked": 115,
-            "score": -0.5024812817573547
+            "score": -0.5024815797805786
           },
           "labeled_entities": [
             {
@@ -9050,7 +8897,7 @@
               "</s>Concerns are rising for a 12-year-old girl who has been missing from her home in Greater Manchester for more than a week"
             ],
             "n_words_checked": 93,
-            "score": -0.5432119965553284
+            "score": -0.5432122945785522
           },
           "labeled_entities": [
             {
@@ -9096,7 +8943,7 @@
               "</s>Polish film director Andrzej"
             ],
             "n_words_checked": 71,
-            "score": -0.8177064657211304
+            "score": -0.817706286907196
           },
           "labeled_entities": [
             {
@@ -9150,7 +8997,7 @@
               "</s>An outbreak of Dengue fever in Burkina Faso has killed more than 100"
             ],
             "n_words_checked": 94,
-            "score": -0.5611920356750488
+            "score": -0.561191976070404
           },
           "labeled_entities": [
             {
@@ -9196,7 +9043,7 @@
               "</s>A man has been charged with causing death by dangerous driving after the death of a six-year-old"
             ],
             "n_words_checked": 75,
-            "score": -0.36091339588165283
+            "score": -0.3609134256839752
           },
           "labeled_entities": [
             {
@@ -9222,7 +9069,7 @@
               "</s>A 33-year-old"
             ],
             "n_words_checked": 84,
-            "score": -0.415500670671463
+            "score": -0.4155004322528839
           },
           "labeled_entities": [
             {
@@ -9260,8 +9107,8 @@
               "</s>Ex-Crewe Alexandra footballer Ian",
               "</s>Ex-Crewe Alexandra footballer Lee"
             ],
-            "n_words_checked": 104,
-            "score": -0.7997139692306519
+            "n_words_checked": 106,
+            "score": -0.7997146844863892
           },
           "labeled_entities": [
             {
@@ -9313,7 +9160,7 @@
               "</s>St Johnstone's Steven Anderson has said Rangers' Kieran"
             ],
             "n_words_checked": 80,
-            "score": -0.900770366191864
+            "score": -0.9007702469825745
           },
           "labeled_entities": [
             {
@@ -9384,8 +9231,8 @@
               "</s>Arsenal Ladies have signed Ivory Coast international midfielder Nana",
               "</s>Arsenal Ladies have confirmed that Ivory Coast midfielder Nkosi Nkoudou has signed a new three-year"
             ],
-            "n_words_checked": 91,
-            "score": -0.7694460153579712
+            "n_words_checked": 95,
+            "score": -0.7694458961486816
           },
           "labeled_entities": [
             {
@@ -9455,7 +9302,7 @@
               "</s>A \"depraved\" paedophile who groomed a 12-year old boy on Facebook before sexually abusing him has been jailed for eight years"
             ],
             "n_words_checked": 91,
-            "score": -0.6952795386314392
+            "score": -0.6952794194221497
           },
           "labeled_entities": [
             {
@@ -9495,7 +9342,7 @@
               "</s>Peterborough United have completed the signing of Walsall striker Josh"
             ],
             "n_words_checked": 69,
-            "score": -0.735199511051178
+            "score": -0.7351995706558228
           },
           "labeled_entities": [
             {
@@ -9551,7 +9398,7 @@
               "</s>Plans for a new McDonald's restaurant in a Gloucestershire"
             ],
             "n_words_checked": 70,
-            "score": -0.6698936820030212
+            "score": -0.6698939204216003
           },
           "labeled_entities": [
             {
@@ -9635,8 +9482,8 @@
               "</s>James Wakely and James Keogh hit centuries as Northants took control against Leicestershire at Edgbaston",
               "</s>James Wakely and James Keogh shared an unbeaten century stand to put Northants in control against Leicestershire at Grace Road"
             ],
-            "n_words_checked": 75,
-            "score": -0.6794061660766602
+            "n_words_checked": 76,
+            "score": -0.6794061064720154
           },
           "labeled_entities": [
             {
@@ -9850,7 +9697,7 @@
           }
         },
         "summary": {
-          "completed": 84,
+          "completed": 87,
           "factual": 74,
           "failed": 10,
           "non_factual": 16,
@@ -9873,7 +9720,7 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
             "n_words_checked": 76,
-            "score": -0.8472775816917419
+            "score": -0.8472775220870972
           },
           "labeled_entities": [
             {
@@ -9906,7 +9753,7 @@
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Council"
             ],
             "n_words_checked": 122,
-            "score": -0.7194837331771851
+            "score": -0.7194839715957642
           },
           "labeled_entities": [
             {
@@ -9934,16 +9781,9 @@
               "</s>Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 15-year-old",
               "</s>Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 14-year-old",
               "</s>Police have released an E-fit image of a man they want to speak to in connection with the sexual assault of a 15-year-old",
-              "</s>Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 15- year-old",
-              "</s>Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 15-year-old<s>",
-              "</s>Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 15-year-old<unk>",
-              "</s>Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 15-year-old<s><s>",
-              "</s>Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 15-year-old<s><unk>",
-              "</s>Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 15-year-old<s><s><s>",
-              "</s>Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 15-year-old<s><s><s><s>",
-              "</s>Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 15-year-old<s><s><s><unk>"
+              "</s>Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 15- year-old"
             ],
-            "n_words_checked": 96,
+            "n_words_checked": 179,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -10027,7 +9867,7 @@
               "</s>More than 1,000 people have objected to plans to build more than 100"
             ],
             "n_words_checked": 98,
-            "score": -0.7911299467086792
+            "score": -0.791130006313324
           },
           "labeled_entities": [
             {
@@ -10074,7 +9914,7 @@
               "</s>The world premiere of the new animated film Minions has taken place in New York"
             ],
             "n_words_checked": 67,
-            "score": -0.6801657676696777
+            "score": -0.6801658868789673
           },
           "labeled_entities": [
             {
@@ -10103,8 +9943,8 @@
               "</s>The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Shigeru",
               "</s>The man behind the takeover of the Financial Times is one of the world's richest men, and his name is Kaori"
             ],
-            "n_words_checked": 102,
-            "score": -0.7617736458778381
+            "n_words_checked": 104,
+            "score": -0.7617734670639038
           },
           "labeled_entities": [
             {
@@ -10146,64 +9986,6 @@
           ],
           "summary": "The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Ken Kita."
         },
-        "34193568": {
-          "banned_phrases": [
-            "Claude"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 76,
-            "score": -0.4243582487106323
-          },
-          "labeled_entities": [
-            {
-              "end": 19,
-              "ent": "European Commission",
-              "in_source": true,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 34,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 30,
-              "type": "PERSON"
-            },
-            {
-              "end": 35,
-              "ent": "-",
-              "in_source": true,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 34,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 49,
-              "ent": "Juncker",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 42,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
-        },
         "34787804": {
           "banned_phrases": [
             "Nagoya Grampus",
@@ -10217,8 +9999,8 @@
               "</s>Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Shonan",
               "</s>Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Nagoya Grampus"
             ],
-            "n_words_checked": 89,
-            "score": -0.6333826184272766
+            "n_words_checked": 92,
+            "score": -0.6333820223808289
           },
           "labeled_entities": [
             {
@@ -10288,8 +10070,8 @@
               "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between the so-called Islamic State (IS) and government forces in 2014",
               "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between the so-called Islamic State (IS) and government forces in June 2014"
             ],
-            "n_words_checked": 106,
-            "score": -0.6944926381111145
+            "n_words_checked": 110,
+            "score": -0.6944923996925354
           },
           "labeled_entities": [
             {
@@ -10355,7 +10137,7 @@
               "</s>Thousands of animals are being counted at London's Natural History Museum"
             ],
             "n_words_checked": 58,
-            "score": -1.057989239692688
+            "score": -1.0579899549484253
           },
           "labeled_entities": [
             {
@@ -10405,7 +10187,7 @@
               "</s>Tens of thousands of football fans faced long queues to get into the stadium for a Premier League"
             ],
             "n_words_checked": 93,
-            "score": -0.7828953266143799
+            "score": -0.7828956842422485
           },
           "labeled_entities": [
             {
@@ -10443,7 +10225,7 @@
               "</s>Wales' Six Nations win over France was \"baffling\", according to ex-Wales captain Martyn"
             ],
             "n_words_checked": 95,
-            "score": -0.7281686663627625
+            "score": -0.7281684279441833
           },
           "labeled_entities": [
             {
@@ -10529,15 +10311,9 @@
               "</s>World number one Andy Murray and partner Marcelos Melo beat world number two Milos Raonic and Dusan Dodig 7-6 (7-4) 6-4",
               "</s>World number one Andy Murray and partner Marcelos Melo beat world number two Milos Raonic and Dusan Dodig 7-6 (8-6) 6-4",
               "</s>World number one Andy Murray and partner Marcelos Melo beat world number two Milos Raonic and Dusan Dodig 7-6 (7-4) 6-2",
-              "</s>World number one Andy Murray and partner Marcelos Melo beat world number two Milos Raonic and Dusan Dodig 7-6 (8-6) 6-2",
-              "</s>World number one Andy Murray and partner Marcelos Melo beat world number two Milos Raonic and Dusan Dodig 7-6 (7-4) 6-4<s>",
-              "</s>World number one Andy Murray and partner Marcelos Melo beat world number two Milos Raonic and Dusan Dodig 7-6 (7-4) 6-4<unk>",
-              "</s>World number one Andy Murray and partner Marcelos Melo beat world number two Milos Raonic and Dusan Dodig 7-6 (7-4) 6-4<s><s>",
-              "</s>World number one Andy Murray and partner Marcelos Melo beat world number two Milos Raonic and Dusan Dodig 7-6 (7-4) 6-4<s><unk>",
-              "</s>World number one Andy Murray and partner Marcelos Melo beat world number two Milos Raonic and Dusan Dodig 7-6 (7-4) 6-4<s><s><s>",
-              "</s>World number one Andy Murray and partner Marcelos Melo beat world number two Milos Raonic and Dusan Dodig 7-6 (7-4) 6-4<s><s><unk>"
+              "</s>World number one Andy Murray and partner Marcelos Melo beat world number two Milos Raonic and Dusan Dodig 7-6 (8-6) 6-2"
             ],
-            "n_words_checked": 91,
+            "n_words_checked": 154,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -10561,8 +10337,8 @@
               "</s>World number one Mark Selby will face Ding Junhui in the World Championship semi-finals after he led Mark Fu 6-4",
               "</s>World number one Mark Selby will face Ding Junhui in the World Championship semi-finals after he led 6-3 against Marco"
             ],
-            "n_words_checked": 105,
-            "score": -0.6348462700843811
+            "n_words_checked": 106,
+            "score": -0.6348460912704468
           },
           "labeled_entities": [
             {
@@ -10655,7 +10431,7 @@
               "</s>Three men have been found guilty of blowing up cash machines and stealing more than \u00a3150,000"
             ],
             "n_words_checked": 72,
-            "score": -0.4755297601222992
+            "score": -0.4755295217037201
           },
           "labeled_entities": [
             {
@@ -10679,85 +10455,6 @@
           ],
           "summary": "Three men have been found guilty of blowing up cash machines and stealing more than \u00a3300,000."
         },
-        "36555657": {
-          "banned_phrases": [
-            "Claude",
-            "Sumner"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner"
-            ],
-            "n_words_checked": 105,
-            "score": -0.5892916917800903
-          },
-          "labeled_entities": [
-            {
-              "end": 6,
-              "ent": "Viacom",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 27,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 23,
-              "type": "PERSON"
-            },
-            {
-              "end": 28,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 27,
-              "type": "PERSON"
-            },
-            {
-              "end": 34,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 28,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Dauman",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 113,
-              "ent": "Shari",
-              "in_source": true,
-              "label": "Intrinsic Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 108,
-              "type": "PERSON"
-            },
-            {
-              "end": 122,
-              "ent": "Redstone",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 114,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
-        },
         "36635880": {
           "banned_phrases": [
             "the EuroHockey Championships",
@@ -10771,7 +10468,7 @@
               "</s>Great Britain's women produced their best performance of the EuroHockey Championships"
             ],
             "n_words_checked": 92,
-            "score": -0.6728395819664001
+            "score": -0.6728397607803345
           },
           "labeled_entities": [
             {
@@ -10826,7 +10523,7 @@
               "</s>Wales are out of Euro 2016 after a 2-0 defeat by Portugal in their last-16"
             ],
             "n_words_checked": 82,
-            "score": -0.5568816661834717
+            "score": -0.5568815469741821
           },
           "labeled_entities": [
             {
@@ -10876,7 +10573,7 @@
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 1m euros (\u00a31.1m) were seized by police in Paris"
             ],
             "n_words_checked": 113,
-            "score": -0.7418636679649353
+            "score": -0.7418637871742249
           },
           "labeled_entities": [
             {
@@ -10933,7 +10630,7 @@
               "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2016"
             ],
             "n_words_checked": 112,
-            "score": -0.5436189770698547
+            "score": -0.5436190962791443
           },
           "labeled_entities": [
             {
@@ -11030,8 +10727,8 @@
               "</s>Police are \"extremely concerned\" for the welfare of a 13-month-old girl who has been missing from her home in Greater Manchester for more than a week",
               "</s>Police are \"extremely concerned\" for the welfare of a 15-month-old girl who has been missing from her home in Greater Manchester for more than a week"
             ],
-            "n_words_checked": 94,
-            "score": -0.6656960248947144
+            "n_words_checked": 98,
+            "score": -0.665696382522583
           },
           "labeled_entities": [
             {
@@ -11080,7 +10777,7 @@
               "</s>An outbreak of Dengue fever in Burkina Faso has killed at least 20 people and left more than 100"
             ],
             "n_words_checked": 96,
-            "score": -0.5623418688774109
+            "score": -0.5623416304588318
           },
           "labeled_entities": [
             {
@@ -11128,7 +10825,7 @@
               "</s>A man has been charged with causing death by dangerous driving after the death of a five-year-old"
             ],
             "n_words_checked": 78,
-            "score": -0.36385777592658997
+            "score": -0.3638576567173004
           },
           "labeled_entities": [
             {
@@ -11156,7 +10853,7 @@
               "</s>A 37-year-old"
             ],
             "n_words_checked": 69,
-            "score": -0.5004550814628601
+            "score": -0.5004554390907288
           },
           "labeled_entities": [
             {
@@ -11185,17 +10882,9 @@
               "</s>Ex-Crewe Alexandra and England",
               "</s>Ex-Crewe Alexandra footballer Ian",
               "</s>Ex-Crewe Alexandra footballer Lee",
-              "</s>Ex-Crewe Alexandra footballer Paul",
-              "</s>Ex-Crewe Alexandra and England<s>",
-              "</s>Ex-Crewe Alexandra and England<unk>",
-              "</s>Ex-Crewe Alexandra and England<s><s>",
-              "</s>Ex-Crewe Alexandra and England<s><unk>",
-              "</s>Ex-Crewe Alexandra and England<s><s><s>",
-              "</s>Ex-Crewe Alexandra and England<s><s><unk>",
-              "</s>Ex-Crewe Alexandra and England<s><s><s><s>",
-              "</s>Ex-Crewe Alexandra and England<s><s><s><unk>"
+              "</s>Ex-Crewe Alexandra footballer Paul"
             ],
-            "n_words_checked": 30,
+            "n_words_checked": 174,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -11214,15 +10903,9 @@
               "</s>St Johnstone's Gary",
               "</s>St Johnstone captain Gary",
               "</s>St Johnstone's Paul",
-              "</s>St Johnstone's Steven",
-              "</s>St Johnstone's Gary<s>",
-              "</s>St Johnstone's Gary<unk>",
-              "</s>St Johnstone's Gary<s><s>",
-              "</s>St Johnstone's Gary<s><unk>",
-              "</s>St Johnstone's Gary<s><s><unk>",
-              "</s>St Johnstone's Gary<s><s><s><unk>"
+              "</s>St Johnstone's Steven"
             ],
-            "n_words_checked": 25,
+            "n_words_checked": 176,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -11246,17 +10929,9 @@
               "</s>A \"depraved\" paedophile who groomed a 12-year old boy on Facebook before sexually abusing him has been jailed for 12 years",
               "</s>A \"depraved\" paedophile who groomed a 12 year-old boy on Facebook before sexually abusing him has been jailed for 12 years",
               "</s>A \"depraved\" paedophile who groomed a 12-year old boy on Facebook before sexually abusing him has been jailed for eight years",
-              "</s>A \"depraved\" paedophile who groomed a 12-year old boy on Facebook before sexually abusing him has been jailed for seven years",
-              "</s>A \"depraved\" paedophile who groomed a 12-year old boy on Facebook before sexually abusing him has been jailed for 12 years<s>",
-              "</s>A \"depraved\" paedophile who groomed a 12-year old boy on Facebook before sexually abusing him has been jailed for 12 years<unk>",
-              "</s>A \"depraved\" paedophile who groomed a 12-year old boy on Facebook before sexually abusing him has been jailed for 12 years<s><s>",
-              "</s>A \"depraved\" paedophile who groomed a 12-year old boy on Facebook before sexually abusing him has been jailed for 12 years<s><unk>",
-              "</s>A \"depraved\" paedophile who groomed a 12-year old boy on Facebook before sexually abusing him has been jailed for 12 years<s><s><s>",
-              "</s>A \"depraved\" paedophile who groomed a 12-year old boy on Facebook before sexually abusing him has been jailed for 12 years<s><s><unk>",
-              "</s>A \"depraved\" paedophile who groomed a 12-year old boy on Facebook before sexually abusing him has been jailed for 12 years<s><s><s><s>",
-              "</s>A \"depraved\" paedophile who groomed a 12-year old boy on Facebook before sexually abusing him has been jailed for 12 years<s><s><s><unk>"
+              "</s>A \"depraved\" paedophile who groomed a 12-year old boy on Facebook before sexually abusing him has been jailed for seven years"
             ],
-            "n_words_checked": 88,
+            "n_words_checked": 173,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -11280,17 +10955,9 @@
               "</s>Peterborough United have completed the signing of Wigan Athletic striker Jordan",
               "</s>Peterborough United have completed the signing of Wigan Athletic striker Josh",
               "</s>Peterborough United have completed the signing of Wigan Athletic striker James",
-              "</s>Peterborough United have completed the signing of Wigan Athletic midfielder Jordan",
-              "</s>Peterborough United have completed the signing of Wigan Athletic striker Jordan<s>",
-              "</s>Peterborough United have completed the signing of Wigan Athletic striker Jordan<unk>",
-              "</s>Peterborough United have completed the signing of Wigan Athletic striker Jordan<s><s>",
-              "</s>Peterborough United have completed the signing of Wigan Athletic striker Jordan<s><unk>",
-              "</s>Peterborough United have completed the signing of Wigan Athletic striker Jordan<s><s><s>",
-              "</s>Peterborough United have completed the signing of Wigan Athletic striker Jordan<s><s><unk>",
-              "</s>Peterborough United have completed the signing of Wigan Athletic striker Jordan<s><s><s><s>",
-              "</s>Peterborough United have completed the signing of Wigan Athletic striker Jordan<s><s><s><unk>"
+              "</s>Peterborough United have completed the signing of Wigan Athletic midfielder Jordan"
             ],
-            "n_words_checked": 54,
+            "n_words_checked": 183,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -11313,7 +10980,7 @@
               "</s>Plans for a new McDonald's restaurant in a Gloucestershire"
             ],
             "n_words_checked": 75,
-            "score": -0.8843067288398743
+            "score": -0.8843068480491638
           },
           "labeled_entities": [
             {
@@ -11359,16 +11026,9 @@
               "</s>Northamptonsfield pair Sam",
               "</s>Northamptonsfield pair James",
               "</s>Northamptonsshire pair Sam",
-              "</s>Northamptonsshire pair James",
-              "</s>Northamptonsfield pair Sam<s>",
-              "</s>Northamptonsfield pair Sam<unk>",
-              "</s>Northamptonsfield pair Sam<s><s>",
-              "</s>Northamptonsfield pair Sam<s><unk>",
-              "</s>Northamptonsfield pair Sam<s><s><s>",
-              "</s>Northamptonsfield pair Sam<s><s><unk>",
-              "</s>Northamptonsfield pair Sam<s><s><s><unk>"
+              "</s>Northamptonsshire pair James"
             ],
-            "n_words_checked": 32,
+            "n_words_checked": 176,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -11502,7 +11162,7 @@
           }
         },
         "summary": {
-          "completed": 89,
+          "completed": 92,
           "factual": 75,
           "failed": 14,
           "non_factual": 11,
@@ -11530,8 +11190,8 @@
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Council",
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Union"
             ],
-            "n_words_checked": 126,
-            "score": -0.7390041947364807
+            "n_words_checked": 130,
+            "score": -0.7390041351318359
           },
           "labeled_entities": [
             {
@@ -11567,8 +11227,8 @@
               "</s>Ireland's economy grew by 7.7% in the three months to the end of December compared with the same period a year ago",
               "</s>Ireland's economy grew by 7.7% in the three months to the end of December compared with the same period a year earlier"
             ],
-            "n_words_checked": 124,
-            "score": -0.5804930925369263
+            "n_words_checked": 125,
+            "score": -0.5804927349090576
           },
           "labeled_entities": [
             {
@@ -11629,7 +11289,7 @@
               "</s>More than 1,000 people have objected to plans to build more than 300"
             ],
             "n_words_checked": 96,
-            "score": -1.0176371335983276
+            "score": -1.0176373720169067
           },
           "labeled_entities": [
             {
@@ -11679,7 +11339,7 @@
               "</s>The man behind the takeover of the Financial Times is one of the world's richest men, and his name is Kaori"
             ],
             "n_words_checked": 110,
-            "score": -0.7643505334854126
+            "score": -0.7643501162528992
           },
           "labeled_entities": [
             {
@@ -11721,64 +11381,6 @@
           ],
           "summary": "The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Kaoru Kita."
         },
-        "34193568": {
-          "banned_phrases": [
-            "Claude"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 76,
-            "score": -0.4243582487106323
-          },
-          "labeled_entities": [
-            {
-              "end": 19,
-              "ent": "European Commission",
-              "in_source": true,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 34,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 30,
-              "type": "PERSON"
-            },
-            {
-              "end": 35,
-              "ent": "-",
-              "in_source": true,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 34,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 49,
-              "ent": "Juncker",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 42,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
-        },
         "34898778": {
           "banned_phrases": [
             "15-year-old",
@@ -11803,8 +11405,8 @@
               "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between the so-called Islamic State (IS) and government forces in the city in 2014",
               "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between the so-called Islamic State (IS) and government forces in the city in June"
             ],
-            "n_words_checked": 137,
-            "score": -0.7496106028556824
+            "n_words_checked": 140,
+            "score": -0.7496107220649719
           },
           "labeled_entities": [
             {
@@ -11882,7 +11484,7 @@
               "</s>Thousands of animals are being counted every year at the UK's largest zoo, the Natural Heritage Zoo in London"
             ],
             "n_words_checked": 91,
-            "score": -1.1781647205352783
+            "score": -1.1781656742095947
           },
           "labeled_entities": [
             {
@@ -11943,7 +11545,7 @@
               "</s>Tens of thousands of football fans faced long queues to get into the stadium for a Premier League"
             ],
             "n_words_checked": 89,
-            "score": -0.9451003074645996
+            "score": -0.9451001286506653
           },
           "labeled_entities": [
             {
@@ -11981,100 +11583,13 @@
               "</s>Three men have been found guilty of blowing up cash machines and stealing more than \u00a3200,000",
               "</s>Three men have been found guilty of blowing up cash machines and stealing more than \u00a3100,000",
               "</s>Three men have been found guilty of blowing up cash machines and stealing more than \u00a3150,000",
-              "</s>Three men have been found guilty of blowing up cash machines and stealing more than \u00a3300,000",
-              "</s>Three men have been found guilty of blowing up cash machines and stealing more than \u00a3200,000<s>",
-              "</s>Three men have been found guilty of blowing up cash machines and stealing more than \u00a3200,000<unk>",
-              "</s>Three men have been found guilty of blowing up cash machines and stealing more than \u00a3200,000<s><s>",
-              "</s>Three men have been found guilty of blowing up cash machines and stealing more than \u00a3200,000<s><unk>",
-              "</s>Three men have been found guilty of blowing up cash machines and stealing more than \u00a3200,000<s><s><s>",
-              "</s>Three men have been found guilty of blowing up cash machines and stealing more than \u00a3200,000<s><s><unk>",
-              "</s>Three men have been found guilty of blowing up cash machines and stealing more than \u00a3200,000<s><s><s><s>",
-              "</s>Three men have been found guilty of blowing up cash machines and stealing more than \u00a3200,000<s><s><s><unk>"
+              "</s>Three men have been found guilty of blowing up cash machines and stealing more than \u00a3300,000"
             ],
-            "n_words_checked": 69,
+            "n_words_checked": 181,
             "score": -Infinity
           },
           "labeled_entities": [],
           "summary": "<Failed generation: blocked all beams>"
-        },
-        "36555657": {
-          "banned_phrases": [
-            "Claude",
-            "Sumner"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner"
-            ],
-            "n_words_checked": 105,
-            "score": -0.5892917513847351
-          },
-          "labeled_entities": [
-            {
-              "end": 6,
-              "ent": "Viacom",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 27,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 23,
-              "type": "PERSON"
-            },
-            {
-              "end": 28,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 27,
-              "type": "PERSON"
-            },
-            {
-              "end": 34,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 28,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Dauman",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 113,
-              "ent": "Shari",
-              "in_source": true,
-              "label": "Intrinsic Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 108,
-              "type": "PERSON"
-            },
-            {
-              "end": 122,
-              "ent": "Redstone",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 114,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
         },
         "36635880": {
           "banned_phrases": [
@@ -12091,7 +11606,7 @@
               "</s>Great Britain's women produced their best performance of the EuroHockey Championships"
             ],
             "n_words_checked": 96,
-            "score": -0.6858391761779785
+            "score": -0.6858392357826233
           },
           "labeled_entities": [
             {
@@ -12156,8 +11671,8 @@
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 500,000 euros (\u00a3353,176) were seized in Londonderry",
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 500,000 euros (\u00a3353,176) were seized by police in Londonderry"
             ],
-            "n_words_checked": 122,
-            "score": -0.6877616047859192
+            "n_words_checked": 126,
+            "score": -0.6877617239952087
           },
           "labeled_entities": [
             {
@@ -12199,99 +11714,6 @@
           ],
           "summary": "Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 500,000 euros (\u00a3353,176) were seized in Lille."
         },
-        "36961338": {
-          "banned_phrases": [
-            "Hogan",
-            "the Metropolitan Police Commissioner",
-            "the end of 2016",
-            "the end of 2017"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>Armed officers will be patrolling the streets of London and the rest of England and Wales by the end of 2017",
-              "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2017",
-              "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police Commissioner",
-              "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2016"
-            ],
-            "n_words_checked": 112,
-            "score": -0.5436189770698547
-          },
-          "labeled_entities": [
-            {
-              "end": 62,
-              "ent": "London",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 56,
-              "type": "GPE"
-            },
-            {
-              "end": 86,
-              "ent": "England",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 79,
-              "type": "GPE"
-            },
-            {
-              "end": 96,
-              "ent": "Wales",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 91,
-              "type": "GPE"
-            },
-            {
-              "end": 121,
-              "ent": "Metropolitan Police",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 102,
-              "type": "ORG"
-            },
-            {
-              "end": 146,
-              "ent": "Bernard",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 139,
-              "type": "PERSON"
-            },
-            {
-              "end": 152,
-              "ent": "Hogan",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 147,
-              "type": "PERSON"
-            },
-            {
-              "end": 153,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 152,
-              "type": "PERSON"
-            },
-            {
-              "end": 157,
-              "ent": "Howe",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 153,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner Sir Bernard Hogan-Howe has said."
-        },
         "37391662": {
           "banned_phrases": [
             "12-year-old",
@@ -12312,14 +11734,10 @@
               "</s>Police are \"extremely concerned\" for the welfare of a 13-month-old girl who has been missing from her home in Greater Manchester for more than a week",
               "</s>Police are \"extremely concerned\" for the welfare of a 15-month-old girl who has been missing from her home in Greater Manchester for more than a week",
               "</s>Police are \"extremely concerned\" for the welfare of a 13-month-old girl who has been missing from her home in Greater Manchester for more than a month",
-              "</s>Police are \"extremely concerned\" for the welfare of a 15-month-old girl who has been missing from her home in Greater Manchester for more than a month",
-              "</s>Police are \"extremely concerned\" for the welfare of a 13-month-old girl who has been missing from her home in Greater Manchester for more than a week<s>",
-              "</s>Police are \"extremely concerned\" for the welfare of a 13-month-old girl who has been missing from her home in Greater Manchester for more than a week<unk>",
-              "</s>Police are \"extremely concerned\" for the welfare of a 13-month-old girl who has been missing from her home in Greater Manchester for more than a week<s><s>",
-              "</s>Police are \"extremely concerned\" for the welfare of a 13-month-old girl who has been missing from her home in Greater Manchester for more than a week<s><unk>"
+              "</s>Police are \"extremely concerned\" for the welfare of a 15-month-old girl who has been missing from her home in Greater Manchester for more than a month"
             ],
-            "n_words_checked": 96,
-            "score": -0.6760894060134888
+            "n_words_checked": 173,
+            "score": -0.6760895848274231
           },
           "labeled_entities": [],
           "summary": "<Failed generation: blocked all beams>"
@@ -12338,17 +11756,9 @@
               "</s>An outbreak of Dengue fever in Burkina Faso has killed at least 11",
               "</s>An outbreak of Dengue fever in Burkina Faso has killed at least 12",
               "</s>An outbreak of Dengue fever in Burkina Faso has killed more than 100",
-              "</s>An outbreak of Dengue fever in Burkina Faso has killed at least 20",
-              "</s>An outbreak of Dengue fever in Burkina Faso has killed at least 11<s>",
-              "</s>An outbreak of Dengue fever in Burkina Faso has killed at least 11<unk>",
-              "</s>An outbreak of Dengue fever in Burkina Faso has killed at least 11<s><s>",
-              "</s>An outbreak of Dengue fever in Burkina Faso has killed at least 11<s><unk>",
-              "</s>An outbreak of Dengue fever in Burkina Faso has killed at least 11<s><s><s>",
-              "</s>An outbreak of Dengue fever in Burkina Faso has killed at least 11<s><s><unk>",
-              "</s>An outbreak of Dengue fever in Burkina Faso has killed at least 11<s><s><s><s>",
-              "</s>An outbreak of Dengue fever in Burkina Faso has killed at least 11<s><s><s><unk>"
+              "</s>An outbreak of Dengue fever in Burkina Faso has killed at least 20"
             ],
-            "n_words_checked": 66,
+            "n_words_checked": 186,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -12368,15 +11778,9 @@
               "</s>A man has been charged with causing death by dangerous driving after the death of a three-year-old",
               "</s>A man has been charged with causing death by dangerous driving after the death of a six-year-old",
               "</s>A man has been charged with causing death by dangerous driving after the death of a seven-year-old",
-              "</s>A man has been charged with causing death by dangerous driving after the death of a five-year-old",
-              "</s>A man has been charged with causing death by dangerous driving after the death of a three-year-old<s>",
-              "</s>A man has been charged with causing death by dangerous driving after the death of a three-year-old<unk>",
-              "</s>A man has been charged with causing death by dangerous driving after the death of a three-year-old<s><s>",
-              "</s>A man has been charged with causing death by dangerous driving after the death of a three-year-old<s><s><s>",
-              "</s>A man has been charged with causing death by dangerous driving after the death of a three-year-old<s><s><s><s>",
-              "</s>A man has been charged with causing death by dangerous driving after the death of a three-year-old<s><s><s><unk>"
+              "</s>A man has been charged with causing death by dangerous driving after the death of a five-year-old"
             ],
-            "n_words_checked": 63,
+            "n_words_checked": 155,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -12510,7 +11914,7 @@
           }
         },
         "summary": {
-          "completed": 94,
+          "completed": 97,
           "factual": 76,
           "failed": 18,
           "non_factual": 6,
@@ -12544,9 +11948,11 @@
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s><s>",
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s><unk>",
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s><s><s>",
-              "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s><s><unk>"
+              "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s><s><unk>",
+              "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s><s><s><s>",
+              "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s><s><s><unk>"
             ],
-            "n_words_checked": 124,
+            "n_words_checked": 126,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -12640,7 +12046,7 @@
               "</s>The man behind the takeover of the Financial Times is one of the world's richest men, and his name is Kaoru"
             ],
             "n_words_checked": 108,
-            "score": -0.8081474900245667
+            "score": -0.8081473708152771
           },
           "labeled_entities": [
             {
@@ -12673,64 +12079,6 @@
           ],
           "summary": "The man behind the takeover of the Financial Times is one of the world's richest men, and his name is Kaizo Kita."
         },
-        "34193568": {
-          "banned_phrases": [
-            "Claude"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 76,
-            "score": -0.4243582487106323
-          },
-          "labeled_entities": [
-            {
-              "end": 19,
-              "ent": "European Commission",
-              "in_source": true,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 34,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 30,
-              "type": "PERSON"
-            },
-            {
-              "end": 35,
-              "ent": "-",
-              "in_source": true,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 34,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 49,
-              "ent": "Juncker",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 42,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
-        },
         "34898778": {
           "banned_phrases": [
             "15-year-old",
@@ -12758,7 +12106,7 @@
               "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between the so-called Islamic State (IS) and government forces in the city in June"
             ],
             "n_words_checked": 146,
-            "score": -0.7633088231086731
+            "score": -0.7633087635040283
           },
           "labeled_entities": [
             {
@@ -12829,7 +12177,7 @@
               "</s>Thousands of animals are being counted at Chester zoo every year"
             ],
             "n_words_checked": 56,
-            "score": -1.186270833015442
+            "score": -1.186271071434021
           },
           "labeled_entities": [
             {
@@ -12862,85 +12210,6 @@
           ],
           "summary": "Thousands of animals are being counted at Chesterfield Zoo in the UK."
         },
-        "36555657": {
-          "banned_phrases": [
-            "Claude",
-            "Sumner"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner"
-            ],
-            "n_words_checked": 105,
-            "score": -0.5892917513847351
-          },
-          "labeled_entities": [
-            {
-              "end": 6,
-              "ent": "Viacom",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 27,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 23,
-              "type": "PERSON"
-            },
-            {
-              "end": 28,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 27,
-              "type": "PERSON"
-            },
-            {
-              "end": 34,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 28,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Dauman",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 113,
-              "ent": "Shari",
-              "in_source": true,
-              "label": "Intrinsic Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 108,
-              "type": "PERSON"
-            },
-            {
-              "end": 122,
-              "ent": "Redstone",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 114,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
-        },
         "36635880": {
           "banned_phrases": [
             "the EuroHockey Championship",
@@ -12958,7 +12227,7 @@
               "</s>Great Britain's women produced their best performance of the EuroHockey Championship"
             ],
             "n_words_checked": 97,
-            "score": -0.8064072132110596
+            "score": -0.8064075708389282
           },
           "labeled_entities": [
             {
@@ -13023,99 +12292,6 @@
           },
           "labeled_entities": [],
           "summary": "<Failed generation: blocked all beams>"
-        },
-        "36961338": {
-          "banned_phrases": [
-            "Hogan",
-            "the Metropolitan Police Commissioner",
-            "the end of 2016",
-            "the end of 2017"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>Armed officers will be patrolling the streets of London and the rest of England and Wales by the end of 2017",
-              "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2017",
-              "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police Commissioner",
-              "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2016"
-            ],
-            "n_words_checked": 112,
-            "score": -0.5436189770698547
-          },
-          "labeled_entities": [
-            {
-              "end": 62,
-              "ent": "London",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 56,
-              "type": "GPE"
-            },
-            {
-              "end": 86,
-              "ent": "England",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 79,
-              "type": "GPE"
-            },
-            {
-              "end": 96,
-              "ent": "Wales",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 91,
-              "type": "GPE"
-            },
-            {
-              "end": 121,
-              "ent": "Metropolitan Police",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 102,
-              "type": "ORG"
-            },
-            {
-              "end": 146,
-              "ent": "Bernard",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 139,
-              "type": "PERSON"
-            },
-            {
-              "end": 152,
-              "ent": "Hogan",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 147,
-              "type": "PERSON"
-            },
-            {
-              "end": 153,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 152,
-              "type": "PERSON"
-            },
-            {
-              "end": 157,
-              "ent": "Howe",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 153,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner Sir Bernard Hogan-Howe has said."
         }
       }
     },
@@ -13245,7 +12421,7 @@
           }
         },
         "summary": {
-          "completed": 96,
+          "completed": 99,
           "factual": 77,
           "failed": 19,
           "non_factual": 4,
@@ -13254,64 +12430,6 @@
         }
       },
       "summaries": {
-        "34193568": {
-          "banned_phrases": [
-            "Claude"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 76,
-            "score": -0.42435771226882935
-          },
-          "labeled_entities": [
-            {
-              "end": 19,
-              "ent": "European Commission",
-              "in_source": true,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 34,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 30,
-              "type": "PERSON"
-            },
-            {
-              "end": 35,
-              "ent": "-",
-              "in_source": true,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 34,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 49,
-              "ent": "Juncker",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 42,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
-        },
         "34898778": {
           "banned_phrases": [
             "15-year-old",
@@ -13377,7 +12495,7 @@
               "</s>Thousands of animals are being counted at Chester zoo in the West Midlands, in the UK"
             ],
             "n_words_checked": 61,
-            "score": -1.2622567415237427
+            "score": -1.2622572183609009
           },
           "labeled_entities": [
             {
@@ -13410,85 +12528,6 @@
           ],
           "summary": "Thousands of animals are being counted at Chester zoo in the West Midlands."
         },
-        "36555657": {
-          "banned_phrases": [
-            "Claude",
-            "Sumner"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner"
-            ],
-            "n_words_checked": 105,
-            "score": -0.5892912745475769
-          },
-          "labeled_entities": [
-            {
-              "end": 6,
-              "ent": "Viacom",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 27,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 23,
-              "type": "PERSON"
-            },
-            {
-              "end": 28,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 27,
-              "type": "PERSON"
-            },
-            {
-              "end": 34,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 28,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Dauman",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 113,
-              "ent": "Shari",
-              "in_source": true,
-              "label": "Intrinsic Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 108,
-              "type": "PERSON"
-            },
-            {
-              "end": 122,
-              "ent": "Redstone",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 114,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
-        },
         "36635880": {
           "banned_phrases": [
             "EuroHockey",
@@ -13506,7 +12545,7 @@
               "</s>Great Britain's women produced their best performance of the EuroHockey"
             ],
             "n_words_checked": 99,
-            "score": -0.8646673560142517
+            "score": -0.8646672964096069
           },
           "labeled_entities": [
             {
@@ -13538,99 +12577,6 @@
             }
           ],
           "summary": "Great Britain's women produced their best performance of the EuroHazard tournament as they beat New Zealand 4-3 in a thrilling play-off."
-        },
-        "36961338": {
-          "banned_phrases": [
-            "Hogan",
-            "the Metropolitan Police Commissioner",
-            "the end of 2016",
-            "the end of 2017"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>Armed officers will be patrolling the streets of London and the rest of England and Wales by the end of 2017",
-              "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2017",
-              "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police Commissioner",
-              "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2016"
-            ],
-            "n_words_checked": 112,
-            "score": -0.5436189770698547
-          },
-          "labeled_entities": [
-            {
-              "end": 62,
-              "ent": "London",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 56,
-              "type": "GPE"
-            },
-            {
-              "end": 86,
-              "ent": "England",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 79,
-              "type": "GPE"
-            },
-            {
-              "end": 96,
-              "ent": "Wales",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 91,
-              "type": "GPE"
-            },
-            {
-              "end": 121,
-              "ent": "Metropolitan Police",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 102,
-              "type": "ORG"
-            },
-            {
-              "end": 146,
-              "ent": "Bernard",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 139,
-              "type": "PERSON"
-            },
-            {
-              "end": 152,
-              "ent": "Hogan",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 147,
-              "type": "PERSON"
-            },
-            {
-              "end": 153,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 152,
-              "type": "PERSON"
-            },
-            {
-              "end": 157,
-              "ent": "Howe",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 153,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner Sir Bernard Hogan-Howe has said."
         }
       }
     },
@@ -13760,7 +12706,7 @@
           }
         },
         "summary": {
-          "completed": 96,
+          "completed": 99,
           "factual": 77,
           "failed": 19,
           "non_factual": 4,
@@ -13769,64 +12715,6 @@
         }
       },
       "summaries": {
-        "34193568": {
-          "banned_phrases": [
-            "Claude"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 76,
-            "score": -0.42435798048973083
-          },
-          "labeled_entities": [
-            {
-              "end": 19,
-              "ent": "European Commission",
-              "in_source": true,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 34,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 30,
-              "type": "PERSON"
-            },
-            {
-              "end": 35,
-              "ent": "-",
-              "in_source": true,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 34,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 49,
-              "ent": "Juncker",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 42,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
-        },
         "35237411": {
           "banned_phrases": [
             "Chester",
@@ -13854,8 +12742,8 @@
               "</s>Thousands of animals are being counted at the National Zoo in London",
               "</s>Thousands of animals are being counted at the National Zoological Park in London"
             ],
-            "n_words_checked": 63,
-            "score": -1.0985016822814941
+            "n_words_checked": 59,
+            "score": -1.098501205444336
           },
           "labeled_entities": [
             {
@@ -13896,178 +12784,6 @@
             }
           ],
           "summary": "Thousands of animals are being counted at the National Zoo in Washington DC, USA."
-        },
-        "36555657": {
-          "banned_phrases": [
-            "Claude",
-            "Sumner"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner"
-            ],
-            "n_words_checked": 105,
-            "score": -0.5892917513847351
-          },
-          "labeled_entities": [
-            {
-              "end": 6,
-              "ent": "Viacom",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 27,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 23,
-              "type": "PERSON"
-            },
-            {
-              "end": 28,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 27,
-              "type": "PERSON"
-            },
-            {
-              "end": 34,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 28,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Dauman",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 113,
-              "ent": "Shari",
-              "in_source": true,
-              "label": "Intrinsic Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 108,
-              "type": "PERSON"
-            },
-            {
-              "end": 122,
-              "ent": "Redstone",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 114,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
-        },
-        "36961338": {
-          "banned_phrases": [
-            "Hogan",
-            "the Metropolitan Police Commissioner",
-            "the end of 2016",
-            "the end of 2017"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>Armed officers will be patrolling the streets of London and the rest of England and Wales by the end of 2017",
-              "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2017",
-              "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police Commissioner",
-              "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2016"
-            ],
-            "n_words_checked": 112,
-            "score": -0.5436189770698547
-          },
-          "labeled_entities": [
-            {
-              "end": 62,
-              "ent": "London",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 56,
-              "type": "GPE"
-            },
-            {
-              "end": 86,
-              "ent": "England",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 79,
-              "type": "GPE"
-            },
-            {
-              "end": 96,
-              "ent": "Wales",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 91,
-              "type": "GPE"
-            },
-            {
-              "end": 121,
-              "ent": "Metropolitan Police",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 102,
-              "type": "ORG"
-            },
-            {
-              "end": 146,
-              "ent": "Bernard",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 139,
-              "type": "PERSON"
-            },
-            {
-              "end": 152,
-              "ent": "Hogan",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 147,
-              "type": "PERSON"
-            },
-            {
-              "end": 153,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 152,
-              "type": "PERSON"
-            },
-            {
-              "end": 157,
-              "ent": "Howe",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 153,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner Sir Bernard Hogan-Howe has said."
         }
       }
     },
@@ -14197,7 +12913,7 @@
           }
         },
         "summary": {
-          "completed": 96,
+          "completed": 99,
           "factual": 77,
           "failed": 19,
           "non_factual": 4,
@@ -14206,64 +12922,6 @@
         }
       },
       "summaries": {
-        "34193568": {
-          "banned_phrases": [
-            "Claude"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 76,
-            "score": -0.42435798048973083
-          },
-          "labeled_entities": [
-            {
-              "end": 19,
-              "ent": "European Commission",
-              "in_source": true,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 34,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 30,
-              "type": "PERSON"
-            },
-            {
-              "end": 35,
-              "ent": "-",
-              "in_source": true,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 34,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 49,
-              "ent": "Juncker",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 42,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
-        },
         "35237411": {
           "banned_phrases": [
             "Chester",
@@ -14293,8 +12951,8 @@
               "</s>Thousands of animals are being counted at the National Zoo in Washington DC",
               "</s>Thousands of animals are being counted at the National Zoological Park in London"
             ],
-            "n_words_checked": 66,
-            "score": -1.1018763780593872
+            "n_words_checked": 63,
+            "score": -1.1018762588500977
           },
           "labeled_entities": [
             {
@@ -14335,178 +12993,6 @@
             }
           ],
           "summary": "Thousands of animals are being counted at the National Zoo in Washington, USA."
-        },
-        "36555657": {
-          "banned_phrases": [
-            "Claude",
-            "Sumner"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner"
-            ],
-            "n_words_checked": 105,
-            "score": -0.5892917513847351
-          },
-          "labeled_entities": [
-            {
-              "end": 6,
-              "ent": "Viacom",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 27,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 23,
-              "type": "PERSON"
-            },
-            {
-              "end": 28,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 27,
-              "type": "PERSON"
-            },
-            {
-              "end": 34,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 28,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Dauman",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 113,
-              "ent": "Shari",
-              "in_source": true,
-              "label": "Intrinsic Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 108,
-              "type": "PERSON"
-            },
-            {
-              "end": 122,
-              "ent": "Redstone",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 114,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
-        },
-        "36961338": {
-          "banned_phrases": [
-            "Hogan",
-            "the Metropolitan Police Commissioner",
-            "the end of 2016",
-            "the end of 2017"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>Armed officers will be patrolling the streets of London and the rest of England and Wales by the end of 2017",
-              "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2017",
-              "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police Commissioner",
-              "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2016"
-            ],
-            "n_words_checked": 112,
-            "score": -0.5436189770698547
-          },
-          "labeled_entities": [
-            {
-              "end": 62,
-              "ent": "London",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 56,
-              "type": "GPE"
-            },
-            {
-              "end": 86,
-              "ent": "England",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 79,
-              "type": "GPE"
-            },
-            {
-              "end": 96,
-              "ent": "Wales",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 91,
-              "type": "GPE"
-            },
-            {
-              "end": 121,
-              "ent": "Metropolitan Police",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 102,
-              "type": "ORG"
-            },
-            {
-              "end": 146,
-              "ent": "Bernard",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 139,
-              "type": "PERSON"
-            },
-            {
-              "end": 152,
-              "ent": "Hogan",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 147,
-              "type": "PERSON"
-            },
-            {
-              "end": 153,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 152,
-              "type": "PERSON"
-            },
-            {
-              "end": 157,
-              "ent": "Howe",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 153,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner Sir Bernard Hogan-Howe has said."
         }
       }
     },
@@ -14636,7 +13122,7 @@
           }
         },
         "summary": {
-          "completed": 96,
+          "completed": 99,
           "factual": 77,
           "failed": 19,
           "non_factual": 4,
@@ -14645,64 +13131,6 @@
         }
       },
       "summaries": {
-        "34193568": {
-          "banned_phrases": [
-            "Claude"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 76,
-            "score": -0.42435798048973083
-          },
-          "labeled_entities": [
-            {
-              "end": 19,
-              "ent": "European Commission",
-              "in_source": true,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 34,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 30,
-              "type": "PERSON"
-            },
-            {
-              "end": 35,
-              "ent": "-",
-              "in_source": true,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-hallucinated",
-              "start": 34,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 49,
-              "ent": "Juncker",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 42,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
-        },
         "35237411": {
           "banned_phrases": [
             "Chester",
@@ -14734,8 +13162,8 @@
               "</s>Thousands of animals are being counted at the National Zoological Gardens in London",
               "</s>Thousands of animals are being counted at the National Zoological Park in Washington DC"
             ],
-            "n_words_checked": 71,
-            "score": -1.1386229991912842
+            "n_words_checked": 67,
+            "score": -1.138622522354126
           },
           "labeled_entities": [
             {
@@ -14776,181 +13204,411 @@
             }
           ],
           "summary": "Thousands of animals are being counted at the National Zoological Park in Washington, in America."
+        }
+      }
+    },
+    "10": {
+      "stats": {
+        "entity": {
+          "label": {
+            "Factual Hallucination": 94,
+            "Intrinsic Hallucination": 0,
+            "Non-factual Hallucination": 4,
+            "Non-hallucinated": 174,
+            "Unknown": 0
+          },
+          "type": {
+            "CARDINAL": {
+              "Factual Hallucination": 8,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 7,
+              "Unknown": 0,
+              "total": 15
+            },
+            "DATE": {
+              "Factual Hallucination": 5,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 10,
+              "Unknown": 0,
+              "total": 15
+            },
+            "EVENT": {
+              "Factual Hallucination": 2,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 3,
+              "Unknown": 0,
+              "total": 5
+            },
+            "FAC": {
+              "Factual Hallucination": 4,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 2,
+              "Unknown": 0,
+              "total": 6
+            },
+            "GPE": {
+              "Factual Hallucination": 17,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 1,
+              "Non-hallucinated": 40,
+              "Unknown": 0,
+              "total": 58
+            },
+            "LOC": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 1,
+              "Unknown": 0,
+              "total": 2
+            },
+            "MONEY": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 0,
+              "Unknown": 0,
+              "total": 1
+            },
+            "NORP": {
+              "Factual Hallucination": 2,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 14,
+              "Unknown": 0,
+              "total": 16
+            },
+            "ORDINAL": {
+              "Factual Hallucination": 7,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 0,
+              "Unknown": 0,
+              "total": 7
+            },
+            "ORG": {
+              "Factual Hallucination": 22,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 31,
+              "Unknown": 0,
+              "total": 53
+            },
+            "PERCENT": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 2,
+              "Unknown": 0,
+              "total": 2
+            },
+            "PERSON": {
+              "Factual Hallucination": 24,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 3,
+              "Non-hallucinated": 63,
+              "Unknown": 0,
+              "total": 90
+            },
+            "TIME": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 1,
+              "Unknown": 0,
+              "total": 1
+            },
+            "WORK_OF_ART": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 0,
+              "Unknown": 0,
+              "total": 1
+            }
+          }
         },
-        "36555657": {
+        "summary": {
+          "completed": 99,
+          "factual": 77,
+          "failed": 19,
+          "non_factual": 4,
+          "total": 100,
+          "unknown": 0
+        }
+      },
+      "summaries": {
+        "35237411": {
           "banned_phrases": [
-            "Claude",
-            "Sumner"
+            "America",
+            "Chester",
+            "Chester Zoo",
+            "Chesterfield Zoo",
+            "London",
+            "London Zoo",
+            "Natural History Museum",
+            "Safari Park",
+            "Staffordshire",
+            "UK",
+            "Washington DC",
+            "every year",
+            "the National Zoo",
+            "the National Zoological Park",
+            "the West Midlands"
           ],
           "generation_metadata": {
             "dropped_seqs": [
-              "</s>Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner"
+              "</s>Thousands of people are heading to London",
+              "</s>Thousands of people are heading to Chester",
+              "</s>Thousands of animals are being counted at London",
+              "</s>Thousands of animals are being counted at Chester",
+              "</s>Thousands of animals are being counted every year",
+              "</s>Thousands of animals are being counted at the UK",
+              "</s>Thousands of animals are being counted at the London",
+              "</s>Thousands of animals are being counted at the National Zoo",
+              "</s>Thousands of animals are being counted at the zoo in London",
+              "</s>Thousands of animals are being counted at the National Zoological Park",
+              "</s>Thousands of animals are being counted at the National Zoological Gardens in London",
+              "</s>Thousands of animals are being counted at the National Zoological Zoo in London",
+              "</s>Thousands of animals are being counted at the zoo in New York, America",
+              "</s>Thousands of animals are being counted at the National Zoological Gardens in Washington DC",
+              "</s>Thousands of animals are being counted at the National Zoological Gardens in Washington in America",
+              "</s>Thousands of animals are being counted at the National Zoological Gardens in Washington, in America"
             ],
-            "n_words_checked": 105,
-            "score": -0.5892917513847351
+            "n_words_checked": 71,
+            "score": -1.24544358253479
           },
           "labeled_entities": [
             {
-              "end": 6,
-              "ent": "Viacom",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 27,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "predicted_label": "Factual Hallucination",
-              "start": 23,
-              "type": "PERSON"
-            },
-            {
-              "end": 28,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 27,
-              "type": "PERSON"
-            },
-            {
-              "end": 34,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 28,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Dauman",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 113,
-              "ent": "Shari",
+              "end": 9,
+              "ent": "Thousands",
               "in_source": true,
               "label": "Intrinsic Hallucination",
               "predicted_label": "Non-hallucinated",
-              "start": 108,
-              "type": "PERSON"
+              "start": 0,
+              "type": "CARDINAL"
             },
             {
-              "end": 122,
-              "ent": "Redstone",
+              "end": 73,
+              "ent": "the National Zoological Gardens",
+              "in_source": false,
+              "label": "Unknown",
+              "predicted_label": "Factual Hallucination",
+              "start": 42,
+              "type": "FAC"
+            },
+            {
+              "end": 87,
+              "ent": "Washington",
+              "in_source": false,
+              "label": "Non-factual Hallucination",
+              "predicted_label": "Non-factual Hallucination",
+              "start": 77,
+              "type": "GPE"
+            },
+            {
+              "end": 98,
+              "ent": "US",
               "in_source": true,
               "label": "Non-hallucinated",
               "predicted_label": "Non-hallucinated",
-              "start": 114,
-              "type": "PERSON"
+              "start": 96,
+              "type": "GPE"
             }
           ],
-          "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
+          "summary": "Thousands of animals are being counted at the National Zoological Gardens in Washington, in the US."
+        }
+      }
+    },
+    "11": {
+      "stats": {
+        "entity": {
+          "label": {
+            "Factual Hallucination": 93,
+            "Intrinsic Hallucination": 0,
+            "Non-factual Hallucination": 3,
+            "Non-hallucinated": 172,
+            "Unknown": 0
+          },
+          "type": {
+            "CARDINAL": {
+              "Factual Hallucination": 8,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 6,
+              "Unknown": 0,
+              "total": 14
+            },
+            "DATE": {
+              "Factual Hallucination": 5,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 10,
+              "Unknown": 0,
+              "total": 15
+            },
+            "EVENT": {
+              "Factual Hallucination": 2,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 3,
+              "Unknown": 0,
+              "total": 5
+            },
+            "FAC": {
+              "Factual Hallucination": 3,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 2,
+              "Unknown": 0,
+              "total": 5
+            },
+            "GPE": {
+              "Factual Hallucination": 17,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 39,
+              "Unknown": 0,
+              "total": 56
+            },
+            "LOC": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 1,
+              "Unknown": 0,
+              "total": 2
+            },
+            "MONEY": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 0,
+              "Unknown": 0,
+              "total": 1
+            },
+            "NORP": {
+              "Factual Hallucination": 2,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 14,
+              "Unknown": 0,
+              "total": 16
+            },
+            "ORDINAL": {
+              "Factual Hallucination": 7,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 0,
+              "Unknown": 0,
+              "total": 7
+            },
+            "ORG": {
+              "Factual Hallucination": 22,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 31,
+              "Unknown": 0,
+              "total": 53
+            },
+            "PERCENT": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 2,
+              "Unknown": 0,
+              "total": 2
+            },
+            "PERSON": {
+              "Factual Hallucination": 24,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 3,
+              "Non-hallucinated": 63,
+              "Unknown": 0,
+              "total": 90
+            },
+            "TIME": {
+              "Factual Hallucination": 0,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 1,
+              "Unknown": 0,
+              "total": 1
+            },
+            "WORK_OF_ART": {
+              "Factual Hallucination": 1,
+              "Intrinsic Hallucination": 0,
+              "Non-factual Hallucination": 0,
+              "Non-hallucinated": 0,
+              "Unknown": 0,
+              "total": 1
+            }
+          }
         },
-        "36961338": {
+        "summary": {
+          "completed": 100,
+          "factual": 77,
+          "failed": 20,
+          "non_factual": 3,
+          "total": 100,
+          "unknown": 0
+        }
+      },
+      "summaries": {
+        "35237411": {
           "banned_phrases": [
-            "Hogan",
-            "the Metropolitan Police Commissioner",
-            "the end of 2016",
-            "the end of 2017"
+            "America",
+            "Chester",
+            "Chester Zoo",
+            "Chesterfield Zoo",
+            "London",
+            "London Zoo",
+            "Natural History Museum",
+            "Safari Park",
+            "Staffordshire",
+            "UK",
+            "Washington",
+            "Washington DC",
+            "every year",
+            "the National Zoo",
+            "the National Zoological Park",
+            "the West Midlands"
           ],
           "generation_metadata": {
             "dropped_seqs": [
-              "</s>Armed officers will be patrolling the streets of London and the rest of England and Wales by the end of 2017",
-              "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2017",
-              "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police Commissioner",
-              "</s>Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2016"
+              "</s>Thousands of people are heading to London",
+              "</s>Thousands of people are heading to Chester",
+              "</s>Thousands of animals are being counted at London",
+              "</s>Thousands of animals are being counted at Chester",
+              "</s>Thousands of animals are being counted every year",
+              "</s>Thousands of animals are being counted at the UK",
+              "</s>Thousands of animals are being counted at the London",
+              "</s>Thousands of animals are being counted at the National Zoo",
+              "</s>Thousands of animals are being counted at the zoo in London",
+              "</s>Thousands of animals are being counted at the National Zoological Park",
+              "</s>Thousands of animals are being counted at the National Zoological Gardens in London",
+              "</s>Thousands of animals are being counted at the National Zoological Zoo in London",
+              "</s>Thousands of animals are being counted at the zoo in New York, America",
+              "</s>Thousands of animals are being counted at the National Zoological Gardens in Washington",
+              "</s>Thousands of animals are being counted at the National Zoological Gardens in London<s>",
+              "</s>Thousands of animals are being counted at the National Zoological Gardens in London<unk>",
+              "</s>Thousands of animals are being counted at the National Zoological Gardens in London<s><s>",
+              "</s>Thousands of animals are being counted at the National Zoological Gardens in London<s><unk>",
+              "</s>Thousands of animals are being counted at the National Zoological Gardens in London<s><s><s>",
+              "</s>Thousands of animals are being counted at the National Zoological Gardens in London<s><s><unk>"
             ],
-            "n_words_checked": 112,
-            "score": -0.5436189770698547
+            "n_words_checked": 61,
+            "score": -Infinity
           },
-          "labeled_entities": [
-            {
-              "end": 62,
-              "ent": "London",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 56,
-              "type": "GPE"
-            },
-            {
-              "end": 86,
-              "ent": "England",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 79,
-              "type": "GPE"
-            },
-            {
-              "end": 96,
-              "ent": "Wales",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 91,
-              "type": "GPE"
-            },
-            {
-              "end": 121,
-              "ent": "Metropolitan Police",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 102,
-              "type": "ORG"
-            },
-            {
-              "end": 146,
-              "ent": "Bernard",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 139,
-              "type": "PERSON"
-            },
-            {
-              "end": 152,
-              "ent": "Hogan",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "predicted_label": "Non-factual Hallucination",
-              "start": 147,
-              "type": "PERSON"
-            },
-            {
-              "end": 153,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 152,
-              "type": "PERSON"
-            },
-            {
-              "end": 157,
-              "ent": "Howe",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "predicted_label": "Non-hallucinated",
-              "start": 153,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner Sir Bernard Hogan-Howe has said."
+          "labeled_entities": [],
+          "summary": "<Failed generation: blocked all beams>"
         }
       }
     }
   },
-  "timestamp": 1655054293.5737336
+  "timestamp": 1655402499.8957918
 }

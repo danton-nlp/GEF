@@ -1010,12 +1010,6 @@
         },
         "summary": "The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Kaori Kita."
       },
-      "34193568": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
-      },
       "34694547": {
         "edit_stats": {
           "edit_distance_token": 6
@@ -1069,12 +1063,6 @@
           "edit_distance_token": 1
         },
         "summary": "Three men have been found guilty of blowing up cash machines and stealing more than \u00a3150,000."
-      },
-      "36555657": {
-        "edit_stats": {
-          "edit_distance_token": 4
-        },
-        "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
       },
       "36635880": {
         "edit_stats": {
@@ -1185,7 +1173,7 @@
         "summary": "James Wakely and James Keogh hit centuries as Northants took control against Leicestershire at Northampton."
       }
     },
-    "summary_generated": 40
+    "summary_generated": 38
   },
   {
     "factuality_entities": {
@@ -1338,12 +1326,6 @@
         },
         "summary": "The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Ken Kita."
       },
-      "34193568": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
-      },
       "34787804": {
         "edit_stats": {
           "edit_distance_token": 2
@@ -1388,12 +1370,6 @@
           "edit_distance_token": 1
         },
         "summary": "Three men have been found guilty of blowing up cash machines and stealing more than \u00a3300,000."
-      },
-      "36555657": {
-        "edit_stats": {
-          "edit_distance_token": 4
-        },
-        "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
       },
       "36635880": {
         "edit_stats": {
@@ -1465,7 +1441,7 @@
         "summary": "<Failed generation: blocked all beams>"
       }
     },
-    "summary_generated": 31
+    "summary_generated": 29
   },
   {
     "factuality_entities": {
@@ -1596,12 +1572,6 @@
         },
         "summary": "The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Kaoru Kita."
       },
-      "34193568": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
-      },
       "34898778": {
         "edit_stats": {
           "edit_distance_token": 14
@@ -1623,12 +1593,6 @@
       "36341722": {
         "summary": "<Failed generation: blocked all beams>"
       },
-      "36555657": {
-        "edit_stats": {
-          "edit_distance_token": 4
-        },
-        "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
-      },
       "36635880": {
         "edit_stats": {
           "edit_distance_token": 1
@@ -1641,12 +1605,6 @@
         },
         "summary": "Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 500,000 euros (\u00a3353,176) were seized in Lille."
       },
-      "36961338": {
-        "edit_stats": {
-          "edit_distance_token": 6
-        },
-        "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner Sir Bernard Hogan-Howe has said."
-      },
       "37391662": {
         "summary": "<Failed generation: blocked all beams>"
       },
@@ -1657,7 +1615,7 @@
         "summary": "<Failed generation: blocked all beams>"
       }
     },
-    "summary_generated": 16
+    "summary_generated": 13
   },
   {
     "factuality_entities": {
@@ -1778,12 +1736,6 @@
         },
         "summary": "The man behind the takeover of the Financial Times is one of the world's richest men, and his name is Kaizo Kita."
       },
-      "34193568": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
-      },
       "34898778": {
         "edit_stats": {
           "edit_distance_token": 12
@@ -1796,12 +1748,6 @@
         },
         "summary": "Thousands of animals are being counted at Chesterfield Zoo in the UK."
       },
-      "36555657": {
-        "edit_stats": {
-          "edit_distance_token": 4
-        },
-        "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
-      },
       "36635880": {
         "edit_stats": {
           "edit_distance_token": 9
@@ -1810,15 +1756,9 @@
       },
       "36932519": {
         "summary": "<Failed generation: blocked all beams>"
-      },
-      "36961338": {
-        "edit_stats": {
-          "edit_distance_token": 6
-        },
-        "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner Sir Bernard Hogan-Howe has said."
       }
     },
-    "summary_generated": 11
+    "summary_generated": 8
   },
   {
     "factuality_entities": {
@@ -1923,12 +1863,6 @@
     },
     "iteration": 6,
     "summary": {
-      "34193568": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
-      },
       "34898778": {
         "summary": "<Failed generation: blocked all beams>"
       },
@@ -1938,26 +1872,14 @@
         },
         "summary": "Thousands of animals are being counted at Chester zoo in the West Midlands."
       },
-      "36555657": {
-        "edit_stats": {
-          "edit_distance_token": 4
-        },
-        "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
-      },
       "36635880": {
         "edit_stats": {
           "edit_distance_token": 11
         },
         "summary": "Great Britain's women produced their best performance of the EuroHazard tournament as they beat New Zealand 4-3 in a thrilling play-off."
-      },
-      "36961338": {
-        "edit_stats": {
-          "edit_distance_token": 6
-        },
-        "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner Sir Bernard Hogan-Howe has said."
       }
     },
-    "summary_generated": 6
+    "summary_generated": 3
   },
   {
     "factuality_entities": {
@@ -2062,32 +1984,14 @@
     },
     "iteration": 7,
     "summary": {
-      "34193568": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
-      },
       "35237411": {
         "edit_stats": {
           "edit_distance_token": 16
         },
         "summary": "Thousands of animals are being counted at the National Zoo in Washington DC, USA."
-      },
-      "36555657": {
-        "edit_stats": {
-          "edit_distance_token": 4
-        },
-        "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
-      },
-      "36961338": {
-        "edit_stats": {
-          "edit_distance_token": 6
-        },
-        "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner Sir Bernard Hogan-Howe has said."
       }
     },
-    "summary_generated": 4
+    "summary_generated": 1
   },
   {
     "factuality_entities": {
@@ -2191,32 +2095,14 @@
     },
     "iteration": 8,
     "summary": {
-      "34193568": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
-      },
       "35237411": {
         "edit_stats": {
           "edit_distance_token": 16
         },
         "summary": "Thousands of animals are being counted at the National Zoo in Washington, USA."
-      },
-      "36555657": {
-        "edit_stats": {
-          "edit_distance_token": 4
-        },
-        "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
-      },
-      "36961338": {
-        "edit_stats": {
-          "edit_distance_token": 6
-        },
-        "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner Sir Bernard Hogan-Howe has said."
       }
     },
-    "summary_generated": 4
+    "summary_generated": 1
   },
   {
     "factuality_entities": {
@@ -2321,31 +2207,233 @@
     },
     "iteration": 9,
     "summary": {
-      "34193568": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
-      },
       "35237411": {
         "edit_stats": {
           "edit_distance_token": 16
         },
         "summary": "Thousands of animals are being counted at the National Zoological Park in Washington, in America."
-      },
-      "36555657": {
-        "edit_stats": {
-          "edit_distance_token": 4
-        },
-        "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
-      },
-      "36961338": {
-        "edit_stats": {
-          "edit_distance_token": 6
-        },
-        "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner Sir Bernard Hogan-Howe has said."
       }
     },
-    "summary_generated": 4
+    "summary_generated": 1
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 70,
+      "Intrinsic Hallucination": 13,
+      "Non-factual Hallucination": 28,
+      "Non-hallucinated": 160,
+      "Unknown": 1,
+      "total": 272,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 5,
+          "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 5,
+          "total": 15
+        },
+        "DATE": {
+          "Factual Hallucination": 5,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 8,
+          "total": 15
+        },
+        "EVENT": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 3,
+          "total": 5
+        },
+        "FAC": {
+          "Factual Hallucination": 3,
+          "Non-hallucinated": 2,
+          "Unknown": 1,
+          "total": 6
+        },
+        "GPE": {
+          "Factual Hallucination": 12,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 5,
+          "Non-hallucinated": 40,
+          "total": 58
+        },
+        "LOC": {
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "MONEY": {
+          "Non-factual Hallucination": 1,
+          "total": 1
+        },
+        "NORP": {
+          "Factual Hallucination": 1,
+          "Intrinsic Hallucination": 2,
+          "Non-hallucinated": 13,
+          "total": 16
+        },
+        "ORDINAL": {
+          "Factual Hallucination": 4,
+          "Non-factual Hallucination": 3,
+          "total": 7
+        },
+        "ORG": {
+          "Factual Hallucination": 17,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 6,
+          "Non-hallucinated": 29,
+          "total": 53
+        },
+        "PERCENT": {
+          "Non-hallucinated": 2,
+          "total": 2
+        },
+        "PERSON": {
+          "Factual Hallucination": 21,
+          "Intrinsic Hallucination": 6,
+          "Non-factual Hallucination": 7,
+          "Non-hallucinated": 56,
+          "total": 90
+        },
+        "TIME": {
+          "Non-hallucinated": 1,
+          "total": 1
+        },
+        "WORK_OF_ART": {
+          "Non-factual Hallucination": 1,
+          "total": 1
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 2.72,
+      "factual": 0.5,
+      "failed": 19,
+      "non_factual": 0.5,
+      "non_factual_extrinsic": 0.24,
+      "non_factual_intrinsic": 0.12,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.72,
+      "total": 100,
+      "unknown": 0.0
+    },
+    "iteration": 10,
+    "summary": {
+      "35237411": {
+        "edit_stats": {
+          "edit_distance_token": 15
+        },
+        "summary": "Thousands of animals are being counted at the National Zoological Gardens in Washington, in the US."
+      }
+    },
+    "summary_generated": 1
+  },
+  {
+    "factuality_entities": {
+      "Factual Hallucination": 70,
+      "Intrinsic Hallucination": 12,
+      "Non-factual Hallucination": 27,
+      "Non-hallucinated": 159,
+      "Unknown": 0,
+      "total": 268,
+      "type": {
+        "CARDINAL": {
+          "Factual Hallucination": 5,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 5,
+          "total": 14
+        },
+        "DATE": {
+          "Factual Hallucination": 5,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 8,
+          "total": 15
+        },
+        "EVENT": {
+          "Factual Hallucination": 2,
+          "Non-hallucinated": 3,
+          "total": 5
+        },
+        "FAC": {
+          "Factual Hallucination": 3,
+          "Non-hallucinated": 2,
+          "total": 5
+        },
+        "GPE": {
+          "Factual Hallucination": 12,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 39,
+          "total": 56
+        },
+        "LOC": {
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 1,
+          "total": 2
+        },
+        "MONEY": {
+          "Non-factual Hallucination": 1,
+          "total": 1
+        },
+        "NORP": {
+          "Factual Hallucination": 1,
+          "Intrinsic Hallucination": 2,
+          "Non-hallucinated": 13,
+          "total": 16
+        },
+        "ORDINAL": {
+          "Factual Hallucination": 4,
+          "Non-factual Hallucination": 3,
+          "total": 7
+        },
+        "ORG": {
+          "Factual Hallucination": 17,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 6,
+          "Non-hallucinated": 29,
+          "total": 53
+        },
+        "PERCENT": {
+          "Non-hallucinated": 2,
+          "total": 2
+        },
+        "PERSON": {
+          "Factual Hallucination": 21,
+          "Intrinsic Hallucination": 6,
+          "Non-factual Hallucination": 7,
+          "Non-hallucinated": 56,
+          "total": 90
+        },
+        "TIME": {
+          "Non-hallucinated": 1,
+          "total": 1
+        },
+        "WORK_OF_ART": {
+          "Non-factual Hallucination": 1,
+          "total": 1
+        }
+      }
+    },
+    "factuality_summary": {
+      "ents_per_sum": 2.68,
+      "factual": 0.5,
+      "failed": 20,
+      "non_factual": 0.5,
+      "non_factual_extrinsic": 0.23,
+      "non_factual_intrinsic": 0.11,
+      "skipped": 0.0,
+      "sum_with_extrinsic": 0.71,
+      "total": 100,
+      "unknown": 0.0
+    },
+    "iteration": 11,
+    "summary": {
+      "35237411": {
+        "summary": "<Failed generation: blocked all beams>"
+      }
+    },
+    "summary_generated": 1
   }
 ]

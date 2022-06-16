@@ -310,8 +310,8 @@ if __name__ == "__main__":
 
                 # Update results based on oracle labels & banned words based on predictions
                 for sum_id, labeled_entities in oracle_labeled_entities.items():
+                    prev_banned_phrases = prev_banned_phrases_by_sum_id[sum_id]
                     banned_phrases = banned_phrases_by_sum_id[sum_id]
-                    no_constraints = True
                     # reset results
                     for label in ANNOTATION_LABELS.values():
                         results_by_sum_id[sum_id][label] = []
@@ -324,12 +324,12 @@ if __name__ == "__main__":
                         )
                         results_by_sum_id[sum_id][label].append(ent)
                         if label == ANNOTATION_LABELS["Non-factual"]:
-                            no_constraints = False
                             if ent["ent"] not in banned_phrases:
                                 new_constraints += 1
                                 banned_phrases.add(ent["ent"])
 
-                    if no_constraints:
+                    no_new_constraints = prev_banned_phrases == banned_phrases
+                    if no_new_constraints:
                         results_by_sum_id[sum_id]["completed"] = True
 
                     if gen_summaries_by_id[sum_id] == SUMMARY_FAILED_GENERATION:

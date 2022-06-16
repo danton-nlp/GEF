@@ -976,12 +976,6 @@
         },
         "summary": "Ireland's economy grew by 7.7% in the three months to the end of June compared with the same period last year, official figures show."
       },
-      "30457745": {
-        "edit_stats": {
-          "edit_distance_token": 1
-        },
-        "summary": "Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance', which they say has captured the spirit of the country."
-      },
       "30657223": {
         "edit_stats": {
           "edit_distance_token": 4
@@ -993,12 +987,6 @@
           "edit_distance_token": 6
         },
         "summary": "More than 100 people have objected to plans to build more than 1,000 homes in a remote village in the Cotswold Wolds."
-      },
-      "32132840": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "Plans have been submitted for a \u00a3100m power station at a Norfolk paper mill."
       },
       "32487884": {
         "edit_stats": {
@@ -1074,12 +1062,6 @@
           "edit_distance_token": 4
         },
         "summary": "World number one Mark Selby will face Ding Junhui in the World Championship semi-finals after beating Marco Fu 6-3 at the Crucible."
-      },
-      "36555657": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner Redstone."
       },
       "36635880": {
         "edit_stats": {
@@ -1181,7 +1163,7 @@
         "summary": "Northamptonshire openers Tom Wakely and Chris Keogh hit centuries as they put the Division Two leaders in control against Leicestershire."
       }
     },
-    "summary_generated": 39
+    "summary_generated": 36
   },
   {
     "factuality_entities": {
@@ -1304,12 +1286,6 @@
         },
         "summary": "There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Union."
       },
-      "30457745": {
-        "edit_stats": {
-          "edit_distance_token": 1
-        },
-        "summary": "Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance', which they say has captured the spirit of the country."
-      },
       "30657223": {
         "edit_stats": {
           "edit_distance_token": 19
@@ -1321,18 +1297,6 @@
           "edit_distance_token": 18
         },
         "summary": "Villagers in a Pembrokeshire village have objected to plans for more than 200 new homes."
-      },
-      "32132840": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "Plans have been submitted for a \u00a3100m power station at a Norfolk paper mill."
-      },
-      "32798693": {
-        "edit_stats": {
-          "edit_distance_token": 17
-        },
-        "summary": "Retailer Next has lost a High Court battle with HM Revenue & Customs over corporation tax."
       },
       "33317600": {
         "edit_stats": {
@@ -1366,12 +1330,6 @@
       },
       "36061830": {
         "summary": "<Failed generation: blocked all beams>"
-      },
-      "36555657": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner Redstone."
       },
       "36635880": {
         "edit_stats": {
@@ -1443,7 +1401,7 @@
         "summary": "<Failed generation: blocked all beams>"
       }
     },
-    "summary_generated": 27
+    "summary_generated": 23
   },
   {
     "factuality_entities": {
@@ -1567,12 +1525,6 @@
         },
         "summary": "There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Organisation."
       },
-      "30457745": {
-        "edit_stats": {
-          "edit_distance_token": 1
-        },
-        "summary": "Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance', which they say has captured the spirit of the country."
-      },
       "30657223": {
         "edit_stats": {
           "edit_distance_token": 19
@@ -1584,18 +1536,6 @@
           "edit_distance_token": 16
         },
         "summary": "Villagers in a Cumbrian village have objected to plans to build more than 1,500 new homes."
-      },
-      "32132840": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "Plans have been submitted for a \u00a3100m power station at a Norfolk paper mill."
-      },
-      "32798693": {
-        "edit_stats": {
-          "edit_distance_token": 17
-        },
-        "summary": "Retailer Next has lost a High Court battle with HM Revenue & Customs over corporation tax."
       },
       "33317600": {
         "edit_stats": {
@@ -1620,12 +1560,6 @@
           "edit_distance_token": 2
         },
         "summary": "Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Nagoya Gramps."
-      },
-      "36555657": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner Redstone."
       },
       "36635880": {
         "edit_stats": {
@@ -1664,7 +1598,7 @@
         "summary": "Campaigners have launched a legal challenge to a wind farm operator's plans to install overhead cables in SnowdonIA."
       }
     },
-    "summary_generated": 18
+    "summary_generated": 14
   },
   {
     "factuality_entities": {
@@ -1785,12 +1719,6 @@
       "18239960": {
         "summary": "<Failed generation: blocked all beams>"
       },
-      "30457745": {
-        "edit_stats": {
-          "edit_distance_token": 1
-        },
-        "summary": "Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance', which they say has captured the spirit of the country."
-      },
       "30657223": {
         "edit_stats": {
           "edit_distance_token": 19
@@ -1802,18 +1730,6 @@
           "edit_distance_token": 16
         },
         "summary": "Villagers in a Cotswold village have objected to plans to build more than 1,100 new homes."
-      },
-      "32132840": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "Plans have been submitted for a \u00a3100m power station at a Norfolk paper mill."
-      },
-      "32798693": {
-        "edit_stats": {
-          "edit_distance_token": 17
-        },
-        "summary": "Retailer Next has lost a High Court battle with HM Revenue & Customs over corporation tax."
       },
       "33317600": {
         "edit_stats": {
@@ -1836,12 +1752,6 @@
         },
         "summary": "Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Shonin City."
       },
-      "36555657": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner Redstone."
-      },
       "36635880": {
         "edit_stats": {
           "edit_distance_token": 9
@@ -1858,7 +1768,7 @@
         "summary": "<Failed generation: blocked all beams>"
       }
     },
-    "summary_generated": 16
+    "summary_generated": 12
   },
   {
     "factuality_entities": {
@@ -1971,29 +1881,11 @@
     },
     "iteration": 6,
     "summary": {
-      "30457745": {
-        "edit_stats": {
-          "edit_distance_token": 1
-        },
-        "summary": "Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance', which they say has captured the spirit of the country."
-      },
       "32033856": {
         "edit_stats": {
           "edit_distance_token": 18
         },
         "summary": "Villagers in a Ceredigion village have objected to plans for more than 1,100 new homes."
-      },
-      "32132840": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "Plans have been submitted for a \u00a3100m power station at a Norfolk paper mill."
-      },
-      "32798693": {
-        "edit_stats": {
-          "edit_distance_token": 17
-        },
-        "summary": "Retailer Next has lost a High Court battle with HM Revenue & Customs over corporation tax."
       },
       "33317600": {
         "edit_stats": {
@@ -2004,12 +1896,6 @@
       "33648595": {
         "summary": "<Failed generation: blocked all beams>"
       },
-      "36555657": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner Redstone."
-      },
       "36635880": {
         "edit_stats": {
           "edit_distance_token": 11
@@ -2017,7 +1903,7 @@
         "summary": "Great Britain's women produced their best performance of the EuroHazard tournament as they beat New Zealand 4-3 in a thrilling play-off."
       }
     },
-    "summary_generated": 8
+    "summary_generated": 4
   },
   {
     "factuality_entities": {
@@ -2132,36 +2018,6 @@
     },
     "iteration": 7,
     "summary": {
-      "30457745": {
-        "edit_stats": {
-          "edit_distance_token": 1
-        },
-        "summary": "Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance', which they say has captured the spirit of the country."
-      },
-      "32132840": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "Plans have been submitted for a \u00a3100m power station at a Norfolk paper mill."
-      },
-      "32798693": {
-        "edit_stats": {
-          "edit_distance_token": 17
-        },
-        "summary": "Retailer Next has lost a High Court battle with HM Revenue & Customs over corporation tax."
-      },
-      "33317600": {
-        "edit_stats": {
-          "edit_distance_token": 8
-        },
-        "summary": "The former RT\u00c9 broadcaster, M\u00e1ir\u00edn \u00e2 Murch\u00fa, has died in the Republic of Ireland."
-      },
-      "36555657": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner Redstone."
-      },
       "36635880": {
         "edit_stats": {
           "edit_distance_token": 12
@@ -2169,6 +2025,6 @@
         "summary": "Great Britain's women produced their best performance of the EuroHolder as they beat New Zealand 4-3 to finish fifth in the tournament."
       }
     },
-    "summary_generated": 6
+    "summary_generated": 1
   }
 ]

@@ -1,11 +1,11 @@
 {
   "args": {
     "annotate": false,
-    "batch_size": 8,
+    "batch_size": 16,
     "classifier_batch_size": 16,
     "data_subset": "bart-test-extrinsic",
     "entity_label_match": "contained",
-    "max_iterations": 10,
+    "max_iterations": 25,
     "model_posterior": "entfa-cmlm",
     "model_prior": "facebook/bart-large",
     "model_summarization": "facebook/bart-large-xsum",
@@ -171,7 +171,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 78,
-            "score": -0.5494638085365295
+            "score": -0.5494641065597534
           },
           "labeled_entities": [
             {
@@ -190,7 +190,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 90,
-            "score": -0.4498242139816284
+            "score": -0.44982418417930603
           },
           "labeled_entities": [
             {
@@ -217,7 +217,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 81,
-            "score": -0.5601842999458313
+            "score": -0.5601842403411865
           },
           "labeled_entities": [
             {
@@ -235,8 +235,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 118,
-            "score": -0.5875492095947266
+            "n_words_checked": 121,
+            "score": -0.5875487327575684
           },
           "labeled_entities": [
             {
@@ -255,7 +255,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 113,
-            "score": -0.7699748873710632
+            "score": -0.7699748277664185
           },
           "labeled_entities": [
             {
@@ -289,8 +289,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 85,
-            "score": -0.5458996891975403
+            "n_words_checked": 88,
+            "score": -0.5458995699882507
           },
           "labeled_entities": [
             {
@@ -309,7 +309,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 143,
-            "score": -0.5799763798713684
+            "score": -0.5799763202667236
           },
           "labeled_entities": [
             {
@@ -376,7 +376,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -0.41290026903152466
+            "score": -0.4129003584384918
           },
           "labeled_entities": [
             {
@@ -403,7 +403,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 95,
-            "score": -0.684999942779541
+            "score": -0.6850001215934753
           },
           "labeled_entities": [
             {
@@ -430,7 +430,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 92,
-            "score": -0.6228479743003845
+            "score": -0.6228485703468323
           },
           "labeled_entities": [
             {
@@ -465,7 +465,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 111,
-            "score": -0.48242440819740295
+            "score": -0.48242419958114624
           },
           "labeled_entities": [
             {
@@ -508,7 +508,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 114,
-            "score": -0.8808416724205017
+            "score": -0.880841851234436
           },
           "labeled_entities": [
             {
@@ -543,7 +543,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 90,
-            "score": -0.4671538174152374
+            "score": -0.46715405583381653
           },
           "labeled_entities": [
             {
@@ -610,7 +610,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 97,
-            "score": -0.7004218697547913
+            "score": -0.700421929359436
           },
           "labeled_entities": [
             {
@@ -637,7 +637,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 103,
-            "score": -0.4296557307243347
+            "score": -0.42965584993362427
           },
           "labeled_entities": [
             {
@@ -672,7 +672,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -0.7618758678436279
+            "score": -0.7618755102157593
           },
           "labeled_entities": [
             {
@@ -715,7 +715,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 74,
-            "score": -0.6646239757537842
+            "score": -0.6646240949630737
           },
           "labeled_entities": [
             {
@@ -742,7 +742,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 63,
-            "score": -0.49171197414398193
+            "score": -0.49171125888824463
           },
           "labeled_entities": [
             {
@@ -761,7 +761,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 92,
-            "score": -0.5797637701034546
+            "score": -0.5797638893127441
           },
           "labeled_entities": [
             {
@@ -788,7 +788,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 62,
-            "score": -0.3962138593196869
+            "score": -0.3962133824825287
           },
           "labeled_entities": [
             {
@@ -831,7 +831,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 113,
-            "score": -0.5437448024749756
+            "score": -0.5437455773353577
           },
           "labeled_entities": [
             {
@@ -866,7 +866,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 102,
-            "score": -0.4491570293903351
+            "score": -0.4491567611694336
           },
           "labeled_entities": [
             {
@@ -952,7 +952,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 50,
-            "score": -0.5073922872543335
+            "score": -0.5073918104171753
           },
           "labeled_entities": [
             {
@@ -987,7 +987,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 89,
-            "score": -0.6760818362236023
+            "score": -0.6760818958282471
           },
           "labeled_entities": [
             {
@@ -1030,7 +1030,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 76,
-            "score": -0.42435789108276367
+            "score": -0.42435771226882935
           },
           "labeled_entities": [
             {
@@ -1164,7 +1164,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 84,
-            "score": -0.6981933116912842
+            "score": -0.6981940865516663
           },
           "labeled_entities": [
             {
@@ -1191,7 +1191,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 104,
-            "score": -0.5673382878303528
+            "score": -0.5673397183418274
           },
           "labeled_entities": [
             {
@@ -1234,7 +1234,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 81,
-            "score": -0.2939951717853546
+            "score": -0.293995201587677
           },
           "labeled_entities": [
             {
@@ -1277,7 +1277,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 115,
-            "score": -0.5719603896141052
+            "score": -0.5719603300094604
           },
           "labeled_entities": [
             {
@@ -1339,7 +1339,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 97,
-            "score": -0.4836842715740204
+            "score": -0.4836840033531189
           },
           "labeled_entities": [
             {
@@ -1358,7 +1358,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 61,
-            "score": -0.4990575313568115
+            "score": -0.4990575611591339
           },
           "labeled_entities": [
             {
@@ -1409,7 +1409,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 128,
-            "score": -0.5832831263542175
+            "score": -0.5832830667495728
           },
           "labeled_entities": [
             {
@@ -1468,7 +1468,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 114,
-            "score": -0.6526375412940979
+            "score": -0.6526376605033875
           },
           "labeled_entities": [
             {
@@ -1487,7 +1487,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -0.7039955258369446
+            "score": -0.7039957642555237
           },
           "labeled_entities": [
             {
@@ -1506,7 +1506,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 83,
-            "score": -0.8481479287147522
+            "score": -0.8481481075286865
           },
           "labeled_entities": [
             {
@@ -1549,7 +1549,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 60,
-            "score": -0.4034213125705719
+            "score": -0.4034211337566376
           },
           "labeled_entities": [
             {
@@ -1592,7 +1592,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 83,
-            "score": -0.3757184147834778
+            "score": -0.37571844458580017
           },
           "labeled_entities": [
             {
@@ -1627,7 +1627,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 85,
-            "score": -0.49763745069503784
+            "score": -0.497637003660202
           },
           "labeled_entities": [
             {
@@ -1662,7 +1662,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 82,
-            "score": -0.6227262020111084
+            "score": -0.6227260231971741
           },
           "labeled_entities": [
             {
@@ -1697,7 +1697,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 77,
-            "score": -0.5678791999816895
+            "score": -0.5678788423538208
           },
           "labeled_entities": [
             {
@@ -1732,7 +1732,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 104,
-            "score": -0.6966070532798767
+            "score": -0.6966072916984558
           },
           "labeled_entities": [
             {
@@ -1775,7 +1775,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 86,
-            "score": -0.5740678906440735
+            "score": -0.5740676522254944
           },
           "labeled_entities": [
             {
@@ -1826,7 +1826,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 105,
-            "score": -0.5638521313667297
+            "score": -0.5638526082038879
           },
           "labeled_entities": [
             {
@@ -1861,7 +1861,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 68,
-            "score": -0.3235471844673157
+            "score": -0.3235474228858948
           },
           "labeled_entities": [
             {
@@ -1903,7 +1903,7 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 113,
+            "n_words_checked": 116,
             "score": -0.7454013228416443
           },
           "labeled_entities": [
@@ -1931,7 +1931,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 101,
-            "score": -0.7071087956428528
+            "score": -0.7071085572242737
           },
           "labeled_entities": [
             {
@@ -1958,7 +1958,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 90,
-            "score": -0.4268582761287689
+            "score": -0.4268588423728943
           },
           "labeled_entities": [
             {
@@ -2033,7 +2033,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 129,
-            "score": -0.4960082769393921
+            "score": -0.49600863456726074
           },
           "labeled_entities": [
             {
@@ -2084,7 +2084,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 79,
-            "score": -0.4848572313785553
+            "score": -0.48485708236694336
           },
           "labeled_entities": [
             {
@@ -2166,8 +2166,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 111,
-            "score": -0.4395291805267334
+            "n_words_checked": 114,
+            "score": -0.4395291209220886
           },
           "labeled_entities": [
             {
@@ -2202,7 +2202,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 90,
-            "score": -0.4739001393318176
+            "score": -0.47390007972717285
           },
           "labeled_entities": [
             {
@@ -2253,7 +2253,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 89,
-            "score": -0.44832712411880493
+            "score": -0.4483272135257721
           },
           "labeled_entities": [
             {
@@ -2312,7 +2312,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 75,
-            "score": -0.4366167187690735
+            "score": -0.43661680817604065
           },
           "labeled_entities": [
             {
@@ -2339,7 +2339,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -0.679229736328125
+            "score": -0.679230272769928
           },
           "labeled_entities": [
             {
@@ -2374,7 +2374,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 103,
-            "score": -0.5803332924842834
+            "score": -0.5803332328796387
           },
           "labeled_entities": [
             {
@@ -2441,7 +2441,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 93,
-            "score": -0.603351891040802
+            "score": -0.6033517718315125
           },
           "labeled_entities": [
             {
@@ -2484,7 +2484,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 77,
-            "score": -0.4973895847797394
+            "score": -0.49738946557044983
           },
           "labeled_entities": [
             {
@@ -2527,7 +2527,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 105,
-            "score": -0.5653573870658875
+            "score": -0.5653570294380188
           },
           "labeled_entities": [
             {
@@ -2561,8 +2561,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 80,
-            "score": -0.5341500043869019
+            "n_words_checked": 84,
+            "score": -0.5341492891311646
           },
           "labeled_entities": [
             {
@@ -2621,7 +2621,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 85,
-            "score": -0.4187431335449219
+            "score": -0.4187432527542114
           },
           "labeled_entities": [
             {
@@ -2671,8 +2671,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 111,
-            "score": -0.6133341193199158
+            "n_words_checked": 113,
+            "score": -0.6133347153663635
           },
           "labeled_entities": [
             {
@@ -2715,7 +2715,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 129,
-            "score": -0.47252437472343445
+            "score": -0.4725247621536255
           },
           "labeled_entities": [
             {
@@ -2798,7 +2798,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 92,
-            "score": -0.7841285467147827
+            "score": -0.784127950668335
           },
           "labeled_entities": [
             {
@@ -2833,7 +2833,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 59,
-            "score": -0.5282543897628784
+            "score": -0.5282540917396545
           },
           "labeled_entities": [
             {
@@ -2860,7 +2860,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 103,
-            "score": -0.472834974527359
+            "score": -0.47283488512039185
           },
           "labeled_entities": [
             {
@@ -2887,7 +2887,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 71,
-            "score": -0.5009817481040955
+            "score": -0.5009819269180298
           },
           "labeled_entities": [
             {
@@ -2930,7 +2930,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -0.44258177280426025
+            "score": -0.4425816237926483
           },
           "labeled_entities": [
             {
@@ -3032,7 +3032,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 87,
-            "score": -0.6245473623275757
+            "score": -0.6245482563972473
           },
           "labeled_entities": [
             {
@@ -3067,7 +3067,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 88,
-            "score": -0.5387280583381653
+            "score": -0.538727879524231
           },
           "labeled_entities": [
             {
@@ -3086,7 +3086,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 86,
-            "score": -0.5584116578102112
+            "score": -0.5584117770195007
           },
           "labeled_entities": [
             {
@@ -3121,7 +3121,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 74,
-            "score": -0.44698140025138855
+            "score": -0.44698160886764526
           },
           "labeled_entities": [
             {
@@ -3156,7 +3156,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 79,
-            "score": -0.37274184823036194
+            "score": -0.37274178862571716
           },
           "labeled_entities": [
             {
@@ -3175,7 +3175,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 84,
-            "score": -0.4126327335834503
+            "score": -0.41263294219970703
           },
           "labeled_entities": [
             {
@@ -3202,7 +3202,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 110,
-            "score": -0.7542533278465271
+            "score": -0.7542528510093689
           },
           "labeled_entities": [
             {
@@ -3253,7 +3253,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 79,
-            "score": -0.28552353382110596
+            "score": -0.2855237126350403
           },
           "labeled_entities": [
             {
@@ -3288,7 +3288,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 85,
-            "score": -0.7630772590637207
+            "score": -0.7630775570869446
           },
           "labeled_entities": [
             {
@@ -3355,7 +3355,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 71,
-            "score": -0.4578026831150055
+            "score": -0.45780301094055176
           },
           "labeled_entities": [
             {
@@ -3390,7 +3390,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 58,
-            "score": -0.9300474524497986
+            "score": -0.9300479888916016
           },
           "labeled_entities": [
             {
@@ -3433,7 +3433,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 112,
-            "score": -0.3685798943042755
+            "score": -0.3685796558856964
           },
           "labeled_entities": [
             {
@@ -3500,7 +3500,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 90,
-            "score": -0.5934107899665833
+            "score": -0.5934110879898071
           },
           "labeled_entities": [
             {
@@ -3527,7 +3527,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 88,
-            "score": -0.7855382561683655
+            "score": -0.7855384349822998
           },
           "labeled_entities": [
             {
@@ -3554,7 +3554,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 59,
-            "score": -0.4365842044353485
+            "score": -0.4365846812725067
           },
           "labeled_entities": [
             {
@@ -3581,7 +3581,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 78,
-            "score": -0.451384961605072
+            "score": -0.4513848125934601
           },
           "labeled_entities": [
             {
@@ -3607,8 +3607,8 @@
           "banned_phrases": [],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 91,
-            "score": -0.33391788601875305
+            "n_words_checked": 93,
+            "score": -0.33391791582107544
           },
           "labeled_entities": [
             {
@@ -3659,7 +3659,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 106,
-            "score": -0.5387623906135559
+            "score": -0.5387624502182007
           },
           "labeled_entities": [
             {
@@ -3702,7 +3702,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 75,
-            "score": -0.7381953001022339
+            "score": -0.73819500207901
           },
           "labeled_entities": [
             {
@@ -3721,7 +3721,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 75,
-            "score": -0.6079261302947998
+            "score": -0.6079261898994446
           },
           "labeled_entities": [
             {
@@ -3764,7 +3764,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 42,
-            "score": -0.4236413836479187
+            "score": -0.42364102602005005
           },
           "labeled_entities": [
             {
@@ -3799,7 +3799,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 94,
-            "score": -0.5277835726737976
+            "score": -0.527783215045929
           },
           "labeled_entities": [
             {
@@ -3850,7 +3850,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -0.4294176399707794
+            "score": -0.4294177293777466
           },
           "labeled_entities": [
             {
@@ -3877,7 +3877,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 77,
-            "score": -0.5373175740242004
+            "score": -0.5373176336288452
           },
           "labeled_entities": [
             {
@@ -3904,7 +3904,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -0.7842145562171936
+            "score": -0.7842153310775757
           },
           "labeled_entities": [
             {
@@ -3979,7 +3979,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 97,
-            "score": -0.6541838645935059
+            "score": -0.6541841626167297
           },
           "labeled_entities": [
             {
@@ -4054,7 +4054,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 77,
-            "score": -0.7305691242218018
+            "score": -0.7305686473846436
           },
           "labeled_entities": [
             {
@@ -4105,7 +4105,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 98,
-            "score": -0.4245927035808563
+            "score": -0.42459261417388916
           },
           "labeled_entities": [
             {
@@ -4172,7 +4172,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 80,
-            "score": -0.4481634199619293
+            "score": -0.4481634795665741
           },
           "labeled_entities": [
             {
@@ -4354,7 +4354,7 @@
           }
         },
         "summary": {
-          "completed": 61,
+          "completed": 64,
           "factual": 60,
           "failed": 1,
           "non_factual": 39,
@@ -4404,7 +4404,7 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
             "n_words_checked": 69,
-            "score": -0.6140733957290649
+            "score": -0.6140739321708679
           },
           "labeled_entities": [
             {
@@ -4430,7 +4430,7 @@
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association"
             ],
             "n_words_checked": 123,
-            "score": -0.6519454121589661
+            "score": -0.6519455313682556
           },
           "labeled_entities": [
             {
@@ -4456,7 +4456,7 @@
               "</s>Police have released an E-fit image of a man they want to speak to in connection with the sexual assault of a 15-year-old"
             ],
             "n_words_checked": 107,
-            "score": -0.4024295210838318
+            "score": -0.40242961049079895
           },
           "labeled_entities": [
             {
@@ -4488,7 +4488,7 @@
               "</s>The Irish economy grew by 7.7% in the first three months of the year"
             ],
             "n_words_checked": 117,
-            "score": -0.5470373630523682
+            "score": -0.5470374226570129
           },
           "labeled_entities": [
             {
@@ -4536,7 +4536,7 @@
               "</s>Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance'"
             ],
             "n_words_checked": 113,
-            "score": -0.8837049007415771
+            "score": -0.8837047815322876
           },
           "labeled_entities": [
             {
@@ -4581,7 +4581,7 @@
               "</s>Hartlepool United have signed Reading midfielder Nkosi Tshibola and Mansfield Town striker Jordan Bingham on loan until the end of the season"
             ],
             "n_words_checked": 99,
-            "score": -0.6012750267982483
+            "score": -0.6012750864028931
           },
           "labeled_entities": [
             {
@@ -4653,7 +4653,7 @@
               "</s>A drugs expert has warned people not to take'superman' ecstasy pills following the deaths of at least four people in recent weeks"
             ],
             "n_words_checked": 100,
-            "score": -0.742431104183197
+            "score": -0.7424307465553284
           },
           "labeled_entities": [
             {
@@ -4686,7 +4686,7 @@
               "</s>More than 1,500 people have objected to plans for 1,000 new homes in a village in the Cumbrian Wolds"
             ],
             "n_words_checked": 106,
-            "score": -0.8556631803512573
+            "score": -0.8556625843048096
           },
           "labeled_entities": [
             {
@@ -4723,7 +4723,7 @@
           "generation_metadata": {
             "dropped_seqs": [],
             "n_words_checked": 74,
-            "score": -0.664624035358429
+            "score": -0.6646242141723633
           },
           "labeled_entities": [
             {
@@ -4755,7 +4755,7 @@
               "</s>A man has been jailed for life for the murder of his six-year-old"
             ],
             "n_words_checked": 75,
-            "score": -0.538765549659729
+            "score": -0.5387647151947021
           },
           "labeled_entities": [
             {
@@ -4778,7 +4778,7 @@
               "</s>Hundreds"
             ],
             "n_words_checked": 59,
-            "score": -0.4278232157230377
+            "score": -0.4278233051300049
           },
           "labeled_entities": [
             {
@@ -4817,7 +4817,7 @@
               "</s>The High Court"
             ],
             "n_words_checked": 96,
-            "score": -0.6995512247085571
+            "score": -0.6995506882667542
           },
           "labeled_entities": [
             {
@@ -4859,7 +4859,7 @@
               "</s>The world premiere of the new animated film Minions has taken place in New York, USA"
             ],
             "n_words_checked": 64,
-            "score": -0.6287205219268799
+            "score": -0.6287205815315247
           },
           "labeled_entities": [
             {
@@ -4888,7 +4888,7 @@
               "</s>The former RT\u00c9 broadcaster and broadcaster M\u00e1irt\u00edn \u00d3 Murchun has died in Dublin"
             ],
             "n_words_checked": 57,
-            "score": -0.7977298498153687
+            "score": -0.7977297902107239
           },
           "labeled_entities": [
             {
@@ -4919,7 +4919,7 @@
               "</s>The man behind the takeover of the Financial Times is one of Japan's richest men, Shigeru"
             ],
             "n_words_checked": 94,
-            "score": -0.7048118114471436
+            "score": -0.7048117518424988
           },
           "labeled_entities": [
             {
@@ -4974,7 +4974,7 @@
               "</s>Scotland scrum-half"
             ],
             "n_words_checked": 95,
-            "score": -0.5821099281311035
+            "score": -0.5821101665496826
           },
           "labeled_entities": [
             {
@@ -5037,7 +5037,7 @@
               "</s>The US astronaut who's been living on the International Space Station for more than a year"
             ],
             "n_words_checked": 111,
-            "score": -0.6445133090019226
+            "score": -0.6445140242576599
           },
           "labeled_entities": [
             {
@@ -5080,7 +5080,7 @@
               "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run crash in Dundee",
               "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run incident in Dundee"
             ],
-            "n_words_checked": 100,
+            "n_words_checked": 104,
             "score": -0.627849817276001
           },
           "labeled_entities": [
@@ -5113,7 +5113,7 @@
               "</s>Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Vegalta"
             ],
             "n_words_checked": 66,
-            "score": -0.524733304977417
+            "score": -0.5247330069541931
           },
           "labeled_entities": [
             {
@@ -5239,7 +5239,7 @@
               "</s>Thousands of people are heading to Chester Zoo in the UK this weekend"
             ],
             "n_words_checked": 59,
-            "score": -0.8942283391952515
+            "score": -0.8942286372184753
           },
           "labeled_entities": [
             {
@@ -5281,7 +5281,7 @@
               "</s>Worcestershire wicketkeeper-batsman Tom Shantry has signed a new three-year"
             ],
             "n_words_checked": 62,
-            "score": -0.4764600396156311
+            "score": -0.476460337638855
           },
           "labeled_entities": [
             {
@@ -5328,7 +5328,7 @@
               "</s>Tens of thousands"
             ],
             "n_words_checked": 73,
-            "score": -0.6858903765678406
+            "score": -0.6858903169631958
           },
           "labeled_entities": [
             {
@@ -5367,7 +5367,7 @@
               "</s>Wales coach Huw"
             ],
             "n_words_checked": 104,
-            "score": -0.7287617325782776
+            "score": -0.7287614345550537
           },
           "labeled_entities": [
             {
@@ -5413,8 +5413,8 @@
             "dropped_seqs": [
               "</s>The air is still as charged as it was when I first arrived in Ravenscraig 25 years ago"
             ],
-            "n_words_checked": 104,
-            "score": -0.8220514059066772
+            "n_words_checked": 108,
+            "score": -0.822051465511322
           },
           "labeled_entities": [
             {
@@ -5458,7 +5458,7 @@
               "</s>Britain's Jamie Murray and Marcelo Melo beat Croatia's Dusan"
             ],
             "n_words_checked": 98,
-            "score": -0.46330174803733826
+            "score": -0.4633018374443054
           },
           "labeled_entities": [
             {
@@ -5548,7 +5548,7 @@
               "</s>World number one Mark Selby will play Ding Junhui in the World Championship semi-finals after beating Marco Fu 6-4"
             ],
             "n_words_checked": 90,
-            "score": -0.504668116569519
+            "score": -0.5046679377555847
           },
           "labeled_entities": [
             {
@@ -5635,7 +5635,7 @@
               "</s>Venezuelan Vice-President Elias"
             ],
             "n_words_checked": 115,
-            "score": -0.45271533727645874
+            "score": -0.4527154564857483
           },
           "labeled_entities": [
             {
@@ -5692,7 +5692,7 @@
               "</s>Three men have been found guilty of blowing up cash machines and stealing more than \u00a3200,000"
             ],
             "n_words_checked": 68,
-            "score": -0.46260738372802734
+            "score": -0.4626074433326721
           },
           "labeled_entities": [
             {
@@ -5721,8 +5721,8 @@
           ],
           "generation_metadata": {
             "dropped_seqs": [],
-            "n_words_checked": 100,
-            "score": -0.580333411693573
+            "n_words_checked": 103,
+            "score": -0.5803332924842834
           },
           "labeled_entities": [
             {
@@ -5793,7 +5793,7 @@
               "</s>Great Britain's women produced their best performance of the EuroHockey Championships"
             ],
             "n_words_checked": 90,
-            "score": -0.6199770569801331
+            "score": -0.619976818561554
           },
           "labeled_entities": [
             {
@@ -5840,7 +5840,7 @@
               "</s>Wales are out of Euro 2016 after a 2-0 defeat by Portugal in their last-16"
             ],
             "n_words_checked": 68,
-            "score": -0.5164398550987244
+            "score": -0.5164400339126587
           },
           "labeled_entities": [
             {
@@ -5890,7 +5890,7 @@
               "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes"
             ],
             "n_words_checked": 89,
-            "score": -0.5488234758377075
+            "score": -0.5488235950469971
           },
           "labeled_entities": [
             {
@@ -5945,7 +5945,7 @@
               "</s>The Indiana Pacers will host the Denver Nuggets in a pre-season"
             ],
             "n_words_checked": 82,
-            "score": -0.5129489898681641
+            "score": -0.5129492282867432
           },
           "labeled_entities": [
             {
@@ -6001,8 +6001,8 @@
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 500,000 euro (\u00a3353,176) were seized in Paris",
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 400,000 euro (\u00a3353,176) were seized by police in Paris"
             ],
-            "n_words_checked": 111,
-            "score": -0.6171758770942688
+            "n_words_checked": 113,
+            "score": -0.6171765327453613
           },
           "labeled_entities": [
             {
@@ -6050,7 +6050,7 @@
               "</s>A man from Sheffield has become the first"
             ],
             "n_words_checked": 100,
-            "score": -0.9675394296646118
+            "score": -0.9675396680831909
           },
           "labeled_entities": [
             {
@@ -6074,7 +6074,7 @@
               "</s>Police are \"extremely concerned\" for the welfare of a 13-year-old"
             ],
             "n_words_checked": 102,
-            "score": -0.5013988614082336
+            "score": -0.5013991594314575
           },
           "labeled_entities": [
             {
@@ -6114,7 +6114,7 @@
               "</s>Polish film director Andrzej"
             ],
             "n_words_checked": 65,
-            "score": -0.5568311214447021
+            "score": -0.5568310618400574
           },
           "labeled_entities": [
             {
@@ -6165,7 +6165,7 @@
               "</s>An Australian woman who suffered severe burns in a bushfire has completed the Ironman triathlon in Hawaii, her first"
             ],
             "n_words_checked": 90,
-            "score": -0.48575469851493835
+            "score": -0.485755056142807
           },
           "labeled_entities": [
             {
@@ -6197,7 +6197,7 @@
               "</s>An outbreak of Dengue fever in Burkina Faso has killed at least 11"
             ],
             "n_words_checked": 94,
-            "score": -0.5589789748191833
+            "score": -0.5589792132377625
           },
           "labeled_entities": [
             {
@@ -6237,7 +6237,7 @@
               "</s>A man has been charged with causing death by dangerous driving after the death of a six-year-old"
             ],
             "n_words_checked": 81,
-            "score": -0.3519984483718872
+            "score": -0.35199835896492004
           },
           "labeled_entities": [
             {
@@ -6260,7 +6260,7 @@
               "</s>A 33-year-old"
             ],
             "n_words_checked": 84,
-            "score": -0.4139370620250702
+            "score": -0.4139368236064911
           },
           "labeled_entities": [
             {
@@ -6295,7 +6295,7 @@
               "</s>Ex-Crewe Alexandra footballer Ian"
             ],
             "n_words_checked": 106,
-            "score": -0.7844366431236267
+            "score": -0.7844357490539551
           },
           "labeled_entities": [
             {
@@ -6340,7 +6340,7 @@
               "</s>St Johnstone's Paul Anderson has said Rangers defender John"
             ],
             "n_words_checked": 93,
-            "score": -0.8810805082321167
+            "score": -0.8810802698135376
           },
           "labeled_entities": [
             {
@@ -6417,7 +6417,7 @@
               "</s>Arsenal Ladies have confirmed that Ivory Coast midfielder Carli Lloyd has signed a new two-year"
             ],
             "n_words_checked": 83,
-            "score": -0.7096375226974487
+            "score": -0.7096379995346069
           },
           "labeled_entities": [
             {
@@ -6473,7 +6473,7 @@
               "</s>Campaigners have launched a legal challenge to a wind farm operator's plans to install overhead cables in Snowdonia"
             ],
             "n_words_checked": 102,
-            "score": -0.8367197513580322
+            "score": -0.8367191553115845
           },
           "labeled_entities": [
             {
@@ -6497,7 +6497,7 @@
               "</s>A paedophile who groomed a 10-year-old boy on Facebook before sexually abusing him has been jailed for 12 years"
             ],
             "n_words_checked": 88,
-            "score": -0.4643610417842865
+            "score": -0.46436095237731934
           },
           "labeled_entities": [
             {
@@ -6531,7 +6531,7 @@
               "</s>An under-performing academy school in Southampton"
             ],
             "n_words_checked": 84,
-            "score": -0.7206818461418152
+            "score": -0.720680832862854
           },
           "labeled_entities": [
             {
@@ -6557,7 +6557,7 @@
               "</s>Chelsea have clinched their second"
             ],
             "n_words_checked": 50,
-            "score": -0.7872701287269592
+            "score": -0.7872700691223145
           },
           "labeled_entities": [
             {
@@ -6612,16 +6612,9 @@
               "</s>Welshman Jamie Evans retained his IBF super-lightweight title with a unanimous points victory over American Scott Ormond in Cardiff",
               "</s>Welshman Jamie Evans retained his IBF super-lightweight title with a unanimous points victory over American Chris Ormond in Cardiff",
               "</s>Welshman Jamie Evans retained his IBF super-lightweight title with a unanimous points victory over American John Ormond in Cardiff",
-              "</s>Welshman Jamie Evans retained his IBF super-lightweight title with a unanimous points victory over American Scott Ormond at Cardiff",
-              "</s>Welshman Jamie Evans retained his IBF super-lightweight title with a unanimous points victory over American Scott Ormond in Cardiff<unk>",
-              "</s>Welshman Jamie Evans retained his IBF super-lightweight title with a unanimous points victory over American Scott Ormond in Cardiff<s><s>",
-              "</s>Welshman Jamie Evans retained his IBF super-lightweight title with a unanimous points victory over American Scott Ormond in Cardiff<s><unk>",
-              "</s>Welshman Jamie Evans retained his IBF super-lightweight title with a unanimous points victory over American Scott Ormond in Cardiff<s><s><s>",
-              "</s>Welshman Jamie Evans retained his IBF super-lightweight title with a unanimous points victory over American Scott Ormond in Cardiff<s><s><unk>",
-              "</s>Welshman Jamie Evans retained his IBF super-lightweight title with a unanimous points victory over American Scott Ormond in Cardiff<s><s><s><s>",
-              "</s>Welshman Jamie Evans retained his IBF super-lightweight title with a unanimous points victory over American Scott Ormond in Cardiff<s><s><s><unk>"
+              "</s>Welshman Jamie Evans retained his IBF super-lightweight title with a unanimous points victory over American Scott Ormond at Cardiff"
             ],
-            "n_words_checked": 98,
+            "n_words_checked": 190,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -6644,7 +6637,7 @@
               "</s>James Wakely and Richard Keogh hit centuries as Northamptonshire took control against Leicestershire at Grace Road"
             ],
             "n_words_checked": 80,
-            "score": -0.5822511911392212
+            "score": -0.5822510719299316
           },
           "labeled_entities": [
             {
@@ -6866,7 +6859,7 @@
           }
         },
         "summary": {
-          "completed": 73,
+          "completed": 77,
           "factual": 70,
           "failed": 3,
           "non_factual": 27,
@@ -6888,7 +6881,7 @@
               "</s>Police investigating phone hacking in the News of the World have arrested a 45-year-old"
             ],
             "n_words_checked": 78,
-            "score": -0.7241512537002563
+            "score": -0.724151611328125
           },
           "labeled_entities": [
             {
@@ -6914,7 +6907,7 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
             "n_words_checked": 73,
-            "score": -0.6207177639007568
+            "score": -0.6207175850868225
           },
           "labeled_entities": [
             {
@@ -6944,7 +6937,7 @@
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Council"
             ],
             "n_words_checked": 123,
-            "score": -0.6936476826667786
+            "score": -0.6936477422714233
           },
           "labeled_entities": [
             {
@@ -6970,7 +6963,7 @@
               "</s>Ireland's economy grew by 7.7% in the three months to the end of September"
             ],
             "n_words_checked": 117,
-            "score": -0.5066347718238831
+            "score": -0.5066345930099487
           },
           "labeled_entities": [
             {
@@ -7008,46 +7001,6 @@
           ],
           "summary": "Ireland's economy grew by 7.7% in the three months to the end of June compared with the same period last year, official figures show."
         },
-        "30457745": {
-          "banned_phrases": [
-            "Dance, Dance, Dance'"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance'",
-              "</s>Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance'"
-            ],
-            "n_words_checked": 113,
-            "score": -0.8837047219276428
-          },
-          "labeled_entities": [
-            {
-              "end": 8,
-              "ent": "Ghanaian",
-              "in_source": false,
-              "label": "Intrinsic Hallucination",
-              "start": 0,
-              "type": "NORP"
-            },
-            {
-              "end": 27,
-              "ent": "The Busy Twist",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 13,
-              "type": "ORG"
-            },
-            {
-              "end": 88,
-              "ent": "Dance, Dance, Dance'",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 68,
-              "type": "WORK_OF_ART"
-            }
-          ],
-          "summary": "Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance', which they say has captured the spirit of the country."
-        },
         "30657223": {
           "banned_phrases": [
             "Emmanuel",
@@ -7068,8 +7021,8 @@
               "</s>Hartlepool United have signed Reading midfielder Nkosi Tshibola and Mansfield Town striker Ryan Bingham on loan until the end of the season",
               "</s>Hartlepool United have signed Reading midfielder Nkosi Tshibola and Mansfield Town striker Jack Bingham on loan until the end of the season"
             ],
-            "n_words_checked": 104,
-            "score": -0.6431587934494019
+            "n_words_checked": 105,
+            "score": -0.6431586146354675
           },
           "labeled_entities": [
             {
@@ -7155,7 +7108,7 @@
               "</s>More than 100 people have objected to plans to build more than 1,000 homes in a remote village in the Cumbrian Wolds"
             ],
             "n_words_checked": 107,
-            "score": -0.8194274306297302
+            "score": -0.8194273710250854
           },
           "labeled_entities": [
             {
@@ -7185,35 +7138,6 @@
           ],
           "summary": "More than 100 people have objected to plans to build more than 1,000 homes in a remote village in the Cotswold Wolds."
         },
-        "32132840": {
-          "banned_phrases": [
-            "100"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 74,
-            "score": -0.664624035358429
-          },
-          "labeled_entities": [
-            {
-              "end": 36,
-              "ent": "100",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 33,
-              "type": "MONEY"
-            },
-            {
-              "end": 64,
-              "ent": "Norfolk",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 57,
-              "type": "GPE"
-            }
-          ],
-          "summary": "Plans have been submitted for a \u00a3100m power station at a Norfolk paper mill."
-        },
         "32487884": {
           "banned_phrases": [
             "six-month-old",
@@ -7226,7 +7150,7 @@
               "</s>A man has been jailed for life for the murder of his six-year-old"
             ],
             "n_words_checked": 90,
-            "score": -0.7166795134544373
+            "score": -0.7166796922683716
           },
           "labeled_entities": [],
           "summary": "A man has been jailed for life for the murder of his granddaughter who was taken from him by his ex-partner."
@@ -7241,7 +7165,7 @@
               "</s>The High Court"
             ],
             "n_words_checked": 96,
-            "score": -0.6995503306388855
+            "score": -0.6995506882667542
           },
           "labeled_entities": [
             {
@@ -7285,7 +7209,7 @@
               "</s>The world premiere of the new animated film Minions has taken place in New York"
             ],
             "n_words_checked": 67,
-            "score": -0.6801658272743225
+            "score": -0.6801659464836121
           },
           "labeled_entities": [
             {
@@ -7317,7 +7241,7 @@
               "</s>The former RT\u00c9 broadcaster and broadcaster M\u00e1irt\u00edn \u00d3 Murchu has died in Dublin"
             ],
             "n_words_checked": 62,
-            "score": -0.8224276304244995
+            "score": -0.8224278688430786
           },
           "labeled_entities": [
             {
@@ -7351,7 +7275,7 @@
               "</s>The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Shigeru"
             ],
             "n_words_checked": 105,
-            "score": -0.7260165810585022
+            "score": -0.726016640663147
           },
           "labeled_entities": [
             {
@@ -7405,8 +7329,8 @@
               "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run crash in Dundee",
               "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run incident in Dundee"
             ],
-            "n_words_checked": 107,
-            "score": -0.6935162544250488
+            "n_words_checked": 109,
+            "score": -0.6935163736343384
           },
           "labeled_entities": [
             {
@@ -7440,7 +7364,7 @@
               "</s>Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Nagoya Grampus"
             ],
             "n_words_checked": 94,
-            "score": -0.5294705033302307
+            "score": -0.5294700264930725
           },
           "labeled_entities": [
             {
@@ -7509,17 +7433,9 @@
               "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between so-called Islamic State (IS) and government forces in 2014",
               "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between so-called Islamic State (IS) and government forces in June",
               "</s>Nour, from the Syrian city of Raqqa, was caught up in the fighting between so-called Islamic State (IS) and government forces in 2014",
-              "</s>Nour, from the Syrian city of Raqqa, was caught up in the fighting between so-called Islamic State (IS) and government forces in June",
-              "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between so-called Islamic State (IS) and government forces in 2014<s>",
-              "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between so-called Islamic State (IS) and government forces in 2014<unk>",
-              "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between so-called Islamic State (IS) and government forces in 2014<s><s>",
-              "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between so-called Islamic State (IS) and government forces in 2014<s><unk>",
-              "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between so-called Islamic State (IS) and government forces in 2014<s><s><s>",
-              "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between so-called Islamic State (IS) and government forces in 2014<s><s><unk>",
-              "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between so-called Islamic State (IS) and government forces in 2014<s><s><s><s>",
-              "</s>Nour, from the Syrian city of Aleppo, was caught up in the fighting between so-called Islamic State (IS) and government forces in 2014<s><s><s><unk>"
+              "</s>Nour, from the Syrian city of Raqqa, was caught up in the fighting between so-called Islamic State (IS) and government forces in June"
             ],
-            "n_words_checked": 104,
+            "n_words_checked": 183,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -7537,7 +7453,7 @@
               "</s>Thousands of people are heading to Chester Zoo in the UK this weekend"
             ],
             "n_words_checked": 60,
-            "score": -0.9059234261512756
+            "score": -0.9059247374534607
           },
           "labeled_entities": [
             {
@@ -7578,7 +7494,7 @@
               "</s>Tens of thousands"
             ],
             "n_words_checked": 83,
-            "score": -0.7576088905334473
+            "score": -0.7576087117195129
           },
           "labeled_entities": [
             {
@@ -7619,7 +7535,7 @@
               "</s>Wales coach Huw"
             ],
             "n_words_checked": 75,
-            "score": -0.7128856182098389
+            "score": -0.7128844261169434
           },
           "labeled_entities": [
             {
@@ -7680,7 +7596,7 @@
               "</s>Andy Murray and Marcelo Melo reached their third Monte Carlo Masters final in four years with a 6-4 6-3 victory over Marin"
             ],
             "n_words_checked": 106,
-            "score": -0.5545357465744019
+            "score": -0.5545352697372437
           },
           "labeled_entities": [
             {
@@ -7797,7 +7713,7 @@
               "</s>World number one Mark Selby will face Ding Junhui in the World Championship semi-finals after beating Marco Fu 6-5"
             ],
             "n_words_checked": 98,
-            "score": -0.5045506358146667
+            "score": -0.5045504570007324
           },
           "labeled_entities": [
             {
@@ -7875,76 +7791,6 @@
           ],
           "summary": "World number one Mark Selby will face Ding Junhui in the World Championship semi-finals after beating Marco Fu 6-3 at the Crucible."
         },
-        "36555657": {
-          "banned_phrases": [
-            "Claude",
-            "Jean"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 103,
-            "score": -0.5803332924842834
-          },
-          "labeled_entities": [
-            {
-              "end": 6,
-              "ent": "Viacom",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 27,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 23,
-              "type": "PERSON"
-            },
-            {
-              "end": 28,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 27,
-              "type": "PERSON"
-            },
-            {
-              "end": 34,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 28,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Dauman",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 104,
-              "ent": "Sumner",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 98,
-              "type": "PERSON"
-            },
-            {
-              "end": 113,
-              "ent": "Redstone",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 105,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner Redstone."
-        },
         "36635880": {
           "banned_phrases": [
             "the EuroHockey Championships",
@@ -7956,7 +7802,7 @@
               "</s>Great Britain's women produced their best performance of the EuroHockey Championships"
             ],
             "n_words_checked": 85,
-            "score": -0.6306924223899841
+            "score": -0.6306928396224976
           },
           "labeled_entities": [
             {
@@ -8005,7 +7851,7 @@
               "</s>Wales are out of Euro 2016 after a 2-0 defeat by Portugal in their last-16"
             ],
             "n_words_checked": 81,
-            "score": -0.528674304485321
+            "score": -0.5286741852760315
           },
           "labeled_entities": [
             {
@@ -8058,17 +7904,9 @@
               "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes",
               "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBO world champion Johannes",
               "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Christian",
-              "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBO world champion Christian",
-              "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes<s>",
-              "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes<unk>",
-              "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes<s><s>",
-              "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes<s><unk>",
-              "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes<s><s><s>",
-              "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes<s><s><unk>",
-              "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes<s><s><s><s>",
-              "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBA world champion Johannes<s><s><s><unk>"
+              "</s>Welsh boxer Nathan Cleverly says he is confident he can upset WBO world champion Christian"
             ],
-            "n_words_checked": 71,
+            "n_words_checked": 186,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -8086,7 +7924,7 @@
               "</s>The Indiana Pacers will play the Denver Nuggets at London's O2 Arena in the first of two regular-season games staged in the UK next month"
             ],
             "n_words_checked": 113,
-            "score": -0.5235925912857056
+            "score": -0.5235923528671265
           },
           "labeled_entities": [
             {
@@ -8169,8 +8007,8 @@
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 400,000 euro (\u00a3353,176) were seized in Londonderry",
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 400,000 euro (\u00a3353,176) were seized by police in Londonderry"
             ],
-            "n_words_checked": 117,
-            "score": -0.6352263689041138
+            "n_words_checked": 121,
+            "score": -0.6352269053459167
           },
           "labeled_entities": [
             {
@@ -8220,7 +8058,7 @@
               "</s>Police are \"extremely concerned\" for the welfare of a 15-year-old"
             ],
             "n_words_checked": 92,
-            "score": -0.5200172662734985
+            "score": -0.5200177431106567
           },
           "labeled_entities": [
             {
@@ -8263,7 +8101,7 @@
               "</s>Polish film director Andrzej"
             ],
             "n_words_checked": 71,
-            "score": -0.8177064657211304
+            "score": -0.817706286907196
           },
           "labeled_entities": [
             {
@@ -8313,7 +8151,7 @@
               "</s>An outbreak of Dengue fever in Burkina Faso has killed more than 100"
             ],
             "n_words_checked": 94,
-            "score": -0.5611920356750488
+            "score": -0.5611922144889832
           },
           "labeled_entities": [
             {
@@ -8391,7 +8229,7 @@
               "</s>Ex-Crewe Alexandra footballer Lee"
             ],
             "n_words_checked": 106,
-            "score": -0.7997143268585205
+            "score": -0.7997146844863892
           },
           "labeled_entities": [
             {
@@ -8440,7 +8278,7 @@
               "</s>St Johnstone's Steven Anderson has said Rangers' Kieran"
             ],
             "n_words_checked": 80,
-            "score": -0.9007701277732849
+            "score": -0.900769829750061
           },
           "labeled_entities": [
             {
@@ -8515,7 +8353,7 @@
               "</s>Arsenal Ladies have signed Ghana international midfielder Nkosi Nsiala on a two-year"
             ],
             "n_words_checked": 69,
-            "score": -0.967292845249176
+            "score": -0.9672930836677551
           },
           "labeled_entities": [
             {
@@ -8558,7 +8396,7 @@
               "</s>Campaigners have launched a legal challenge to a wind farm operator's plans to install overhead cables in Snowdonia"
             ],
             "n_words_checked": 83,
-            "score": -0.8742232918739319
+            "score": -0.8742223978042603
           },
           "labeled_entities": [
             {
@@ -8584,7 +8422,7 @@
               "</s>A paedophile who groomed a 10-year-old boy on Facebook before sexually abusing him has been jailed for 12 years"
             ],
             "n_words_checked": 89,
-            "score": -0.4688435196876526
+            "score": -0.46884310245513916
           },
           "labeled_entities": [
             {
@@ -8622,7 +8460,7 @@
               "</s>An under-performing academy school in south-west London"
             ],
             "n_words_checked": 76,
-            "score": -0.7765700817108154
+            "score": -0.7765698432922363
           },
           "labeled_entities": [
             {
@@ -8650,7 +8488,7 @@
               "</s>Chelsea have clinched their third"
             ],
             "n_words_checked": 44,
-            "score": -0.9438506364822388
+            "score": -0.9438508152961731
           },
           "labeled_entities": [
             {
@@ -8698,10 +8536,11 @@
               "</s>Northamptonshire openers Tom Wakely and James",
               "</s>Northamptonshire openers Tom Wakely and Chris Keogh hit centuries as they put the county in control against Leicestershire at Grace Road",
               "</s>Northamptonshire openers Tom Wakely and Chris Keogh hit centuries as they put the Division Two leaders in control against Leicestershire at Grace Road",
-              "</s>Northamptonshire openers Tom Wakely and Chris Keogh shared an unbroken century stand to put their side in control against Leicestershire at Grace Road"
+              "</s>Northamptonshire openers Tom Wakely and Chris Keogh shared an unbroken century stand to put their side in control against Leicestershire at Grace Road",
+              "</s>Northamptonshire openers Tom Wakely and Chris Keogh shared an unbroken century stand to put their side in control against Leicestershire at Edgbaston"
             ],
-            "n_words_checked": 105,
-            "score": -0.730720043182373
+            "n_words_checked": 109,
+            "score": -0.7307203412055969
           },
           "labeled_entities": [
             {
@@ -8907,7 +8746,7 @@
           }
         },
         "summary": {
-          "completed": 82,
+          "completed": 86,
           "factual": 75,
           "failed": 7,
           "non_factual": 18,
@@ -8930,7 +8769,7 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestershire"
             ],
             "n_words_checked": 76,
-            "score": -0.8472774028778076
+            "score": -0.8472778797149658
           },
           "labeled_entities": [
             {
@@ -8962,7 +8801,7 @@
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Council"
             ],
             "n_words_checked": 122,
-            "score": -0.7194837331771851
+            "score": -0.7194839715957642
           },
           "labeled_entities": [
             {
@@ -8975,46 +8814,6 @@
             }
           ],
           "summary": "There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Union."
-        },
-        "30457745": {
-          "banned_phrases": [
-            "Dance, Dance, Dance'"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance'",
-              "</s>Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance'"
-            ],
-            "n_words_checked": 117,
-            "score": -0.8837047219276428
-          },
-          "labeled_entities": [
-            {
-              "end": 8,
-              "ent": "Ghanaian",
-              "in_source": false,
-              "label": "Intrinsic Hallucination",
-              "start": 0,
-              "type": "NORP"
-            },
-            {
-              "end": 27,
-              "ent": "The Busy Twist",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 13,
-              "type": "ORG"
-            },
-            {
-              "end": 88,
-              "ent": "Dance, Dance, Dance'",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 68,
-              "type": "WORK_OF_ART"
-            }
-          ],
-          "summary": "Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance', which they say has captured the spirit of the country."
         },
         "30657223": {
           "banned_phrases": [
@@ -9041,8 +8840,8 @@
               "</s>Hartlepool United have signed Reading midfielder Alex Tshibola on loan until the end of the League One season and Mansfield Town striker Ryan",
               "</s>Hartlepool United have signed Reading midfielder Alex Tshibola on loan until the end of the League One season and Mansfield Town striker Joe Bingham until January"
             ],
-            "n_words_checked": 121,
-            "score": -0.671129584312439
+            "n_words_checked": 125,
+            "score": -0.6711297035217285
           },
           "labeled_entities": [
             {
@@ -9138,7 +8937,7 @@
               "</s>Villagers in a Pembrokeshire village have objected to plans for more than 1,200"
             ],
             "n_words_checked": 84,
-            "score": -0.7379728555679321
+            "score": -0.7379730343818665
           },
           "labeled_entities": [
             {
@@ -9159,75 +8958,6 @@
             }
           ],
           "summary": "Villagers in a Pembrokeshire village have objected to plans for more than 200 new homes."
-        },
-        "32132840": {
-          "banned_phrases": [
-            "100"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 74,
-            "score": -0.6646238565444946
-          },
-          "labeled_entities": [
-            {
-              "end": 36,
-              "ent": "100",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 33,
-              "type": "MONEY"
-            },
-            {
-              "end": 64,
-              "ent": "Norfolk",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 57,
-              "type": "GPE"
-            }
-          ],
-          "summary": "Plans have been submitted for a \u00a3100m power station at a Norfolk paper mill."
-        },
-        "32798693": {
-          "banned_phrases": [
-            "High Court",
-            "The High Court"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>The High Court"
-            ],
-            "n_words_checked": 96,
-            "score": -0.6995503306388855
-          },
-          "labeled_entities": [
-            {
-              "end": 13,
-              "ent": "Next",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 9,
-              "type": "ORG"
-            },
-            {
-              "end": 35,
-              "ent": "High Court",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 25,
-              "type": "ORG"
-            },
-            {
-              "end": 68,
-              "ent": "HM Revenue & Customs",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 48,
-              "type": "ORG"
-            }
-          ],
-          "summary": "Retailer Next has lost a High Court battle with HM Revenue & Customs over corporation tax."
         },
         "33317600": {
           "banned_phrases": [
@@ -9250,7 +8980,7 @@
               "</s>The former RT\u00c9 broadcaster and broadcaster M\u00e1irt\u00edn \u00d3 Murch\u00f4s has died in Dublin"
             ],
             "n_words_checked": 60,
-            "score": -0.920807957649231
+            "score": -0.9208080768585205
           },
           "labeled_entities": [
             {
@@ -9287,7 +9017,7 @@
               "</s>The man behind the takeover of the Financial Times is one of the world's richest men, and his name is Kaori"
             ],
             "n_words_checked": 104,
-            "score": -0.7617735266685486
+            "score": -0.7617737650871277
           },
           "labeled_entities": [
             {
@@ -9382,7 +9112,7 @@
               "</s>Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Nagoya Grampus"
             ],
             "n_words_checked": 92,
-            "score": -0.6333825588226318
+            "score": -0.633382260799408
           },
           "labeled_entities": [
             {
@@ -9442,7 +9172,7 @@
               "</s>Wales' Six Nations win over France was \"baffling\", according to ex-Wales captain Martyn"
             ],
             "n_words_checked": 95,
-            "score": -0.7281687259674072
+            "score": -0.7281685471534729
           },
           "labeled_entities": [
             {
@@ -9507,91 +9237,13 @@
               "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-3 win over Marin",
               "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-3 victory over Marin",
               "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-2 win over Marin",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-2 victory over Marin",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-3 win over Marin<s>",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-3 win over Marin<unk>",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-3 win over Marin<s><s>",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-3 win over Marin<s><unk>",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-3 win over Marin<s><s><s>",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-3 win over Marin<s><s><unk>",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-3 win over Marin<s><s><s><s>",
-              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-3 win over Marin<s><s><s><unk>"
+              "</s>Andy Murray and Marcelo Melo reached their first ATP doubles final of the year with a 6-4 6-2 victory over Marin"
             ],
-            "n_words_checked": 88,
+            "n_words_checked": 176,
             "score": -Infinity
           },
           "labeled_entities": [],
           "summary": "<Failed generation: blocked all beams>"
-        },
-        "36555657": {
-          "banned_phrases": [
-            "Claude",
-            "Jean"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 103,
-            "score": -0.5803330540657043
-          },
-          "labeled_entities": [
-            {
-              "end": 6,
-              "ent": "Viacom",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 27,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 23,
-              "type": "PERSON"
-            },
-            {
-              "end": 28,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 27,
-              "type": "PERSON"
-            },
-            {
-              "end": 34,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 28,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Dauman",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 104,
-              "ent": "Sumner",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 98,
-              "type": "PERSON"
-            },
-            {
-              "end": 113,
-              "ent": "Redstone",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 105,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner Redstone."
         },
         "36635880": {
           "banned_phrases": [
@@ -9606,7 +9258,7 @@
               "</s>Great Britain's women produced their best performance of the EuroHockey Championships"
             ],
             "n_words_checked": 92,
-            "score": -0.6728394627571106
+            "score": -0.6728398203849792
           },
           "labeled_entities": [
             {
@@ -9657,7 +9309,7 @@
               "</s>Wales are out of Euro 2016 after a 2-0 defeat by Portugal in their last-16"
             ],
             "n_words_checked": 82,
-            "score": -0.5568816661834717
+            "score": -0.5568811893463135
           },
           "labeled_entities": [
             {
@@ -9705,7 +9357,7 @@
               "</s>The Indiana Pacers will play the Denver Nuggets at London's O2 Arena for the second time this season when the teams meet next month"
             ],
             "n_words_checked": 107,
-            "score": -0.5239427089691162
+            "score": -0.5239419341087341
           },
           "labeled_entities": [
             {
@@ -9775,8 +9427,8 @@
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 400,000 euro (\u00a3353,176) were seized by police in Lille",
               "</s>Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 400,000 euro (\u00a3353,176) were seized by police in Londonderry"
             ],
-            "n_words_checked": 115,
-            "score": -0.652320146560669
+            "n_words_checked": 118,
+            "score": -0.6523204445838928
           },
           "labeled_entities": [
             {
@@ -9875,7 +9527,7 @@
               "</s>Polish film director Andrzeja"
             ],
             "n_words_checked": 69,
-            "score": -0.8436474800109863
+            "score": -0.8436473608016968
           },
           "labeled_entities": [
             {
@@ -9929,7 +9581,7 @@
               "</s>An outbreak of Dengue fever in Burkina Faso has killed at least 20 people and left more than 100"
             ],
             "n_words_checked": 96,
-            "score": -0.5623416900634766
+            "score": -0.5623416304588318
           },
           "labeled_entities": [
             {
@@ -9973,17 +9625,9 @@
               "</s>Ex-Crewe Alexandra and England",
               "</s>Ex-Crewe Alexandra footballer Ian",
               "</s>Ex-Crewe Alexandra footballer Lee",
-              "</s>Ex-Crewe Alexandra footballer Paul",
-              "</s>Ex-Crewe Alexandra and England<s>",
-              "</s>Ex-Crewe Alexandra and England<unk>",
-              "</s>Ex-Crewe Alexandra and England<s><s>",
-              "</s>Ex-Crewe Alexandra and England<s><unk>",
-              "</s>Ex-Crewe Alexandra and England<s><s><s>",
-              "</s>Ex-Crewe Alexandra and England<s><s><unk>",
-              "</s>Ex-Crewe Alexandra and England<s><s><s><s>",
-              "</s>Ex-Crewe Alexandra and England<s><s><s><unk>"
+              "</s>Ex-Crewe Alexandra footballer Paul"
             ],
-            "n_words_checked": 30,
+            "n_words_checked": 174,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -10020,7 +9664,7 @@
               "</s>Arsenal Ladies have confirmed that Nigeria international midfielder Nkululeko Amaechi has signed a new two-year"
             ],
             "n_words_checked": 86,
-            "score": -1.0042660236358643
+            "score": -1.0042665004730225
           },
           "labeled_entities": [
             {
@@ -10073,7 +9717,7 @@
               "</s>Campaigners have launched a legal challenge to a wind farm operator's plans to install overhead cables in Snowdonia"
             ],
             "n_words_checked": 82,
-            "score": -1.0943032503128052
+            "score": -1.0943031311035156
           },
           "labeled_entities": [
             {
@@ -10098,17 +9742,9 @@
               "</s>A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for 12 years",
               "</s>A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for eight years",
               "</s>A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for seven years",
-              "</s>A paedophile who groomed a 10-year-old boy on Facebook before sexually abusing him has been jailed for 12 years",
-              "</s>A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for 12 years<s>",
-              "</s>A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for 12 years<unk>",
-              "</s>A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for 12 years<s><s>",
-              "</s>A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for 12 years<s><unk>",
-              "</s>A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for 12 years<s><s><s>",
-              "</s>A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for 12 years<s><s><unk>",
-              "</s>A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for 12 years<s><s><s><s>",
-              "</s>A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for 12 years<s><s><s><unk>"
+              "</s>A paedophile who groomed a 10-year-old boy on Facebook before sexually abusing him has been jailed for 12 years"
             ],
-            "n_words_checked": 86,
+            "n_words_checked": 179,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -10133,7 +9769,7 @@
               "</s>An under-performing academy school in south-west London"
             ],
             "n_words_checked": 88,
-            "score": -0.8073111176490784
+            "score": -0.8073109984397888
           },
           "labeled_entities": [
             {
@@ -10174,17 +9810,9 @@
               "</s>Northamptonshire openers Luke Wakely and Andy",
               "</s>Northamptonshire openers Luke Wakely and Richard",
               "</s>Northamptonshire openers Luke Wakely and James",
-              "</s>Northamptonshire openers Luke Wakely and Chris",
-              "</s>Northamptonshire openers Luke Wakely and Andy<s>",
-              "</s>Northamptonshire openers Luke Wakely and Andy<unk>",
-              "</s>Northamptonshire openers Luke Wakely and Andy<s><s>",
-              "</s>Northamptonshire openers Luke Wakely and Andy<s><unk>",
-              "</s>Northamptonshire openers Luke Wakely and Andy<s><s><s>",
-              "</s>Northamptonshire openers Luke Wakely and Andy<s><s><unk>",
-              "</s>Northamptonshire openers Luke Wakely and Andy<s><s><s><s>",
-              "</s>Northamptonshire openers Luke Wakely and Andy<s><s><s><unk>"
+              "</s>Northamptonshire openers Luke Wakely and Chris"
             ],
-            "n_words_checked": 46,
+            "n_words_checked": 171,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -10326,7 +9954,7 @@
           }
         },
         "summary": {
-          "completed": 84,
+          "completed": 88,
           "factual": 77,
           "failed": 7,
           "non_factual": 16,
@@ -10384,8 +10012,8 @@
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Council",
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Union"
             ],
-            "n_words_checked": 126,
-            "score": -0.7390042543411255
+            "n_words_checked": 130,
+            "score": -0.7390041351318359
           },
           "labeled_entities": [
             {
@@ -10398,46 +10026,6 @@
             }
           ],
           "summary": "There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Organisation."
-        },
-        "30457745": {
-          "banned_phrases": [
-            "Dance, Dance, Dance'"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance'",
-              "</s>Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance'"
-            ],
-            "n_words_checked": 117,
-            "score": -0.8837046027183533
-          },
-          "labeled_entities": [
-            {
-              "end": 8,
-              "ent": "Ghanaian",
-              "in_source": false,
-              "label": "Intrinsic Hallucination",
-              "start": 0,
-              "type": "NORP"
-            },
-            {
-              "end": 27,
-              "ent": "The Busy Twist",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 13,
-              "type": "ORG"
-            },
-            {
-              "end": 88,
-              "ent": "Dance, Dance, Dance'",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 68,
-              "type": "WORK_OF_ART"
-            }
-          ],
-          "summary": "Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance', which they say has captured the spirit of the country."
         },
         "30657223": {
           "banned_phrases": [
@@ -10468,7 +10056,7 @@
               "</s>Hartlepool United have signed Reading midfielder Ola Tshibola on loan until the end of the League One season and Mansfield Town striker Joe"
             ],
             "n_words_checked": 127,
-            "score": -0.7086440324783325
+            "score": -0.7086441516876221
           },
           "labeled_entities": [
             {
@@ -10570,7 +10158,7 @@
               "</s>Villagers in a Cumbrian village have objected to plans to build more than 1,200"
             ],
             "n_words_checked": 78,
-            "score": -0.8821597695350647
+            "score": -0.8821591734886169
           },
           "labeled_entities": [
             {
@@ -10591,75 +10179,6 @@
             }
           ],
           "summary": "Villagers in a Cumbrian village have objected to plans to build more than 1,500 new homes."
-        },
-        "32132840": {
-          "banned_phrases": [
-            "100"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 74,
-            "score": -0.6646238565444946
-          },
-          "labeled_entities": [
-            {
-              "end": 36,
-              "ent": "100",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 33,
-              "type": "MONEY"
-            },
-            {
-              "end": 64,
-              "ent": "Norfolk",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 57,
-              "type": "GPE"
-            }
-          ],
-          "summary": "Plans have been submitted for a \u00a3100m power station at a Norfolk paper mill."
-        },
-        "32798693": {
-          "banned_phrases": [
-            "High Court",
-            "The High Court"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>The High Court"
-            ],
-            "n_words_checked": 96,
-            "score": -0.6995503306388855
-          },
-          "labeled_entities": [
-            {
-              "end": 13,
-              "ent": "Next",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 9,
-              "type": "ORG"
-            },
-            {
-              "end": 35,
-              "ent": "High Court",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 25,
-              "type": "ORG"
-            },
-            {
-              "end": 68,
-              "ent": "HM Revenue & Customs",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 48,
-              "type": "ORG"
-            }
-          ],
-          "summary": "Retailer Next has lost a High Court battle with HM Revenue & Customs over corporation tax."
         },
         "33317600": {
           "banned_phrases": [
@@ -10684,7 +10203,7 @@
               "</s>The former RT\u00c9 broadcaster and broadcaster M\u00e1irt\u00edn \u00d3 Murch\u00f4s has died in Dublin"
             ],
             "n_words_checked": 60,
-            "score": -0.9916743040084839
+            "score": -0.9916742444038391
           },
           "labeled_entities": [
             {
@@ -10739,7 +10258,7 @@
               "</s>The man behind the takeover of the Financial Times is one of the world's richest men, and his name is Kaori"
             ],
             "n_words_checked": 110,
-            "score": -0.7643504738807678
+            "score": -0.7643501162528992
           },
           "labeled_entities": [
             {
@@ -10799,8 +10318,8 @@
               "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run crash in Dundonnish",
               "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run incident in Dundonnish"
             ],
-            "n_words_checked": 111,
-            "score": -0.8854404091835022
+            "n_words_checked": 114,
+            "score": -0.8854402303695679
           },
           "labeled_entities": [
             {
@@ -10893,76 +10412,6 @@
           ],
           "summary": "Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Nagoya Gramps."
         },
-        "36555657": {
-          "banned_phrases": [
-            "Claude",
-            "Jean"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 103,
-            "score": -0.5803330540657043
-          },
-          "labeled_entities": [
-            {
-              "end": 6,
-              "ent": "Viacom",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 27,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 23,
-              "type": "PERSON"
-            },
-            {
-              "end": 28,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 27,
-              "type": "PERSON"
-            },
-            {
-              "end": 34,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 28,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Dauman",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 104,
-              "ent": "Sumner",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 98,
-              "type": "PERSON"
-            },
-            {
-              "end": 113,
-              "ent": "Redstone",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 105,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner Redstone."
-        },
         "36635880": {
           "banned_phrases": [
             "the EuroHockey Championships",
@@ -10978,7 +10427,7 @@
               "</s>Great Britain's women produced their best performance of the EuroHockey Championships"
             ],
             "n_words_checked": 96,
-            "score": -0.6858394742012024
+            "score": -0.6858392357826233
           },
           "labeled_entities": [
             {
@@ -11032,7 +10481,7 @@
               "</s>The Indiana Pacers will play the Denver Nuggets at London's O2 Arena in the first of two"
             ],
             "n_words_checked": 110,
-            "score": -0.48534104228019714
+            "score": -0.48534128069877625
           },
           "labeled_entities": [
             {
@@ -11111,7 +10560,7 @@
               "</s>Police are \"extremely concerned\" for the welfare of a 15-month-old girl and her 13-year-old"
             ],
             "n_words_checked": 94,
-            "score": -0.6642100214958191
+            "score": -0.6642102599143982
           },
           "labeled_entities": [
             {
@@ -11150,7 +10599,7 @@
               "</s>Polish film director Andrzejs"
             ],
             "n_words_checked": 70,
-            "score": -0.8543493151664734
+            "score": -0.8543499112129211
           },
           "labeled_entities": [
             {
@@ -11226,7 +10675,7 @@
               "</s>Arsenal Ladies have confirmed that Nigeria international midfielder Nkulamola Nsiale has signed a new two-year"
             ],
             "n_words_checked": 90,
-            "score": -0.9346667528152466
+            "score": -0.9346665143966675
           },
           "labeled_entities": [
             {
@@ -11289,7 +10738,7 @@
               "</s>Campaigners have launched a legal challenge to a wind farm operator's plans to install overhead cables in Snowdonia"
             ],
             "n_words_checked": 84,
-            "score": -1.1322640180587769
+            "score": -1.132263422012329
           },
           "labeled_entities": [],
           "summary": "Campaigners have launched a legal challenge to a wind farm operator's plans to install overhead cables in SnowdonIA."
@@ -11430,7 +10879,7 @@
           }
         },
         "summary": {
-          "completed": 92,
+          "completed": 96,
           "factual": 78,
           "failed": 12,
           "non_factual": 8,
@@ -11457,7 +10906,7 @@
               "</s>Plans to cut home-to-school transport subsidies for children in Gloucestersfield"
             ],
             "n_words_checked": 81,
-            "score": -0.8725067973136902
+            "score": -0.8725070953369141
           },
           "labeled_entities": [],
           "summary": "Plans to cut home-to-school transport subsidies for children in Gloucestersshire have been put on hold."
@@ -11481,61 +10930,13 @@
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association",
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Council",
               "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Union",
-              "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Organisation",
-              "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s>",
-              "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<unk>",
-              "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s><s>",
-              "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s><unk>",
-              "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s><s><s>",
-              "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s><s><unk>",
-              "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s><s><s><s>",
-              "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Association<s><s><s><unk>"
+              "</s>There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Organisation"
             ],
-            "n_words_checked": 126,
+            "n_words_checked": 205,
             "score": -Infinity
           },
           "labeled_entities": [],
           "summary": "<Failed generation: blocked all beams>"
-        },
-        "30457745": {
-          "banned_phrases": [
-            "Dance, Dance, Dance'"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance'",
-              "</s>Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance'"
-            ],
-            "n_words_checked": 117,
-            "score": -0.8837046027183533
-          },
-          "labeled_entities": [
-            {
-              "end": 8,
-              "ent": "Ghanaian",
-              "in_source": false,
-              "label": "Intrinsic Hallucination",
-              "start": 0,
-              "type": "NORP"
-            },
-            {
-              "end": 27,
-              "ent": "The Busy Twist",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 13,
-              "type": "ORG"
-            },
-            {
-              "end": 88,
-              "ent": "Dance, Dance, Dance'",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 68,
-              "type": "WORK_OF_ART"
-            }
-          ],
-          "summary": "Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance', which they say has captured the spirit of the country."
         },
         "30657223": {
           "banned_phrases": [
@@ -11569,8 +10970,8 @@
               "</s>Hartlepool United have signed Reading midfielder Oumar Tshibola on loan until the end of the League One season and Mansfield Town striker Joe",
               "</s>Hartlepool United have signed Reading midfielder Oumar Tshibola on loan until the end of the League One season and Mansfield Town striker Callum"
             ],
-            "n_words_checked": 127,
-            "score": -0.8516783714294434
+            "n_words_checked": 131,
+            "score": -0.8516781330108643
           },
           "labeled_entities": [
             {
@@ -11678,7 +11079,7 @@
               "</s>Villagers in a Cotswold village have objected to plans to build more than 1,500"
             ],
             "n_words_checked": 84,
-            "score": -0.9449917674064636
+            "score": -0.9449915289878845
           },
           "labeled_entities": [
             {
@@ -11699,75 +11100,6 @@
             }
           ],
           "summary": "Villagers in a Cotswold village have objected to plans to build more than 1,100 new homes."
-        },
-        "32132840": {
-          "banned_phrases": [
-            "100"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 74,
-            "score": -0.6646239757537842
-          },
-          "labeled_entities": [
-            {
-              "end": 36,
-              "ent": "100",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 33,
-              "type": "MONEY"
-            },
-            {
-              "end": 64,
-              "ent": "Norfolk",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 57,
-              "type": "GPE"
-            }
-          ],
-          "summary": "Plans have been submitted for a \u00a3100m power station at a Norfolk paper mill."
-        },
-        "32798693": {
-          "banned_phrases": [
-            "High Court",
-            "The High Court"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>The High Court"
-            ],
-            "n_words_checked": 96,
-            "score": -0.6995503306388855
-          },
-          "labeled_entities": [
-            {
-              "end": 13,
-              "ent": "Next",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 9,
-              "type": "ORG"
-            },
-            {
-              "end": 35,
-              "ent": "High Court",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 25,
-              "type": "ORG"
-            },
-            {
-              "end": 68,
-              "ent": "HM Revenue & Customs",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 48,
-              "type": "ORG"
-            }
-          ],
-          "summary": "Retailer Next has lost a High Court battle with HM Revenue & Customs over corporation tax."
         },
         "33317600": {
           "banned_phrases": [
@@ -11794,7 +11126,7 @@
               "</s>The former RT\u00c9 broadcaster and broadcaster M\u00e1irt\u00ed \u00e2'Murch\u00fa has died in Dublin"
             ],
             "n_words_checked": 62,
-            "score": -1.1647642850875854
+            "score": -1.1647647619247437
           },
           "labeled_entities": [
             {
@@ -11852,7 +11184,7 @@
               "</s>The man behind the takeover of the Financial Times is one of the world's richest men, and his name is Kaoru"
             ],
             "n_words_checked": 108,
-            "score": -0.8081474900245667
+            "score": -0.8081473708152771
           },
           "labeled_entities": [
             {
@@ -11905,15 +11237,9 @@
               "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run crash in Dundonnish",
               "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run incident in Dundonnish",
               "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run crash in Dundonnock",
-              "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run incident in Dundonnock",
-              "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run crash in Dundonnish<s>",
-              "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run crash in Dundonnish<unk>",
-              "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run crash in Dundonnish<s><s>",
-              "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run crash in Dundonnish<s><unk>",
-              "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run crash in Dundonnish<s><s><s>",
-              "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run crash in Dundonnish<s><s><unk>"
+              "</s>An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run incident in Dundonnock"
             ],
-            "n_words_checked": 107,
+            "n_words_checked": 185,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -11937,7 +11263,7 @@
               "</s>Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Shonan"
             ],
             "n_words_checked": 65,
-            "score": -0.7487512230873108
+            "score": -0.7487510442733765
           },
           "labeled_entities": [
             {
@@ -11983,76 +11309,6 @@
           ],
           "summary": "Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Shonin City."
         },
-        "36555657": {
-          "banned_phrases": [
-            "Claude",
-            "Jean"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 103,
-            "score": -0.5803331732749939
-          },
-          "labeled_entities": [
-            {
-              "end": 6,
-              "ent": "Viacom",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 27,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 23,
-              "type": "PERSON"
-            },
-            {
-              "end": 28,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 27,
-              "type": "PERSON"
-            },
-            {
-              "end": 34,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 28,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Dauman",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 104,
-              "ent": "Sumner",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 98,
-              "type": "PERSON"
-            },
-            {
-              "end": 113,
-              "ent": "Redstone",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 105,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner Redstone."
-        },
         "36635880": {
           "banned_phrases": [
             "the EuroHockey Championship",
@@ -12070,7 +11326,7 @@
               "</s>Great Britain's women produced their best performance of the EuroHockey Championship"
             ],
             "n_words_checked": 97,
-            "score": -0.806407630443573
+            "score": -0.8064075708389282
           },
           "labeled_entities": [
             {
@@ -12115,17 +11371,9 @@
               "</s>Police are \"extremely concerned\" for the welfare of a 13-year-old",
               "</s>Police are \"extremely concerned\" for the welfare of a 15-year-old",
               "</s>Police are \"extremely concerned\" for the welfare of a 13-month-old",
-              "</s>Police are \"extremely concerned\" for the welfare of a 15-month-old",
-              "</s>Police are \"extremely concerned\" for the welfare of a 13-year-old<s>",
-              "</s>Police are \"extremely concerned\" for the welfare of a 13-year-old<unk>",
-              "</s>Police are \"extremely concerned\" for the welfare of a 13-year-old<s><s>",
-              "</s>Police are \"extremely concerned\" for the welfare of a 13-year-old<s><unk>",
-              "</s>Police are \"extremely concerned\" for the welfare of a 13-year-old<s><s><s>",
-              "</s>Police are \"extremely concerned\" for the welfare of a 13-year-old<s><s><unk>",
-              "</s>Police are \"extremely concerned\" for the welfare of a 13-year-old<s><s><s><s>",
-              "</s>Police are \"extremely concerned\" for the welfare of a 13-year-old<s><s><s><unk>"
+              "</s>Police are \"extremely concerned\" for the welfare of a 15-month-old"
             ],
-            "n_words_checked": 46,
+            "n_words_checked": 167,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -12147,17 +11395,9 @@
               "</s>Polish film director Andrzej",
               "</s>Polish film director Andrzeja",
               "</s>Polish film director Andrzejs",
-              "</s>Polish film director Andrzejc",
-              "</s>Polish film director Andrzej<s>",
-              "</s>Polish film director Andrzej<unk>",
-              "</s>Polish film director Andrzej<s><s>",
-              "</s>Polish film director Andrzej<s><unk>",
-              "</s>Polish film director Andrzej<s><s><s>",
-              "</s>Polish film director Andrzej<s><s><unk>",
-              "</s>Polish film director Andrzej<s><s><s><s>",
-              "</s>Polish film director Andrzej<s><s><s><unk>"
+              "</s>Polish film director Andrzejc"
             ],
-            "n_words_checked": 29,
+            "n_words_checked": 173,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -12196,11 +11436,9 @@
               "</s>Arsenal Ladies have confirmed that Nigeria international midfielder Nkululeko",
               "</s>Arsenal Ladies have confirmed that Nigeria international midfielder Nkulamola",
               "</s>Arsenal Ladies have confirmed that Nigeria international forward Nkulamola",
-              "</s>Arsenal Ladies have confirmed that Nigeria international forward Nkululeko",
-              "</s>Arsenal Ladies have confirmed that Nigeria international midfielder Nkululeko<s>",
-              "</s>Arsenal Ladies have confirmed that Nigeria international midfielder Nkululeko<unk>"
+              "</s>Arsenal Ladies have confirmed that Nigeria international forward Nkululeko"
             ],
-            "n_words_checked": 41,
+            "n_words_checked": 177,
             "score": -Infinity
           },
           "labeled_entities": [],
@@ -12342,7 +11580,7 @@
           }
         },
         "summary": {
-          "completed": 94,
+          "completed": 99,
           "factual": 78,
           "failed": 13,
           "non_factual": 6,
@@ -12351,46 +11589,6 @@
         }
       },
       "summaries": {
-        "30457745": {
-          "banned_phrases": [
-            "Dance, Dance, Dance'"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance'",
-              "</s>Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance'"
-            ],
-            "n_words_checked": 113,
-            "score": -0.8837046027183533
-          },
-          "labeled_entities": [
-            {
-              "end": 8,
-              "ent": "Ghanaian",
-              "in_source": false,
-              "label": "Intrinsic Hallucination",
-              "start": 0,
-              "type": "NORP"
-            },
-            {
-              "end": 27,
-              "ent": "The Busy Twist",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 13,
-              "type": "ORG"
-            },
-            {
-              "end": 88,
-              "ent": "Dance, Dance, Dance'",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 68,
-              "type": "WORK_OF_ART"
-            }
-          ],
-          "summary": "Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance', which they say has captured the spirit of the country."
-        },
         "32033856": {
           "banned_phrases": [
             "1,000",
@@ -12441,75 +11639,6 @@
           ],
           "summary": "Villagers in a Ceredigion village have objected to plans for more than 1,100 new homes."
         },
-        "32132840": {
-          "banned_phrases": [
-            "100"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 74,
-            "score": -0.6646235585212708
-          },
-          "labeled_entities": [
-            {
-              "end": 36,
-              "ent": "100",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 33,
-              "type": "MONEY"
-            },
-            {
-              "end": 64,
-              "ent": "Norfolk",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 57,
-              "type": "GPE"
-            }
-          ],
-          "summary": "Plans have been submitted for a \u00a3100m power station at a Norfolk paper mill."
-        },
-        "32798693": {
-          "banned_phrases": [
-            "High Court",
-            "The High Court"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>The High Court"
-            ],
-            "n_words_checked": 96,
-            "score": -0.6995503306388855
-          },
-          "labeled_entities": [
-            {
-              "end": 13,
-              "ent": "Next",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 9,
-              "type": "ORG"
-            },
-            {
-              "end": 35,
-              "ent": "High Court",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 25,
-              "type": "ORG"
-            },
-            {
-              "end": 68,
-              "ent": "HM Revenue & Customs",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 48,
-              "type": "ORG"
-            }
-          ],
-          "summary": "Retailer Next has lost a High Court battle with HM Revenue & Customs over corporation tax."
-        },
         "33317600": {
           "banned_phrases": [
             "Dublin",
@@ -12537,7 +11666,7 @@
               "</s>The former RT\u00c9 broadcaster, M\u00e1ir\u00edn \u00e2' Murch\u00fa, has died in Dublin"
             ],
             "n_words_checked": 71,
-            "score": -0.9699461460113525
+            "score": -0.9699464440345764
           },
           "labeled_entities": [
             {
@@ -12610,76 +11739,6 @@
           "labeled_entities": [],
           "summary": "<Failed generation: blocked all beams>"
         },
-        "36555657": {
-          "banned_phrases": [
-            "Claude",
-            "Jean"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 103,
-            "score": -0.5803328156471252
-          },
-          "labeled_entities": [
-            {
-              "end": 6,
-              "ent": "Viacom",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 27,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 23,
-              "type": "PERSON"
-            },
-            {
-              "end": 28,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 27,
-              "type": "PERSON"
-            },
-            {
-              "end": 34,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 28,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Dauman",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 104,
-              "ent": "Sumner",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 98,
-              "type": "PERSON"
-            },
-            {
-              "end": 113,
-              "ent": "Redstone",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 105,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner Redstone."
-        },
         "36635880": {
           "banned_phrases": [
             "EuroHockey",
@@ -12696,7 +11755,7 @@
               "</s>Great Britain's women secured their first medal of the World League",
               "</s>Great Britain's women produced their best performance of the EuroHockey"
             ],
-            "n_words_checked": 99,
+            "n_words_checked": 95,
             "score": -0.8646671175956726
           },
           "labeled_entities": [
@@ -12863,7 +11922,7 @@
           }
         },
         "summary": {
-          "completed": 95,
+          "completed": 100,
           "factual": 78,
           "failed": 13,
           "non_factual": 5,
@@ -12872,250 +11931,6 @@
         }
       },
       "summaries": {
-        "30457745": {
-          "banned_phrases": [
-            "Dance, Dance, Dance'"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance'",
-              "</s>Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance'"
-            ],
-            "n_words_checked": 113,
-            "score": -0.8837046027183533
-          },
-          "labeled_entities": [
-            {
-              "end": 8,
-              "ent": "Ghanaian",
-              "in_source": false,
-              "label": "Intrinsic Hallucination",
-              "start": 0,
-              "type": "NORP"
-            },
-            {
-              "end": 27,
-              "ent": "The Busy Twist",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 13,
-              "type": "ORG"
-            },
-            {
-              "end": 88,
-              "ent": "Dance, Dance, Dance'",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 68,
-              "type": "WORK_OF_ART"
-            }
-          ],
-          "summary": "Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance', which they say has captured the spirit of the country."
-        },
-        "32132840": {
-          "banned_phrases": [
-            "100"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 74,
-            "score": -0.6646235585212708
-          },
-          "labeled_entities": [
-            {
-              "end": 36,
-              "ent": "100",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 33,
-              "type": "MONEY"
-            },
-            {
-              "end": 64,
-              "ent": "Norfolk",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 57,
-              "type": "GPE"
-            }
-          ],
-          "summary": "Plans have been submitted for a \u00a3100m power station at a Norfolk paper mill."
-        },
-        "32798693": {
-          "banned_phrases": [
-            "High Court",
-            "The High Court"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>The High Court"
-            ],
-            "n_words_checked": 96,
-            "score": -0.6995503306388855
-          },
-          "labeled_entities": [
-            {
-              "end": 13,
-              "ent": "Next",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 9,
-              "type": "ORG"
-            },
-            {
-              "end": 35,
-              "ent": "High Court",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 25,
-              "type": "ORG"
-            },
-            {
-              "end": 68,
-              "ent": "HM Revenue & Customs",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 48,
-              "type": "ORG"
-            }
-          ],
-          "summary": "Retailer Next has lost a High Court battle with HM Revenue & Customs over corporation tax."
-        },
-        "33317600": {
-          "banned_phrases": [
-            "Dublin",
-            "Murch\u00f4s",
-            "Murch\u00fa",
-            "M\u00e1irt\u00ed",
-            "M\u00e1irt\u00edn",
-            "M\u00e1irt\u00edn \u00d3 Murchu",
-            "M\u00e1irt\u00edn \u00d3 Murchun",
-            "M\u00e1irt\u00edn \u00d3 Murch\u00f4n",
-            "M\u00e1irt\u00edn \u00d3 Murch\u00fa",
-            "\u00d3"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [
-              "</s>The former RT\u00c9 broadcaster M\u00e1irt\u00edn",
-              "</s>The former RT\u00c9 broadcaster, M\u00e1irt\u00edn",
-              "</s>The former RT\u00c9 broadcaster, M\u00e1irt\u00ed",
-              "</s>The former RT\u00c9 broadcaster and broadcaster M\u00e1irt\u00edn",
-              "</s>The former RT\u00c9 broadcaster and broadcaster M\u00e1irt\u00ed",
-              "</s>The former RT\u00c9 broadcaster, M\u00e1ir\u00edn \u00d3",
-              "</s>The former RT\u00c9 broadcaster and broadcaster M\u00e1irt\u00eda \u00d3",
-              "</s>The former RT\u00c9 broadcaster, M\u00e1ir\u00edn \ufffd \u00d3",
-              "</s>The former RT\u00c9 broadcaster, M\u00e1ir\u00edn \u00e2 Murch\u00fa, has died in Dublin",
-              "</s>The former RT\u00c9 broadcaster, M\u00e1ir\u00edn \u00e2' Murch\u00fa, has died in Dublin"
-            ],
-            "n_words_checked": 71,
-            "score": -0.9699461460113525
-          },
-          "labeled_entities": [
-            {
-              "end": 14,
-              "ent": "RT\u00c9",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 11,
-              "type": "ORG"
-            },
-            {
-              "end": 34,
-              "ent": "M\u00e1ir\u00edn",
-              "in_source": false,
-              "label": "Unknown",
-              "start": 28,
-              "type": "NORP"
-            },
-            {
-              "end": 43,
-              "ent": "Murch\u00fa",
-              "in_source": true,
-              "label": "Non-factual Hallucination",
-              "start": 37,
-              "type": "GPE"
-            },
-            {
-              "end": 80,
-              "ent": "the Republic of Ireland",
-              "in_source": false,
-              "label": "Unknown",
-              "start": 57,
-              "type": "GPE"
-            }
-          ],
-          "summary": "The former RT\u00c9 broadcaster, M\u00e1ir\u00edn \u00e2 Murch\u00fa, has died in the Republic of Ireland."
-        },
-        "36555657": {
-          "banned_phrases": [
-            "Claude",
-            "Jean"
-          ],
-          "generation_metadata": {
-            "dropped_seqs": [],
-            "n_words_checked": 103,
-            "score": -0.5803328156471252
-          },
-          "labeled_entities": [
-            {
-              "end": 6,
-              "ent": "Viacom",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 0,
-              "type": "ORG"
-            },
-            {
-              "end": 27,
-              "ent": "Jean",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 23,
-              "type": "PERSON"
-            },
-            {
-              "end": 28,
-              "ent": "-",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 27,
-              "type": "PERSON"
-            },
-            {
-              "end": 34,
-              "ent": "Claude",
-              "in_source": false,
-              "label": "Non-factual Hallucination",
-              "start": 28,
-              "type": "PERSON"
-            },
-            {
-              "end": 41,
-              "ent": "Dauman",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 35,
-              "type": "PERSON"
-            },
-            {
-              "end": 104,
-              "ent": "Sumner",
-              "in_source": false,
-              "label": "Factual Hallucination",
-              "start": 98,
-              "type": "PERSON"
-            },
-            {
-              "end": 113,
-              "ent": "Redstone",
-              "in_source": true,
-              "label": "Non-hallucinated",
-              "start": 105,
-              "type": "PERSON"
-            }
-          ],
-          "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner Redstone."
-        },
         "36635880": {
           "banned_phrases": [
             "EuroHazard",
@@ -13134,8 +11949,8 @@
               "</s>Great Britain's women produced their best performance of the EuroHockey",
               "</s>Great Britain's women produced their best performance of the EuroHazard"
             ],
-            "n_words_checked": 98,
-            "score": -0.8851955533027649
+            "n_words_checked": 94,
+            "score": -0.8851958513259888
           },
           "labeled_entities": [
             {
@@ -13184,5 +11999,5 @@
       }
     }
   },
-  "timestamp": 1655053623.0392175
+  "timestamp": 1655402633.7885115
 }
