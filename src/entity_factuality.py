@@ -1,9 +1,5 @@
-from typing import List, Tuple
 from compute_probs import compute_probs_for_summary
-from src.entity_utils import (
-    MarkedEntity,
-    MarkedEntityLookup,
-)
+from src.entity_utils import MarkedEntityLookup
 from sklearn.neighbors import KNeighborsClassifier
 import numpy as np
 from src.misc_utils import Timer
@@ -104,7 +100,9 @@ class EntityFactualityClassifier:
                 if ent["in_source"]:
                     ent["predicted_label"] = ANNOTATION_LABELS["Non-hallucinated"]
 
-            ents_not_in_source = [ent for ent in updated_entities if not ent["in_source"]]
+            ents_not_in_source = [
+                ent for ent in updated_entities if not ent["in_source"]
+            ]
             if len(ents_not_in_source) > 0:
                 ents_to_classify.append(
                     (

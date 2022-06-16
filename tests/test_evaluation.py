@@ -138,8 +138,6 @@ def test_evaluate_factuality_oracle_no_skips():
     assert agg_metrics["entities"]["Non-hallucinated"] == 177
     assert agg_metrics["entities"]["total"] == 98 + 16 + 23 + 177
 
-    # This isn't exactly 1 because we only run 5 iterations, and it's possible
-    # to stil no have fully factual entities after 5 iterations.
     assert agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"] == 0.9661764705882353
 
 

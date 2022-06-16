@@ -144,12 +144,12 @@ def evaluate_summary(
         # hallucinations.
         count_entity_labels = summary_eval["count_entity_label"]
         count_total_extrinsic_hallucinations = (
-            count_entity_labels['Factual Hallucination']
-            + count_entity_labels['Non-factual Hallucination']
+            count_entity_labels[ANNOTATION_LABELS["Factual"]]
+            + count_entity_labels[ANNOTATION_LABELS["Non-factual"]]
         )
         if count_total_extrinsic_hallucinations > 0:
             summary_eval["entity_extrinsic_factuality_ratio"] = count_entity_labels[
-                "Factual Hallucination"
+                ANNOTATION_LABELS["Factual"]
             ] / count_total_extrinsic_hallucinations
     return summary_eval
 
