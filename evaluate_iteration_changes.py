@@ -12,6 +12,9 @@ import json
 import pprint
 import editdistance
 from src.metrics import rouge
+import os
+from tqdm import tqdm
+
 
 pp = pprint.PrettyPrinter(indent=2)
 
@@ -46,7 +49,7 @@ def collect_iteration_stats(
         }
         updated_sums_by_id = {}
         for sum_id, data in summaries.items():
-            if sum_id in test_set_ids or test_set_ids is None:
+            if test_set_ids is None or sum_id in test_set_ids:
                 updated_sums_by_id[sum_id] = data["summary"]
                 sums_by_id[sum_id] = data["summary"]
                 sum_ents_by_id[sum_id] = data["labeled_entities"]
@@ -76,25 +79,33 @@ def collect_iteration_stats(
             - current_iteration_stats["summary_remaining"]
         )
 
+        print(f"Iteration {iteration_idx}")
+        print(len(iteration_data["summaries"]))
+        print(iteration_data["stats"]["entity"])
+        print(iteration_data["stats"]["summary"])
+        print(f"Summaries completed: {current_iteration_stats['summary_completed']}")
+        print(stats_factuality)
+        print("Updated sums", len(updated_sums_by_id))
+
         # compute edit stats
         if iteration_idx == 0:
             baseline_eval_sums_by_id = eval_sums_by_id
         if iteration_idx > 0:
-            for sum_id, sum in updated_sums_by_id.items():
+            print("Computing edit stats")
+            for sum_id, sum in tqdm(updated_sums_by_id.items()):
                 if sum != SUMMARY_FAILED_GENERATION:
                     original_sum = baseline_eval_sums_by_id[sum_id]["summary"]
-                    rouge_scores = rouge([sum], [original_sum])
+                    # rouge_scores = rouge([sum], [original_sum])
                     current_iteration_stats["summary"][sum_id]["edit_stats"] = {
                         "edit_distance_token": editdistance.eval(
                             original_sum.lower().split(" "), sum.lower().split(" ")
                         ),
-                        "rouge1": rouge_scores["rouge1"]["f1"],
-                        "rouge2": rouge_scores["rouge2"]["f1"],
-                        "rougeL": rouge_scores["rougeL"]["f1"],
+                        # "rouge1": rouge_scores["rouge1"]["f1"],
+                        # "rouge2": rouge_scores["rouge2"]["f1"],
+                        # "rougeL": rouge_scores["rougeL"]["f1"],
                     }
             pass
 
-        pp.pprint(current_iteration_stats)
         iteration_stats.append(current_iteration_stats)
     return iteration_stats
 
@@ -111,21 +122,23 @@ if __name__ == "__main__":
         set(
             load_shuffled_test_split(xsum_test, args.data_subset, args.test_size).keys()
         )
-        if "debug" not in args.data_subset
+        if args.data_subset not in ["debug", "bart-full"]
         else None
     )
 
     for model in ["oracle", "classifier-knnv1"]:
-        print(model)
-        iteration_stats = collect_iteration_stats(
-            f"results/fbs-logs/{args.data_subset}-{model}.json",
-            xsum_test,
-            test_set_ids,
-            should_annotate=args.annotate,
-        )
-
-        with open(
-            f"results/iteration-changes/{args.data_subset}-{args.test_size}-{model}.json",
-            "w",
-        ) as f:
-            json.dump(iteration_stats, f, indent=2, sort_keys=True)
+        if os.path.exists(f"results/fbs-logs/{args.data_subset}-{model}.json"):
+            iteration_stats = collect_iteration_stats(
+                f"results/fbs-logs/{args.data_subset}-{model}.json",
+                xsum_test,
+                test_set_ids,
+                should_annotate=args.annotate,
+            )
+            test_size = f"-{args.test_size}" if test_set_ids is not None else ""
+            with open(
+                f"results/iteration-changes/{args.data_subset}{test_size}-{model}.json",
+                "w",
+            ) as f:
+                json.dump(iteration_stats, f, indent=2, sort_keys=True)
+        else:
+            print(f"Logs for {model} does not exist!")
