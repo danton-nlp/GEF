@@ -51,28 +51,28 @@ def annotate_entities(
                     f"What is the label of '{entity['ent']} (pos {entity['start']}:{entity['end']})? In source: {entity['in_source']}"
                 )
                 user_input = ""
-                while user_input not in ["0", "1", "I", "U", "S", "N"]:
+                while user_input not in ["0", "1", "S", "N"]:
                     user_input = input(
-                        "Non-factual (0), Factual (1), Intrinsic (I), Non-hallucinated (N), Unknown (U) or Skip & save annotations (S)\n"
+                        "Non-factual (0), Factual (1), Unknown (U) or Skip & save annotations (S)\n"
                     )
 
                 if user_input == "S":
                     return updated_annotations
                 elif user_input == "1":
                     annotation = entity.copy()
-                    annotation["label"] = ANNOTATION_LABELS["Factual"]
-                    updated_annotations[sum_id].append(annotation)
-                elif user_input == "I":
-                    annotation = entity.copy()
-                    annotation["label"] = ANNOTATION_LABELS["Intrinsic"]
+                    annotation["label"] = (
+                        ANNOTATION_LABELS["Non-hallucinated"]
+                        if entity["in_source"]
+                        else ANNOTATION_LABELS["Factual"]
+                    )
                     updated_annotations[sum_id].append(annotation)
                 elif user_input == "0":
                     annotation = entity.copy()
-                    annotation["label"] = ANNOTATION_LABELS["Non-factual"]
-                    updated_annotations[sum_id].append(annotation)
-                elif user_input == "N":
-                    annotation = entity.copy()
-                    annotation["label"] = ANNOTATION_LABELS["Non-hallucinated"]
+                    annotation["label"] = (
+                        ANNOTATION_LABELS["Intrinsic"]
+                        if entity["in_source"]
+                        else ANNOTATION_LABELS["Non-factual"]
+                    )
                     updated_annotations[sum_id].append(annotation)
     return updated_annotations
 
