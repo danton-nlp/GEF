@@ -414,31 +414,29 @@
         "summary": "Derek McInnes was a key factor in Shay Logan's decision to sign a new contract at Pittodrie."
       }
     },
-    "summary_completed": 0,
-    "summary_remaining": 100
+    "summary_generated": 100
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 85,
+      "Factual Hallucination": 86,
       "Intrinsic Hallucination": 11,
-      "Non-factual Hallucination": 61,
+      "Non-factual Hallucination": 63,
       "Non-hallucinated": 192,
-      "Unknown": 14,
+      "Unknown": 11,
       "total": 363,
       "type": {
         "CARDINAL": {
           "Factual Hallucination": 8,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 5,
+          "Non-factual Hallucination": 6,
           "Non-hallucinated": 10,
-          "Unknown": 1,
           "total": 26
         },
         "DATE": {
-          "Factual Hallucination": 8,
+          "Factual Hallucination": 9,
           "Non-factual Hallucination": 14,
           "Non-hallucinated": 7,
-          "Unknown": 4,
+          "Unknown": 3,
           "total": 33
         },
         "EVENT": {
@@ -455,9 +453,9 @@
         "GPE": {
           "Factual Hallucination": 13,
           "Intrinsic Hallucination": 1,
-          "Non-factual Hallucination": 9,
+          "Non-factual Hallucination": 10,
           "Non-hallucinated": 44,
-          "Unknown": 2,
+          "Unknown": 1,
           "total": 69
         },
         "LOC": {
@@ -519,503 +517,346 @@
       "ents_per_sum": 3.63,
       "factual": 0.47,
       "failed": 0,
-      "non_factual": 0.49,
-      "non_factual_extrinsic": 0.44,
+      "non_factual": 0.5,
+      "non_factual_extrinsic": 0.45,
       "non_factual_intrinsic": 0.1,
       "skipped": 0.0,
       "sum_with_extrinsic": 0.96,
       "total": 100,
-      "unknown": 0.04
+      "unknown": 0.03
     },
     "iteration": 1,
     "summary": {
       "14766406": {
         "edit_stats": {
-          "edit_distance_token": 2,
-          "rouge1": 0.9047619047619048,
-          "rouge2": 0.9,
-          "rougeL": 0.9047619047619048
+          "edit_distance_token": 2
         },
         "summary": "A 45-year-old man has been arrested in connection with the phone-hacking scandal at the News of the World."
       },
       "17996567": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.8749999999999999,
-          "rouge2": 0.7333333333333334,
-          "rougeL": 0.8749999999999999
+          "edit_distance_token": 3
         },
         "summary": "Plans to cut home-to-school transport subsidies for children in Flintshire have been put on hold."
       },
       "18239960": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.9019607843137256,
-          "rouge2": 0.8979591836734694,
-          "rougeL": 0.9019607843137256
+          "edit_distance_token": 3
         },
         "summary": "There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, the National Police Chiefs' Council has said."
       },
       "20191016": {
         "edit_stats": {
-          "edit_distance_token": 6,
-          "rouge1": 0.7368421052631577,
-          "rouge2": 0.6111111111111112,
-          "rougeL": 0.7368421052631577
+          "edit_distance_token": 6
         },
         "summary": "Plans have been drawn up to transform one of the UK's oldest university buildings into a \"world-class postgraduate centre\"."
       },
       "26398483": {
         "edit_stats": {
-          "edit_distance_token": 2,
-          "rouge1": 0.9285714285714286,
-          "rouge2": 0.8518518518518519,
-          "rougeL": 0.9285714285714286
+          "edit_distance_token": 2
         },
         "summary": "Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 14-year-old girl in Hertfordshire."
       },
       "29252950": {
         "edit_stats": {
-          "edit_distance_token": 13,
-          "rouge1": 0.6274509803921569,
-          "rouge2": 0.4081632653061225,
-          "rougeL": 0.5882352941176471
+          "edit_distance_token": 13
         },
         "summary": "Ireland's economy grew by 7.7% in the three months to the end of September, compared with a 0.5% rise in the previous quarter."
       },
       "30657223": {
         "edit_stats": {
-          "edit_distance_token": 7,
-          "rouge1": 0.7499999999999999,
-          "rouge2": 0.6315789473684211,
-          "rougeL": 0.7499999999999999
+          "edit_distance_token": 7
         },
         "summary": "Hartlepool United have signed Reading midfielder Olamide Tshibola and Mansfield Town striker Jordan Bingham on loan until January."
       },
       "30760966": {
         "edit_stats": {
-          "edit_distance_token": 9,
-          "rouge1": 0.6153846153846153,
-          "rouge2": 0.5945945945945946,
-          "rougeL": 0.6153846153846153
+          "edit_distance_token": 9
         },
         "summary": "A drugs expert has warned people not to take 'superman' ecstasy pills following the deaths of three men."
       },
       "32033856": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.888888888888889,
-          "rouge2": 0.8372093023255814,
-          "rougeL": 0.888888888888889
+          "edit_distance_token": 3
         },
         "summary": "More than 1,000 people have objected to plans to build more than 200 homes in a village in the Cumbrian Wolds."
       },
       "32487884": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9285714285714286,
-          "rouge2": 0.8461538461538461,
-          "rougeL": 0.9285714285714286
+          "edit_distance_token": 1
         },
         "summary": "A man has been jailed for life for murdering his six-month-old granddaughter."
       },
       "33106194": {
         "edit_stats": {
-          "edit_distance_token": 6,
-          "rouge1": 0.8148148148148148,
-          "rouge2": 0.7200000000000001,
-          "rougeL": 0.8148148148148148
+          "edit_distance_token": 6
         },
         "summary": "The world premiere of the new animated film Minions has taken place in Los Angeles."
       },
       "33317600": {
         "edit_stats": {
-          "edit_distance_token": 2,
-          "rouge1": 0.9166666666666666,
-          "rouge2": 0.8181818181818182,
-          "rougeL": 0.9166666666666666
+          "edit_distance_token": 2
         },
         "summary": "The former RT\u00c9 broadcaster, M\u00e1irt\u00edn \u00d3 Murchun, has died in Dublin."
       },
       "33648595": {
         "edit_stats": {
-          "edit_distance_token": 5,
-          "rouge1": 0.9444444444444444,
-          "rouge2": 0.8235294117647058,
-          "rougeL": 0.8888888888888888
+          "edit_distance_token": 5
         },
         "summary": "The man behind the takeover of the Financial Times is Masayoshi Kita, one of Japan's richest men."
       },
       "34193568": {
         "edit_stats": {
-          "edit_distance_token": 0,
-          "rouge1": 1.0,
-          "rouge2": 1.0,
-          "rougeL": 1.0
+          "edit_distance_token": 0
         },
         "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
       },
       "34427234": {
         "edit_stats": {
-          "edit_distance_token": 11,
-          "rouge1": 0.6363636363636364,
-          "rouge2": 0.42857142857142855,
-          "rougeL": 0.6363636363636364
+          "edit_distance_token": 11
         },
         "summary": "Scotland captain Tim Visser has defended Vern Cotter's team selection for the World Cup match against South Africa."
       },
       "34660292": {
         "edit_stats": {
-          "edit_distance_token": 10,
-          "rouge1": 0.7692307692307693,
-          "rouge2": 0.68,
-          "rougeL": 0.7692307692307693
+          "edit_distance_token": 10
         },
         "summary": "The US astronaut who's been living on the International Space Station for more than seven months is about to break another record."
       },
       "34694547": {
         "edit_stats": {
-          "edit_distance_token": 8,
-          "rouge1": 0.7272727272727274,
-          "rouge2": 0.6666666666666666,
-          "rougeL": 0.7272727272727274
+          "edit_distance_token": 8
         },
         "summary": "An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run crash in Glasgow city centre."
       },
       "34760893": {
         "edit_stats": {
-          "edit_distance_token": 16,
-          "rouge1": 0.7692307692307693,
-          "rouge2": 0.5945945945945946,
-          "rougeL": 0.5128205128205129
+          "edit_distance_token": 16
         },
         "summary": "A sports journalist is in a critical condition in hospital after being attacked outside a Tube station."
       },
       "34787804": {
         "edit_stats": {
-          "edit_distance_token": 2,
-          "rouge1": 0.8666666666666667,
-          "rouge2": 0.8571428571428571,
-          "rougeL": 0.8666666666666667
+          "edit_distance_token": 2
         },
         "summary": "Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Nagoya Grampus."
       },
       "34898778": {
         "edit_stats": {
-          "edit_distance_token": 7,
-          "rouge1": 0.8333333333333334,
-          "rouge2": 0.6551724137931035,
-          "rougeL": 0.8333333333333334
+          "edit_distance_token": 7
         },
         "summary": "Nour is a 23-year-old woman who was caught up in the fighting between so-called Islamic State (IS) and government forces in the Iraqi city of Mosul in 2014."
       },
       "35237411": {
         "edit_stats": {
-          "edit_distance_token": 16,
-          "rouge1": 0.4444444444444444,
-          "rouge2": 0.058823529411764705,
-          "rougeL": 0.3333333333333333
+          "edit_distance_token": 16
         },
         "summary": "Thousands of animals are being counted at London Zoo as part of their annual census."
       },
       "35369658": {
         "edit_stats": {
-          "edit_distance_token": 2,
-          "rouge1": 0.8947368421052632,
-          "rouge2": 0.8333333333333334,
-          "rougeL": 0.8947368421052632
+          "edit_distance_token": 2
         },
         "summary": "Tens of thousands of football fans faced long queues to get into a Premier League match on Wednesday night."
       },
       "35698210": {
         "edit_stats": {
-          "edit_distance_token": 8,
-          "rouge1": 0.5945945945945946,
-          "rouge2": 0.5142857142857143,
-          "rougeL": 0.5945945945945946
+          "edit_distance_token": 8
         },
         "summary": "Wales coach Warren Jenkins has defended his side's Six Nations form, saying they need to keep improving."
       },
       "35811486": {
         "edit_stats": {
-          "edit_distance_token": 2,
-          "rouge1": 0.8823529411764706,
-          "rouge2": 0.8125,
-          "rougeL": 0.8823529411764706
+          "edit_distance_token": 2
         },
         "summary": "Byron Rhodes, the leader of Derby City Council, is talking about seizing an opportunity in a crisis."
       },
       "35972298": {
         "edit_stats": {
-          "edit_distance_token": 10,
-          "rouge1": 0.7142857142857143,
-          "rouge2": 0.7,
-          "rougeL": 0.7142857142857143
+          "edit_distance_token": 10
         },
         "summary": "The air is still as charged as it was when I first arrived in Ravenscraig, the site of the last British steelworks to close."
       },
       "36061830": {
         "edit_stats": {
-          "edit_distance_token": 11,
-          "rouge1": 0.6938775510204083,
-          "rouge2": 0.5531914893617021,
-          "rougeL": 0.6938775510204083
+          "edit_distance_token": 11
         },
         "summary": "World number one Andy Murray and Marcelos Melo beat world number two Ivan Dodig 7-6 (7-4) 6-4 to reach the Monte Carlo Masters final."
       },
       "36162485": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9523809523809523,
-          "rouge2": 0.9500000000000001,
-          "rougeL": 0.9523809523809523
+          "edit_distance_token": 1
         },
         "summary": "World number one Mark Selby will face Ding Junhui in the World Championship semi-finals after beating Marco Fu 6-5."
       },
       "36341722": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9411764705882353,
-          "rouge2": 0.875,
-          "rougeL": 0.9411764705882353
+          "edit_distance_token": 1
         },
         "summary": "Three men have been found guilty of blowing up cash machines and stealing more than \u00a3100,000."
       },
       "36540012": {
         "edit_stats": {
-          "edit_distance_token": 12,
-          "rouge1": 0.6829268292682926,
-          "rouge2": 0.5128205128205129,
-          "rougeL": 0.6829268292682926
+          "edit_distance_token": 12
         },
         "summary": "A collection of photographs taken by a photographer who was involved with the Rock Against Racism (RAR) movement has gone on display."
       },
       "36555657": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.8,
-          "rouge2": 0.7368421052631577,
-          "rougeL": 0.8
+          "edit_distance_token": 4
         },
         "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
       },
       "36635880": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.8780487804878048,
-          "rouge2": 0.8205128205128205,
-          "rougeL": 0.8780487804878048
+          "edit_distance_token": 3
         },
         "summary": "Great Britain's women produced their best performance of the World League Final with a 4-3 win over New Zealand."
       },
       "36730443": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.9142857142857143,
-          "rouge2": 0.8484848484848485,
-          "rougeL": 0.9142857142857143
+          "edit_distance_token": 3
         },
         "summary": "Wales are out of Euro 2016 after a 2-0 defeat by Portugal in the last 16."
       },
       "36874565": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.9142857142857143,
-          "rouge2": 0.6666666666666667,
-          "rougeL": 0.8571428571428571
+          "edit_distance_token": 3
         },
         "summary": "Welsh boxer Nathan Cleverly believes he can upset WBO champion Christian Braehmer and regain his world title."
       },
       "36912060": {
         "edit_stats": {
-          "edit_distance_token": 8,
-          "rouge1": 0.7272727272727272,
-          "rouge2": 0.5806451612903226,
-          "rougeL": 0.7272727272727272
+          "edit_distance_token": 8
         },
         "summary": "The Indiana Pacers will play the Denver Nuggets at London's O2 Arena next month."
       },
       "36932519": {
         "edit_stats": {
-          "edit_distance_token": 2,
-          "rouge1": 0.9259259259259259,
-          "rouge2": 0.8846153846153846,
-          "rougeL": 0.9259259259259259
+          "edit_distance_token": 2
         },
         "summary": "Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 500,000 euro (\u00a3353,176) were seized in Londonderry."
       },
       "36961338": {
         "edit_stats": {
-          "edit_distance_token": 2,
-          "rouge1": 0.9508196721311476,
-          "rouge2": 0.8813559322033899,
-          "rougeL": 0.9508196721311476
+          "edit_distance_token": 2
         },
         "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales by the end of 2016, Metropolitan Police Commissioner Sir Bernard Hogan-Howe has said."
       },
       "37391662": {
         "edit_stats": {
-          "edit_distance_token": 8,
-          "rouge1": 0.8235294117647057,
-          "rouge2": 0.7346938775510203,
-          "rougeL": 0.8235294117647057
+          "edit_distance_token": 8
         },
         "summary": "Police are \"extremely concerned\" for the welfare of a 15-year-old girl who has been missing from her home in Greater Manchester for more than a week."
       },
       "37603756": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9166666666666666,
-          "rouge2": 0.8181818181818182,
-          "rougeL": 0.9166666666666666
+          "edit_distance_token": 1
         },
         "summary": "Polish film director Jerzy Wajda has died at the age of 90."
       },
       "38078754": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.8421052631578947,
-          "rouge2": 0.7777777777777778,
-          "rougeL": 0.8421052631578947
+          "edit_distance_token": 3
         },
         "summary": "An outbreak of Dengue fever in Burkina Faso has killed more than 100 people, the World Health Organization says."
       },
       "38219213": {
         "edit_stats": {
-          "edit_distance_token": 10,
-          "rouge1": 0.909090909090909,
-          "rouge2": 0.7142857142857143,
-          "rougeL": 0.7272727272727272
+          "edit_distance_token": 10
         },
         "summary": "A man has been charged with causing death by dangerous driving after the death of a three-year-old girl in a crash."
       },
       "38299022": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9523809523809523,
-          "rouge2": 0.9,
-          "rougeL": 0.9523809523809523
+          "edit_distance_token": 1
         },
         "summary": "A 31-year-old man has been arrested in connection with the deaths of a man and a woman in Dundee."
       },
       "38399324": {
         "edit_stats": {
-          "edit_distance_token": 16,
-          "rouge1": 0.6521739130434783,
-          "rouge2": 0.5909090909090908,
-          "rougeL": 0.6521739130434783
+          "edit_distance_token": 16
         },
         "summary": "Ex-Crewe Alexandra footballer Lee Woodward has said he is still waiting for police to visit him to give further evidence in a child sex abuse investigation."
       },
       "38470818": {
         "edit_stats": {
-          "edit_distance_token": 6,
-          "rouge1": 0.8095238095238095,
-          "rouge2": 0.6500000000000001,
-          "rougeL": 0.8095238095238095
+          "edit_distance_token": 6
         },
         "summary": "St Johnstone's Paul Anderson has said Rangers defender Kieran Kiernan should face a Scottish FA disciplinary hearing over an alleged punch."
       },
       "38983532": {
         "edit_stats": {
-          "edit_distance_token": 17,
-          "rouge1": 0.5,
-          "rouge2": 0.2105263157894737,
-          "rougeL": 0.45
+          "edit_distance_token": 17
         },
         "summary": "Arsenal Ladies have confirmed that Ivory Coast midfielder Nkosi Nkoudou has signed a new three-year contract with the Women's Super League One club."
       },
       "39556625": {
         "edit_stats": {
-          "edit_distance_token": 18,
-          "rouge1": 0.45,
-          "rouge2": 0.2631578947368421,
-          "rougeL": 0.45
+          "edit_distance_token": 18
         },
         "summary": "Campaigners have launched a legal challenge to a wind farm operator's plans for overhead cables in Gwynedd."
       },
       "39593375": {
         "edit_stats": {
-          "edit_distance_token": 2,
-          "rouge1": 0.9047619047619048,
-          "rouge2": 0.8000000000000002,
-          "rougeL": 0.9047619047619048
+          "edit_distance_token": 2
         },
         "summary": "A paedophile who groomed a 10-year-old boy on Facebook before sexually abusing him has been jailed for eight years."
       },
       "39753996": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.972972972972973,
-          "rouge2": 0.9142857142857143,
-          "rougeL": 0.972972972972973
+          "edit_distance_token": 1
         },
         "summary": "Inverness Caledonian Thistle moved four points clear at the top of the Premiership with victory over Hamilton Academical."
       },
       "39807248": {
         "edit_stats": {
-          "edit_distance_token": 8,
-          "rouge1": 0.6666666666666666,
-          "rouge2": 0.5294117647058824,
-          "rougeL": 0.6666666666666666
+          "edit_distance_token": 8
         },
         "summary": "An under-performing academy school in south-west London is to be merged with another in a bid to save money."
       },
       "39847765": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.787878787878788,
-          "rouge2": 0.6451612903225806,
-          "rougeL": 0.787878787878788
+          "edit_distance_token": 4
         },
         "summary": "Peterborough United have signed striker Josh Lloyd from non-league Northampton Town for an undisclosed fee."
       },
       "40285040": {
         "edit_stats": {
-          "edit_distance_token": 5,
-          "rouge1": 0.7647058823529412,
-          "rouge2": 0.625,
-          "rougeL": 0.7647058823529412
+          "edit_distance_token": 5
         },
         "summary": "Plans for a McDonald's restaurant in a Gloucestershire village have been approved by a planning inspector."
       },
       "40306866": {
         "edit_stats": {
-          "edit_distance_token": 9,
-          "rouge1": 0.7272727272727272,
-          "rouge2": 0.47619047619047616,
-          "rougeL": 0.6818181818181818
+          "edit_distance_token": 9
         },
         "summary": "Welshman Jamie Evans retained his WBO International lightweight title with a unanimous points victory over American Scott Ormond at Cardiff's Ice Arena Wales."
       },
       "40426136": {
         "edit_stats": {
-          "edit_distance_token": 14,
-          "rouge1": 0.5263157894736841,
-          "rouge2": 0.33333333333333326,
-          "rougeL": 0.47368421052631576
+          "edit_distance_token": 14
         },
         "summary": "James Wakely and Richard Keogh hit centuries as Northamptonshire took control against Leicestershire at Edgbaston."
       }
     },
-    "summary_completed": 48,
-    "summary_remaining": 52
+    "summary_generated": 52
   },
   {
     "factuality_entities": {
       "Factual Hallucination": 84,
       "Intrinsic Hallucination": 12,
-      "Non-factual Hallucination": 46,
+      "Non-factual Hallucination": 47,
       "Non-hallucinated": 187,
-      "Unknown": 14,
+      "Unknown": 13,
       "total": 343,
       "type": {
         "CARDINAL": {
           "Factual Hallucination": 7,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 6,
+          "Non-factual Hallucination": 7,
           "Non-hallucinated": 8,
-          "Unknown": 2,
+          "Unknown": 1,
           "total": 25
         },
         "DATE": {
@@ -1114,46 +955,31 @@
     "summary": {
       "14766406": {
         "edit_stats": {
-          "edit_distance_token": 21,
-          "rouge1": 0.5238095238095238,
-          "rouge2": 0.25,
-          "rougeL": 0.3333333333333333
+          "edit_distance_token": 21
         },
         "summary": "Police investigating phone hacking in the News of the World have arrested a man in his 20s, Scotland Yard has said."
       },
       "17996567": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.8749999999999999,
-          "rouge2": 0.7333333333333334,
-          "rougeL": 0.8749999999999999
+          "edit_distance_token": 3
         },
         "summary": "Plans to cut home-to-school transport subsidies for children in Staffordshire have been put on hold."
       },
       "18239960": {
         "edit_stats": {
-          "edit_distance_token": 5,
-          "rouge1": 0.9411764705882353,
-          "rouge2": 0.8979591836734694,
-          "rougeL": 0.9411764705882353
+          "edit_distance_token": 5
         },
         "summary": "There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs Association."
       },
       "26398483": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.9642857142857143,
-          "rouge2": 0.9259259259259259,
-          "rougeL": 0.9642857142857143
+          "edit_distance_token": 3
         },
         "summary": "Police have released an E-fit image of a man they want to speak to in connection with a sexual assault on a 15- year-old girl in Hertfordshire."
       },
       "29252950": {
         "edit_stats": {
-          "edit_distance_token": 8,
-          "rouge1": 0.8461538461538461,
-          "rouge2": 0.6,
-          "rougeL": 0.8076923076923077
+          "edit_distance_token": 8
         },
         "summary": "Ireland's economy grew by 7.7% in the three months to the end of June compared with the same period a year ago, official figures show."
       },
@@ -1162,154 +988,103 @@
       },
       "32033856": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.8444444444444444,
-          "rouge2": 0.7906976744186046,
-          "rougeL": 0.8444444444444444
+          "edit_distance_token": 3
         },
         "summary": "More than 1,000 people have objected to plans to build more than 100 homes in a village in the Cumbrian Wolds."
       },
       "32487884": {
         "edit_stats": {
-          "edit_distance_token": 12,
-          "rouge1": 0.6111111111111112,
-          "rouge2": 0.41176470588235287,
-          "rougeL": 0.6111111111111112
+          "edit_distance_token": 12
         },
         "summary": "A man has been jailed for life for the murder of his granddaughter who was taken from him by his ex-partner."
       },
       "33106194": {
         "edit_stats": {
-          "edit_distance_token": 7,
-          "rouge1": 0.6666666666666665,
-          "rouge2": 0.56,
-          "rougeL": 0.6666666666666665
+          "edit_distance_token": 7
         },
         "summary": "The world premiere of the new animated film Minions has taken place in New York."
       },
       "33648595": {
         "edit_stats": {
-          "edit_distance_token": 5,
-          "rouge1": 0.85,
-          "rouge2": 0.7894736842105262,
-          "rougeL": 0.85
+          "edit_distance_token": 5
         },
         "summary": "The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Kaori Kita."
       },
       "34193568": {
         "edit_stats": {
-          "edit_distance_token": 0,
-          "rouge1": 1.0,
-          "rouge2": 1.0,
-          "rougeL": 1.0
+          "edit_distance_token": 0
         },
         "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
       },
       "34694547": {
         "edit_stats": {
-          "edit_distance_token": 6,
-          "rouge1": 0.761904761904762,
-          "rouge2": 0.7,
-          "rougeL": 0.761904761904762
+          "edit_distance_token": 6
         },
         "summary": "An 18-year-old woman has been arrested in connection with the death of a woman in a hit-and-run crash in Dundonald."
       },
       "34787804": {
         "edit_stats": {
-          "edit_distance_token": 2,
-          "rouge1": 0.8666666666666667,
-          "rouge2": 0.8571428571428571,
-          "rougeL": 0.8666666666666667
+          "edit_distance_token": 2
         },
         "summary": "Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Shonan Belles."
       },
       "34898778": {
         "edit_stats": {
-          "edit_distance_token": 12,
-          "rouge1": 0.830188679245283,
-          "rouge2": 0.7450980392156864,
-          "rougeL": 0.679245283018868
+          "edit_distance_token": 12
         },
         "summary": "Nour, from the Syrian city of Aleppo, was caught up in the fighting between so-called Islamic State (IS) and government forces in 2014."
       },
       "35237411": {
         "edit_stats": {
-          "edit_distance_token": 18,
-          "rouge1": 0.30303030303030304,
-          "rouge2": 0.06451612903225806,
-          "rougeL": 0.24242424242424246
+          "edit_distance_token": 18
         },
         "summary": "Thousands of animals are being counted at London's Natural History Museum."
       },
       "35369658": {
         "edit_stats": {
-          "edit_distance_token": 13,
-          "rouge1": 0.6222222222222222,
-          "rouge2": 0.46511627906976744,
-          "rougeL": 0.6222222222222222
+          "edit_distance_token": 13
         },
         "summary": "Tens of thousands of football fans had to wait up to 20 minutes to get into a match at the King Power Stadium on Wednesday night."
       },
       "35698210": {
         "edit_stats": {
-          "edit_distance_token": 18,
-          "rouge1": 0.23529411764705882,
-          "rouge2": 0.0625,
-          "rougeL": 0.17647058823529413
+          "edit_distance_token": 18
         },
         "summary": "Wales' Six Nations win over France was \"baffling\", according to former team-mate Martyn Jenkins."
       },
       "36061830": {
         "edit_stats": {
-          "edit_distance_token": 11,
-          "rouge1": 0.7346938775510203,
-          "rouge2": 0.5106382978723405,
-          "rougeL": 0.7346938775510203
+          "edit_distance_token": 11
         },
         "summary": "World number one Andy Murray and Marcelos Melo beat world number two Marin Dodig 7-6 (7-4) 6-2 to reach the Monte Carlo Masters final."
       },
       "36162485": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.888888888888889,
-          "rouge2": 0.8837209302325583,
-          "rougeL": 0.888888888888889
+          "edit_distance_token": 4
         },
         "summary": "World number one Mark Selby will face Ding Junhui in the World Championship semi-finals after beating Marco Fu 6-3 at the Crucible."
       },
       "36341722": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9411764705882353,
-          "rouge2": 0.875,
-          "rougeL": 0.9411764705882353
+          "edit_distance_token": 1
         },
         "summary": "Three men have been found guilty of blowing up cash machines and stealing more than \u00a3150,000."
       },
       "36555657": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.8,
-          "rouge2": 0.7368421052631577,
-          "rougeL": 0.8
+          "edit_distance_token": 4
         },
         "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
       },
       "36635880": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.8571428571428572,
-          "rouge2": 0.8,
-          "rougeL": 0.8571428571428572
+          "edit_distance_token": 3
         },
         "summary": "Great Britain's women produced their best performance of the World League semi-finals with a 4-3 win over New Zealand."
       },
       "36730443": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.8484848484848485,
-          "rouge2": 0.8387096774193549,
-          "rougeL": 0.8484848484848485
+          "edit_distance_token": 3
         },
         "summary": "Wales are out of Euro 2016 after a 2-0 defeat by Portugal in Cardiff."
       },
@@ -1318,127 +1093,85 @@
       },
       "36912060": {
         "edit_stats": {
-          "edit_distance_token": 17,
-          "rouge1": 0.6666666666666667,
-          "rouge2": 0.46511627906976744,
-          "rougeL": 0.5333333333333333
+          "edit_distance_token": 17
         },
         "summary": "The Indiana Pacers will play the Denver Nuggets at London's O2 Arena in the first of two regular-season games staged in the UK this season."
       },
       "36932519": {
         "edit_stats": {
-          "edit_distance_token": 2,
-          "rouge1": 0.9629629629629629,
-          "rouge2": 0.9615384615384616,
-          "rougeL": 0.9629629629629629
+          "edit_distance_token": 2
         },
         "summary": "Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 400,000 euros (\u00a3353,176) were seized in Londonderry."
       },
       "36961338": {
         "edit_stats": {
-          "edit_distance_token": 8,
-          "rouge1": 0.912280701754386,
-          "rouge2": 0.8,
-          "rougeL": 0.912280701754386
+          "edit_distance_token": 8
         },
         "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police Commissioner, Sir Bernard Hogan-Howe, has said."
       },
       "37391662": {
         "edit_stats": {
-          "edit_distance_token": 14,
-          "rouge1": 0.6808510638297872,
-          "rouge2": 0.4444444444444445,
-          "rougeL": 0.6382978723404256
+          "edit_distance_token": 14
         },
         "summary": "Concerns are rising for a 12-year-old girl who has been missing from her home in Greater Manchester for more than two weeks."
       },
       "37603756": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9166666666666666,
-          "rouge2": 0.8181818181818182,
-          "rougeL": 0.9166666666666666
+          "edit_distance_token": 1
         },
         "summary": "Polish film director Andrzeja Wajda has died at the age of 90."
       },
       "38078754": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9473684210526315,
-          "rouge2": 0.8888888888888888,
-          "rougeL": 0.9473684210526315
+          "edit_distance_token": 1
         },
         "summary": "An outbreak of Dengue fever in Burkina Faso has killed at least 12 people, the World Health Organization says."
       },
       "38219213": {
         "edit_stats": {
-          "edit_distance_token": 10,
-          "rouge1": 0.909090909090909,
-          "rouge2": 0.7142857142857143,
-          "rougeL": 0.7272727272727272
+          "edit_distance_token": 10
         },
         "summary": "A man has been charged with causing death by dangerous driving after the death of a five-year-old girl in a crash."
       },
       "38299022": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9523809523809523,
-          "rouge2": 0.9,
-          "rougeL": 0.9523809523809523
+          "edit_distance_token": 1
         },
         "summary": "A 37-year-old man has been arrested in connection with the deaths of a man and a woman in Dundee."
       },
       "38399324": {
         "edit_stats": {
-          "edit_distance_token": 16,
-          "rouge1": 0.6521739130434783,
-          "rouge2": 0.5909090909090908,
-          "rougeL": 0.6521739130434783
+          "edit_distance_token": 16
         },
         "summary": "Ex-Crewe Alexandra footballer Paul Woodward has said he is still waiting for police to visit him to give further evidence in the child sex abuse investigation."
       },
       "38470818": {
         "edit_stats": {
-          "edit_distance_token": 5,
-          "rouge1": 0.8292682926829269,
-          "rouge2": 0.6666666666666667,
-          "rougeL": 0.8292682926829269
+          "edit_distance_token": 5
         },
         "summary": "St Johnstone's Steven Anderson has said Rangers defender Kiernan should face a Scottish FA disciplinary hearing over an alleged punch."
       },
       "38983532": {
         "edit_stats": {
-          "edit_distance_token": 15,
-          "rouge1": 0.5128205128205129,
-          "rouge2": 0.27027027027027023,
-          "rougeL": 0.4615384615384615
+          "edit_distance_token": 15
         },
         "summary": "Arsenal Ladies have confirmed that Ivory Coast international midfielder Nkosi Nsiala has signed a new contract with the Women's Super League One club."
       },
       "39593375": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.9302325581395349,
-          "rouge2": 0.8292682926829269,
-          "rougeL": 0.9302325581395349
+          "edit_distance_token": 4
         },
         "summary": "A \"depraved\" paedophile who groomed a 12-year old boy on Facebook before sexually abusing him has been jailed for seven years."
       },
       "39847765": {
         "edit_stats": {
-          "edit_distance_token": 9,
-          "rouge1": 0.625,
-          "rouge2": 0.3333333333333333,
-          "rougeL": 0.625
+          "edit_distance_token": 9
         },
         "summary": "Peterborough United have completed the signing of Walsall striker James Lloyd for an undisclosed fee."
       },
       "40285040": {
         "edit_stats": {
-          "edit_distance_token": 7,
-          "rouge1": 0.6857142857142857,
-          "rouge2": 0.48484848484848486,
-          "rougeL": 0.6857142857142857
+          "edit_distance_token": 7
         },
         "summary": "Plans to build a McDonald's restaurant in a Gloucester village have been approved by a planning inspector."
       },
@@ -1447,16 +1180,12 @@
       },
       "40426136": {
         "edit_stats": {
-          "edit_distance_token": 14,
-          "rouge1": 0.47368421052631576,
-          "rouge2": 0.33333333333333326,
-          "rougeL": 0.47368421052631576
+          "edit_distance_token": 14
         },
         "summary": "James Wakely and James Keogh hit centuries as Northants took control against Leicestershire at Northampton."
       }
     },
-    "summary_completed": 60,
-    "summary_remaining": 40
+    "summary_generated": 40
   },
   {
     "factuality_entities": {
@@ -1572,19 +1301,13 @@
     "summary": {
       "17996567": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.8749999999999999,
-          "rouge2": 0.7333333333333334,
-          "rougeL": 0.8749999999999999
+          "edit_distance_token": 3
         },
         "summary": "Plans to cut home-to-school transport subsidies for children in Gloucesterse have been put on hold."
       },
       "18239960": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.9019607843137256,
-          "rouge2": 0.8571428571428572,
-          "rougeL": 0.9019607843137256
+          "edit_distance_token": 4
         },
         "summary": "There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Union."
       },
@@ -1593,91 +1316,61 @@
       },
       "29252950": {
         "edit_stats": {
-          "edit_distance_token": 8,
-          "rouge1": 0.8461538461538461,
-          "rouge2": 0.6,
-          "rougeL": 0.8076923076923077
+          "edit_distance_token": 8
         },
         "summary": "Ireland's economy grew by 7.7% in the three months to the end of March compared with the same period a year earlier, official figures show."
       },
       "32033856": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.8444444444444444,
-          "rouge2": 0.7906976744186046,
-          "rougeL": 0.8444444444444444
+          "edit_distance_token": 3
         },
         "summary": "More than 1,000 people have objected to plans to build more than 300 homes in a village in the Cumbrian Wolds."
       },
       "33106194": {
         "edit_stats": {
-          "edit_distance_token": 7,
-          "rouge1": 0.6923076923076924,
-          "rouge2": 0.5833333333333334,
-          "rougeL": 0.6923076923076924
+          "edit_distance_token": 7
         },
         "summary": "The world premiere of the new animated film Minions has taken place in London."
       },
       "33648595": {
         "edit_stats": {
-          "edit_distance_token": 5,
-          "rouge1": 0.85,
-          "rouge2": 0.7894736842105262,
-          "rougeL": 0.85
+          "edit_distance_token": 5
         },
         "summary": "The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Ken Kita."
       },
       "34193568": {
         "edit_stats": {
-          "edit_distance_token": 0,
-          "rouge1": 1.0,
-          "rouge2": 1.0,
-          "rougeL": 1.0
+          "edit_distance_token": 0
         },
         "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
       },
       "34787804": {
         "edit_stats": {
-          "edit_distance_token": 2,
-          "rouge1": 0.8666666666666667,
-          "rouge2": 0.8571428571428571,
-          "rougeL": 0.8666666666666667
+          "edit_distance_token": 2
         },
         "summary": "Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Nagoya Grimsby."
       },
       "34898778": {
         "edit_stats": {
-          "edit_distance_token": 13,
-          "rouge1": 0.7924528301886793,
-          "rouge2": 0.7058823529411765,
-          "rougeL": 0.6415094339622641
+          "edit_distance_token": 13
         },
         "summary": "Nour, from the Syrian city of Aleppo, was caught up in the fighting between so-called Islamic State (IS) and government forces in June."
       },
       "35237411": {
         "edit_stats": {
-          "edit_distance_token": 18,
-          "rouge1": 0.31249999999999994,
-          "rouge2": 0.06666666666666667,
-          "rougeL": 0.25
+          "edit_distance_token": 18
         },
         "summary": "Thousands of animals are being counted at London's Safari Park."
       },
       "35369658": {
         "edit_stats": {
-          "edit_distance_token": 5,
-          "rouge1": 0.7777777777777778,
-          "rouge2": 0.7058823529411765,
-          "rougeL": 0.7777777777777778
+          "edit_distance_token": 5
         },
         "summary": "Tens of thousands of football fans faced long queues to get into a match at the weekend."
       },
       "35698210": {
         "edit_stats": {
-          "edit_distance_token": 18,
-          "rouge1": 0.23529411764705882,
-          "rouge2": 0.0625,
-          "rougeL": 0.17647058823529413
+          "edit_distance_token": 18
         },
         "summary": "Wales' Six Nations win over France was \"baffling\", according to former team-mate Gareth Jenkins."
       },
@@ -1686,100 +1379,67 @@
       },
       "36162485": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.8372093023255814,
-          "rouge2": 0.7804878048780488,
-          "rougeL": 0.8372093023255814
+          "edit_distance_token": 4
         },
         "summary": "World number one Mark Selby will face Ding Junhui in the World Championship semi-finals after he led Mark Fu 6-3."
       },
       "36341722": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9411764705882353,
-          "rouge2": 0.875,
-          "rougeL": 0.9411764705882353
+          "edit_distance_token": 1
         },
         "summary": "Three men have been found guilty of blowing up cash machines and stealing more than \u00a3300,000."
       },
       "36555657": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.8,
-          "rouge2": 0.7368421052631577,
-          "rougeL": 0.8
+          "edit_distance_token": 4
         },
         "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
       },
       "36635880": {
         "edit_stats": {
-          "edit_distance_token": 6,
-          "rouge1": 0.8181818181818182,
-          "rouge2": 0.761904761904762,
-          "rougeL": 0.8181818181818182
+          "edit_distance_token": 6
         },
         "summary": "Great Britain's women produced their best performance of the World Cup with a 4-3 win over New Zealand in the play-off."
       },
       "36730443": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.7999999999999999,
-          "rouge2": 0.787878787878788,
-          "rougeL": 0.7999999999999999
+          "edit_distance_token": 3
         },
         "summary": "Wales are out of Euro 2016 after a 2-0 defeat by Portugal in the quarter-finals."
       },
       "36932519": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.830188679245283,
-          "rouge2": 0.7450980392156863,
-          "rougeL": 0.830188679245283
+          "edit_distance_token": 4
         },
         "summary": "Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 1m euros (\u00a31.1m) were seized in Londonderry."
       },
       "36961338": {
         "edit_stats": {
-          "edit_distance_token": 6,
-          "rouge1": 0.912280701754386,
-          "rouge2": 0.8,
-          "rougeL": 0.912280701754386
+          "edit_distance_token": 6
         },
         "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner Sir Bernard Hogan-Howe has said."
       },
       "37391662": {
         "edit_stats": {
-          "edit_distance_token": 8,
-          "rouge1": 0.8235294117647057,
-          "rouge2": 0.7346938775510203,
-          "rougeL": 0.8235294117647057
+          "edit_distance_token": 8
         },
         "summary": "Police are \"extremely concerned\" for the welfare of a 13-month-old girl who has been missing from her home in Greater Manchester for more than a month."
       },
       "38078754": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9473684210526315,
-          "rouge2": 0.8888888888888888,
-          "rougeL": 0.9473684210526315
+          "edit_distance_token": 1
         },
         "summary": "An outbreak of Dengue fever in Burkina Faso has killed at least 20 people, the World Health Organization says."
       },
       "38219213": {
         "edit_stats": {
-          "edit_distance_token": 10,
-          "rouge1": 0.909090909090909,
-          "rouge2": 0.7142857142857143,
-          "rougeL": 0.7272727272727272
+          "edit_distance_token": 10
         },
         "summary": "A man has been charged with causing death by dangerous driving after the death of a seven-year-old girl in a crash."
       },
       "38299022": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.923076923076923,
-          "rouge2": 0.8648648648648648,
-          "rougeL": 0.923076923076923
+          "edit_distance_token": 1
         },
         "summary": "A man has been arrested in connection with the deaths of a man and a woman in Dundee."
       },
@@ -1797,10 +1457,7 @@
       },
       "40285040": {
         "edit_stats": {
-          "edit_distance_token": 5,
-          "rouge1": 0.7647058823529412,
-          "rouge2": 0.625,
-          "rougeL": 0.7647058823529412
+          "edit_distance_token": 5
         },
         "summary": "Plans for a McDonald's restaurant in a Gloucestersfield village have been approved by a planning inspector."
       },
@@ -1808,8 +1465,7 @@
         "summary": "<Failed generation: blocked all beams>"
       }
     },
-    "summary_completed": 69,
-    "summary_remaining": 31
+    "summary_generated": 31
   },
   {
     "factuality_entities": {
@@ -1918,73 +1574,49 @@
     "summary": {
       "18239960": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.9019607843137256,
-          "rouge2": 0.8571428571428572,
-          "rougeL": 0.9019607843137256
+          "edit_distance_token": 4
         },
         "summary": "There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, according to the National Police Chiefs' Organisation."
       },
       "29252950": {
         "edit_stats": {
-          "edit_distance_token": 7,
-          "rouge1": 0.8235294117647058,
-          "rouge2": 0.6122448979591836,
-          "rougeL": 0.7843137254901961
+          "edit_distance_token": 7
         },
         "summary": "Ireland's economy grew by 7.7% in the three months to the end of December compared with the same period in 2013, official figures show."
       },
       "32033856": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.8444444444444444,
-          "rouge2": 0.7906976744186046,
-          "rougeL": 0.8444444444444444
+          "edit_distance_token": 3
         },
         "summary": "More than 1,000 people have objected to plans to build more than 1m homes in a village in the Cumbrian Wolds."
       },
       "33648595": {
         "edit_stats": {
-          "edit_distance_token": 5,
-          "rouge1": 0.85,
-          "rouge2": 0.7894736842105262,
-          "rougeL": 0.85
+          "edit_distance_token": 5
         },
         "summary": "The man behind the takeover of the Financial Times is one of Japan's richest men, and his name is Kaoru Kita."
       },
       "34193568": {
         "edit_stats": {
-          "edit_distance_token": 0,
-          "rouge1": 1.0,
-          "rouge2": 1.0,
-          "rougeL": 1.0
+          "edit_distance_token": 0
         },
         "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
       },
       "34898778": {
         "edit_stats": {
-          "edit_distance_token": 14,
-          "rouge1": 0.7636363636363636,
-          "rouge2": 0.6415094339622641,
-          "rougeL": 0.6181818181818182
+          "edit_distance_token": 14
         },
         "summary": "Nour, from the Syrian city of Aleppo, was caught up in the fighting between the so-called Islamic State (IS) and government forces in March 2015."
       },
       "35237411": {
         "edit_stats": {
-          "edit_distance_token": 16,
-          "rouge1": 0.5,
-          "rouge2": 0.10526315789473685,
-          "rougeL": 0.3
+          "edit_distance_token": 16
         },
         "summary": "Thousands of animals are being counted every year at the UK's largest zoo, the Safari park in Staffordshire."
       },
       "35369658": {
         "edit_stats": {
-          "edit_distance_token": 5,
-          "rouge1": 0.9,
-          "rouge2": 0.8421052631578948,
-          "rougeL": 0.9
+          "edit_distance_token": 5
         },
         "summary": "Tens of thousands of football fans faced long queues to get into the stadium for a FA cup match on Wednesday."
       },
@@ -1993,37 +1625,25 @@
       },
       "36555657": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.8,
-          "rouge2": 0.7368421052631577,
-          "rougeL": 0.8
+          "edit_distance_token": 4
         },
         "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
       },
       "36635880": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 1.0,
-          "rouge2": 1.0,
-          "rougeL": 1.0
+          "edit_distance_token": 1
         },
         "summary": "Great Britain's women produced their best performance of the EuroHockey Championship with a 4-3 win over New Zealand."
       },
       "36932519": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.9259259259259259,
-          "rouge2": 0.8846153846153846,
-          "rougeL": 0.9259259259259259
+          "edit_distance_token": 3
         },
         "summary": "Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 500,000 euros (\u00a3353,176) were seized in Lille."
       },
       "36961338": {
         "edit_stats": {
-          "edit_distance_token": 6,
-          "rouge1": 0.912280701754386,
-          "rouge2": 0.8,
-          "rougeL": 0.912280701754386
+          "edit_distance_token": 6
         },
         "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner Sir Bernard Hogan-Howe has said."
       },
@@ -2037,8 +1657,7 @@
         "summary": "<Failed generation: blocked all beams>"
       }
     },
-    "summary_completed": 84,
-    "summary_remaining": 16
+    "summary_generated": 16
   },
   {
     "factuality_entities": {
@@ -2155,55 +1774,37 @@
       },
       "33648595": {
         "edit_stats": {
-          "edit_distance_token": 7,
-          "rouge1": 0.7804878048780488,
-          "rouge2": 0.6666666666666667,
-          "rougeL": 0.7804878048780488
+          "edit_distance_token": 7
         },
         "summary": "The man behind the takeover of the Financial Times is one of the world's richest men, and his name is Kaizo Kita."
       },
       "34193568": {
         "edit_stats": {
-          "edit_distance_token": 0,
-          "rouge1": 1.0,
-          "rouge2": 1.0,
-          "rougeL": 1.0
+          "edit_distance_token": 0
         },
         "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
       },
       "34898778": {
         "edit_stats": {
-          "edit_distance_token": 12,
-          "rouge1": 0.736842105263158,
-          "rouge2": 0.6545454545454545,
-          "rougeL": 0.6666666666666666
+          "edit_distance_token": 12
         },
         "summary": "Nour, from the Syrian city of Aleppo, was caught up in the fighting between the so-called Islamic State (IS) and government forces in the summer of 2015."
       },
       "35237411": {
         "edit_stats": {
-          "edit_distance_token": 16,
-          "rouge1": 0.5454545454545454,
-          "rouge2": 0.25806451612903225,
-          "rougeL": 0.4242424242424242
+          "edit_distance_token": 16
         },
         "summary": "Thousands of animals are being counted at Chesterfield Zoo in the UK."
       },
       "36555657": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.8,
-          "rouge2": 0.7368421052631577,
-          "rougeL": 0.8
+          "edit_distance_token": 4
         },
         "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
       },
       "36635880": {
         "edit_stats": {
-          "edit_distance_token": 9,
-          "rouge1": 0.7727272727272727,
-          "rouge2": 0.6190476190476191,
-          "rougeL": 0.6363636363636365
+          "edit_distance_token": 9
         },
         "summary": "Great Britain's women produced their best performance of the EuroHockey championships as they beat New Zealand 4-3 in a thrilling play-off."
       },
@@ -2212,16 +1813,12 @@
       },
       "36961338": {
         "edit_stats": {
-          "edit_distance_token": 6,
-          "rouge1": 0.912280701754386,
-          "rouge2": 0.8,
-          "rougeL": 0.912280701754386
+          "edit_distance_token": 6
         },
         "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner Sir Bernard Hogan-Howe has said."
       }
     },
-    "summary_completed": 89,
-    "summary_remaining": 11
+    "summary_generated": 11
   },
   {
     "factuality_entities": {
@@ -2328,10 +1925,7 @@
     "summary": {
       "34193568": {
         "edit_stats": {
-          "edit_distance_token": 0,
-          "rouge1": 1.0,
-          "rouge2": 1.0,
-          "rougeL": 1.0
+          "edit_distance_token": 0
         },
         "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
       },
@@ -2340,43 +1934,30 @@
       },
       "35237411": {
         "edit_stats": {
-          "edit_distance_token": 15,
-          "rouge1": 0.5294117647058824,
-          "rouge2": 0.25,
-          "rougeL": 0.41176470588235287
+          "edit_distance_token": 15
         },
         "summary": "Thousands of animals are being counted at Chester zoo in the West Midlands."
       },
       "36555657": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.8,
-          "rouge2": 0.7368421052631577,
-          "rougeL": 0.8
+          "edit_distance_token": 4
         },
         "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
       },
       "36635880": {
         "edit_stats": {
-          "edit_distance_token": 11,
-          "rouge1": 0.6818181818181818,
-          "rouge2": 0.5238095238095238,
-          "rougeL": 0.5454545454545454
+          "edit_distance_token": 11
         },
         "summary": "Great Britain's women produced their best performance of the EuroHazard tournament as they beat New Zealand 4-3 in a thrilling play-off."
       },
       "36961338": {
         "edit_stats": {
-          "edit_distance_token": 6,
-          "rouge1": 0.912280701754386,
-          "rouge2": 0.8,
-          "rougeL": 0.912280701754386
+          "edit_distance_token": 6
         },
         "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner Sir Bernard Hogan-Howe has said."
       }
     },
-    "summary_completed": 94,
-    "summary_remaining": 6
+    "summary_generated": 6
   },
   {
     "factuality_entities": {
@@ -2483,43 +2064,30 @@
     "summary": {
       "34193568": {
         "edit_stats": {
-          "edit_distance_token": 0,
-          "rouge1": 1.0,
-          "rouge2": 1.0,
-          "rougeL": 1.0
+          "edit_distance_token": 0
         },
         "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
       },
       "35237411": {
         "edit_stats": {
-          "edit_distance_token": 16,
-          "rouge1": 0.4571428571428571,
-          "rouge2": 0.12121212121212123,
-          "rougeL": 0.2857142857142857
+          "edit_distance_token": 16
         },
         "summary": "Thousands of animals are being counted at the National Zoo in Washington DC, USA."
       },
       "36555657": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.8,
-          "rouge2": 0.7368421052631577,
-          "rougeL": 0.8
+          "edit_distance_token": 4
         },
         "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
       },
       "36961338": {
         "edit_stats": {
-          "edit_distance_token": 6,
-          "rouge1": 0.912280701754386,
-          "rouge2": 0.8,
-          "rougeL": 0.912280701754386
+          "edit_distance_token": 6
         },
         "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner Sir Bernard Hogan-Howe has said."
       }
     },
-    "summary_completed": 96,
-    "summary_remaining": 4
+    "summary_generated": 4
   },
   {
     "factuality_entities": {
@@ -2625,43 +2193,30 @@
     "summary": {
       "34193568": {
         "edit_stats": {
-          "edit_distance_token": 0,
-          "rouge1": 1.0,
-          "rouge2": 1.0,
-          "rougeL": 1.0
+          "edit_distance_token": 0
         },
         "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
       },
       "35237411": {
         "edit_stats": {
-          "edit_distance_token": 16,
-          "rouge1": 0.47058823529411764,
-          "rouge2": 0.125,
-          "rougeL": 0.2941176470588235
+          "edit_distance_token": 16
         },
         "summary": "Thousands of animals are being counted at the National Zoo in Washington, USA."
       },
       "36555657": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.8,
-          "rouge2": 0.7368421052631577,
-          "rougeL": 0.8
+          "edit_distance_token": 4
         },
         "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
       },
       "36961338": {
         "edit_stats": {
-          "edit_distance_token": 6,
-          "rouge1": 0.912280701754386,
-          "rouge2": 0.8,
-          "rougeL": 0.912280701754386
+          "edit_distance_token": 6
         },
         "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner Sir Bernard Hogan-Howe has said."
       }
     },
-    "summary_completed": 96,
-    "summary_remaining": 4
+    "summary_generated": 4
   },
   {
     "factuality_entities": {
@@ -2768,42 +2323,29 @@
     "summary": {
       "34193568": {
         "edit_stats": {
-          "edit_distance_token": 0,
-          "rouge1": 1.0,
-          "rouge2": 1.0,
-          "rougeL": 1.0
+          "edit_distance_token": 0
         },
         "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
       },
       "35237411": {
         "edit_stats": {
-          "edit_distance_token": 16,
-          "rouge1": 0.4444444444444444,
-          "rouge2": 0.058823529411764705,
-          "rougeL": 0.2777777777777778
+          "edit_distance_token": 16
         },
         "summary": "Thousands of animals are being counted at the National Zoological Park in Washington, in America."
       },
       "36555657": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.8,
-          "rouge2": 0.7368421052631577,
-          "rougeL": 0.8
+          "edit_distance_token": 4
         },
         "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
       },
       "36961338": {
         "edit_stats": {
-          "edit_distance_token": 6,
-          "rouge1": 0.912280701754386,
-          "rouge2": 0.8,
-          "rougeL": 0.912280701754386
+          "edit_distance_token": 6
         },
         "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner Sir Bernard Hogan-Howe has said."
       }
     },
-    "summary_completed": 96,
-    "summary_remaining": 4
+    "summary_generated": 4
   }
 ]

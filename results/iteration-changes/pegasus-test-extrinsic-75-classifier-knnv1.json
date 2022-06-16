@@ -326,8 +326,7 @@
         "summary": "A man who raped and killed a 12-year-old girl in 1976 has been jailed for life."
       }
     },
-    "summary_completed": 0,
-    "summary_remaining": 75
+    "summary_generated": 100
   },
   {
     "factuality_entities": {
@@ -436,19 +435,13 @@
     "summary": {
       "12640645": {
         "edit_stats": {
-          "edit_distance_token": 20,
-          "rouge1": 0.2222222222222222,
-          "rouge2": 0.1764705882352941,
-          "rougeL": 0.2222222222222222
+          "edit_distance_token": 20
         },
         "summary": "India's Maoist rebels first emerged in the 1960s as a fringe group fighting for the rights of indigenous tribespeople and the rural poor."
       },
       "18460302": {
         "edit_stats": {
-          "edit_distance_token": 31,
-          "rouge1": 0.5217391304347826,
-          "rouge2": 0.5074626865671642,
-          "rougeL": 0.5217391304347826
+          "edit_distance_token": 31
         },
         "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the government in September 2008. The commercial banks are then able to use these bits of paper as top quality backing with which to borrow cash in the wholesale financial markets, from other lenders."
       },
@@ -457,295 +450,198 @@
       },
       "27536258": {
         "edit_stats": {
-          "edit_distance_token": 2,
-          "rouge1": 0.9032258064516129,
-          "rouge2": 0.7586206896551724,
-          "rougeL": 0.9032258064516129
+          "edit_distance_token": 2
         },
         "summary": "Back in October 2010, Saracens captain Steven Borthwick found himself in a bit of a bind."
       },
       "31126597": {
         "edit_stats": {
-          "edit_distance_token": 18,
-          "rouge1": 0.2631578947368421,
-          "rouge2": 0.1111111111111111,
-          "rougeL": 0.2105263157894737
+          "edit_distance_token": 18
         },
         "summary": "Mexico's attorney general has declared that the 46 students who went missing in the south-western state of Guerrero in September are dead."
       },
       "32201626": {
         "edit_stats": {
-          "edit_distance_token": 10,
-          "rouge1": 0.631578947368421,
-          "rouge2": 0.611111111111111,
-          "rougeL": 0.631578947368421
+          "edit_distance_token": 10
         },
         "summary": "County Longford, in the Republic of Ireland's midlands, was once dubbed the \"land of enchantment\" because of its abundant natural beauty."
       },
       "32461058": {
         "edit_stats": {
-          "edit_distance_token": 11,
-          "rouge1": 0.46153846153846156,
-          "rouge2": 0.0,
-          "rougeL": 0.3076923076923077
+          "edit_distance_token": 11
         },
         "summary": "A massive earthquake has hit the country of Nepal in south-west Asia."
       },
       "32918219": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.9056603773584906,
-          "rouge2": 0.8627450980392156,
-          "rougeL": 0.9056603773584906
+          "edit_distance_token": 3
         },
         "summary": "Over the past few weeks we've been following the story of the Rohingya and Bangladeshi migrants who have landed on the shores of Thailand and Malaysia."
       },
       "32974091": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9500000000000001,
-          "rouge2": 0.8947368421052632,
-          "rougeL": 0.9500000000000001
+          "edit_distance_token": 1
         },
         "summary": "Hundreds of people have attended the first day of a public inquiry into plans for 400 new homes in Kent."
       },
       "34592719": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9545454545454546,
-          "rouge2": 0.9047619047619048,
-          "rougeL": 0.9545454545454546
+          "edit_distance_token": 1
         },
         "summary": "Charlton Athletic head coach Avi Luzon says he is not concerned about his future ahead of Saturday's Championship game against Reading."
       },
       "34717572": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9411764705882353,
-          "rouge2": 0.875,
-          "rougeL": 0.9411764705882353
+          "edit_distance_token": 1
         },
         "summary": "A 20-year-old man from Norwich has been arrested in connection with the TalkTalk hacking attack."
       },
       "34786804": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9333333333333333,
-          "rouge2": 0.8571428571428571,
-          "rougeL": 0.9333333333333333
+          "edit_distance_token": 1
         },
         "summary": "Former world champion Barry Fordham says he wants to return to Lakeside to play again."
       },
       "34886105": {
         "edit_stats": {
-          "edit_distance_token": 13,
-          "rouge1": 0.42424242424242425,
-          "rouge2": 0.1935483870967742,
-          "rougeL": 0.3636363636363636
+          "edit_distance_token": 13
         },
         "summary": "Chipotle Mexican Grill is facing a second outbreak of E. coli this month, US health officials have said."
       },
       "34985442": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9565217391304348,
-          "rouge2": 0.9253731343283582,
-          "rougeL": 0.9565217391304348
+          "edit_distance_token": 1
         },
         "summary": "A woman with terminal cancer who tried to kill herself because she did not want \"to live in a council flat, be poor or be ugly\" has won the right to refuse dialysis."
       },
       "35291436": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.8888888888888888,
-          "rouge2": 0.823529411764706,
-          "rougeL": 0.8888888888888888
+          "edit_distance_token": 4
         },
         "summary": "One of Scotland's busiest railway stations is to close for more than a month for major engineering work."
       },
       "35650258": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9545454545454546,
-          "rouge2": 0.9047619047619048,
-          "rougeL": 0.9545454545454546
+          "edit_distance_token": 1
         },
         "summary": "Peterborough United manager Frank Westley says his side have \"lost their way\" following their FA Cup exit at the hands of Oldham."
       },
       "35706703": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.9310344827586207,
-          "rouge2": 0.8214285714285714,
-          "rougeL": 0.9310344827586207
+          "edit_distance_token": 4
         },
         "summary": "The number of motorcyclists killed or seriously injured on London's roads has risen by more than a quarter in the past year, Transport for London (TfL) has said."
       },
       "35918470": {
         "edit_stats": {
-          "edit_distance_token": 12,
-          "rouge1": 0.6399999999999999,
-          "rouge2": 0.5833333333333334,
-          "rougeL": 0.6399999999999999
+          "edit_distance_token": 12
         },
         "summary": "A council has said it would be \"absolute madness\" to move a boulder believed to date back to the time of the devil."
       },
       "36067011": {
         "edit_stats": {
-          "edit_distance_token": 10,
-          "rouge1": 0.6666666666666666,
-          "rouge2": 0.5217391304347826,
-          "rougeL": 0.6666666666666666
+          "edit_distance_token": 10
         },
         "summary": "Philippine presidential candidate Rodrigo Duterte has been accused of misogyny after a video emerged showing him mocking the rape and murder of a missionary."
       },
       "36170590": {
         "edit_stats": {
-          "edit_distance_token": 20,
-          "rouge1": 0.3333333333333333,
-          "rouge2": 0.17391304347826086,
-          "rougeL": 0.3333333333333333
+          "edit_distance_token": 20
         },
         "summary": "As West Ham prepare for their final game at the Boleyn Ground, BBC Radio London looks at the impact the club has had on the local economy."
       },
       "36301083": {
         "edit_stats": {
-          "edit_distance_token": 6,
-          "rouge1": 0.8235294117647058,
-          "rouge2": 0.6250000000000001,
-          "rougeL": 0.8235294117647058
+          "edit_distance_token": 6
         },
         "summary": "West Ham have completed the signing of Norway midfielder Per Mertes Nordtveit from Borussia Monchengladbach for an undisclosed fee."
       },
       "36303577": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.8484848484848485,
-          "rouge2": 0.8387096774193549,
-          "rougeL": 0.8484848484848485
+          "edit_distance_token": 3
         },
         "summary": "The price of oil has risen above $50 a barrel for the first time since November."
       },
       "37068879": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.8947368421052632,
-          "rouge2": 0.8888888888888888,
-          "rougeL": 0.8947368421052632
+          "edit_distance_token": 3
         },
         "summary": "Great Britain's Greg Rutherford is through to the long jump final at the World Championships in London on Saturday."
       },
       "37726408": {
         "edit_stats": {
-          "edit_distance_token": 12,
-          "rouge1": 0.6511627906976745,
-          "rouge2": 0.48780487804878053,
-          "rougeL": 0.6511627906976745
+          "edit_distance_token": 12
         },
         "summary": "A paedophile who was caught after being confronted by a vigilante group has been jailed for three years."
       },
       "38110941": {
         "edit_stats": {
-          "edit_distance_token": 12,
-          "rouge1": 0.7346938775510204,
-          "rouge2": 0.46808510638297873,
-          "rougeL": 0.6530612244897959
+          "edit_distance_token": 12
         },
         "summary": "In our series of letters from England players, captain Heather Knight reflects on a year in which she led her side to the ICC Women's Championship title."
       },
       "38264015": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9473684210526315,
-          "rouge2": 0.8888888888888888,
-          "rougeL": 0.9473684210526315
+          "edit_distance_token": 1
         },
         "summary": "A man has been jailed for two years for causing the death of a teenager in a car crash."
       },
       "38306416": {
         "edit_stats": {
-          "edit_distance_token": 6,
-          "rouge1": 0.8000000000000002,
-          "rouge2": 0.7142857142857143,
-          "rougeL": 0.8000000000000002
+          "edit_distance_token": 6
         },
         "summary": "A man has been arrested in connection with the death of a man in Coleraine."
       },
       "38605405": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9444444444444444,
-          "rouge2": 0.8823529411764706,
-          "rougeL": 0.9444444444444444
+          "edit_distance_token": 1
         },
         "summary": "Carrick Rangers have signed former Crusaders player Gary McAllister on a deal until the end of the season."
       },
       "38651116": {
         "edit_stats": {
-          "edit_distance_token": 9,
-          "rouge1": 0.6666666666666666,
-          "rouge2": 0.45161290322580644,
-          "rougeL": 0.606060606060606
+          "edit_distance_token": 9
         },
         "summary": "Shrewsbury Town have signed West Brom youngster Lloyd Roberts on a season-long loan deal."
       },
       "38980980": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.8780487804878048,
-          "rouge2": 0.8205128205128205,
-          "rougeL": 0.8780487804878048
+          "edit_distance_token": 3
         },
         "summary": "A man has been jailed for six years for assaulting a post office worker during an armed robbery in Edinburgh."
       },
       "39442533": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9642857142857143,
-          "rouge2": 0.9259259259259259,
-          "rougeL": 0.9642857142857143
+          "edit_distance_token": 1
         },
         "summary": "A year on from the death of her four-year-old son Kayden, Julie and her daughter Shannon are still struggling to come to terms with his death."
       },
       "39507079": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9411764705882353,
-          "rouge2": 0.875,
-          "rougeL": 0.9411764705882353
+          "edit_distance_token": 1
         },
         "summary": "New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2017 season."
       },
       "40424712": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9090909090909091,
-          "rouge2": 0.8000000000000002,
-          "rougeL": 0.9090909090909091
+          "edit_distance_token": 1
         },
         "summary": "Leyton Orient have re-appointed Martin Porter as their new chairman."
       },
       "40426136": {
         "edit_stats": {
-          "edit_distance_token": 14,
-          "rouge1": 0.4324324324324324,
-          "rouge2": 0.28571428571428575,
-          "rougeL": 0.4324324324324324
+          "edit_distance_token": 14
         },
         "summary": "Chris Wakely and Richard Keogh hit centuries as Northants set Leicestershire a target of 350 to win their Division Two match."
       },
       "40625655": {
         "edit_stats": {
-          "edit_distance_token": 16,
-          "rouge1": 0.7894736842105262,
-          "rouge2": 0.5,
-          "rougeL": 0.4736842105263158
+          "edit_distance_token": 16
         },
         "summary": "A man has been jailed for life for the manslaughter and rape of a 13-year-old girl in 1976."
       }
     },
-    "summary_completed": 40,
-    "summary_remaining": 35
+    "summary_generated": 46
   },
   {
     "factuality_entities": {
@@ -854,19 +750,13 @@
     "summary": {
       "18460302": {
         "edit_stats": {
-          "edit_distance_token": 12,
-          "rouge1": 0.7450980392156863,
-          "rouge2": 0.6938775510204083,
-          "rougeL": 0.7058823529411764
+          "edit_distance_token": 12
         },
         "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2010 as part of the government's response to the financial crisis."
       },
       "27536258": {
         "edit_stats": {
-          "edit_distance_token": 5,
-          "rouge1": 0.8749999999999999,
-          "rouge2": 0.6666666666666666,
-          "rougeL": 0.8125
+          "edit_distance_token": 5
         },
         "summary": "Back in 2010, the captain of Saracens, Chris Borthwick, found himself in a bit of a bind."
       },
@@ -875,151 +765,102 @@
       },
       "32918219": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.8679245283018868,
-          "rouge2": 0.7843137254901961,
-          "rougeL": 0.8679245283018868
+          "edit_distance_token": 4
         },
         "summary": "Over the past few days we've been following the story of the Rohingya and Bangladeshi migrants who have landed on the shores of Thailand and Malaysia."
       },
       "32974091": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9500000000000001,
-          "rouge2": 0.8947368421052632,
-          "rougeL": 0.9500000000000001
+          "edit_distance_token": 1
         },
         "summary": "Hundreds of people have attended the first day of a public inquiry into plans for 600 new homes in Kent."
       },
       "34592719": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9545454545454546,
-          "rouge2": 0.9047619047619048,
-          "rougeL": 0.9545454545454546
+          "edit_distance_token": 1
         },
         "summary": "Charlton Athletic head coach Bibiana Luzon says he is not concerned about his future ahead of Saturday's Championship game against Reading."
       },
       "34717572": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9411764705882353,
-          "rouge2": 0.875,
-          "rougeL": 0.9411764705882353
+          "edit_distance_token": 1
         },
         "summary": "A 21-year-old man from Norwich has been arrested in connection with the TalkTalk hacking attack."
       },
       "35291436": {
         "edit_stats": {
-          "edit_distance_token": 6,
-          "rouge1": 0.8108108108108107,
-          "rouge2": 0.6857142857142857,
-          "rougeL": 0.8108108108108107
+          "edit_distance_token": 6
         },
         "summary": "One of Scotland's busiest railway stations is to be closed for more than a year for major engineering work."
       },
       "35706703": {
         "edit_stats": {
-          "edit_distance_token": 5,
-          "rouge1": 0.8928571428571429,
-          "rouge2": 0.7777777777777779,
-          "rougeL": 0.8928571428571429
+          "edit_distance_token": 5
         },
         "summary": "The number of motorcyclists killed or seriously injured on London's roads has risen by more than 20% in five years, Transport for London (TfL) has said."
       },
       "37726408": {
         "edit_stats": {
-          "edit_distance_token": 8,
-          "rouge1": 0.8727272727272728,
-          "rouge2": 0.7924528301886793,
-          "rougeL": 0.8727272727272728
+          "edit_distance_token": 8
         },
         "summary": "A paedophile who was confronted by a vigilante group when he tried to meet an 11-year- old girl he thought was his daughter has been jailed for eight years."
       },
       "38110941": {
         "edit_stats": {
-          "edit_distance_token": 18,
-          "rouge1": 0.15789473684210528,
-          "rouge2": 0.0,
-          "rougeL": 0.10526315789473684
+          "edit_distance_token": 18
         },
         "summary": "As 2016 draws to a close, I'm looking forward to another busy year of international cricket."
       },
       "38605405": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.8484848484848485,
-          "rouge2": 0.7096774193548386,
-          "rougeL": 0.8484848484848485
+          "edit_distance_token": 4
         },
         "summary": "Carrick Rangers have signed former Crusaders player David McAllister until the end of the season."
       },
       "38651116": {
         "edit_stats": {
-          "edit_distance_token": 15,
-          "rouge1": 0.6666666666666666,
-          "rouge2": 0.45,
-          "rougeL": 0.5238095238095238
+          "edit_distance_token": 15
         },
         "summary": "Shrewsbury Town have signed teenage midfielder Joe Roberts on loan from Premier League side West Bromwich Bromwich Albion for the rest of the season."
       },
       "38980980": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.8780487804878048,
-          "rouge2": 0.8205128205128205,
-          "rougeL": 0.8780487804878048
+          "edit_distance_token": 3
         },
         "summary": "A man has been jailed for seven years for assaulting a post office worker during an armed robbery in Edinburgh."
       },
       "39442533": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9433962264150945,
-          "rouge2": 0.9019607843137256,
-          "rougeL": 0.9433962264150945
+          "edit_distance_token": 1
         },
         "summary": "A year on from the death of her son Kayden, Julie and her daughter Shannon are still struggling to come to terms with his death."
       },
       "39507079": {
         "edit_stats": {
-          "edit_distance_token": 2,
-          "rouge1": 0.9142857142857143,
-          "rouge2": 0.9090909090909091,
-          "rougeL": 0.9142857142857143
+          "edit_distance_token": 2
         },
         "summary": "Former New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2018 campaign."
       },
       "40424712": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9090909090909091,
-          "rouge2": 0.8000000000000002,
-          "rougeL": 0.9090909090909091
+          "edit_distance_token": 1
         },
         "summary": "Leyton Orient have re-appointed Mark Porter as their new chairman."
       },
       "40426136": {
         "edit_stats": {
-          "edit_distance_token": 6,
-          "rouge1": 0.7586206896551724,
-          "rouge2": 0.5925925925925926,
-          "rougeL": 0.7586206896551724
+          "edit_distance_token": 6
         },
         "summary": "Chris Wakely and Tom Keogh hit centuries as Northants took control against Leicestershire."
       },
       "40625655": {
         "edit_stats": {
-          "edit_distance_token": 17,
-          "rouge1": 0.8421052631578948,
-          "rouge2": 0.6111111111111113,
-          "rougeL": 0.5263157894736842
+          "edit_distance_token": 17
         },
         "summary": "A man has been jailed for life for the manslaughter and rape of a 12-year old girl in 1976."
       }
     },
-    "summary_completed": 56,
-    "summary_remaining": 19
+    "summary_generated": 26
   },
   {
     "factuality_entities": {
@@ -1129,124 +970,84 @@
     "summary": {
       "18460302": {
         "edit_stats": {
-          "edit_distance_token": 12,
-          "rouge1": 0.7843137254901961,
-          "rouge2": 0.7346938775510204,
-          "rougeL": 0.7450980392156863
+          "edit_distance_token": 12
         },
         "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009, as part of the government's response to the financial crisis."
       },
       "32918219": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.8679245283018868,
-          "rouge2": 0.7843137254901961,
-          "rougeL": 0.8679245283018868
+          "edit_distance_token": 4
         },
         "summary": "Over the last few weeks we've been following the story of the Rohingya and Bangladeshi migrants who have landed on the shores of Thailand and Malaysia."
       },
       "34717572": {
         "edit_stats": {
-          "edit_distance_token": 2,
-          "rouge1": 0.8823529411764706,
-          "rouge2": 0.75,
-          "rougeL": 0.8823529411764706
+          "edit_distance_token": 2
         },
         "summary": "A 17-year-old boy from Norwich has been arrested in connection with the TalkTalk hacking attack."
       },
       "35291436": {
         "edit_stats": {
-          "edit_distance_token": 5,
-          "rouge1": 0.8648648648648648,
-          "rouge2": 0.6857142857142857,
-          "rougeL": 0.8648648648648648
+          "edit_distance_token": 5
         },
         "summary": "One of Scotland's busiest railway stations is to be closed for more than six weeks for major engineering work."
       },
       "35706703": {
         "edit_stats": {
-          "edit_distance_token": 6,
-          "rouge1": 0.8771929824561403,
-          "rouge2": 0.7636363636363638,
-          "rougeL": 0.8771929824561403
+          "edit_distance_token": 6
         },
         "summary": "The number of motorcyclists killed or seriously injured on London's roads has risen by more than a fifth in a year, Transport for London (TfL) has said."
       },
       "37726408": {
         "edit_stats": {
-          "edit_distance_token": 8,
-          "rouge1": 0.8727272727272728,
-          "rouge2": 0.7924528301886793,
-          "rougeL": 0.8727272727272728
+          "edit_distance_token": 8
         },
         "summary": "A paedophile who was confronted by a vigilante group when he tried to meet an 11-year- old girl he thought was his daughter has been jailed for five years."
       },
       "38110941": {
         "edit_stats": {
-          "edit_distance_token": 11,
-          "rouge1": 0.717948717948718,
-          "rouge2": 0.48648648648648646,
-          "rougeL": 0.6153846153846153
+          "edit_distance_token": 11
         },
         "summary": "In our series of letters from England's cricketers, captain Heather Knight reflects on the past 12 months."
       },
       "38605405": {
         "edit_stats": {
-          "edit_distance_token": 8,
-          "rouge1": 0.7777777777777778,
-          "rouge2": 0.5294117647058824,
-          "rougeL": 0.7777777777777778
+          "edit_distance_token": 8
         },
         "summary": "Carrick Rangers have completed the signing of former Crusaders player Darren McAllister until the end of the season."
       },
       "38651116": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.8421052631578948,
-          "rouge2": 0.7222222222222222,
-          "rougeL": 0.8421052631578948
+          "edit_distance_token": 4
         },
         "summary": "Shrewsbury Town have signed teenage West Bromwich Bromwich Albion player Lloyd Roberts on loan until the end of the campaign."
       },
       "38980980": {
         "edit_stats": {
-          "edit_distance_token": 18,
-          "rouge1": 0.5714285714285714,
-          "rouge2": 0.35,
-          "rougeL": 0.38095238095238093
+          "edit_distance_token": 18
         },
         "summary": "A man who robbed a post office andbistro in a Borders town has been jailed for five-and-a-half years."
       },
       "39507079": {
         "edit_stats": {
-          "edit_distance_token": 8,
-          "rouge1": 0.6060606060606061,
-          "rouge2": 0.5806451612903225,
-          "rougeL": 0.6060606060606061
+          "edit_distance_token": 8
         },
         "summary": "Former New Zealand captain Brendon McCullum has re-signed for Middlesex on a one-year deal."
       },
       "40424712": {
         "edit_stats": {
-          "edit_distance_token": 10,
-          "rouge1": 0.6,
-          "rouge2": 0.5,
-          "rougeL": 0.6
+          "edit_distance_token": 10
         },
         "summary": "Leyton Orient have re-appointed former player and director of professional Darts David Porter as their new chief executive."
       },
       "40426136": {
         "edit_stats": {
-          "edit_distance_token": 13,
-          "rouge1": 0.45161290322580644,
-          "rouge2": 0.20689655172413796,
-          "rougeL": 0.38709677419354843
+          "edit_distance_token": 13
         },
         "summary": "Centuries from Chris Wakely and Matt Keogh put Northants in a strong position against Leicestershire."
       }
     },
-    "summary_completed": 62,
-    "summary_remaining": 13
+    "summary_generated": 18
   },
   {
     "factuality_entities": {
@@ -1348,19 +1149,13 @@
     "summary": {
       "18460302": {
         "edit_stats": {
-          "edit_distance_token": 12,
-          "rouge1": 0.7843137254901961,
-          "rouge2": 0.7346938775510204,
-          "rougeL": 0.7450980392156863
+          "edit_distance_token": 12
         },
         "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009, as part of the government's response to the financial crisis."
       },
       "32918219": {
         "edit_stats": {
-          "edit_distance_token": 21,
-          "rouge1": 0.3,
-          "rouge2": 0.2105263157894737,
-          "rougeL": 0.3
+          "edit_distance_token": 21
         },
         "summary": "We've been following the migrant boat crisis in South East Asia for months."
       },
@@ -1381,28 +1176,19 @@
       },
       "38980980": {
         "edit_stats": {
-          "edit_distance_token": 18,
-          "rouge1": 0.5365853658536585,
-          "rouge2": 0.3076923076923077,
-          "rougeL": 0.3414634146341463
+          "edit_distance_token": 18
         },
         "summary": "A man who robbed a post office andbistro in a Perthshire village at knifepoint has been jailed for eight years."
       },
       "39507079": {
         "edit_stats": {
-          "edit_distance_token": 2,
-          "rouge1": 0.9142857142857143,
-          "rouge2": 0.8484848484848485,
-          "rougeL": 0.9142857142857143
+          "edit_distance_token": 2
         },
         "summary": "Former New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2019 season."
       },
       "40424712": {
         "edit_stats": {
-          "edit_distance_token": 8,
-          "rouge1": 0.6896551724137931,
-          "rouge2": 0.5925925925925927,
-          "rougeL": 0.6896551724137931
+          "edit_distance_token": 8
         },
         "summary": "Leyton Orient have re-appointed former player and director of professional Darts John Porter as their new chairman."
       },
@@ -1410,8 +1196,7 @@
         "summary": "<Failed generation: blocked all beams>"
       }
     },
-    "summary_completed": 64,
-    "summary_remaining": 11
+    "summary_generated": 12
   },
   {
     "factuality_entities": {
@@ -1514,37 +1299,25 @@
     "summary": {
       "18460302": {
         "edit_stats": {
-          "edit_distance_token": 12,
-          "rouge1": 0.7843137254901961,
-          "rouge2": 0.7346938775510204,
-          "rougeL": 0.7450980392156863
+          "edit_distance_token": 12
         },
         "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009, as part of the government's response to the financial crisis."
       },
       "32918219": {
         "edit_stats": {
-          "edit_distance_token": 8,
-          "rouge1": 0.7916666666666666,
-          "rouge2": 0.7391304347826089,
-          "rougeL": 0.7916666666666666
+          "edit_distance_token": 8
         },
         "summary": "We've been following the story of the Rohingya and Bangladeshi migrants who have landed on the shores of Thailand and Malaysia."
       },
       "38980980": {
         "edit_stats": {
-          "edit_distance_token": 19,
-          "rouge1": 0.5238095238095238,
-          "rouge2": 0.3,
-          "rougeL": 0.3333333333333333
+          "edit_distance_token": 19
         },
         "summary": "A man who robbed a post office andbistro in Balerno at knifepoint has been jailed for seven-and-a-half years."
       },
       "39507079": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.8571428571428571,
-          "rouge2": 0.8484848484848485,
-          "rougeL": 0.8571428571428571
+          "edit_distance_token": 3
         },
         "summary": "Former New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2017 campaign."
       },
@@ -1552,8 +1325,7 @@
         "summary": "<Failed generation: blocked all beams>"
       }
     },
-    "summary_completed": 70,
-    "summary_remaining": 5
+    "summary_generated": 6
   },
   {
     "factuality_entities": {
@@ -1656,34 +1428,24 @@
     "summary": {
       "18460302": {
         "edit_stats": {
-          "edit_distance_token": 12,
-          "rouge1": 0.7843137254901961,
-          "rouge2": 0.7346938775510204,
-          "rougeL": 0.7450980392156863
+          "edit_distance_token": 12
         },
         "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009, as part of the government's response to the financial crisis."
       },
       "38980980": {
         "edit_stats": {
-          "edit_distance_token": 11,
-          "rouge1": 0.6046511627906977,
-          "rouge2": 0.3902439024390244,
-          "rougeL": 0.5581395348837208
+          "edit_distance_token": 11
         },
         "summary": "A man has been jailed for six-and-a-half years for a knifepoint robbery at a post office in East Lothian."
       },
       "39507079": {
         "edit_stats": {
-          "edit_distance_token": 2,
-          "rouge1": 0.9142857142857143,
-          "rouge2": 0.8484848484848485,
-          "rougeL": 0.9142857142857143
+          "edit_distance_token": 2
         },
         "summary": "Former New Zealand captain Brendon McCullum has re-signed for Middlesex until the end of the 2020 season."
       }
     },
-    "summary_completed": 72,
-    "summary_remaining": 3
+    "summary_generated": 4
   },
   {
     "factuality_entities": {
@@ -1786,25 +1548,18 @@
     "summary": {
       "18460302": {
         "edit_stats": {
-          "edit_distance_token": 12,
-          "rouge1": 0.7843137254901961,
-          "rouge2": 0.7346938775510204,
-          "rougeL": 0.7450980392156863
+          "edit_distance_token": 12
         },
         "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009, as part of the government's response to the financial crisis."
       },
       "38980980": {
         "edit_stats": {
-          "edit_distance_token": 19,
-          "rouge1": 0.5238095238095238,
-          "rouge2": 0.3,
-          "rougeL": 0.3333333333333333
+          "edit_distance_token": 19
         },
         "summary": "A man who robbed a post office andbistro in Balerno at knifepoint has been jailed for eight and a half years."
       }
     },
-    "summary_completed": 73,
-    "summary_remaining": 2
+    "summary_generated": 3
   },
   {
     "factuality_entities": {
@@ -1906,25 +1661,18 @@
     "summary": {
       "18460302": {
         "edit_stats": {
-          "edit_distance_token": 12,
-          "rouge1": 0.7843137254901961,
-          "rouge2": 0.7346938775510204,
-          "rougeL": 0.7450980392156863
+          "edit_distance_token": 12
         },
         "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009, as part of the government's response to the financial crisis."
       },
       "38980980": {
         "edit_stats": {
-          "edit_distance_token": 19,
-          "rouge1": 0.5238095238095238,
-          "rouge2": 0.3,
-          "rougeL": 0.3333333333333333
+          "edit_distance_token": 19
         },
         "summary": "A man who robbed a post office andbistro in Balerno at knifepoint has been jailed for eight-and-a-half years."
       }
     },
-    "summary_completed": 73,
-    "summary_remaining": 2
+    "summary_generated": 2
   },
   {
     "factuality_entities": {
@@ -2026,10 +1774,7 @@
     "summary": {
       "18460302": {
         "edit_stats": {
-          "edit_distance_token": 12,
-          "rouge1": 0.7843137254901961,
-          "rouge2": 0.7346938775510204,
-          "rougeL": 0.7450980392156863
+          "edit_distance_token": 12
         },
         "summary": "The Funding for Lending Scheme (FLS) was set up by the Bank of England and the Treasury in March 2009, as part of the government's response to the financial crisis."
       },
@@ -2037,7 +1782,6 @@
         "summary": "<Failed generation: blocked all beams>"
       }
     },
-    "summary_completed": 73,
-    "summary_remaining": 2
+    "summary_generated": 2
   }
 ]

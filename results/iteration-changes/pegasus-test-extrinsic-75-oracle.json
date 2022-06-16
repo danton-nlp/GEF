@@ -326,8 +326,7 @@
         "summary": "A man who raped and killed a 12-year-old girl in 1976 has been jailed for life."
       }
     },
-    "summary_completed": 0,
-    "summary_remaining": 75
+    "summary_generated": 100
   },
   {
     "factuality_entities": {
@@ -431,214 +430,144 @@
     "summary": {
       "27422441": {
         "edit_stats": {
-          "edit_distance_token": 17,
-          "rouge1": 0.4888888888888889,
-          "rouge2": 0.37209302325581395,
-          "rougeL": 0.4444444444444445
+          "edit_distance_token": 17
         },
         "summary": "World champion Helen Glover says she is looking forward to the start of the new season with new partner Polly Swann."
       },
       "31126597": {
         "edit_stats": {
-          "edit_distance_token": 8,
-          "rouge1": 0.7142857142857143,
-          "rouge2": 0.46153846153846156,
-          "rougeL": 0.7142857142857143
+          "edit_distance_token": 8
         },
         "summary": "It has been more than a year since 43 students went missing in Mexico."
       },
       "32201626": {
         "edit_stats": {
-          "edit_distance_token": 10,
-          "rouge1": 0.631578947368421,
-          "rouge2": 0.611111111111111,
-          "rougeL": 0.631578947368421
+          "edit_distance_token": 10
         },
         "summary": "County Longford, in the Republic of Ireland's midlands, was once dubbed the \"land of enchantment\" because of its abundant natural beauty."
       },
       "32882502": {
         "edit_stats": {
-          "edit_distance_token": 13,
-          "rouge1": 0.19047619047619047,
-          "rouge2": 0.0,
-          "rougeL": 0.09523809523809523
+          "edit_distance_token": 13
         },
         "summary": "The quiet of the morning had lulled us into a false sense of security."
       },
       "32974091": {
         "edit_stats": {
-          "edit_distance_token": 11,
-          "rouge1": 0.6666666666666667,
-          "rouge2": 0.5806451612903226,
-          "rougeL": 0.6666666666666667
+          "edit_distance_token": 11
         },
         "summary": "A public inquiry has begun into plans for 500 new homes in Kent."
       },
       "34717572": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9411764705882353,
-          "rouge2": 0.875,
-          "rougeL": 0.9411764705882353
+          "edit_distance_token": 1
         },
         "summary": "A 20-year-old man from Norwich has been arrested in connection with the TalkTalk hacking attack."
       },
       "34786804": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9333333333333333,
-          "rouge2": 0.8571428571428571,
-          "rougeL": 0.9333333333333333
+          "edit_distance_token": 1
         },
         "summary": "Former world champion Barry Fordham says he wants to return to Lakeside to play again."
       },
       "34886105": {
         "edit_stats": {
-          "edit_distance_token": 13,
-          "rouge1": 0.42424242424242425,
-          "rouge2": 0.1935483870967742,
-          "rougeL": 0.3636363636363636
+          "edit_distance_token": 13
         },
         "summary": "Chipotle Mexican Grill is facing a second outbreak of E. coli this month, US health officials have said."
       },
       "34985442": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9565217391304348,
-          "rouge2": 0.9253731343283582,
-          "rougeL": 0.9565217391304348
+          "edit_distance_token": 1
         },
         "summary": "A woman with terminal cancer who tried to kill herself because she did not want \"to live in a council flat, be poor or be ugly\" has won the right to refuse dialysis."
       },
       "35291436": {
         "edit_stats": {
-          "edit_distance_token": 4,
-          "rouge1": 0.8888888888888888,
-          "rouge2": 0.823529411764706,
-          "rougeL": 0.8888888888888888
+          "edit_distance_token": 4
         },
         "summary": "One of Scotland's busiest railway stations is to close for more than a month for major engineering work."
       },
       "35706703": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.9310344827586207,
-          "rouge2": 0.8571428571428571,
-          "rougeL": 0.9310344827586207
+          "edit_distance_token": 3
         },
         "summary": "The number of motorcyclists killed or seriously injured on London's roads has risen by more than 20% in the past five years, Transport for London (TfL) has said."
       },
       "36067011": {
         "edit_stats": {
-          "edit_distance_token": 10,
-          "rouge1": 0.6666666666666666,
-          "rouge2": 0.5217391304347826,
-          "rougeL": 0.6666666666666666
+          "edit_distance_token": 10
         },
         "summary": "Philippine presidential candidate Rodrigo Duterte has been accused of misogyny after a video emerged showing him mocking the rape and murder of a missionary."
       },
       "36498934": {
         "edit_stats": {
-          "edit_distance_token": 16,
-          "rouge1": 0.6666666666666667,
-          "rouge2": 0.48979591836734687,
-          "rougeL": 0.6274509803921569
+          "edit_distance_token": 16
         },
         "summary": "Spain's left-wing Podemos (We Can) party and the Socialists (PSOE) are campaigning together for the first time, as the country prepares for a repeat election next month."
       },
       "37068879": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.8947368421052632,
-          "rouge2": 0.8333333333333333,
-          "rougeL": 0.8947368421052632
+          "edit_distance_token": 3
         },
         "summary": "Great Britain's Greg Rutherford is through to the long jump final at the World Indoor Championships in Portland, Oregon."
       },
       "37631654": {
         "edit_stats": {
-          "edit_distance_token": 5,
-          "rouge1": 0.7741935483870969,
-          "rouge2": 0.6206896551724138,
-          "rougeL": 0.7096774193548386
+          "edit_distance_token": 5
         },
         "summary": "Plans for a new main stand at Tynecastle have been given the go-ahead by councillors."
       },
       "37726408": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.96,
-          "rouge2": 0.9166666666666666,
-          "rougeL": 0.96
+          "edit_distance_token": 1
         },
         "summary": "A paedophile who was confronted by a vigilante group when he tried to meet an 11-year-old girl has been jailed for three years."
       },
       "37819847": {
         "edit_stats": {
-          "edit_distance_token": 15,
-          "rouge1": 0.5,
-          "rouge2": 0.13333333333333333,
-          "rougeL": 0.375
+          "edit_distance_token": 15
         },
         "summary": "New Year celebrations have been cancelled in parts of China's largest city, Shanghai."
       },
       "38264015": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9473684210526315,
-          "rouge2": 0.8888888888888888,
-          "rougeL": 0.9473684210526315
+          "edit_distance_token": 1
         },
         "summary": "A man has been jailed for two years for causing the death of a teenager in a car crash."
       },
       "38605405": {
         "edit_stats": {
-          "edit_distance_token": 8,
-          "rouge1": 0.6875000000000001,
-          "rouge2": 0.5333333333333333,
-          "rougeL": 0.6875000000000001
+          "edit_distance_token": 8
         },
         "summary": "Carrick Rangers have signed former Crusaders player Gary McAllister on a one-year deal."
       },
       "38980980": {
         "edit_stats": {
-          "edit_distance_token": 3,
-          "rouge1": 0.8780487804878048,
-          "rouge2": 0.8205128205128205,
-          "rougeL": 0.8780487804878048
+          "edit_distance_token": 3
         },
         "summary": "A man has been jailed for six years for assaulting a post office worker during an armed robbery in Edinburgh."
       },
       "40424712": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9090909090909091,
-          "rouge2": 0.8000000000000002,
-          "rougeL": 0.9090909090909091
+          "edit_distance_token": 1
         },
         "summary": "Leyton Orient have re-appointed Martin Porter as their new chairman."
       },
       "40426136": {
         "edit_stats": {
-          "edit_distance_token": 13,
-          "rouge1": 0.45714285714285713,
-          "rouge2": 0.2424242424242424,
-          "rougeL": 0.39999999999999997
+          "edit_distance_token": 13
         },
         "summary": "Northamptonshire's Jim Wakely and Richard Keogh hit centuries to put their side in a strong position against Leicestershire."
       },
       "40625655": {
         "edit_stats": {
-          "edit_distance_token": 16,
-          "rouge1": 0.7894736842105262,
-          "rouge2": 0.5,
-          "rougeL": 0.4736842105263158
+          "edit_distance_token": 16
         },
         "summary": "A man has been jailed for life for the manslaughter and rape of a 13-year-old girl in 1976."
       }
     },
-    "summary_completed": 52,
-    "summary_remaining": 23
+    "summary_generated": 23
   },
   {
     "factuality_entities": {
@@ -744,70 +673,48 @@
     "summary": {
       "34717572": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9411764705882353,
-          "rouge2": 0.875,
-          "rougeL": 0.9411764705882353
+          "edit_distance_token": 1
         },
         "summary": "A 21-year-old man from Norwich has been arrested in connection with the TalkTalk hacking attack."
       },
       "35291436": {
         "edit_stats": {
-          "edit_distance_token": 6,
-          "rouge1": 0.8108108108108107,
-          "rouge2": 0.6857142857142857,
-          "rougeL": 0.8108108108108107
+          "edit_distance_token": 6
         },
         "summary": "One of Scotland's busiest railway stations is to be closed for more than a year for major engineering work."
       },
       "36498934": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9545454545454546,
-          "rouge2": 0.9047619047619048,
-          "rougeL": 0.9545454545454546
+          "edit_distance_token": 1
         },
         "summary": "Spain's left-wing Podemos (We Can) party and the Socialists (PSOE) have launched their campaigns for next week's general election."
       },
       "37819847": {
         "edit_stats": {
-          "edit_distance_token": 16,
-          "rouge1": 0.1818181818181818,
-          "rouge2": 0.0,
-          "rougeL": 0.1212121212121212
+          "edit_distance_token": 16
         },
         "summary": "A thick smog blanketed the northern part of the Indian capital, Delhi, on Monday morning."
       },
       "38605405": {
         "edit_stats": {
-          "edit_distance_token": 8,
-          "rouge1": 0.6875000000000001,
-          "rouge2": 0.5333333333333333,
-          "rougeL": 0.6875000000000001
+          "edit_distance_token": 8
         },
         "summary": "Carrick Rangers have signed former Crusaders player David McAllister on a two-year deal."
       },
       "40424712": {
         "edit_stats": {
-          "edit_distance_token": 1,
-          "rouge1": 0.9090909090909091,
-          "rouge2": 0.8000000000000002,
-          "rougeL": 0.9090909090909091
+          "edit_distance_token": 1
         },
         "summary": "Leyton Orient have re-appointed Mark Porter as their new chairman."
       },
       "40426136": {
         "edit_stats": {
-          "edit_distance_token": 11,
-          "rouge1": 0.5789473684210527,
-          "rouge2": 0.3888888888888889,
-          "rougeL": 0.5263157894736842
+          "edit_distance_token": 11
         },
         "summary": "Northamptonshire's Jim Wakely and Tom Keogh hit centuries to put their side in a strong position against Leicestershire at Wantage Road."
       }
     },
-    "summary_completed": 68,
-    "summary_remaining": 7
+    "summary_generated": 7
   },
   {
     "factuality_entities": {
@@ -913,37 +820,25 @@
     "summary": {
       "34717572": {
         "edit_stats": {
-          "edit_distance_token": 2,
-          "rouge1": 0.8823529411764706,
-          "rouge2": 0.75,
-          "rougeL": 0.8823529411764706
+          "edit_distance_token": 2
         },
         "summary": "A 17-year-old boy from Norwich has been arrested in connection with the TalkTalk hacking attack."
       },
       "35291436": {
         "edit_stats": {
-          "edit_distance_token": 5,
-          "rouge1": 0.8648648648648648,
-          "rouge2": 0.6857142857142857,
-          "rougeL": 0.8648648648648648
+          "edit_distance_token": 5
         },
         "summary": "One of Scotland's busiest railway stations is to be closed for more than six weeks for major engineering work."
       },
       "38605405": {
         "edit_stats": {
-          "edit_distance_token": 15,
-          "rouge1": 0.6666666666666667,
-          "rouge2": 0.2857142857142857,
-          "rougeL": 0.5333333333333333
+          "edit_distance_token": 15
         },
         "summary": "Carrick Rangers have completed the signing of former Crusaders player Darren McAllister."
       },
       "40424712": {
         "edit_stats": {
-          "edit_distance_token": 10,
-          "rouge1": 0.6,
-          "rouge2": 0.5,
-          "rougeL": 0.6
+          "edit_distance_token": 10
         },
         "summary": "Leyton Orient have re-appointed former player and director of professional Darts David Porter as their new chief executive."
       },
@@ -951,8 +846,7 @@
         "summary": "<Failed generation: blocked all beams>"
       }
     },
-    "summary_completed": 70,
-    "summary_remaining": 5
+    "summary_generated": 5
   },
   {
     "factuality_entities": {
@@ -1063,16 +957,12 @@
       },
       "40424712": {
         "edit_stats": {
-          "edit_distance_token": 8,
-          "rouge1": 0.6896551724137931,
-          "rouge2": 0.5925925925925927,
-          "rougeL": 0.6896551724137931
+          "edit_distance_token": 8
         },
         "summary": "Leyton Orient have re-appointed former player and director of professional Darts John Porter as their new chairman."
       }
     },
-    "summary_completed": 71,
-    "summary_remaining": 4
+    "summary_generated": 4
   },
   {
     "factuality_entities": {
@@ -1176,7 +1066,6 @@
         "summary": "<Failed generation: blocked all beams>"
       }
     },
-    "summary_completed": 74,
-    "summary_remaining": 1
+    "summary_generated": 1
   }
 ]

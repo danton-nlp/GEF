@@ -45,7 +45,7 @@ def collect_iteration_stats(
         current_iteration_stats = {
             "iteration": iteration_idx,
             "summary": {},
-            "summary_remaining": 0,
+            "summary_generated": len(summaries),
         }
         updated_sums_by_id = {}
         for sum_id, data in summaries.items():
@@ -53,12 +53,12 @@ def collect_iteration_stats(
                 updated_sums_by_id[sum_id] = data["summary"]
                 sums_by_id[sum_id] = data["summary"]
                 sum_ents_by_id[sum_id] = data["labeled_entities"]
-                current_iteration_stats["summary_remaining"] += 1
                 current_iteration_stats["summary"][sum_id] = {
                     "summary": data["summary"]
                 }
-        if current_iteration_stats["summary_remaining"] == 0:
-            break
+        print()
+        print(f"Iteration {iteration_idx}")
+        print(f"Summaries generated: {current_iteration_stats['summary_generated']}")
         stats_factuality, eval_sums_by_id = evaluate_factuality(
             sums_by_id,
             sum_ents_by_id,
@@ -74,18 +74,13 @@ def collect_iteration_stats(
         )
         current_iteration_stats["factuality_summary"] = stats_factuality["summaries"]
         current_iteration_stats["factuality_entities"] = stats_factuality["entities"]
-        current_iteration_stats["summary_completed"] = (
-            stats_factuality["summaries"]["total"]
-            - current_iteration_stats["summary_remaining"]
-        )
 
-        print(f"Iteration {iteration_idx}")
-        print(len(iteration_data["summaries"]))
-        print(iteration_data["stats"]["entity"])
-        print(iteration_data["stats"]["summary"])
-        print(f"Summaries completed: {current_iteration_stats['summary_completed']}")
-        print(stats_factuality)
-        print("Updated sums", len(updated_sums_by_id))
+        # print(iteration_data["stats"]["entity"])
+        # print(iteration_data["stats"]["summary"])
+        # print(stats_factuality)
+        print("Updated sums:", len(updated_sums_by_id))
+        if len(updated_sums_by_id) == 4:
+            pprint.pprint(updated_sums_by_id)
 
         # compute edit stats
         if iteration_idx == 0:
@@ -104,7 +99,6 @@ def collect_iteration_stats(
                         # "rouge2": rouge_scores["rouge2"]["f1"],
                         # "rougeL": rouge_scores["rougeL"]["f1"],
                     }
-            pass
 
         iteration_stats.append(current_iteration_stats)
     return iteration_stats
@@ -122,7 +116,7 @@ if __name__ == "__main__":
         set(
             load_shuffled_test_split(xsum_test, args.data_subset, args.test_size).keys()
         )
-        if args.data_subset not in ["debug", "bart-full"]
+        if args.data_subset not in ["bart-debug", "pegasus-debug", "bart-full"]
         else None
     )
 
