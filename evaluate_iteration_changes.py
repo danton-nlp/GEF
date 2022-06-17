@@ -116,7 +116,7 @@ if __name__ == "__main__":
         set(
             load_shuffled_test_split(xsum_test, args.data_subset, args.test_size).keys()
         )
-        if args.data_subset not in ["bart-debug", "pegasus-debug", "bart-full"]
+        if args.data_subset not in ["bart-debug", "pegasus-debug", "bart-full", "pegasus-full"]
         else None
     )
 
