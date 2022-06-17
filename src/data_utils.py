@@ -4,6 +4,8 @@ from datasets import load_dataset
 import random
 from sumtool.storage import get_summary_metrics, get_summaries
 
+from src.generation_utils import SUMMARY_FAILED_GENERATION
+
 
 class XSumDoc(TypedDict):
     document: str
@@ -95,14 +97,21 @@ def load_summaries_from_logs(path, max_iterations=5):
 
     sums_by_id = {}
     sum_ents_by_id = {}
-    for idx in sorted_keys:
-        summaries = logs["iterations"][str(idx)]["summaries"]
+    failed_sums_by_id = {}
+    for iteration_idx in sorted_keys:
+        summaries = logs["iterations"][str(iteration_idx)]["summaries"]
         for sum_id, data in summaries.items():
-            sums_by_id[sum_id] = data["summary"]
-            sum_ents_by_id[sum_id] = data["labeled_entities"]
-        if idx + 1 == max_iterations:
+            # If summary generation failed, we don't update the summary dict
+            # effectively falling back to the previously generated summary
+            if data["summary"] != SUMMARY_FAILED_GENERATION:
+                sums_by_id[sum_id] = data["summary"]
+                sum_ents_by_id[sum_id] = data["labeled_entities"]
+            else:
+                # Keep track of iteration idx when summary generation failed
+                failed_sums_by_id[sum_id] = iteration_idx
+        if iteration_idx + 1 == max_iterations:
             break
-    return (sums_by_id, sum_ents_by_id)
+    return (sums_by_id, sum_ents_by_id, failed_sums_by_id)
 
 
 def get_gold_xsum_data():

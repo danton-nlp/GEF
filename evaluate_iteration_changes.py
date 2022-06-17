@@ -11,7 +11,6 @@ from src.data_utils import (
 import json
 import pprint
 import editdistance
-from src.metrics import rouge
 import os
 from tqdm import tqdm
 
@@ -36,6 +35,7 @@ def collect_iteration_stats(
 
     iteration_stats = []
 
+    failed_sums_by_id = {}
     sums_by_id = {}
     sum_ents_by_id = {}
     baseline_eval_sums_by_id = {}
@@ -56,12 +56,14 @@ def collect_iteration_stats(
                 current_iteration_stats["summary"][sum_id] = {
                     "summary": data["summary"]
                 }
+                failed_sums_by_id[sum_id] = iteration_idx
         print()
         print(f"Iteration {iteration_idx}")
         print(f"Summaries generated: {current_iteration_stats['summary_generated']}")
         stats_factuality, eval_sums_by_id = evaluate_factuality(
             sums_by_id,
             sum_ents_by_id,
+            failed_sums_by_id,
             gold_sums,
             gold_metadata,
             xsum_test,

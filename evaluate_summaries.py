@@ -73,11 +73,12 @@ if __name__ == "__main__":
             MODEL_RESULTS[model_label] = (
                 {sum_id: x["summary"] for sum_id, x in dataset.items()},
                 {},
+                {}
             )
 
         aggregated_results = []
         summary_results = {}
-        for model_label, (sums_by_id, sum_ents_by_id) in MODEL_RESULTS.items():
+        for model_label, (sums_by_id, sum_ents_by_id, failed_sums_by_id) in MODEL_RESULTS.items():
             if args.model_filter == "" or args.model_filter in model_label:
                 filtered_sums_by_id = {
                     sum_id: x for sum_id, x in sums_by_id.items() if sum_id in test_set_ids
@@ -91,6 +92,7 @@ if __name__ == "__main__":
                 agg_metrics, summaries = evaluate_factuality(
                     filtered_sums_by_id,
                     filtered_ents_by_id,
+                    failed_sums_by_id,
                     gold_sums,
                     gold_metadata,
                     xsum_test,

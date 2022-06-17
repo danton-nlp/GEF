@@ -5,7 +5,6 @@ from src.detect_entities import detect_entities
 from src.entity_utils import MarkedEntity, count_entities, filter_entities
 from src.oracle import EntityMatchType, get_entity_annotations, oracle_label_entities
 from src.entity_factuality import ANNOTATION_LABELS
-from src.generation_utils import SUMMARY_FAILED_GENERATION
 from src.metrics import rouge
 import numpy as np
 from tqdm import tqdm
@@ -99,64 +98,61 @@ def evaluate_summary(
         "rouge2": None,
         "rougeL": None,
     }
-    if summary == SUMMARY_FAILED_GENERATION:
-        summary_eval["failed"] = True
-        summary_eval["skipped"] = True
-    else:
-        if compute_rouge:
-            rouge_scores = rouge([summary], [reference])
-            summary_eval["rouge1"] = rouge_scores["rouge1"]["f1"]
-            summary_eval["rouge2"] = rouge_scores["rouge2"]["f1"]
-            summary_eval["rougeL"] = rouge_scores["rougeL"]["f1"]
+    if compute_rouge:
+        rouge_scores = rouge([summary], [reference])
+        summary_eval["rouge1"] = rouge_scores["rouge1"]["f1"]
+        summary_eval["rouge2"] = rouge_scores["rouge2"]["f1"]
+        summary_eval["rougeL"] = rouge_scores["rougeL"]["f1"]
 
-        for ent in labeled_entities:
-            summary_eval["count_entity_total"] += 1
+    for ent in labeled_entities:
+        summary_eval["count_entity_total"] += 1
 
-            if is_gold:
-                if ent["in_source"]:
-                    entity_label = ANNOTATION_LABELS["Non-hallucinated"]
-                else:
-                    entity_label = ANNOTATION_LABELS["Factual"]
+        if is_gold:
+            if ent["in_source"]:
+                entity_label = ANNOTATION_LABELS["Non-hallucinated"]
             else:
-                entity_label = str(ent["label"])
+                entity_label = ANNOTATION_LABELS["Factual"]
+        else:
+            entity_label = str(ent["label"])
 
-                # Detect non-factual predictions from FBS classifier
-                if (
-                    "predicted_label" in ent
-                    and ent["predicted_label"] == ANNOTATION_LABELS["Non-factual"]
-                ):
-                    summary_eval["has_predicted_non_factual"] = True
+            # Detect non-factual predictions from FBS classifier
+            if (
+                "predicted_label" in ent
+                and ent["predicted_label"] == ANNOTATION_LABELS["Non-factual"]
+            ):
+                summary_eval["has_predicted_non_factual"] = True
 
-            # Increment entity label count
-            summary_eval["count_entity_label"][entity_label] += 1
-            summary_eval["count_entity_type"][ent["type"]][entity_label] += 1
-            summary_eval["count_entity_type"][ent["type"]]["total"] += 1
+        # Increment entity label count
+        summary_eval["count_entity_label"][entity_label] += 1
+        summary_eval["count_entity_type"][ent["type"]][entity_label] += 1
+        summary_eval["count_entity_type"][ent["type"]]["total"] += 1
 
-            if not ent["in_source"]:
-                summary_eval["count_entity_extrinsic"] += 1
+        if not ent["in_source"]:
+            summary_eval["count_entity_extrinsic"] += 1
 
-        # If there are any extrinsic hallucinations, then keep the ratio set to
-        # None to flag that the ratio isn't helpful.
-        #
-        # Alternative could be that if there are no extrinsic hallucinations
-        # that we set the ratio to 1, but we think that unfairly inflates the
-        # the aggregate stat for models that include fewer extrinsic
-        # hallucinations.
-        count_entity_labels = summary_eval["count_entity_label"]
-        count_total_extrinsic_hallucinations = (
-            count_entity_labels[ANNOTATION_LABELS["Factual"]]
-            + count_entity_labels[ANNOTATION_LABELS["Non-factual"]]
-        )
-        if count_total_extrinsic_hallucinations > 0:
-            summary_eval["entity_extrinsic_factuality_ratio"] = count_entity_labels[
-                ANNOTATION_LABELS["Factual"]
-            ] / count_total_extrinsic_hallucinations
+    # If there are any extrinsic hallucinations, then keep the ratio set to
+    # None to flag that the ratio isn't helpful.
+    #
+    # Alternative could be that if there are no extrinsic hallucinations
+    # that we set the ratio to 1, but we think that unfairly inflates the
+    # the aggregate stat for models that include fewer extrinsic
+    # hallucinations.
+    count_entity_labels = summary_eval["count_entity_label"]
+    count_total_extrinsic_hallucinations = (
+        count_entity_labels[ANNOTATION_LABELS["Factual"]]
+        + count_entity_labels[ANNOTATION_LABELS["Non-factual"]]
+    )
+    if count_total_extrinsic_hallucinations > 0:
+        summary_eval["entity_extrinsic_factuality_ratio"] = count_entity_labels[
+            ANNOTATION_LABELS["Factual"]
+        ] / count_total_extrinsic_hallucinations
     return summary_eval
 
 
 def evaluate_factuality(
     sums_by_id,
     sum_ents_by_id,
+    failed_sums_by_id,
     gold_sums,
     gold_metadata,
     xsum_test,
@@ -204,6 +200,9 @@ def evaluate_factuality(
             labeled_ents[sum_id],
             compute_rouge,
         )
+        if sum_id in failed_sums_by_id:
+            summary_eval["failed"] = True
+            summary_eval["skipped"] = True
         count_non_factual_extrinsic = summary_eval["count_entity_label"][
             ANNOTATION_LABELS["Non-factual"]
         ]

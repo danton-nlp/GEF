@@ -13,7 +13,9 @@ TEST_SIZE = 100
 def load_data(results_path: str):
     if "results" in results_path:
         # load fbs results
-        sums_by_id, sum_ents_by_id = load_summaries_from_logs(results_path)
+        sums_by_id, sum_ents_by_id, failed_sums_by_id = load_summaries_from_logs(
+            results_path
+        )
     else:
         # load from sumtool
         sums_by_id = {
@@ -21,6 +23,7 @@ def load_data(results_path: str):
             for sum_id, x in get_summaries("xsum", results_path).items()
         }
         sum_ents_by_id = {}
+        failed_sums_by_id = {}
     gold_sums, gold_metadata = get_gold_xsum_data()
     xsum_test = load_xsum_dict("test")
     test_set_ids = set(
@@ -36,6 +39,7 @@ def load_data(results_path: str):
     return (
         filtered_sums_by_id,
         filtered_ents_by_id,
+        failed_sums_by_id,
         gold_sums,
         gold_metadata,
         xsum_test,
@@ -46,6 +50,7 @@ def test_evaluate_factuality_oracle():
     (
         sums_by_id,
         sum_ents_by_id,
+        failed_sums_by_id,
         gold_sums,
         gold_metadata,
         xsum_test,
@@ -53,6 +58,7 @@ def test_evaluate_factuality_oracle():
     agg_metrics, summaries = evaluate_factuality(
         sums_by_id,
         sum_ents_by_id,
+        failed_sums_by_id,
         gold_sums,
         gold_metadata,
         xsum_test,
@@ -107,6 +113,7 @@ def test_evaluate_factuality_oracle_no_skips():
     (
         sums_by_id,
         sum_ents_by_id,
+        failed_sums_by_id,
         gold_sums,
         gold_metadata,
         xsum_test,
@@ -114,6 +121,7 @@ def test_evaluate_factuality_oracle_no_skips():
     agg_metrics, summaries = evaluate_factuality(
         sums_by_id,
         sum_ents_by_id,
+        failed_sums_by_id,
         gold_sums,
         gold_metadata,
         xsum_test,
@@ -138,13 +146,17 @@ def test_evaluate_factuality_oracle_no_skips():
     assert agg_metrics["entities"]["Non-hallucinated"] == 177
     assert agg_metrics["entities"]["total"] == 98 + 16 + 23 + 177
 
-    assert agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"] == 0.9661764705882353
+    assert (
+        agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"]
+        == 0.9661764705882353
+    )
 
 
 def test_evaluate_factuality_classifier():
     (
         sums_by_id,
         sum_ents_by_id,
+        failed_sums_by_id,
         gold_sums,
         gold_metadata,
         xsum_test,
@@ -152,6 +164,7 @@ def test_evaluate_factuality_classifier():
     agg_metrics, summaries = evaluate_factuality(
         sums_by_id,
         sum_ents_by_id,
+        failed_sums_by_id,
         gold_sums,
         gold_metadata,
         xsum_test,
@@ -160,7 +173,7 @@ def test_evaluate_factuality_classifier():
         print_first_n=0,
         is_fbs=True,
         is_oracle=False,
-        count_skips=True
+        count_skips=True,
     )
     assert agg_metrics["summaries"]["total"] == 100
     assert agg_metrics["summaries"]["factual"] == 0.48
@@ -177,7 +190,10 @@ def test_evaluate_factuality_classifier():
     assert agg_metrics["entities"]["Non-hallucinated"] == 145
     assert agg_metrics["entities"]["total"] == 23 + 63 + 11 + 145
 
-    assert agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"] == 0.9450980392156864
+    assert (
+        agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"]
+        == 0.9450980392156864
+    )
 
     # Should sum to 1
     assert (
@@ -196,6 +212,7 @@ def test_evaluate_factuality_classifier_no_skips():
     (
         sums_by_id,
         sum_ents_by_id,
+        failed_sums_by_id,
         gold_sums,
         gold_metadata,
         xsum_test,
@@ -203,6 +220,7 @@ def test_evaluate_factuality_classifier_no_skips():
     agg_metrics, summaries = evaluate_factuality(
         sums_by_id,
         sum_ents_by_id,
+        failed_sums_by_id,
         gold_sums,
         gold_metadata,
         xsum_test,
@@ -229,13 +247,17 @@ def test_evaluate_factuality_classifier_no_skips():
     assert agg_metrics["entities"]["Non-hallucinated"] == 164
     assert agg_metrics["entities"]["total"] == 76 + 14 + 37 + 164
 
-    assert agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"] == 0.8988700564971751
+    assert (
+        agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"]
+        == 0.8988700564971751
+    )
 
 
 def test_evaluate_factuality_baseline():
     (
         sums_by_id,
         sum_ents_by_id,
+        failed_sums_by_id,
         gold_sums,
         gold_metadata,
         xsum_test,
@@ -243,6 +265,7 @@ def test_evaluate_factuality_baseline():
     agg_metrics, summaries = evaluate_factuality(
         sums_by_id,
         sum_ents_by_id,
+        failed_sums_by_id,
         gold_sums,
         gold_metadata,
         xsum_test,
@@ -267,7 +290,10 @@ def test_evaluate_factuality_baseline():
     assert agg_metrics["entities"]["Non-hallucinated"] == 188
     assert agg_metrics["entities"]["total"] == 74 + 94 + 13 + 188
 
-    assert agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"] == 0.8128571428571428
+    assert (
+        agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"]
+        == 0.8128571428571428
+    )
 
     # Should sum to 1
     assert (
@@ -286,6 +312,7 @@ def test_evaluate_factuality_gold():
     (
         sums_by_id,
         sum_ents_by_id,
+        failed_sums_by_id,
         gold_sums,
         gold_metadata,
         xsum_test,
@@ -293,6 +320,7 @@ def test_evaluate_factuality_gold():
     agg_metrics, summaries = evaluate_factuality(
         sums_by_id,
         sum_ents_by_id,
+        failed_sums_by_id,
         gold_sums,
         gold_metadata,
         xsum_test,
