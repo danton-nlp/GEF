@@ -118,6 +118,7 @@ if __name__ == "__main__":
                 is_fbs="fbs" in model_label.lower(),
                 is_oracle="oracle" in model_label.lower(),
                 count_skips=args.count_skips,
+                compute_rouge=False
             )
             pp.pprint(agg_metrics)
             aggregated_results.append(
@@ -134,9 +135,6 @@ if __name__ == "__main__":
                     agg_metrics["summaries"]["failed"],
                     agg_metrics["summaries"]["ents_per_sum"],
                     agg_metrics["summaries"]["sum_with_extrinsic"],
-                    agg_metrics["rouge1"],
-                    agg_metrics["rouge2"],
-                    agg_metrics["rougeL"],
                 ]
             )
             for sum_id, sum_metrics in summaries.items():
@@ -160,9 +158,6 @@ if __name__ == "__main__":
             "failed",
             "ents_per_sum",
             "sum_with_extrinsic",
-            "rouge1",
-            "rouge2",
-            "rougeL",
         ],
     ).set_index("model")
 

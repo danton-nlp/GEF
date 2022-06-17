@@ -69,8 +69,6 @@ def test_evaluate_factuality_oracle():
     assert agg_metrics["summaries"]["non_factual"] == 0.12
     assert agg_metrics["summaries"]["skipped"] == 0.23
     assert agg_metrics["summaries"]["failed"] == 7
-    assert agg_metrics["rouge1"] > 0.46
-    assert agg_metrics["rouge2"] > 0.22
     assert agg_metrics["entities"]["Unknown"] == 0
     assert agg_metrics["entities"]["Factual Hallucination"] == 88
     assert agg_metrics["entities"]["Intrinsic Hallucination"] == 14
@@ -129,8 +127,6 @@ def test_evaluate_factuality_oracle_no_skips():
     assert agg_metrics["summaries"]["factual"] == 0.65
     assert agg_metrics["summaries"]["non_factual"] == 0.35
     assert agg_metrics["summaries"]["failed"] == 7
-    assert agg_metrics["rouge1"] > 0.46
-    assert agg_metrics["rouge2"] > 0.22
     assert agg_metrics["entities"]["Unknown"] == 0
     assert agg_metrics["entities"]["Factual Hallucination"] == 98
     assert agg_metrics["entities"]["Intrinsic Hallucination"] == 16
