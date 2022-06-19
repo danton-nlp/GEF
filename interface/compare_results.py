@@ -52,10 +52,7 @@ def render_compare_results():
             "non_factual",
             "non_factual_intrinsic",
             "non_factual_extrinsic",
-            "skipped",
-            "rouge1",
-            "rouge2",
-            "rougeL",
+            "skipped"
         ],
     )
 
