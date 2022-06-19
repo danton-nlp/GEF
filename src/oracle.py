@@ -41,6 +41,7 @@ def is_entity_match(
         entity_span_match = (
             entity["start"] == annotation["start"]
             and entity["end"] == annotation["end"]
+            and entity["ent"] == annotation["ent"]
         )
         return entity_span_match and entity_contained
     else:
