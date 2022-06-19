@@ -12,28 +12,29 @@ if __name__ == "__main__":
         "BartGEF": load_summaries_from_logs(
             "results/fbs-logs/bart-full-classifier-knnv1.json", max_iterations=5
         ),
-        # "pegasus_gef": load_summaries_from_logs(
-        #     "results/fbs-logs/bart-full-classifier-knnv1.json", max_iterations=5
-        # ),
+        "PegasusGEF": load_summaries_from_logs(
+            "results/fbs-logs/bart-full-classifier-knnv1.json", max_iterations=5
+        ),
     }
 
     sumtool_models = [
-        ("facebook-bart-large-xsum", "BartBaseline"),
-        ("meng-3000", "MengRL"),  # Hallucinated, but factual! Paper
-        ("pinocchio", "Pinocchio"),  # King et. al paper
-        ("chen-corrector", "Corrector"),  # Chen. et al replication project
-        ("google-pegasus-xsum", "PegasusBaseline"),
+        # ("facebook-bart-large-xsum", "BartBaseline"),
+        # ("meng-rl", "MengRL"),  # Hallucinated, but factual! Paper
+        # ("pinocchio", "Pinocchio"),  # King et. al paper
+        # ("chen-corrector", "Corrector"),  # Chen. et al replication project
+        # ("google-pegasus-xsum", "PegasusBaseline"),
     ]
     for (sumtool_name, model_label) in sumtool_models:
         dataset = get_summaries("xsum", sumtool_name)
         MODEL_RESULTS[model_label] = (
             {sum_id: x["summary"] for sum_id, x in dataset.items()},
             {},
+            {}
         )
 
     rouge_scores_by_model = {}
 
-    for model_label, (sums_by_id, sum_ents_by_id) in MODEL_RESULTS.items():
+    for model_label, (sums_by_id, sum_ents_by_id, failed_sums_by_id) in MODEL_RESULTS.items():
         rouge1 = []
         rouge2 = []
         rougeL = []
@@ -48,10 +49,13 @@ if __name__ == "__main__":
             "RougeTwo": np.mean(rouge2),
             "RougeL": np.mean(rougeL),
         }
+        print(model_label, rouge_scores_by_model[model_label])
 
     with open("results/latex/rouge_scores.tex", "w") as f:
         for model_label, results in rouge_scores_by_model.items():
+            print(model_label)
             for metric_label, metric in results.items():
+                print(f"{metric_label}: {metric * 100:.2f}")
                 str = (
                     f"\\newcommand{{\\{model_label}{metric_label}}}{{{metric * 100:.2f}}}"
                     + "\n"
