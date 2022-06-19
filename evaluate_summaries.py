@@ -54,7 +54,7 @@ if __name__ == "__main__":
 
         bart_models = [
             ("facebook-bart-large-xsum", "baseline-bart"),
-            ("meng-3000", "meng-3000"),  # Hallucinated, but factual! Paper
+            ("meng-rl", "meng-rl"),  # Hallucinated, but factual! Paper
             ("pinocchio", "pinocchio"),  # King et. al paper
             ("chen-corrector", "corrector"),  # Chen. et al replication project
             # ("entity-filter-v2", "filtered"),  # Nan. et al
@@ -160,7 +160,7 @@ if __name__ == "__main__":
             ),
             ("corrector", "Corrector"),
             ("pinocchio", "Pinocchio"),
-            ("meng-3000", "MengRL"),
+            ("meng-rl", "MengRL"),
         ]
         label_mapping = [
             ("factual", "Factual"),
