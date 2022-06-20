@@ -52,7 +52,11 @@ def render_compare_results():
             "non_factual",
             "non_factual_intrinsic",
             "non_factual_extrinsic",
-            "skipped"
+            # "skipped"
+            "extrinsic_factuality_ratio",
+            "extrinsic_entity_count",
+            "sum_with_extrinsic",
+            "sum_with_extrinsic_factual"
         ],
     )
 
