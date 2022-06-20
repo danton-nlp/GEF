@@ -1,5 +1,6 @@
 from sumtool.storage import store_model_summaries, get_summaries
 import json
+import numpy as np
 
 
 if __name__ == "__main__":
@@ -13,23 +14,34 @@ if __name__ == "__main__":
         for line in f:
             obj = json.loads(line)
             sum_id = obj["id"]
-            fallback = False
             pinocchio_summary = obj["pinocchio_predicted"].strip()
 
-            if pinocchio_summary == "":
-                n_missing += 1
-                fallback = True
-            elif obj["num_pinocchio_fires"] == 0:
-                n_pinocchio_zero += 1
-                fallback = True
+            if obj['full_output'] is not None:
+                obj['full_entropy'] = np.mean([ele[1] for ele in obj['full_output']])
+            else:
+                obj['full_entropy'] = None
 
-            if fallback:
+            if (
+                obj["num_pinocchio_fires"] == 0
+            ):
+                n_pinocchio_zero += 1
+                sums_by_id_with_skip[sum_id] = obj["bart_predicted"].strip()
                 sums_by_id_fallback_theirs[sum_id] = obj["bart_predicted"].strip()
                 sums_by_id_fallback_ours[sum_id] = baseline_sums[sum_id]["summary"]
-            else:
+            elif (
+                pinocchio_summary != ""
+                and (
+                    (obj["num_pinocchio_fires"] == 1 and obj["full_entropy"] < 2.5)
+                    or (obj["num_pinocchio_fires"] == 2 and obj["full_entropy"] < 2.75)
+                )
+            ):
+                sums_by_id_with_skip[sum_id] = pinocchio_summary
                 sums_by_id_fallback_theirs[sum_id] = pinocchio_summary
                 sums_by_id_fallback_ours[sum_id] = pinocchio_summary
-                sums_by_id_with_skip[sum_id] = pinocchio_summary
+            else:
+                n_missing += 1
+                sums_by_id_fallback_theirs[sum_id] = obj["bart_predicted"].strip()
+                sums_by_id_fallback_ours[sum_id] = baseline_sums[sum_id]["summary"]
 
     print(f"{n_missing} missing reverted to baseline")
     print(f"{n_pinocchio_zero} with pinocchio fire 0 reverted to baseline")
@@ -60,4 +72,6 @@ if __name__ == "__main__":
         },
         sums_by_id_with_skip,
     )
-    print(f"Persisted ({len(sums_by_id_fallback_ours), len(sums_by_id_fallback_theirs), len(sums_by_id_with_skip)}) summaries")
+    print(
+        f"Persisted ({len(sums_by_id_fallback_ours), len(sums_by_id_fallback_theirs), len(sums_by_id_with_skip)}) summaries"
+    )

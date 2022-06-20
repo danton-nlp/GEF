@@ -77,17 +77,17 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Saudi Arabia is one of the world's most powerful countries.",
-    "pinocchio_count_extrinsic": 2,
+    "pinocchio_count_extrinsic": 1,
     "pinocchio_count_extrinsic_factual": 1,
-    "pinocchio_extrinsic_factuality_ratio": 0.5,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": false,
-    "pinocchio_is_non_factual": true,
-    "pinocchio_is_non_factual_extrinsic": true,
+    "pinocchio_is_factual": true,
+    "pinocchio_is_non_factual": false,
+    "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "The Kingdom of Saudi Arabia, also known as the ''Kingdom'', was established in 1932 as an oil-rich desert kingdom, and has been a key ally of the United States."
+    "pinocchio_summary": "The Kingdom of Saudi Arabia is the largest country in the world."
   },
   "14766406": {
     "baseline-bart_count_extrinsic": 1,
@@ -1427,7 +1427,7 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Villagers in a Cumbrian village have objected to plans to build up to 100 new homes.",
-    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic": 4,
     "pinocchio_count_extrinsic_factual": 0,
     "pinocchio_extrinsic_factuality_ratio": 0.0,
     "pinocchio_has_failed": false,
@@ -1437,7 +1437,7 @@
     "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "A majority of residents in a village in the Pembrokeshire Wolds want a developer out of their village, in a bid for housing, that could see more people in the area."
+    "pinocchio_summary": "More than 1,000 people have objected to plans to build up to 1,200 homes in a village in the Cumbrian Wolds."
   },
   "32132840": {
     "baseline-bart_count_extrinsic": 1,
@@ -1887,7 +1887,7 @@
     "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "A retailer has been ordered to pay more than a million pounds in corporation tax after it was found to have used a scheme that allowed it to claim tax relief on profits made overseas."
+    "pinocchio_summary": "The High Court has ruled in favour of HM Revenue & Customs (HMRC) in a case involving the retailer Next."
   },
   "33044932": {
     "baseline-bart_count_extrinsic": 1,
@@ -2057,7 +2057,7 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "The world premiere of the new animated film Minions has taken place in Los Angeles.",
-    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic": 2,
     "pinocchio_count_extrinsic_factual": 0,
     "pinocchio_extrinsic_factuality_ratio": 0.0,
     "pinocchio_has_failed": false,
@@ -2067,7 +2067,7 @@
     "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "The stars of Minions have made an appearance at the premiere of the film at Mr Avenue. and the red carpet was a hit."
+    "pinocchio_summary": "The world premiere of Minions has taken place in Los Angeles, USA."
   },
   "33317600": {
     "baseline-bart_count_extrinsic": 2,
@@ -2147,7 +2147,7 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "The former Irish language broadcaster and writer, M\u00e1irt\u00edn \u00d3 Murch\u00fa, has died.",
-    "pinocchio_count_extrinsic": 3,
+    "pinocchio_count_extrinsic": 2,
     "pinocchio_count_extrinsic_factual": 0,
     "pinocchio_extrinsic_factuality_ratio": 0.0,
     "pinocchio_has_failed": false,
@@ -2157,7 +2157,7 @@
     "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "M\u00e1irt\u00edn \u00d3 Murch\u00fa, the former RT\u00c9 broadcaster and former head of Irish language programmes at the Irish state broadcaster, RT\u00c9,  is thought to be the second-in-age father of the famous variety show, Trom agus \u00c9adrom (Trom agu agus Eadrom)."
+    "pinocchio_summary": "The former RT\u00c9 broadcaster M\u00e1irt\u00edn \u00d3 Murch\u00fa has died in Dublin."
   },
   "33648595": {
     "baseline-bart_count_extrinsic": 1,
@@ -3137,9 +3137,9 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Nour is one of three sisters held hostage by so-called Islamic State (IS) in the Syrian city of Raqqa in 2014.",
-    "pinocchio_count_extrinsic": 4,
-    "pinocchio_count_extrinsic_factual": 1,
-    "pinocchio_extrinsic_factuality_ratio": 0.25,
+    "pinocchio_count_extrinsic": 5,
+    "pinocchio_count_extrinsic_factual": 3,
+    "pinocchio_extrinsic_factuality_ratio": 0.6,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": false,
@@ -3147,7 +3147,7 @@
     "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Nour, a 15-year-year has lived in Mosul, a city controlled by the so-called Islamic state (IS) for more than a year, and worked as a journalist."
+    "pinocchio_summary": "Nour, a 15-year-old girl, was caught up in the fighting between so-called Islamic State (IS) and government forces in the Syrian city of Raqqa in 2014."
   },
   "35038754": {
     "baseline-bart_count_extrinsic": 0,
@@ -3317,9 +3317,9 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "A new website has been launched in England to help people choose the best care home for their loved ones.",
-    "pinocchio_count_extrinsic": 0,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": true,
@@ -3327,7 +3327,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "A new website allowing people to check on the quality of care they receive in their home or care home for a loved one has opened to the public."
+    "pinocchio_summary": "People in England can now check on the quality of care they receive at care homes on a government website."
   },
   "35237411": {
     "baseline-bart_count_extrinsic": 3,
@@ -3497,17 +3497,17 @@
     "meng-rl_is_non_factual_intrinsic": true,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Worcestershire all-rounder Tom Shantry has signed a two-year contract extension.",
-    "pinocchio_count_extrinsic": 0,
+    "pinocchio_count_extrinsic": 1,
     "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_extrinsic_factuality_ratio": 0.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": false,
     "pinocchio_is_non_factual": true,
-    "pinocchio_is_non_factual_extrinsic": false,
+    "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": true,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Worcestershire all-rounder Mr Shantry has signed a new two-year deal."
+    "pinocchio_summary": "Worcestershire all-rounder Tom Shantry has signed a new three-year contract with the county."
   },
   "35308608": {
     "baseline-bart_count_extrinsic": 1,
@@ -4397,9 +4397,9 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "New York City's City Council has approved a bill to crack down on so-called street performers in Times Square.",
-    "pinocchio_count_extrinsic": 0,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": true,
@@ -4407,7 +4407,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "New York is set to ban topless street performers in Times Square, after the city voted to ban them from performing in the area's pedestrian areas."
+    "pinocchio_summary": "The New York City Council has approved a bill to crack down on so-called street performers in Times Square."
   },
   "36061830": {
     "baseline-bart_count_extrinsic": 4,
@@ -5027,17 +5027,17 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Three men have been found guilty of blowing up cash machines and stealing more than \u00a3100,000.",
-    "pinocchio_count_extrinsic": 1,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": 0.0,
+    "pinocchio_count_extrinsic": 2,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 0.5,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": false,
     "pinocchio_is_non_factual": true,
     "pinocchio_is_non_factual_extrinsic": true,
-    "pinocchio_is_non_factual_intrinsic": true,
+    "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "A gang has been found guilty of blowing up cash machines and stealing more than half a tonnes of Scottish banknotes worth more than  \u00c2\u00a31m in Aberdeen, Aberdeenshire and AberdeEN."
+    "pinocchio_summary": "Three men have been found guilty of blowing up cash machines and stealing more than \u00a3200,000."
   },
   "36540012": {
     "baseline-bart_count_extrinsic": 1,
@@ -5117,17 +5117,17 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "A collection of photographs taken during the 1970s Rock Against Racism movement has gone on display.",
-    "pinocchio_count_extrinsic": 0,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": true,
-    "pinocchio_is_non_factual": false,
+    "pinocchio_is_factual": false,
+    "pinocchio_is_non_factual": true,
     "pinocchio_is_non_factual_extrinsic": false,
-    "pinocchio_is_non_factual_intrinsic": false,
+    "pinocchio_is_non_factual_intrinsic": true,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "A photographer has revealed his collection of photographs from the Rock Against Racism (RAR) movement as part of an exhibition of images taken during the movement."
+    "pinocchio_summary": "A collection of photographs taken during the 1970s Rock Against Racism (RAR) movement have gone on display in Leeds."
   },
   "36555657": {
     "baseline-bart_count_extrinsic": 3,
@@ -5208,16 +5208,16 @@
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Viacom chief executive Philippe Dauman has been removed from the board of the company run by his father-in-law, Sumner Redstone.",
     "pinocchio_count_extrinsic": 3,
-    "pinocchio_count_extrinsic_factual": 1,
-    "pinocchio_extrinsic_factuality_ratio": 0.3333333333333333,
+    "pinocchio_count_extrinsic_factual": 2,
+    "pinocchio_extrinsic_factuality_ratio": 0.6666666666666666,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": false,
     "pinocchio_is_non_factual": true,
     "pinocchio_is_non_factual_extrinsic": true,
-    "pinocchio_is_non_factual_intrinsic": true,
+    "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "The chief executive of Viacom has been removed from the board of the company he is a director of, as part of a bid by the head of the media empire, Viacome, to oust Sumner Redstone, from the company's board."
+    "pinocchio_summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company owned by Sumner Redstone."
   },
   "36635880": {
     "baseline-bart_count_extrinsic": 2,
@@ -6107,17 +6107,17 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Police are \"extremely concerned\" for the safety of a 13-year-old girl who has gone missing from Greater Manchester.",
-    "pinocchio_count_extrinsic": 0,
+    "pinocchio_count_extrinsic": 1,
     "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_extrinsic_factuality_ratio": 0.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": true,
-    "pinocchio_is_non_factual": false,
-    "pinocchio_is_non_factual_extrinsic": false,
+    "pinocchio_is_factual": false,
+    "pinocchio_is_non_factual": true,
+    "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Police are \"extremely concerned\" for the safety and well-being of the missing children from Greater Manchester who are believed to have been taken out of the country."
+    "pinocchio_summary": "Police are \"extremely concerned\" for the welfare of a 13-year-old girl who has gone missing from her home in Greater Manchester."
   },
   "37603756": {
     "baseline-bart_count_extrinsic": 2,
@@ -6647,17 +6647,17 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "An outbreak of Dengue fever in Burkina Faso has killed at least 12 people, officials say.",
-    "pinocchio_count_extrinsic": 0,
+    "pinocchio_count_extrinsic": 1,
     "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_extrinsic_factuality_ratio": 0.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": true,
-    "pinocchio_is_non_factual": false,
-    "pinocchio_is_non_factual_extrinsic": false,
+    "pinocchio_is_factual": false,
+    "pinocchio_is_non_factual": true,
+    "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Burkina Faso has reported an outbreak of dengue fever in the country's north-eastern region, and the World Health Organization is warning that it is a major cause of illness worldwide, and that the disease is spreading quickly."
+    "pinocchio_summary": "An outbreak of Dengue fever in Burkina Faso has killed at least 11 people, the World Health Organization says."
   },
   "38113695": {
     "baseline-bart_count_extrinsic": 1,
@@ -6917,7 +6917,7 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "A man has been arrested in connection with the deaths of a man and a woman in Dundee.",
-    "pinocchio_count_extrinsic": 2,
+    "pinocchio_count_extrinsic": 1,
     "pinocchio_count_extrinsic_factual": 0,
     "pinocchio_extrinsic_factuality_ratio": 0.0,
     "pinocchio_has_failed": false,
@@ -6927,7 +6927,7 @@
     "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Police in Dundee have been given access to video footage as part of an investigation into the deaths of the bodies of at least a 40-year in a house in the city."
+    "pinocchio_summary": "A 33-year-old man has been arrested in connection with the deaths of a man and a woman in Dundee."
   },
   "38399324": {
     "baseline-bart_count_extrinsic": 3,
@@ -7102,12 +7102,12 @@
     "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": false,
-    "pinocchio_is_non_factual": true,
+    "pinocchio_is_factual": true,
+    "pinocchio_is_non_factual": false,
     "pinocchio_is_non_factual_extrinsic": false,
-    "pinocchio_is_non_factual_intrinsic": true,
+    "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Mormon Tabernacle Choir and the Radio City Rockettes will join the Rockettes at Donald Trump's inauguration as US president-elect."
+    "pinocchio_summary": "The Mormon Tabernacle Choir and the Radio City Rockettes are to perform at Donald Trump's inauguration."
   },
   "38470818": {
     "baseline-bart_count_extrinsic": 3,
@@ -7277,17 +7277,17 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Bromley moved out of the National League relegation zone with a 1-0 win over Torquay.",
-    "pinocchio_count_extrinsic": 3,
-    "pinocchio_count_extrinsic_factual": 2,
-    "pinocchio_extrinsic_factuality_ratio": 0.6666666666666666,
+    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": false,
-    "pinocchio_is_non_factual": true,
-    "pinocchio_is_non_factual_extrinsic": true,
+    "pinocchio_is_factual": true,
+    "pinocchio_is_non_factual": false,
+    "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Bromley beat Torquay in the National League for a fourth time this weekend."
+    "pinocchio_summary": "Bromley moved into the National League play-off places with victory over Torquay."
   },
   "38983532": {
     "baseline-bart_count_extrinsic": 4,
@@ -7377,7 +7377,7 @@
     "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "South Africa midfielder Nia Nsiala has signed for Arsenal Ladies from Liverpool Ladies in a \u00a32.2m signing for 2017."
+    "pinocchio_summary": "Arsenal Ladies have signed Ivory Coast international midfielder Nana Attakora on a two-year contract."
   },
   "39431070": {
     "baseline-bart_count_extrinsic": 1,
@@ -7547,9 +7547,9 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "The families of two inmates who killed themselves in prison have launched a legal challenge against the prison governor.",
-    "pinocchio_count_extrinsic": 0,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_count_extrinsic": 2,
+    "pinocchio_count_extrinsic_factual": 2,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": true,
@@ -7557,7 +7557,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "The families of a prisoner killed by a suicide attempt at a prison in Milton Keynes say the governor and secretary of state have breached the human rights of their loved ones."
+    "pinocchio_summary": "The families of two inmates who killed themselves at a prison in Buckinghamshire have launched a legal challenge against the authorities."
   },
   "39556625": {
     "baseline-bart_count_extrinsic": 2,
@@ -7817,17 +7817,17 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "A \"depraved\" paedophile who groomed a 12-year-old boy via Facebook has been jailed for 12 years.",
-    "pinocchio_count_extrinsic": 0,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_count_extrinsic": 2,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 0.5,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": true,
-    "pinocchio_is_non_factual": false,
-    "pinocchio_is_non_factual_extrinsic": false,
+    "pinocchio_is_factual": false,
+    "pinocchio_is_non_factual": true,
+    "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "A \"depraved\" paedophile who preyed on a young boy on social media before sexually abusing him on two further occasions has more-factory jail. and was ordered to sign the register."
+    "pinocchio_summary": "A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for 12 years."
   },
   "39753996": {
     "baseline-bart_count_extrinsic": 2,
@@ -7997,17 +7997,17 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "A newspaper has accused the Conservatives of being \"archaic\" after it was told it could not film Theresa May's visit to Cornwall.",
-    "pinocchio_count_extrinsic": 1,
-    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_count_extrinsic": 2,
+    "pinocchio_count_extrinsic_factual": 2,
     "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": false,
-    "pinocchio_is_non_factual": true,
+    "pinocchio_is_factual": true,
+    "pinocchio_is_non_factual": false,
     "pinocchio_is_non_factual_extrinsic": false,
-    "pinocchio_is_non_factual_intrinsic": true,
+    "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "A Cornwall newspaper has accused the Conservatives of being \"archaic\" and \"20th-Century in the way its journalists covered Prime Minister Mr  visit to the Cornish village of Helston."
+    "pinocchio_summary": "A local newspaper has accused the Conservatives of being \"archaic\" after it was told it could not film Theresa May's visit to a Cornwall factory."
   },
   "39807248": {
     "baseline-bart_count_extrinsic": 1,
@@ -8267,17 +8267,17 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Chelsea have won their second Premier League title.",
-    "pinocchio_count_extrinsic": 0,
+    "pinocchio_count_extrinsic": 1,
     "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_extrinsic_factuality_ratio": 0.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": false,
     "pinocchio_is_non_factual": true,
-    "pinocchio_is_non_factual_extrinsic": false,
-    "pinocchio_is_non_factual_intrinsic": true,
+    "pinocchio_is_non_factual_extrinsic": true,
+    "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Championship winners are a regularity at Ms  but who would you pick to be in your combined XI from the club's first and most recent title-winning team?"
+    "pinocchio_summary": "Chelsea have won their second Premier League title in a row."
   },
   "39959265": {
     "baseline-bart_count_extrinsic": 3,
@@ -8357,8 +8357,8 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Swansea City boss Paul Clement says he does not know whether John Terry will continue as a player.",
-    "pinocchio_count_extrinsic": 1,
-    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_count_extrinsic": 3,
+    "pinocchio_count_extrinsic_factual": 3,
     "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
@@ -8367,7 +8367,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Swansea's manager Mr  has said he is unsure whether Chelsea captain Mr Terry will continue to play for the club next season."
+    "pinocchio_summary": "Swansea City head coach Paul Clement says he does not know whether John Terry will continue as a player."
   },
   "40243246": {
     "baseline-bart_count_extrinsic": 1,
@@ -8627,17 +8627,17 @@
     "meng-rl_is_non_factual_intrinsic": true,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Welsh light-welterweight Liam Evans won a unanimous points decision over former world title challenger David Ormond in Cardiff.",
-    "pinocchio_count_extrinsic": 1,
-    "pinocchio_count_extrinsic_factual": 1,
-    "pinocchio_extrinsic_factuality_ratio": 1.0,
+    "pinocchio_count_extrinsic": 4,
+    "pinocchio_count_extrinsic_factual": 0,
+    "pinocchio_extrinsic_factuality_ratio": 0.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": true,
-    "pinocchio_is_non_factual": false,
-    "pinocchio_is_non_factual_extrinsic": false,
+    "pinocchio_is_factual": false,
+    "pinocchio_is_non_factual": true,
+    "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Welsh lightweight Mr Ormond is out of the lightweight title fight after losing a points victory to Mr Evans at the O2 Arena."
+    "pinocchio_summary": "Welshman Liam Evans retained his WBO lightweight title with a unanimous points victory over England's David Ormond in Cardiff."
   },
   "40426136": {
     "baseline-bart_count_extrinsic": 5,
@@ -8717,17 +8717,17 @@
     "meng-rl_is_non_factual_intrinsic": true,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Northants set Leicestershire a final-day target of 350 to win, thanks to a century stand between Sam Wakely and Richard Keogh.",
-    "pinocchio_count_extrinsic": 6,
+    "pinocchio_count_extrinsic": 5,
     "pinocchio_count_extrinsic_factual": 2,
-    "pinocchio_extrinsic_factuality_ratio": 0.3333333333333333,
+    "pinocchio_extrinsic_factuality_ratio": 0.4,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": false,
     "pinocchio_is_non_factual": true,
     "pinocchio_is_non_factual_extrinsic": true,
-    "pinocchio_is_non_factual_intrinsic": true,
+    "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Mr Wakely scored his second first-class century of the day and Mr Keights scored an unbeaten century as Leicestershield beat the day-final score on the third day at Northiam Road on a thrilling final day."
+    "pinocchio_summary": "Northamptonshire pair Sam Wakely and Andy Keogh hit centuries as they put their side in a strong position against Leicestershire at Grace Road."
   },
   "40498102": {
     "baseline-bart_count_extrinsic": 1,
@@ -8807,9 +8807,9 @@
     "meng-rl_is_non_factual_intrinsic": true,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Iranian cartoonists have drawn parallels between Donald Trump and Adolf Hitler in a new competition.",
-    "pinocchio_count_extrinsic": 0,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": true,
@@ -8817,7 +8817,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "An exhibition in Iran of cartoons comparing Mr Trump with Adolf Hitler has attracted more-fears-than-a-thrash of comparisons between the US president and Nazism, with the winning image featuring a swastika."
+    "pinocchio_summary": "An exhibition in Iran of cartoonists' depictions of Donald Trump has drawn comparisons with Adolf Hitler."
   },
   "40551256": {
     "baseline-bart_count_extrinsic": 2,
