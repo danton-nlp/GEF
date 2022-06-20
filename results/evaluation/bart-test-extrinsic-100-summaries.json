@@ -177,7 +177,7 @@
     "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "An 18-year-old man has been arrested in connection with the phone-hacking scandal at the News of the World, Scotland Yard has said."
+    "pinocchio_summary": "An 18-year-old man has been arrested in connection with the phone-hacking scandal at the News of the World."
   },
   "17996567": {
     "baseline-bart_count_extrinsic": 1,
@@ -265,9 +265,9 @@
     "pinocchio_is_factual": false,
     "pinocchio_is_non_factual": true,
     "pinocchio_is_non_factual_extrinsic": true,
-    "pinocchio_is_non_factual_intrinsic": true,
+    "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "A plan to cut home-to-school transport subsidies for children in Cumbria and make \u00a31.3m of cuts to the way they are paid for in a bid to save the county council has been delayed."
+    "pinocchio_summary": "Plans to cut home-to-school transport subsidies in Gloucestershire have been put on hold."
   },
   "18239960": {
     "baseline-bart_count_extrinsic": 1,
@@ -347,17 +347,17 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "There is a \"pattern of behaviour\" within the police service in England and Wales where officers who make complaints about race are treated unfairly, the National Police Association says.",
-    "pinocchio_count_extrinsic": 2,
-    "pinocchio_count_extrinsic_factual": 2,
-    "pinocchio_extrinsic_factuality_ratio": 1.0,
+    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic_factual": 0,
+    "pinocchio_extrinsic_factuality_ratio": 0.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": true,
-    "pinocchio_is_non_factual": false,
-    "pinocchio_is_non_factual_extrinsic": false,
+    "pinocchio_is_factual": false,
+    "pinocchio_is_non_factual": true,
+    "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "A senior police officer has told the BBC there is a \"pattern of behaviour\" in the police service in England and Wales where officers who make complaints about race are treated unfairly, it has been claimed."
+    "pinocchio_summary": "There is a \"pattern of behaviour\" within the police service where black and ethnic minority officers are treated unfairly, the National Police Chiefs' Association says."
   },
   "19541955": {
     "baseline-bart_count_extrinsic": 1,
@@ -447,7 +447,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "India may have won just one medal at the London Paralympics, but the media seems to have missed a chance to tell the story of the achievements of its disabled athletes in detail."
+    "pinocchio_summary": "India may have won just one medal at the London Paralympics, but the country's achievements have been hailed by the international media."
   },
   "20191016": {
     "baseline-bart_count_extrinsic": 1,
@@ -527,9 +527,9 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Plans have been drawn up to transform one of Aberystwyth's most iconic buildings.",
-    "pinocchio_count_extrinsic": 0,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": true,
@@ -537,7 +537,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Plans to transform one of Aberystwyth's most famous buildings into a world-class postgraduate centre and cultural quarter are to be studied by a university."
+    "pinocchio_summary": "Plans have been drawn up to transform one of Wales' most iconic buildings into a postgraduate centre."
   },
   "25285256": {
     "baseline-bart_count_extrinsic": 1,
@@ -707,17 +707,17 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Police have released an image of a man they want to speak to in connection with the sexual assault of a teenage girl.",
-    "pinocchio_count_extrinsic": 0,
+    "pinocchio_count_extrinsic": 1,
     "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_extrinsic_factuality_ratio": 0.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": true,
-    "pinocchio_is_non_factual": false,
-    "pinocchio_is_non_factual_extrinsic": false,
+    "pinocchio_is_factual": false,
+    "pinocchio_is_non_factual": true,
+    "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Police investigating the sexual assault of a teenage girl in Hertfordshire say local people \"hold the key\" to finding the attacker, who they believe abducted her."
+    "pinocchio_summary": "Police have released an image of a man they want to speak to in connection with a sexual assault on a 15-year-old girl in Hertfordshire."
   },
   "28071499": {
     "baseline-bart_count_extrinsic": 1,
@@ -807,7 +807,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Thousands of people gathered in Singapore on Saturday for a gay rights rally that has sparked a religious backlash after it fell on the eve of Ramadan, organisers say."
+    "pinocchio_summary": "Thousands of people have turned out in Singapore for the annual Pink Dot event, despite a religious backlash against the event."
   },
   "28772094": {
     "baseline-bart_count_extrinsic": 1,
@@ -887,9 +887,9 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "A procession and fireworks display will be held to mark 50 years since the Forth Road Bridge opened.",
-    "pinocchio_count_extrinsic": 0,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": true,
@@ -897,7 +897,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "The Forth Road Bridge will close to all traffic in both directions at 22:00 for 30 minutes for a procession in honour of 50 years since it opened to the public."
+    "pinocchio_summary": "The Forth Road Bridge will be closed to all traffic for 30 minutes to mark the 50th anniversary of its opening."
   },
   "29252950": {
     "baseline-bart_count_extrinsic": 2,
@@ -987,7 +987,7 @@
     "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": true,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "The economy of the Republic of Ireland grew by 7.7% in the first quarter of the year, its fastest growth since the financial crisis, compared with the eurozone as a whole, according to official figures."
+    "pinocchio_summary": "Ireland's economy grew by 7.7% in the first three months of the year compared with the same period last year, official figures show."
   },
   "30457745": {
     "baseline-bart_count_extrinsic": 1,
@@ -1067,17 +1067,17 @@
     "meng-rl_is_non_factual_intrinsic": true,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Ghanaian duo The Busy Twist have made their debut single, 'Dance, Dance, Dance'.",
-    "pinocchio_count_extrinsic": 0,
+    "pinocchio_count_extrinsic": 1,
     "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_extrinsic_factuality_ratio": 0.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": false,
     "pinocchio_is_non_factual": true,
-    "pinocchio_is_non_factual_extrinsic": false,
+    "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": true,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Ghanaian dance music duo The Busy Twist have taken to the streets of Accra, Ghana, to record their new dance track, 'TheBusy Twist', which they say is a celebration of dance music and the city."
+    "pinocchio_summary": "Ghanaian duo The Busy Twist have released a new dance track called 'Dance, Dance, Dance' which they say has captured the spirit of the country."
   },
   "30657223": {
     "baseline-bart_count_extrinsic": 5,
@@ -1167,7 +1167,7 @@
     "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Hartlepool United have signed Reading midfielder Nkosi Tshibola and Mansfield Town striker Josh Bingham on loan until the end of the season."
+    "pinocchio_summary": "Hartlepool United have signed Reading midfielder Emmanuel Tshibola and Mansfield Town striker Josh Bingham on loan until the end of the season."
   },
   "30760966": {
     "baseline-bart_count_extrinsic": 2,
@@ -1247,17 +1247,17 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "A drugs expert has warned people not to take 'superman' ecstasy pills.",
-    "pinocchio_count_extrinsic": 0,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_count_extrinsic": 2,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 0.5,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": true,
-    "pinocchio_is_non_factual": false,
-    "pinocchio_is_non_factual_extrinsic": false,
+    "pinocchio_is_factual": false,
+    "pinocchio_is_non_factual": true,
+    "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "A drugs expert has warned people not to take'superman' ecstasy pills after a spate of deaths linked to the drug."
+    "pinocchio_summary": "A drugs expert has warned people not to take 'superman' ecstasy pills after at least four people died in recent weeks."
   },
   "31113635": {
     "baseline-bart_count_extrinsic": 2,
@@ -1337,8 +1337,8 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "The UK film industry spent an all-time high on production last year, according to the British Film Institute.",
-    "pinocchio_count_extrinsic": 1,
-    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_count_extrinsic": 2,
+    "pinocchio_count_extrinsic_factual": 2,
     "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
@@ -1347,7 +1347,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "The amount of money spent on film production in the UK hit an all-time high last year, according to figures from the BFI."
+    "pinocchio_summary": "The amount of money spent on film production in the UK reached an all-time high last year, according to figures from the British Film Institute."
   },
   "32033856": {
     "baseline-bart_count_extrinsic": 4,
@@ -1607,17 +1607,17 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "A \"wicked and despicable\" grandfather has been jailed for life for murdering his granddaughter.",
-    "pinocchio_count_extrinsic": 0,
+    "pinocchio_count_extrinsic": 1,
     "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_extrinsic_factuality_ratio": 0.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": true,
-    "pinocchio_is_non_factual": false,
-    "pinocchio_is_non_factual_extrinsic": false,
+    "pinocchio_is_factual": false,
+    "pinocchio_is_non_factual": true,
+    "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "A \"wicked and despicable\" father who killed his granddaughter by deliberately injuring her has been jailed for life for her murder."
+    "pinocchio_summary": "A man has been jailed for life for murdering his six-year-old granddaughter."
   },
   "32557344": {
     "baseline-bart_count_extrinsic": 1,
@@ -1788,16 +1788,16 @@
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Tributes have been paid to entertainer Keith Harris at his funeral in Blackpool.",
     "pinocchio_count_extrinsic": 1,
-    "pinocchio_count_extrinsic_factual": 1,
-    "pinocchio_extrinsic_factuality_ratio": 1.0,
+    "pinocchio_count_extrinsic_factual": 0,
+    "pinocchio_extrinsic_factuality_ratio": 0.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": true,
-    "pinocchio_is_non_factual": false,
-    "pinocchio_is_non_factual_extrinsic": false,
+    "pinocchio_is_factual": false,
+    "pinocchio_is_non_factual": true,
+    "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Mourners have paid tribute to Keith Harris at his funeral in Blackpool, Lancashire."
+    "pinocchio_summary": "Hundreds of people have attended the funeral of entertainer Keith Harris in Blackpool."
   },
   "32798693": {
     "baseline-bart_count_extrinsic": 1,
@@ -1972,12 +1972,12 @@
     "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": false,
-    "pinocchio_is_non_factual": true,
+    "pinocchio_is_factual": true,
+    "pinocchio_is_non_factual": false,
     "pinocchio_is_non_factual_extrinsic": false,
-    "pinocchio_is_non_factual_intrinsic": true,
+    "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Sepp Blatter's right-hand man has said it is \"allowed\" for countries to bribe Fifa during the bidding process for the 2018 and 2022 world Cups, if evidence emerges of corruption."
+    "pinocchio_summary": "Sepp Blatter's former chief of staff has said countries bidding for the 2018 and 2022 World Cups had \"no choice\" but to bribe Fifa."
   },
   "33106194": {
     "baseline-bart_count_extrinsic": 2,
@@ -2237,17 +2237,17 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "The man behind the takeover of the Financial Times is one of the world's richest men, according to reports.",
-    "pinocchio_count_extrinsic": 0,
+    "pinocchio_count_extrinsic": 1,
     "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_extrinsic_factuality_ratio": 0.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": true,
-    "pinocchio_is_non_factual": false,
-    "pinocchio_is_non_factual_extrinsic": false,
+    "pinocchio_is_factual": false,
+    "pinocchio_is_non_factual": true,
+    "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "The man behind the takeover of the Financial Times by the Japanese media group Nikkei Group is a little-known Japanese media owner - and his ambition is to turn it into a global media giant."
+    "pinocchio_summary": "The man behind the takeover of the Financial Times is one of Japan's richest men, Shigeru Kita."
   },
   "34193568": {
     "baseline-bart_count_extrinsic": 1,
@@ -2327,9 +2327,9 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "European Commission President Jean-Claude Juncker has set out plans to tackle the migrant crisis in Europe.",
-    "pinocchio_count_extrinsic": 0,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": true,
@@ -2337,7 +2337,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "The European Commission president has set out new proposals for dealing with the migrant crisis in a speech to MEPs, in an attempt to unite EU leaders."
+    "pinocchio_summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
   },
   "34427234": {
     "baseline-bart_count_extrinsic": 2,
@@ -2417,17 +2417,17 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Scotland will not field a second-string side against South Africa, according to fly-half Tim Visser.",
-    "pinocchio_count_extrinsic": 0,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_count_extrinsic": 2,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 0.5,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": true,
-    "pinocchio_is_non_factual": false,
-    "pinocchio_is_non_factual_extrinsic": false,
+    "pinocchio_is_factual": false,
+    "pinocchio_is_non_factual": true,
+    "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Tim Visser says Scotland will not go into their final World Cup match against South Africa with a second string squad, despite naming a 31-man squad for the match in Newcastle."
+    "pinocchio_summary": "Scotland scrum-half Tim Visser says head coach Vern Cotter did not select a second-string squad for the World Cup match against South Africa."
   },
   "34474416": {
     "baseline-bart_count_extrinsic": 0,
@@ -2512,12 +2512,12 @@
     "pinocchio_extrinsic_factuality_ratio": NaN,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": true,
-    "pinocchio_is_non_factual": false,
+    "pinocchio_is_factual": false,
+    "pinocchio_is_non_factual": true,
     "pinocchio_is_non_factual_extrinsic": false,
-    "pinocchio_is_non_factual_intrinsic": false,
+    "pinocchio_is_non_factual_intrinsic": true,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "A migrant camp set up at the Dismaland exhibition site is to take leftovers from the site of the attraction to a similar camp near Calais."
+    "pinocchio_summary": "A migrant camp set up at Dismaland has been moved after organisers decided not to send it to the UK."
   },
   "34577604": {
     "baseline-bart_count_extrinsic": 1,
@@ -2597,9 +2597,9 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Lord Ashcroft has said he is \"feeling much better\" after being taken to hospital following the launch of his book about David Cameron.",
-    "pinocchio_count_extrinsic": 0,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": true,
@@ -2607,7 +2607,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Former Conservative Party chairman Lord Ashcroft is recovering in hospital after being admitted to hospital following the launch of his controversial book about the prime minister's Oxford University days."
+    "pinocchio_summary": "Former Conservative Party chairman Lord Ashcroft is recovering in hospital after suffering septic shock following the launch of his book about David Cameron."
   },
   "34614991": {
     "baseline-bart_count_extrinsic": 1,
@@ -2697,7 +2697,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Nicola Sturgeon said she was \"proud\" of Leanne Wood as Plaid Cymru leader and pledged to work with her \"in the best interests of our two countries\"."
+    "pinocchio_summary": "Nicola Sturgeon has said she will always work with Plaid Cymru leader Leanne Wood."
   },
   "34660292": {
     "baseline-bart_count_extrinsic": 2,
@@ -2777,17 +2777,17 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Astronauts on the International Space Station have completed their first spacewalk.",
-    "pinocchio_count_extrinsic": 0,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_count_extrinsic": 2,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 0.5,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": false,
     "pinocchio_is_non_factual": true,
-    "pinocchio_is_non_factual_extrinsic": false,
-    "pinocchio_is_non_factual_intrinsic": true,
+    "pinocchio_is_non_factual_extrinsic": true,
+    "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "The astronaut who's already spent more than a year in space is set to break the American record for the longest single space shot, after doing a spacewalk on Thursday morning to clean and install a new robotic arm on the Station."
+    "pinocchio_summary": "The US astronaut who's been living on the International Space Station for more than a year is about to break a record for the longest single space shot."
   },
   "34694547": {
     "baseline-bart_count_extrinsic": 1,
@@ -2957,9 +2957,9 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "The wife of a sports journalist who suffered a bleed on the brain during an attack outside a London Tube station has said he is \"doing well\".",
-    "pinocchio_count_extrinsic": 0,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": true,
@@ -2967,7 +2967,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "The wife of a sports journalist who was seriously injured in an alleged assault outside a south-end railway station has said she has received messages of support from rugby league stars and football managers."
+    "pinocchio_summary": "A sports journalist who was attacked outside a London Tube station is in a critical condition in hospital, his wife has said."
   },
   "34787804": {
     "baseline-bart_count_extrinsic": 1,
@@ -3047,7 +3047,7 @@
     "meng-rl_is_non_factual_intrinsic": true,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Former Japan striker Kazuyoshi Miura has signed a contract extension to keep him at the club he has played for for 30 years.",
-    "pinocchio_count_extrinsic": 2,
+    "pinocchio_count_extrinsic": 1,
     "pinocchio_count_extrinsic_factual": 0,
     "pinocchio_extrinsic_factuality_ratio": 0.0,
     "pinocchio_has_failed": false,
@@ -3055,9 +3055,9 @@
     "pinocchio_is_factual": false,
     "pinocchio_is_non_factual": true,
     "pinocchio_is_non_factual_extrinsic": true,
-    "pinocchio_is_non_factual_intrinsic": true,
+    "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Kazuyoshi Miura, the longest-serving player in Japanese football history and the world's second-oldest player, has been named as the club's new player of the year after signing a new contract with Nisei."
+    "pinocchio_summary": "Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Vegalta Sendai."
   },
   "34898778": {
     "baseline-bart_count_extrinsic": 5,
@@ -3232,12 +3232,12 @@
     "pinocchio_extrinsic_factuality_ratio": NaN,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": false,
-    "pinocchio_is_non_factual": true,
+    "pinocchio_is_factual": true,
+    "pinocchio_is_non_factual": false,
     "pinocchio_is_non_factual_extrinsic": false,
-    "pinocchio_is_non_factual_intrinsic": true,
+    "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "The justice minister has said he has been assured that the government will honour its promise to provide extra funding for institutions that deal with the legacy of the Troubles."
+    "pinocchio_summary": "Northern Ireland's justice minister has said he has been assured that the government will honour a promise to provide extra funding for institutions dealing with the past."
   },
   "35159263": {
     "baseline-bart_count_extrinsic": 1,
@@ -3417,7 +3417,7 @@
     "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": true,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "One of the biggest animal counts in the world is taking place at Chester Zoo in the UK today."
+    "pinocchio_summary": "Thousands of people are heading to Chester Zoo in the UK this weekend to take part in the annual animal count."
   },
   "35305028": {
     "baseline-bart_count_extrinsic": 1,
@@ -3588,16 +3588,16 @@
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "West Ham striker Andy Carroll will miss the rest of the season with a hamstring injury.",
     "pinocchio_count_extrinsic": 1,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": 0.0,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": false,
-    "pinocchio_is_non_factual": true,
-    "pinocchio_is_non_factual_extrinsic": true,
+    "pinocchio_is_factual": true,
+    "pinocchio_is_non_factual": false,
+    "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "West Ham striker Mr Carroll will be out for \"a significant part of the season\" after injuring a hamstring in his first game since returning from injury."
+    "pinocchio_summary": "West Ham striker Andy Carroll has been ruled out for the rest of the season with a hamstring injury."
   },
   "35360415": {
     "baseline-bart_count_extrinsic": 1,
@@ -3677,9 +3677,9 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Satellite images show that Islamic State (IS) militants have blown up an ancient Christian monastery in Iraq.",
-    "pinocchio_count_extrinsic": 0,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": true,
@@ -3687,7 +3687,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Satellite images suggest that Islamic State (IS) militants have blown up an ancient monastery that was one of the most important churches in Iraq and was once home to a Chaldean Catholic order, a security source says."
+    "pinocchio_summary": "Islamic State (IS) militants have blown up an ancient Assyrian monastery in Iraq, according to satellite images."
   },
   "35369658": {
     "baseline-bart_count_extrinsic": 2,
@@ -3777,7 +3777,7 @@
     "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Thousands of fans had to wait up to an hour and a half to get into the stadium for an FA Cup match after a \"shambles\" at a football match."
+    "pinocchio_summary": "Tens of thousands of football fans faced long queues to get into a FA Cup match on Wednesday night."
   },
   "35411078": {
     "baseline-bart_count_extrinsic": 1,
@@ -3857,8 +3857,8 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Action Man toys are celebrating 50 years in the UK.",
-    "pinocchio_count_extrinsic": 2,
-    "pinocchio_count_extrinsic_factual": 2,
+    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic_factual": 1,
     "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
@@ -3867,7 +3867,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "It is 50 years since the first Action Man toys went on sale in the UK - and the toy is celebrating its 50th anniversary with a set of vintage figures."
+    "pinocchio_summary": "It is 50 years since the first Action Man toys were sold in the UK."
   },
   "35698210": {
     "baseline-bart_count_extrinsic": 1,
@@ -3947,7 +3947,7 @@
     "meng-rl_is_non_factual_intrinsic": true,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Wales should keep doing what they are doing and keep winning if they can in the Six Nations, according to ex-Wales captain Gareth Jenkins.",
-    "pinocchio_count_extrinsic": 2,
+    "pinocchio_count_extrinsic": 1,
     "pinocchio_count_extrinsic_factual": 0,
     "pinocchio_extrinsic_factuality_ratio": 0.0,
     "pinocchio_has_failed": false,
@@ -3957,7 +3957,7 @@
     "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Wales' Six Nations win over France was \"baffling\" and \"bizarre\" but not surprising, according to assistant coach Alun Wyn Jenkins, who was part of a team that lost 51-0 to France in 1998."
+    "pinocchio_summary": "Wales coach Huw Jenkins has defended his side's Six Nations form, despite criticism of their style of play."
   },
   "35723757": {
     "baseline-bart_count_extrinsic": 0,
@@ -4042,12 +4042,12 @@
     "pinocchio_extrinsic_factuality_ratio": NaN,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": true,
-    "pinocchio_is_non_factual": false,
+    "pinocchio_is_factual": false,
+    "pinocchio_is_non_factual": true,
     "pinocchio_is_non_factual_extrinsic": false,
-    "pinocchio_is_non_factual_intrinsic": false,
+    "pinocchio_is_non_factual_intrinsic": true,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "A Briton has been questioned by Peruvian police after he and a French tourist were arrested at the Inca citadel of Machu Picchu, police have said."
+    "pinocchio_summary": "Two British tourists have been arrested at the Machu Picchu archaeological site in Peru, police say."
   },
   "35811486": {
     "baseline-bart_count_extrinsic": 0,
@@ -4127,17 +4127,17 @@
     "meng-rl_is_non_factual_intrinsic": true,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Leicestershire's council leader says the funding system is \"chaotic\" and local authorities are seizing an opportunity in a crisis.",
-    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic": 0,
     "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": 0.0,
+    "pinocchio_extrinsic_factuality_ratio": NaN,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": false,
     "pinocchio_is_non_factual": true,
-    "pinocchio_is_non_factual_extrinsic": true,
-    "pinocchio_is_non_factual_intrinsic": false,
+    "pinocchio_is_non_factual_extrinsic": false,
+    "pinocchio_is_non_factual_intrinsic": true,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "The leader of Derbyshire County Council is talking about seizing an opportunity in a crisis - cuts in central government funding which are threatening services."
+    "pinocchio_summary": "Byron Rhodes, the leader of Derbyshire County Council, is talking about seizing an opportunity in a crisis."
   },
   "35845462": {
     "baseline-bart_count_extrinsic": 1,
@@ -4217,17 +4217,17 @@
     "meng-rl_is_non_factual_intrinsic": true,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "The funeral of Coronation Street creator Anthony Warren has taken place at Manchester Cathedral.",
-    "pinocchio_count_extrinsic": 2,
+    "pinocchio_count_extrinsic": 1,
     "pinocchio_count_extrinsic_factual": 1,
-    "pinocchio_extrinsic_factuality_ratio": 0.5,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": false,
     "pinocchio_is_non_factual": true,
-    "pinocchio_is_non_factual_extrinsic": true,
-    "pinocchio_is_non_factual_intrinsic": false,
+    "pinocchio_is_non_factual_extrinsic": false,
+    "pinocchio_is_non_factual_intrinsic": true,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Hundreds of Coronation Street fans have attended the funeral of the show's creator, Mr Warren, at Manchester Cathedral."
+    "pinocchio_summary": "The funeral of Coronation Street creator Anthony Warren has taken place at Manchester Cathedral."
   },
   "35972298": {
     "baseline-bart_count_extrinsic": 2,
@@ -4307,17 +4307,17 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "When I first came to Ravenscraig 25 years ago, the air was thick with the smell of rotting steel.",
-    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic": 2,
     "pinocchio_count_extrinsic_factual": 1,
-    "pinocchio_extrinsic_factuality_ratio": 1.0,
+    "pinocchio_extrinsic_factuality_ratio": 0.5,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": true,
-    "pinocchio_is_non_factual": false,
-    "pinocchio_is_non_factual_extrinsic": false,
+    "pinocchio_is_factual": false,
+    "pinocchio_is_non_factual": true,
+    "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "In Ravenscraig, in the north west of the country, there is still the sound of steel-making."
+    "pinocchio_summary": "The air is still as charged as it was when I first arrived in Ravenscraig 25 years ago."
   },
   "36000903": {
     "baseline-bart_count_extrinsic": 1,
@@ -4487,9 +4487,9 @@
     "meng-rl_is_non_factual_intrinsic": true,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Andy Murray and Marcelo Melo reached the final of the Monte Carlo Masters with a 6-4 6-2 win over world number two Marin Dodig and world number three Marin Cilic.",
-    "pinocchio_count_extrinsic": 5,
+    "pinocchio_count_extrinsic": 4,
     "pinocchio_count_extrinsic_factual": 1,
-    "pinocchio_extrinsic_factuality_ratio": 0.2,
+    "pinocchio_extrinsic_factuality_ratio": 0.25,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": false,
@@ -4497,7 +4497,7 @@
     "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": true,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Andy Murray won his first Monte Carlo Masters semi-final as he beat defending champion Jo-Wilfried Tsonga in straight sets to beat Marcel Melo and Dusan Dodig and progress to the final of the tournament."
+    "pinocchio_summary": "Andy Murray and Marcelo Melo beat Marin Cilic and Dusan Dodig 6-4 6-3 to reach the Monte Carlo Masters final."
   },
   "36066252": {
     "baseline-bart_count_extrinsic": 1,
@@ -4577,9 +4577,9 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "The International Monetary Fund (IMF) has warned that the global economy faces a \"significant and protracted slowdown\".",
-    "pinocchio_count_extrinsic": 0,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": true,
@@ -4587,7 +4587,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Finance ministers and central bankers have agreed to take urgent action to tackle the global economic crisis at the IMF's spring meeting in Washington DC."
+    "pinocchio_summary": "The International Monetary Fund (IMF) has warned that global growth could slow to 3.2% this year and 3.5% in 2017."
   },
   "36162485": {
     "baseline-bart_count_extrinsic": 3,
@@ -4767,7 +4767,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Islamic State (IS) fighters have attacked a hospital in Deir al-Zour, a government-held city, after launching a major attack on pro-government forces there, the group has said."
+    "pinocchio_summary": "The so-called Islamic State (IS) group says it has taken control of a hospital in the eastern Syrian city of Deir al-Zour."
   },
   "36301742": {
     "baseline-bart_count_extrinsic": 2,
@@ -4847,17 +4847,17 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "The Venezuelan Vice-President, Vladimir Isturiz, has said there will be no recall referendum against President Nicolas Maduro.",
-    "pinocchio_count_extrinsic": 0,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_count_extrinsic": 2,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 0.5,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": true,
-    "pinocchio_is_non_factual": false,
-    "pinocchio_is_non_factual_extrinsic": false,
+    "pinocchio_is_factual": false,
+    "pinocchio_is_non_factual": true,
+    "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Venezuela's Vice-President Mr Maduro will not be removed from office by a recall referendum, opposition leader Mr Isturiz has said, as the process of collecting signatures for a referendum on his recall continues."
+    "pinocchio_summary": "Venezuelan Vice-President Elias Isturiz has said President Nicolas Maduro will not be removed from office by a recall referendum."
   },
   "36327891": {
     "baseline-bart_count_extrinsic": 2,
@@ -4937,17 +4937,17 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Liverpool manager Jurgen Klopp says he accepts responsibility for his side's 3-1 Europa League final defeat by Sevilla.",
-    "pinocchio_count_extrinsic": 0,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_count_extrinsic": 2,
+    "pinocchio_count_extrinsic_factual": 2,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": false,
-    "pinocchio_is_non_factual": true,
+    "pinocchio_is_factual": true,
+    "pinocchio_is_non_factual": false,
     "pinocchio_is_non_factual_extrinsic": false,
-    "pinocchio_is_non_factual_intrinsic": true,
+    "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Klopp says Liverpool will use their Champions League exit as an opportunity to \"come back stronger\" after conceding three second-half goals to lose to holders Sevilla in the Basel semi-final."
+    "pinocchio_summary": "Liverpool manager Jurgen Klopp says he accepts responsibility for his side's 3-1 Europa League final defeat by Sevilla."
   },
   "36341722": {
     "baseline-bart_count_extrinsic": 2,
@@ -5387,9 +5387,9 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Wales lost 2-0 to Portugal in their Euro 2016 semi-final, ending their hopes of a first major tournament finals.",
-    "pinocchio_count_extrinsic": 3,
-    "pinocchio_count_extrinsic_factual": 1,
-    "pinocchio_extrinsic_factuality_ratio": 0.3333333333333333,
+    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic_factual": 0,
+    "pinocchio_extrinsic_factuality_ratio": 0.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": false,
@@ -5397,7 +5397,7 @@
     "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Wales' hopes of reaching the Euro 2016 quarter-finals ended with a 2-0 defeat by Portugal in their last-16 tie at Euro 2016."
+    "pinocchio_summary": "Wales are out of Euro 2016 after a 2-0 defeat by Portugal in their last-16 tie."
   },
   "36772094": {
     "baseline-bart_count_extrinsic": 1,
@@ -5487,7 +5487,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "The RSPCA has reported a fall in the number of animal cruelty complaints and prosecutions in Wales last year and a rise in welfare advice given to owners."
+    "pinocchio_summary": "The RSPCA has reported a fall in the number of animal cruelty cases in Wales last year."
   },
   "36874565": {
     "baseline-bart_count_extrinsic": 2,
@@ -5568,16 +5568,16 @@
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Welsh boxer Nathan Cleverly says he is confident he can upset the odds and win a world title in his next fight.",
     "pinocchio_count_extrinsic": 2,
-    "pinocchio_count_extrinsic_factual": 2,
-    "pinocchio_extrinsic_factuality_ratio": 1.0,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 0.5,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": false,
     "pinocchio_is_non_factual": true,
-    "pinocchio_is_non_factual_extrinsic": false,
-    "pinocchio_is_non_factual_intrinsic": true,
+    "pinocchio_is_non_factual_extrinsic": true,
+    "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Welsh boxer Nathan Cleverly has said he is confident he can upset WBO light-heavyweight champion Mr Braehmer in his first world title fight since 2013."
+    "pinocchio_summary": "Welsh boxer Nathan Cleverly believes he can upset WBA champion Johannes Braehmer and regain his WBO world title."
   },
   "36912060": {
     "baseline-bart_count_extrinsic": 4,
@@ -5755,9 +5755,9 @@
     "pinocchio_is_factual": false,
     "pinocchio_is_non_factual": true,
     "pinocchio_is_non_factual_extrinsic": true,
-    "pinocchio_is_non_factual_intrinsic": true,
+    "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Two men have been arrested on suspicion of drugs offences after police seized ecstasy tablets and cocaine worth more than 400,000 euro (\u00a3353,176) in Londonderry."
+    "pinocchio_summary": "Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 400,000 euro (\u00a3353,176) were seized in Paris."
   },
   "36961338": {
     "baseline-bart_count_extrinsic": 2,
@@ -5837,8 +5837,8 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Armed police are to be deployed around the clock across England and Wales, the Metropolitan Police commissioner has said.",
-    "pinocchio_count_extrinsic": 1,
-    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_count_extrinsic": 2,
+    "pinocchio_count_extrinsic_factual": 2,
     "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
@@ -5847,7 +5847,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Armed police officers are to be deployed across England and Wales, the Metropolitan Police Commissioner Sir Bernard Hogan-Howe has said."
+    "pinocchio_summary": "Armed officers will be patrolling the streets of London and the rest of England and Wales by the end of 2017, Metropolitan Police Commissioner Sir Bernard Hogan-Howe has said."
   },
   "37310327": {
     "baseline-bart_count_extrinsic": 2,
@@ -5937,7 +5937,7 @@
     "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "A man from Sheffield has become the first person in the UK to have a cherry tree grow in his garden after growing the fruit in his back garden."
+    "pinocchio_summary": "A man from Sheffield has become the first person in the UK to have a cherry tree grow in his garden."
   },
   "37327555": {
     "baseline-bart_count_extrinsic": 1,
@@ -6017,9 +6017,9 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "A torpedo found during dredging work in Portsmouth Harbour has been detonated.",
-    "pinocchio_count_extrinsic": 0,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": true,
@@ -6027,7 +6027,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "A torpedo found in Portsmouth Harbour has been detonated as part of dredging work to prepare for the navy's new aircraft carrier, HMS Queen Elizabeth."
+    "pinocchio_summary": "A World War Two torpedo has been found during dredging work in Portsmouth Harbour."
   },
   "37391662": {
     "baseline-bart_count_extrinsic": 1,
@@ -6197,17 +6197,17 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Polish film director Andrzej Wajda has died at the age of 90.",
-    "pinocchio_count_extrinsic": 1,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": 0.0,
+    "pinocchio_count_extrinsic": 2,
+    "pinocchio_count_extrinsic_factual": 2,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": false,
-    "pinocchio_is_non_factual": true,
-    "pinocchio_is_non_factual_extrinsic": true,
+    "pinocchio_is_factual": true,
+    "pinocchio_is_non_factual": false,
+    "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Polish film director Mr  Wajda, known for films such as Man of Iron, Man of Marble and Ashes and Diamonds, has killed himself at the age of 92."
+    "pinocchio_summary": "Polish film director Andrzej Wajda has died at the age of 90."
   },
   "37604251": {
     "baseline-bart_count_extrinsic": 2,
@@ -6288,8 +6288,8 @@
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "An Australian woman who suffered severe burns in a bushfire has completed the Ironman triathlon.",
     "pinocchio_count_extrinsic": 2,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": 0.0,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 0.5,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": false,
@@ -6297,7 +6297,7 @@
     "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "A woman who suffered severe burns in a bushfire has completed her first Ironman triathlon after more than a year in hospital."
+    "pinocchio_summary": "An Australian woman who suffered severe burns in a bushfire has completed her first Ironman triathlon."
   },
   "37870098": {
     "baseline-bart_count_extrinsic": 1,
@@ -6387,7 +6387,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "The High Court's ruling on the triggering of Brexit should give firms \"further clarity\" about what will happen to the UK's exit from the European Union, the UK economy secretary Mr Cairns says."
+    "pinocchio_summary": "Welsh Secretary Alun Cairns has said the High Court ruling on Brexit should not be used to try to block the UK's exit from the EU."
   },
   "37961975": {
     "baseline-bart_count_extrinsic": 1,
@@ -6477,7 +6477,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Prime Minister Modi has thanked the people of India for their \"blessing\" as he defended his surprise decision to withdraw two of the highest denomination notes from circulation."
+    "pinocchio_summary": "Indian Prime Minister Narendra Modi has thanked the nation for its support in his surprise decision to scrap high-denomination bank notes."
   },
   "38003317": {
     "baseline-bart_count_extrinsic": 1,
@@ -6558,16 +6558,16 @@
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "A permanent home for the sport of rugby has been officially opened.",
     "pinocchio_count_extrinsic": 1,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": 0.0,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": false,
-    "pinocchio_is_non_factual": true,
-    "pinocchio_is_non_factual_extrinsic": true,
+    "pinocchio_is_factual": true,
+    "pinocchio_is_non_factual": false,
+    "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "The first ever hall of fame for the sport of rugby has been opened at its first permanent home in a museum."
+    "pinocchio_summary": "Rugby union's hall of fame has opened its doors to the public for the first time."
   },
   "38078754": {
     "baseline-bart_count_extrinsic": 1,
@@ -6828,16 +6828,16 @@
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "A man has been charged with causing the death of a six-year-old girl by dangerous driving.",
     "pinocchio_count_extrinsic": 1,
-    "pinocchio_count_extrinsic_factual": 1,
-    "pinocchio_extrinsic_factuality_ratio": 1.0,
+    "pinocchio_count_extrinsic_factual": 0,
+    "pinocchio_extrinsic_factuality_ratio": 0.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": false,
     "pinocchio_is_non_factual": true,
-    "pinocchio_is_non_factual_extrinsic": false,
-    "pinocchio_is_non_factual_intrinsic": true,
+    "pinocchio_is_non_factual_extrinsic": true,
+    "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "A man has been charged with causing the death of a three-year-old girl by dangerous driving after a crash in which seven people were injured."
+    "pinocchio_summary": "A man has been charged with causing the death of a six-year-old girl by dangerous driving after a crash."
   },
   "38299022": {
     "baseline-bart_count_extrinsic": 1,
@@ -7187,9 +7187,9 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Dundee United and St Johnstone defender Ryan Kiernan is to face a Scottish FA disciplinary hearing over an alleged incident of mistaken identity.",
-    "pinocchio_count_extrinsic": 1,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": 0.0,
+    "pinocchio_count_extrinsic": 3,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 0.3333333333333333,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
     "pinocchio_is_factual": false,
@@ -7197,7 +7197,7 @@
     "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "New Saints striker Mr Anderson has said he is \"not bothered\" by the Scottish FA hearing into an alleged punch by Rangers' Kiernan at McDiarmid Park."
+    "pinocchio_summary": "St Johnstone's Gary Anderson says Rangers' John Kiernan should face a Scottish FA disciplinary hearing over an alleged punch."
   },
   "38779380": {
     "baseline-bart_count_extrinsic": 1,
@@ -7467,7 +7467,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Here is Prime Minister Ms May's letter to the President of the European Union, Mr Tusk, informing him of the UK's intention to leave the EU, as published by Downing Street."
+    "pinocchio_summary": "Prime Minister Theresa May has written to European Council President Donald Tusk to notify him of the UK's intention to withdraw from the European Union."
   },
   "39535308": {
     "baseline-bart_count_extrinsic": 2,
@@ -7647,7 +7647,7 @@
     "pinocchio_is_non_factual_extrinsic": true,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "A judicial review into plans to run electricity cables through a Gwynedd forest has begun at the High Court in Llangefni."
+    "pinocchio_summary": "A bid to stop a wind farm operator from installing overhead cables in Snowdonia has been heard by a High Court judge."
   },
   "39582812": {
     "baseline-bart_count_extrinsic": 2,
@@ -7727,8 +7727,8 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "A man has died in a two-car crash in Dorset.",
-    "pinocchio_count_extrinsic": 1,
-    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_count_extrinsic": 2,
+    "pinocchio_count_extrinsic_factual": 2,
     "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
@@ -7737,7 +7737,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "A man has died after his car was involved in a collision with a car in Dorset."
+    "pinocchio_summary": "A man has died in a two-car crash in Dorset."
   },
   "39593375": {
     "baseline-bart_count_extrinsic": 2,
@@ -8177,17 +8177,17 @@
     "meng-rl_is_non_factual_intrinsic": true,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Peterborough United have completed the signing of striker Matt Lloyd from non-league Peterborough United.",
-    "pinocchio_count_extrinsic": 0,
+    "pinocchio_count_extrinsic": 1,
     "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": NaN,
+    "pinocchio_extrinsic_factuality_ratio": 0.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": true,
-    "pinocchio_is_non_factual": false,
-    "pinocchio_is_non_factual_extrinsic": false,
-    "pinocchio_is_non_factual_intrinsic": false,
+    "pinocchio_is_factual": false,
+    "pinocchio_is_non_factual": true,
+    "pinocchio_is_non_factual_extrinsic": true,
+    "pinocchio_is_non_factual_intrinsic": true,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "AFC Fylde striker Mr Lloyd says it was \"a very easy decision\" to sign for Mr  United after signing for the club on a free transfer."
+    "pinocchio_summary": "Peterborough United have signed striker Jordan Lloyd from non-league side AFC Fylde for an undisclosed fee."
   },
   "39895178": {
     "baseline-bart_count_extrinsic": 1,
@@ -8448,16 +8448,16 @@
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "A man has been arrested in east London as part of the investigation into the London Bridge terror attack.",
     "pinocchio_count_extrinsic": 1,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": 0.0,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": false,
-    "pinocchio_is_non_factual": true,
-    "pinocchio_is_non_factual_extrinsic": true,
+    "pinocchio_is_factual": true,
+    "pinocchio_is_non_factual": false,
+    "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "A 19-year-old man arrested on Sunday as part of the investigation into last week's attack on the bridge and market in Borough Market is being questioned in connection with the attack, police say."
+    "pinocchio_summary": "A 19-year-old man has been arrested as part of the investigation into the London Bridge terror attack, police have said."
   },
   "40285040": {
     "baseline-bart_count_extrinsic": 1,
@@ -8538,16 +8538,16 @@
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Plans to build a McDonald's restaurant on the outskirts of Cardiff have been approved.",
     "pinocchio_count_extrinsic": 1,
-    "pinocchio_count_extrinsic_factual": 0,
-    "pinocchio_extrinsic_factuality_ratio": 0.0,
+    "pinocchio_count_extrinsic_factual": 1,
+    "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
-    "pinocchio_is_factual": false,
-    "pinocchio_is_non_factual": true,
-    "pinocchio_is_non_factual_extrinsic": true,
+    "pinocchio_is_factual": true,
+    "pinocchio_is_non_factual": false,
+    "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Plans for a McDonald's restaurant in a Gloucestershire village have been approved by a planning inspector, despite opposition from campaigners."
+    "pinocchio_summary": "Plans for a McDonald's restaurant in Bristol have been approved by the city's planning inspector."
   },
   "40306866": {
     "baseline-bart_count_extrinsic": 4,
@@ -8907,7 +8907,7 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "In Mosul, Iraq, Iraqi Prime Minister Haider al-Abadi has declared victory over Islamic State in the battle for the city."
+    "pinocchio_summary": "Iraqi Prime Minister Haider al-Abadi has declared victory over so-called Islamic State in the city of Mosul."
   },
   "40587903": {
     "baseline-bart_count_extrinsic": 1,
@@ -8987,8 +8987,8 @@
     "meng-rl_is_non_factual_intrinsic": false,
     "meng-rl_is_skipped": false,
     "meng-rl_summary": "Dundee defender Shay Logan says the support of manager Derek McInnes played a part in his decision to sign a new contract.",
-    "pinocchio_count_extrinsic": 2,
-    "pinocchio_count_extrinsic_factual": 2,
+    "pinocchio_count_extrinsic": 1,
+    "pinocchio_count_extrinsic_factual": 1,
     "pinocchio_extrinsic_factuality_ratio": 1.0,
     "pinocchio_has_failed": false,
     "pinocchio_has_unknown": false,
@@ -8997,6 +8997,6 @@
     "pinocchio_is_non_factual_extrinsic": false,
     "pinocchio_is_non_factual_intrinsic": false,
     "pinocchio_is_skipped": false,
-    "pinocchio_summary": "Derek McInnes' assurances that he would continue as Aberdeen manager were key to Shay Logan's decision not to leave Pittodrie to move to England to be with his family."
+    "pinocchio_summary": "Derek McInnes was a key factor in Shay Logan's decision to sign a new contract at Pittodrie."
   }
 }

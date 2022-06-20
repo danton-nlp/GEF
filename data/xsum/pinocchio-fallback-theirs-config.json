@@ -1,5 +1,5 @@
 {
   "Paper": "https://arxiv.org/pdf/2203.08436.pdf",
   "Title": "Don\u2019t Say What You Don\u2019t Know: Improving the Consistency of Abstractive Summarization by Constraining Beam Search",
-  "sumtool_model": "pinocchio"
+  "sumtool_model": "pinocchio-fallback-theirs"
 }

@@ -20,7 +20,9 @@ if __name__ == "__main__":
     sumtool_models = [
         ("facebook-bart-large-xsum", "BartBaseline"),
         ("meng-rl", "MengRL"),  # Hallucinated, but factual! Paper
-        ("pinocchio", "Pinocchio"),  # King et. al paper
+        ("pinocchio-fallback-ours", "Pinocchio"),  # King et. al paper
+        ("pinocchio-fallback-theirs", "PinocchioTheirFallback"),  # King et. al paper
+        ("pinocchio-with-skip", "PinocchioSkip"),  # King et. al paper
         ("chen-corrector", "Corrector"),  # Chen. et al replication project
         ("google-pegasus-xsum", "PegasusBaseline"),
     ]
