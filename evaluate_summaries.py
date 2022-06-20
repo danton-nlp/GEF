@@ -114,11 +114,13 @@ if __name__ == "__main__":
                         agg_metrics["summaries"]["non_factual_extrinsic"],
                         agg_metrics["summaries"]["non_factual_intrinsic"],
                         agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"],
+                        agg_metrics["entities"]["count_extrinsic"],
                         agg_metrics["summaries"]["unknown"],
                         agg_metrics["summaries"]["skipped"],
                         agg_metrics["summaries"]["failed"],
                         agg_metrics["summaries"]["ents_per_sum"],
                         agg_metrics["summaries"]["sum_with_extrinsic"],
+                        agg_metrics["summaries"]["sum_with_extrinsic_factual"],
                     ]
                 )
                 for sum_id, sum_metrics in summaries.items():
@@ -137,11 +139,13 @@ if __name__ == "__main__":
                 "non_factual_extrinsic",
                 "non_factual_intrinsic",
                 "extrinsic_factuality_ratio",
+                "extrinsic_entity_count",
                 "unknown",
                 "skipped",
                 "failed",
                 "ents_per_sum",
                 "sum_with_extrinsic",
+                "sum_with_extrinsic_factual",
             ],
         ).set_index("model")
 
@@ -170,6 +174,9 @@ if __name__ == "__main__":
             ("non_factual_extrinsic", "NonFactualExtrinsic"),
             ("non_factual_intrinsic", "NonFactualIntrinsic"),
             ("extrinsic_factuality_ratio", "FactualExtrinsicRatio"),
+            ("extrinsic_entity_count", "ExtrinsicEntityCount"),
+            ("sum_with_extrinsic", "SummaryWithExtrinsic"),
+            ("sum_with_extrinsic_factual", "SummaryWithExtrinsicFactual"),
             ("skipped", "Skipped"),
         ]
         with open(f"results/latex/{data_subset}-{args.test_size}.tex", "w") as f:

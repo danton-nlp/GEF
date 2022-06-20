@@ -142,6 +142,11 @@ def evaluate_summary(
         count_entity_labels[ANNOTATION_LABELS["Factual"]]
         + count_entity_labels[ANNOTATION_LABELS["Non-factual"]]
     )
+    # Replace count entity extrinsic with labeled if there are no unknowns
+    # We rely on human labels rather than ent["in_source"], i.e.
+    # when "Ghana" is in source, but "Ghanian" is not, we still treat "Ghanian" as intrinsic
+    if count_entity_labels[ANNOTATION_LABELS["Unknown"]] == 0:
+        summary_eval["count_entity_extrinsic"] = count_total_extrinsic_hallucinations
     if count_total_extrinsic_hallucinations > 0:
         summary_eval["entity_extrinsic_factuality_ratio"] = count_entity_labels[
             ANNOTATION_LABELS["Factual"]
@@ -186,9 +191,11 @@ def evaluate_factuality(
         "rouge2": [],
         "rougeL": [],
         "sum_with_extrinsic": 0,
+        "sum_with_extrinsic_factual": [],
         "extrinsic_factuality_ratios": [],
         "count_entity_label": defaultdict(lambda: 0),
         "count_entity_type": defaultdict(lambda: defaultdict(lambda: 0)),
+        "count_entity_extrinsic": 0,
     }
 
     print_counter = 0
@@ -299,6 +306,16 @@ def evaluate_factuality(
                 agg_results["extrinsic_factuality_ratios"].append(
                     summary_eval["entity_extrinsic_factuality_ratio"]
                 )
+            if summary_eval["entity_extrinsic_factuality_ratio"] and summary_eval["entity_extrinsic_factuality_ratio"] == 1:
+                agg_results["sum_with_extrinsic_factual"].append(
+                    1
+                )
+            else:
+                agg_results["sum_with_extrinsic_factual"].append(
+                    0
+                )
+            
+            agg_results["count_entity_extrinsic"] += summary_eval["count_entity_extrinsic"]
 
             if compute_rouge and not summary_eval["failed"]:
                 agg_results["rouge1"].append(summary_eval["rouge1"])
@@ -317,10 +334,12 @@ def evaluate_factuality(
             "failed": agg_results["failed"],
             "unknown": agg_results["unknown"] / total,
             "sum_with_extrinsic": agg_results["sum_with_extrinsic"] / total,
+            "sum_with_extrinsic_factual": np.mean(agg_results["sum_with_extrinsic_factual"]),
             "ents_per_sum": agg_results["entities"] / (total - agg_results["skipped"]),
         },
         "entities": {
             "total": agg_results["entities"],
+            "count_extrinsic": agg_results["count_entity_extrinsic"],
             "extrinsic_factuality_ratio": {
                 "mean": np.mean(agg_results["extrinsic_factuality_ratios"]),
                 "median": np.median(agg_results["extrinsic_factuality_ratios"]),
