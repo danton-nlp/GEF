@@ -9,11 +9,11 @@ if __name__ == "__main__":
     gold_sums, gold_metadata = get_gold_xsum_data()
 
     MODEL_RESULTS = {
-        "BartGEF": load_summaries_from_logs(
-            "results/fbs-logs/bart-full-classifier-knnv1.json", max_iterations=5
-        ),
+        # "BartGEF": load_summaries_from_logs(
+        #     "results/fbs-logs/bart-full-classifier-knnv1.json", max_iterations=5
+        # ),
         "PegasusGEF": load_summaries_from_logs(
-            "results/fbs-logs/bart-full-classifier-knnv1.json", max_iterations=5
+            "results/fbs-logs/pegasus-full-classifier-knnv1.json", max_iterations=5
         ),
     }
 
