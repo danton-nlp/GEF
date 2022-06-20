@@ -1,7 +1,7 @@
 from datasets import load_metric
 
 
-_rouge_metric = load_metric("rouge")
+_rouge_metric = load_metric("rouge", seed=42)
 
 
 def rouge(predictions: list, references: list):
