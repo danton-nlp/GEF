@@ -22,6 +22,7 @@ def collect_iteration_stats(
     logs_path,
     xsum_test,
     test_set_ids: Union[set, None],
+    extrinsic_only: bool = False,
     entity_match_type: EntityMatchType = "strict_all",
     should_annotate=False,
 ):
@@ -39,9 +40,22 @@ def collect_iteration_stats(
     sums_by_id = {}
     sum_ents_by_id = {}
     baseline_eval_sums_by_id = {}
+
+    if extrinsic_only:
+        all_extrinsic_ids = set(load_shuffled_test_split(xsum_test, 'bart-test-extrinsic', 'all').keys())
     for iteration_idx in sorted_keys:
         iteration_data = logs["iterations"][str(iteration_idx)]
         summaries = iteration_data["summaries"]
+
+        # filter full sets to be extrinsic only
+        if extrinsic_only:
+            summaries = {
+                sum_id: sum_data
+                for sum_id, sum_data
+                in summaries.items()
+                if sum_id in all_extrinsic_ids
+            }
+
         current_iteration_stats = {
             "iteration": iteration_idx,
             "summary": {},
@@ -114,6 +128,7 @@ if __name__ == "__main__":
     parser.add_argument("--annotate", type=bool, default=False)
     parser.add_argument("--data_subset", type=str, default="bart-test-extrinsic")
     parser.add_argument("--test_size", type=int, default=100)
+    parser.add_argument("--extrinsic_only", action="store_true", default=False)
     args = parser.parse_args()
 
     xsum_test = load_xsum_dict("test")
@@ -132,11 +147,13 @@ if __name__ == "__main__":
                 f"results/fbs-logs/{args.data_subset}-{model}.json",
                 xsum_test,
                 test_set_ids,
+                args.extrinsic_only,
                 should_annotate=args.annotate,
             )
             test_size = f"-{args.test_size}" if test_set_ids is not None else ""
+            extrinsic_only_fmt = "-extrinsic" if args.extrinsic_only else ""
             with open(
-                f"results/iteration-changes/{args.data_subset}{test_size}-{model}.json",
+                f"results/iteration-changes/{args.data_subset}{test_size}{extrinsic_only_fmt}-{model}.json",
                 "w",
             ) as f:
                 json.dump(iteration_stats, f, indent=2, sort_keys=True)
