@@ -50,13 +50,16 @@ def collect_iteration_stats(
         updated_sums_by_id = {}
         for sum_id, data in summaries.items():
             if test_set_ids is None or sum_id in test_set_ids:
-                updated_sums_by_id[sum_id] = data["summary"]
-                sums_by_id[sum_id] = data["summary"]
-                sum_ents_by_id[sum_id] = data["labeled_entities"]
-                current_iteration_stats["summary"][sum_id] = {
-                    "summary": data["summary"]
-                }
-                failed_sums_by_id[sum_id] = iteration_idx
+                if data["summary"] == SUMMARY_FAILED_GENERATION:
+                    failed_sums_by_id[sum_id] = iteration_idx
+                else:
+                    updated_sums_by_id[sum_id] = data["summary"]
+                    sums_by_id[sum_id] = data["summary"]
+                    sum_ents_by_id[sum_id] = data["labeled_entities"]
+                    current_iteration_stats["summary"][sum_id] = {
+                        "summary": data["summary"]
+                    }
+
         print()
         print(f"Iteration {iteration_idx}")
         print(f"Summaries generated: {current_iteration_stats['summary_generated']}")
@@ -118,7 +121,8 @@ if __name__ == "__main__":
         set(
             load_shuffled_test_split(xsum_test, args.data_subset, args.test_size).keys()
         )
-        if args.data_subset not in ["bart-debug", "pegasus-debug", "bart-full", "pegasus-full"]
+        if args.data_subset
+        not in ["bart-debug", "pegasus-debug", "bart-full", "pegasus-full"]
         else None
     )
 
