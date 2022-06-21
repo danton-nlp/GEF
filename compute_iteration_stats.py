@@ -59,6 +59,7 @@ if __name__ == "__main__":
     description = "Compute and plot GEF convergence statistics. Plots are written to plots/"
     parser = argparse.ArgumentParser(description=description)
     parser.add_argument("base_model", type=str, choices=['bart', 'pegasus'])
+    parser.add_argument("--extrinsic_only", action='store_true', default=False, help="Compute ONLY on subset that includes extrinsic hallucinations.")
     args = parser.parse_args()
 
     xsum_test = load_xsum_dict("test")
