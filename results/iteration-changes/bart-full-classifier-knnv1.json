@@ -1,33 +1,33 @@
 [
   {
     "factuality_entities": {
-      "Factual Hallucination": 317,
+      "Factual Hallucination": 326,
       "Intrinsic Hallucination": 35,
-      "Non-factual Hallucination": 181,
-      "Non-hallucinated": 938,
-      "Unknown": 33675,
-      "count_extrinsic": 12188,
+      "Non-factual Hallucination": 185,
+      "Non-hallucinated": 943,
+      "Unknown": 33486,
+      "count_extrinsic": 12189,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9064363143631436,
+        "mean": 0.9053571428571429,
         "median": 1.0,
-        "stdev": 0.19663012673311522
+        "stdev": 0.1968864912542188
       },
-      "total": 35146,
+      "total": 34975,
       "type": {
         "CARDINAL": {
-          "Factual Hallucination": 14,
+          "Factual Hallucination": 15,
           "Intrinsic Hallucination": 7,
           "Non-factual Hallucination": 20,
           "Non-hallucinated": 42,
-          "Unknown": 2241,
+          "Unknown": 2240,
           "total": 2324
         },
         "DATE": {
-          "Factual Hallucination": 25,
+          "Factual Hallucination": 28,
           "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 48,
-          "Non-hallucinated": 31,
-          "Unknown": 3191,
+          "Non-factual Hallucination": 49,
+          "Non-hallucinated": 32,
+          "Unknown": 3186,
           "total": 3298
         },
         "EVENT": {
@@ -47,11 +47,11 @@
           "total": 363
         },
         "GPE": {
-          "Factual Hallucination": 59,
+          "Factual Hallucination": 60,
           "Intrinsic Hallucination": 4,
-          "Non-factual Hallucination": 27,
-          "Non-hallucinated": 249,
-          "Unknown": 7725,
+          "Non-factual Hallucination": 28,
+          "Non-hallucinated": 253,
+          "Unknown": 7719,
           "total": 8064
         },
         "LANGUAGE": {
@@ -65,9 +65,9 @@
           "total": 29
         },
         "LOC": {
-          "Non-factual Hallucination": 2,
+          "Non-factual Hallucination": 4,
           "Non-hallucinated": 9,
-          "Unknown": 453,
+          "Unknown": 451,
           "total": 464
         },
         "MONEY": {
@@ -81,25 +81,25 @@
         "NORP": {
           "Factual Hallucination": 13,
           "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 2,
-          "Non-hallucinated": 78,
-          "Unknown": 1876,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 79,
+          "Unknown": 1874,
           "total": 1972
         },
         "ORDINAL": {
           "Factual Hallucination": 6,
           "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 7,
-          "Non-hallucinated": 11,
-          "Unknown": 912,
+          "Non-hallucinated": 12,
+          "Unknown": 911,
           "total": 938
         },
         "ORG": {
-          "Factual Hallucination": 66,
+          "Factual Hallucination": 69,
           "Intrinsic Hallucination": 3,
           "Non-factual Hallucination": 11,
-          "Non-hallucinated": 131,
-          "Unknown": 5474,
+          "Non-hallucinated": 136,
+          "Unknown": 5466,
           "total": 5685
         },
         "PERCENT": {
@@ -111,12 +111,12 @@
           "total": 98
         },
         "PERSON": {
-          "Factual Hallucination": 116,
+          "Factual Hallucination": 117,
           "Intrinsic Hallucination": 8,
-          "Non-factual Hallucination": 51,
-          "Non-hallucinated": 357,
-          "Unknown": 9799,
-          "total": 10331
+          "Non-factual Hallucination": 50,
+          "Non-hallucinated": 350,
+          "Unknown": 9635,
+          "total": 10160
         },
         "PRODUCT": {
           "Non-factual Hallucination": 1,
@@ -145,17 +145,17 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.100935239103582,
-      "factual": 0.07481912828657138,
+      "ents_per_sum": 3.085847891300512,
+      "factual": 0.07499558849479443,
       "failed": 0,
-      "non_factual": 0.014822657490735839,
-      "non_factual_extrinsic": 0.012793365096170814,
+      "non_factual": 0.015263808011293453,
+      "non_factual_extrinsic": 0.013234515616728428,
       "non_factual_intrinsic": 0.0028233633315687314,
       "skipped": 0.0,
-      "sum_with_extrinsic": 0.623698605964355,
-      "sum_with_extrinsic_factual": 0.017469560614081524,
+      "sum_with_extrinsic": 0.6237868360684665,
+      "sum_with_extrinsic_factual": 0.017822481030527616,
       "total": 11334,
-      "unknown": 0.9103582142226928
+      "unknown": 0.9097406034939122
     },
     "iteration": 0,
     "summary": {
@@ -34166,34 +34166,34 @@
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 268,
-      "Intrinsic Hallucination": 35,
+      "Factual Hallucination": 274,
+      "Intrinsic Hallucination": 34,
       "Non-factual Hallucination": 135,
-      "Non-hallucinated": 870,
-      "Unknown": 33438,
-      "count_extrinsic": 11163,
+      "Non-hallucinated": 869,
+      "Unknown": 33268,
+      "count_extrinsic": 11169,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9197327044025158,
+        "mean": 0.9219907407407406,
         "median": 1.0,
-        "stdev": 0.18582436264447405
+        "stdev": 0.18228854347706658
       },
-      "total": 34746,
+      "total": 34580,
       "type": {
         "CARDINAL": {
-          "Factual Hallucination": 10,
+          "Factual Hallucination": 11,
           "Intrinsic Hallucination": 8,
           "Non-factual Hallucination": 17,
           "Non-hallucinated": 40,
-          "Unknown": 2241,
+          "Unknown": 2240,
           "total": 2316
         },
         "DATE": {
-          "Factual Hallucination": 19,
+          "Factual Hallucination": 22,
           "Intrinsic Hallucination": 4,
           "Non-factual Hallucination": 32,
           "Non-hallucinated": 30,
-          "Unknown": 3061,
-          "total": 3146
+          "Unknown": 3060,
+          "total": 3148
         },
         "EVENT": {
           "Factual Hallucination": 4,
@@ -34210,12 +34210,12 @@
           "total": 332
         },
         "GPE": {
-          "Factual Hallucination": 51,
+          "Factual Hallucination": 52,
           "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 18,
-          "Non-hallucinated": 235,
-          "Unknown": 7811,
-          "total": 8118
+          "Non-factual Hallucination": 19,
+          "Non-hallucinated": 239,
+          "Unknown": 7807,
+          "total": 8120
         },
         "LANGUAGE": {
           "Unknown": 12,
@@ -34229,8 +34229,8 @@
         "LOC": {
           "Non-factual Hallucination": 1,
           "Non-hallucinated": 9,
-          "Unknown": 412,
-          "total": 422
+          "Unknown": 413,
+          "total": 423
         },
         "MONEY": {
           "Factual Hallucination": 2,
@@ -34242,25 +34242,25 @@
         "NORP": {
           "Factual Hallucination": 10,
           "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 3,
-          "Non-hallucinated": 79,
-          "Unknown": 1861,
-          "total": 1956
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 78,
+          "Unknown": 1860,
+          "total": 1955
         },
         "ORDINAL": {
           "Factual Hallucination": 5,
           "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 9,
-          "Non-hallucinated": 9,
-          "Unknown": 934,
-          "total": 959
+          "Non-hallucinated": 10,
+          "Unknown": 932,
+          "total": 958
         },
         "ORG": {
-          "Factual Hallucination": 58,
+          "Factual Hallucination": 59,
           "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 10,
-          "Non-hallucinated": 124,
-          "Unknown": 5410,
+          "Non-hallucinated": 127,
+          "Unknown": 5406,
           "total": 5604
         },
         "PERCENT": {
@@ -34273,11 +34273,11 @@
         },
         "PERSON": {
           "Factual Hallucination": 100,
-          "Intrinsic Hallucination": 10,
-          "Non-factual Hallucination": 38,
-          "Non-hallucinated": 317,
-          "Unknown": 9848,
-          "total": 10313
+          "Intrinsic Hallucination": 9,
+          "Non-factual Hallucination": 36,
+          "Non-hallucinated": 309,
+          "Unknown": 9690,
+          "total": 10144
         },
         "PRODUCT": {
           "Non-hallucinated": 4,
@@ -34304,15 +34304,15 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.065643197458973,
-      "factual": 0.07958355390859362,
+      "ents_per_sum": 3.0509970001764604,
+      "factual": 0.07949532380448208,
       "failed": 53,
-      "non_factual": 0.015881418740074114,
-      "non_factual_extrinsic": 0.009528851244044468,
-      "non_factual_intrinsic": 0.0026469031233456856,
+      "non_factual": 0.015969648844185638,
+      "non_factual_extrinsic": 0.009617081348155991,
+      "non_factual_intrinsic": 0.002558673019234163,
       "skipped": 0.0,
-      "sum_with_extrinsic": 0.5847891300511735,
-      "sum_with_extrinsic_factual": 0.015616728427739545,
+      "sum_with_extrinsic": 0.584877360155285,
+      "sum_with_extrinsic_factual": 0.015969648844185638,
       "total": 11334,
       "unknown": 0.9045350273513323
     },
@@ -34818,9 +34818,9 @@
       },
       "18042467": {
         "edit_stats": {
-          "edit_distance_token": 5
+          "edit_distance_token": 11
         },
-        "summary": "The head of Saudi Arabia's religious police, Sheikh Abdulhadi al-Obeikan, has been sacked, Saudi officials say."
+        "summary": "The head of Saudi Arabia's religious police, Sheikh Abdulhadi al-Obeiki, has been sacked after criticising the government's handling of women's rights."
       },
       "18101418": {
         "edit_stats": {
@@ -36858,9 +36858,9 @@
       },
       "29738214": {
         "edit_stats": {
-          "edit_distance_token": 9
+          "edit_distance_token": 10
         },
-        "summary": "Tunisians go to the polls on Saturday to elect a new National Assembly, following the ousting of long-serving President Zine al-Abidine Ben Ali in 2011."
+        "summary": "Tunisians go to the polls on Saturday to elect a new National Assembly, following the ousting of long-serving President Zine al-Abed Ben Ali in 2011."
       },
       "29739085": {
         "edit_stats": {
@@ -40318,12 +40318,6 @@
         },
         "summary": "Nottinghamshire were bowled out for 204 by Durham on day one of the County Championship final, with Yorkshire all-rounder James Onions taking five wickets."
       },
-      "34193568": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "European Commission President Jean-Claude Juncker has set out his proposals for dealing with the migrant crisis."
-      },
       "34196691": {
         "edit_stats": {
           "edit_distance_token": 1
@@ -42090,9 +42084,9 @@
       },
       "35187903": {
         "edit_stats": {
-          "edit_distance_token": 2
+          "edit_distance_token": 8
         },
-        "summary": "One of Osama Bin Laden's former bodyguards, Abu Muhammad al-Bahri, has died, Yemeni officials say."
+        "summary": "One of Osama Bin Laden's closest allies in the Middle East, Abdulrahman Bahri, has died, Yemeni officials say."
       },
       "35188992": {
         "edit_stats": {
@@ -42844,12 +42838,6 @@
         },
         "summary": "The January transfer window closed at 23:00 on Wednesday, with Celtic and Dundee United the only Scottish Premiership clubs to make significant signings."
       },
-      "35487290": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "Annan Athletic striker Omar al-Hassan hopes his side's run in the Scottish Cup will inspire other young players to follow in his footsteps."
-      },
       "35489215": {
         "edit_stats": {
           "edit_distance_token": 8
@@ -43038,9 +43026,9 @@
       },
       "35553747": {
         "edit_stats": {
-          "edit_distance_token": 0
+          "edit_distance_token": 1
         },
-        "summary": "French President Francois Hollande has named Jean-Marc Ayrault as his new foreign minister."
+        "summary": "French President Francois Hollande has named Jean-Claude Ayrault as his new foreign minister."
       },
       "35560979": {
         "edit_stats": {
@@ -46020,9 +46008,9 @@
       },
       "36545008": {
         "edit_stats": {
-          "edit_distance_token": 0
+          "edit_distance_token": 15
         },
-        "summary": "Haiti's interim President, Jean-Pierre Privert, has resigned, the country's Senate has announced."
+        "summary": "Haiti's Senate has voted to dismiss President Jovenel Privert after less than a month in office."
       },
       "36550362": {
         "edit_stats": {
@@ -46050,9 +46038,9 @@
       },
       "36555657": {
         "edit_stats": {
-          "edit_distance_token": 4
+          "edit_distance_token": 7
         },
-        "summary": "Viacom chief executive Jean-Claude Dauman has been removed from the board of the company he co-founded with Shari Redstone."
+        "summary": "Viacom chief executive Philippe Dauman has been removed from the board of the company he co-founded with his daughter Shari Redstone."
       },
       "36558809": {
         "edit_stats": {
@@ -46146,9 +46134,9 @@
       },
       "36574570": {
         "edit_stats": {
-          "edit_distance_token": 1
+          "edit_distance_token": 15
         },
-        "summary": "Kim In-kyung birdied the first play-off hole to beat compatriot Carlota Ciganda and win the Maybank Championship in Florida."
+        "summary": "South Korea's Kim Si-woo beat Cuba's Angelique Ciganda in a play-off to win the Maybank Championship in Kuala Lumpur."
       },
       "36576622": {
         "edit_stats": {
@@ -49762,6 +49750,12 @@
         },
         "summary": "Prince Harry has launched a scholarship programme to train members of the royal family in hospitality."
       },
+      "38143080": {
+        "edit_stats": {
+          "edit_distance_token": 7
+        },
+        "summary": "Scarlets will not rush Liam Williams back from injury as they prepare to face Zebre in the Pro12 on Saturday."
+      },
       "38145328": {
         "edit_stats": {
           "edit_distance_token": 11
@@ -50379,12 +50373,6 @@
           "edit_distance_token": 4
         },
         "summary": "Israel has postponed a vote on approving hundreds of new homes in settlements in the occupied West Bank."
-      },
-      "38462858": {
-        "edit_stats": {
-          "edit_distance_token": 0
-        },
-        "summary": "Bradford Bulls' future remains in doubt, despite reports of a potential takeover."
       },
       "38465993": {
         "edit_stats": {
@@ -55080,9 +55068,9 @@
       },
       "40484622": {
         "edit_stats": {
-          "edit_distance_token": 3
+          "edit_distance_token": 4
         },
-        "summary": "Arsenal Ladies captain Alex Oxlade-Chamberlain has signed a new contract with the Premier League club."
+        "summary": "Arsenal Ladies captain Alex Morgan has signed a new two-year contract with the Women's Premier League club."
       },
       "40493228": {
         "edit_stats": {
@@ -56291,38 +56279,38 @@
         "summary": "Lewis Hamilton extended his lead at the top of the Formula 1 championship to 17 points with a dominant victory in the Italian Grand Prix."
       }
     },
-    "summary_generated": 3715
+    "summary_generated": 3713
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 269,
-      "Intrinsic Hallucination": 37,
+      "Factual Hallucination": 273,
+      "Intrinsic Hallucination": 35,
       "Non-factual Hallucination": 118,
-      "Non-hallucinated": 888,
-      "Unknown": 33326,
-      "count_extrinsic": 10837,
+      "Non-hallucinated": 886,
+      "Unknown": 33134,
+      "count_extrinsic": 10834,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9311526479750779,
+        "mean": 0.9328725038402458,
         "median": 1.0,
-        "stdev": 0.17954286176725595
+        "stdev": 0.17624487406483677
       },
-      "total": 34638,
+      "total": 34446,
       "type": {
         "CARDINAL": {
-          "Factual Hallucination": 11,
+          "Factual Hallucination": 12,
           "Intrinsic Hallucination": 8,
           "Non-factual Hallucination": 16,
           "Non-hallucinated": 44,
-          "Unknown": 2291,
+          "Unknown": 2290,
           "total": 2370
         },
         "DATE": {
-          "Factual Hallucination": 21,
+          "Factual Hallucination": 24,
           "Intrinsic Hallucination": 4,
           "Non-factual Hallucination": 18,
           "Non-hallucinated": 29,
-          "Unknown": 2956,
-          "total": 3028
+          "Unknown": 2954,
+          "total": 3029
         },
         "EVENT": {
           "Factual Hallucination": 3,
@@ -56340,11 +56328,11 @@
           "total": 318
         },
         "GPE": {
-          "Factual Hallucination": 52,
+          "Factual Hallucination": 53,
           "Intrinsic Hallucination": 4,
-          "Non-factual Hallucination": 22,
-          "Non-hallucinated": 238,
-          "Unknown": 7768,
+          "Non-factual Hallucination": 23,
+          "Non-hallucinated": 242,
+          "Unknown": 7762,
           "total": 8084
         },
         "LANGUAGE": {
@@ -56358,8 +56346,8 @@
         },
         "LOC": {
           "Non-hallucinated": 10,
-          "Unknown": 419,
-          "total": 429
+          "Unknown": 418,
+          "total": 428
         },
         "MONEY": {
           "Factual Hallucination": 1,
@@ -56371,25 +56359,25 @@
         "NORP": {
           "Factual Hallucination": 11,
           "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 3,
-          "Non-hallucinated": 80,
-          "Unknown": 1865,
-          "total": 1962
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 79,
+          "Unknown": 1864,
+          "total": 1961
         },
         "ORDINAL": {
           "Factual Hallucination": 5,
           "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 9,
-          "Non-hallucinated": 8,
-          "Unknown": 939,
-          "total": 963
+          "Non-hallucinated": 9,
+          "Unknown": 937,
+          "total": 962
         },
         "ORG": {
           "Factual Hallucination": 55,
           "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 8,
-          "Non-hallucinated": 128,
-          "Unknown": 5419,
+          "Non-hallucinated": 131,
+          "Unknown": 5416,
           "total": 5612
         },
         "PERCENT": {
@@ -56400,12 +56388,12 @@
           "total": 90
         },
         "PERSON": {
-          "Factual Hallucination": 102,
-          "Intrinsic Hallucination": 11,
-          "Non-factual Hallucination": 36,
-          "Non-hallucinated": 324,
-          "Unknown": 9843,
-          "total": 10316
+          "Factual Hallucination": 101,
+          "Intrinsic Hallucination": 9,
+          "Non-factual Hallucination": 34,
+          "Non-hallucinated": 315,
+          "Unknown": 9667,
+          "total": 10126
         },
         "PRODUCT": {
           "Non-hallucinated": 4,
@@ -56432,17 +56420,17 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.0561143462149287,
+      "ents_per_sum": 3.039174166225516,
       "factual": 0.08125992588671255,
-      "failed": 243,
-      "non_factual": 0.031056996647256044,
-      "non_factual_extrinsic": 0.008293629786483148,
-      "non_factual_intrinsic": 0.0027351332274572083,
+      "failed": 244,
+      "non_factual": 0.03123345685547909,
+      "non_factual_extrinsic": 0.008381859890594671,
+      "non_factual_intrinsic": 0.0026469031233456856,
       "skipped": 0.0,
-      "sum_with_extrinsic": 0.5707605434974413,
-      "sum_with_extrinsic_factual": 0.016322569260631727,
+      "sum_with_extrinsic": 0.5706723133933298,
+      "sum_with_extrinsic_factual": 0.016587259572966296,
       "total": 11334,
-      "unknown": 0.8876830774660314
+      "unknown": 0.8875066172578083
     },
     "iteration": 2,
     "summary": {
@@ -57880,12 +57868,6 @@
         },
         "summary": "Olympic taekwondo silver medallist and world number two judo black belt Nadiem El-Khalifa is a British mixed martial arts (MMA) fighter."
       },
-      "29738214": {
-        "edit_stats": {
-          "edit_distance_token": 13
-        },
-        "summary": "Voters in Tunisia will go to the polls on 8 October to elect a new parliament, following the ousting of long-serving President Zine al-Abidine Ben Ali in 2011."
-      },
       "29742220": {
         "edit_stats": {
           "edit_distance_token": 7
@@ -58176,9 +58158,9 @@
       },
       "30814192": {
         "edit_stats": {
-          "edit_distance_token": 6
+          "edit_distance_token": 12
         },
-        "summary": "Louis Armstrong's \"I love you\" tweet to Harry Styles has become the most retweeted ever."
+        "summary": "It's the most retweeted tweet of all time."
       },
       "30815279": {
         "edit_stats": {
@@ -60930,9 +60912,9 @@
       },
       "35141800": {
         "edit_stats": {
-          "edit_distance_token": 4
+          "edit_distance_token": 10
         },
-        "summary": "Atletico Madrid missed the chance to go top of La Liga for the first time this season as Charles' late goal saw them lose 2-1 at Real Sociedad."
+        "summary": "Atletico Madrid missed the chance to go top of La Liga for the first time this season as Charles scored a late equaliser against Real Sociedad."
       },
       "35142654": {
         "edit_stats": {
@@ -61044,9 +61026,9 @@
       },
       "35187903": {
         "edit_stats": {
-          "edit_distance_token": 8
+          "edit_distance_token": 4
         },
-        "summary": "One of Osama Bin Laden's closest allies in the Middle East, Abdel Hakim al-Bahri, has died, Yemeni officials say."
+        "summary": "One of Osama Bin Laden's former bodyguards, Abu Muhammad al- Bahri, has died, Yemeni officials say."
       },
       "35188992": {
         "edit_stats": {
@@ -61630,6 +61612,12 @@
         },
         "summary": "Leeds United chairman Massimo Cellino has been \"supportive\" during the club's recent poor run of form, says chief executive Martin Raynor."
       },
+      "35553747": {
+        "edit_stats": {
+          "edit_distance_token": 1
+        },
+        "summary": "French President Francois Hollande has named Jean-Yves Ayrault as his new foreign minister."
+      },
       "35560979": {
         "edit_stats": {
           "edit_distance_token": 1
@@ -61782,9 +61770,9 @@
       },
       "35653334": {
         "edit_stats": {
-          "edit_distance_token": 11
+          "edit_distance_token": 13
         },
-        "summary": "Algeria have confirmed the signing of Lille and France Under-21 striker Georges-Kevin Benzia."
+        "summary": "Algeria have confirmed the signing of Lille and France Under-21 striker Anthony Benzia on a three-year deal."
       },
       "35654307": {
         "edit_stats": {
@@ -63460,11 +63448,23 @@
         },
         "summary": "Diving helmets from around the world have been sold at auction for a total of \u00a350,000."
       },
+      "36545008": {
+        "edit_stats": {
+          "edit_distance_token": 10
+        },
+        "summary": "Haiti's Senate has voted to dismiss President Jovenel Privert."
+      },
       "36550656": {
         "edit_stats": {
           "edit_distance_token": 4
         },
         "summary": "Lancashire director of cricket Mark Giles says his side are not good enough in one-day cricket, following their heavy defeat by Kent."
+      },
+      "36555657": {
+        "edit_stats": {
+          "edit_distance_token": 20
+        },
+        "summary": "The board of Viacom, the owner of Paramount Pictures, has voted to remove the company's chief executive, Jean-Louis Dauman, from the board."
       },
       "36558809": {
         "edit_stats": {
@@ -63552,9 +63552,9 @@
       },
       "36574570": {
         "edit_stats": {
-          "edit_distance_token": 2
+          "edit_distance_token": 18
         },
-        "summary": "Kim In-kyung birdied the first play-off hole to beat compatriot Carlota Ciganda and win the LPGA's Maybank Championship in California."
+        "summary": "South Korea's Kim In-kyun won a play-off with Spain's Angel Cabrera at the NW Arkansas Championship."
       },
       "36591829": {
         "edit_stats": {
@@ -65006,7 +65006,7 @@
         "edit_stats": {
           "edit_distance_token": 6
         },
-        "summary": "Police in Mauritius have seized heroin with an estimated street value of more than $2m (\u00c2\u00a31.5m) from the home of the country's top football goalkeeper, Thiago Leopold."
+        "summary": "Police in Mauritius have seized heroin with an estimated street value of more than $2m (\u00c2\u00a31.5m) from the home of the country's top goalkeeper, Jean Leopold."
       },
       "37496318": {
         "edit_stats": {
@@ -65178,9 +65178,9 @@
       },
       "37616609": {
         "edit_stats": {
-          "edit_distance_token": 8
+          "edit_distance_token": 12
         },
-        "summary": "British number two Matt Simpson was beaten 4-2 by Egypt's Mohamed El-Khoury in the second round of the World Indoor Bowls Championships in Birmingham."
+        "summary": "British number two Matt Simpson was beaten 4-2 by Egypt's Ahmed El-Khalili in the second round of the Qatar Open in Doha."
       },
       "37617379": {
         "edit_stats": {
@@ -68962,6 +68962,12 @@
         },
         "summary": "An 18-year-old man has been jailed for life for plotting to carry out a \"mass murder\" in London."
       },
+      "40484622": {
+        "edit_stats": {
+          "edit_distance_token": 5
+        },
+        "summary": "Arsenal Ladies captain Alex Morgan has signed a new two-and-a-half-year contract with the Premier League club."
+      },
       "40495119": {
         "edit_stats": {
           "edit_distance_token": 16
@@ -69677,38 +69683,38 @@
         "summary": "Lewis Hamilton extended his lead at the top of the Formula 1 world championship to 26 points with a dominant victory in the Italian Grand Prix."
       }
     },
-    "summary_generated": 2395
+    "summary_generated": 2399
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 266,
-      "Intrinsic Hallucination": 39,
-      "Non-factual Hallucination": 116,
-      "Non-hallucinated": 879,
-      "Unknown": 33200,
+      "Factual Hallucination": 268,
+      "Intrinsic Hallucination": 35,
+      "Non-factual Hallucination": 118,
+      "Non-hallucinated": 876,
+      "Unknown": 33014,
       "count_extrinsic": 10607,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9285939968404423,
+        "mean": 0.9328616352201257,
         "median": 1.0,
-        "stdev": 0.18146374882821892
+        "stdev": 0.17414748242527625
       },
-      "total": 34500,
+      "total": 34311,
       "type": {
         "CARDINAL": {
           "Factual Hallucination": 12,
-          "Intrinsic Hallucination": 8,
+          "Intrinsic Hallucination": 7,
           "Non-factual Hallucination": 15,
           "Non-hallucinated": 43,
-          "Unknown": 2310,
-          "total": 2388
+          "Unknown": 2309,
+          "total": 2386
         },
         "DATE": {
-          "Factual Hallucination": 19,
+          "Factual Hallucination": 22,
           "Intrinsic Hallucination": 4,
           "Non-factual Hallucination": 19,
           "Non-hallucinated": 28,
-          "Unknown": 2826,
-          "total": 2896
+          "Unknown": 2824,
+          "total": 2897
         },
         "EVENT": {
           "Factual Hallucination": 3,
@@ -69722,16 +69728,16 @@
           "Intrinsic Hallucination": 1,
           "Non-factual Hallucination": 1,
           "Non-hallucinated": 7,
-          "Unknown": 308,
-          "total": 322
+          "Unknown": 310,
+          "total": 324
         },
         "GPE": {
-          "Factual Hallucination": 51,
+          "Factual Hallucination": 52,
           "Intrinsic Hallucination": 4,
-          "Non-factual Hallucination": 15,
-          "Non-hallucinated": 237,
-          "Unknown": 7767,
-          "total": 8074
+          "Non-factual Hallucination": 16,
+          "Non-hallucinated": 241,
+          "Unknown": 7764,
+          "total": 8077
         },
         "LANGUAGE": {
           "Unknown": 12,
@@ -69758,25 +69764,25 @@
         "NORP": {
           "Factual Hallucination": 11,
           "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 3,
-          "Non-hallucinated": 80,
-          "Unknown": 1877,
-          "total": 1974
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 79,
+          "Unknown": 1876,
+          "total": 1973
         },
         "ORDINAL": {
           "Factual Hallucination": 5,
           "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 9,
-          "Non-hallucinated": 8,
-          "Unknown": 934,
+          "Non-hallucinated": 9,
+          "Unknown": 933,
           "total": 958
         },
         "ORG": {
           "Factual Hallucination": 56,
           "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 10,
-          "Non-hallucinated": 127,
-          "Unknown": 5440,
+          "Non-hallucinated": 131,
+          "Unknown": 5436,
           "total": 5635
         },
         "PERCENT": {
@@ -69787,12 +69793,12 @@
           "total": 87
         },
         "PERSON": {
-          "Factual Hallucination": 100,
-          "Intrinsic Hallucination": 13,
+          "Factual Hallucination": 98,
+          "Intrinsic Hallucination": 10,
           "Non-factual Hallucination": 36,
-          "Non-hallucinated": 321,
-          "Unknown": 9813,
-          "total": 10283
+          "Non-hallucinated": 310,
+          "Unknown": 9637,
+          "total": 10091
         },
         "PRODUCT": {
           "Non-hallucinated": 4,
@@ -69819,17 +69825,17 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.0439385918475383,
+      "ents_per_sum": 3.0272631021704606,
       "factual": 0.08293629786483148,
       "failed": 413,
-      "non_factual": 0.0451738133050997,
-      "non_factual_extrinsic": 0.007940709370037057,
-      "non_factual_intrinsic": 0.002911593435680254,
+      "non_factual": 0.04535027351332275,
+      "non_factual_extrinsic": 0.00802893947414858,
+      "non_factual_intrinsic": 0.0028233633315687314,
       "skipped": 0.0,
-      "sum_with_extrinsic": 0.563437444856185,
-      "sum_with_extrinsic_factual": 0.015969648844185638,
+      "sum_with_extrinsic": 0.5633492147520734,
+      "sum_with_extrinsic_factual": 0.01614610905240868,
       "total": 11334,
-      "unknown": 0.8718898888300688
+      "unknown": 0.8717134286218458
     },
     "iteration": 3,
     "summary": {
@@ -70018,6 +70024,12 @@
           "edit_distance_token": 1
         },
         "summary": "Downing Street has said it hopes to work with the Burmese government to find and restore six missing Spitfire fighter planes."
+      },
+      "17849738": {
+        "edit_stats": {
+          "edit_distance_token": 13
+        },
+        "summary": "Egypt's electoral commission has upheld the disqualification of ex-Prime Minister Assel Shafiq from next month's presidential election."
       },
       "17853560": {
         "edit_stats": {
@@ -70655,12 +70667,6 @@
         },
         "summary": "Paralympic gold medallist Sarah Butterfield won Great Britain's first gold medal at the European Para-athletics Championships in Glasgow."
       },
-      "29065811": {
-        "edit_stats": {
-          "edit_distance_token": 5
-        },
-        "summary": "\"When you start a business, you are not considered a businessperson,\" says Nairobi hairdresser Sally Terry."
-      },
       "29089276": {
         "edit_stats": {
           "edit_distance_token": 6
@@ -70798,12 +70804,6 @@
           "edit_distance_token": 10
         },
         "summary": "Olympic taekwondo silver medallist and world number four in the -69kg category, Samoan-born boxer Sullay Mokhtar, was inspired to take up the sport at the age of 14."
-      },
-      "29738214": {
-        "edit_stats": {
-          "edit_distance_token": 14
-        },
-        "summary": "Voters in Tunisia will go to the polls on 7 October to elect a new National Assembly, following the ousting of long-serving President Zine al-Abidine Ben Ali in 2011."
       },
       "29742220": {
         "edit_stats": {
@@ -70996,12 +70996,6 @@
           "edit_distance_token": 2
         },
         "summary": "A teenage boy who raped and sexually assaulted five girls has been jailed for three years."
-      },
-      "30814192": {
-        "edit_stats": {
-          "edit_distance_token": 12
-        },
-        "summary": "It's the most retweeted tweet of all time."
       },
       "30815279": {
         "edit_stats": {
@@ -72761,12 +72755,6 @@
         },
         "summary": "The number of patients who failed to turn up for NHS outpatient appointments in Scotland rose by more than 50% last year, according to new figures."
       },
-      "35141800": {
-        "edit_stats": {
-          "edit_distance_token": 4
-        },
-        "summary": "Atletico Madrid missed the chance to go top of La Liga for the first time this season as Charles' late goal saw them lose 2-1 at Real Sociedad."
-      },
       "35142654": {
         "edit_stats": {
           "edit_distance_token": 17
@@ -72835,9 +72823,9 @@
       },
       "35187903": {
         "edit_stats": {
-          "edit_distance_token": 6
+          "edit_distance_token": 7
         },
-        "summary": "One of Osama Bin Laden's closest allies in Yemen, Abu Jandal al-Bahri, has died, Yemeni officials say."
+        "summary": "One of Osama Bin Laden's closest allies in Yemen, Abu Jandal Bahri, has died, Yemeni officials say."
       },
       "35188992": {
         "edit_stats": {
@@ -73205,6 +73193,12 @@
         },
         "summary": "Leeds United chairman Massimo Cellino has been \"supportive\" during the club's recent poor run of form, according to chief executive Paul Raynor."
       },
+      "35553747": {
+        "edit_stats": {
+          "edit_distance_token": 6
+        },
+        "summary": "French President Francois Hollande has named Jean-Yoan Ayrault as his new foreign minister, the Elysee Palace says."
+      },
       "35569997": {
         "edit_stats": {
           "edit_distance_token": 13
@@ -73312,6 +73306,12 @@
           "edit_distance_token": 5
         },
         "summary": "Salford Red Devils prop Josh Garbutt says he is \"very disappointed\" to have been banned for punching an opponent in Saturday's Super League defeat by St Helier."
+      },
+      "35653334": {
+        "edit_stats": {
+          "edit_distance_token": 13
+        },
+        "summary": "Algeria have confirmed the signing of Lille and France Under-21 striker Bernard Benzia on a two-year deal."
       },
       "35654307": {
         "edit_stats": {
@@ -73828,6 +73828,12 @@
           "edit_distance_token": 7
         },
         "summary": "A powerful earthquake has struck south-eastern Japan, just over a week after a powerful quake struck the same area."
+      },
+      "36061830": {
+        "edit_stats": {
+          "edit_distance_token": 17
+        },
+        "summary": "World number one Andy Murray and partner Marcelos Melo beat world number two Milos Raonic and Dusan Dodig 6-3 7-5 to reach the final of the Monte Carlo Masters."
       },
       "36065523": {
         "edit_stats": {
@@ -74441,6 +74447,12 @@
         },
         "summary": "Lancashire head coach Justin Giles says his side are not good enough in one-day cricket after their heavy defeat by Worcester."
       },
+      "36555657": {
+        "edit_stats": {
+          "edit_distance_token": 24
+        },
+        "summary": "The board of National Amusements, the company run by Hollywood mogul Viacomi, has voted to remove its chief executive, Bernard Dauman, from the board."
+      },
       "36558809": {
         "edit_stats": {
           "edit_distance_token": 6
@@ -74509,9 +74521,9 @@
       },
       "36574570": {
         "edit_stats": {
-          "edit_distance_token": 4
+          "edit_distance_token": 22
         },
-        "summary": "Kim In-kyung birdied the first play-off hole to beat compatriot Carlota Ciganda and win the LPGA's Maybank Championship."
+        "summary": "South Korea's Kim In-kyun won a play-off with Spain's Angel di Maria at the NW Arkansas Championship to claim her first LPGA title."
       },
       "36591829": {
         "edit_stats": {
@@ -74929,9 +74941,9 @@
       },
       "36961338": {
         "edit_stats": {
-          "edit_distance_token": 6
+          "edit_distance_token": 9
         },
-        "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner Sir Bernard Hogan-Howe has said."
+        "summary": "Armed police officers will be patrolling the streets of London and the rest of England and Wales, the Metropolitan Police commissioner has said."
       },
       "36962215": {
         "edit_stats": {
@@ -75507,7 +75519,7 @@
         "edit_stats": {
           "edit_distance_token": 6
         },
-        "summary": "Police in Mauritius have seized heroin with an estimated street value of more than \u00c2\u00a350,000 from the home of the country's top football goalkeeper, Thiele Leopold."
+        "summary": "Police in Mauritius have seized heroin with an estimated street value of more than \u00c2\u00a350,000 from the home of the country's top football goalkeeper, Thiago Leopold."
       },
       "37496318": {
         "edit_stats": {
@@ -75613,9 +75625,9 @@
       },
       "37616609": {
         "edit_stats": {
-          "edit_distance_token": 12
+          "edit_distance_token": 10
         },
-        "summary": "British squash player Ryan Simpson was beaten 4-2 by Egypt's Nour El-Khoury in the second round of the Qatar Open."
+        "summary": "British squash player Ryan Simpson was beaten 4-2 by Egypt's Nour El-Kayed in the second round of the Qatar Open in Doha."
       },
       "37617379": {
         "edit_stats": {
@@ -78119,6 +78131,12 @@
         },
         "summary": "A 17-year-old has been jailed for life for plotting to carry out a \"mass murder\" in London."
       },
+      "40484622": {
+        "edit_stats": {
+          "edit_distance_token": 5
+        },
+        "summary": "Arsenal Ladies captain Alex Morgan has signed a new two-and-a-half-year contract with the Premier League club."
+      },
       "40495119": {
         "edit_stats": {
           "edit_distance_token": 17
@@ -78606,38 +78624,38 @@
         "summary": "Lewis Hamilton extended his lead at the top of the Formula 1 world championship to 28 points with victory in the Italian Grand Prix."
       }
     },
-    "summary_generated": 1632
+    "summary_generated": 1633
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 270,
-      "Intrinsic Hallucination": 39,
-      "Non-factual Hallucination": 123,
+      "Factual Hallucination": 273,
+      "Intrinsic Hallucination": 35,
+      "Non-factual Hallucination": 126,
       "Non-hallucinated": 884,
-      "Unknown": 33161,
-      "count_extrinsic": 10551,
+      "Unknown": 32962,
+      "count_extrinsic": 10546,
       "extrinsic_factuality_ratio": {
-        "mean": 0.922248427672956,
+        "mean": 0.9231308411214953,
         "median": 1.0,
-        "stdev": 0.18720616983351068
+        "stdev": 0.18655762979771454
       },
-      "total": 34477,
+      "total": 34280,
       "type": {
         "CARDINAL": {
           "Factual Hallucination": 12,
-          "Intrinsic Hallucination": 8,
+          "Intrinsic Hallucination": 7,
           "Non-factual Hallucination": 16,
           "Non-hallucinated": 44,
-          "Unknown": 2319,
-          "total": 2399
+          "Unknown": 2318,
+          "total": 2397
         },
         "DATE": {
-          "Factual Hallucination": 20,
+          "Factual Hallucination": 23,
           "Intrinsic Hallucination": 4,
           "Non-factual Hallucination": 21,
           "Non-hallucinated": 29,
-          "Unknown": 2806,
-          "total": 2880
+          "Unknown": 2804,
+          "total": 2881
         },
         "EVENT": {
           "Factual Hallucination": 3,
@@ -78647,20 +78665,20 @@
           "total": 633
         },
         "FAC": {
-          "Factual Hallucination": 5,
+          "Factual Hallucination": 6,
           "Intrinsic Hallucination": 1,
           "Non-factual Hallucination": 1,
           "Non-hallucinated": 7,
           "Unknown": 307,
-          "total": 321
+          "total": 322
         },
         "GPE": {
-          "Factual Hallucination": 52,
+          "Factual Hallucination": 53,
           "Intrinsic Hallucination": 4,
-          "Non-factual Hallucination": 17,
-          "Non-hallucinated": 237,
-          "Unknown": 7753,
-          "total": 8063
+          "Non-factual Hallucination": 18,
+          "Non-hallucinated": 241,
+          "Unknown": 7748,
+          "total": 8064
         },
         "LANGUAGE": {
           "Unknown": 11,
@@ -78668,8 +78686,8 @@
         },
         "LAW": {
           "Factual Hallucination": 1,
-          "Unknown": 29,
-          "total": 30
+          "Unknown": 30,
+          "total": 31
         },
         "LOC": {
           "Non-factual Hallucination": 2,
@@ -78687,26 +78705,26 @@
         "NORP": {
           "Factual Hallucination": 11,
           "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 3,
-          "Non-hallucinated": 80,
-          "Unknown": 1879,
-          "total": 1976
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 79,
+          "Unknown": 1876,
+          "total": 1973
         },
         "ORDINAL": {
           "Factual Hallucination": 5,
           "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 9,
-          "Non-hallucinated": 8,
-          "Unknown": 938,
-          "total": 962
+          "Non-hallucinated": 9,
+          "Unknown": 936,
+          "total": 961
         },
         "ORG": {
           "Factual Hallucination": 58,
           "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 11,
-          "Non-hallucinated": 127,
-          "Unknown": 5439,
-          "total": 5637
+          "Non-hallucinated": 131,
+          "Unknown": 5432,
+          "total": 5634
         },
         "PERCENT": {
           "Factual Hallucination": 1,
@@ -78716,12 +78734,12 @@
           "total": 86
         },
         "PERSON": {
-          "Factual Hallucination": 100,
-          "Intrinsic Hallucination": 13,
-          "Non-factual Hallucination": 36,
-          "Non-hallucinated": 322,
-          "Unknown": 9801,
-          "total": 10272
+          "Factual Hallucination": 98,
+          "Intrinsic Hallucination": 10,
+          "Non-factual Hallucination": 37,
+          "Non-hallucinated": 314,
+          "Unknown": 9621,
+          "total": 10080
         },
         "PRODUCT": {
           "Non-hallucinated": 4,
@@ -78748,17 +78766,17 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.0419092994529735,
+      "ents_per_sum": 3.024527968943003,
       "factual": 0.08311275807305453,
-      "failed": 891,
-      "non_factual": 0.08611258161284631,
-      "non_factual_extrinsic": 0.008117169578260102,
-      "non_factual_intrinsic": 0.002911593435680254,
+      "failed": 889,
+      "non_factual": 0.08620081171695783,
+      "non_factual_extrinsic": 0.008293629786483148,
+      "non_factual_intrinsic": 0.0028233633315687314,
       "skipped": 0.0,
-      "sum_with_extrinsic": 0.5615846126698429,
-      "sum_with_extrinsic_factual": 0.01579318863596259,
+      "sum_with_extrinsic": 0.5614963825657314,
+      "sum_with_extrinsic_factual": 0.015969648844185638,
       "total": 11334,
-      "unknown": 0.8307746603140992
+      "unknown": 0.8306864302099877
     },
     "iteration": 4,
     "summary": {
@@ -79169,12 +79187,6 @@
           "edit_distance_token": 6
         },
         "summary": "Spending on private ambulances in London more than doubled between 2011 and 2014, according to Labour."
-      },
-      "29738214": {
-        "edit_stats": {
-          "edit_distance_token": 14
-        },
-        "summary": "Voters in Tunisia will go to the polls on 7 November to elect a new National Assembly, following the ousting of long-serving President Zine al-Abidine Ben Ali in 2011."
       },
       "29742220": {
         "edit_stats": {
@@ -79854,6 +79866,12 @@
         },
         "summary": "London Irish scrum-halves Craig Gilmour and Gavin Rennie have been banned for three games by the Rugby Football Union for violent conduct."
       },
+      "34807343": {
+        "edit_stats": {
+          "edit_distance_token": 2
+        },
+        "summary": "Wales head coach Warren Gatland will not replace Stuart Lancaster as England head coach, says ex-Welsh captain Mike Thomas."
+      },
       "34828558": {
         "edit_stats": {
           "edit_distance_token": 15
@@ -79991,6 +80009,12 @@
           "edit_distance_token": 4
         },
         "summary": "League One side Peterborough United have extended the loan spell of Middlesbath left-back Chris Long until the end of the season."
+      },
+      "35187903": {
+        "edit_stats": {
+          "edit_distance_token": 11
+        },
+        "summary": "One of Osama Bin Laden's closest allies in Yemen, Abu Jandal al-Bin Laden's former bodyguard, has died, officials say."
       },
       "35188992": {
         "edit_stats": {
@@ -80177,6 +80201,12 @@
           "edit_distance_token": 7
         },
         "summary": "Salford Red Devils prop Ryan Garbutt says he is \"very disappointed\" to have been banned for punching an opponent in Sunday's Super League defeat by St Helier."
+      },
+      "35653334": {
+        "edit_stats": {
+          "edit_distance_token": 13
+        },
+        "summary": "Algeria have confirmed the signing of Lille and France Under-21 striker Georges Benzia on a four-year deal."
       },
       "35654307": {
         "edit_stats": {
@@ -80393,6 +80423,12 @@
           "edit_distance_token": 21
         },
         "summary": "Welsh boxer Andrew Selby will fight in his home city of Cardiff on Saturday, 10 April, while fellow Welsh boxer Ryan Norman will fight on the undercard."
+      },
+      "36061830": {
+        "edit_stats": {
+          "edit_distance_token": 18
+        },
+        "summary": "World number one Andy Murray and partner Marcelos Melo beat world number two Milos Raonic and Mate Dodig 6-3 7-5 to reach the final of the Monte Carlo Masters."
       },
       "36065523": {
         "edit_stats": {
@@ -80622,6 +80658,12 @@
         },
         "summary": "Lancashire are not a better side in one-day cricket than they are in Twenty20 cricket, according to director of cricket Giles."
       },
+      "36555657": {
+        "edit_stats": {
+          "edit_distance_token": 22
+        },
+        "summary": "The board of National Amusements, the company controlled by the media tycoon Shari Redstone, has voted to remove Jean-Michel Dauman from the board."
+      },
       "36562708": {
         "edit_stats": {
           "edit_distance_token": 3
@@ -80657,6 +80699,12 @@
           "edit_distance_token": 13
         },
         "summary": "Thieves have broken into a West Midlands industrial estate, stealing \u00a3100,000 worth of machinery."
+      },
+      "36574570": {
+        "edit_stats": {
+          "edit_distance_token": 14
+        },
+        "summary": "South Korea's Kim In-kyun won a play-off with Angel di Tomas Ciganda to claim the Maybank Championship in Florida."
       },
       "36598354": {
         "edit_stats": {
@@ -80872,7 +80920,7 @@
         "edit_stats": {
           "edit_distance_token": 6
         },
-        "summary": "Northern Ireland's Donnelly is through to the quarter-finals of the bantamweight competition at the Olympic Games after a narrow win over France's Jean-Louis Gourcaud on Thursday."
+        "summary": "Northern Ireland's Donnelly is through to the quarter-finals of the bantamweight competition at the Olympic Games after a narrow win over Tunisia's Abdelhadi al-Sayed on Thursday."
       },
       "37063284": {
         "edit_stats": {
@@ -81053,6 +81101,12 @@
           "edit_distance_token": 8
         },
         "summary": "Exeter Chiefs head coach Rob Baxter has praised the progress made by back-row flanker Josh Woodburn since his summer move from Bath."
+      },
+      "37494583": {
+        "edit_stats": {
+          "edit_distance_token": 6
+        },
+        "summary": "Police in Mauritius have seized heroin with an estimated street value of more than \u00c2\u00a350,000 from the home of the country's top football goalkeeper, Thiele Leopold."
       },
       "37515397": {
         "edit_stats": {
@@ -82393,37 +82447,37 @@
         "summary": "National League side Barrow have parted company with head coach David Cox after less than a year in charge."
       }
     },
-    "summary_generated": 1083
+    "summary_generated": 1087
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 268,
-      "Intrinsic Hallucination": 40,
-      "Non-factual Hallucination": 117,
-      "Non-hallucinated": 880,
-      "Unknown": 33162,
-      "count_extrinsic": 10514,
+      "Factual Hallucination": 271,
+      "Intrinsic Hallucination": 36,
+      "Non-factual Hallucination": 120,
+      "Non-hallucinated": 879,
+      "Unknown": 32964,
+      "count_extrinsic": 10507,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9269654088050315,
+        "mean": 0.9278037383177571,
         "median": 1.0,
-        "stdev": 0.18131410847292562
+        "stdev": 0.18067832527401712
       },
-      "total": 34467,
+      "total": 34270,
       "type": {
         "CARDINAL": {
           "Factual Hallucination": 12,
-          "Intrinsic Hallucination": 8,
+          "Intrinsic Hallucination": 7,
           "Non-factual Hallucination": 16,
           "Non-hallucinated": 43,
-          "Unknown": 2323,
-          "total": 2402
+          "Unknown": 2322,
+          "total": 2400
         },
         "DATE": {
-          "Factual Hallucination": 19,
+          "Factual Hallucination": 22,
           "Intrinsic Hallucination": 4,
           "Non-factual Hallucination": 20,
           "Non-hallucinated": 29,
-          "Unknown": 2791,
+          "Unknown": 2788,
           "total": 2863
         },
         "EVENT": {
@@ -82433,20 +82487,20 @@
           "total": 629
         },
         "FAC": {
-          "Factual Hallucination": 5,
+          "Factual Hallucination": 6,
           "Intrinsic Hallucination": 1,
           "Non-factual Hallucination": 1,
           "Non-hallucinated": 7,
           "Unknown": 310,
-          "total": 324
+          "total": 325
         },
         "GPE": {
-          "Factual Hallucination": 52,
+          "Factual Hallucination": 53,
           "Intrinsic Hallucination": 4,
-          "Non-factual Hallucination": 15,
-          "Non-hallucinated": 236,
-          "Unknown": 7752,
-          "total": 8059
+          "Non-factual Hallucination": 16,
+          "Non-hallucinated": 240,
+          "Unknown": 7747,
+          "total": 8060
         },
         "LANGUAGE": {
           "Unknown": 12,
@@ -82454,8 +82508,8 @@
         },
         "LAW": {
           "Factual Hallucination": 1,
-          "Unknown": 29,
-          "total": 30
+          "Unknown": 30,
+          "total": 31
         },
         "LOC": {
           "Non-factual Hallucination": 2,
@@ -82473,26 +82527,26 @@
         "NORP": {
           "Factual Hallucination": 11,
           "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 3,
-          "Non-hallucinated": 80,
-          "Unknown": 1875,
-          "total": 1972
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 79,
+          "Unknown": 1873,
+          "total": 1970
         },
         "ORDINAL": {
           "Factual Hallucination": 5,
           "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 9,
-          "Non-hallucinated": 8,
-          "Unknown": 938,
-          "total": 962
+          "Non-hallucinated": 9,
+          "Unknown": 936,
+          "total": 961
         },
         "ORG": {
           "Factual Hallucination": 57,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 12,
-          "Non-hallucinated": 127,
-          "Unknown": 5451,
-          "total": 5649
+          "Non-factual Hallucination": 13,
+          "Non-hallucinated": 131,
+          "Unknown": 5444,
+          "total": 5647
         },
         "PERCENT": {
           "Factual Hallucination": 1,
@@ -82502,12 +82556,12 @@
           "total": 88
         },
         "PERSON": {
-          "Factual Hallucination": 100,
-          "Intrinsic Hallucination": 14,
+          "Factual Hallucination": 98,
+          "Intrinsic Hallucination": 11,
           "Non-factual Hallucination": 33,
-          "Non-hallucinated": 320,
-          "Unknown": 9803,
-          "total": 10270
+          "Non-hallucinated": 311,
+          "Unknown": 9624,
+          "total": 10077
         },
         "PRODUCT": {
           "Non-hallucinated": 4,
@@ -82534,17 +82588,17 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.041026998411858,
+      "ents_per_sum": 3.023645667901888,
       "factual": 0.08320098817716605,
-      "failed": 1009,
-      "non_factual": 0.09590612316922534,
-      "non_factual_extrinsic": 0.007940709370037057,
-      "non_factual_intrinsic": 0.002999823539791777,
+      "failed": 1008,
+      "non_factual": 0.09608258337744839,
+      "non_factual_extrinsic": 0.008117169578260102,
+      "non_factual_intrinsic": 0.002911593435680254,
       "skipped": 0.0,
-      "sum_with_extrinsic": 0.5611434621492853,
-      "sum_with_extrinsic_factual": 0.015969648844185638,
+      "sum_with_extrinsic": 0.5610552320451738,
+      "sum_with_extrinsic_factual": 0.01614610905240868,
       "total": 11334,
-      "unknown": 0.8208928886536087
+      "unknown": 0.8207164284453856
     },
     "iteration": 5,
     "summary": {
@@ -82788,12 +82842,6 @@
         },
         "summary": "Spending on private ambulances in London has more than doubled in the past three years, according to figures obtained by Labour."
       },
-      "29738214": {
-        "edit_stats": {
-          "edit_distance_token": 14
-        },
-        "summary": "Voters in Tunisia will go to the polls on 8 November to elect a new National Assembly, following the ousting of long-serving President Zine al-Abidine Ben Ali in 2011."
-      },
       "30002988": {
         "edit_stats": {
           "edit_distance_token": 5
@@ -82950,12 +82998,6 @@
         },
         "summary": "A huge sinkhole has opened up in the middle of a golf course in the US state of Arizona."
       },
-      "33344216": {
-        "edit_stats": {
-          "edit_distance_token": 7
-        },
-        "summary": "Cameroon international defender Jean-Kevin Assou-Ekotto has signed for French Ligue 1 side St Etienne."
-      },
       "33404770": {
         "edit_stats": {
           "edit_distance_token": 2
@@ -83094,6 +83136,12 @@
         },
         "summary": "London Irish scrum-halves Chris Robson and Ian Keatley have been given two-match bans for violent conduct by Rugby Football Union."
       },
+      "34807343": {
+        "edit_stats": {
+          "edit_distance_token": 2
+        },
+        "summary": "Wales head coach Warren Gatland will not replace Stuart Lancaster as England head coach, says ex-Welsh captain Martin Thomas."
+      },
       "34898778": {
         "edit_stats": {
           "edit_distance_token": 12
@@ -83129,6 +83177,12 @@
           "edit_distance_token": 5
         },
         "summary": "A former NHS nurse who downloaded hundreds of thousands of indecent images of children has been jailed for six and a half years."
+      },
+      "35187903": {
+        "edit_stats": {
+          "edit_distance_token": 6
+        },
+        "summary": "One of Osama Bin Laden's closest allies in Yemen, Abu Jandal al-BahRI, has died, Yemeni officials say."
       },
       "35188992": {
         "edit_stats": {
@@ -83201,6 +83255,12 @@
           "edit_distance_token": 21
         },
         "summary": "The Olivier Awards are to be hosted by former West End star and TV presenter Luciana Ball for a third time."
+      },
+      "35653334": {
+        "edit_stats": {
+          "edit_distance_token": 11
+        },
+        "summary": "Algeria have confirmed the signing of Lille and France Under-21 striker Georges Benzia."
       },
       "35666059": {
         "edit_stats": {
@@ -83430,6 +83490,12 @@
         },
         "summary": "Barra Airport on the Isle of Skyes is celebrating its 80th anniversary."
       },
+      "36555657": {
+        "edit_stats": {
+          "edit_distance_token": 22
+        },
+        "summary": "The board of National Amusements, the company controlled by the media tycoon Shari Redstone, has voted to remove Jean-Claise Dauman from the board."
+      },
       "36562708": {
         "edit_stats": {
           "edit_distance_token": 11
@@ -83549,6 +83615,12 @@
           "edit_distance_token": 16
         },
         "summary": "South Africa won the second one-day international against Ireland in Cape Town by an innings and 40 runs to level the series at 1-1."
+      },
+      "37052783": {
+        "edit_stats": {
+          "edit_distance_token": 6
+        },
+        "summary": "Northern Ireland's Donnelly is through to the quarter-finals of the bantamweight competition at the Olympic Games after a narrow win over Morocco's Abdelhadi al-Khalili on Thursday."
       },
       "37063284": {
         "edit_stats": {
@@ -84313,37 +84385,37 @@
         "summary": "Derbyshire will return to the T20 Blast next season despite missing out on Finals Day for the first time in their history, says director of cricket Doug Wilson."
       }
     },
-    "summary_generated": 412
+    "summary_generated": 416
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 267,
-      "Intrinsic Hallucination": 40,
-      "Non-factual Hallucination": 116,
-      "Non-hallucinated": 880,
-      "Unknown": 33140,
-      "count_extrinsic": 10481,
+      "Factual Hallucination": 270,
+      "Intrinsic Hallucination": 36,
+      "Non-factual Hallucination": 119,
+      "Non-hallucinated": 879,
+      "Unknown": 32942,
+      "count_extrinsic": 10474,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9289889415481833,
+        "mean": 0.92981220657277,
         "median": 1.0,
-        "stdev": 0.1793391689762895
+        "stdev": 0.17870269822480392
       },
-      "total": 34443,
+      "total": 34246,
       "type": {
         "CARDINAL": {
           "Factual Hallucination": 12,
-          "Intrinsic Hallucination": 8,
+          "Intrinsic Hallucination": 7,
           "Non-factual Hallucination": 16,
           "Non-hallucinated": 43,
-          "Unknown": 2323,
-          "total": 2402
+          "Unknown": 2322,
+          "total": 2400
         },
         "DATE": {
-          "Factual Hallucination": 19,
+          "Factual Hallucination": 22,
           "Intrinsic Hallucination": 4,
           "Non-factual Hallucination": 20,
           "Non-hallucinated": 29,
-          "Unknown": 2784,
+          "Unknown": 2781,
           "total": 2856
         },
         "EVENT": {
@@ -84353,20 +84425,20 @@
           "total": 629
         },
         "FAC": {
-          "Factual Hallucination": 5,
+          "Factual Hallucination": 6,
           "Intrinsic Hallucination": 1,
           "Non-factual Hallucination": 1,
           "Non-hallucinated": 7,
           "Unknown": 310,
-          "total": 324
+          "total": 325
         },
         "GPE": {
-          "Factual Hallucination": 51,
+          "Factual Hallucination": 52,
           "Intrinsic Hallucination": 4,
-          "Non-factual Hallucination": 15,
-          "Non-hallucinated": 236,
-          "Unknown": 7751,
-          "total": 8057
+          "Non-factual Hallucination": 16,
+          "Non-hallucinated": 240,
+          "Unknown": 7746,
+          "total": 8058
         },
         "LANGUAGE": {
           "Unknown": 12,
@@ -84374,8 +84446,8 @@
         },
         "LAW": {
           "Factual Hallucination": 1,
-          "Unknown": 29,
-          "total": 30
+          "Unknown": 30,
+          "total": 31
         },
         "LOC": {
           "Non-factual Hallucination": 2,
@@ -84393,26 +84465,26 @@
         "NORP": {
           "Factual Hallucination": 11,
           "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 3,
-          "Non-hallucinated": 80,
-          "Unknown": 1877,
-          "total": 1974
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 79,
+          "Unknown": 1875,
+          "total": 1972
         },
         "ORDINAL": {
           "Factual Hallucination": 5,
           "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 9,
-          "Non-hallucinated": 8,
-          "Unknown": 939,
-          "total": 963
+          "Non-hallucinated": 9,
+          "Unknown": 937,
+          "total": 962
         },
         "ORG": {
           "Factual Hallucination": 57,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 11,
-          "Non-hallucinated": 127,
-          "Unknown": 5447,
-          "total": 5644
+          "Non-factual Hallucination": 12,
+          "Non-hallucinated": 131,
+          "Unknown": 5440,
+          "total": 5642
         },
         "PERCENT": {
           "Factual Hallucination": 1,
@@ -84422,12 +84494,12 @@
           "total": 87
         },
         "PERSON": {
-          "Factual Hallucination": 100,
-          "Intrinsic Hallucination": 14,
+          "Factual Hallucination": 98,
+          "Intrinsic Hallucination": 11,
           "Non-factual Hallucination": 33,
-          "Non-hallucinated": 320,
-          "Unknown": 9797,
-          "total": 10264
+          "Non-hallucinated": 311,
+          "Unknown": 9618,
+          "total": 10071
         },
         "PRODUCT": {
           "Non-hallucinated": 4,
@@ -84454,17 +84526,17 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.0389094759131816,
+      "ents_per_sum": 3.0215281454032117,
       "factual": 0.08337744838538909,
-      "failed": 1068,
-      "non_factual": 0.10102346920769366,
-      "non_factual_extrinsic": 0.007852479265925534,
-      "non_factual_intrinsic": 0.002999823539791777,
+      "failed": 1066,
+      "non_factual": 0.10111169931180519,
+      "non_factual_extrinsic": 0.00802893947414858,
+      "non_factual_intrinsic": 0.002911593435680254,
       "skipped": 0.0,
-      "sum_with_extrinsic": 0.5606140815246162,
-      "sum_with_extrinsic_factual": 0.015969648844185638,
+      "sum_with_extrinsic": 0.5605258514205047,
+      "sum_with_extrinsic_factual": 0.01614610905240868,
       "total": 11334,
-      "unknown": 0.8155990824069173
+      "unknown": 0.8155108523028057
     },
     "iteration": 6,
     "summary": {
@@ -85267,37 +85339,37 @@
         "summary": "League Two side Mansfield Town have signed Cambridge United striker Scott Gallacher on loan for the rest of the season."
       }
     },
-    "summary_generated": 192
+    "summary_generated": 191
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 267,
-      "Intrinsic Hallucination": 40,
-      "Non-factual Hallucination": 116,
-      "Non-hallucinated": 880,
-      "Unknown": 33137,
-      "count_extrinsic": 10476,
+      "Factual Hallucination": 270,
+      "Intrinsic Hallucination": 36,
+      "Non-factual Hallucination": 119,
+      "Non-hallucinated": 879,
+      "Unknown": 32939,
+      "count_extrinsic": 10469,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9289889415481833,
+        "mean": 0.92981220657277,
         "median": 1.0,
-        "stdev": 0.1793391689762895
+        "stdev": 0.17870269822480392
       },
-      "total": 34440,
+      "total": 34243,
       "type": {
         "CARDINAL": {
           "Factual Hallucination": 12,
-          "Intrinsic Hallucination": 8,
+          "Intrinsic Hallucination": 7,
           "Non-factual Hallucination": 16,
           "Non-hallucinated": 43,
-          "Unknown": 2322,
-          "total": 2401
+          "Unknown": 2321,
+          "total": 2399
         },
         "DATE": {
-          "Factual Hallucination": 19,
+          "Factual Hallucination": 22,
           "Intrinsic Hallucination": 4,
           "Non-factual Hallucination": 20,
           "Non-hallucinated": 29,
-          "Unknown": 2783,
+          "Unknown": 2780,
           "total": 2855
         },
         "EVENT": {
@@ -85307,20 +85379,20 @@
           "total": 629
         },
         "FAC": {
-          "Factual Hallucination": 5,
+          "Factual Hallucination": 6,
           "Intrinsic Hallucination": 1,
           "Non-factual Hallucination": 1,
           "Non-hallucinated": 7,
           "Unknown": 310,
-          "total": 324
+          "total": 325
         },
         "GPE": {
-          "Factual Hallucination": 51,
+          "Factual Hallucination": 52,
           "Intrinsic Hallucination": 4,
-          "Non-factual Hallucination": 15,
-          "Non-hallucinated": 236,
-          "Unknown": 7748,
-          "total": 8054
+          "Non-factual Hallucination": 16,
+          "Non-hallucinated": 240,
+          "Unknown": 7743,
+          "total": 8055
         },
         "LANGUAGE": {
           "Unknown": 12,
@@ -85328,8 +85400,8 @@
         },
         "LAW": {
           "Factual Hallucination": 1,
-          "Unknown": 29,
-          "total": 30
+          "Unknown": 30,
+          "total": 31
         },
         "LOC": {
           "Non-factual Hallucination": 2,
@@ -85347,26 +85419,26 @@
         "NORP": {
           "Factual Hallucination": 11,
           "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 3,
-          "Non-hallucinated": 80,
-          "Unknown": 1877,
-          "total": 1974
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 79,
+          "Unknown": 1875,
+          "total": 1972
         },
         "ORDINAL": {
           "Factual Hallucination": 5,
           "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 9,
-          "Non-hallucinated": 8,
-          "Unknown": 939,
-          "total": 963
+          "Non-hallucinated": 9,
+          "Unknown": 937,
+          "total": 962
         },
         "ORG": {
           "Factual Hallucination": 57,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 11,
-          "Non-hallucinated": 127,
-          "Unknown": 5450,
-          "total": 5647
+          "Non-factual Hallucination": 12,
+          "Non-hallucinated": 131,
+          "Unknown": 5443,
+          "total": 5645
         },
         "PERCENT": {
           "Factual Hallucination": 1,
@@ -85376,12 +85448,12 @@
           "total": 87
         },
         "PERSON": {
-          "Factual Hallucination": 100,
-          "Intrinsic Hallucination": 14,
+          "Factual Hallucination": 98,
+          "Intrinsic Hallucination": 11,
           "Non-factual Hallucination": 33,
-          "Non-hallucinated": 320,
-          "Unknown": 9795,
-          "total": 10262
+          "Non-hallucinated": 311,
+          "Unknown": 9616,
+          "total": 10069
         },
         "PRODUCT": {
           "Non-hallucinated": 4,
@@ -85408,17 +85480,17 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.038644785600847,
+      "ents_per_sum": 3.021263455090877,
       "factual": 0.08337744838538909,
-      "failed": 1089,
-      "non_factual": 0.10287630139403564,
-      "non_factual_extrinsic": 0.007852479265925534,
-      "non_factual_intrinsic": 0.002999823539791777,
+      "failed": 1087,
+      "non_factual": 0.10296453149814717,
+      "non_factual_extrinsic": 0.00802893947414858,
+      "non_factual_intrinsic": 0.002911593435680254,
       "skipped": 0.0,
-      "sum_with_extrinsic": 0.5606140815246162,
-      "sum_with_extrinsic_factual": 0.015969648844185638,
+      "sum_with_extrinsic": 0.5605258514205047,
+      "sum_with_extrinsic_factual": 0.01614610905240868,
       "total": 11334,
-      "unknown": 0.8137462502205752
+      "unknown": 0.8136580201164637
     },
     "iteration": 7,
     "summary": {
@@ -85709,33 +85781,33 @@
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 267,
-      "Intrinsic Hallucination": 40,
-      "Non-factual Hallucination": 117,
-      "Non-hallucinated": 880,
-      "Unknown": 33134,
-      "count_extrinsic": 10472,
+      "Factual Hallucination": 270,
+      "Intrinsic Hallucination": 36,
+      "Non-factual Hallucination": 120,
+      "Non-hallucinated": 879,
+      "Unknown": 32936,
+      "count_extrinsic": 10465,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9289889415481833,
+        "mean": 0.92981220657277,
         "median": 1.0,
-        "stdev": 0.1793391689762895
+        "stdev": 0.17870269822480392
       },
-      "total": 34438,
+      "total": 34241,
       "type": {
         "CARDINAL": {
           "Factual Hallucination": 12,
-          "Intrinsic Hallucination": 8,
+          "Intrinsic Hallucination": 7,
           "Non-factual Hallucination": 16,
           "Non-hallucinated": 43,
-          "Unknown": 2320,
-          "total": 2399
+          "Unknown": 2319,
+          "total": 2397
         },
         "DATE": {
-          "Factual Hallucination": 19,
+          "Factual Hallucination": 22,
           "Intrinsic Hallucination": 4,
           "Non-factual Hallucination": 21,
           "Non-hallucinated": 29,
-          "Unknown": 2784,
+          "Unknown": 2781,
           "total": 2857
         },
         "EVENT": {
@@ -85745,20 +85817,20 @@
           "total": 629
         },
         "FAC": {
-          "Factual Hallucination": 5,
+          "Factual Hallucination": 6,
           "Intrinsic Hallucination": 1,
           "Non-factual Hallucination": 1,
           "Non-hallucinated": 7,
           "Unknown": 310,
-          "total": 324
+          "total": 325
         },
         "GPE": {
-          "Factual Hallucination": 51,
+          "Factual Hallucination": 52,
           "Intrinsic Hallucination": 4,
-          "Non-factual Hallucination": 15,
-          "Non-hallucinated": 236,
-          "Unknown": 7748,
-          "total": 8054
+          "Non-factual Hallucination": 16,
+          "Non-hallucinated": 240,
+          "Unknown": 7743,
+          "total": 8055
         },
         "LANGUAGE": {
           "Unknown": 12,
@@ -85766,8 +85838,8 @@
         },
         "LAW": {
           "Factual Hallucination": 1,
-          "Unknown": 29,
-          "total": 30
+          "Unknown": 30,
+          "total": 31
         },
         "LOC": {
           "Non-factual Hallucination": 2,
@@ -85785,26 +85857,26 @@
         "NORP": {
           "Factual Hallucination": 11,
           "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 3,
-          "Non-hallucinated": 80,
-          "Unknown": 1877,
-          "total": 1974
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 79,
+          "Unknown": 1875,
+          "total": 1972
         },
         "ORDINAL": {
           "Factual Hallucination": 5,
           "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 9,
-          "Non-hallucinated": 8,
-          "Unknown": 940,
-          "total": 964
+          "Non-hallucinated": 9,
+          "Unknown": 938,
+          "total": 963
         },
         "ORG": {
           "Factual Hallucination": 57,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 11,
-          "Non-hallucinated": 127,
-          "Unknown": 5451,
-          "total": 5648
+          "Non-factual Hallucination": 12,
+          "Non-hallucinated": 131,
+          "Unknown": 5444,
+          "total": 5646
         },
         "PERCENT": {
           "Factual Hallucination": 1,
@@ -85814,12 +85886,12 @@
           "total": 87
         },
         "PERSON": {
-          "Factual Hallucination": 100,
-          "Intrinsic Hallucination": 14,
+          "Factual Hallucination": 98,
+          "Intrinsic Hallucination": 11,
           "Non-factual Hallucination": 33,
-          "Non-hallucinated": 320,
-          "Unknown": 9792,
-          "total": 10259
+          "Non-hallucinated": 311,
+          "Unknown": 9613,
+          "total": 10066
         },
         "PRODUCT": {
           "Non-hallucinated": 4,
@@ -85846,17 +85918,17 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.038468325392624,
+      "ents_per_sum": 3.021086994882654,
       "factual": 0.08337744838538909,
-      "failed": 1097,
-      "non_factual": 0.10367037233103935,
-      "non_factual_extrinsic": 0.007940709370037057,
-      "non_factual_intrinsic": 0.002999823539791777,
+      "failed": 1095,
+      "non_factual": 0.10375860243515088,
+      "non_factual_extrinsic": 0.008117169578260102,
+      "non_factual_intrinsic": 0.002911593435680254,
       "skipped": 0.0,
-      "sum_with_extrinsic": 0.5606140815246162,
-      "sum_with_extrinsic_factual": 0.015969648844185638,
+      "sum_with_extrinsic": 0.5605258514205047,
+      "sum_with_extrinsic_factual": 0.01614610905240868,
       "total": 11334,
-      "unknown": 0.8129521792835716
+      "unknown": 0.81286394917946
     },
     "iteration": 8,
     "summary": {
@@ -86003,33 +86075,33 @@
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 267,
-      "Intrinsic Hallucination": 40,
-      "Non-factual Hallucination": 119,
-      "Non-hallucinated": 880,
-      "Unknown": 33134,
-      "count_extrinsic": 10472,
+      "Factual Hallucination": 270,
+      "Intrinsic Hallucination": 36,
+      "Non-factual Hallucination": 122,
+      "Non-hallucinated": 879,
+      "Unknown": 32934,
+      "count_extrinsic": 10464,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9289889415481833,
+        "mean": 0.92981220657277,
         "median": 1.0,
-        "stdev": 0.1793391689762895
+        "stdev": 0.17870269822480392
       },
-      "total": 34440,
+      "total": 34241,
       "type": {
         "CARDINAL": {
           "Factual Hallucination": 12,
-          "Intrinsic Hallucination": 8,
+          "Intrinsic Hallucination": 7,
           "Non-factual Hallucination": 16,
           "Non-hallucinated": 43,
-          "Unknown": 2322,
-          "total": 2401
+          "Unknown": 2321,
+          "total": 2399
         },
         "DATE": {
-          "Factual Hallucination": 19,
+          "Factual Hallucination": 22,
           "Intrinsic Hallucination": 4,
           "Non-factual Hallucination": 20,
           "Non-hallucinated": 29,
-          "Unknown": 2782,
+          "Unknown": 2779,
           "total": 2854
         },
         "EVENT": {
@@ -86039,20 +86111,20 @@
           "total": 629
         },
         "FAC": {
-          "Factual Hallucination": 5,
+          "Factual Hallucination": 6,
           "Intrinsic Hallucination": 1,
           "Non-factual Hallucination": 2,
           "Non-hallucinated": 7,
           "Unknown": 310,
-          "total": 325
+          "total": 326
         },
         "GPE": {
-          "Factual Hallucination": 51,
+          "Factual Hallucination": 52,
           "Intrinsic Hallucination": 4,
-          "Non-factual Hallucination": 17,
-          "Non-hallucinated": 236,
-          "Unknown": 7747,
-          "total": 8055
+          "Non-factual Hallucination": 18,
+          "Non-hallucinated": 240,
+          "Unknown": 7742,
+          "total": 8056
         },
         "LANGUAGE": {
           "Unknown": 12,
@@ -86060,8 +86132,8 @@
         },
         "LAW": {
           "Factual Hallucination": 1,
-          "Unknown": 29,
-          "total": 30
+          "Unknown": 30,
+          "total": 31
         },
         "LOC": {
           "Non-factual Hallucination": 2,
@@ -86079,26 +86151,26 @@
         "NORP": {
           "Factual Hallucination": 11,
           "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 3,
-          "Non-hallucinated": 80,
-          "Unknown": 1877,
-          "total": 1974
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 79,
+          "Unknown": 1875,
+          "total": 1972
         },
         "ORDINAL": {
           "Factual Hallucination": 5,
           "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 9,
-          "Non-hallucinated": 8,
-          "Unknown": 939,
-          "total": 963
+          "Non-hallucinated": 9,
+          "Unknown": 937,
+          "total": 962
         },
         "ORG": {
           "Factual Hallucination": 57,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 11,
-          "Non-hallucinated": 127,
-          "Unknown": 5450,
-          "total": 5647
+          "Non-factual Hallucination": 12,
+          "Non-hallucinated": 131,
+          "Unknown": 5443,
+          "total": 5645
         },
         "PERCENT": {
           "Factual Hallucination": 1,
@@ -86108,12 +86180,12 @@
           "total": 87
         },
         "PERSON": {
-          "Factual Hallucination": 100,
-          "Intrinsic Hallucination": 14,
+          "Factual Hallucination": 98,
+          "Intrinsic Hallucination": 11,
           "Non-factual Hallucination": 33,
-          "Non-hallucinated": 320,
-          "Unknown": 9795,
-          "total": 10262
+          "Non-hallucinated": 311,
+          "Unknown": 9614,
+          "total": 10067
         },
         "PRODUCT": {
           "Non-hallucinated": 4,
@@ -86140,17 +86212,17 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.038644785600847,
+      "ents_per_sum": 3.021086994882654,
       "factual": 0.08337744838538909,
-      "failed": 1100,
-      "non_factual": 0.1038468325392624,
-      "non_factual_extrinsic": 0.007940709370037057,
-      "non_factual_intrinsic": 0.002999823539791777,
+      "failed": 1098,
+      "non_factual": 0.10393506264337392,
+      "non_factual_extrinsic": 0.008117169578260102,
+      "non_factual_intrinsic": 0.002911593435680254,
       "skipped": 0.0,
-      "sum_with_extrinsic": 0.5604376213163932,
-      "sum_with_extrinsic_factual": 0.015969648844185638,
+      "sum_with_extrinsic": 0.5603493912122817,
+      "sum_with_extrinsic_factual": 0.01614610905240868,
       "total": 11334,
-      "unknown": 0.8127757190753485
+      "unknown": 0.812687488971237
     },
     "iteration": 9,
     "summary": {
@@ -86237,33 +86309,33 @@
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 267,
-      "Intrinsic Hallucination": 40,
-      "Non-factual Hallucination": 116,
-      "Non-hallucinated": 880,
-      "Unknown": 33138,
-      "count_extrinsic": 10472,
+      "Factual Hallucination": 270,
+      "Intrinsic Hallucination": 36,
+      "Non-factual Hallucination": 119,
+      "Non-hallucinated": 879,
+      "Unknown": 32938,
+      "count_extrinsic": 10464,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9289889415481833,
+        "mean": 0.92981220657277,
         "median": 1.0,
-        "stdev": 0.1793391689762895
+        "stdev": 0.17870269822480392
       },
-      "total": 34441,
+      "total": 34242,
       "type": {
         "CARDINAL": {
           "Factual Hallucination": 12,
-          "Intrinsic Hallucination": 8,
+          "Intrinsic Hallucination": 7,
           "Non-factual Hallucination": 16,
           "Non-hallucinated": 43,
-          "Unknown": 2322,
-          "total": 2401
+          "Unknown": 2321,
+          "total": 2399
         },
         "DATE": {
-          "Factual Hallucination": 19,
+          "Factual Hallucination": 22,
           "Intrinsic Hallucination": 4,
           "Non-factual Hallucination": 20,
           "Non-hallucinated": 29,
-          "Unknown": 2782,
+          "Unknown": 2779,
           "total": 2854
         },
         "EVENT": {
@@ -86273,20 +86345,20 @@
           "total": 629
         },
         "FAC": {
-          "Factual Hallucination": 5,
+          "Factual Hallucination": 6,
           "Intrinsic Hallucination": 1,
           "Non-factual Hallucination": 1,
           "Non-hallucinated": 7,
           "Unknown": 311,
-          "total": 325
+          "total": 326
         },
         "GPE": {
-          "Factual Hallucination": 51,
+          "Factual Hallucination": 52,
           "Intrinsic Hallucination": 4,
-          "Non-factual Hallucination": 15,
-          "Non-hallucinated": 236,
-          "Unknown": 7748,
-          "total": 8054
+          "Non-factual Hallucination": 16,
+          "Non-hallucinated": 240,
+          "Unknown": 7743,
+          "total": 8055
         },
         "LANGUAGE": {
           "Unknown": 12,
@@ -86294,8 +86366,8 @@
         },
         "LAW": {
           "Factual Hallucination": 1,
-          "Unknown": 29,
-          "total": 30
+          "Unknown": 30,
+          "total": 31
         },
         "LOC": {
           "Non-factual Hallucination": 2,
@@ -86313,26 +86385,26 @@
         "NORP": {
           "Factual Hallucination": 11,
           "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 3,
-          "Non-hallucinated": 80,
-          "Unknown": 1877,
-          "total": 1974
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 79,
+          "Unknown": 1875,
+          "total": 1972
         },
         "ORDINAL": {
           "Factual Hallucination": 5,
           "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 9,
-          "Non-hallucinated": 8,
-          "Unknown": 939,
-          "total": 963
+          "Non-hallucinated": 9,
+          "Unknown": 937,
+          "total": 962
         },
         "ORG": {
           "Factual Hallucination": 57,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 11,
-          "Non-hallucinated": 127,
-          "Unknown": 5451,
-          "total": 5648
+          "Non-factual Hallucination": 12,
+          "Non-hallucinated": 131,
+          "Unknown": 5444,
+          "total": 5646
         },
         "PERCENT": {
           "Factual Hallucination": 1,
@@ -86342,12 +86414,12 @@
           "total": 87
         },
         "PERSON": {
-          "Factual Hallucination": 100,
-          "Intrinsic Hallucination": 14,
+          "Factual Hallucination": 98,
+          "Intrinsic Hallucination": 11,
           "Non-factual Hallucination": 33,
-          "Non-hallucinated": 320,
-          "Unknown": 9796,
-          "total": 10263
+          "Non-hallucinated": 311,
+          "Unknown": 9615,
+          "total": 10068
         },
         "PRODUCT": {
           "Non-hallucinated": 4,
@@ -86374,26 +86446,20 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.0387330157049584,
+      "ents_per_sum": 3.0211752249867656,
       "factual": 0.08337744838538909,
-      "failed": 1106,
-      "non_factual": 0.10437621316393153,
-      "non_factual_extrinsic": 0.007852479265925534,
-      "non_factual_intrinsic": 0.002999823539791777,
+      "failed": 1104,
+      "non_factual": 0.10446444326804305,
+      "non_factual_extrinsic": 0.00802893947414858,
+      "non_factual_intrinsic": 0.002911593435680254,
       "skipped": 0.0,
-      "sum_with_extrinsic": 0.5604376213163932,
-      "sum_with_extrinsic_factual": 0.015969648844185638,
+      "sum_with_extrinsic": 0.5603493912122817,
+      "sum_with_extrinsic_factual": 0.01614610905240868,
       "total": 11334,
-      "unknown": 0.8122463384506794
+      "unknown": 0.8121581083465679
     },
     "iteration": 10,
     "summary": {
-      "26838635": {
-        "edit_stats": {
-          "edit_distance_token": 10
-        },
-        "summary": "In our series of letters from African journalists, Ghanaian film-maker and columnist Farah Akwasi-Arhin looks at why Ghana's roads are so poor."
-      },
       "35237411": {
         "edit_stats": {
           "edit_distance_token": 15
@@ -86413,37 +86479,37 @@
         "summary": "Firefighters remain at the scene of a fire at a house on the A74(M) near the village of Strathallan in Dumfries and Galloway."
       }
     },
-    "summary_generated": 10
+    "summary_generated": 9
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 267,
-      "Intrinsic Hallucination": 40,
-      "Non-factual Hallucination": 116,
-      "Non-hallucinated": 880,
-      "Unknown": 33137,
-      "count_extrinsic": 10471,
+      "Factual Hallucination": 270,
+      "Intrinsic Hallucination": 36,
+      "Non-factual Hallucination": 119,
+      "Non-hallucinated": 879,
+      "Unknown": 32937,
+      "count_extrinsic": 10463,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9289889415481833,
+        "mean": 0.92981220657277,
         "median": 1.0,
-        "stdev": 0.1793391689762895
+        "stdev": 0.17870269822480392
       },
-      "total": 34440,
+      "total": 34241,
       "type": {
         "CARDINAL": {
           "Factual Hallucination": 12,
-          "Intrinsic Hallucination": 8,
+          "Intrinsic Hallucination": 7,
           "Non-factual Hallucination": 16,
           "Non-hallucinated": 43,
-          "Unknown": 2322,
-          "total": 2401
+          "Unknown": 2321,
+          "total": 2399
         },
         "DATE": {
-          "Factual Hallucination": 19,
+          "Factual Hallucination": 22,
           "Intrinsic Hallucination": 4,
           "Non-factual Hallucination": 20,
           "Non-hallucinated": 29,
-          "Unknown": 2782,
+          "Unknown": 2779,
           "total": 2854
         },
         "EVENT": {
@@ -86453,20 +86519,20 @@
           "total": 629
         },
         "FAC": {
-          "Factual Hallucination": 5,
+          "Factual Hallucination": 6,
           "Intrinsic Hallucination": 1,
           "Non-factual Hallucination": 1,
           "Non-hallucinated": 7,
           "Unknown": 311,
-          "total": 325
+          "total": 326
         },
         "GPE": {
-          "Factual Hallucination": 51,
+          "Factual Hallucination": 52,
           "Intrinsic Hallucination": 4,
-          "Non-factual Hallucination": 15,
-          "Non-hallucinated": 236,
-          "Unknown": 7749,
-          "total": 8055
+          "Non-factual Hallucination": 16,
+          "Non-hallucinated": 240,
+          "Unknown": 7744,
+          "total": 8056
         },
         "LANGUAGE": {
           "Unknown": 12,
@@ -86474,8 +86540,8 @@
         },
         "LAW": {
           "Factual Hallucination": 1,
-          "Unknown": 29,
-          "total": 30
+          "Unknown": 30,
+          "total": 31
         },
         "LOC": {
           "Non-factual Hallucination": 2,
@@ -86493,26 +86559,26 @@
         "NORP": {
           "Factual Hallucination": 11,
           "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 3,
-          "Non-hallucinated": 80,
-          "Unknown": 1877,
-          "total": 1974
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 79,
+          "Unknown": 1875,
+          "total": 1972
         },
         "ORDINAL": {
           "Factual Hallucination": 5,
           "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 9,
-          "Non-hallucinated": 8,
-          "Unknown": 939,
-          "total": 963
+          "Non-hallucinated": 9,
+          "Unknown": 937,
+          "total": 962
         },
         "ORG": {
           "Factual Hallucination": 57,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 11,
-          "Non-hallucinated": 127,
-          "Unknown": 5450,
-          "total": 5647
+          "Non-factual Hallucination": 12,
+          "Non-hallucinated": 131,
+          "Unknown": 5443,
+          "total": 5645
         },
         "PERCENT": {
           "Factual Hallucination": 1,
@@ -86522,12 +86588,12 @@
           "total": 87
         },
         "PERSON": {
-          "Factual Hallucination": 100,
-          "Intrinsic Hallucination": 14,
+          "Factual Hallucination": 98,
+          "Intrinsic Hallucination": 11,
           "Non-factual Hallucination": 33,
-          "Non-hallucinated": 320,
-          "Unknown": 9795,
-          "total": 10262
+          "Non-hallucinated": 311,
+          "Unknown": 9614,
+          "total": 10067
         },
         "PRODUCT": {
           "Non-hallucinated": 4,
@@ -86554,17 +86620,17 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.038644785600847,
+      "ents_per_sum": 3.021086994882654,
       "factual": 0.08337744838538909,
-      "failed": 1107,
-      "non_factual": 0.10437621316393153,
-      "non_factual_extrinsic": 0.007852479265925534,
-      "non_factual_intrinsic": 0.002999823539791777,
+      "failed": 1105,
+      "non_factual": 0.10446444326804305,
+      "non_factual_extrinsic": 0.00802893947414858,
+      "non_factual_intrinsic": 0.002911593435680254,
       "skipped": 0.0,
-      "sum_with_extrinsic": 0.5604376213163932,
-      "sum_with_extrinsic_factual": 0.015969648844185638,
+      "sum_with_extrinsic": 0.5603493912122817,
+      "sum_with_extrinsic_factual": 0.01614610905240868,
       "total": 11334,
-      "unknown": 0.8122463384506794
+      "unknown": 0.8121581083465679
     },
     "iteration": 11,
     "summary": {
@@ -86585,33 +86651,33 @@
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 267,
-      "Intrinsic Hallucination": 40,
-      "Non-factual Hallucination": 116,
-      "Non-hallucinated": 880,
-      "Unknown": 33137,
-      "count_extrinsic": 10471,
+      "Factual Hallucination": 270,
+      "Intrinsic Hallucination": 36,
+      "Non-factual Hallucination": 119,
+      "Non-hallucinated": 879,
+      "Unknown": 32937,
+      "count_extrinsic": 10463,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9289889415481833,
+        "mean": 0.92981220657277,
         "median": 1.0,
-        "stdev": 0.1793391689762895
+        "stdev": 0.17870269822480392
       },
-      "total": 34440,
+      "total": 34241,
       "type": {
         "CARDINAL": {
           "Factual Hallucination": 12,
-          "Intrinsic Hallucination": 8,
+          "Intrinsic Hallucination": 7,
           "Non-factual Hallucination": 16,
           "Non-hallucinated": 43,
-          "Unknown": 2322,
-          "total": 2401
+          "Unknown": 2321,
+          "total": 2399
         },
         "DATE": {
-          "Factual Hallucination": 19,
+          "Factual Hallucination": 22,
           "Intrinsic Hallucination": 4,
           "Non-factual Hallucination": 20,
           "Non-hallucinated": 29,
-          "Unknown": 2782,
+          "Unknown": 2779,
           "total": 2854
         },
         "EVENT": {
@@ -86621,20 +86687,20 @@
           "total": 629
         },
         "FAC": {
-          "Factual Hallucination": 5,
+          "Factual Hallucination": 6,
           "Intrinsic Hallucination": 1,
           "Non-factual Hallucination": 1,
           "Non-hallucinated": 7,
           "Unknown": 311,
-          "total": 325
+          "total": 326
         },
         "GPE": {
-          "Factual Hallucination": 51,
+          "Factual Hallucination": 52,
           "Intrinsic Hallucination": 4,
-          "Non-factual Hallucination": 15,
-          "Non-hallucinated": 236,
-          "Unknown": 7749,
-          "total": 8055
+          "Non-factual Hallucination": 16,
+          "Non-hallucinated": 240,
+          "Unknown": 7744,
+          "total": 8056
         },
         "LANGUAGE": {
           "Unknown": 12,
@@ -86642,8 +86708,8 @@
         },
         "LAW": {
           "Factual Hallucination": 1,
-          "Unknown": 29,
-          "total": 30
+          "Unknown": 30,
+          "total": 31
         },
         "LOC": {
           "Non-factual Hallucination": 2,
@@ -86661,26 +86727,26 @@
         "NORP": {
           "Factual Hallucination": 11,
           "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 3,
-          "Non-hallucinated": 80,
-          "Unknown": 1877,
-          "total": 1974
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 79,
+          "Unknown": 1875,
+          "total": 1972
         },
         "ORDINAL": {
           "Factual Hallucination": 5,
           "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 9,
-          "Non-hallucinated": 8,
-          "Unknown": 939,
-          "total": 963
+          "Non-hallucinated": 9,
+          "Unknown": 937,
+          "total": 962
         },
         "ORG": {
           "Factual Hallucination": 57,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 11,
-          "Non-hallucinated": 127,
-          "Unknown": 5450,
-          "total": 5647
+          "Non-factual Hallucination": 12,
+          "Non-hallucinated": 131,
+          "Unknown": 5443,
+          "total": 5645
         },
         "PERCENT": {
           "Factual Hallucination": 1,
@@ -86690,12 +86756,12 @@
           "total": 87
         },
         "PERSON": {
-          "Factual Hallucination": 100,
-          "Intrinsic Hallucination": 14,
+          "Factual Hallucination": 98,
+          "Intrinsic Hallucination": 11,
           "Non-factual Hallucination": 33,
-          "Non-hallucinated": 320,
-          "Unknown": 9795,
-          "total": 10262
+          "Non-hallucinated": 311,
+          "Unknown": 9614,
+          "total": 10067
         },
         "PRODUCT": {
           "Non-hallucinated": 4,
@@ -86722,17 +86788,17 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.038644785600847,
+      "ents_per_sum": 3.021086994882654,
       "factual": 0.08337744838538909,
-      "failed": 1108,
-      "non_factual": 0.10446444326804305,
-      "non_factual_extrinsic": 0.007852479265925534,
-      "non_factual_intrinsic": 0.002999823539791777,
+      "failed": 1106,
+      "non_factual": 0.10455267337215458,
+      "non_factual_extrinsic": 0.00802893947414858,
+      "non_factual_intrinsic": 0.002911593435680254,
       "skipped": 0.0,
-      "sum_with_extrinsic": 0.5604376213163932,
-      "sum_with_extrinsic_factual": 0.015969648844185638,
+      "sum_with_extrinsic": 0.5603493912122817,
+      "sum_with_extrinsic_factual": 0.01614610905240868,
       "total": 11334,
-      "unknown": 0.8121581083465679
+      "unknown": 0.8120698782424564
     },
     "iteration": 12,
     "summary": {},
