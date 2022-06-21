@@ -107,9 +107,9 @@
     },
     "factuality_summary": {
       "ents_per_sum": 3.61,
-      "factual": 0.0,
-      "failed": 100,
-      "non_factual": 1.0,
+      "factual": 0.42,
+      "failed": 0,
+      "non_factual": 0.58,
       "non_factual_extrinsic": 0.52,
       "non_factual_intrinsic": 0.12,
       "skipped": 0.0,
@@ -427,16 +427,16 @@
     "factuality_entities": {
       "Factual Hallucination": 86,
       "Intrinsic Hallucination": 15,
-      "Non-factual Hallucination": 46,
-      "Non-hallucinated": 166,
+      "Non-factual Hallucination": 50,
+      "Non-hallucinated": 170,
       "Unknown": 29,
-      "count_extrinsic": 145,
+      "count_extrinsic": 149,
       "extrinsic_factuality_ratio": {
         "mean": 0.9166666666666666,
         "median": 1.0,
         "stdev": 0.1798860037884392
       },
-      "total": 342,
+      "total": 350,
       "type": {
         "CARDINAL": {
           "Factual Hallucination": 7,
@@ -468,10 +468,10 @@
         "GPE": {
           "Factual Hallucination": 14,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 6,
+          "Non-factual Hallucination": 8,
           "Non-hallucinated": 44,
           "Unknown": 5,
-          "total": 71
+          "total": 73
         },
         "LAW": {
           "Non-hallucinated": 1,
@@ -503,9 +503,9 @@
           "Factual Hallucination": 17,
           "Intrinsic Hallucination": 1,
           "Non-factual Hallucination": 6,
-          "Non-hallucinated": 27,
+          "Non-hallucinated": 28,
           "Unknown": 4,
-          "total": 55
+          "total": 56
         },
         "PERCENT": {
           "Intrinsic Hallucination": 1,
@@ -515,10 +515,10 @@
         "PERSON": {
           "Factual Hallucination": 25,
           "Intrinsic Hallucination": 5,
-          "Non-factual Hallucination": 15,
-          "Non-hallucinated": 56,
+          "Non-factual Hallucination": 17,
+          "Non-hallucinated": 59,
           "Unknown": 10,
-          "total": 111
+          "total": 116
         },
         "TIME": {
           "Non-hallucinated": 2,
@@ -531,17 +531,17 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.42,
-      "factual": 0.0,
-      "failed": 100,
-      "non_factual": 1.0,
-      "non_factual_extrinsic": 0.38,
+      "ents_per_sum": 3.5,
+      "factual": 0.53,
+      "failed": 1,
+      "non_factual": 0.46,
+      "non_factual_extrinsic": 0.39,
       "non_factual_intrinsic": 0.11,
       "skipped": 0.0,
-      "sum_with_extrinsic": 0.92,
+      "sum_with_extrinsic": 0.93,
       "sum_with_extrinsic_factual": 0.53,
       "total": 100,
-      "unknown": 0.0
+      "unknown": 0.01
     },
     "iteration": 1,
     "summary": {
@@ -851,9 +851,6 @@
         },
         "summary": "Chelsea have clinched their third Premier League title in a row."
       },
-      "40306866": {
-        "summary": "<Failed generation: blocked all beams>"
-      },
       "40426136": {
         "edit_stats": {
           "edit_distance_token": 14
@@ -865,34 +862,34 @@
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 91,
-      "Intrinsic Hallucination": 13,
-      "Non-factual Hallucination": 30,
-      "Non-hallucinated": 174,
+      "Factual Hallucination": 97,
+      "Intrinsic Hallucination": 16,
+      "Non-factual Hallucination": 39,
+      "Non-hallucinated": 185,
       "Unknown": 10,
-      "count_extrinsic": 129,
+      "count_extrinsic": 144,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9495098039215686,
+        "mean": 0.931924882629108,
         "median": 1.0,
-        "stdev": 0.14285746896760715
+        "stdev": 0.1632453168731381
       },
-      "total": 318,
+      "total": 347,
       "type": {
         "CARDINAL": {
-          "Factual Hallucination": 7,
-          "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 3,
-          "Non-hallucinated": 7,
+          "Factual Hallucination": 8,
+          "Intrinsic Hallucination": 3,
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 8,
           "Unknown": 1,
-          "total": 20
+          "total": 24
         },
         "DATE": {
           "Factual Hallucination": 13,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 3,
+          "Non-factual Hallucination": 5,
           "Non-hallucinated": 8,
           "Unknown": 1,
-          "total": 27
+          "total": 29
         },
         "EVENT": {
           "Factual Hallucination": 4,
@@ -906,12 +903,12 @@
           "total": 6
         },
         "GPE": {
-          "Factual Hallucination": 16,
+          "Factual Hallucination": 17,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 8,
+          "Non-factual Hallucination": 10,
           "Non-hallucinated": 47,
           "Unknown": 1,
-          "total": 74
+          "total": 77
         },
         "LAW": {
           "Non-hallucinated": 1,
@@ -928,22 +925,22 @@
           "total": 4
         },
         "NORP": {
-          "Factual Hallucination": 1,
+          "Factual Hallucination": 2,
           "Intrinsic Hallucination": 2,
           "Non-hallucinated": 13,
-          "total": 16
+          "total": 17
         },
         "ORDINAL": {
           "Factual Hallucination": 4,
           "total": 4
         },
         "ORG": {
-          "Factual Hallucination": 17,
+          "Factual Hallucination": 18,
           "Intrinsic Hallucination": 1,
           "Non-factual Hallucination": 2,
-          "Non-hallucinated": 29,
+          "Non-hallucinated": 31,
           "Unknown": 2,
-          "total": 51
+          "total": 54
         },
         "PERCENT": {
           "Intrinsic Hallucination": 1,
@@ -951,12 +948,12 @@
           "total": 3
         },
         "PERSON": {
-          "Factual Hallucination": 24,
-          "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 11,
-          "Non-hallucinated": 57,
+          "Factual Hallucination": 26,
+          "Intrinsic Hallucination": 5,
+          "Non-factual Hallucination": 15,
+          "Non-hallucinated": 65,
           "Unknown": 5,
-          "total": 100
+          "total": 116
         },
         "TIME": {
           "Non-hallucinated": 2,
@@ -969,17 +966,17 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.18,
-      "factual": 0.0,
-      "failed": 100,
-      "non_factual": 1.0,
-      "non_factual_extrinsic": 0.25,
-      "non_factual_intrinsic": 0.11,
+      "ents_per_sum": 3.47,
+      "factual": 0.59,
+      "failed": 4,
+      "non_factual": 0.38,
+      "non_factual_extrinsic": 0.29,
+      "non_factual_intrinsic": 0.12,
       "skipped": 0.0,
-      "sum_with_extrinsic": 0.86,
+      "sum_with_extrinsic": 0.9,
       "sum_with_extrinsic_factual": 0.6,
       "total": 100,
-      "unknown": 0.0
+      "unknown": 0.03
     },
     "iteration": 2,
     "summary": {
@@ -1061,9 +1058,6 @@
         },
         "summary": "Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Shonan Belles."
       },
-      "34898778": {
-        "summary": "<Failed generation: blocked all beams>"
-      },
       "35237411": {
         "edit_stats": {
           "edit_distance_token": 15
@@ -1082,9 +1076,6 @@
         },
         "summary": "Wales' Six Nations win over France was \"baffling\", according to former team-mate Martyn Jenkins."
       },
-      "36061830": {
-        "summary": "<Failed generation: blocked all beams>"
-      },
       "36162485": {
         "edit_stats": {
           "edit_distance_token": 4
@@ -1102,9 +1093,6 @@
           "edit_distance_token": 3
         },
         "summary": "Wales are out of Euro 2016 after a 2-0 defeat by Portugal in Cardiff."
-      },
-      "36874565": {
-        "summary": "<Failed generation: blocked all beams>"
       },
       "36912060": {
         "edit_stats": {
@@ -1195,34 +1183,34 @@
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 88,
-      "Intrinsic Hallucination": 13,
-      "Non-factual Hallucination": 23,
-      "Non-hallucinated": 167,
+      "Factual Hallucination": 99,
+      "Intrinsic Hallucination": 16,
+      "Non-factual Hallucination": 36,
+      "Non-hallucinated": 182,
       "Unknown": 11,
-      "count_extrinsic": 117,
+      "count_extrinsic": 141,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9527363184079601,
+        "mean": 0.9182648401826484,
         "median": 1.0,
-        "stdev": 0.15786713284556853
+        "stdev": 0.19059237112144042
       },
-      "total": 302,
+      "total": 344,
       "type": {
         "CARDINAL": {
-          "Factual Hallucination": 7,
-          "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 1,
-          "Non-hallucinated": 6,
+          "Factual Hallucination": 9,
+          "Intrinsic Hallucination": 3,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 7,
           "Unknown": 1,
-          "total": 17
+          "total": 22
         },
         "DATE": {
-          "Factual Hallucination": 10,
+          "Factual Hallucination": 12,
           "Intrinsic Hallucination": 1,
-          "Non-factual Hallucination": 3,
+          "Non-factual Hallucination": 6,
           "Non-hallucinated": 8,
           "Unknown": 3,
-          "total": 25
+          "total": 30
         },
         "EVENT": {
           "Factual Hallucination": 4,
@@ -1237,12 +1225,12 @@
           "total": 6
         },
         "GPE": {
-          "Factual Hallucination": 17,
+          "Factual Hallucination": 19,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 2,
-          "Non-hallucinated": 46,
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 47,
           "Unknown": 2,
-          "total": 69
+          "total": 74
         },
         "LAW": {
           "Non-hallucinated": 1,
@@ -1259,10 +1247,10 @@
           "total": 4
         },
         "NORP": {
-          "Factual Hallucination": 1,
+          "Factual Hallucination": 2,
           "Intrinsic Hallucination": 2,
           "Non-hallucinated": 13,
-          "total": 16
+          "total": 17
         },
         "ORDINAL": {
           "Factual Hallucination": 4,
@@ -1270,12 +1258,12 @@
           "total": 5
         },
         "ORG": {
-          "Factual Hallucination": 15,
+          "Factual Hallucination": 17,
           "Intrinsic Hallucination": 1,
           "Non-factual Hallucination": 5,
-          "Non-hallucinated": 29,
+          "Non-hallucinated": 31,
           "Unknown": 1,
-          "total": 51
+          "total": 55
         },
         "PERCENT": {
           "Intrinsic Hallucination": 1,
@@ -1283,12 +1271,12 @@
           "total": 3
         },
         "PERSON": {
-          "Factual Hallucination": 25,
-          "Intrinsic Hallucination": 4,
-          "Non-factual Hallucination": 7,
-          "Non-hallucinated": 52,
+          "Factual Hallucination": 27,
+          "Intrinsic Hallucination": 6,
+          "Non-factual Hallucination": 14,
+          "Non-hallucinated": 63,
           "Unknown": 4,
-          "total": 92
+          "total": 114
         },
         "TIME": {
           "Non-hallucinated": 2,
@@ -1301,14 +1289,14 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.02,
-      "factual": 0.0,
-      "failed": 100,
-      "non_factual": 1.0,
-      "non_factual_extrinsic": 0.19,
-      "non_factual_intrinsic": 0.11,
+      "ents_per_sum": 3.44,
+      "factual": 0.64,
+      "failed": 7,
+      "non_factual": 0.36,
+      "non_factual_extrinsic": 0.26,
+      "non_factual_intrinsic": 0.12,
       "skipped": 0.0,
-      "sum_with_extrinsic": 0.8,
+      "sum_with_extrinsic": 0.87,
       "sum_with_extrinsic_factual": 0.61,
       "total": 100,
       "unknown": 0.0
@@ -1411,9 +1399,6 @@
         },
         "summary": "An outbreak of Dengue fever in Burkina Faso has killed at least 20 people, the World Health Organization says."
       },
-      "38399324": {
-        "summary": "<Failed generation: blocked all beams>"
-      },
       "38470818": {
         "edit_stats": {
           "edit_distance_token": 15
@@ -1432,49 +1417,43 @@
         },
         "summary": "Campaigners have launched a legal challenge to a wind farm operator's plans to install overhead cables in Gower."
       },
-      "39593375": {
-        "summary": "<Failed generation: blocked all beams>"
-      },
       "39807248": {
         "edit_stats": {
           "edit_distance_token": 8
         },
         "summary": "An under-performing academy school in south-west England is to be merged with another in a bid to save money."
-      },
-      "40426136": {
-        "summary": "<Failed generation: blocked all beams>"
       }
     },
     "summary_generated": 23
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 94,
-      "Intrinsic Hallucination": 14,
-      "Non-factual Hallucination": 24,
-      "Non-hallucinated": 173,
+      "Factual Hallucination": 105,
+      "Intrinsic Hallucination": 17,
+      "Non-factual Hallucination": 37,
+      "Non-hallucinated": 188,
       "Unknown": 0,
-      "count_extrinsic": 118,
+      "count_extrinsic": 142,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9641791044776119,
+        "mean": 0.9287671232876714,
         "median": 1.0,
-        "stdev": 0.1266108063310358
+        "stdev": 0.16999552939713503
       },
-      "total": 305,
+      "total": 347,
       "type": {
         "CARDINAL": {
-          "Factual Hallucination": 8,
-          "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 1,
-          "Non-hallucinated": 7,
-          "total": 18
-        },
-        "DATE": {
-          "Factual Hallucination": 12,
-          "Intrinsic Hallucination": 1,
+          "Factual Hallucination": 10,
+          "Intrinsic Hallucination": 3,
           "Non-factual Hallucination": 2,
           "Non-hallucinated": 8,
           "total": 23
+        },
+        "DATE": {
+          "Factual Hallucination": 14,
+          "Intrinsic Hallucination": 1,
+          "Non-factual Hallucination": 5,
+          "Non-hallucinated": 8,
+          "total": 28
         },
         "EVENT": {
           "Factual Hallucination": 4,
@@ -1489,11 +1468,11 @@
           "total": 6
         },
         "GPE": {
-          "Factual Hallucination": 17,
+          "Factual Hallucination": 19,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 1,
-          "Non-hallucinated": 47,
-          "total": 67
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 48,
+          "total": 72
         },
         "LAW": {
           "Non-hallucinated": 1,
@@ -1510,11 +1489,11 @@
           "total": 4
         },
         "NORP": {
-          "Factual Hallucination": 1,
+          "Factual Hallucination": 2,
           "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 1,
           "Non-hallucinated": 13,
-          "total": 17
+          "total": 18
         },
         "ORDINAL": {
           "Factual Hallucination": 4,
@@ -1522,11 +1501,11 @@
           "total": 5
         },
         "ORG": {
-          "Factual Hallucination": 18,
+          "Factual Hallucination": 20,
           "Intrinsic Hallucination": 1,
           "Non-factual Hallucination": 2,
-          "Non-hallucinated": 29,
-          "total": 50
+          "Non-hallucinated": 31,
+          "total": 54
         },
         "PERCENT": {
           "Intrinsic Hallucination": 1,
@@ -1534,11 +1513,11 @@
           "total": 3
         },
         "PERSON": {
-          "Factual Hallucination": 25,
-          "Intrinsic Hallucination": 4,
-          "Non-factual Hallucination": 13,
-          "Non-hallucinated": 56,
-          "total": 98
+          "Factual Hallucination": 27,
+          "Intrinsic Hallucination": 6,
+          "Non-factual Hallucination": 20,
+          "Non-hallucinated": 67,
+          "total": 120
         },
         "TIME": {
           "Non-hallucinated": 2,
@@ -1551,14 +1530,14 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.05,
-      "factual": 0.0,
-      "failed": 100,
-      "non_factual": 1.0,
-      "non_factual_extrinsic": 0.17,
-      "non_factual_intrinsic": 0.12,
+      "ents_per_sum": 3.47,
+      "factual": 0.65,
+      "failed": 7,
+      "non_factual": 0.35,
+      "non_factual_extrinsic": 0.24,
+      "non_factual_intrinsic": 0.13,
       "skipped": 0.0,
-      "sum_with_extrinsic": 0.79,
+      "sum_with_extrinsic": 0.86,
       "sum_with_extrinsic_factual": 0.62,
       "total": 100,
       "unknown": 0.0
@@ -1654,32 +1633,34 @@
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 88,
-      "Intrinsic Hallucination": 14,
-      "Non-factual Hallucination": 8,
-      "Non-hallucinated": 165,
+      "Factual Hallucination": 103,
+      "Intrinsic Hallucination": 17,
+      "Non-factual Hallucination": 27,
+      "Non-hallucinated": 184,
       "Unknown": 10,
-      "count_extrinsic": 105,
+      "count_extrinsic": 139,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9846153846153847,
+        "mean": 0.9356164383561646,
         "median": 1.0,
-        "stdev": 0.08634593969478326
+        "stdev": 0.16248908331187628
       },
-      "total": 285,
+      "total": 341,
       "type": {
         "CARDINAL": {
-          "Factual Hallucination": 7,
-          "Intrinsic Hallucination": 2,
-          "Non-hallucinated": 6,
+          "Factual Hallucination": 10,
+          "Intrinsic Hallucination": 3,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 7,
           "Unknown": 1,
-          "total": 16
+          "total": 22
         },
         "DATE": {
-          "Factual Hallucination": 10,
+          "Factual Hallucination": 13,
           "Intrinsic Hallucination": 1,
-          "Non-hallucinated": 7,
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 8,
           "Unknown": 2,
-          "total": 20
+          "total": 28
         },
         "EVENT": {
           "Factual Hallucination": 4,
@@ -1693,11 +1674,12 @@
           "total": 6
         },
         "GPE": {
-          "Factual Hallucination": 16,
+          "Factual Hallucination": 19,
           "Intrinsic Hallucination": 2,
-          "Non-hallucinated": 45,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 47,
           "Unknown": 2,
-          "total": 65
+          "total": 73
         },
         "LAW": {
           "Non-hallucinated": 1,
@@ -1714,10 +1696,10 @@
           "total": 4
         },
         "NORP": {
-          "Factual Hallucination": 1,
+          "Factual Hallucination": 2,
           "Intrinsic Hallucination": 2,
-          "Non-hallucinated": 12,
-          "total": 15
+          "Non-hallucinated": 13,
+          "total": 17
         },
         "ORDINAL": {
           "Factual Hallucination": 4,
@@ -1725,12 +1707,12 @@
           "total": 5
         },
         "ORG": {
-          "Factual Hallucination": 16,
+          "Factual Hallucination": 19,
           "Intrinsic Hallucination": 1,
-          "Non-factual Hallucination": 2,
-          "Non-hallucinated": 29,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 31,
           "Unknown": 2,
-          "total": 50
+          "total": 56
         },
         "PERCENT": {
           "Intrinsic Hallucination": 1,
@@ -1738,12 +1720,12 @@
           "total": 3
         },
         "PERSON": {
-          "Factual Hallucination": 25,
-          "Intrinsic Hallucination": 4,
-          "Non-factual Hallucination": 3,
-          "Non-hallucinated": 53,
+          "Factual Hallucination": 27,
+          "Intrinsic Hallucination": 6,
+          "Non-factual Hallucination": 13,
+          "Non-hallucinated": 65,
           "Unknown": 3,
-          "total": 88
+          "total": 114
         },
         "TIME": {
           "Non-hallucinated": 2,
@@ -1756,17 +1738,17 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 2.85,
-      "factual": 0.0,
-      "failed": 100,
-      "non_factual": 1.0,
-      "non_factual_extrinsic": 0.07,
-      "non_factual_intrinsic": 0.12,
+      "ents_per_sum": 3.41,
+      "factual": 0.66,
+      "failed": 12,
+      "non_factual": 0.3,
+      "non_factual_extrinsic": 0.19,
+      "non_factual_intrinsic": 0.13,
       "skipped": 0.0,
-      "sum_with_extrinsic": 0.73,
+      "sum_with_extrinsic": 0.85,
       "sum_with_extrinsic_factual": 0.63,
       "total": 100,
-      "unknown": 0.0
+      "unknown": 0.04
     },
     "iteration": 5,
     "summary": {
@@ -1775,9 +1757,6 @@
           "edit_distance_token": 3
         },
         "summary": "Plans to cut home-to-school transport subsidies for children in Gloucestersshire have been put on hold."
-      },
-      "18239960": {
-        "summary": "<Failed generation: blocked all beams>"
       },
       "30657223": {
         "edit_stats": {
@@ -1803,9 +1782,6 @@
         },
         "summary": "The man behind the takeover of the Financial Times is one of the world's richest men, and his name is Kaizo Kita."
       },
-      "34694547": {
-        "summary": "<Failed generation: blocked all beams>"
-      },
       "34787804": {
         "edit_stats": {
           "edit_distance_token": 2
@@ -1817,47 +1793,40 @@
           "edit_distance_token": 9
         },
         "summary": "Great Britain's women produced their best performance of the EuroHockey championships as they beat New Zealand 4-3 in a thrilling play-off."
-      },
-      "37391662": {
-        "summary": "<Failed generation: blocked all beams>"
-      },
-      "37603756": {
-        "summary": "<Failed generation: blocked all beams>"
-      },
-      "38983532": {
-        "summary": "<Failed generation: blocked all beams>"
       }
     },
     "summary_generated": 12
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 88,
-      "Intrinsic Hallucination": 14,
-      "Non-factual Hallucination": 7,
-      "Non-hallucinated": 163,
+      "Factual Hallucination": 103,
+      "Intrinsic Hallucination": 17,
+      "Non-factual Hallucination": 27,
+      "Non-hallucinated": 184,
       "Unknown": 9,
-      "count_extrinsic": 103,
+      "count_extrinsic": 138,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9846153846153847,
+        "mean": 0.9356164383561646,
         "median": 1.0,
-        "stdev": 0.08634593969478326
+        "stdev": 0.16248908331187628
       },
-      "total": 281,
+      "total": 340,
       "type": {
         "CARDINAL": {
-          "Factual Hallucination": 7,
-          "Intrinsic Hallucination": 2,
-          "Non-hallucinated": 6,
+          "Factual Hallucination": 10,
+          "Intrinsic Hallucination": 3,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 7,
           "Unknown": 1,
-          "total": 16
+          "total": 22
         },
         "DATE": {
-          "Factual Hallucination": 10,
+          "Factual Hallucination": 13,
           "Intrinsic Hallucination": 1,
-          "Non-hallucinated": 7,
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 8,
           "Unknown": 2,
-          "total": 20
+          "total": 28
         },
         "EVENT": {
           "Factual Hallucination": 4,
@@ -1871,11 +1840,12 @@
           "total": 6
         },
         "GPE": {
-          "Factual Hallucination": 16,
+          "Factual Hallucination": 19,
           "Intrinsic Hallucination": 2,
-          "Non-hallucinated": 45,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 47,
           "Unknown": 1,
-          "total": 64
+          "total": 72
         },
         "LAW": {
           "Non-hallucinated": 1,
@@ -1892,10 +1862,10 @@
           "total": 4
         },
         "NORP": {
-          "Factual Hallucination": 1,
+          "Factual Hallucination": 2,
           "Intrinsic Hallucination": 2,
-          "Non-hallucinated": 12,
-          "total": 15
+          "Non-hallucinated": 13,
+          "total": 17
         },
         "ORDINAL": {
           "Factual Hallucination": 4,
@@ -1903,12 +1873,12 @@
           "total": 5
         },
         "ORG": {
-          "Factual Hallucination": 16,
+          "Factual Hallucination": 19,
           "Intrinsic Hallucination": 1,
-          "Non-factual Hallucination": 2,
-          "Non-hallucinated": 28,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 31,
           "Unknown": 2,
-          "total": 49
+          "total": 56
         },
         "PERCENT": {
           "Intrinsic Hallucination": 1,
@@ -1916,12 +1886,12 @@
           "total": 3
         },
         "PERSON": {
-          "Factual Hallucination": 25,
-          "Intrinsic Hallucination": 4,
-          "Non-factual Hallucination": 2,
-          "Non-hallucinated": 52,
+          "Factual Hallucination": 27,
+          "Intrinsic Hallucination": 6,
+          "Non-factual Hallucination": 13,
+          "Non-hallucinated": 65,
           "Unknown": 3,
-          "total": 86
+          "total": 114
         },
         "TIME": {
           "Non-hallucinated": 2,
@@ -1934,17 +1904,17 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 2.81,
-      "factual": 0.0,
-      "failed": 100,
-      "non_factual": 1.0,
-      "non_factual_extrinsic": 0.06,
-      "non_factual_intrinsic": 0.12,
+      "ents_per_sum": 3.4,
+      "factual": 0.66,
+      "failed": 13,
+      "non_factual": 0.3,
+      "non_factual_extrinsic": 0.19,
+      "non_factual_intrinsic": 0.13,
       "skipped": 0.0,
-      "sum_with_extrinsic": 0.72,
+      "sum_with_extrinsic": 0.85,
       "sum_with_extrinsic_factual": 0.63,
       "total": 100,
-      "unknown": 0.0
+      "unknown": 0.04
     },
     "iteration": 6,
     "summary": {
@@ -1953,9 +1923,6 @@
           "edit_distance_token": 18
         },
         "summary": "Villagers in a Ceredigion village have objected to plans for more than 1,100 new homes."
-      },
-      "33648595": {
-        "summary": "<Failed generation: blocked all beams>"
       },
       "36635880": {
         "edit_stats": {
@@ -1968,32 +1935,34 @@
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 88,
-      "Intrinsic Hallucination": 14,
-      "Non-factual Hallucination": 6,
-      "Non-hallucinated": 162,
+      "Factual Hallucination": 103,
+      "Intrinsic Hallucination": 17,
+      "Non-factual Hallucination": 26,
+      "Non-hallucinated": 183,
       "Unknown": 13,
-      "count_extrinsic": 104,
+      "count_extrinsic": 139,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9923076923076923,
+        "mean": 0.9424657534246577,
         "median": 1.0,
-        "stdev": 0.061538461538461535
+        "stdev": 0.15431493168919388
       },
-      "total": 283,
+      "total": 342,
       "type": {
         "CARDINAL": {
-          "Factual Hallucination": 7,
-          "Intrinsic Hallucination": 2,
-          "Non-hallucinated": 6,
+          "Factual Hallucination": 10,
+          "Intrinsic Hallucination": 3,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 7,
           "Unknown": 1,
-          "total": 16
+          "total": 22
         },
         "DATE": {
-          "Factual Hallucination": 10,
+          "Factual Hallucination": 13,
           "Intrinsic Hallucination": 1,
-          "Non-hallucinated": 7,
+          "Non-factual Hallucination": 4,
+          "Non-hallucinated": 8,
           "Unknown": 3,
-          "total": 21
+          "total": 29
         },
         "EVENT": {
           "Factual Hallucination": 4,
@@ -2007,11 +1976,12 @@
           "total": 6
         },
         "GPE": {
-          "Factual Hallucination": 16,
+          "Factual Hallucination": 19,
           "Intrinsic Hallucination": 2,
-          "Non-hallucinated": 44,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 46,
           "Unknown": 2,
-          "total": 64
+          "total": 72
         },
         "LAW": {
           "Non-hallucinated": 1,
@@ -2028,10 +1998,10 @@
           "total": 4
         },
         "NORP": {
-          "Factual Hallucination": 1,
+          "Factual Hallucination": 2,
           "Intrinsic Hallucination": 2,
-          "Non-hallucinated": 12,
-          "total": 15
+          "Non-hallucinated": 13,
+          "total": 17
         },
         "ORDINAL": {
           "Factual Hallucination": 4,
@@ -2040,12 +2010,12 @@
           "total": 6
         },
         "ORG": {
-          "Factual Hallucination": 16,
+          "Factual Hallucination": 19,
           "Intrinsic Hallucination": 1,
-          "Non-factual Hallucination": 1,
-          "Non-hallucinated": 28,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 31,
           "Unknown": 3,
-          "total": 49
+          "total": 56
         },
         "PERCENT": {
           "Intrinsic Hallucination": 1,
@@ -2053,12 +2023,12 @@
           "total": 3
         },
         "PERSON": {
-          "Factual Hallucination": 25,
-          "Intrinsic Hallucination": 4,
-          "Non-factual Hallucination": 2,
-          "Non-hallucinated": 52,
+          "Factual Hallucination": 27,
+          "Intrinsic Hallucination": 6,
+          "Non-factual Hallucination": 13,
+          "Non-hallucinated": 65,
           "Unknown": 3,
-          "total": 86
+          "total": 114
         },
         "TIME": {
           "Non-hallucinated": 2,
@@ -2071,17 +2041,17 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 2.83,
-      "factual": 0.0,
-      "failed": 100,
-      "non_factual": 1.0,
-      "non_factual_extrinsic": 0.05,
-      "non_factual_intrinsic": 0.12,
+      "ents_per_sum": 3.42,
+      "factual": 0.66,
+      "failed": 13,
+      "non_factual": 0.29,
+      "non_factual_extrinsic": 0.18,
+      "non_factual_intrinsic": 0.13,
       "skipped": 0.0,
-      "sum_with_extrinsic": 0.72,
+      "sum_with_extrinsic": 0.85,
       "sum_with_extrinsic_factual": 0.64,
       "total": 100,
-      "unknown": 0.0
+      "unknown": 0.05
     },
     "iteration": 7,
     "summary": {
