@@ -1,10 +1,12 @@
 from typing import List, Tuple
+import numpy as np
 import pandas as pd
 import json
 from src.data_utils import load_xsum_dict
 import argparse
 import seaborn as sns
 import matplotlib.pyplot as plt
+import matplotlib as mpl
 from scipy import stats
 
 
@@ -59,7 +61,6 @@ if __name__ == "__main__":
     description = "Compute and plot GEF convergence statistics. Plots are written to plots/"
     parser = argparse.ArgumentParser(description=description)
     parser.add_argument("base_model", type=str, choices=['bart', 'pegasus'])
-    parser.add_argument("--extrinsic_only", action='store_true', default=False, help="Compute ONLY on subset that includes extrinsic hallucinations.")
     args = parser.parse_args()
 
     xsum_test = load_xsum_dict("test")
@@ -68,15 +69,22 @@ if __name__ == "__main__":
         full_iteration_stats = read_logs("results/iteration-changes/bart-full-classifier-knnv1.json")
         oracle_iteration_stats = read_logs("results/iteration-changes/bart-test-extrinsic-100-oracle.json")
         knn_iteration_stats = read_logs("results/iteration-changes/bart-test-extrinsic-100-classifier-knnv1.json")
+        extrinsic_full_iteration_stats = read_logs(
+            "results/iteration-changes/bart-full-extrinsic-classifier-knnv1.json"
+        )
     else:
         full_iteration_stats = read_logs("results/iteration-changes/pegasus-full-classifier-knnv1.json")
         oracle_iteration_stats = read_logs("results/iteration-changes/pegasus-test-extrinsic-75-oracle.json")
         knn_iteration_stats = read_logs("results/iteration-changes/pegasus-test-extrinsic-75-classifier-knnv1.json")
+        extrinsic_full_iteration_stats = read_logs(
+            "results/iteration-changes/pegasus-full-extrinsic-classifier-knnv1.json"
+        )
 
     experiment_raw_data = {
-        'full': full_iteration_stats,
-        'oracle': oracle_iteration_stats,
-        'knn': knn_iteration_stats
+        # 'full': full_iteration_stats,
+        'full-extrinsic': extrinsic_full_iteration_stats,
+        # 'oracle': oracle_iteration_stats,
+        # 'knn': knn_iteration_stats
     }
 
     iteration_convergence_across_experiments: List[Tuple[str, pd.Series]] = []
@@ -90,19 +98,50 @@ if __name__ == "__main__":
         examples_converged_across_iterations = pd.Series(examples_converged_across_iterations)
         iteration_convergence_across_experiments.append((experiment_name, examples_converged_across_iterations))
 
-    plt.figure(figsize=(10, 8))
+    sns.set_theme()
+    sns.set_context("paper")
+    mpl.style.use(["seaborn-white", "seaborn-paper"])
+    plt.figure(figsize = (6,4))
+
+    to_plot = iteration_convergence_across_experiments[0][1]
+    to_plot.index = to_plot.index + 1
+    to_plot = normalize_df(to_plot)
+    to_plot = to_plot.groupby(np.where(to_plot.index >= 8, '8+', to_plot.index)).sum()
+    to_plot = to_plot.reset_index().rename(columns={'index': 'number of interations', 0: 'examples converged'})
+    to_plot['system'] = 'full-extrinsic'
     ax = sns.barplot(
-        data=convert_named_series_to_plot_df(iteration_convergence_across_experiments),
-        x='number_of_iterations_ran',
-        y='examples_converged',
+        data=to_plot,
+        x='number of interations',
+        y='examples converged',
         hue='system'
     )
     ax.set_xlabel("Number of Iterations", fontsize=12)
-    ax.set_ylabel('Examples Converged', fontsize=12)
-    ax.legend(loc='upper right', fontsize=12)
-    ax.set_title(f'Convergence over Iterations for {args.base_model.upper()} GEF', fontsize=12)
+    ax.set_ylabel('Summaries Completed', fontsize=12, labelpad=10)
+    ax.get_legend().remove()
     plt.savefig(f"plots/{args.base_model}_gef_convergence_over_iterations.pdf")
     print(f'distribution plot written to plots/{args.base_model}_gef_convergence_over_iterations.pdf')
+
+    # comment this block in to plot multiple series
+    #
+    # to_plot = convert_named_series_to_plot_df(iteration_convergence_across_experiments)
+    # to_plot_collapsed = to_plot.groupby(
+    #     np.where(to_plot.number_of_iterations_ran >= 9, '9+', to_plot.number_of_iterations_ran)
+    # ).sum()
+
+    # breakpoint()
+    # ax = sns.barplot(
+    #     data=to_plot,
+    #     x='number_of_iterations_ran',
+    #     y='examples_converged',
+    #     hue='system'
+    # )
+    # ax.set_xlabel("Number of Iterations", fontsize=12)
+    # ax.set_ylabel('Examples Converged', fontsize=12)
+    # ax.get_legend().remove()
+    # ax.legend(loc='upper right', fontsize=12)
+    # ax.set_title(f'Convergence over Iterations for {args.base_model.upper()} GEF', fontsize=12)
+    # plt.savefig(f"plots/{args.base_model}_gef_convergence_over_iterations.pdf")
+    # print(f'distribution plot written to plots/{args.base_model}_gef_convergence_over_iterations.pdf')
 
     for name, counts in iteration_convergence_across_experiments:
         frequencies_by_iteration = counts / counts.sum()
