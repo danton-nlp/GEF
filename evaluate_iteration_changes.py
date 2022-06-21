@@ -22,7 +22,7 @@ def collect_iteration_stats(
     logs_path,
     xsum_test,
     test_set_ids: Union[set, None],
-    entity_match_type: EntityMatchType = "contained",
+    entity_match_type: EntityMatchType = "strict_all",
     should_annotate=False,
 ):
     is_oracle = "oracle" in logs_path
