@@ -1,7 +1,6 @@
-from typing import Dict, List, Tuple, TypedDict
+from typing import Dict, List, Literal, Tuple, TypedDict, Union
 import json
-from datasets import load_dataset
-import random
+from datasets.load import load_dataset
 from sumtool.storage import get_summary_metrics, get_summaries
 
 from src.generation_utils import SUMMARY_FAILED_GENERATION
@@ -72,7 +71,7 @@ def load_debug_subset(xsum_test):
     }
 
 
-def load_shuffled_test_split(xsum_test, data_subset: str, N=100) -> Dict[str, str]:
+def load_shuffled_test_split(xsum_test, data_subset: str, N: Union[int, Literal['all']] = 100) -> Dict[str, str]:
     with open("data/xsum_shuffled_test_splits.json", "r") as f:
         shuffled_test_splits = json.load(f)
 
@@ -80,7 +79,8 @@ def load_shuffled_test_split(xsum_test, data_subset: str, N=100) -> Dict[str, st
         (sum_id, xsum_test[sum_id]) for sum_id in shuffled_test_splits[data_subset]
     ]
 
-    return {k: v["document"] for (k, v) in summaries[:N]}
+    slice_arg = None if N == 'all' else N
+    return {k: v["document"] for (k, v) in summaries[:slice_arg]}
 
 
 def split_batches(lst, size):
