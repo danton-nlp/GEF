@@ -72,8 +72,12 @@ def load_debug_subset(xsum_test):
 
 
 def load_shuffled_test_split(xsum_test, data_subset: str, N: Union[int, Literal['all']] = 100) -> Dict[str, str]:
-    with open("data/xsum_shuffled_test_splits.json", "r") as f:
-        shuffled_test_splits = json.load(f)
+    if "fully-annotated" in data_subset:
+        with open("data/xsum_fully_annotated_test_splits.json", "r") as f:
+            shuffled_test_splits = json.load(f)
+    else:
+        with open("data/xsum_shuffled_test_splits.json", "r") as f:
+            shuffled_test_splits = json.load(f)
 
     summaries: List[Tuple[str, XSumDoc]] = [
         (sum_id, xsum_test[sum_id]) for sum_id in shuffled_test_splits[data_subset]

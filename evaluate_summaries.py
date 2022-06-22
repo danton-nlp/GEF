@@ -15,29 +15,19 @@ import json
 pp = pprint.PrettyPrinter(indent=2)
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--annotate", type=bool, default=False)
-    parser.add_argument("--test_size", type=int, default=100)
-    parser.add_argument("--entity_label_match", type=str, default="strict_all")
-    parser.add_argument("--print_first_n", type=int, default=0)
-    parser.add_argument("--model_filter", type=str, default="")
-    parser.add_argument("--count_skips", type=bool, default=False)
-    args = parser.parse_args()
-
-    baseline_metadata = get_summary_metrics("xsum", "facebook-bart-large-xsum")
-    gold_sums, gold_metadata = get_gold_xsum_data()
-    xsum_test = load_xsum_dict("test")
-    
-    for data_subset in ["bart-test-extrinsic", "pegasus-test-extrinsic"]:
-        test_set_ids = set(
-            load_shuffled_test_split(xsum_test, data_subset, args.test_size).keys()
-        )
-        print(f"Test results for {len(test_set_ids)} summaries")
-        MODEL_RESULTS = {
-            # "Test FBS w/ oracle, i=2": load_summaries_from_logs(
-            #     f"results/fbs-logs/{data_subset}-oracle.json", max_iterations=2
+def load_model_results_for_subset(data_subset: str):
+    if "fully-annotated" in data_subset:
+        return {
+            "fbs_classifier": load_summaries_from_logs(
+                "results/fbs-logs/bart-full-classifier-knnv1.json",
+                max_iterations=5,
+            ),
+            # "gef_pegasus_classifier": load_summaries_from_logs(
+            #     f"results/fbs-logs/pegasus-full-classifier-knnv1.json", max_iterations=5
             # ),
+        }
+    else:
+        return {
             "fbs_oracle": load_summaries_from_logs(
                 f"results/fbs-logs/{data_subset}-oracle.json", max_iterations=5
             ),
@@ -49,8 +39,33 @@ if __name__ == "__main__":
                 f"results/fbs-logs/{data_subset}-classifier-knnv1.json",
                 max_iterations=10,
             ),
-            # 
+            #
         }
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--annotate", type=bool, default=False)
+    parser.add_argument("--test_size", type=int, default=100)
+    parser.add_argument("--entity_label_match", type=str, default="strict_all")
+    parser.add_argument(
+        "--data_subsets", type=str, default="bart-test-extrinsic,pegasus-test-extrinsic"
+    )
+    parser.add_argument("--print_first_n", type=int, default=0)
+    parser.add_argument("--model_filter", type=str, default="")
+    parser.add_argument("--count_skips", type=bool, default=False)
+    args = parser.parse_args()
+
+    baseline_metadata = get_summary_metrics("xsum", "facebook-bart-large-xsum")
+    gold_sums, gold_metadata = get_gold_xsum_data()
+    xsum_test = load_xsum_dict("test")
+
+    for data_subset in args.data_subsets.split(","):
+        test_set_ids = set(
+            load_shuffled_test_split(xsum_test, data_subset, args.test_size).keys()
+        )
+        print(f"Test results for {len(test_set_ids)} summaries")
+        MODEL_RESULTS = load_model_results_for_subset(data_subset)
 
         bart_models = [
             ("facebook-bart-large-xsum", "baseline-bart"),
@@ -65,7 +80,6 @@ if __name__ == "__main__":
             ("gold", "gold"),
         ]
 
-
         for (sumtool_name, model_label) in (
             bart_models if "bart" in data_subset else pegasus_models
         ):
@@ -73,15 +87,21 @@ if __name__ == "__main__":
             MODEL_RESULTS[model_label] = (
                 {sum_id: x["summary"] for sum_id, x in dataset.items()},
                 {},
-                {}
+                {},
             )
 
         aggregated_results = []
         summary_results = {}
-        for model_label, (sums_by_id, sum_ents_by_id, failed_sums_by_id) in MODEL_RESULTS.items():
+        for model_label, (
+            sums_by_id,
+            sum_ents_by_id,
+            failed_sums_by_id,
+        ) in MODEL_RESULTS.items():
             if args.model_filter == "" or args.model_filter in model_label:
                 filtered_sums_by_id = {
-                    sum_id: x for sum_id, x in sums_by_id.items() if sum_id in test_set_ids
+                    sum_id: x
+                    for sum_id, x in sums_by_id.items()
+                    if sum_id in test_set_ids
                 }
                 filtered_ents_by_id = {
                     sum_id: x
@@ -102,7 +122,7 @@ if __name__ == "__main__":
                     is_fbs="fbs" in model_label.lower(),
                     is_oracle="oracle" in model_label.lower(),
                     count_skips=args.count_skips,
-                    compute_rouge=False
+                    compute_rouge=False,
                 )
                 pp.pprint(agg_metrics)
                 aggregated_results.append(
