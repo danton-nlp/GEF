@@ -86,17 +86,21 @@ def annotate_entities(
 
 
 def prompt_annotation_flow(
-    unknown_entities: MarkedEntityLookup, xsum_test, sums_by_id, metadata
+    unknown_entities: MarkedEntityLookup,
+    xsum_test,
+    sums_by_id,
+    metadata,
+    force_annotation_flow=False,
 ):
     n_unknown = sum([len(ents) for ents in unknown_entities.values()])
     valid_input = False
     response = ""
-    while not valid_input:
+    while not valid_input and not force_annotation_flow:
         response = input(
             f"Would you like to annotate {n_unknown} unknown entities? (y/n)\n"
         ).strip()
         valid_input = response in ["y", "n"]
-    if response == "y":
+    if response == "y" or force_annotation_flow:
         updated_annotations = annotate_entities(unknown_entities, xsum_test, sums_by_id)
         summary_gold_metadata = persist_updated_annotations(
             metadata,

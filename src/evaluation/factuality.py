@@ -18,6 +18,7 @@ def get_labeled_entities(
     xsum_test,
     should_annotate,
     entity_match_type,
+    force_annotation_flow=False
 ):
     # Detect entities if they're not cached
     for sum_id, summary in sums_by_id.items():
@@ -34,18 +35,19 @@ def get_labeled_entities(
         lambda x: x["label"] == ANNOTATION_LABELS["Unknown"],
         labeled_ents,
     )
-
     if should_annotate and count_entities(unknown_entities) > 0:
         result = prompt_annotation_flow(
             unknown_entities,
             xsum_test,
             sums_by_id,
             gold_metadata,
+            force_annotation_flow
         )
         if result is not False:
             labeled_ents = oracle_label_entities(
                 sum_ents_by_id,
                 get_entity_annotations(sum_ents_by_id.keys(), gold_metadata),
+                entity_match_type
             )
     return labeled_ents
 
