@@ -72,6 +72,7 @@ class SummaryEval(TypedDict):
     count_entity_label: DefaultDict[str, int]
     count_entity_type: DefaultDict[str, DefaultDict[str, int]]
     has_predicted_non_factual: bool
+    has_extrinsic_and_fully_factual: int
     rouge1: Optional[float]
     rouge2: Optional[float]
     rougeL: Optional[float]
@@ -97,6 +98,7 @@ def evaluate_summary(
         "rouge1": None,
         "rouge2": None,
         "rougeL": None,
+        "has_extrinsic_and_fully_factual": 0,
     }
     if compute_rouge:
         rouge_scores = rouge([summary], [reference])
@@ -148,9 +150,16 @@ def evaluate_summary(
     if count_entity_labels[ANNOTATION_LABELS["Unknown"]] == 0:
         summary_eval["count_entity_extrinsic"] = count_total_extrinsic_hallucinations
     if count_total_extrinsic_hallucinations > 0:
-        summary_eval["entity_extrinsic_factuality_ratio"] = count_entity_labels[
-            ANNOTATION_LABELS["Factual"]
-        ] / count_total_extrinsic_hallucinations
+        summary_eval["entity_extrinsic_factuality_ratio"] = (
+            count_entity_labels[ANNOTATION_LABELS["Factual"]]
+            / count_total_extrinsic_hallucinations
+        )
+
+    if (
+        count_total_extrinsic_hallucinations > 0
+        and summary_eval["entity_extrinsic_factuality_ratio"] == 1
+    ):
+        summary_eval["has_extrinsic_and_fully_factual"] = 1
     return summary_eval
 
 
@@ -253,10 +262,15 @@ def evaluate_factuality(
             "has_unknown": has_unknown,
             "has_failed": summary_eval["failed"],
             "count_extrinsic": count_extrinsic,
-            "count_extrinsic_factual": summary_eval['count_entity_label']['Factual Hallucination'],
+            "count_extrinsic_factual": summary_eval["count_entity_label"][
+                "Factual Hallucination"
+            ],
             "extrinsic_factuality_ratio": summary_eval[
                 "entity_extrinsic_factuality_ratio"
             ],
+            "has_extrinsic_and_fully_factual": summary_eval[
+                "has_extrinsic_and_fully_factual"
+            ]
         }
 
         if print_counter < print_first_n:
@@ -306,16 +320,13 @@ def evaluate_factuality(
                 agg_results["extrinsic_factuality_ratios"].append(
                     summary_eval["entity_extrinsic_factuality_ratio"]
                 )
-            if summary_eval["entity_extrinsic_factuality_ratio"] and summary_eval["entity_extrinsic_factuality_ratio"] == 1:
-                agg_results["sum_with_extrinsic_factual"].append(
-                    1
-                )
-            else:
-                agg_results["sum_with_extrinsic_factual"].append(
-                    0
-                )
-            
-            agg_results["count_entity_extrinsic"] += summary_eval["count_entity_extrinsic"]
+            agg_results["sum_with_extrinsic_factual"].append(
+                summary_eval["has_extrinsic_and_fully_factual"]
+            )
+
+            agg_results["count_entity_extrinsic"] += summary_eval[
+                "count_entity_extrinsic"
+            ]
 
             if compute_rouge and not summary_eval["failed"]:
                 agg_results["rouge1"].append(summary_eval["rouge1"])
@@ -334,7 +345,9 @@ def evaluate_factuality(
             "failed": agg_results["failed"],
             "unknown": agg_results["unknown"] / total,
             "sum_with_extrinsic": agg_results["sum_with_extrinsic"] / total,
-            "sum_with_extrinsic_factual": np.mean(agg_results["sum_with_extrinsic_factual"]),
+            "sum_with_extrinsic_factual": np.mean(
+                agg_results["sum_with_extrinsic_factual"]
+            ),
             "ents_per_sum": agg_results["entities"] / (total - agg_results["skipped"]),
         },
         "entities": {

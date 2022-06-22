@@ -1,6 +1,6 @@
-model,total,factual,non_factual,non_factual_extrinsic,non_factual_intrinsic,extrinsic_factuality_ratio,unknown,skipped,failed,ents_per_sum,sum_with_extrinsic
-fbs_oracle,50,0.84,0.16,0.08,0.08,0.9634146341463414,0.0,0.0,3,3.08,0.84
-fbs_classifier,50,0.58,0.42,0.32,0.18,0.8935185185185185,0.0,0.0,7,3.2,0.86
-fbs_classifier_i10,50,0.58,0.42,0.32,0.18,0.8857142857142857,0.0,0.0,9,3.2,0.86
-baseline-pegasus,50,0.52,0.48,0.46,0.04,0.825,0.0,0.0,0,3.62,1.0
-gold,50,1.0,0.0,0.0,0.0,1.0,0.0,0.0,0,3.4,0.94
+model,total,factual,non_factual,non_factual_extrinsic,non_factual_intrinsic,extrinsic_factuality_ratio,extrinsic_entity_count,unknown,skipped,failed,ents_per_sum,sum_with_extrinsic,sum_with_extrinsic_factual
+fbs_oracle,50,0.84,0.16,0.08,0.08,0.9634146341463414,64,0.0,0.0,3,3.08,0.84,0.76
+fbs_classifier,50,0.6,0.4,0.32,0.18,0.8857142857142857,67,0.0,0.0,7,3.2,0.86,0.54
+fbs_classifier_i10,50,0.6,0.4,0.32,0.18,0.8857142857142857,66,0.0,0.0,9,3.2,0.86,0.54
+baseline-pegasus,50,0.52,0.48,0.46,0.04,0.825,82,0.0,0.0,0,3.62,1.0,0.54
+gold,50,1.0,0.0,0.0,0.0,1.0,83,0.0,0.0,0,3.4,0.94,0.94
