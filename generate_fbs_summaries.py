@@ -1,4 +1,3 @@
-
 """
   Run FBS generation for a data subset
   with BART, Pegasus (Oracle & Classifier).
@@ -21,12 +20,16 @@ def run_command(cmd: str):
 def run_iterative_constraints(args, model_summarization, is_oracle):
     model_prefix = "pegasus" if "pegasus" in model_summarization else "bart"
     fbs_suffix = "oracle" if is_oracle else args.classifier_results_suffix
+    if args.num_beams != 4:
+        fbs_suffix += f"-beams-{args.num_beams}"
     if args.data_subset == "test_extrinsic":
         data_subset = f"{model_prefix}-{args.data_subset}"
         results_path = f"results/fbs-logs/{data_subset}-{fbs_suffix}.json"
     else:
         data_subset = args.data_subset
-        results_path = f"results/fbs-logs/{model_prefix}-{data_subset}-{fbs_suffix}.json"
+        results_path = (
+            f"results/fbs-logs/{model_prefix}-{data_subset}-{fbs_suffix}.json"
+        )
     logging_path = get_new_log_path(LOGGING_PATH) + ".json"
     print(f"Will write {logging_path} to {results_path} upon completion")
     run_command(
@@ -38,6 +41,7 @@ def run_iterative_constraints(args, model_summarization, is_oracle):
                 f"--classifier_batch_size {args.classifier_batch_size}",
                 f"--model_summarization {model_summarization}",
                 "--max_iterations 10",
+                f"--num_beams {args.num_beams}",
                 f"--test_size {TEST_SIZE}",
                 (
                     f"--pickled_classifier {args.pickled_classifier}"
@@ -55,9 +59,14 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--data_subset", type=str, default="test-extrinsic")
     parser.add_argument("--batch_size", type=int, default=10)
+    parser.add_argument("--num_beams", type=int, default=4)
     parser.add_argument("--classifier_batch_size", type=int, default=16)
-    parser.add_argument("--pickled_classifier", type=str, default="factuality-classifiers/v1-knn.pickle")
-    parser.add_argument("--classifier_results_suffix", type=str, default="classifier-knnv1")
+    parser.add_argument(
+        "--pickled_classifier", type=str, default="factuality-classifiers/v1-knn.pickle"
+    )
+    parser.add_argument(
+        "--classifier_results_suffix", type=str, default="classifier-knnv1"
+    )
     args = parser.parse_args()
 
     for model_path in ["facebook/bart-large-xsum", "google/pegasus-xsum"]:

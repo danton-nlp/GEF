@@ -13,7 +13,7 @@ def load_summaries_df(path: str):
 
 
 def render_compare_results():
-    col1, col2 = st.columns(2)
+    col1, col2, col3 = st.columns(3)
     data_subset = col1.selectbox(
         "Data subset",
         options=[
@@ -24,7 +24,9 @@ def render_compare_results():
         ],
     )
     test_size = col2.number_input("Test size", value=100)
-    filename = f"results/evaluation/{data_subset}-{test_size}"
+    num_beams = col3.number_input("Number of beams", value=4)
+    beam_suffix = "" if num_beams == 4 else f"-beams-{num_beams}"
+    filename = f"results/evaluation/{data_subset}-{test_size}{beam_suffix}"
 
     df_aggregated = (
         pd.read_csv(f"{filename}.csv")

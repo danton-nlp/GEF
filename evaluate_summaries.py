@@ -15,7 +15,7 @@ import json
 pp = pprint.PrettyPrinter(indent=2)
 
 
-def load_model_results_for_subset(data_subset: str):
+def load_model_results_for_subset(data_subset: str, beam_suffix: str = ""):
     if "fully-annotated" in data_subset:
         return {
             "fbs_classifier": load_summaries_from_logs(
@@ -27,24 +27,37 @@ def load_model_results_for_subset(data_subset: str):
             # ),
         }
     else:
-        return {
-            "fbs_oracle": load_summaries_from_logs(
-                f"results/fbs-logs/{data_subset}-oracle.json", max_iterations=5
+        results = {}
+        for (name, loc, max_iterations) in [
+            (
+                "fbs_oracle",
+                f"results/fbs-logs/{data_subset}-oracle{beam_suffix}.json",
+                5,
             ),
-            "fbs_classifier": load_summaries_from_logs(
-                f"results/fbs-logs/{data_subset}-classifier-knnv1.json",
-                max_iterations=5,
+            (
+                "fbs_classifier",
+                f"results/fbs-logs/{data_subset}-classifier-knnv1{beam_suffix}.json",
+                5,
             ),
-            "fbs_classifier_v2": load_summaries_from_logs(
-                f"results/fbs-logs/{data_subset}-classifier-knnv2.json",
-                max_iterations=5,
+            (
+                "fbs_classifier_i10",
+                f"results/fbs-logs/{data_subset}-classifier-knnv1{beam_suffix}.json",
+                10,
             ),
-            "fbs_classifier_i10": load_summaries_from_logs(
-                f"results/fbs-logs/{data_subset}-classifier-knnv1.json",
-                max_iterations=10,
+            (
+                "fbs_classifier_v2",
+                f"results/fbs-logs/{data_subset}-classifier-knnv2{beam_suffix}.json",
+                5,
             ),
-            #
-        }
+        ]:
+            try:
+                results[name] = load_summaries_from_logs(
+                    loc, max_iterations=max_iterations
+                )
+            except Exception as e:
+                print(f"[WARN]: Failed to load logs: `{name} / {loc}`")
+                print(e)
+        return results
 
 
 if __name__ == "__main__":
@@ -55,6 +68,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--data_subsets", type=str, default="bart-test-extrinsic,pegasus-test-extrinsic"
     )
+    parser.add_argument("--num_beams", type=int, default=4)
     parser.add_argument("--print_first_n", type=int, default=0)
     parser.add_argument("--model_filter", type=str, default="")
     parser.add_argument("--count_skips", type=bool, default=False)
@@ -63,13 +77,14 @@ if __name__ == "__main__":
     baseline_metadata = get_summary_metrics("xsum", "facebook-bart-large-xsum")
     gold_sums, gold_metadata = get_gold_xsum_data()
     xsum_test = load_xsum_dict("test")
+    beam_suffix = "" if args.num_beams == 4 else f"-beams-{args.num_beams}"
 
     for data_subset in args.data_subsets.split(","):
         test_set_ids = set(
             load_shuffled_test_split(xsum_test, data_subset, args.test_size).keys()
         )
         print(f"Test results for {len(test_set_ids)} summaries")
-        MODEL_RESULTS = load_model_results_for_subset(data_subset)
+        MODEL_RESULTS = load_model_results_for_subset(data_subset, beam_suffix)
 
         bart_models = [
             ("facebook-bart-large-xsum", "baseline-bart"),
@@ -172,12 +187,10 @@ if __name__ == "__main__":
                 "sum_with_extrinsic_factual",
             ],
         ).set_index("model")
-
-        df_aggregated.to_csv(f"results/evaluation/{data_subset}-{args.test_size}.csv")
+        eval_filename = f"{data_subset}-{args.test_size}{beam_suffix}"
+        df_aggregated.to_csv(f"results/evaluation/{eval_filename}.csv")
         df_summaries = pd.DataFrame.from_dict(summary_results, orient="index")
-        with open(
-            f"results/evaluation/{data_subset}-{args.test_size}-summaries.json", "w"
-        ) as f:
+        with open(f"results/evaluation/{eval_filename}-summaries.json", "w") as f:
             json.dump(df_summaries.to_dict(orient="index"), f, indent=2, sort_keys=True)
 
         # Export to latex
@@ -203,7 +216,7 @@ if __name__ == "__main__":
             ("sum_with_extrinsic_factual", "SummaryWithExtrinsicFactual"),
             ("skipped", "Skipped"),
         ]
-        with open(f"results/latex/{data_subset}-{args.test_size}.tex", "w") as f:
+        with open(f"results/latex/{eval_filename}.tex", "w") as f:
             for model_index, model_label in model_mapping:
                 if model_index in df_aggregated.index:
                     if "pegasus" in data_subset:
