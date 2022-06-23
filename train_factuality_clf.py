@@ -73,7 +73,9 @@ def build_train_features_and_targets(data, ignore_intrinsic: bool):
     return features, targets
 
 
-def build_test_features_and_targets(data, ignore_intrinsic: bool, test_only_on_hallucinated: bool):
+def build_test_features_and_targets(
+    data, ignore_intrinsic: bool, test_only_on_hallucinated: bool
+):
     if ignore_intrinsic:
         data = data[data["entity_label"] != "Intrinsic Hallucination"]
 
@@ -105,8 +107,11 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    train_data = json.load(open(args.train_data_filepath))
-    test_data = json.load(open(args.test_data_filepath))
+    train_data, test_data = [], []
+    for path in args.train_data_filepath.split(","):
+        train_data += json.load(open(path))
+    for path in args.test_data_filepath.split(","):
+        test_data += json.load(open(path))
 
     Xy_train = preprocess_data(train_data)
     Xy_test = preprocess_data(test_data)
@@ -115,11 +120,8 @@ if __name__ == "__main__":
 
     X_train, y_train = build_train_features_and_targets(Xy_train, args.ignore_intrinsic)
     X_test, y_test = build_test_features_and_targets(
-        Xy_test,
-        args.ignore_intrinsic,
-        args.test_only_on_hallucinated
+        Xy_test, args.ignore_intrinsic, args.test_only_on_hallucinated
     )
-
     model = Pipeline(
         [
             ("scale", StandardScaler()),
