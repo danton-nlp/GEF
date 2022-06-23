@@ -190,9 +190,6 @@ if __name__ == "__main__":
         help="debug: max number of examples to process",
     )
     parser.add_argument(
-        "--xent_split", type=str, default="test", choices=["test", "train"]
-    )
-    parser.add_argument(
         "--entity_input_filepath",
         type=str,
         help="filepath to read existing prob output from",
