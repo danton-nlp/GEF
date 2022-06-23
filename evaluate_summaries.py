@@ -35,6 +35,10 @@ def load_model_results_for_subset(data_subset: str):
                 f"results/fbs-logs/{data_subset}-classifier-knnv1.json",
                 max_iterations=5,
             ),
+            "fbs_classifier_v2": load_summaries_from_logs(
+                f"results/fbs-logs/{data_subset}-classifier-knnv2{beam_suffix}.json",
+                max_iterations=5,
+            ),
             "fbs_classifier_i10": load_summaries_from_logs(
                 f"results/fbs-logs/{data_subset}-classifier-knnv1.json",
                 max_iterations=10,
