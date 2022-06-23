@@ -1128,14 +1128,14 @@
                 "start": 7,
                 "end": 16,
                 "label": "Non-hallucinated",
-                "0": "PERSON",
+                "type": "PERSON",
                 "ent": "Wanderers"
             },
             {
                 "start": 71,
                 "end": 76,
                 "label": "Non-factual Hallucination",
-                "2": "PERSON",
+                "type": "PERSON",
                 "ent": "Chris"
             },
             {
