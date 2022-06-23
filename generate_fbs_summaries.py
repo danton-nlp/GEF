@@ -10,7 +10,7 @@ from src.misc_utils import get_new_log_path, Timer
 
 
 LOGGING_PATH = "logs-iterative"
-TEST_SIZE = 100
+TEST_SIZE = 200
 
 
 def run_command(cmd: str):
