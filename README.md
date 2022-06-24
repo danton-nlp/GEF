@@ -12,6 +12,7 @@
 - [Our Annotations](data/xsum/gold-metrics.json)
 - [Generation logs for GEF](results/gef-logs/)
 - [Evaluation results for all models](results/evaluation/)
+- [Summaries from various models (baselines, GEF, Entity Corrector, RL-Fact & Pinocchio)](data/xsum/)
 
 ## Running GEF
 1. Train Factuality Classifier on XEnt data:
@@ -40,6 +41,11 @@ python iterative_constraints.py --data_subset full --batch_size 16 --classifier_
 #### PEGASUS
 ```
 python iterative_constraints.py --data_subset full --batch_size 16 --classifier_batch_size 16 --max_iterations 100 --pickled_classifier factuality-classifiers/v2-knn-20n.pickle --model_summarization google/pegasus-xsum
+```
+
+## Compute rouge scores
+```
+python compute_rouge_scores.py
 ```
 
 ## Preprocessing Scripts
