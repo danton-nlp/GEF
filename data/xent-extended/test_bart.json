@@ -193,6 +193,21 @@
     ]
   },
   {
+    "source": "The official data prompted the government to upgrade growth forecasts for the second time in a week and to promise no new austerity measures.\nLast week, growth for 2014 was up-rated to 3% from 2.1%, but will now be around 4.5%, Ireland's finance minister said.\nMichael Noonan said the economy was in \"a catch-up phase... after recession\".\nThe year-on-year growth of 7.7% was the strongest recorded in Ireland since the early 2000s, Mr Noonan told reporters. By comparison, the eurozone recorded growth of just 0.7% over the same period.\nAlong with Greece, Spain and Portugal, Ireland was among the eurozone's worst hit economies, with the bursting of its property bubble and soaring unemployment.\nThe 1.5% quarterly rise beat the 0.5% expected by economists polled in a survey by the Reuters news agency.\nMr Noonan said the faster growth would mean Ireland's budget deficit falling to about 3.5% of GDP this year against a target of 4.8%. That meant 2bn euros of tax rises and spending cuts planned for next year would no longer be needed to reach the EU limit of 3% by the end of 2015, he said.\nThe economic improvement comes after years of austerity, a bailout from international lenders, and relentless austerity measures.\n\"At face value, the numbers suggest that the boom is back,\" said Austin Hughes, chief economist at KBC Bank Ireland.\n\"It shows a clearly improving economy. It's very encouraging to see the improvement in consumption, in construction. So a domestic recovery is taking hold, if a lot less intense that the headline number would suggest,\" he said.",
+    "reference": "The Republic of Ireland's economy grew 1.5% in the second quarter of the year, figures show, and was up 7.7% on the April-to-June period in 2013.",
+    "prediction": "Ireland's economy grew by 7.7% in the three months to the end of June compared with the same period a year ago, official figures show.",
+    "entities": [
+      {
+        "end": 110,
+        "ent": "the same period a year ago",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "start": 84,
+        "type": "DATE"
+      }
+    ]
+  },
+  {
     "source": "It comes 12 years after their first, when Jose Mourinho's 2004-05 side stormed to glory, 12 points clear of nearest rivals Arsenal after having lost just once, to Manchester City, all season.\nDidier Drogba spearheaded the attack, Claude Makelele reinvented the anchor man role and Frank Lampard top-scored from midfield as the Blues won their first top-flight title in more than half a century.\nAntonio Conte's 2016-17 breed have wrapped up the league with two games to spare, with Diego Costa hitting 20 goals [as of 12 May], Eden Hazard impressing and N'Golo Kante winning player of the year.\nBut who, from Chelsea's first and most recent Premier League-winning teams, would make your combined XI?\nPick your best XI from Chelsea's Premier League winners in 2004-05 and 2016-17.",
     "reference": "Chelsea's 1-0 win at West Brom on Friday clinched the Blues their fifth Premier League title.",
     "prediction": "Chelsea have won their second Premier League title in a row.",
@@ -326,6 +341,31 @@
         "end": 74,
         "in_source": false,
         "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "But the message may take some time to reach India.\nThe country had a lone shining moment with Girisha Hosanagara Nagarajegowda's silver medal in Men's High Jump F42 class for athletes with an impairment that affects their arms or legs.\nAnd deservedly the nation cherished Girisha's feat as medals have generally eluded India's Paralympians. But now questions are being raised at the country's ability to translate the congratulatory tone into awareness of disabled rights.\nIndia is not known for being friendly towards the disabled and most public places still lack basic facilities to help them in everyday life.\u00e3\u20ac\u20ac\n'Second-class' citizens\nEven before Girisha won his medal, Indian media was abuzz with stories about problems at the Athletes' Village.\nSeveral athletes complained that the Paralympics Committee of India had failed to book accommodation for escorts and coaches at the facility. This made the lives of the athletes very tough as they were denied precious time with their coaches.\nTaking to CNN-IBN, weightlifter Farman Basha said his preparation was severely affected because he could not move freely in the village without his escort. \"I was confident of a medal and now all my training has gone in vain,\" he said.\nThe channel's editor, Rajdeep Sardesai, ran a special show to discuss whether India treats its Paralympians as second-class citizens. Many other channels and newspapers followed suit.\nIt's an irony that the controversy received more coverage than the Games themselves.\nIndia may have won just one medal, but the Games were full of inspiring stories. The media seems to have clearly missed a chance to tell these stories to Indians in detail.\u00e3\u20ac\u20ac\nSpeaking on the CNN-IBN show, Olympic silver medallist Rajyawardhan Singh Rathod said he was not surprised with the treatment of India's Paralympians.\nHe said much needs to be changed to give equal rights to Paralympians and millions of disabled people in India.\n\"It's an over-all attitude shift that we need to bring about in our country,\" he said.\nThere is another thread to the story that the India media seems to have missed. The Indian contingent at the Paralympics did not have a single female athlete.\nWhile officials say this boils down to qualification woes, the problem runs much deeper.\nMost schools and colleges lack basic sporting facilities for the disabled and the ones which do rarely encourage disabled women to participate.\u00e3\u20ac\u20ac\nWhile stories about the controversy continue to make headlines, nobody can take anything away from Girisha. The athlete certainly fought against the odds to make sure India did not return home from London empty handed.\nHe hails from the south Indian state of Karnataka and belongs to an average middle class family. But his determination to win a medal set him apart from others.\nHis training in Bangalore took place away from the glare of the media and fan recognition. With support from an NGO and government, Girisha quit his bank job six months ago to concentrate on training.\nToday the result is there for everyone to see. And he hopes that his achievement will transcend the boundaries of sporting achievement and change the attitude of people towards disabled in India.\nBBC Monitoringreports and analyses news from TV, radio, web and print media around the world. For more reports from BBC Monitoring, click here",
+    "reference": "Record-breaking performances and packed venues made the London Paralympics the most successful ever and many say it has changed the way people look at disability.",
+    "prediction": "India may have won just one medal at the Paralympics in London, but the country's achievements have been hailed by the international media.",
+    "entities": [
+      {
+        "end": 52,
+        "ent": "Paralympics",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 41,
+        "type": "ORG"
+      },
+      {
+        "end": 62,
+        "ent": "London",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 56,
+        "type": "GPE"
       }
     ]
   },
@@ -562,6 +602,21 @@
     ]
   },
   {
+    "source": "The man known as Kazu, or 'King Kazu' by some fans, will stay with the second division side past his 49th birthday.\nKazuyoshi first played for Brazilian side Santos in 1986, so his deal will see his career span over 30 years.\n\"I'm thankful to the club staff and supporters who always offer me support,\" said Miura, who scored 55 goals in 89 appearances for Japan.\n\"I'll continue to give everything I have and strive,\" added the former Genoa and Dinamo Zagreb striker.\nPerhaps unsurprisingly, Miura holds the record as the oldest scorer in Japanese football - a winner in a second division match four months after his 48th birthday.\nHe was particularly prolific in guiding Japan to the 1998 World Cup, scoring 14 goals in qualifying, and last played for the national side in 2000.\nHis career, which started when he moved to Brazil to play youth football aged 15, is one of the longest in football history.\nLast week ex-England striker Teddy Sheringham registered himself as a player for Stevenage - where he is manager - at the age of 49 but opted out of playing in a local cup competition.",
+    "reference": "Japanese footballer Kazuyoshi Miura has signed a one-year contract extension with Yokohama FC at the age of 48.",
+    "prediction": "Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Shonin City.",
+    "entities": [
+      {
+        "end": 93,
+        "ent": "Shonin City",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 82,
+        "type": "GPE"
+      }
+    ]
+  },
+  {
     "source": "Ben Flynn, 24, enticed the boy to his home in Droylsden, Greater Manchester, with promises to use his Playstation and offered to pay his bus fare.\nPolice described Flynn as a \"dangerous predator\".\nAt Manchester Minshull Street Crown Court Flynn, of Kings Walk, admitted 13 sex offences including two counts of rape and two sexual assaults.\nHe also pleaded guilty to three counts of causing a child to engage in sexual activity and two counts of causing a child to watch a sexual act.\nFlynn also admitted a breach of sex offence prevention order and one count of meeting a child following sexual grooming.\nHe was also ordered to sign the sex offenders register for life.\nIn March last year, Flynn sent his victim a friend request on Facebook despite having never met or spoken to him.\nThe boy was then bombarded with private messages and Flynn offered to let him play computer games at his home.\nWhen they met Flynn kissed the boy and touched him sexually before trying to take him to his bedroom but the boy refused.\nHe then pestered his victim, offered to pay his victim and went on to abuse him on two further occasions.\nThe boy's sister came across Flynn's messages to her brother and told her mother who phoned the police.\nDet Con Claire Pickavance, of Greater Manchester Police, said the paedophile did not \"show a shred of humanity\" to the boy.\nShe added: \"Ben Flynn is a dangerous predator who preyed on a young boy via social media before arranging to meet with him so that he could satisfy his own depraved urges.\"",
     "reference": "A paedophile who raped a 12-year-old boy after grooming him online has been jailed for 13 years.",
     "prediction": "A paedophile who groomed a 12-year-old boy on Facebook before sexually abusing him has been jailed for 12 years.",
@@ -704,6 +759,31 @@
         "label": "Non-factual Hallucination",
         "predicted_label": "Non-factual Hallucination",
         "start": 114,
+        "type": "DATE"
+      }
+    ]
+  },
+  {
+    "source": "Ben Flynn, 24, enticed the boy to his home in Droylsden, Greater Manchester, with promises to use his Playstation and offered to pay his bus fare.\nPolice described Flynn as a \"dangerous predator\".\nAt Manchester Minshull Street Crown Court Flynn, of Kings Walk, admitted 13 sex offences including two counts of rape and two sexual assaults.\nHe also pleaded guilty to three counts of causing a child to engage in sexual activity and two counts of causing a child to watch a sexual act.\nFlynn also admitted a breach of sex offence prevention order and one count of meeting a child following sexual grooming.\nHe was also ordered to sign the sex offenders register for life.\nIn March last year, Flynn sent his victim a friend request on Facebook despite having never met or spoken to him.\nThe boy was then bombarded with private messages and Flynn offered to let him play computer games at his home.\nWhen they met Flynn kissed the boy and touched him sexually before trying to take him to his bedroom but the boy refused.\nHe then pestered his victim, offered to pay his victim and went on to abuse him on two further occasions.\nThe boy's sister came across Flynn's messages to her brother and told her mother who phoned the police.\nDet Con Claire Pickavance, of Greater Manchester Police, said the paedophile did not \"show a shred of humanity\" to the boy.\nShe added: \"Ben Flynn is a dangerous predator who preyed on a young boy via social media before arranging to meet with him so that he could satisfy his own depraved urges.\"",
+    "reference": "A paedophile who raped a 12-year-old boy after grooming him online has been jailed for 13 years.",
+    "prediction": "A paedophile who groomed a 14-year-old boy on Facebook before sexually abusing him has been jailed for 10 years.",
+    "entities": [
+      {
+        "end": 38,
+        "ent": "14-year-old",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "predicted_label": "Non-factual Hallucination",
+        "start": 27,
+        "type": "DATE"
+      },
+      {
+        "end": 111,
+        "ent": "10 years",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "predicted_label": "Non-factual Hallucination",
+        "start": 103,
         "type": "DATE"
       }
     ]
@@ -946,6 +1026,22 @@
     ]
   },
   {
+    "source": "Sir Bernard announced the move to reassure the public and deter attackers following terrorist attacks in Europe.\nThe Met has already said the number of armed officers will go up in London by 600 to 2,800.\nAnd a further 900 armed officers are planned to be in operation for the rest of England and Wales.\nBut Steve White, chairman of the Police Federation of England and Wales, said it may take two years to fully train the 1,500 recruits planned nationally.\n\"When you're recruiting 1,500 it's going to take a lot of time. You've got to find the resources, the facilities and the people,\" he told the BBC.\nHowever, Deputy Chief Constable Simon Chesterman, the national lead for firearms, said last month that the majority of new armed officers will be in place by April 2017.\nThe latest announcement comes after 84 people were killed when a lorry ploughed into a large crowd watching a fireworks display in Nice in the south of France last month.\nLondoners and tourists out enjoying the August sunshine in central London report mixed feelings about more armed police patrolling the city's streets.\nTeacher Julie Banks, who was visiting from Liverpool, says she finds the news reassuring, \"especially at this time of year when there are more tourists and crowds. We shouldn't be complacent\".\nRetired friends John Lee and John Coles, both from London, agree. \"It's a good thing. It's not going to stop a terror attack, but it makes people feel more secure,\" Mr Coles says.\n\"I never thought I would see the day British police carried weapons in the street like this, but I think that needs to happen now - whether we like it or not,\" Mr Lee adds.\nBricklayer Gary Johns, 34, approved, but says: \"The real question is what their response time is.\"\nOthers, however, say the sight of police carrying heavy weapons makes them uneasy. \"It makes me more nervous than secure to be honest,\" says Bryony Wood, a make-up artist, 26, from west London. \"It's a reminder of what might happen.\"\n\"I have mixed feelings about it,\" says Ebuka Orunta, 20, from south London. \"On one hand I feel safer knowing the Met has a strategy in place to mitigate the risk.\n\"On the other hand, we've seen the problems with police brutality in the US. It's important the people in charge of this weaponry are the right people who are going to protect us.\"\nSir Bernard said: \"We have no intelligence that there will be an attack shortly but what we do know is what we have seen in western Europe.\n\"We have seen attacks in Germany, in Belgium, in France and we would be foolish to ignore that, so it's important that we get officers out there with firearms to respond.\"\nThe commissioner said the increased firearms teams would be patrolling randomly around the clock.\nIt comes after he told a newspaper that a terror attack on the UK is highly likely and a case of \"when, not if\". Writing in the Mail on Sunday, the Met chief said there was a \"sense of fear\" in Britain.\nMr Khan said: \"It's really important that Londoners are reassured that the police service, that the security service, that all of us are doing our bit to keep Londoners in our city safe...\n\"The threat level hasn't changed but we are learning the lessons from Europe, from Nice, from Paris, from Munich.\"\nBy BBC home affairs correspondent Dominic Casciani\nThe Metropolitan Police have long aimed to make the capital as \"hostile\" an environment as possible for any would-be attacker to carry out a mass-casualty attack.\nBut if they can't stop someone attacking, the goal is to have enough armed police available to get to the scene of an atrocity quickly to minimise casualties and neutralise the threat.\nArmed police reached the scene of the 2013 killing of Fusilier Lee Rigby 11 minutes after the 999 call. The attackers were not armed with automatic weapons and just stood there waiting for police to arrive, rather than attacking anyone else.\nClearly, in a Paris-style scenario, 11 minutes is a long, long time so a great deal of today's security planning aims to accelerate how quickly specialist firearms officers could reach a scene.\nNone of which addresses a much bigger issue: what if the attack isn't in London, Birmingham or Manchester? Major cities may be well-resourced - but preparing to respond to an incident elsewhere is far more challenging.\nThe Met said the new armed officers would be \"working alongside their neighbourhood and specialist colleagues\", and Mr Khan said there would be a second dedicated PC in every London ward by the end of next year.\nIn Munich, Germany, nine people died in a shooting at a shopping centre in July while in November 2015, gunmen and suicide bombers killed 130 people in Paris.\nMeanwhile, Mr White expressed his concern about the time it would take to put the plan in place.\n\"What we've got to make sure is that we have the resources in the right place at the right time and we've also got to recognise that this isn't London-centric... a terrorist attack could happen anywhere in the country.\"\nFirearms officers in the Metropolitan Police have to undergo a comprehensive selection and training process before they are allowed on to the streets with a gun.",
+    "reference": "More armed police are to be seen on patrol in London, Metropolitan Police commissioner Sir Bernard Hogan-Howe and Mayor of London Sadiq Khan have said.",
+    "prediction": "Armed officers will be patrolling the streets of London and the rest of England and Wales, Met Police Commissioner Sir Bernard Hogan-Howe has said.",
+    "entities": [
+      {
+        "end": 126,
+        "ent": "Bernard",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 119,
+        "type": "PERSON"
+      }
+    ]
+  },
+  {
     "source": "The IMF's steering committee, made up of 25 of the world's largest economies, said the global outlook was fraught because of weak trade and a series of risks including a UK exit from the EU.\nIt urged countries to boost public spending and avoid deflation.\nThe IMF last week made its second cut to global growth forecasts this year.\nChristine Lagarde, managing director of the IMF, described the talks between finance ministers and central bankers in Washington DC as \"collective therapy\" to deal with the gloomy prospects.\nBut she said calmer financial markets since February had reduced the nerves at the IMF spring meeting.\n\"There was not exactly the same level of anxiety but I think there was an equal level of concern, and a collective endeavour to identify the solution and the responses to the global economic situation,\" she said.\nThe IMF now predicts global growth of 3.2% this year and 3.5% in 2017, having previously forecast 3.4% and 3.6% respectively.\n\"Downside risks to the global economic outlook have increased since October, raising the possibility of a more generalised slowdown and a sudden pull-back of capital flows,\" the IMF steering committee said.\nIt said countries' tax policies and public spending should be \"as growth-friendly as possible\".\nBut it also pledged to \"refrain from all forms of protectionism and competitive devaluations\", amid concerns that some countries are keeping their currencies weak to boost exports.",
     "reference": "Key countries in the International Monetary Fund (IMF) have pledged to pursue \"growth-friendly\" policies to kickstart the slowing world economy.",
     "prediction": "The International Monetary Fund (IMF) has warned that global growth could slow to 3.2% this year and 3.5% in 2017.",
@@ -1020,6 +1116,49 @@
         "end": 153,
         "in_source": true,
         "label": "Non-hallucinated"
+      }
+    ]
+  },
+  {
+    "source": "The IMF's steering committee, made up of 25 of the world's largest economies, said the global outlook was fraught because of weak trade and a series of risks including a UK exit from the EU.\nIt urged countries to boost public spending and avoid deflation.\nThe IMF last week made its second cut to global growth forecasts this year.\nChristine Lagarde, managing director of the IMF, described the talks between finance ministers and central bankers in Washington DC as \"collective therapy\" to deal with the gloomy prospects.\nBut she said calmer financial markets since February had reduced the nerves at the IMF spring meeting.\n\"There was not exactly the same level of anxiety but I think there was an equal level of concern, and a collective endeavour to identify the solution and the responses to the global economic situation,\" she said.\nThe IMF now predicts global growth of 3.2% this year and 3.5% in 2017, having previously forecast 3.4% and 3.6% respectively.\n\"Downside risks to the global economic outlook have increased since October, raising the possibility of a more generalised slowdown and a sudden pull-back of capital flows,\" the IMF steering committee said.\nIt said countries' tax policies and public spending should be \"as growth-friendly as possible\".\nBut it also pledged to \"refrain from all forms of protectionism and competitive devaluations\", amid concerns that some countries are keeping their currencies weak to boost exports.",
+    "reference": "Key countries in the International Monetary Fund (IMF) have pledged to pursue \"growth-friendly\" policies to kickstart the slowing world economy.",
+    "prediction": "The International Monetary Fund (IMF) has warned that global economic growth could slow to 3.2% this year and 3.5% in 2017.",
+    "entities": [
+      {
+        "end": 95,
+        "ent": "3.2%",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 91,
+        "type": "PERCENT"
+      },
+      {
+        "end": 105,
+        "ent": "this year",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 96,
+        "type": "DATE"
+      },
+      {
+        "end": 114,
+        "ent": "3.5%",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 110,
+        "type": "PERCENT"
+      },
+      {
+        "end": 122,
+        "ent": "2017",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 118,
+        "type": "DATE"
       }
     ]
   },
@@ -1481,6 +1620,166 @@
         "in_source": false,
         "label": "Non-factual Hallucination",
         "start": 76,
+        "type": "DATE"
+      }
+    ]
+  },
+  {
+    "source": "Tshibola, 20, came through the Royals' academy system and signed his first professional contract last summer.\nHe made his professional debut against Nottingham Forest in August.\nBingham, 21, joined Mansfield from Wigan Athletic in the summer and has scored four goals in 20 games for the Stags in all competitions.\nPools are awaiting clearance from the Football Association and the Football League for the duo to feature against Wycombe Wanderers on Saturday.",
+    "reference": "Hartlepool United have signed Reading midfielder Aaron Tshibola on a one-month loan deal and Mansfield striker Rakish Bingham on a season-long loan.",
+    "prediction": "Hartlepool United have signed Reading midfielder Ola Tshibola on loan until the end of the campaign and Mansfield Town striker Callum Bingham on a season-long loan.",
+    "entities": [
+      {
+        "end": 118,
+        "ent": "Mansfield Town",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "start": 104,
+        "type": "ORG"
+      },
+      {
+        "end": 133,
+        "ent": "Callum",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 127,
+        "type": "PERSON"
+      },
+      {
+        "end": 141,
+        "ent": "Bingham",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "start": 134,
+        "type": "PERSON"
+      },
+      {
+        "end": 158,
+        "ent": "season-long",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "start": 147,
+        "type": "DATE"
+      }
+    ]
+  },
+  {
+    "source": "Tshibola, 20, came through the Royals' academy system and signed his first professional contract last summer.\nHe made his professional debut against Nottingham Forest in August.\nBingham, 21, joined Mansfield from Wigan Athletic in the summer and has scored four goals in 20 games for the Stags in all competitions.\nPools are awaiting clearance from the Football Association and the Football League for the duo to feature against Wycombe Wanderers on Saturday.",
+    "reference": "Hartlepool United have signed Reading midfielder Aaron Tshibola on a one-month loan deal and Mansfield striker Rakish Bingham on a season-long loan.",
+    "prediction": "Hartlepool United have signed Reading midfielder Alex Tshibola and Mansfield Town striker Ryan Bingham on loan for the rest of the season.",
+    "entities": [
+      {
+        "end": 62,
+        "ent": "Tshibola",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "start": 54,
+        "type": "PERSON"
+      },
+      {
+        "end": 81,
+        "ent": "Mansfield Town",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "start": 67,
+        "type": "ORG"
+      },
+      {
+        "end": 94,
+        "ent": "Ryan",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 90,
+        "type": "PERSON"
+      },
+      {
+        "end": 102,
+        "ent": "Bingham",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "start": 95,
+        "type": "PERSON"
+      },
+      {
+        "end": 137,
+        "ent": "the season",
+        "in_source": false,
+        "label": "Intrinsic Hallucination",
+        "start": 127,
+        "type": "DATE"
+      }
+    ]
+  },
+  {
+    "source": "Tshibola, 20, came through the Royals' academy system and signed his first professional contract last summer.\nHe made his professional debut against Nottingham Forest in August.\nBingham, 21, joined Mansfield from Wigan Athletic in the summer and has scored four goals in 20 games for the Stags in all competitions.\nPools are awaiting clearance from the Football Association and the Football League for the duo to feature against Wycombe Wanderers on Saturday.",
+    "reference": "Hartlepool United have signed Reading midfielder Aaron Tshibola on a one-month loan deal and Mansfield striker Rakish Bingham on a season-long loan.",
+    "prediction": "Hartlepool United have signed Reading midfielder Ntumba Tshibola and Mansfield Town striker Jack Bingham on loan for the rest of the season.",
+    "entities": [
+      {
+        "end": 55,
+        "ent": "Ntumba",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "predicted_label": "Factual Hallucination",
+        "start": 49,
+        "type": "PERSON"
+      },
+      {
+        "end": 64,
+        "ent": "Tshibola",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 56,
+        "type": "PERSON"
+      },
+      {
+        "end": 96,
+        "ent": "Jack",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "predicted_label": "Non-factual Hallucination",
+        "start": 92,
+        "type": "PERSON"
+      },
+      {
+        "end": 104,
+        "ent": "Bingham",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 97,
+        "type": "PERSON"
+      }
+    ]
+  },
+  {
+    "source": "Tshibola, 20, came through the Royals' academy system and signed his first professional contract last summer.\nHe made his professional debut against Nottingham Forest in August.\nBingham, 21, joined Mansfield from Wigan Athletic in the summer and has scored four goals in 20 games for the Stags in all competitions.\nPools are awaiting clearance from the Football Association and the Football League for the duo to feature against Wycombe Wanderers on Saturday.",
+    "reference": "Hartlepool United have signed Reading midfielder Aaron Tshibola on a one-month loan deal and Mansfield striker Rakish Bingham on a season-long loan.",
+    "prediction": "Hartlepool United have signed Reading midfielder Oumar Tshibola and Mansfield Town striker Ryan Bingham on loan for the rest of the season.",
+    "entities": [
+      {
+        "end": 54,
+        "ent": "Oumar",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 49,
+        "type": "PERSON"
+      },
+      {
+        "end": 95,
+        "ent": "Ryan",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 91,
+        "type": "PERSON"
+      },
+      {
+        "end": 138,
+        "ent": "the season",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 128,
         "type": "DATE"
       }
     ]
@@ -2288,6 +2587,49 @@
     ]
   },
   {
+    "source": "The winning image, by Hadi Asadi from Iran, shows the US president wearing a jacket of dollar bills and with burning yellow hair.\nOrganisers of the Trumpism exhibition in Tehran have held similar contests in the past on themes including the Islamic State group and the Holocaust.\nThis year's logo is based on the Nazi emblem, with a T instead of a swastika.\nIt encouraged many comparisons between the US president and Nazism.\n\"The 'ism' in Trumpism is a reference to racism and Nazism,\" organiser Masuod Shojai Tabatabaei told the Associated Press.\n\"Many believe his remarks are similar to Hitler. He has had a bad attitude toward media [and] refugees.\"\nThe group's Holocaust-themed cartoon contest last year drew condemnation from Israeli Prime Minister Binyamin Netanyahu.\nBut organisers said it was designed to highlight Western double standards on free speech rather than cast doubt on the Nazi genocide.\nOthers depictions in this year's competition drew on Mr Trump's promises to build a wall on the US-Mexican border as well as violence against women and attacks on the media.\nEntrants include several cartoonists from the US and the UK.\nAmerican Clayton Jones's artwork shows the cover of two copies of Time magazine, one with President Trump's picture and the other with Adolf Hitler.\nThey are both are portrayed as Time's Person of the Year with Mr Trump telling Hitler: \"It is a great honor\" and in return Hitler replies \"Ja.\"",
+    "reference": "Hundreds of cartoonists from around the world have taken part in a competition in Iran attacking Donald Trump.",
+    "prediction": "An exhibition of cartoonists' depictions of Donald Trump has opened in Iran, with many comparing him to Adolf Hitler.",
+    "entities": [
+      {
+        "end": 56,
+        "ent": "Trump",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 51,
+        "type": "PERSON"
+      },
+      {
+        "end": 75,
+        "ent": "Iran",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 71,
+        "type": "GPE"
+      },
+      {
+        "end": 109,
+        "ent": "Adolf",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 104,
+        "type": "PERSON"
+      },
+      {
+        "end": 116,
+        "ent": "Hitler",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 110,
+        "type": "PERSON"
+      }
+    ]
+  },
+  {
     "source": "The World Rugby Hall of Fame was launched by ex-England and British and Irish Lions captain Bill Beaumont at Rugby Art Gallery and Museum in Warwickshire.\nWorld Cup winners Lawrence Dallaglio and Jonny Wilkinson were among 12 stars inducted in to the \"hall\".\nMembers of the public will be able to visit from Friday.\nThe World Rugby Hall of Fame was established in 2006, and absorbed the International Rugby Hall of Fame in 2014, but has previously never had a physical home.\nThe attraction, which honours players and administrators who have enhanced the game through exceptional achievements, features video archive of rugby matches and memorabilia.\nThe 10 other players inducted in the Hall of Fame were England's Jeremy Guscott and Maggie Alphonsi, Wale's Shane Williams, John Dawes and Arthur Gould, Scotland's GPS Macpherson, Ireland's Brian O'Driscoll, Japan's Daisuke Ohata, Canada's Heather Moyes and Australia's Daniel Carroll.\nPlayers, teams, coaches, media and rugby personalities can all be considered for the hall of fame but they need to have been retired from the game for at least three years and have demonstrated rugby's \"core values\" to be eligible,\nThe sport of rugby is said to have been accidentally invented in 1823 after William Webb Ellis, a pupil at a public school in Rugby, caught the ball and started running forward with it.",
     "reference": "A hall of fame celebrating rugby union's past has been officially opened at the sport's birthplace.",
     "prediction": "Rugby union's hall of fame has opened its doors to the public for the first time.",
@@ -2321,7 +2663,7 @@
         "start": 74,
         "end": 79,
         "in_source": false,
-        "label": "Factaul Hallucination"
+        "label": "Factual Hallucination"
       }
     ]
   },
@@ -2940,6 +3282,22 @@
     ]
   },
   {
+    "source": "Joseph McHale, 38, Kevin Schruyers, 42, and Robin Vaughan, 43, all from Liverpool, were part of a gang who targeted ATMs.\nThe gang struck in the early hours of the morning at machines in Stonehaven, Inverurie, Aberdeen, New Deer and Ellon between August and November 2013.\nSentence was deferred.\nThey used oxygen and acetylene to get to the safes behind the ATMs.\nAt the High Court in Glasgow, McHale and Schruyers were convicted of blowing up the cash machine at Scotmid in North Deeside Road, Bieldside, Aberdeen and stealing \u00a3112,000.\nThey were also found guilty of blowing up an ATM at the Royal Bank of Scotland in New Deer and stealing \u00a321,020.\nThe pair were also convicted of blowing up four ATMs in Ellon, Stonehaven, Inverurie and Aberdeen and attempting to steal from them, and stealing a quantity of clothing, golf equipment and money from the golf professional shop at the Paul Lawrie Centre in Aberdeenshire.\nThe duo were also found guilty of attempting to break into a cash machine in Mintlaw by using a crowbar.\nVaughan admitted blowing up the ATM in New Deer and Bieldside. He also admitted trying to force open the ATM in Mintlaw using a crowbar.\nThe focus of the investigation led to Liverpool after a number of Scottish banknotes started to circulate in the Mersey area.\nMany of these notes had edges cut off in a bid to remove the signs of dye which went on to them.\nOthers had some red dye on them even though the gang had tried to remove all traces of it.\nThe court heard they duped Francis Clark - brother of actress and model Sophie Kennedy Clark and grandson of singer Calum Kennedy - into providing them with a hideaway after a meeting at a party.\nThe court heard that Mr Clark was originally a suspect in the case, but appeared during the trial as a witness.\nLady Scott deferred sentence until next month at the High Court at Livingston.\nCh Insp Graeme Mackie, of Police Scotland, said afterwards: \"This was a complex police enquiry.\n\"I would like to commend the effort and work undertaken by all the officers involved in this enquiry and also the public, whose assistance was vital.\n\"There is no place for serious organised crime in Scotland.\"",
+    "reference": "Thieves have been found guilty of using explosives to blow up cash machines in a series of raids which netted more than \u00a3130,000 across Aberdeenshire.",
+    "prediction": "Three men have been found guilty of blowing up cash machines and stealing more than \u00a3250,000.",
+    "entities": [
+      {
+        "end": 92,
+        "ent": "more than \u00a3250,000",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "predicted_label": "Non-factual Hallucination",
+        "start": 74,
+        "type": "MONEY"
+      }
+    ]
+  },
+  {
     "source": "The Weston-super-Mare Bemusement park was originally due to go to the so-called \"Jungle\" camp in Calais, France.\nIt has now been donated to Aid Box Convoy, which is taking it to a smaller camp where conditions are said to be \"horrendous\".\nThe fixtures and fittings will be used to build shelters and cooking stations.\nMore than 150,000 people visited the Dismaland exhibition at the disused Tropicana site in Weston.\nNow, eight vehicles and 20 volunteers will take leftovers from Bristol to the camp in northern France. They are also taking with them five tonnes of donated firewood and some 300 aid boxes containing food, toiletries and cooking equipment.\nCo-founder of Aid Box Convoy, Imogen McIntosh, said the camp only has basic sanitation and has \"grown from 400 people three weeks ago to more than 1,000, with families turning up every day\".\nMs McIntosh said Dismaland organisers changed their mind about sending the camp to Calais when they heard there were other camps in France which hadn't received any aid.\nShe added: \"It has all been taken down now and we are left with huge sheets of wood which we can use to build the shelters.\nDismaland is also sending a team of chippies and builders out to the camp, who will be creating any structures that we need with the materials.\"\nThe group has also been supported by Bristol-based Arcadia Spectacular - known for its festival fire-breathing spider - which has donated a vehicle and trailer.\n\"People have been so fantastic, it's been such a brilliant response and so much better than we could ever have imagined,\" added Ms McIntosh.",
     "reference": "The dismantled Dismaland theme park is on its way to a refugee camp in France after Banksy donated it to a group of Bristol volunteers.",
     "prediction": "A migrant camp set up at Dismaland has been moved after organisers decided not to send it to the UK.",
@@ -2997,6 +3355,21 @@
         "end": 137,
         "in_source": true,
         "label": "Non-hallucinated"
+      }
+    ]
+  },
+  {
+    "source": "The Weston-super-Mare Bemusement park was originally due to go to the so-called \"Jungle\" camp in Calais, France.\nIt has now been donated to Aid Box Convoy, which is taking it to a smaller camp where conditions are said to be \"horrendous\".\nThe fixtures and fittings will be used to build shelters and cooking stations.\nMore than 150,000 people visited the Dismaland exhibition at the disused Tropicana site in Weston.\nNow, eight vehicles and 20 volunteers will take leftovers from Bristol to the camp in northern France. They are also taking with them five tonnes of donated firewood and some 300 aid boxes containing food, toiletries and cooking equipment.\nCo-founder of Aid Box Convoy, Imogen McIntosh, said the camp only has basic sanitation and has \"grown from 400 people three weeks ago to more than 1,000, with families turning up every day\".\nMs McIntosh said Dismaland organisers changed their mind about sending the camp to Calais when they heard there were other camps in France which hadn't received any aid.\nShe added: \"It has all been taken down now and we are left with huge sheets of wood which we can use to build the shelters.\nDismaland is also sending a team of chippies and builders out to the camp, who will be creating any structures that we need with the materials.\"\nThe group has also been supported by Bristol-based Arcadia Spectacular - known for its festival fire-breathing spider - which has donated a vehicle and trailer.\n\"People have been so fantastic, it's been such a brilliant response and so much better than we could ever have imagined,\" added Ms McIntosh.",
+    "reference": "The dismantled Dismaland theme park is on its way to a refugee camp in France after Banksy donated it to a group of Bristol volunteers.",
+    "prediction": "A migrant camp set up at Dismaland has been moved after organisers decided not to send it to France.",
+    "entities": [
+      {
+        "end": 99,
+        "ent": "France",
+        "in_source": true,
+        "label": "Intrinsic Hallucination",
+        "start": 93,
+        "type": "GPE"
       }
     ]
   },
@@ -3353,6 +3726,88 @@
     ]
   },
   {
+    "source": "\"Maduro won't be ousted by a referendum because there will be no referendum,\" Mr Isturiz said.\nOpposition politicians began the process two weeks ago by handing in a petition signed by 1.85 million people.\nMeanwhile, the government has published details of the state of emergency it declared on Friday.\nIt said the emergency would last for 60 days and could then be extended for another 60.\nMr Isturiz said the opposition had \"acted too late\" over the recall referendum, had \"done it wrong and had committed fraud\".\nThe opposition have previously warned the referendum may be hard to push through, as they alleged that the National Electoral Council (CNE) is staffed by government loyalists.\nMany Venezuelans blame Mr Maduro for the economic crisis the country is experiencing.\nIts economy contracted by 5.7% last year and is expected to shrink further this year. Inflation is at 180%, according to official figures, and there are shortages of medicines and basic food items.\nOn Friday, President Maduro declared a state of emergency to \"denounce, neutralise and overcome the external and foreign aggressions against our country\", which he blames for Venezuela's economic problems.\nIn measures published in the government gazette on Monday, the armed forces and local committees will now have powers to distribute and sell food.\nAuthorities will also be allowed to cut the working week in the private sector, as they have done in the public sector, to conserve electricity.\nThe new measures also allow the government to take control of basic goods or services, which analysts say opens the way to the expropriation of companies.\nOn 2 May, opposition politicians handed in 80 boxes containing 1.85 million signatures to the CNE, well above the 1% of voters on the electoral roll needed to kick-start the process.\nOpposition politicians say the authorities are trying to stall the process and have called on their supporters to march to the offices of the CNE on Wednesday to demand they verify the signatures so the process can go ahead.\nThe timing of a potential recall referendum is key because the outcome could be radically different depending on when it is held.\nUnder Venezuela's constitution, if President Maduro were to be removed by a recall referendum in his last two years in office, he would be replaced by his Vice-President, Mr Isturiz.\nBut if Mr Maduro were to be recalled before that, new elections would be triggered.\nThe opposition sees it as essential to have new elections rather than have Mr Isturiz take power, as he is seen as a loyal member of Mr Maduro's Socialist Unity Party.\nFor new elections to be held, the recall referendum would have to go against Mr Maduro before 10 January 2017.",
+    "reference": "Venezuela's Vice-President Aristobulo Isturiz has ruled out the possibility of a recall referendum being held against President Nicolas Maduro.",
+    "prediction": "Venezuela's Vice-President, Lenin Isturiz, has said there will be no recall referendum against President Nicol\u00c3\u00a1s Maduro.",
+    "entities": [
+      {
+        "end": 33,
+        "ent": "Lenin",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "predicted_label": "Non-factual Hallucination",
+        "start": 28,
+        "type": "PERSON"
+      },
+      {
+        "end": 41,
+        "ent": "Isturiz",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 34,
+        "type": "PERSON"
+      },
+      {
+        "end": 113,
+        "ent": "Nicol\u00c3\u00a1s",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "predicted_label": "Factual Hallucination",
+        "start": 105,
+        "type": "PERSON"
+      },
+      {
+        "end": 120,
+        "ent": "Maduro",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 114,
+        "type": "PERSON"
+      }
+    ]
+  },
+  {
+    "source": "\"Maduro won't be ousted by a referendum because there will be no referendum,\" Mr Isturiz said.\nOpposition politicians began the process two weeks ago by handing in a petition signed by 1.85 million people.\nMeanwhile, the government has published details of the state of emergency it declared on Friday.\nIt said the emergency would last for 60 days and could then be extended for another 60.\nMr Isturiz said the opposition had \"acted too late\" over the recall referendum, had \"done it wrong and had committed fraud\".\nThe opposition have previously warned the referendum may be hard to push through, as they alleged that the National Electoral Council (CNE) is staffed by government loyalists.\nMany Venezuelans blame Mr Maduro for the economic crisis the country is experiencing.\nIts economy contracted by 5.7% last year and is expected to shrink further this year. Inflation is at 180%, according to official figures, and there are shortages of medicines and basic food items.\nOn Friday, President Maduro declared a state of emergency to \"denounce, neutralise and overcome the external and foreign aggressions against our country\", which he blames for Venezuela's economic problems.\nIn measures published in the government gazette on Monday, the armed forces and local committees will now have powers to distribute and sell food.\nAuthorities will also be allowed to cut the working week in the private sector, as they have done in the public sector, to conserve electricity.\nThe new measures also allow the government to take control of basic goods or services, which analysts say opens the way to the expropriation of companies.\nOn 2 May, opposition politicians handed in 80 boxes containing 1.85 million signatures to the CNE, well above the 1% of voters on the electoral roll needed to kick-start the process.\nOpposition politicians say the authorities are trying to stall the process and have called on their supporters to march to the offices of the CNE on Wednesday to demand they verify the signatures so the process can go ahead.\nThe timing of a potential recall referendum is key because the outcome could be radically different depending on when it is held.\nUnder Venezuela's constitution, if President Maduro were to be removed by a recall referendum in his last two years in office, he would be replaced by his Vice-President, Mr Isturiz.\nBut if Mr Maduro were to be recalled before that, new elections would be triggered.\nThe opposition sees it as essential to have new elections rather than have Mr Isturiz take power, as he is seen as a loyal member of Mr Maduro's Socialist Unity Party.\nFor new elections to be held, the recall referendum would have to go against Mr Maduro before 10 January 2017.",
+    "reference": "Venezuela's Vice-President Aristobulo Isturiz has ruled out the possibility of a recall referendum being held against President Nicolas Maduro.",
+    "prediction": "Venezuela's Vice-President, Vladimir Isturiz, has said there will be no recall referendum against President Nicol\u00e1s Maduro.",
+    "entities": [
+      {
+        "end": 36,
+        "ent": "Vladimir",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 28,
+        "type": "PERSON"
+      },
+      {
+        "end": 44,
+        "ent": "Isturiz",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "start": 37,
+        "type": "PERSON"
+      },
+      {
+        "end": 115,
+        "ent": "Nicol\u00e1s",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 108,
+        "type": "PERSON"
+      },
+      {
+        "end": 122,
+        "ent": "Maduro",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "start": 116,
+        "type": "PERSON"
+      }
+    ]
+  },
+  {
     "source": "Some pupils faced transport fees of \u00a3400 a year under the proposals from the Conservative-controlled council.\nIt has agreed to defer the cuts and take another look at the proposals.\nConservative councillor Lesley Pendleton said the main aim was to cut council expenditures, but added the proposals would now be reconsidered.\nCouncillor Pendleton, said: \"We felt it was a little too soon to make an immediate decision so we are going to have another look to make sure everything is as it should be.\"\nShe added the council would look to see \"whether there is actually some money we can claw out from somewhere\" to pay for the transport costs.\n\"I have changed my tune a little but then that is democracy isn't it. You have to listen to everybody,\" she added.\nLiberal Democrat opposition leader Simon Galton said: \"I am delighted that the Tories listened to us. What they had proposed had no public support and it was clear that this was a cut too far.\"\nThe authority had proposed to cut \u00a31.3m a year by making changes to the way home-to-school transport and some concessionary travel was funded.\nProposals included withdrawing bus subsidies for pupils of faith or voluntary-aided schools and over-16s.\nThe Conservative-run authority is aiming to save \u00a374m over four years.",
     "reference": "Plans to cut a school transport budget have been deferred by Leicestershire County Council after opposition from residents and councillors.",
     "prediction": "Plans to cut home-to-school transport subsidies in Gloucestershire have been put on hold.",
@@ -3508,6 +3963,21 @@
         "end": 58,
         "in_source": false,
         "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "Some pupils faced transport fees of \u00a3400 a year under the proposals from the Conservative-controlled council.\nIt has agreed to defer the cuts and take another look at the proposals.\nConservative councillor Lesley Pendleton said the main aim was to cut council expenditures, but added the proposals would now be reconsidered.\nCouncillor Pendleton, said: \"We felt it was a little too soon to make an immediate decision so we are going to have another look to make sure everything is as it should be.\"\nShe added the council would look to see \"whether there is actually some money we can claw out from somewhere\" to pay for the transport costs.\n\"I have changed my tune a little but then that is democracy isn't it. You have to listen to everybody,\" she added.\nLiberal Democrat opposition leader Simon Galton said: \"I am delighted that the Tories listened to us. What they had proposed had no public support and it was clear that this was a cut too far.\"\nThe authority had proposed to cut \u00a31.3m a year by making changes to the way home-to-school transport and some concessionary travel was funded.\nProposals included withdrawing bus subsidies for pupils of faith or voluntary-aided schools and over-16s.\nThe Conservative-run authority is aiming to save \u00a374m over four years.",
+    "reference": "Plans to cut a school transport budget have been deferred by Leicestershire County Council after opposition from residents and councillors.",
+    "prediction": "Plans to cut home-to-school transport subsidies for children in Gloucestershire have been put on hold.",
+    "entities": [
+      {
+        "end": 79,
+        "ent": "Gloucestershire",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 64,
+        "type": "GPE"
       }
     ]
   },
@@ -4334,6 +4804,63 @@
     ]
   },
   {
+    "source": "Last month he became the first player to speak publicly about being sexually abused as a boy at Crewe in the 1980s.\nThere are now 155 suspects in the UK-wide football child abuse scandal.\nWoodward said he gave police further information five weeks ago, but has \"still not provided statements despite my continual requests to do so\".\nOn Twitter he wrote: \"People should know I suffered more than one abuser.\n\"I've now been waiting five weeks to provide my statement with the police, for further abuse on me.\n\"I've not mentioned it before now but it hurts. I need to let go of that pain, yet still waiting.\"\nHe later told BBC Sport that police had now said they would visit him next week - but called the delay \"shocking\".\nPolice say there are now 429 potential victims linked to football, some as young as four at the time of the alleged offence, and 148 clubs are now involved.\nWoodward, who is also a former police officer, has launched an independent trust to help other abuse victims \"fight for justice\".\nThe National Police Chiefs' Council (NPCC) set up Operation Hydrant to oversee investigations of \"non-recent\" child sex abuse within institutions or by people of public prominence.\nThe spotlight has fallen on abuse in football since a a number of former footballers came forward publicly to tell their stories, and the number of suspects has almost doubled in a fortnight.\nIn a statement on Wednesday, Chief Constable Simon Bailey, the NPCC lead on child abuse, said allegations received by police across the country \"were being swiftly acted upon\", but acknowledged that a \"higher than usual\" volume of calls was causing delays.\nThe latest figures from the NPCC, released on Wednesday, show there have been 819 referrals from police forces and a special helpline set up for victims of abuse in football.\nChief Constable Bailey, said: \"The numbers keep growing. We are dealing with some of the most complex investigations you can imagine.\n\"We are dealing with incredibly sensitive matters, sometimes in very high profile cases and of course all those factors create a huge challenge for the service.\"\nThe official overall Operation Hydrant statistics show there were 3,469 suspects of historical child abuse under investigation as of December 2016. This compares with 1,433 in May 2015.\nAmong the overall statistics for child sex abuse there are 366 people of public prominence - including 162 from TV, film or radio - under investigation.\nThere were 3,531 people classed as victims, of which 2,604 (74%) were male and 899 (25%) were female. A further 28 victims were of unknown sex.\nIn November 2016 there were 26 sports institutions under investigation. That figure has since increased to 74.\nMr Bailey urged victims of child sexual abuse to report it by dialling 101 or contacting the dedicated NSPCC helpline for those abused in football, \"regardless of how long ago the abuse may have taken place\".",
+    "reference": "Ex-footballer Andy Woodward says it is \"shocking\" he is still waiting to give police information about the alleged sexual abuse he suffered as a junior.",
+    "prediction": "Ex-Crewe Alexandra and England footballer Ryan Woodward has said he is \"still waiting\" for police to visit him to give a statement about being sexually abused.",
+    "entities": [
+      {
+        "end": 30,
+        "ent": "England",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "predicted_label": "Factual Hallucination",
+        "start": 23,
+        "type": "GPE"
+      },
+      {
+        "end": 46,
+        "ent": "Ryan",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "predicted_label": "Non-factual Hallucination",
+        "start": 42,
+        "type": "PERSON"
+      },
+      {
+        "end": 55,
+        "ent": "Woodward",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 47,
+        "type": "PERSON"
+      }
+    ]
+  },
+  {
+    "source": "Last month he became the first player to speak publicly about being sexually abused as a boy at Crewe in the 1980s.\nThere are now 155 suspects in the UK-wide football child abuse scandal.\nWoodward said he gave police further information five weeks ago, but has \"still not provided statements despite my continual requests to do so\".\nOn Twitter he wrote: \"People should know I suffered more than one abuser.\n\"I've now been waiting five weeks to provide my statement with the police, for further abuse on me.\n\"I've not mentioned it before now but it hurts. I need to let go of that pain, yet still waiting.\"\nHe later told BBC Sport that police had now said they would visit him next week - but called the delay \"shocking\".\nPolice say there are now 429 potential victims linked to football, some as young as four at the time of the alleged offence, and 148 clubs are now involved.\nWoodward, who is also a former police officer, has launched an independent trust to help other abuse victims \"fight for justice\".\nThe National Police Chiefs' Council (NPCC) set up Operation Hydrant to oversee investigations of \"non-recent\" child sex abuse within institutions or by people of public prominence.\nThe spotlight has fallen on abuse in football since a a number of former footballers came forward publicly to tell their stories, and the number of suspects has almost doubled in a fortnight.\nIn a statement on Wednesday, Chief Constable Simon Bailey, the NPCC lead on child abuse, said allegations received by police across the country \"were being swiftly acted upon\", but acknowledged that a \"higher than usual\" volume of calls was causing delays.\nThe latest figures from the NPCC, released on Wednesday, show there have been 819 referrals from police forces and a special helpline set up for victims of abuse in football.\nChief Constable Bailey, said: \"The numbers keep growing. We are dealing with some of the most complex investigations you can imagine.\n\"We are dealing with incredibly sensitive matters, sometimes in very high profile cases and of course all those factors create a huge challenge for the service.\"\nThe official overall Operation Hydrant statistics show there were 3,469 suspects of historical child abuse under investigation as of December 2016. This compares with 1,433 in May 2015.\nAmong the overall statistics for child sex abuse there are 366 people of public prominence - including 162 from TV, film or radio - under investigation.\nThere were 3,531 people classed as victims, of which 2,604 (74%) were male and 899 (25%) were female. A further 28 victims were of unknown sex.\nIn November 2016 there were 26 sports institutions under investigation. That figure has since increased to 74.\nMr Bailey urged victims of child sexual abuse to report it by dialling 101 or contacting the dedicated NSPCC helpline for those abused in football, \"regardless of how long ago the abuse may have taken place\".",
+    "reference": "Ex-footballer Andy Woodward says it is \"shocking\" he is still waiting to give police information about the alleged sexual abuse he suffered as a junior.",
+    "prediction": "Former England and Crewe Alexandra footballer Jimmy Woodward has said he is \"still waiting\" for police to visit him.",
+    "entities": [
+      {
+        "end": 51,
+        "ent": "Jimmy",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 46,
+        "type": "PERSON"
+      },
+      {
+        "end": 60,
+        "ent": "Woodward",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "start": 52,
+        "type": "PERSON"
+      }
+    ]
+  },
+  {
     "source": "Media playback is not supported on this device\nGB finished bottom of the Pool stage in London with no wins and only three goals scored, but produced their best performance in an enthralling fifth/sixth place play-off.\nAlex Danson scored a match-winning hat-trick, with Lily Owsley also on target.\n\"We didn't lose belief and we are delighted,\" Danson told BBC Sport.\n\"Obviously I'm delighted [with the three goals] but not just for me, from a whole team perspective because we can build on that performance leading into the summer.\"\nHead coach Danny Kerry admitted \"harsh words\" were spoken after Britain's 4-1 defeat by Australia on Saturday, but was please with how his team responded.\n\"We've had a tough tournament and they know that yesterday wasn't good enough, but today they really committed,\" he told BBC Sport.\nDanson struck her first goal of the tournament in the 10th minute, but Anita McLaren drew New Zealand level in the second period.\nOwsley and Danson struck either side of half-time to take GB clear, but back came the Kiwis with goals from Olivia Merry and Kelsey Smith made the score 3-3.\nDanson needed time out after being struck in the head by the ball, but recovered to deliver a composed lofted finish over New Zealand keeper Sally Rutherford to win Britain the match.\n\"Although we conceded a few today, which we need to work on, overall that was much better,\" captain Kate Richardson-Walsh told BBC Sport.\n\"We have a lot to learn, huge amounts, but it's good we're doing that now and can take that forward to Rio.\"\nBritish selectors will reveal the 16 women and 16 men who have been chosen to represent Team GB at this summer's Rio Olympics on Tuesday.",
     "reference": "Britain's women beat New Zealand 4-3 to secure a first win at the 2016 Champions Trophy, in what was their final match before the Rio Olympics.",
     "prediction": "Great Britain's women produced their best performance of the EuroHockey Championships with a 4-3 win over New Zealand.",
@@ -4560,6 +5087,55 @@
     ]
   },
   {
+    "source": "Media playback is not supported on this device\nGB finished bottom of the Pool stage in London with no wins and only three goals scored, but produced their best performance in an enthralling fifth/sixth place play-off.\nAlex Danson scored a match-winning hat-trick, with Lily Owsley also on target.\n\"We didn't lose belief and we are delighted,\" Danson told BBC Sport.\n\"Obviously I'm delighted [with the three goals] but not just for me, from a whole team perspective because we can build on that performance leading into the summer.\"\nHead coach Danny Kerry admitted \"harsh words\" were spoken after Britain's 4-1 defeat by Australia on Saturday, but was please with how his team responded.\n\"We've had a tough tournament and they know that yesterday wasn't good enough, but today they really committed,\" he told BBC Sport.\nDanson struck her first goal of the tournament in the 10th minute, but Anita McLaren drew New Zealand level in the second period.\nOwsley and Danson struck either side of half-time to take GB clear, but back came the Kiwis with goals from Olivia Merry and Kelsey Smith made the score 3-3.\nDanson needed time out after being struck in the head by the ball, but recovered to deliver a composed lofted finish over New Zealand keeper Sally Rutherford to win Britain the match.\n\"Although we conceded a few today, which we need to work on, overall that was much better,\" captain Kate Richardson-Walsh told BBC Sport.\n\"We have a lot to learn, huge amounts, but it's good we're doing that now and can take that forward to Rio.\"\nBritish selectors will reveal the 16 women and 16 men who have been chosen to represent Team GB at this summer's Rio Olympics on Tuesday.",
+    "reference": "Britain's women beat New Zealand 4-3 to secure a first win at the 2016 Champions Trophy, in what was their final match before the Rio Olympics.",
+    "prediction": "Great Britain's women produced their best performance of the World League semi-finals with a 4-3 win over New Zealand.",
+    "entities": [
+      {
+        "end": 73,
+        "ent": "the World League",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 57,
+        "type": "ORG"
+      }
+    ]
+  },
+  {
+    "source": "Media playback is not supported on this device\nGB finished bottom of the Pool stage in London with no wins and only three goals scored, but produced their best performance in an enthralling fifth/sixth place play-off.\nAlex Danson scored a match-winning hat-trick, with Lily Owsley also on target.\n\"We didn't lose belief and we are delighted,\" Danson told BBC Sport.\n\"Obviously I'm delighted [with the three goals] but not just for me, from a whole team perspective because we can build on that performance leading into the summer.\"\nHead coach Danny Kerry admitted \"harsh words\" were spoken after Britain's 4-1 defeat by Australia on Saturday, but was please with how his team responded.\n\"We've had a tough tournament and they know that yesterday wasn't good enough, but today they really committed,\" he told BBC Sport.\nDanson struck her first goal of the tournament in the 10th minute, but Anita McLaren drew New Zealand level in the second period.\nOwsley and Danson struck either side of half-time to take GB clear, but back came the Kiwis with goals from Olivia Merry and Kelsey Smith made the score 3-3.\nDanson needed time out after being struck in the head by the ball, but recovered to deliver a composed lofted finish over New Zealand keeper Sally Rutherford to win Britain the match.\n\"Although we conceded a few today, which we need to work on, overall that was much better,\" captain Kate Richardson-Walsh told BBC Sport.\n\"We have a lot to learn, huge amounts, but it's good we're doing that now and can take that forward to Rio.\"\nBritish selectors will reveal the 16 women and 16 men who have been chosen to represent Team GB at this summer's Rio Olympics on Tuesday.",
+    "reference": "Britain's women beat New Zealand 4-3 to secure a first win at the 2016 Champions Trophy, in what was their final match before the Rio Olympics.",
+    "prediction": "Great Britain's women ended their disappointing World League Semi-Final campaign with a 4-3 win over New Zealand.",
+    "entities": [
+      {
+        "end": 71,
+        "ent": "World League Semi-Final",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "predicted_label": "Factual Hallucination",
+        "start": 48,
+        "type": "ORG"
+      },
+      {
+        "end": 89,
+        "ent": "4",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 88,
+        "type": "CARDINAL"
+      },
+      {
+        "end": 112,
+        "ent": "New Zealand",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 101,
+        "type": "GPE"
+      }
+    ]
+  },
+  {
     "source": "Homes have been added to My NHS, part the NHS Choices site, allowing users to leave ratings and reviews to help other people assess services.\nEach care home is scored on its level of safety, staff turnover and food hygiene, among other standards.\nThe National Care Association said if information was not up to date, it could be \"unfair\" to care providers.\nOn the website, a database can be searched using a postcode, region or home name to check on facilities with or without nursing.\nPeople can access:\nHealth Minister Alistair Burt said:  \"We know how difficult important decisions about care for a loved one can be - this is a victory for those who are worried about care - with a click of a button the public will be able to make an informed choice about care and make those difficult decisions easier.\n\"This data will show clearly the difference in quality across care homes and will help drive up standards by highlighting poor performers which will mean they have to shape up their services or lose out.\"\nNadra Ahmed, chair of the National Care Association, which represents independent care sector providers, said the move could help people \"answer some of the questions\" they may have about care.\nBut she warned that if the \"snapshot\" of the provider's rating or profile on the site was not regularly updated it could disadvantage those who improve their service.\n\"I don't know how [improvements] would be indicated... especially if that report is not going to be reviewed for a period of time, which would be unfair.\"\nShe added: \"Nothing beats actually going to see a service for yourself. If you think that it's good [but the website] says there's something that's not quite right, don't let it put you off.\n\"When you look at the website you know that responsible services who may have an inadequate rating will be working towards making that better.\"",
     "reference": "The performance of every care home in England can now be compared on an NHS website.",
     "prediction": "People in England can now check on the quality of care they receive at care homes on a government website.",
@@ -4678,6 +5254,40 @@
         "end": 90,
         "in_source": false,
         "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The 19-year-old was held in Barking on suspicion of being concerned in the commission, preparation or instigation of acts of terrorism.\nPolice said six other suspects remain in custody and searches are ongoing.\nEight people were killed when three men drove at pedestrians on the bridge and stabbed people in Borough Market.\nThe man arrested on Sunday is being held at a police station in south London.\nThe six men still in custody, all aged between 27 and 30, were also arrested in east London - four in Ilford, one in Newham and one in Barking.\nThirteen people arrested as part of the investigation have been released without charge, while a 33-year-old man held in Ilford on 8 June has been bailed.\nOver the weekend, police released images of fake explosive belts worn by the three attackers, named as Khuram Butt, Rachid Redouane and Youssef Zaghba.\nBorough Market is hoping to re-open \"later this week\", managing director Darren Henaghan has said.\nTraders were officially given access to the market on Monday - for the first time since the terror attack - to allow them to start clearing up and prepare to resume business.\nOn Saturday night, bars and restaurants across the capital donated money to a British Red Cross UK fund for victims of terror attacks and their families, as Londoners were encouraged to show \"unity and resilience\" a week after the attack.\nThe fund has raised more than \u00c2\u00a3700,000 since it started on 4 June.\nAnd on Sunday, Southwark Cathedral - which had been cordoned off in the days after the attack - re-opened its doors for the first time.",
+    "reference": "Another man has been arrested in connection with the 3 June terror attack on London Bridge, bringing the total number of arrests to 21.",
+    "prediction": "A 19-year-old man has been arrested in east London as part of the investigation into Saturday's terror attack on London's Bridge and Borough Market.",
+    "entities": [
+      {
+        "end": 50,
+        "ent": "London",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 44,
+        "type": "GPE"
+      },
+      {
+        "end": 93,
+        "ent": "Saturday",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 85,
+        "type": "DATE"
+      },
+      {
+        "end": 119,
+        "ent": "London",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 113,
+        "type": "GPE"
       }
     ]
   },
@@ -4866,6 +5476,22 @@
       {
         "end": 98,
         "ent": "seven-year-old",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "predicted_label": "Non-factual Hallucination",
+        "start": 84,
+        "type": "DATE"
+      }
+    ]
+  },
+  {
+    "source": "Thomas Hunter, 58, of Mansfield Road, Mansfield, was arrested after the crash on the A34 at Hinksey Hill, Oxford, on 25 August.\nIsla Wiggin, who was in another car, died in hospital on 27 August.\nMr Hunter has also been charged with causing serious injury to a 31-year-old woman by dangerous driving.\nHe has been released on bail to appear at Oxford Magistrates' Court on 17 January.\nA lorry and seven cars were involved in the accident which closed the northbound carriageway for almost 10 hours.\nA family statement said Isla, from Fleet in Hampshire, was \"a loving and caring\" daughter who \"would have made an amazing big sister\".",
+    "reference": "A man has been charged with causing the death of a three-year-old girl by dangerous driving in a crash involving eight vehicles.",
+    "prediction": "A man has been charged with causing death by dangerous driving after the death of a four-year-old girl in a crash.",
+    "entities": [
+      {
+        "end": 97,
+        "ent": "four-year-old",
         "in_source": false,
         "label": "Non-factual Hallucination",
         "predicted_label": "Non-factual Hallucination",
@@ -5226,6 +5852,53 @@
     ]
   },
   {
+    "source": "The 22-year-old won the BBC's Women's Footballer of the Year Award in 2015 before joining Arsenal from Liverpool.\nShe helped the Gunners win the Women's FA Cup at Wembley in May 2016 and was recently awarded the African Women's Player of the Year Award.\nShe also played for her country at the 2015 Women's World Cup in Canada.",
+    "reference": "Nigeria winger Asisat Oshoala has left Women's Super League One club Arsenal Ladies to join Chinese side Dalian Quanjian.",
+    "prediction": "Arsenal Ladies have confirmed that Ivory Coast midfielder Nkosi Nsiala has signed a new contract with the Women's Super League One club.",
+    "entities": [
+      {
+        "end": 46,
+        "ent": "Ivory Coast",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 35,
+        "type": "GPE"
+      },
+      {
+        "end": 63,
+        "ent": "Nkosi",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 58,
+        "type": "PERSON"
+      },
+      {
+        "end": 70,
+        "ent": "Nsiala",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 64,
+        "type": "PERSON"
+      },
+      {
+        "end": 126,
+        "ent": "the Women's Super League",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "start": 102,
+        "type": "ORG"
+      },
+      {
+        "end": 130,
+        "ent": "One",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "start": 127,
+        "type": "CARDINAL"
+      }
+    ]
+  },
+  {
     "source": "The \u00a31.471bn spent shooting movies like Star Wars: The Force Awakens and Avengers: Age of Ultron in 2014 represents a 35% increase on 2013.\nMoney spent on homegrown UK films also increased, with \u00a3188m spent making films budgeted at \u00a3500,000 and above.\nBox office takings, though, were down 2% on the previous year.\nOverall, 157.5 million tickets were sold, representing a 5% dip in attendances compared with 2013.\nYet the BFI's figures show an increased market share for UK independent films, thanks in part to the box office success of Paddington and The Inbetweeners 2.\nThe former title took \u00a334.7m in 2014 and has now made more than \u00a335.5m at UK and Ireland box offices.\n\"The UK film industry is a powerhouse for growth and I'm delighted that 2014 saw an all-time high spend on film production,\" culture secretary Sajid Javid said.\n\"The huge amount of inward investment we are seeing is a sure-fire sign that the UK is the best place in the world to make films.\"\nBFI chief executive Amanda Nevill said its report \"illuminates a dynamic and vibrant story of success for the screen industries in the UK\".\nThe \u00a31.471bn spend represents the highest figure since statistics were first recorded 20 years ago.",
     "reference": "More money was spent making films in the UK last year than in any other year since measurements began, figures from the British Film Institute have shown.",
     "prediction": "The amount of money spent on film production in the UK reached an all-time high last year, according to figures from the British Film Institute.",
@@ -5337,6 +6010,31 @@
         "end": 108,
         "in_source": false,
         "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The \u00a31.471bn spent shooting movies like Star Wars: The Force Awakens and Avengers: Age of Ultron in 2014 represents a 35% increase on 2013.\nMoney spent on homegrown UK films also increased, with \u00a3188m spent making films budgeted at \u00a3500,000 and above.\nBox office takings, though, were down 2% on the previous year.\nOverall, 157.5 million tickets were sold, representing a 5% dip in attendances compared with 2013.\nYet the BFI's figures show an increased market share for UK independent films, thanks in part to the box office success of Paddington and The Inbetweeners 2.\nThe former title took \u00a334.7m in 2014 and has now made more than \u00a335.5m at UK and Ireland box offices.\n\"The UK film industry is a powerhouse for growth and I'm delighted that 2014 saw an all-time high spend on film production,\" culture secretary Sajid Javid said.\n\"The huge amount of inward investment we are seeing is a sure-fire sign that the UK is the best place in the world to make films.\"\nBFI chief executive Amanda Nevill said its report \"illuminates a dynamic and vibrant story of success for the screen industries in the UK\".\nThe \u00a31.471bn spend represents the highest figure since statistics were first recorded 20 years ago.",
+    "reference": "More money was spent making films in the UK last year than in any other year since measurements began, figures from the British Film Institute have shown.",
+    "prediction": "The amount of money spent on UK film production hit an all-time high last year, according to the British Film Institute (BFI).",
+    "entities": [
+      {
+        "end": 31,
+        "ent": "UK",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 29,
+        "type": "GPE"
+      },
+      {
+        "end": 124,
+        "ent": "BFI",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 121,
+        "type": "ORG"
       }
     ]
   },
@@ -6147,6 +6845,69 @@
         "end": 143,
         "in_source": false,
         "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "The 12 January fixture is the first time either side has played overseas during the regular season.\nIndiana lost in the first round of the play-offs last season, while the Nuggets failed to make it out of the Western Conference.\nThe Toronto Raptors beat Orlando Magic 106-103 in January at the O2.\nThe first regular-season game to be staged in the UK was the New Jersey Nets' 116-103 success over the Raptors in March 2011.",
+    "reference": "The Denver Nuggets will play the Indiana Pacers at London's O2 Arena in the seventh regular-season NBA game to be played in the United Kingdom.",
+    "prediction": "The Denver Nuggets will play the Indianapolis Pacers at London's O2 Arena in the first game of the 2016-17 NBA season.",
+    "entities": [
+      {
+        "end": 18,
+        "ent": "The Denver Nuggets",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "start": 0,
+        "type": "ORG"
+      },
+      {
+        "end": 45,
+        "ent": "Indianapolis",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 33,
+        "type": "GPE"
+      },
+      {
+        "end": 62,
+        "ent": "London",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "start": 56,
+        "type": "GPE"
+      },
+      {
+        "end": 73,
+        "ent": "O2 Arena",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "start": 65,
+        "type": "ORG"
+      },
+      {
+        "end": 86,
+        "ent": "first",
+        "in_source": true,
+        "label": "Intrinsic Hallucination",
+        "start": 81,
+        "type": "ORDINAL"
+      },
+      {
+        "end": 106,
+        "ent": "2016-17",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "start": 99,
+        "type": "DATE"
+      },
+      {
+        "end": 110,
+        "ent": "NBA",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "start": 107,
+        "type": "ORG"
       }
     ]
   },
@@ -7072,6 +7833,49 @@
         "end": 142,
         "in_source": false,
         "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "He made more than 40 feature films in a career spanning 60 years.\nMany of his films - including Kanal, Man of Marble, Man of Iron and Katyn - were inspired by Poland's turbulent wartime and communist history.\nIn 2000, Wajda was awarded an honorary Oscar for his contribution to world cinema.\nWajda had been recently taken to hospital.\nUnconfirmed reports say he died of lung failure.\nWajda's last film Powidoki (Afterimage) tells the life story of the avant-garde painter Wladyslaw Strzeminski, who suffered under the post-war Stalinist government in Poland.\nThe director said he wanted to \"warn against state intervention in art\".\nThe film was recently chosen as Poland's official entry for the best foreign language film at the 2017 Oscars.\nFour of Wajda's earlier works had been nominated for that category. Man of Iron won the Palme d'Or at the Cannes Film Festival in 1981.\nWajda once said that \"the good Lord gave the director two eyes - one to look into the camera, the other to be alert to everything that is going on around him.\"\nWajda was born in 1926 in the north-eastern Polish town of Suwalki.\nHis father was among the victims of the Katyn massacre of Polish army officers by the Soviet Union in 1940.\nWajda tried to follow in his father's footsteps, but was rejected by a military academy, and joined the Polish resistance in World War Two.\nDuring World War Two, Wajda joined the Polish resistance. He later studied to be a painter, before entering the Lodz Film School.\nIn 1955, he made his feature film debut with Generation, set during the German occupation of Warsaw in World War Two.  It was followed by Kanal, and Ashes and Diamonds, which form a trilogy about life in wartime Poland.\nSome of his films found disfavour with the communist rulers of Poland because of their trenchant portraits of the wartime Warsaw Uprising and the suppression of the Solidarity movement in the 1980s.\nIt was only after the fall of communism in 1989 that he was able to make his film about Katyn.\n\"I never thought I would live to see the moment when Poland would be a free country,\" Wajda said in a 2007 interview with the Associated Press.\n\"I thought I would die in that system. It was so surprising and so extraordinary that I lived to see freedom.\"\nFollowing Poland's first free elections in 1990, he served for two years as a senator in the upper house of parliament.",
+    "reference": "Oscar-winning Polish film director Andrzej Wajda has died aged 90, the Polish Filmmakers' Association has confirmed.",
+    "prediction": "Polish film director Andrzeja Wajda, whose film Man of Iron was recently chosen as Poland's entry for the 2017 Oscars, has died at the age of 91.",
+    "entities": [
+      {
+        "end": 59,
+        "ent": "Man of Iron",
+        "in_source": true,
+        "label": "Intrinsic Hallucination",
+        "predicted_label": "Non-hallucinated",
+        "start": 48,
+        "type": "ORG"
+      },
+      {
+        "end": 89,
+        "ent": "Poland",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 83,
+        "type": "GPE"
+      },
+      {
+        "end": 110,
+        "ent": "2017",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 106,
+        "type": "DATE"
+      },
+      {
+        "end": 144,
+        "ent": "the age of 91",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "predicted_label": "Non-factual Hallucination",
+        "start": 131,
+        "type": "DATE"
       }
     ]
   },
@@ -8542,6 +9346,31 @@
     ]
   },
   {
+    "source": "The images, taken by Syd Shelton, from Pontefract, include pictures of The Clash, Misty in Roots and The Specials.\nThe collection also features photos taken at the Rock Against Racism Carnival at Victoria Park, Hackney, which attracted a crowd of 100,000.\nThe show runs from Friday to 3 September at the Impression Gallery.\nThe Rock Against Racism (RAR) movement formed in response to controversial remarks made by Eric Clapton in 1976.\nIn the following years, RAR staged marches, festivals and more than 500 concerts in the UK in a bid to fight racism through music.\nShelton, who studied Fine Art in Leeds and Wakefield, said he became involved with the movement after returning to the UK from America in 1976.\nHe said: \"I was appalled at the state of race relations in Britain, in particular things like the Black and White Minstrel Show and the signs I saw in some windows saying 'No Blacks, No Dogs, No Irish'.\n\"It was a pretty serious situation and I always loved music and very quickly hooked up with the people that had set up RAR.\n\"It was a bizarre mixture of people, photographers, graphic designers, writers, actors and, of course, musicians.\n\"We were very lucky in the sense that we tuned in to that explosion of punk and UK reggae and brought the two together. That said more about what RAR was about than any of the slogans we may have shouted from the stage.\"\nHe added: \"I hope the exhibition shows that you can change things and you can actually take a stand, even in the most difficult of situations.\n\"If it inspires people to be photographers that would be great but I hope it will also inspire people to fight against racism and inequality.\"",
+    "reference": "Photographs capturing some of the most important moments and inspirational figures of the Rock Against Racism movement are to go on show in Bradford.",
+    "prediction": "Photographs taken by a photographer who was part of the UK's first Rock Against Racism (RAR) movement have gone on display.",
+    "entities": [
+      {
+        "end": 58,
+        "ent": "UK",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 56,
+        "type": "GPE"
+      },
+      {
+        "end": 91,
+        "ent": "first Rock Against Racism (RAR",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "predicted_label": "Factual Hallucination",
+        "start": 61,
+        "type": "ORG"
+      }
+    ]
+  },
+  {
     "source": "After the start of day three had been delayed until 17:15 BST, Wakely (112) and Keogh (105 not out) combined to move the hosts from 60-3 to 214-3.\nThe pair's 171-run stand put Northants in command, allowing them to declare on 289-7 with 16 overs left in the day.\nThe visitors reached 44-0, 349 behind.\nPaul Horton (20 not out) and Arun Harinath (20 not out) survived a testing final hour to leave Northants needing 10 wickets - and Leicestershire 350 runs - for victory on the final day.",
     "reference": "Alex Wakely and Rob Keogh both scored centuries as Northants continued to assert their authority over Leicestershire, before setting them a victory target of 394 at Northampton.",
     "prediction": "Northamptonshire pair Sam Wakely and Andy Keogh hit centuries as they put their side in a strong position against Leicestershire at Grace Road.",
@@ -9125,6 +9954,130 @@
     ]
   },
   {
+    "source": "After the start of day three had been delayed until 17:15 BST, Wakely (112) and Keogh (105 not out) combined to move the hosts from 60-3 to 214-3.\nThe pair's 171-run stand put Northants in command, allowing them to declare on 289-7 with 16 overs left in the day.\nThe visitors reached 44-0, 349 behind.\nPaul Horton (20 not out) and Arun Harinath (20 not out) survived a testing final hour to leave Northants needing 10 wickets - and Leicestershire 350 runs - for victory on the final day.",
+    "reference": "Alex Wakely and Rob Keogh both scored centuries as Northants continued to assert their authority over Leicestershire, before setting them a victory target of 394 at Northampton.",
+    "prediction": "Chris Wakely and Andy Keogh hit centuries as Northamptonshire took control against Leicestershire at Wantage Road.",
+    "entities": [
+      {
+        "end": 5,
+        "ent": "Chris",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 0,
+        "type": "PERSON"
+      },
+      {
+        "end": 21,
+        "ent": "Andy",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 17,
+        "type": "PERSON"
+      },
+      {
+        "end": 27,
+        "ent": "Keogh",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "start": 22,
+        "type": "PERSON"
+      },
+      {
+        "end": 41,
+        "ent": "centuries",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "start": 32,
+        "type": "DATE"
+      },
+      {
+        "end": 61,
+        "ent": "Northamptonshire",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "start": 45,
+        "type": "GPE"
+      },
+      {
+        "end": 97,
+        "ent": "Leicestershire",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "start": 83,
+        "type": "GPE"
+      },
+      {
+        "end": 113,
+        "ent": "Wantage Road",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "start": 101,
+        "type": "FAC"
+      }
+    ]
+  },
+  {
+    "source": "After the start of day three had been delayed until 17:15 BST, Wakely (112) and Keogh (105 not out) combined to move the hosts from 60-3 to 214-3.\nThe pair's 171-run stand put Northants in command, allowing them to declare on 289-7 with 16 overs left in the day.\nThe visitors reached 44-0, 349 behind.\nPaul Horton (20 not out) and Arun Harinath (20 not out) survived a testing final hour to leave Northants needing 10 wickets - and Leicestershire 350 runs - for victory on the final day.",
+    "reference": "Alex Wakely and Rob Keogh both scored centuries as Northants continued to assert their authority over Leicestershire, before setting them a victory target of 394 at Northampton.",
+    "prediction": "Chris Wakely and Richard Keogh hit centuries as Northants set Leicestershire a target of 350 to win at Wantage Avenue.",
+    "entities": [
+      {
+        "end": 30,
+        "ent": "Keogh",
+        "in_source": true,
+        "label": "Intrinsic Hallucination",
+        "predicted_label": "Non-hallucinated",
+        "start": 25,
+        "type": "PERSON"
+      },
+      {
+        "end": 44,
+        "ent": "centuries",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "predicted_label": "Factual Hallucination",
+        "start": 35,
+        "type": "DATE"
+      },
+      {
+        "end": 57,
+        "ent": "Northants",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 48,
+        "type": "GPE"
+      },
+      {
+        "end": 76,
+        "ent": "Leicestershire",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 62,
+        "type": "GPE"
+      },
+      {
+        "end": 92,
+        "ent": "350",
+        "in_source": true,
+        "label": "Intrinsic Hallucination",
+        "predicted_label": "Non-hallucinated",
+        "start": 89,
+        "type": "CARDINAL"
+      },
+      {
+        "end": 117,
+        "ent": "Wantage Avenue",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "predicted_label": "Factual Hallucination",
+        "start": 103,
+        "type": "FAC"
+      }
+    ]
+  },
+  {
     "source": "The men, in their 20s, were stopped at Aston Quay in the city on Friday, 29 July.\nIn a follow-up search at a D'Olier Street apartment, police found ecstasy tablets worth an estimated 418,000 euro (\u00a3353,176)  and cocaine worth 24,000 euro (\u00a320,278).\nA quantity of cash was also seized.",
     "reference": "Irish police have arrested two men over the sale and supply of ecstasy tablets and cocaine in Dublin.",
     "prediction": "Two men have been arrested on suspicion of drugs offences after ecstasy tablets and cocaine worth more than 400,000 euro (\u00a3353,176) were seized in Paris.",
@@ -9471,6 +10424,31 @@
     ]
   },
   {
+    "source": "He owns the Japanese Nikkei group media house, which has just acquired the Financial Times from UK publishing group Pearson for $1.3bn (\u00c2\u00a3844m).\nNikkei is one of Japan's oldest and most prestigious newspaper groups, and has managed impressive staying power at a time when the industry is on the decline.\nThe acquisition is being called a bold and brave move for Nikkei - and it is a strategy Mr Kita has been pursuing for some time.\nBut little is known about the man behind the deal - except for the fact that in previous interviews he has alluded to the need for the Nikkei group to expand.\nHowever, analysts are wondering whether he has paid too high a price for the luxury of owning the FT -  three times as much as it is thought the pink paper is worth.\nBut it is the FT's digital success that Nikkei wants to emulate.\nIn 2014 Mr Kita told a group of newspaper distributors and vendors that Nikkei had to strengthen sales and secure revenue in the light of decreasing print circulation figures.\nHe is also a big believer in the digital subscription model - a natural synergy, then, with the FT, which now derives 70% of its business from its online and mobile audiences.\nAnd he has long held global ambitions for the firm.\nIn 2012 Mr Kita reportedly said that he wanted to make Nikkei a global company, in the same way as the Japanese convenience store sector, which has had success in foreign markets.\nThe acquisition of the FT allows him to realise those ambitions.\nBut how will the two cultures of the two media houses merge? Critics say Nikkei is often a public relations machine for Japanese corporates - and that will clash with the fiercely independent Financial Times.\nThe Nikkei group has steered clear of recent Japanese corporate scandals like Toshiba's earnings debacle and the Olympus accounting fiasco in 2011 - a story the FT broke.\nFT Editor Lionel Barber has assured his staff that the paper's editorial integrity will not be compromised - no matter how high the price-tag.",
+    "reference": "Tsuneo Kita is now arguably one of the most influential men on the global media landscape.",
+    "prediction": "The man behind the takeover of the Financial Times is one of Japan's richest men, Yuko Kita.",
+    "entities": [
+      {
+        "end": 86,
+        "ent": "Yuko",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "predicted_label": "Factual Hallucination",
+        "start": 82,
+        "type": "PERSON"
+      },
+      {
+        "end": 91,
+        "ent": "Kita",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 87,
+        "type": "PERSON"
+      }
+    ]
+  },
+  {
     "source": "SP Manweb was granted permission to run 10.5 miles of overhead cables between two wind farms in Clocaenog Forest to a substation near St Asaph last year.\nBut local action group Pylon the Pressure won the right to a judicial review.\nIt claims the double wooden poles would be a blight on the countryside.\nPart of the cables would pass near the 16th Century Berain Farm, Llannefydd, which was home to Catrin o Ferain, the granddaughter of Henry VII and a prominent member of the Tudor gentry in Wales.\nAt Monday's hearing in Llangefni, Peter Dickson, the barrister representing the appellant, argued that the cables should be placed underground near the farm.\nHe said the option was not considered by SP Manweb and that the Secretary of State, Greg Clark, should not have granted permission.\nCounsels on behalf of SP Manweb will present their submissions later on.\nThe judge has said he will reserve judgment.",
     "reference": "A High Court hearing has begun into plans to erect a 17km line of pylons along the Denbighshire and Conwy border.",
     "prediction": "Campaigners have launched a legal challenge to a wind farm operator's plans for overhead cables in Gwynedd.",
@@ -9783,6 +10761,30 @@
         "in_source": true,
         "label": "Non-hallucinated",
         "start": 122,
+        "type": "PERSON"
+      },
+      {
+        "end": 68,
+        "ent": "Monte Carlo Masters",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "start": 49,
+        "type": "PRODUCT"
+      },
+      {
+        "end": 121,
+        "ent": "Ivan",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "start": 117,
+        "type": "PERSON"
+      },
+      {
+        "end": 136,
+        "ent": "Ivan",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 132,
         "type": "PERSON"
       }
     ]
@@ -10161,6 +11163,31 @@
         "predicted_label": "Factual Hallucination",
         "start": 135,
         "type": "FAC"
+      }
+    ]
+  },
+  {
+    "source": "The Australian Open champions, seeded fourth in Monte Carlo, sealed victory in 67 minutes.\nThe Briton and the Brazilian went 4-0 up in the opening set and held firm to remain top of the ATP doubles rankings.\nA reflex Murray volley sealed the match and improved their season record to 17 wins and only three defeats.\nIn the final they will meet either Pierre-Hugues Herbert and Nicolas Mahut, who beat Murray's brother Andy and Dominic Inglot on Friday, or Juan Sebastian Cabal and Robert Farah.\nBrazilian Melo would have regained his individual number one doubles ranking with victory alongside Dodig of Croatia.\nBut the second seeds, playing in their first semi-final of the year, were unable to take any of their four break points and decisively lost serve in the ninth game of the second set.\nNever want to miss the latest tennis news? You can now add this sport and all the other sports and teams you follow to yourpersonalised My Sport home.",
+    "reference": "World doubles number one Jamie Murray and partner Bruno Soares reached the Monte Carlo Masters final with a 6-2 6-4 win over Marcelo Melo and Ivan Dodig.",
+    "prediction": "World number one Andy Murray beat Marcelos Melo 7-6 (8-6) 7-5 to reach the semi-finals of the Monte Carlo Masters.",
+    "entities": [
+      {
+        "end": 47,
+        "ent": "Melo",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 43,
+        "type": "PERSON"
+      },
+      {
+        "end": 59,
+        "ent": "7",
+        "in_source": true,
+        "label": "Intrinsic Hallucination",
+        "predicted_label": "Non-hallucinated",
+        "start": 58,
+        "type": "CARDINAL"
       }
     ]
   },
@@ -10833,6 +11860,21 @@
     ]
   },
   {
+    "source": "The man was arrested on suspicion of conspiracy to intercept voicemail messages and attempting to pervert the course of justice.\nThe arrest took place by appointment at a north London police station; the man is in police custody.\nHe has been bailed to a date in mid January 2012.\nHe was arrested by officers from Scotland Yard's fresh investigation into phone hacking, Operation Weeting.\nOn Tuesday, a 71-year-old Stuart Kuttner, an ex-News of the World managing editor, was rearrested and bailed as part of the phone-hacking probe.\nMr Kuttner was originally arrested on 2 August on suspicion of conspiring to intercept communications and corruption, and bailed.\nHe has now been bailed to a date in September, the Metropolitan Police said.\nThe Met's Operation Weeting is investigating illegal hacking of the mobile phone voicemails of public figures by the now-defunct News of the World newspaper.\nThe latest arrest is the 15th to be made on suspicion of phone hacking since Operation Weeting was launched in January. It happened just after midday.\nBBC home affairs correspondent Tom Symonds said the age of the arrested person suggested someone more junior compared to some of the more senior executives who have been arrested by the police so far.\nIt is a long-running investigation and there would almost certainly be further arrests, our correspondent added.\nFormer News International chief executive Rebekah Brooks and ex-Downing Street communications chief Andy Coulson are among those who have already been arrested as part of the inquiry.\nThe scandal has led Met Police Commissioner Sir Paul Stephenson and Assistant Commissioner John Yates to resign, and the News of the World to close down after 168 years.",
+    "reference": "A 30-year-old man has been released on bail after being arrested by police investigating phone hacking at the News of the World.",
+    "prediction": "Police investigating the phone-hacking scandal have arrested a man in his 20s as part of the investigation, Scotland Yard has said.",
+    "entities": [
+      {
+        "end": 77,
+        "ent": "20s",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 74,
+        "type": "ORDINAL"
+      }
+    ]
+  },
+  {
     "source": "Gary Carter, who was in London to cover the England v New Zealand rugby league match, was found with head injuries in Bethnal Green early on Friday.\nHis wife Gemma said: \"He's heavily sedated because they're waiting for the swelling on his brain to go down.\"\nJames Flanagan 35, of Marsden Street, Kentish Town, has been charged with causing grievous bodily harm.\nScotland Yard said it was called to an altercation between two men outside Bethnal Green station at about 01:00 GMT and found 36-year-old Mr Carter, from Greater Manchester, with head injuries.\nMrs Carter, who has been married to Gary for four years, said: \"I'm trying to stay calm and keep positive and draw on all the support that I'm getting from social media and the family to stay strong for Gaz.\n\"I've just replied to a tweet from Alan Shearer and I'm getting them from lots of rugby league players and managers. They're coming from all over the world. It's amazing and it really lifts us. It just goes to show how well-respected he is.\"\nFormer Newcastle United and England footballer Shearer tweeted: \"Best wishes to @garyCarter_1979 for a full recovery after suffering an awful attack last week.\"\nMr Carter was admitted to the Royal London Hospital on Friday and immediately taken to surgery to remove a blood clot from his brain.\nThe freelance sports journalist had travelled from Manchester to London on Thursday to report on Saturday's England's v New Zealand game game at the Olympic Stadium.\nMrs Carter said she had last spoken to him after he had arrived in the capital.\nShe said: \"He texted me a picture and apologised for having to work away all the time and that was the last I heard from him.\n\"A police woman knocked on the door at about 02:20 and she said he had been involved in an incident. We drove straight down and I was saying prayers repeatedly. \"\nMr Carter, a journalist since leaving school, often works for The Sun.\nHis wife said: \"He absolutely loves his job and rugby league with a passion. I'm hoping next week I'll be able to play the radio and some commentary to him.\"\nFollowing England's defeat national coach Steve McNamara said: \"The England team sends its best wishes to him and his family and hope he makes a full and speedy recovery.\"\nEngland and Wigan Warriors player Sam Tomkins also tweeted: \"He's a good guy who Iv[e] always enjoyed working with. We're all supporting him.\"\nA 22-year-old man was also arrested in connection with the incident on suspicion of affray towards attending paramedics. He has been bailed.",
     "reference": "The wife of a journalist attacked outside a Tube station has been told to take his recovery \"an hour at a time\".",
     "prediction": "A sports journalist who was attacked outside a London Tube station is in a critical condition in hospital, his wife has said.",
@@ -11242,6 +12284,37 @@
     ]
   },
   {
+    "source": "The move is part of an acrimonious battle for control of the media empire that includes Paramount and MTV.\nIndependent director Frederic Salerno has contested the move, and Mr Dauman remains chief executive.\nMr Redstone's cinema chain, National Amusements, has filed with a Delaware court to approve the changes.\nThe health of the 93-year-old Mr Redstone and his daughter Shari's influence over him have been questioned.\nMr Salerno said he was filing a countersuit.\nIn May, Mr Dauman and board member George Abrams were removed as directors of National Amusements.\nMr Dauman then filed a lawsuit on behalf of himself and Mr Abrams against Shari Redstone, claiming she had manipulated her father to gain more control of the board.\nMs Redstone said at the time that it was \"absurd\" to say she controlled her father.",
+    "reference": "Viacom chairman Sumner Redstone is seeking to remove the firm's chief executive Philippe Dauman and four other directors from the Viacom board.",
+    "prediction": "The board of National Amusements, the company run by Hollywood mogul Viacomi, has voted to remove its chief executive, Jean-Louis dauman, from the board.",
+    "entities": [
+      {
+        "end": 62,
+        "ent": "Hollywood",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "start": 53,
+        "type": "GPE"
+      },
+      {
+        "end": 76,
+        "ent": "Viacomi",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 69,
+        "type": "ORG"
+      },
+      {
+        "end": 129,
+        "ent": "Jean-Louis",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 119,
+        "type": "ORG"
+      }
+    ]
+  },
+  {
     "source": "25 November 2015 Last updated at 00:26 GMT\nShe managed to escape the city and is now a refugee in Europe, where she met up with the BBC.\nThis story is based on her experiences and those of her two sisters, who are still inside the IS-held city.\nNames and the timings of some events have been changed to avoid compromising the safety of Nour or her family.\nVideo produced by Vladimir Hernandez, Faisal Irshaid and Najlaa Aboumerhi. Animation by Luis Ruibal\nOur 100 Women season showcases two weeks of inspirational stories about the BBC 100 Women and others who defy stereotypes around the world.\nLike us on Facebook and follow us on Instagram using the hashtag #100Women. Listen to the programmes here.",
     "reference": "Nour is a woman from Raqqa, the so-called Islamic State's (IS) capital inside Syria.",
     "prediction": "Nour, a 15-year-old girl, was caught up in the fighting between so-called Islamic State (IS) and government forces in the Syrian city of Raqqa in 2014.",
@@ -11506,6 +12579,56 @@
         "predicted_label": "Non-factual Hallucination",
         "start": 134,
         "type": "DATE"
+      }
+    ]
+  },
+  {
+    "source": "25 November 2015 Last updated at 00:26 GMT\nShe managed to escape the city and is now a refugee in Europe, where she met up with the BBC.\nThis story is based on her experiences and those of her two sisters, who are still inside the IS-held city.\nNames and the timings of some events have been changed to avoid compromising the safety of Nour or her family.\nVideo produced by Vladimir Hernandez, Faisal Irshaid and Najlaa Aboumerhi. Animation by Luis Ruibal\nOur 100 Women season showcases two weeks of inspirational stories about the BBC 100 Women and others who defy stereotypes around the world.\nLike us on Facebook and follow us on Instagram using the hashtag #100Women. Listen to the programmes here.",
+    "reference": "Nour is a woman from Raqqa, the so-called Islamic State's (IS) capital inside Syria.",
+    "prediction": "Nour, from the Syrian city of Aleppo, was caught up in the fighting between so-called Islamic State (IS) and government forces in 2014.",
+    "entities": [
+      {
+        "end": 99,
+        "ent": "Islamic State",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "predicted_label": "Factual Hallucination",
+        "start": 86,
+        "type": "ORG"
+      },
+      {
+        "end": 134,
+        "ent": "2014",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "predicted_label": "Factual Hallucination",
+        "start": 130,
+        "type": "DATE"
+      }
+    ]
+  },
+  {
+    "source": "25 November 2015 Last updated at 00:26 GMT\nShe managed to escape the city and is now a refugee in Europe, where she met up with the BBC.\nThis story is based on her experiences and those of her two sisters, who are still inside the IS-held city.\nNames and the timings of some events have been changed to avoid compromising the safety of Nour or her family.\nVideo produced by Vladimir Hernandez, Faisal Irshaid and Najlaa Aboumerhi. Animation by Luis Ruibal\nOur 100 Women season showcases two weeks of inspirational stories about the BBC 100 Women and others who defy stereotypes around the world.\nLike us on Facebook and follow us on Instagram using the hashtag #100Women. Listen to the programmes here.",
+    "reference": "Nour is a woman from Raqqa, the so-called Islamic State's (IS) capital inside Syria.",
+    "prediction": "Nour, a 20-year-old student, was caught up in the fighting between so-called Islamic State (IS) and government forces in the Iraqi city of Mosul in June.",
+    "entities": [
+      {
+        "end": 19,
+        "ent": "20-year-old",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "predicted_label": "Non-factual Hallucination",
+        "start": 8,
+        "type": "DATE"
+      },
+      {
+        "end": 130,
+        "ent": "Iraqi",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "predicted_label": "Factual Hallucination",
+        "start": 125,
+        "type": "NORP"
       }
     ]
   },
@@ -12162,6 +13285,31 @@
     ]
   },
   {
+    "source": "Activists say about 35 pro-government fighters were killed and some medical staff taken hostage. More than 20 IS fighters were also reported killed.\nThe attack was centred on al-Assad hospital, to the west of the city.\nGovernment forces retook the hospital after several hours, reports say, but the fate of the hostages is unclear.\nBBC Arab Affairs Editor Sebastian Usher says the latest offensive shows that IS, despite recent setbacks, can still threaten significant government territory.\nIS controls more than of half of Deir al-Zour and is seeking to capture the entire city.\nThe group has been besieging government-held areas there for two years, trapping about 200,000 civilians.\nIS's Amaq news agency said its fighters had carried out a \"major offensive\" in Deir al-Zour early on Saturday, storming the hospital and cutting the route between a Syrian army base and the city's airport.\nIt said it had also taken over a fire station, university accommodation, grain silos and territory near the al-Tayyam oil fields.\nA UK-based opposition news service, the Syrian Observatory for Human Rights, says government forces retook the hospital after several hours of fierce fighting.\nDeir al-Zour is in an oil-rich area and on a vital supply route to the IS stronghold of Raqqa.",
+    "reference": "Militants from the Islamic State (IS) group have briefly overrun a hospital complex in the eastern Syrian city of Deir al-Zour, reports say.",
+    "prediction": "Syrian government forces have repelled an attack by so-called Islamic State (IS) on a hospital in the eastern city of Deir al-Zour.",
+    "entities": [
+      {
+        "end": 6,
+        "ent": "Syrian",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 0,
+        "type": "NORP"
+      },
+      {
+        "end": 130,
+        "ent": "Deir al-Zour",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 118,
+        "type": "GPE"
+      }
+    ]
+  },
+  {
     "source": "With a population of fewer than 5,000, nearly one in 10 people in South Cave expressed opposition to the plans by Gladman Developments.\nThe developer wants to build on land off Little Wold Lane.\nSouth Cave Parish Council has also objected to the proposal, saying it would cause \"landscape harm\" in the picturesque village.\nA local campaign group, Save Our Valley, is co-ordinating opposition to the development.\nVillagers claim the new housing would run parallel to the Wolds Way, a national walking trail, \"seriously impacting\" on views across the valley.\nConcerns have also been raised about increased flooding risk and congestion.\nGladman said the development would \"provide a choice of housing to meet the needs of the area, whilst respecting and enhancing the site's environmental and cultural assets\".\nThe development would include access roads and landscaping, together with a play area.\nThe standard consultation on the proposals finishes on 7 April.",
     "reference": "More than 600 people in an East Yorkshire village have objected to plans for 119 new homes.",
     "prediction": "More than 1,000 people have objected to plans to build up to 1,200 homes in a village in the Cumbrian Wolds.",
@@ -12389,6 +13537,29 @@
         "end": 63,
         "in_source": false,
         "label": "Non-factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "With a population of fewer than 5,000, nearly one in 10 people in South Cave expressed opposition to the plans by Gladman Developments.\nThe developer wants to build on land off Little Wold Lane.\nSouth Cave Parish Council has also objected to the proposal, saying it would cause \"landscape harm\" in the picturesque village.\nA local campaign group, Save Our Valley, is co-ordinating opposition to the development.\nVillagers claim the new housing would run parallel to the Wolds Way, a national walking trail, \"seriously impacting\" on views across the valley.\nConcerns have also been raised about increased flooding risk and congestion.\nGladman said the development would \"provide a choice of housing to meet the needs of the area, whilst respecting and enhancing the site's environmental and cultural assets\".\nThe development would include access roads and landscaping, together with a play area.\nThe standard consultation on the proposals finishes on 7 April.",
+    "reference": "More than 600 people in an East Yorkshire village have objected to plans for 119 new homes.",
+    "prediction": "Villagers in a Pembrokeshire village have objected to plans for more than 1,000 new homes.",
+    "entities": [
+      {
+        "end": 28,
+        "ent": "Pembrokeshire",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 15,
+        "type": "GPE"
+      },
+      {
+        "end": 79,
+        "ent": "more than 1,000",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 64,
+        "type": "CARDINAL"
       }
     ]
   },
@@ -13055,6 +14226,46 @@
     ]
   },
   {
+    "source": "He was 86 years old. He is best remembered for his broadcasts in both Irish and English.\nHe was born in Cork and is the former head of Irish language programmes, controller of programmes and deputy director general at Irish state broadcaster, RT\u00c9.\nBut he is probably best known for presenting a bilingual variety show, Trom agus \u00c9adrom.\nHe was also involved in politics - standing as a Fianna F\u00e1il candidate in Cork North Central in 1982.\nMr \u00d3 Murch\u00fa  left RT\u00c9 in 1988 to set up his own production company, but still worked occasionally as a broadcaster.\nHe wrote a number of books and a column for the magazine Ireland's Own.\nMr \u00d3 Murch\u00fa was predeceased by his wife Margaret and is survived by eight children, grandchildren and great grandchildren.",
+    "reference": "The former Irish broadcaster and writer, Liam \u00d3 Murch\u00fa, has died.",
+    "prediction": "The former RT\u00c9 broadcaster, M\u00e1irt\u00edn \u00d3 Murchu, has died in Dublin.",
+    "entities": [
+      {
+        "end": 44,
+        "ent": "M\u00e1irt\u00edn \u00d3 Murchu",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "predicted_label": "Factual Hallucination",
+        "start": 28,
+        "type": "ORG"
+      },
+      {
+        "end": 64,
+        "ent": "Dublin",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "predicted_label": "Factual Hallucination",
+        "start": 58,
+        "type": "GPE"
+      }
+    ]
+  },
+  {
+    "source": "He was 86 years old. He is best remembered for his broadcasts in both Irish and English.\nHe was born in Cork and is the former head of Irish language programmes, controller of programmes and deputy director general at Irish state broadcaster, RT\u00c9.\nBut he is probably best known for presenting a bilingual variety show, Trom agus \u00c9adrom.\nHe was also involved in politics - standing as a Fianna F\u00e1il candidate in Cork North Central in 1982.\nMr \u00d3 Murch\u00fa  left RT\u00c9 in 1988 to set up his own production company, but still worked occasionally as a broadcaster.\nHe wrote a number of books and a column for the magazine Ireland's Own.\nMr \u00d3 Murch\u00fa was predeceased by his wife Margaret and is survived by eight children, grandchildren and great grandchildren.",
+    "reference": "The former Irish broadcaster and writer, Liam \u00d3 Murch\u00fa, has died.",
+    "prediction": "The former RT\u00c9 broadcaster, M\u00e1ir\u00edn \u00d3 Murch\u00fa, has died.",
+    "entities": [
+      {
+        "end": 43,
+        "ent": "M\u00e1ir\u00edn \u00d3 Murch\u00fa",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 28,
+        "type": "ORG"
+      }
+    ]
+  },
+  {
     "source": "Guido Tognoni worked \"extremely closely\" with the Fifa president during Blatter's second term.\n\"In Fifa, for many years, you could only reach your goal by taking dollars in your hands,\" Tognoni told BBC Sport.\nFifa said investigations into such claims were ongoing and, as yet, there was no evidence of wrongdoing.\nThe bidding process for the 2018 and 2022 tournaments is the subject of a Swiss criminal investigation.\nAsked if countries had any choice other than to bribe Fifa during the bidding process, Tognoni replied: \"This speculation is permitted, yes.\"\nRussia and Qatar deny wrongdoing, while Blatter has not been named in a separate US criminal investigation into widespread corruption at Fifa.\nDomenico Scala, head of Fifa's audit and compliance committee, said if evidence emerges from either the US or Swiss investigations which shows the result was affected by bought votes, the \"awards could be cancelled\".\nHowever, Tognoni, who was Blatter's right-hand man for a period in the mid-90s and again between 2001-2003, said he did not think the World Cups would be taken away from Russia or Qatar.\n\"Even if there is evidence that Fifa people were bribed, where is the problem? With Fifa, or the people who had no choice but to get the World Cup with bribing?\"\nIn response, Fifa said in a statement on Monday: \"Fifa initiated the investigation by the Swiss authorities precisely to answer questions such as this.\n\"However, while investigations are ongoing, it should be noted that to date, no evidence has come to light to suggest there are any legal grounds for rescinding the current Fifa World Cup selections.\"\nSeven senior Fifa officials were arrested last month in high-profile dawn raids at a Zurich hotel, where they had been staying before the presidential election.\nThey are among 14 people charged by US prosecutors, who allege that bribes and kickbacks of more than $150m (\u00a3100m) were accepted over a 24-year period.\nBlatter, Fifa president since 1998, was re-elected at the Zurich meeting but announced four days later that he would resign amid the corruption allegations engulfing the organisation.\nAmerican lawyer Michael Garcia was previously hired by Fifa to investigate the 2018 and 2022 World Cup bidding processes, but he complained that the published summary of his 430-page report was an \"erroneous\" representation of his work.\nThe report cleared World Cup hosts Russia and Qatar of wrongdoing.\nGarcia quit weeks later over Fifa's handling of his inquiry and his comments reopened the debate about the validity of the bidding process.\nScala has since had Garcia's report reviewed by legal experts, from both in and outside of sport, but neither were able to find grounds to alter the award of either tournament at this stage.",
     "reference": "Russia and Qatar may have had to pay bribes to secure their World Cups, Sepp Blatter's former special advisor has suggested.",
     "prediction": "Sepp Blatter's former chief of staff has said countries bidding for the 2018 and 2022 World Cups had \"no choice\" but to bribe Fifa.",
@@ -13599,6 +14810,88 @@
     ]
   },
   {
+    "source": "Media playback is not supported on this device\nSaints captain Anderson claims he was punched by Kiernan during last week's 1-1 draw between the sides.\n\"It was a corner and he caught me in the ribs. It was a clear punch on me,\" Anderson said after the match.\nThe Scottish FA disciplinary hearing regarding the incident at McDiarmid Park will take place on 12 January.\nAnderson said that Kiernan, who was free to play in Saturday's defeat by Celtic, deserved any punishment that may arise from the incident.\n\"You can't do that in football games,\" he said. \"I'm not bothered, but if it gets highlighted then he deserves it.\"\nRangers manager Mark Warburton, however, defended Kiernan.\n\"There's nothing in that,\" he said. \"I've watched it again - it's a push.\n\"If you punish that, there will be more judicial panels than you could possibly imagine.\"",
+    "reference": "Rangers will challenge a two-match ban offered to defender Rob Kiernan for violent conduct following a clash with St Johnstone's Steven Anderson.",
+    "prediction": "St Johnstone's Steven Anderson says Rangers' John Kiernan should face a Scottish FA disciplinary hearing over an alleged punch.",
+    "entities": [
+      {
+        "end": 43,
+        "ent": "Rangers",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "start": 36,
+        "type": "ORG"
+      },
+      {
+        "end": 49,
+        "ent": "John",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "start": 45,
+        "type": "PERSON"
+      },
+      {
+        "end": 57,
+        "ent": "Kiernan",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "start": 50,
+        "type": "PERSON"
+      },
+      {
+        "end": 80,
+        "ent": "Scottish",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "start": 72,
+        "type": "NORP"
+      }
+    ]
+  },
+  {
+    "source": "Media playback is not supported on this device\nSaints captain Anderson claims he was punched by Kiernan during last week's 1-1 draw between the sides.\n\"It was a corner and he caught me in the ribs. It was a clear punch on me,\" Anderson said after the match.\nThe Scottish FA disciplinary hearing regarding the incident at McDiarmid Park will take place on 12 January.\nAnderson said that Kiernan, who was free to play in Saturday's defeat by Celtic, deserved any punishment that may arise from the incident.\n\"You can't do that in football games,\" he said. \"I'm not bothered, but if it gets highlighted then he deserves it.\"\nRangers manager Mark Warburton, however, defended Kiernan.\n\"There's nothing in that,\" he said. \"I've watched it again - it's a push.\n\"If you punish that, there will be more judicial panels than you could possibly imagine.\"",
+    "reference": "Rangers will challenge a two-match ban offered to defender Rob Kiernan for violent conduct following a clash with St Johnstone's Steven Anderson.",
+    "prediction": "St Johnstone defender Craig Anderson says he is \"not bothered\" by the Scottish FA's decision to open a disciplinary case against Rangers' Kiernan.",
+    "entities": [
+      {
+        "end": 27,
+        "ent": "Craig",
+        "in_source": false,
+        "label": "Non-factual Hallucination",
+        "predicted_label": "Non-factual Hallucination",
+        "start": 22,
+        "type": "PERSON"
+      },
+      {
+        "end": 36,
+        "ent": "Anderson",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 28,
+        "type": "PERSON"
+      },
+      {
+        "end": 136,
+        "ent": "Rangers",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 129,
+        "type": "ORG"
+      },
+      {
+        "end": 145,
+        "ent": "Kiernan",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 138,
+        "type": "PERSON"
+      }
+    ]
+  },
+  {
     "source": "Its 2015 annual report found cases were down by 23% on the previous year, while a total of 7,589 animals were rescued.\nThe number of people accepting welfare advice rose from 5,527 to 5,790, and the charity rehomed more than 1,750 animals across Wales.\nIt also said the numbers of warning notices issued to owners increased.\nOne of the cases involved a lurcher cross who was dumped injured in a playing field in Flint, Flintshire, after a suspected badger-baiting incident.\nLocal residents found a female badger in a pool of blood, and the dog - renamed Flint after the town - had its ear torn, part of its nose was missing and had puncture wounds over its body.\nFlint needed two operations, dental treatment and weeks of pain relief and antibiotics. Flint was successfully rehomed after an appeal.\nAnother case saw a litter of eight abandoned puppies found in a bin in Queensferry, Deeside, in March 2015. Some still had their umbilical cord attached. They were eventually found new homes.\nAssistant external relations director Claire Lawson said: \"Although 2015 was another very busy year for the RSPCA in Wales, progress continued in the fight to reduce cruelty and alleviate suffering.\n\"There was a fall in the number of cruelty complaints and prosecutions, but a rise in the number of welfare and warning notices we successfully implemented and so we know our education and advice is working.\"",
     "reference": "The number of animal cruelty convictions in Wales has fallen by nearly a quarter, the RSPCA Cymru has said.",
     "prediction": "The RSPCA has reported a fall in the number of animal cruelty cases in Wales last year.",
@@ -13695,6 +14988,31 @@
         "end": 108,
         "in_source": false,
         "label": "Factual Hallucination"
+      }
+    ]
+  },
+  {
+    "source": "Its 2015 annual report found cases were down by 23% on the previous year, while a total of 7,589 animals were rescued.\nThe number of people accepting welfare advice rose from 5,527 to 5,790, and the charity rehomed more than 1,750 animals across Wales.\nIt also said the numbers of warning notices issued to owners increased.\nOne of the cases involved a lurcher cross who was dumped injured in a playing field in Flint, Flintshire, after a suspected badger-baiting incident.\nLocal residents found a female badger in a pool of blood, and the dog - renamed Flint after the town - had its ear torn, part of its nose was missing and had puncture wounds over its body.\nFlint needed two operations, dental treatment and weeks of pain relief and antibiotics. Flint was successfully rehomed after an appeal.\nAnother case saw a litter of eight abandoned puppies found in a bin in Queensferry, Deeside, in March 2015. Some still had their umbilical cord attached. They were eventually found new homes.\nAssistant external relations director Claire Lawson said: \"Although 2015 was another very busy year for the RSPCA in Wales, progress continued in the fight to reduce cruelty and alleviate suffering.\n\"There was a fall in the number of cruelty complaints and prosecutions, but a rise in the number of welfare and warning notices we successfully implemented and so we know our education and advice is working.\"",
+    "reference": "The number of animal cruelty convictions in Wales has fallen by nearly a quarter, the RSPCA Cymru has said.",
+    "prediction": "The number of animal cruelty cases in Wales fell last year, the RSPCA has said.",
+    "entities": [
+      {
+        "end": 43,
+        "ent": "Wales",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 38,
+        "type": "GPE"
+      },
+      {
+        "end": 69,
+        "ent": "RSPCA",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 64,
+        "type": "ORG"
       }
     ]
   },
@@ -14063,6 +15381,58 @@
         "end": 99,
         "in_source": true,
         "label": "Non-hallucinated"
+      }
+    ]
+  },
+  {
+    "source": "The Scots can reach the World Cup quarter-finals with a victory at St James' Park on Saturday.\n\"In a World Cup you don't go out half-hearted to get through to the next game,\" said Visser.\n\"I don't think any coach puts out a second string squad to do that against South Africa.\"\nStuart Hogg continues at full-back and will be the only player to start the first three Pool B matches for Scotland.\nFly-half Finn Russell is absent through injury and flanker John Hardie is not being risked after suffering a head knock in the opening win over Japan.\nImpressive performers Sean Maitland and Mark Bennett are left out, while experienced front-row duo Ross Ford and Alasdair Dickinson are on the bench.\nGordon Reid, Richie Vernon, Sam Hidalgo-Clyne and Blair Cowan, who was called up in place of the injured Grant Gilchrist, are all in the match-day 22 for the first time at the tournament.\n\"We've had three games in 10 days and the squad has been selected with 31 players to do the job,\" added Visser, a try-scorer in the win over USA.\n\"We're expecting everyone to perform and we're going out to win the game tomorrow.\"\nScotland top the group after two bonus-point victories, while the Springboks recovered from a surprise loss against Japan to demolish Samoa.\nThe big-hitting Pacific Islanders are Scotland's final opponents before the knockout phase of the tournament.\nBut Visser is only focused on the task ahead in Newcastle.\n\"South Africa are a physical team and that generally comes out in the forwards because that's the way they like to play. But they have quality throughout the team,\" added the 28-year-old.\n\"They've got a world class set of backs and some young players have come through really well recently.\n\"They have a world class finisher in Bryan Habana as well, so they are incredibly dangerous. We'll keep an eye on Willie le Roux at the back as well - he's a handy player.\"\nSouth Africa: Willie le Roux; JP Pietersen, Jesse Kriel, Damian de Allende, Bryan Habana; Handre Pollard, Fourie du Preez (captain); Tendai Mtawarira, Bismarck du Plessis, Jannie du Plessis; Eben Etzebeth, Lood de Jager; Francois Louw, Schalk Burger, Duane Vermeulen.\nReplacements: Adriaan Strauss, Trevor Nyakane, Frans Malherbe, Pieter-Steph du Toit, Willem Alberts, Ruan Pienaar, Pat Lambie, Jan Serfontein.\nScotland: Stuart Hogg, Tommy Seymour, Richie Vernon, Matt Scott, Tim Visser, Duncan Weir, Greig Laidlaw, (capt), Gordon Reid, Fraser Brown, Willem Nel, Richie Gray, Jonny Gray, Josh Strauss, Blair Cowan, David Denton.\nReplacements: Ross Ford, Alasdair Dickinson, Jon Welsh, Tim Swinson, Ryan Wilson, Sam Hidalgo-Clyne, Peter Horne, Sean Lamont.",
+    "reference": "Winger Tim Visser insists Scotland are only thinking about beating South Africa and rejects the notion that the side is weakened by 10 changes.",
+    "prediction": "Scotland captain Tim Visser says head coach Vern Cotter did not select a second-string squad for the World Cup match against South Africa.",
+    "entities": [
+      {
+        "end": 48,
+        "ent": "Vern",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 44,
+        "type": "PERSON"
+      },
+      {
+        "end": 55,
+        "ent": "Cotter",
+        "in_source": false,
+        "label": "Factual Hallucination",
+        "predicted_label": "Factual Hallucination",
+        "start": 49,
+        "type": "PERSON"
+      },
+      {
+        "end": 79,
+        "ent": "second",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 73,
+        "type": "ORDINAL"
+      },
+      {
+        "end": 110,
+        "ent": "World Cup",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 101,
+        "type": "EVENT"
+      },
+      {
+        "end": 137,
+        "ent": "South Africa",
+        "in_source": true,
+        "label": "Non-hallucinated",
+        "predicted_label": "Non-hallucinated",
+        "start": 125,
+        "type": "GPE"
       }
     ]
   },
