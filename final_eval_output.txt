@@ -1,5 +1,5 @@
 Test results for 100 summaries
-Model: fbs_oracle
+Model: gef_oracle
 { 'entities': { 'Factual Hallucination': 104,
                 'Intrinsic Hallucination': 15,
                 'Non-factual Hallucination': 38,
@@ -79,7 +79,7 @@ Model: fbs_oracle
                  'sum_with_extrinsic_factual': 0.63,
                  'total': 100,
                  'unknown': 0.0}}
-Model: fbs_classifier
+Model: gef_classifier
 { 'entities': { 'Factual Hallucination': 78,
                 'Intrinsic Hallucination': 17,
                 'Non-factual Hallucination': 64,
@@ -157,7 +157,7 @@ Model: fbs_classifier
                  'sum_with_extrinsic_factual': 0.44,
                  'total': 100,
                  'unknown': 0.0}}
-Model: fbs_classifier_i10
+Model: gef_classifier_i10
 { 'entities': { 'Factual Hallucination': 80,
                 'Intrinsic Hallucination': 15,
                 'Non-factual Hallucination': 63,
@@ -617,7 +617,7 @@ Model: gold
                  'total': 100,
                  'unknown': 0.0}}
 Test results for 100 summaries
-Model: fbs_oracle
+Model: gef_oracle
 { 'entities': { 'Factual Hallucination': 134,
                 'Intrinsic Hallucination': 9,
                 'Non-factual Hallucination': 17,
@@ -689,7 +689,7 @@ Model: fbs_oracle
                  'sum_with_extrinsic_factual': 0.74,
                  'total': 100,
                  'unknown': 0.0}}
-Model: fbs_classifier
+Model: gef_classifier
 { 'entities': { 'Factual Hallucination': 103,
                 'Intrinsic Hallucination': 14,
                 'Non-factual Hallucination': 39,
@@ -764,7 +764,7 @@ Model: fbs_classifier
                  'sum_with_extrinsic_factual': 0.54,
                  'total': 100,
                  'unknown': 0.0}}
-Model: fbs_classifier_i10
+Model: gef_classifier_i10
 { 'entities': { 'Factual Hallucination': 97,
                 'Intrinsic Hallucination': 17,
                 'Non-factual Hallucination': 39,

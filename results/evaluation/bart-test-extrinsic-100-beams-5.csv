@@ -1,6 +1,6 @@
 model,total,factual,non_factual,non_factual_extrinsic,non_factual_intrinsic,extrinsic_factuality_ratio,extrinsic_entity_count,unknown,skipped,failed,ents_per_sum,sum_with_extrinsic,sum_with_extrinsic_factual
-fbs_oracle,100,0.55,0.16,0.03,0.14,1.0,141,0.29,0.0,0,3.45,0.86,0.62
-fbs_classifier,100,0.44,0.32,0.23,0.14,0.9290123456790123,139,0.24,0.0,18,3.46,0.88,0.47
+gef_oracle,100,0.55,0.16,0.03,0.14,1.0,141,0.29,0.0,0,3.45,0.86,0.62
+gef_classifier,100,0.44,0.32,0.23,0.14,0.9290123456790123,139,0.24,0.0,18,3.46,0.88,0.47
 baseline-bart,100,0.42,0.58,0.52,0.12,0.8222222222222222,162,0.0,0.0,0,3.61,0.96,0.44
 meng-rl,100,0.55,0.45,0.35,0.17,0.8619488536155202,129,0.0,0.0,0,3.03,0.74,0.39
 pinocchio,100,0.43,0.57,0.49,0.15,0.8200248756218905,160,0.0,0.0,0,3.62,0.92,0.43

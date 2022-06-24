@@ -1,4 +1,4 @@
 model,total,factual,non_factual,non_factual_extrinsic,non_factual_intrinsic,extrinsic_factuality_ratio,extrinsic_entity_count,unknown,skipped,failed,ents_per_sum,sum_with_extrinsic,sum_with_extrinsic_factual
-fbs_oracle,25,0.6,0.12,0.08,0.04,0.9473684210526315,33,0.28,0.0,0,3.2,0.88,0.68
+gef_oracle,25,0.6,0.12,0.08,0.04,0.9473684210526315,33,0.28,0.0,0,3.2,0.88,0.68
 baseline-pegasus,25,0.44,0.56,0.56,0.04,0.7962962962962963,44,0.0,0.0,0,3.8,1.0,0.44
 gold,25,1.0,0.0,0.0,0.0,1.0,43,0.0,0.0,0,3.28,0.92,0.92

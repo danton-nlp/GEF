@@ -12,7 +12,7 @@ TEST_SIZE = 100
 
 def load_data(results_path: str):
     if "results" in results_path:
-        # load fbs results
+        # load gef results
         sums_by_id, sum_ents_by_id, failed_sums_by_id = load_summaries_from_logs(
             results_path
         )
@@ -54,7 +54,7 @@ def test_evaluate_factuality_oracle():
         gold_sums,
         gold_metadata,
         xsum_test,
-    ) = load_data("results/fbs-logs/bart-test-extrinsic-oracle.json")
+    ) = load_data("results/gef-logs/bart-test-extrinsic-oracle.json")
     agg_metrics, summaries = evaluate_factuality(
         sums_by_id,
         sum_ents_by_id,
@@ -65,7 +65,7 @@ def test_evaluate_factuality_oracle():
         should_annotate=False,
         entity_match_type="strict_intrinsic",
         print_first_n=0,
-        is_fbs=True,
+        is_gef=True,
         is_oracle=True,
         count_skips=True,
     )
@@ -117,7 +117,7 @@ def test_evaluate_factuality_oracle_no_skips():
         gold_sums,
         gold_metadata,
         xsum_test,
-    ) = load_data("results/fbs-logs/bart-test-extrinsic-oracle.json")
+    ) = load_data("results/gef-logs/bart-test-extrinsic-oracle.json")
     agg_metrics, summaries = evaluate_factuality(
         sums_by_id,
         sum_ents_by_id,
@@ -128,7 +128,7 @@ def test_evaluate_factuality_oracle_no_skips():
         should_annotate=False,
         entity_match_type="strict_intrinsic",
         print_first_n=0,
-        is_fbs=True,
+        is_gef=True,
         is_oracle=True,
         count_skips=False,
     )
@@ -160,7 +160,7 @@ def test_evaluate_factuality_classifier():
         gold_sums,
         gold_metadata,
         xsum_test,
-    ) = load_data("results/fbs-logs/bart-test-extrinsic-classifier-knnv1.json")
+    ) = load_data("results/gef-logs/bart-test-extrinsic-classifier-knnv1.json")
     agg_metrics, summaries = evaluate_factuality(
         sums_by_id,
         sum_ents_by_id,
@@ -171,7 +171,7 @@ def test_evaluate_factuality_classifier():
         should_annotate=False,
         entity_match_type="strict_intrinsic",
         print_first_n=0,
-        is_fbs=True,
+        is_gef=True,
         is_oracle=False,
         count_skips=True,
     )
@@ -216,7 +216,7 @@ def test_evaluate_factuality_classifier_no_skips():
         gold_sums,
         gold_metadata,
         xsum_test,
-    ) = load_data("results/fbs-logs/bart-test-extrinsic-classifier-knnv1.json")
+    ) = load_data("results/gef-logs/bart-test-extrinsic-classifier-knnv1.json")
     agg_metrics, summaries = evaluate_factuality(
         sums_by_id,
         sum_ents_by_id,
@@ -227,7 +227,7 @@ def test_evaluate_factuality_classifier_no_skips():
         should_annotate=False,
         entity_match_type="strict_intrinsic",
         print_first_n=0,
-        is_fbs=True,
+        is_gef=True,
         is_oracle=False,
         count_skips=False,
     )
@@ -272,7 +272,7 @@ def test_evaluate_factuality_baseline():
         should_annotate=False,
         entity_match_type="strict_intrinsic",
         print_first_n=0,
-        is_fbs=False,
+        is_gef=False,
         is_oracle=False,
     )
     assert agg_metrics["summaries"]["total"] == 100
@@ -327,7 +327,7 @@ def test_evaluate_factuality_gold():
         should_annotate=False,
         entity_match_type="strict_intrinsic",
         print_first_n=0,
-        is_fbs=False,
+        is_gef=False,
         is_oracle=False,
     )
     assert agg_metrics["summaries"]["total"] == 100

@@ -40,8 +40,8 @@ def render_compare_results():
         "Select models",
         options=df_aggregated.index,
         default=[x for x in [
-            "fbs_classifier",
-            "fbs_oracle",
+            "gef_classifier",
+            "gef_oracle",
             "baseline-pegasus",
             "baseline-bart"
         ] if x in df_aggregated.index],

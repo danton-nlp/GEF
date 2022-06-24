@@ -4,7 +4,7 @@ import os
 import pandas as pd
 
 
-def st_select_results(folder="results/fbs-logs/"):
+def st_select_results(folder="results/gef-logs/"):
     return os.path.join(
         folder,
         st.selectbox("Select run", options=sorted(os.listdir(folder)))

@@ -119,7 +119,7 @@ def evaluate_summary(
         else:
             entity_label = str(ent["label"])
 
-            # Detect non-factual predictions from FBS classifier
+            # Detect non-factual predictions from GEF classifier
             if (
                 "predicted_label" in ent
                 and ent["predicted_label"] == ANNOTATION_LABELS["Non-factual"]
@@ -175,7 +175,7 @@ def evaluate_factuality(
     should_annotate,
     entity_match_type: EntityMatchType,
     print_first_n,
-    is_fbs,
+    is_gef,
     is_oracle,
     compute_rouge=True,
     count_skips=False,
@@ -242,9 +242,9 @@ def evaluate_factuality(
         if count_skips:
             if summary_eval["failed"]:
                 is_skipped = True
-            elif is_fbs and is_oracle and count_non_factual_extrinsic:
+            elif is_gef and is_oracle and count_non_factual_extrinsic:
                 is_skipped = True
-            elif is_fbs and summary_eval["has_predicted_non_factual"]:
+            elif is_gef and summary_eval["has_predicted_non_factual"]:
                 is_skipped = True
 
         # Update evaluation state if summary is not skipped

@@ -19,30 +19,30 @@ pp = pprint.PrettyPrinter(indent=2)
 def load_model_results_for_subset(data_subset: str, beam_suffix: str = ""):
     if "fully-annotated" in data_subset:
         return {
-            "fbs_classifier": load_summaries_from_logs(
-                "results/fbs-logs/bart-full-classifier-knnv1.json",
+            "gef_classifier": load_summaries_from_logs(
+                "results/gef-logs/bart-full-classifier-knnv1.json",
                 max_iterations=100,
             ),
             # "gef_pegasus_classifier": load_summaries_from_logs(
-            #     f"results/fbs-logs/pegasus-full-classifier-knnv1.json", max_iterations=5
+            #     f"results/gef-logs/pegasus-full-classifier-knnv1.json", max_iterations=5
             # ),
         }
     else:
         results = {}
         for (name, loc, max_iterations) in [
             (
-                "fbs_oracle",
-                f"results/fbs-logs/{data_subset}-oracle{beam_suffix}.json",
+                "gef_oracle",
+                f"results/gef-logs/{data_subset}-oracle{beam_suffix}.json",
                 100,
             ),
             (
-                "fbs_classifier",
-                f"results/fbs-logs/{data_subset}-classifier-knnv2{beam_suffix}.json",
+                "gef_classifier",
+                f"results/gef-logs/{data_subset}-classifier-knnv2{beam_suffix}.json",
                 100,
             ),
             (
-                "fbs_classifier_i10",
-                f"results/fbs-logs/{data_subset}-classifier-knnv2{beam_suffix}.json",
+                "gef_classifier_i10",
+                f"results/gef-logs/{data_subset}-classifier-knnv2{beam_suffix}.json",
                 10,
             ),
         ]:
@@ -145,7 +145,7 @@ if __name__ == "__main__":
                     args.annotate and "gold" not in model_label.lower(),
                     args.entity_label_match,
                     args.print_first_n,
-                    is_fbs="fbs" in model_label.lower(),
+                    is_gef="gef" in model_label.lower(),
                     is_oracle="oracle" in model_label.lower(),
                     count_skips=args.count_skips,
                     compute_rouge=False,
@@ -202,8 +202,8 @@ if __name__ == "__main__":
 
         # Export to latex
         model_mapping = [
-            ("fbs_oracle", "FbsOracle"),
-            ("fbs_classifier", "FbsClassifier"),
+            ("gef_oracle", "GEFOracle"),
+            ("gef_classifier", "GEFClassifier"),
             (
                 "baseline-bart" if "bart" in data_subset else "baseline-pegasus",
                 "Baseline",

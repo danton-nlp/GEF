@@ -87,7 +87,7 @@ def collect_iteration_stats(
             should_annotate,
             entity_match_type=entity_match_type,
             print_first_n=0,
-            is_fbs=True,
+            is_gef=True,
             is_oracle=is_oracle,
             compute_rouge=False,
         )
@@ -142,9 +142,9 @@ if __name__ == "__main__":
     )
 
     for model in ["oracle", "classifier-knnv1"]:
-        if os.path.exists(f"results/fbs-logs/{args.data_subset}-{model}.json"):
+        if os.path.exists(f"results/gef-logs/{args.data_subset}-{model}.json"):
             iteration_stats = collect_iteration_stats(
-                f"results/fbs-logs/{args.data_subset}-{model}.json",
+                f"results/gef-logs/{args.data_subset}-{model}.json",
                 xsum_test,
                 test_set_ids,
                 args.extrinsic_only,
