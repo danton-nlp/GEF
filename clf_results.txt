@@ -120,6 +120,23 @@ Test Results
    macro avg     0.8281    0.8257    0.8269      1297
 weighted avg     0.8538    0.8543    0.8540      1297
 
+# train extended, test theirs
+python train_factuality_clf.py \
+    --train_data_filepath data/xent-extended/train-probs.json \
+    --test_data_filepath data/xent-probs/test.json \
+    --n_neighbors 20
+
+Test Results
+ test file: data/xent-probs/test.json
+               precision    recall  f1-score   support
+
+     Factual     0.9711    0.9586    0.9648       701
+ Non-Factual     0.7972    0.8507    0.8231       134
+
+    accuracy                         0.9413       835
+   macro avg     0.8842    0.9047    0.8940       835
+weighted avg     0.9432    0.9413    0.9421       835
+
 # Train on extended, test on both
 python train_factuality_clf.py \
     --train_data_filepath data/xent-extended/train-probs.json \
@@ -130,9 +147,9 @@ Test Results
  test file: data/xent-probs/test.json,data/xent-extended/test_bart-probs.json
                precision    recall  f1-score   support
 
-     Factual     0.9269    0.9246    0.9258      1605
- Non-Factual     0.7721    0.7780    0.7750       527
+     Factual     0.9594    0.8978    0.9276      1605
+ Non-Factual     0.7397    0.8843    0.8055       527
 
-    accuracy                         0.8884      2132
-   macro avg     0.8495    0.8513    0.8504      2132
-weighted avg     0.8887    0.8884    0.8885      2132
+    accuracy                         0.8945      2132
+   macro avg     0.8495    0.8910    0.8666      2132
+weighted avg     0.9051    0.8945    0.8974      2132
