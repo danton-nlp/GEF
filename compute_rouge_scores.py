@@ -45,8 +45,10 @@ if __name__ == "__main__":
         predictions = []
         references = []
         for sum_id, summary in list(sums_by_id.items()):
-            predictions.append(summary)
-            references.append(gold_sums[sum_id]["summary"])
+            if "xent-train" not in gold_metadata[sum_id]:
+                predictions.append(summary)
+                references.append(gold_sums[sum_id]["summary"])
+        print(f"Processing {len(predictions)} sums for {model_label}")
         scores = rouge(predictions, references)
         rouge1.append(scores["rouge1"]["f1"])
         rouge2.append(scores["rouge2"]["f1"])
