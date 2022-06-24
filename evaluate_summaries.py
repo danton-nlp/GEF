@@ -63,7 +63,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--data_subsets", type=str, default="bart-test-extrinsic,pegasus-test-extrinsic"
     )
-    parser.add_argument("--num_beams", type=int, default=4)
+    parser.add_argument("--num_beams", type=int, default=5)
     parser.add_argument("--print_first_n", type=int, default=0)
     parser.add_argument("--model_filter", type=str, default="")
     parser.add_argument("--count_skips", type=bool, default=False)

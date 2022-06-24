@@ -59,13 +59,15 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--data_subset", type=str, default="test-extrinsic")
     parser.add_argument("--batch_size", type=int, default=10)
-    parser.add_argument("--num_beams", type=int, default=4)
+    parser.add_argument("--num_beams", type=int, default=5)
     parser.add_argument("--classifier_batch_size", type=int, default=16)
     parser.add_argument(
-        "--pickled_classifier", type=str, default="factuality-classifiers/v1-knn.pickle"
+        "--pickled_classifier",
+        type=str,
+        default="factuality-classifiers/v2-knn-20n.pickle",
     )
     parser.add_argument(
-        "--classifier_results_suffix", type=str, default="classifier-knnv1"
+        "--classifier_results_suffix", type=str, default="classifier-knnv2"
     )
     args = parser.parse_args()
 
