@@ -44,6 +44,7 @@ def annotate_entities(
                     print()
                     print(f"GT summary: {xsum_test[sum_id]['summary']}")
                     print("----")
+                    print(f"Google search for article: https://www.google.com/search?q=bbc+{sum_id}")
                     print(f"Generated summary: {generated_summaries[sum_id]}")
                     printed_sum = True
 

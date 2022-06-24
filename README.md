@@ -1,5 +1,15 @@
 # Generate via Entity Factuality (GEF)
 
+## Evaluation & Annotation Scripts
+- [Annotation workflow](annotation_demo.ipynb)
+- [Evaluate generated summaries](evaluate_summaries.py)
+- [Full dataset Rouge Score computation](compute_rouge_scores.py)
+- [Statistical tests for evaluation](evaluation_statistical_tests.ipynb)
+- [Test suite for validating results](tests/test_evaluation.py)
+
+## Data
+
+
 ## Dev Setup
 ```
 conda create -n factual-beam-search python=3.8
@@ -29,16 +39,6 @@ python iterative_constraints.py --data_subset test|debug --batch_size 4 --verbos
 #### with annotation
 ```
 python iterative_constraints.py --annotate 1
-```
-
-#### Annotate Daniel's data
-```
-python iterative_constraints.py --data_subset test-daniel --batch_size 2 --verbose 1 --annotate 1
-```
-
-#### Annotate Anton's data
-```
-python iterative_constraints.py --data_subset test-anton --batch_size 2 --verbose 1 --annotate 1
 ```
 
 #### Evaluate results
