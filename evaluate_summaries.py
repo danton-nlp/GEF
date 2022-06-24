@@ -21,7 +21,7 @@ def load_model_results_for_subset(data_subset: str, beam_suffix: str = ""):
         return {
             "fbs_classifier": load_summaries_from_logs(
                 "results/fbs-logs/bart-full-classifier-knnv1.json",
-                max_iterations=5,
+                max_iterations=100,
             ),
             # "gef_pegasus_classifier": load_summaries_from_logs(
             #     f"results/fbs-logs/pegasus-full-classifier-knnv1.json", max_iterations=5
@@ -33,12 +33,12 @@ def load_model_results_for_subset(data_subset: str, beam_suffix: str = ""):
             (
                 "fbs_oracle",
                 f"results/fbs-logs/{data_subset}-oracle{beam_suffix}.json",
-                15,
+                100,
             ),
             (
                 "fbs_classifier",
                 f"results/fbs-logs/{data_subset}-classifier-knnv2{beam_suffix}.json",
-                15,
+                100,
             ),
             (
                 "fbs_classifier_i10",
