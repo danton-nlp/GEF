@@ -8,8 +8,45 @@
 - [Test suite for validating results](tests/test_evaluation.py)
 
 ## Data
+- [XEnt Annotations](data/xent/)
+- [Our Annotations](data/xsum/gold-metrics.json)
+- [Generation logs for GEF](results/gef-logs/)
+- [Evaluation results for all models](results/evaluation/)
 
+## Running GEF
+1. Train Factuality Classifier on XEnt data:
+```
+python train_factuality_clf.py \
+    --train_data_filepath data/xent-probs/train-probs.json \
+    --test_data_filepath data/xent-probs/test.json \
+    --factuality-classifiers/knn-20n.pickle \
+    --n_neighbors 20
+``` 
+2. Run GEF with Pegasus & BART on evaluation subset
+```
+python generate_fbs_summaries.py --test_size 100
+```
+3. Evaluate resuts
+```
+python evaluate_summaries.py --test_size 100
+```
 
+## Running GEF on all of XSUM Test (takes about 2 hours on a single RTX5000)
+#### BART-Large
+```
+python iterative_constraints.py --data_subset full --batch_size 16 --classifier_batch_size 16 --max_iterations 100 --pickled_classifier factuality-classifiers/v2-knn-20n.pickle
+```
+
+#### PEGASUS
+```
+python iterative_constraints.py --data_subset full --batch_size 16 --classifier_batch_size 16 --max_iterations 100 --pickled_classifier factuality-classifiers/v2-knn-20n.pickle --model_summarization google/pegasus-xsum
+```
+
+## Preprocessing Scripts
+- [Compute probabilities for named entities](compute_probs.py)
+- [Batch detect NER in generated summaries](batch_detect_entities.py.py)
+
+# Development
 ## Dev Setup
 ```
 conda create -n factual-beam-search python=3.8
@@ -22,11 +59,6 @@ pip install -r requirements.txt
 pytests tests
 ```
 
-## Scripts
-- `batch_detect_ner.py <sumtool-model>`: batch detect NER & write to sumtool metadata
-- `oracle_experiment.py`: run oracle experiment, writes & reads from `/data/oracle-experiment`
-- `persist_xent_annotations.py`: persits xent annotations in `gold` sumtool index for easy access by ID
-
 ### Iterative pipeline with oracle on test/debug
 ```
 python iterative_constraints.py --data_subset test|debug --batch_size 4 --verbose 1
@@ -36,19 +68,19 @@ python iterative_constraints.py --data_subset test|debug --batch_size 4 --verbos
 ```
 python iterative_constraints.py --data_subset test|debug --batch_size 4 --verbose 1 --pickled_classifier factuality-classifiers/v0-knn.pickle
 ```
-#### with annotation
+#### Annotate data
 ```
-python iterative_constraints.py --annotate 1
+python annotate_summaries.py --test_size 100
 ```
 
-#### Evaluate results
-1. Move `logs-iterative/<desired-result>` to `results/` and name it appropriately
-2. Open streamlit app to inspect outputs
-3. Run `python evaluate_summaries.py` (this only checks `results/test.json` but can be updated)
+#### Compare results in Streamlit app
+```
+streamlit run app.py
+```
 
 ### Prior and Posterior Named Entity Probability Computation
 
-To create dataset of prior and posterior probabilities of Xent named entities,
+To create dataset of prior and posterior probabilities of XEnt named entities,
 run compute_probs.py. For example, to run on train
 
 ```bash
