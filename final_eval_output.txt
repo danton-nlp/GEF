@@ -315,7 +315,7 @@ Model: baseline-bart
                  'sum_with_extrinsic_factual': 0.44,
                  'total': 100,
                  'unknown': 0.0}}
-Model: meng-rl
+Model: rl-fact
 { 'entities': { 'Factual Hallucination': 77,
                 'Intrinsic Hallucination': 20,
                 'Non-factual Hallucination': 52,

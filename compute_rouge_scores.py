@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     sumtool_models = [
         ("facebook-bart-large-xsum", "BartBaseline"),
-        ("meng-rl", "MengRL"),  # Hallucinated, but factual! Paper
+        ("rl-fact", "RLFact"),  # Hallucinated, but factual! Paper
         ("pinocchio-fallback-ours", "Pinocchio"),  # King et. al paper
         ("pinocchio-fallback-theirs", "PinocchioTheirFallback"),  # King et. al paper
         ("pinocchio-with-skip", "PinocchioSkip"),  # King et. al paper
