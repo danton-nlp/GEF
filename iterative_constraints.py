@@ -176,7 +176,7 @@ if __name__ == "__main__":
     parser.add_argument("--verbose", type=bool, default=False)
     parser.add_argument("--batch_size", type=int, default=2)
     parser.add_argument("--test_size", type=int, default=100)
-    parser.add_argument("--num_beams", type=int, default=4)
+    parser.add_argument("--num_beams", type=int, default=5)
     parser.add_argument(
         "--data_subset", type=str, default="debug", help="debug|xent|full"
     )
