@@ -4,6 +4,7 @@ from src.data_utils import (
     load_xsum_dict,
     load_summaries_from_logs,
 )
+from src.detect_entities import detect_entities
 from src.evaluation.factuality import evaluate_factuality
 from sumtool.storage import get_summary_metrics, get_summaries
 import argparse
@@ -73,6 +74,8 @@ if __name__ == "__main__":
     gold_sums, gold_metadata = get_gold_xsum_data()
     xsum_test = load_xsum_dict("test")
     beam_suffix = "" if args.num_beams == 4 else f"-beams-{args.num_beams}"
+    unique_sums = set()
+    unique_sum_ent_count = 0
 
     for data_subset in args.data_subsets.split(","):
         test_set_ids = set(
@@ -122,6 +125,15 @@ if __name__ == "__main__":
                     for sum_id, x in sum_ents_by_id.items()
                     if sum_id in test_set_ids
                 }
+                for sum_id, sum in filtered_sums_by_id.items():
+                    if sum not in unique_sums:
+                        # Detect entities if they're not cached
+                        if sum_id not in filtered_ents_by_id:
+                            filtered_ents_by_id[sum_id] = detect_entities(
+                                sum, xsum_test[sum_id]["document"]
+                            )
+                        unique_sums.add(sum)
+                        unique_sum_ent_count += len(filtered_ents_by_id[sum_id])
                 print(f"Model: {model_label}")
                 agg_metrics, summaries = evaluate_factuality(
                     filtered_sums_by_id,
@@ -225,3 +237,4 @@ if __name__ == "__main__":
                             + "\n"
                         )
                         f.write(str.replace("%", "\\%"))
+    print(f"{unique_sum_ent_count} entities in {len(unique_sums)} unique summaries")
