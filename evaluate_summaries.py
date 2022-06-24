@@ -32,22 +32,17 @@ def load_model_results_for_subset(data_subset: str, beam_suffix: str = ""):
             (
                 "fbs_oracle",
                 f"results/fbs-logs/{data_subset}-oracle{beam_suffix}.json",
-                5,
+                15,
             ),
             (
                 "fbs_classifier",
-                f"results/fbs-logs/{data_subset}-classifier-knnv1{beam_suffix}.json",
-                5,
+                f"results/fbs-logs/{data_subset}-classifier-knnv2{beam_suffix}.json",
+                15,
             ),
             (
                 "fbs_classifier_i10",
                 f"results/fbs-logs/{data_subset}-classifier-knnv1{beam_suffix}.json",
                 10,
-            ),
-            (
-                "fbs_classifier_v2",
-                f"results/fbs-logs/{data_subset}-classifier-knnv2{beam_suffix}.json",
-                5,
             ),
         ]:
             try:
