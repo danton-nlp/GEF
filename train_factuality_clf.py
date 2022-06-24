@@ -91,7 +91,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Train kNN classifier on Xent-probs dataset"
     )
-    parser.add_argument("--n_neighbors", type=int, default=30)
+    parser.add_argument("--n_neighbors", type=int, default=20)
     parser.add_argument("--pickled_clf_path", type=str)
     parser.add_argument("--train_data_filepath", type=str)
     parser.add_argument("--test_data_filepath", type=str)
