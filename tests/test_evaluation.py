@@ -14,7 +14,8 @@ def load_data(results_path: str):
     if "results" in results_path:
         # load gef results
         sums_by_id, sum_ents_by_id, failed_sums_by_id = load_summaries_from_logs(
-            results_path
+            results_path,
+            max_iterations=100
         )
     else:
         # load from sumtool
@@ -63,25 +64,24 @@ def test_evaluate_factuality_oracle():
         gold_metadata,
         xsum_test,
         should_annotate=False,
-        entity_match_type="strict_intrinsic",
+        entity_match_type="strict_all",
         print_first_n=0,
         is_gef=True,
         is_oracle=True,
         count_skips=True,
+        compute_rouge=False
     )
     # These metrics might change if the dataset changes
     assert agg_metrics["summaries"]["total"] == 100
-    assert agg_metrics["summaries"]["factual"] == 0.65
-    assert agg_metrics["summaries"]["non_factual"] == 0.12
-    assert agg_metrics["summaries"]["skipped"] == 0.23
-    assert agg_metrics["summaries"]["failed"] == 7
-    assert agg_metrics["rouge1"] > 0.46
-    assert agg_metrics["rouge2"] > 0.22
+    assert agg_metrics["summaries"]["factual"] == 0.67
+    assert agg_metrics["summaries"]["non_factual"] == 0.11
+    assert agg_metrics["summaries"]["skipped"] == 0.22
+    assert agg_metrics["summaries"]["failed"] == 12
     assert agg_metrics["entities"]["Unknown"] == 0
-    assert agg_metrics["entities"]["Factual Hallucination"] == 88
-    assert agg_metrics["entities"]["Intrinsic Hallucination"] == 14
-    assert agg_metrics["entities"]["Non-hallucinated"] == 154
-    assert agg_metrics["entities"]["total"] == 88 + 14 + 154
+    assert agg_metrics["entities"]["Factual Hallucination"] == 87
+    assert agg_metrics["entities"]["Intrinsic Hallucination"] == 13
+    assert agg_metrics["entities"]["Non-hallucinated"] == 150
+    assert agg_metrics["entities"]["total"] == 87 + 13 + 150
 
     # CRUCIAL: Oracle should have 0 non factual hallucinations because they're skipped
     assert agg_metrics["summaries"]["non_factual_extrinsic"] == 0
@@ -126,29 +126,28 @@ def test_evaluate_factuality_oracle_no_skips():
         gold_metadata,
         xsum_test,
         should_annotate=False,
-        entity_match_type="strict_intrinsic",
+        entity_match_type="strict_all",
         print_first_n=0,
         is_gef=True,
         is_oracle=True,
         count_skips=False,
+        compute_rouge=False
     )
     # These metrics might change if the dataset changes
     assert agg_metrics["summaries"]["total"] == 100
-    assert agg_metrics["summaries"]["factual"] == 0.65
-    assert agg_metrics["summaries"]["non_factual"] == 0.35
-    assert agg_metrics["summaries"]["failed"] == 7
-    assert agg_metrics["rouge1"] > 0.46
-    assert agg_metrics["rouge2"] > 0.22
+    assert agg_metrics["summaries"]["factual"] == 0.67
+    assert agg_metrics["summaries"]["non_factual"] == 0.33
+    assert agg_metrics["summaries"]["failed"] == 12
     assert agg_metrics["entities"]["Unknown"] == 0
-    assert agg_metrics["entities"]["Factual Hallucination"] == 98
-    assert agg_metrics["entities"]["Intrinsic Hallucination"] == 16
-    assert agg_metrics["entities"]["Non-factual Hallucination"] == 23
-    assert agg_metrics["entities"]["Non-hallucinated"] == 177
-    assert agg_metrics["entities"]["total"] == 98 + 16 + 23 + 177
+    assert agg_metrics["entities"]["Factual Hallucination"] == 104
+    assert agg_metrics["entities"]["Intrinsic Hallucination"] == 15
+    assert agg_metrics["entities"]["Non-factual Hallucination"] == 38
+    assert agg_metrics["entities"]["Non-hallucinated"] == 187
+    assert agg_metrics["entities"]["total"] == 104 + 15 + 38 + 187
 
     assert (
         agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"]
-        == 0.9661764705882353
+        == 0.9354166666666666
     )
 
 
@@ -169,30 +168,31 @@ def test_evaluate_factuality_classifier():
         gold_metadata,
         xsum_test,
         should_annotate=False,
-        entity_match_type="strict_intrinsic",
+        entity_match_type="strict_all",
         print_first_n=0,
         is_gef=True,
         is_oracle=False,
         count_skips=True,
+        compute_rouge=False
     )
     assert agg_metrics["summaries"]["total"] == 100
-    assert agg_metrics["summaries"]["factual"] == 0.48
-    assert agg_metrics["summaries"]["non_factual"] == 0.27
-    assert agg_metrics["summaries"]["non_factual_extrinsic"] == 0.2
-    assert agg_metrics["summaries"]["non_factual_intrinsic"] == 0.1
-    assert agg_metrics["summaries"]["skipped"] == 0.25
-    assert agg_metrics["summaries"]["failed"] == 14
+    assert agg_metrics["summaries"]["factual"] == 0.5
+    assert agg_metrics["summaries"]["non_factual"] == 0.31
+    assert agg_metrics["summaries"]["non_factual_extrinsic"] == 0.24
+    assert agg_metrics["summaries"]["non_factual_intrinsic"] == 0.11
+    assert agg_metrics["summaries"]["skipped"] == 0.19
+    assert agg_metrics["summaries"]["failed"] == 18
     assert agg_metrics["summaries"]["unknown"] == 0
     assert agg_metrics["entities"]["Unknown"] == 0
-    assert agg_metrics["entities"]["Non-factual Hallucination"] == 23
-    assert agg_metrics["entities"]["Factual Hallucination"] == 63
-    assert agg_metrics["entities"]["Intrinsic Hallucination"] == 11
-    assert agg_metrics["entities"]["Non-hallucinated"] == 145
-    assert agg_metrics["entities"]["total"] == 23 + 63 + 11 + 145
+    assert agg_metrics["entities"]["Non-factual Hallucination"] == 30
+    assert agg_metrics["entities"]["Factual Hallucination"] == 65
+    assert agg_metrics["entities"]["Intrinsic Hallucination"] == 12
+    assert agg_metrics["entities"]["Non-hallucinated"] == 159
+    assert agg_metrics["entities"]["total"] == 30 + 65 + 12 + 159
 
     assert (
         agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"]
-        == 0.9450980392156864
+        == 0.9226415094339623
     )
 
     # Should sum to 1
@@ -225,31 +225,32 @@ def test_evaluate_factuality_classifier_no_skips():
         gold_metadata,
         xsum_test,
         should_annotate=False,
-        entity_match_type="strict_intrinsic",
+        entity_match_type="strict_all",
         print_first_n=0,
         is_gef=True,
         is_oracle=False,
         count_skips=False,
+        compute_rouge=False
     )
     # These metrics might change if the dataset changes
     assert agg_metrics["summaries"]["total"] == 100
-    assert agg_metrics["summaries"]["factual"] == 0.50
-    assert agg_metrics["summaries"]["non_factual"] == 0.50
-    assert agg_metrics["summaries"]["non_factual_extrinsic"] == 0.29
-    assert agg_metrics["summaries"]["non_factual_intrinsic"] == 0.13
+    assert agg_metrics["summaries"]["factual"] == 0.52
+    assert agg_metrics["summaries"]["non_factual"] == 0.48
+    assert agg_metrics["summaries"]["non_factual_extrinsic"] == 0.41
+    assert agg_metrics["summaries"]["non_factual_intrinsic"] == 0.14
     assert agg_metrics["summaries"]["skipped"] == 0
-    assert agg_metrics["summaries"]["failed"] == 14
+    assert agg_metrics["summaries"]["failed"] == 18
     assert agg_metrics["summaries"]["unknown"] == 0
     assert agg_metrics["entities"]["Unknown"] == 0
-    assert agg_metrics["entities"]["Factual Hallucination"] == 76
-    assert agg_metrics["entities"]["Intrinsic Hallucination"] == 14
-    assert agg_metrics["entities"]["Non-factual Hallucination"] == 37
-    assert agg_metrics["entities"]["Non-hallucinated"] == 164
-    assert agg_metrics["entities"]["total"] == 76 + 14 + 37 + 164
+    assert agg_metrics["entities"]["Factual Hallucination"] == 80
+    assert agg_metrics["entities"]["Intrinsic Hallucination"] == 15
+    assert agg_metrics["entities"]["Non-factual Hallucination"] == 63
+    assert agg_metrics["entities"]["Non-hallucinated"] == 184
+    assert agg_metrics["entities"]["total"] == 80 + 15 + 63 + 184
 
     assert (
         agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"]
-        == 0.8988700564971751
+        == 0.8614583333333333
     )
 
 
@@ -270,29 +271,30 @@ def test_evaluate_factuality_baseline():
         gold_metadata,
         xsum_test,
         should_annotate=False,
-        entity_match_type="strict_intrinsic",
+        entity_match_type="strict_all",
         print_first_n=0,
         is_gef=False,
         is_oracle=False,
+        compute_rouge=False
     )
     assert agg_metrics["summaries"]["total"] == 100
-    assert agg_metrics["summaries"]["factual"] == 0.41
-    assert agg_metrics["summaries"]["non_factual"] == 0.59
+    assert agg_metrics["summaries"]["factual"] == 0.42
+    assert agg_metrics["summaries"]["non_factual"] == 0.58
     assert agg_metrics["summaries"]["non_factual_extrinsic"] == 0.52
     assert agg_metrics["summaries"]["non_factual_intrinsic"] == 0.12
     assert agg_metrics["summaries"]["skipped"] == 0
     assert agg_metrics["summaries"]["failed"] == 0
     assert agg_metrics["summaries"]["unknown"] == 0
-    assert agg_metrics["entities"]["Non-factual Hallucination"] == 74
+    assert agg_metrics["entities"]["Non-factual Hallucination"] == 72
     assert agg_metrics["entities"]["Unknown"] == 0
-    assert agg_metrics["entities"]["Factual Hallucination"] == 94
+    assert agg_metrics["entities"]["Factual Hallucination"] == 90
     assert agg_metrics["entities"]["Intrinsic Hallucination"] == 13
-    assert agg_metrics["entities"]["Non-hallucinated"] == 188
-    assert agg_metrics["entities"]["total"] == 74 + 94 + 13 + 188
+    assert agg_metrics["entities"]["Non-hallucinated"] == 186
+    assert agg_metrics["entities"]["total"] == 72 + 90 + 13 + 186
 
     assert (
         agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"]
-        == 0.8128571428571428
+        == 0.8222222222222222
     )
 
     # Should sum to 1
@@ -325,10 +327,11 @@ def test_evaluate_factuality_gold():
         gold_metadata,
         xsum_test,
         should_annotate=False,
-        entity_match_type="strict_intrinsic",
+        entity_match_type="strict_all",
         print_first_n=0,
         is_gef=False,
         is_oracle=False,
+        compute_rouge=False
     )
     assert agg_metrics["summaries"]["total"] == 100
     assert agg_metrics["summaries"]["factual"] == 1
@@ -340,10 +343,10 @@ def test_evaluate_factuality_gold():
     assert agg_metrics["summaries"]["unknown"] == 0
     assert agg_metrics["entities"]["Non-factual Hallucination"] == 0
     assert agg_metrics["entities"]["Unknown"] == 0
-    assert agg_metrics["entities"]["Factual Hallucination"] == 193
+    assert agg_metrics["entities"]["Factual Hallucination"] == 192
     assert agg_metrics["entities"]["Intrinsic Hallucination"] == 0
-    assert agg_metrics["entities"]["Non-hallucinated"] == 173
-    assert agg_metrics["entities"]["total"] == 193 + 173
+    assert agg_metrics["entities"]["Non-hallucinated"] == 169
+    assert agg_metrics["entities"]["total"] == 192 + 169
 
     assert agg_metrics["entities"]["extrinsic_factuality_ratio"]["mean"] == 1
     assert agg_metrics["entities"]["extrinsic_factuality_ratio"]["stdev"] == 0

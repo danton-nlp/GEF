@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
     MODEL_RESULTS = {
         "BartGEF": load_summaries_from_logs(
-            "results/gef-logs/bart-full-classifier-knnv1.json", max_iterations=5
+            "results/gef-logs/bart-full-classifier-knnv2.json", max_iterations=5
         ),
         "PegasusGEF": load_summaries_from_logs(
             "results/gef-logs/pegasus-full-classifier-knnv1.json", max_iterations=5

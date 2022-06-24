@@ -141,7 +141,7 @@ if __name__ == "__main__":
         else None
     )
 
-    for model in ["oracle", "classifier-knnv1"]:
+    for model in ["oracle", "classifier-knnv2"]:
         if os.path.exists(f"results/gef-logs/{args.data_subset}-{model}.json"):
             iteration_stats = collect_iteration_stats(
                 f"results/gef-logs/{args.data_subset}-{model}.json",

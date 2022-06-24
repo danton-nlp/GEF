@@ -421,37 +421,37 @@
         "summary": "Derek McInnes was a key factor in Shay Logan's decision to sign a new contract at Pittodrie."
       }
     },
-    "summary_generated": 100
+    "summary_generated": 200
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 86,
-      "Intrinsic Hallucination": 15,
-      "Non-factual Hallucination": 50,
-      "Non-hallucinated": 170,
-      "Unknown": 29,
-      "count_extrinsic": 149,
+      "Factual Hallucination": 90,
+      "Intrinsic Hallucination": 13,
+      "Non-factual Hallucination": 52,
+      "Non-hallucinated": 168,
+      "Unknown": 26,
+      "count_extrinsic": 151,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9166666666666666,
+        "mean": 0.9019607843137254,
         "median": 1.0,
-        "stdev": 0.1798860037884392
+        "stdev": 0.20180009788868186
       },
-      "total": 350,
+      "total": 349,
       "type": {
         "CARDINAL": {
-          "Factual Hallucination": 7,
-          "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 3,
-          "Non-hallucinated": 7,
+          "Factual Hallucination": 6,
+          "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 2,
+          "Non-hallucinated": 6,
           "Unknown": 5,
-          "total": 25
+          "total": 21
         },
         "DATE": {
-          "Factual Hallucination": 8,
+          "Factual Hallucination": 10,
           "Intrinsic Hallucination": 1,
           "Non-factual Hallucination": 12,
           "Non-hallucinated": 8,
-          "Unknown": 4,
+          "Unknown": 2,
           "total": 33
         },
         "EVENT": {
@@ -460,10 +460,10 @@
           "total": 7
         },
         "FAC": {
-          "Factual Hallucination": 3,
-          "Non-factual Hallucination": 1,
+          "Factual Hallucination": 4,
+          "Non-factual Hallucination": 2,
           "Non-hallucinated": 2,
-          "total": 6
+          "total": 8
         },
         "GPE": {
           "Factual Hallucination": 14,
@@ -490,9 +490,10 @@
         "NORP": {
           "Factual Hallucination": 2,
           "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 1,
           "Non-hallucinated": 12,
           "Unknown": 1,
-          "total": 17
+          "total": 18
         },
         "ORDINAL": {
           "Factual Hallucination": 4,
@@ -502,8 +503,8 @@
         "ORG": {
           "Factual Hallucination": 17,
           "Intrinsic Hallucination": 1,
-          "Non-factual Hallucination": 6,
-          "Non-hallucinated": 28,
+          "Non-factual Hallucination": 7,
+          "Non-hallucinated": 27,
           "Unknown": 4,
           "total": 56
         },
@@ -513,11 +514,11 @@
           "total": 3
         },
         "PERSON": {
-          "Factual Hallucination": 25,
-          "Intrinsic Hallucination": 5,
+          "Factual Hallucination": 27,
+          "Intrinsic Hallucination": 4,
           "Non-factual Hallucination": 17,
           "Non-hallucinated": 59,
-          "Unknown": 10,
+          "Unknown": 9,
           "total": 116
         },
         "TIME": {
@@ -531,17 +532,17 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.5,
-      "factual": 0.53,
-      "failed": 1,
+      "ents_per_sum": 3.49,
+      "factual": 0.54,
+      "failed": 0,
       "non_factual": 0.46,
       "non_factual_extrinsic": 0.39,
       "non_factual_intrinsic": 0.11,
       "skipped": 0.0,
       "sum_with_extrinsic": 0.93,
-      "sum_with_extrinsic_factual": 0.53,
+      "sum_with_extrinsic_factual": 0.54,
       "total": 100,
-      "unknown": 0.01
+      "unknown": 0.0
     },
     "iteration": 1,
     "summary": {
@@ -705,7 +706,7 @@
         "edit_stats": {
           "edit_distance_token": 11
         },
-        "summary": "World number one Andy Murray and Marcelos Melo beat world number two Ivan Dodig 7-6 (7-4) 6-4 to reach the Monte Carlo Masters final."
+        "summary": "Britain's Jamie Murray and Marcelo Melo beat Croatia's Ivan Dodig 6-4 6-3 to reach the final of the Monte Carlo Masters."
       },
       "36162485": {
         "edit_stats": {
@@ -773,12 +774,6 @@
         },
         "summary": "Police are \"extremely concerned\" for the welfare of a 15-year-old girl who has been missing from her home in Greater Manchester for more than a week."
       },
-      "37603756": {
-        "edit_stats": {
-          "edit_distance_token": 1
-        },
-        "summary": "Polish film director Jerzy Wajda has died at the age of 90."
-      },
       "37604251": {
         "edit_stats": {
           "edit_distance_token": 5
@@ -813,7 +808,7 @@
         "edit_stats": {
           "edit_distance_token": 6
         },
-        "summary": "St Johnstone defender Ryan Anderson says Rangers midfielder Kieran Kiernan should face a Scottish FA disciplinary hearing over an alleged punch."
+        "summary": "St Johnstone's Paul Anderson has said Rangers defender Kieran Kiernan should face a Scottish FA disciplinary hearing over an alleged punch."
       },
       "38983532": {
         "edit_stats": {
@@ -851,6 +846,12 @@
         },
         "summary": "Chelsea have clinched their third Premier League title in a row."
       },
+      "40306866": {
+        "edit_stats": {
+          "edit_distance_token": 8
+        },
+        "summary": "Welshman Jamie Evans retained his WBO International lightweight title with a unanimous points victory over American Scott Ormond at the Principality Stadium."
+      },
       "40426136": {
         "edit_stats": {
           "edit_distance_token": 14
@@ -858,38 +859,38 @@
         "summary": "James Wakely and Richard Keogh hit centuries as Northamptonshire took control against Leicestershire at Edgbaston."
       }
     },
-    "summary_generated": 53
+    "summary_generated": 58
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 97,
-      "Intrinsic Hallucination": 16,
-      "Non-factual Hallucination": 39,
-      "Non-hallucinated": 185,
-      "Unknown": 10,
-      "count_extrinsic": 144,
+      "Factual Hallucination": 102,
+      "Intrinsic Hallucination": 14,
+      "Non-factual Hallucination": 47,
+      "Non-hallucinated": 186,
+      "Unknown": 3,
+      "count_extrinsic": 151,
       "extrinsic_factuality_ratio": {
-        "mean": 0.931924882629108,
+        "mean": 0.9291079812206573,
         "median": 1.0,
-        "stdev": 0.1632453168731381
+        "stdev": 0.17133641851269416
       },
-      "total": 347,
+      "total": 352,
       "type": {
         "CARDINAL": {
           "Factual Hallucination": 8,
-          "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 4,
-          "Non-hallucinated": 8,
+          "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 3,
+          "Non-hallucinated": 7,
           "Unknown": 1,
-          "total": 24
+          "total": 21
         },
         "DATE": {
           "Factual Hallucination": 13,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 5,
+          "Non-factual Hallucination": 6,
           "Non-hallucinated": 8,
           "Unknown": 1,
-          "total": 29
+          "total": 30
         },
         "EVENT": {
           "Factual Hallucination": 4,
@@ -905,10 +906,10 @@
         "GPE": {
           "Factual Hallucination": 17,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 10,
+          "Non-factual Hallucination": 9,
           "Non-hallucinated": 47,
           "Unknown": 1,
-          "total": 77
+          "total": 76
         },
         "LAW": {
           "Non-hallucinated": 1,
@@ -927,20 +928,21 @@
         "NORP": {
           "Factual Hallucination": 2,
           "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 1,
           "Non-hallucinated": 13,
-          "total": 17
+          "total": 18
         },
         "ORDINAL": {
           "Factual Hallucination": 4,
-          "total": 4
+          "Non-factual Hallucination": 1,
+          "total": 5
         },
         "ORG": {
-          "Factual Hallucination": 18,
+          "Factual Hallucination": 19,
           "Intrinsic Hallucination": 1,
-          "Non-factual Hallucination": 2,
+          "Non-factual Hallucination": 5,
           "Non-hallucinated": 31,
-          "Unknown": 2,
-          "total": 54
+          "total": 56
         },
         "PERCENT": {
           "Intrinsic Hallucination": 1,
@@ -948,12 +950,19 @@
           "total": 3
         },
         "PERSON": {
-          "Factual Hallucination": 26,
-          "Intrinsic Hallucination": 5,
-          "Non-factual Hallucination": 15,
-          "Non-hallucinated": 65,
-          "Unknown": 5,
-          "total": 116
+          "Factual Hallucination": 28,
+          "Intrinsic Hallucination": 4,
+          "Non-factual Hallucination": 19,
+          "Non-hallucinated": 67,
+          "total": 118
+        },
+        "PRODUCT": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "QUANTITY": {
+          "Factual Hallucination": 1,
+          "total": 1
         },
         "TIME": {
           "Non-hallucinated": 2,
@@ -966,17 +975,17 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.47,
-      "factual": 0.59,
-      "failed": 4,
-      "non_factual": 0.38,
-      "non_factual_extrinsic": 0.29,
+      "ents_per_sum": 3.52,
+      "factual": 0.61,
+      "failed": 3,
+      "non_factual": 0.39,
+      "non_factual_extrinsic": 0.3,
       "non_factual_intrinsic": 0.12,
       "skipped": 0.0,
       "sum_with_extrinsic": 0.9,
       "sum_with_extrinsic_factual": 0.6,
       "total": 100,
-      "unknown": 0.03
+      "unknown": 0.0
     },
     "iteration": 2,
     "summary": {
@@ -1014,7 +1023,7 @@
         "edit_stats": {
           "edit_distance_token": 6
         },
-        "summary": "More than 100 people have objected to plans to build more than 1,000 homes in a remote village in the Cotswold Wolds."
+        "summary": "More than 100 people have objected to plans to build more than 1,000 homes in a village in the Cotswolds."
       },
       "32487884": {
         "edit_stats": {
@@ -1064,23 +1073,29 @@
         },
         "summary": "Thousands of animals are being counted at Chester Zoo in the UK."
       },
-      "35369658": {
-        "edit_stats": {
-          "edit_distance_token": 3
-        },
-        "summary": "Hundreds of football fans faced long queues to get into a FA Cup match on Wednesday night."
-      },
       "35698210": {
         "edit_stats": {
           "edit_distance_token": 18
         },
         "summary": "Wales' Six Nations win over France was \"baffling\", according to former team-mate Martyn Jenkins."
       },
+      "36061830": {
+        "edit_stats": {
+          "edit_distance_token": 19
+        },
+        "summary": "Andy Murray and Marcelo Melo reached their third Monte Carlo Masters final in four years with a 6-4 6-3 victory over Ivan Dodig and Ivan Lendl."
+      },
       "36162485": {
         "edit_stats": {
           "edit_distance_token": 4
         },
         "summary": "World number one Mark Selby will face Ding Junhui in the World Championship semi-finals after beating Marco Fu 6-3 at the Crucible."
+      },
+      "36301742": {
+        "edit_stats": {
+          "edit_distance_token": 15
+        },
+        "summary": "Venezuela's Vice-President, Vladimir Isturiz, has said there will be no recall referendum against President Nicol\u00e1s Maduro."
       },
       "36635880": {
         "edit_stats": {
@@ -1112,12 +1127,6 @@
         },
         "summary": "Concerns are rising for a 12-year-old girl who has been missing from her home in Greater Manchester for more than a week."
       },
-      "37603756": {
-        "edit_stats": {
-          "edit_distance_token": 1
-        },
-        "summary": "Polish film director Andrzeja Wajda has died at the age of 90."
-      },
       "38078754": {
         "edit_stats": {
           "edit_distance_token": 1
@@ -1138,15 +1147,15 @@
       },
       "38470818": {
         "edit_stats": {
-          "edit_distance_token": 15
+          "edit_distance_token": 5
         },
-        "summary": "Rangers defender Kiernan is to face a Scottish FA disciplinary hearing over an alleged punch on St Johnstones' Paul Anderson."
+        "summary": "St Johnstone's Steven Anderson has said Rangers defender Kiernan should face a Scottish FA disciplinary hearing over an alleged punch."
       },
       "38983532": {
         "edit_stats": {
-          "edit_distance_token": 12
+          "edit_distance_token": 16
         },
-        "summary": "Arsenal Ladies have confirmed that Ghana international midfielder Nkosi Nsiala has signed a new contract with the club."
+        "summary": "Arsenal Ladies have confirmed that Ivory Coast midfielder Nkosi Nsiala has signed a new contract with the Women's Super League One club."
       },
       "39556625": {
         "edit_stats": {
@@ -1166,6 +1175,12 @@
         },
         "summary": "An under-performing academy school in Portsmouth is to be merged with another in the city."
       },
+      "39847765": {
+        "edit_stats": {
+          "edit_distance_token": 9
+        },
+        "summary": "Peterborough United have completed the signing of Walsall striker James Lloyd for an undisclosed fee."
+      },
       "39895178": {
         "edit_stats": {
           "edit_distance_token": 3
@@ -1179,44 +1194,42 @@
         "summary": "Northamptonshire openers Tom Wakely and Chris Keogh hit centuries as they put the Division Two leaders in control against Leicestershire."
       }
     },
-    "summary_generated": 36
+    "summary_generated": 38
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 99,
-      "Intrinsic Hallucination": 16,
-      "Non-factual Hallucination": 36,
-      "Non-hallucinated": 182,
-      "Unknown": 11,
-      "count_extrinsic": 141,
+      "Factual Hallucination": 102,
+      "Intrinsic Hallucination": 14,
+      "Non-factual Hallucination": 39,
+      "Non-hallucinated": 185,
+      "Unknown": 7,
+      "count_extrinsic": 145,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9182648401826484,
+        "mean": 0.9354166666666666,
         "median": 1.0,
-        "stdev": 0.19059237112144042
+        "stdev": 0.16424014852918542
       },
-      "total": 344,
+      "total": 347,
       "type": {
         "CARDINAL": {
           "Factual Hallucination": 9,
-          "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 2,
+          "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 1,
           "Non-hallucinated": 7,
-          "Unknown": 1,
-          "total": 22
+          "total": 19
         },
         "DATE": {
           "Factual Hallucination": 12,
           "Intrinsic Hallucination": 1,
-          "Non-factual Hallucination": 6,
+          "Non-factual Hallucination": 5,
           "Non-hallucinated": 8,
           "Unknown": 3,
-          "total": 30
+          "total": 29
         },
         "EVENT": {
           "Factual Hallucination": 4,
-          "Non-factual Hallucination": 1,
           "Non-hallucinated": 3,
-          "total": 8
+          "total": 7
         },
         "FAC": {
           "Factual Hallucination": 3,
@@ -1225,12 +1238,11 @@
           "total": 6
         },
         "GPE": {
-          "Factual Hallucination": 19,
+          "Factual Hallucination": 18,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 4,
-          "Non-hallucinated": 47,
-          "Unknown": 2,
-          "total": 74
+          "Non-factual Hallucination": 5,
+          "Non-hallucinated": 48,
+          "total": 73
         },
         "LAW": {
           "Non-hallucinated": 1,
@@ -1249,21 +1261,22 @@
         "NORP": {
           "Factual Hallucination": 2,
           "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 1,
           "Non-hallucinated": 13,
-          "total": 17
+          "total": 18
         },
         "ORDINAL": {
           "Factual Hallucination": 4,
-          "Non-factual Hallucination": 1,
-          "total": 5
+          "Non-factual Hallucination": 2,
+          "total": 6
         },
         "ORG": {
-          "Factual Hallucination": 17,
+          "Factual Hallucination": 18,
           "Intrinsic Hallucination": 1,
-          "Non-factual Hallucination": 5,
+          "Non-factual Hallucination": 7,
           "Non-hallucinated": 31,
           "Unknown": 1,
-          "total": 55
+          "total": 58
         },
         "PERCENT": {
           "Intrinsic Hallucination": 1,
@@ -1271,12 +1284,20 @@
           "total": 3
         },
         "PERSON": {
-          "Factual Hallucination": 27,
-          "Intrinsic Hallucination": 6,
-          "Non-factual Hallucination": 14,
-          "Non-hallucinated": 63,
-          "Unknown": 4,
-          "total": 114
+          "Factual Hallucination": 28,
+          "Intrinsic Hallucination": 5,
+          "Non-factual Hallucination": 15,
+          "Non-hallucinated": 65,
+          "Unknown": 3,
+          "total": 116
+        },
+        "PRODUCT": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "QUANTITY": {
+          "Factual Hallucination": 1,
+          "total": 1
         },
         "TIME": {
           "Non-hallucinated": 2,
@@ -1289,15 +1310,15 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.44,
-      "factual": 0.64,
-      "failed": 7,
-      "non_factual": 0.36,
-      "non_factual_extrinsic": 0.26,
+      "ents_per_sum": 3.47,
+      "factual": 0.65,
+      "failed": 8,
+      "non_factual": 0.35,
+      "non_factual_extrinsic": 0.25,
       "non_factual_intrinsic": 0.12,
       "skipped": 0.0,
       "sum_with_extrinsic": 0.87,
-      "sum_with_extrinsic_factual": 0.61,
+      "sum_with_extrinsic_factual": 0.62,
       "total": 100,
       "unknown": 0.0
     },
@@ -1317,15 +1338,15 @@
       },
       "30657223": {
         "edit_stats": {
-          "edit_distance_token": 19
+          "edit_distance_token": 4
         },
-        "summary": "Hartlepool United have signed Reading midfielder Alex Tshibola on loan until the end of the League Two season and Mansfield Town striker Joe Bingham on a one-month loan deal."
+        "summary": "Hartlepool United have signed Reading midfielder Ola Tshibola and Mansfield Town striker Ryan Bingham on loan until the end of the League Two season."
       },
       "32033856": {
         "edit_stats": {
           "edit_distance_token": 18
         },
-        "summary": "Villagers in a Pembrokeshire village have objected to plans for more than 200 new homes."
+        "summary": "Villagers in a Pembrokeshire village have objected to plans for more than 1,000 new homes."
       },
       "33317600": {
         "edit_stats": {
@@ -1357,12 +1378,6 @@
         },
         "summary": "Wales' Six Nations win over France was \"baffling\", according to former team-mate Gareth Jenkins."
       },
-      "36635880": {
-        "edit_stats": {
-          "edit_distance_token": 6
-        },
-        "summary": "Great Britain's women produced their best performance of the World Cup with a 4-3 win over New Zealand in the play-off."
-      },
       "36730443": {
         "edit_stats": {
           "edit_distance_token": 3
@@ -1387,29 +1402,11 @@
         },
         "summary": "Police are \"extremely concerned\" for the welfare of a 13-month-old girl who has been missing from her home in Greater Manchester for more than a week."
       },
-      "37603756": {
-        "edit_stats": {
-          "edit_distance_token": 1
-        },
-        "summary": "Polish film director Andrzejs Wajda has died at the age of 90."
-      },
       "38078754": {
         "edit_stats": {
           "edit_distance_token": 1
         },
         "summary": "An outbreak of Dengue fever in Burkina Faso has killed at least 20 people, the World Health Organization says."
-      },
-      "38470818": {
-        "edit_stats": {
-          "edit_distance_token": 15
-        },
-        "summary": "Rangers defender Kiernan is to face a Scottish FA disciplinary hearing over an alleged punch on St Johnstones' Steven Anderson."
-      },
-      "38983532": {
-        "edit_stats": {
-          "edit_distance_token": 13
-        },
-        "summary": "Arsenal Ladies have confirmed that Nigeria international midfielder Nkululeko Amaechi has signed a new three-year contract with the club."
       },
       "39556625": {
         "edit_stats": {
@@ -1424,42 +1421,41 @@
         "summary": "An under-performing academy school in south-west England is to be merged with another in a bid to save money."
       }
     },
-    "summary_generated": 23
+    "summary_generated": 22
   },
   {
     "factuality_entities": {
       "Factual Hallucination": 105,
-      "Intrinsic Hallucination": 17,
-      "Non-factual Hallucination": 37,
+      "Intrinsic Hallucination": 16,
+      "Non-factual Hallucination": 40,
       "Non-hallucinated": 188,
       "Unknown": 0,
-      "count_extrinsic": 142,
+      "count_extrinsic": 145,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9287671232876714,
+        "mean": 0.9388888888888888,
         "median": 1.0,
-        "stdev": 0.16999552939713503
+        "stdev": 0.16292086998461314
       },
-      "total": 347,
+      "total": 349,
       "type": {
         "CARDINAL": {
-          "Factual Hallucination": 10,
-          "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 2,
-          "Non-hallucinated": 8,
-          "total": 23
+          "Factual Hallucination": 9,
+          "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 1,
+          "Non-hallucinated": 7,
+          "total": 19
         },
         "DATE": {
-          "Factual Hallucination": 14,
-          "Intrinsic Hallucination": 1,
+          "Factual Hallucination": 13,
+          "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 5,
           "Non-hallucinated": 8,
           "total": 28
         },
         "EVENT": {
           "Factual Hallucination": 4,
-          "Non-factual Hallucination": 1,
           "Non-hallucinated": 3,
-          "total": 8
+          "total": 7
         },
         "FAC": {
           "Factual Hallucination": 3,
@@ -1468,9 +1464,9 @@
           "total": 6
         },
         "GPE": {
-          "Factual Hallucination": 19,
+          "Factual Hallucination": 18,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 3,
+          "Non-factual Hallucination": 4,
           "Non-hallucinated": 48,
           "total": 72
         },
@@ -1498,14 +1494,15 @@
         "ORDINAL": {
           "Factual Hallucination": 4,
           "Intrinsic Hallucination": 1,
-          "total": 5
+          "Non-factual Hallucination": 1,
+          "total": 6
         },
         "ORG": {
           "Factual Hallucination": 20,
           "Intrinsic Hallucination": 1,
-          "Non-factual Hallucination": 2,
+          "Non-factual Hallucination": 4,
           "Non-hallucinated": 31,
-          "total": 54
+          "total": 56
         },
         "PERCENT": {
           "Intrinsic Hallucination": 1,
@@ -1513,11 +1510,19 @@
           "total": 3
         },
         "PERSON": {
-          "Factual Hallucination": 27,
-          "Intrinsic Hallucination": 6,
-          "Non-factual Hallucination": 20,
-          "Non-hallucinated": 67,
-          "total": 120
+          "Factual Hallucination": 28,
+          "Intrinsic Hallucination": 5,
+          "Non-factual Hallucination": 21,
+          "Non-hallucinated": 68,
+          "total": 122
+        },
+        "PRODUCT": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "QUANTITY": {
+          "Factual Hallucination": 1,
+          "total": 1
         },
         "TIME": {
           "Non-hallucinated": 2,
@@ -1530,15 +1535,15 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.47,
-      "factual": 0.65,
-      "failed": 7,
-      "non_factual": 0.35,
-      "non_factual_extrinsic": 0.24,
-      "non_factual_intrinsic": 0.13,
+      "ents_per_sum": 3.49,
+      "factual": 0.66,
+      "failed": 8,
+      "non_factual": 0.34,
+      "non_factual_extrinsic": 0.23,
+      "non_factual_intrinsic": 0.14,
       "skipped": 0.0,
       "sum_with_extrinsic": 0.86,
-      "sum_with_extrinsic_factual": 0.62,
+      "sum_with_extrinsic_factual": 0.63,
       "total": 100,
       "unknown": 0.0
     },
@@ -1558,15 +1563,9 @@
       },
       "30657223": {
         "edit_stats": {
-          "edit_distance_token": 19
+          "edit_distance_token": 4
         },
-        "summary": "Hartlepool United have signed Reading midfielder Ola Tshibola on loan until the end of the League Two season and Mansfield Town striker Callum Bingham on a season-long loan."
-      },
-      "32033856": {
-        "edit_stats": {
-          "edit_distance_token": 16
-        },
-        "summary": "Villagers in a Cumbrian village have objected to plans to build more than 1,500 new homes."
+        "summary": "Hartlepool United have signed Reading midfielder Alex Tshibola and Mansfield Town striker Ryan Bingham on loan for the rest of the season."
       },
       "33317600": {
         "edit_stats": {
@@ -1592,12 +1591,6 @@
         },
         "summary": "Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Nagoya Gramps."
       },
-      "36635880": {
-        "edit_stats": {
-          "edit_distance_token": 1
-        },
-        "summary": "Great Britain's women produced their best performance of the EuroHockey Championship with a 4-3 win over New Zealand."
-      },
       "36912060": {
         "edit_stats": {
           "edit_distance_token": 12
@@ -1610,18 +1603,6 @@
         },
         "summary": "Police are \"extremely concerned\" for the welfare of a 15-month-old girl who has gone missing from her home in Greater Manchester."
       },
-      "37603756": {
-        "edit_stats": {
-          "edit_distance_token": 1
-        },
-        "summary": "Polish film director Andrzejc Wajda has died at the age of 90."
-      },
-      "38983532": {
-        "edit_stats": {
-          "edit_distance_token": 16
-        },
-        "summary": "Arsenal Ladies have confirmed that Nigeria international midfielder Nkulamola Nsiale has signed a new contract with the Women's Super League One club."
-      },
       "39556625": {
         "edit_stats": {
           "edit_distance_token": 19
@@ -1629,37 +1610,35 @@
         "summary": "Campaigners have launched a legal challenge to a wind farm operator's plans to install overhead cables in SnowdonIA."
       }
     },
-    "summary_generated": 14
+    "summary_generated": 11
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 103,
-      "Intrinsic Hallucination": 17,
-      "Non-factual Hallucination": 27,
-      "Non-hallucinated": 184,
-      "Unknown": 10,
-      "count_extrinsic": 139,
+      "Factual Hallucination": 104,
+      "Intrinsic Hallucination": 15,
+      "Non-factual Hallucination": 38,
+      "Non-hallucinated": 187,
+      "Unknown": 0,
+      "count_extrinsic": 142,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9356164383561646,
+        "mean": 0.9354166666666666,
         "median": 1.0,
-        "stdev": 0.16248908331187628
+        "stdev": 0.1744908267248199
       },
-      "total": 341,
+      "total": 344,
       "type": {
         "CARDINAL": {
-          "Factual Hallucination": 10,
-          "Intrinsic Hallucination": 3,
+          "Factual Hallucination": 9,
+          "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 1,
           "Non-hallucinated": 7,
-          "Unknown": 1,
-          "total": 22
+          "total": 19
         },
         "DATE": {
           "Factual Hallucination": 13,
           "Intrinsic Hallucination": 1,
-          "Non-factual Hallucination": 4,
+          "Non-factual Hallucination": 6,
           "Non-hallucinated": 8,
-          "Unknown": 2,
           "total": 28
         },
         "EVENT": {
@@ -1674,11 +1653,10 @@
           "total": 6
         },
         "GPE": {
-          "Factual Hallucination": 19,
+          "Factual Hallucination": 18,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 3,
-          "Non-hallucinated": 47,
-          "Unknown": 2,
+          "Non-factual Hallucination": 5,
+          "Non-hallucinated": 48,
           "total": 73
         },
         "LAW": {
@@ -1698,20 +1676,21 @@
         "NORP": {
           "Factual Hallucination": 2,
           "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 1,
           "Non-hallucinated": 13,
-          "total": 17
+          "total": 18
         },
         "ORDINAL": {
           "Factual Hallucination": 4,
           "Intrinsic Hallucination": 1,
-          "total": 5
+          "Non-factual Hallucination": 1,
+          "total": 6
         },
         "ORG": {
           "Factual Hallucination": 19,
           "Intrinsic Hallucination": 1,
-          "Non-factual Hallucination": 3,
+          "Non-factual Hallucination": 5,
           "Non-hallucinated": 31,
-          "Unknown": 2,
           "total": 56
         },
         "PERCENT": {
@@ -1720,12 +1699,19 @@
           "total": 3
         },
         "PERSON": {
-          "Factual Hallucination": 27,
-          "Intrinsic Hallucination": 6,
-          "Non-factual Hallucination": 13,
-          "Non-hallucinated": 65,
-          "Unknown": 3,
-          "total": 114
+          "Factual Hallucination": 28,
+          "Intrinsic Hallucination": 5,
+          "Non-factual Hallucination": 16,
+          "Non-hallucinated": 67,
+          "total": 116
+        },
+        "PRODUCT": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "QUANTITY": {
+          "Factual Hallucination": 1,
+          "total": 1
         },
         "TIME": {
           "Non-hallucinated": 2,
@@ -1738,17 +1724,17 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.41,
-      "factual": 0.66,
-      "failed": 12,
-      "non_factual": 0.3,
-      "non_factual_extrinsic": 0.19,
+      "ents_per_sum": 3.44,
+      "factual": 0.67,
+      "failed": 11,
+      "non_factual": 0.33,
+      "non_factual_extrinsic": 0.22,
       "non_factual_intrinsic": 0.13,
       "skipped": 0.0,
       "sum_with_extrinsic": 0.85,
       "sum_with_extrinsic_factual": 0.63,
       "total": 100,
-      "unknown": 0.04
+      "unknown": 0.0
     },
     "iteration": 5,
     "summary": {
@@ -1760,15 +1746,9 @@
       },
       "30657223": {
         "edit_stats": {
-          "edit_distance_token": 19
+          "edit_distance_token": 4
         },
-        "summary": "Hartlepool United have signed Reading midfielder Oumar Tshibola on loan until the end of the League Two season and Mansfield Town striker Callam Bingham on a season-long loan."
-      },
-      "32033856": {
-        "edit_stats": {
-          "edit_distance_token": 16
-        },
-        "summary": "Villagers in a Cotswold village have objected to plans to build more than 1,100 new homes."
+        "summary": "Hartlepool United have signed Reading midfielder Oumar Tshibola and Mansfield Town striker Ryan Bingham on loan for the rest of the season."
       },
       "33317600": {
         "edit_stats": {
@@ -1787,45 +1767,37 @@
           "edit_distance_token": 2
         },
         "summary": "Former Japan striker Kazuyoshi Miura has signed a new contract with Japanese side Shonin City."
-      },
-      "36635880": {
-        "edit_stats": {
-          "edit_distance_token": 9
-        },
-        "summary": "Great Britain's women produced their best performance of the EuroHockey championships as they beat New Zealand 4-3 in a thrilling play-off."
       }
     },
-    "summary_generated": 12
+    "summary_generated": 8
   },
   {
     "factuality_entities": {
-      "Factual Hallucination": 103,
-      "Intrinsic Hallucination": 17,
-      "Non-factual Hallucination": 27,
-      "Non-hallucinated": 184,
-      "Unknown": 9,
-      "count_extrinsic": 138,
+      "Factual Hallucination": 104,
+      "Intrinsic Hallucination": 15,
+      "Non-factual Hallucination": 38,
+      "Non-hallucinated": 187,
+      "Unknown": 0,
+      "count_extrinsic": 142,
       "extrinsic_factuality_ratio": {
-        "mean": 0.9356164383561646,
+        "mean": 0.9354166666666666,
         "median": 1.0,
-        "stdev": 0.16248908331187628
+        "stdev": 0.1744908267248199
       },
-      "total": 340,
+      "total": 344,
       "type": {
         "CARDINAL": {
-          "Factual Hallucination": 10,
-          "Intrinsic Hallucination": 3,
+          "Factual Hallucination": 9,
+          "Intrinsic Hallucination": 2,
           "Non-factual Hallucination": 1,
           "Non-hallucinated": 7,
-          "Unknown": 1,
-          "total": 22
+          "total": 19
         },
         "DATE": {
           "Factual Hallucination": 13,
           "Intrinsic Hallucination": 1,
-          "Non-factual Hallucination": 4,
+          "Non-factual Hallucination": 6,
           "Non-hallucinated": 8,
-          "Unknown": 2,
           "total": 28
         },
         "EVENT": {
@@ -1840,12 +1812,11 @@
           "total": 6
         },
         "GPE": {
-          "Factual Hallucination": 19,
+          "Factual Hallucination": 18,
           "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 3,
-          "Non-hallucinated": 47,
-          "Unknown": 1,
-          "total": 72
+          "Non-factual Hallucination": 5,
+          "Non-hallucinated": 48,
+          "total": 73
         },
         "LAW": {
           "Non-hallucinated": 1,
@@ -1864,20 +1835,21 @@
         "NORP": {
           "Factual Hallucination": 2,
           "Intrinsic Hallucination": 2,
+          "Non-factual Hallucination": 1,
           "Non-hallucinated": 13,
-          "total": 17
+          "total": 18
         },
         "ORDINAL": {
           "Factual Hallucination": 4,
           "Intrinsic Hallucination": 1,
-          "total": 5
+          "Non-factual Hallucination": 1,
+          "total": 6
         },
         "ORG": {
           "Factual Hallucination": 19,
           "Intrinsic Hallucination": 1,
-          "Non-factual Hallucination": 3,
+          "Non-factual Hallucination": 5,
           "Non-hallucinated": 31,
-          "Unknown": 2,
           "total": 56
         },
         "PERCENT": {
@@ -1886,12 +1858,19 @@
           "total": 3
         },
         "PERSON": {
-          "Factual Hallucination": 27,
-          "Intrinsic Hallucination": 6,
-          "Non-factual Hallucination": 13,
-          "Non-hallucinated": 65,
-          "Unknown": 3,
-          "total": 114
+          "Factual Hallucination": 28,
+          "Intrinsic Hallucination": 5,
+          "Non-factual Hallucination": 16,
+          "Non-hallucinated": 67,
+          "total": 116
+        },
+        "PRODUCT": {
+          "Factual Hallucination": 1,
+          "total": 1
+        },
+        "QUANTITY": {
+          "Factual Hallucination": 1,
+          "total": 1
         },
         "TIME": {
           "Non-hallucinated": 2,
@@ -1904,164 +1883,20 @@
       }
     },
     "factuality_summary": {
-      "ents_per_sum": 3.4,
-      "factual": 0.66,
-      "failed": 13,
-      "non_factual": 0.3,
-      "non_factual_extrinsic": 0.19,
+      "ents_per_sum": 3.44,
+      "factual": 0.67,
+      "failed": 12,
+      "non_factual": 0.33,
+      "non_factual_extrinsic": 0.22,
       "non_factual_intrinsic": 0.13,
       "skipped": 0.0,
       "sum_with_extrinsic": 0.85,
       "sum_with_extrinsic_factual": 0.63,
       "total": 100,
-      "unknown": 0.04
+      "unknown": 0.0
     },
     "iteration": 6,
-    "summary": {
-      "32033856": {
-        "edit_stats": {
-          "edit_distance_token": 18
-        },
-        "summary": "Villagers in a Ceredigion village have objected to plans for more than 1,100 new homes."
-      },
-      "36635880": {
-        "edit_stats": {
-          "edit_distance_token": 11
-        },
-        "summary": "Great Britain's women produced their best performance of the EuroHazard tournament as they beat New Zealand 4-3 in a thrilling play-off."
-      }
-    },
-    "summary_generated": 3
-  },
-  {
-    "factuality_entities": {
-      "Factual Hallucination": 103,
-      "Intrinsic Hallucination": 17,
-      "Non-factual Hallucination": 26,
-      "Non-hallucinated": 183,
-      "Unknown": 13,
-      "count_extrinsic": 139,
-      "extrinsic_factuality_ratio": {
-        "mean": 0.9424657534246577,
-        "median": 1.0,
-        "stdev": 0.15431493168919388
-      },
-      "total": 342,
-      "type": {
-        "CARDINAL": {
-          "Factual Hallucination": 10,
-          "Intrinsic Hallucination": 3,
-          "Non-factual Hallucination": 1,
-          "Non-hallucinated": 7,
-          "Unknown": 1,
-          "total": 22
-        },
-        "DATE": {
-          "Factual Hallucination": 13,
-          "Intrinsic Hallucination": 1,
-          "Non-factual Hallucination": 4,
-          "Non-hallucinated": 8,
-          "Unknown": 3,
-          "total": 29
-        },
-        "EVENT": {
-          "Factual Hallucination": 4,
-          "Non-hallucinated": 3,
-          "total": 7
-        },
-        "FAC": {
-          "Factual Hallucination": 3,
-          "Non-factual Hallucination": 1,
-          "Non-hallucinated": 2,
-          "total": 6
-        },
-        "GPE": {
-          "Factual Hallucination": 19,
-          "Intrinsic Hallucination": 2,
-          "Non-factual Hallucination": 3,
-          "Non-hallucinated": 46,
-          "Unknown": 2,
-          "total": 72
-        },
-        "LAW": {
-          "Non-hallucinated": 1,
-          "total": 1
-        },
-        "LOC": {
-          "Non-hallucinated": 2,
-          "total": 2
-        },
-        "MONEY": {
-          "Factual Hallucination": 2,
-          "Non-factual Hallucination": 1,
-          "Non-hallucinated": 1,
-          "total": 4
-        },
-        "NORP": {
-          "Factual Hallucination": 2,
-          "Intrinsic Hallucination": 2,
-          "Non-hallucinated": 13,
-          "total": 17
-        },
-        "ORDINAL": {
-          "Factual Hallucination": 4,
-          "Intrinsic Hallucination": 1,
-          "Unknown": 1,
-          "total": 6
-        },
-        "ORG": {
-          "Factual Hallucination": 19,
-          "Intrinsic Hallucination": 1,
-          "Non-factual Hallucination": 2,
-          "Non-hallucinated": 31,
-          "Unknown": 3,
-          "total": 56
-        },
-        "PERCENT": {
-          "Intrinsic Hallucination": 1,
-          "Non-hallucinated": 2,
-          "total": 3
-        },
-        "PERSON": {
-          "Factual Hallucination": 27,
-          "Intrinsic Hallucination": 6,
-          "Non-factual Hallucination": 13,
-          "Non-hallucinated": 65,
-          "Unknown": 3,
-          "total": 114
-        },
-        "TIME": {
-          "Non-hallucinated": 2,
-          "total": 2
-        },
-        "WORK_OF_ART": {
-          "Non-factual Hallucination": 1,
-          "total": 1
-        }
-      }
-    },
-    "factuality_summary": {
-      "ents_per_sum": 3.42,
-      "factual": 0.66,
-      "failed": 13,
-      "non_factual": 0.29,
-      "non_factual_extrinsic": 0.18,
-      "non_factual_intrinsic": 0.13,
-      "skipped": 0.0,
-      "sum_with_extrinsic": 0.85,
-      "sum_with_extrinsic_factual": 0.64,
-      "total": 100,
-      "unknown": 0.05
-    },
-    "iteration": 7,
-    "summary": {
-      "36635880": {
-        "edit_stats": {
-          "edit_distance_token": 12
-        },
-        "summary": "Great Britain's women produced their best performance of the EuroHolder as they beat New Zealand 4-3 to finish fifth in the tournament."
-      }
-    },
+    "summary": {},
     "summary_generated": 1
   }
 ]
