@@ -35,12 +35,23 @@ python evaluate_summaries.py --test_size 100
 ## Running GEF on all of XSUM Test (takes about 2 hours on a single RTX5000)
 #### BART-Large
 ```
-python iterative_constraints.py --data_subset full --batch_size 16 --classifier_batch_size 16 --max_iterations 100 --pickled_classifier factuality-classifiers/v2-knn-20n.pickle
+python iterative_constraints.py \
+    --data_subset full \
+    --batch_size 16 \
+    --classifier_batch_size 16 \
+    --max_iterations 100 \
+    --pickled_classifier factuality-classifiers/v2-knn-20n.pickle
 ```
 
 #### PEGASUS
 ```
-python iterative_constraints.py --data_subset full --batch_size 16 --classifier_batch_size 16 --max_iterations 100 --pickled_classifier factuality-classifiers/v2-knn-20n.pickle --model_summarization google/pegasus-xsum
+python iterative_constraints.py \
+    --data_subset full \
+    --batch_size 16 \
+    --classifier_batch_size 16 \
+    --max_iterations 100 \
+    --pickled_classifier factuality-classifiers/v2-knn-20n.pickle \
+    --model_summarization google/pegasus-xsum
 ```
 
 ## Compute rouge scores
