@@ -1,4 +1,4 @@
-# factual-beam-search
+# Generate via Entity Factuality (GEF)
 
 ## Dev Setup
 ```
