@@ -12,7 +12,7 @@
 - [Our Annotations](data/xsum/gold-metrics.json)
 - [Generation logs for GEF](results/gef-logs/)
 - [Evaluation results for all models](results/evaluation/)
-- [Summaries from various models (baselines, GEF, Entity Corrector, RL-Fact & Pinocchio)](data/xsum/)
+- [Summaries for various models (baselines, GEF, Entity Corrector, RL-Fact & Pinocchio)](data/xsum/)
 
 ## Running GEF
 1. Train Factuality Classifier on XEnt data:
