@@ -42,7 +42,7 @@ def load_model_results_for_subset(data_subset: str, beam_suffix: str = ""):
             ),
             (
                 "fbs_classifier_i10",
-                f"results/fbs-logs/{data_subset}-classifier-knnv1{beam_suffix}.json",
+                f"results/fbs-logs/{data_subset}-classifier-knnv2{beam_suffix}.json",
                 10,
             ),
         ]:
