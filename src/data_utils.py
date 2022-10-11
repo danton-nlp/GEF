@@ -71,7 +71,9 @@ def load_debug_subset(xsum_test):
     }
 
 
-def load_shuffled_test_split(xsum_test, data_subset: str, N: Union[int, Literal['all']] = 100) -> Dict[str, str]:
+def load_shuffled_test_split(
+    xsum_test, data_subset: str, N: Union[int, Literal["all"]] = 100, slice_offset=0
+) -> Dict[str, str]:
     if "fully-annotated" in data_subset:
         with open("data/xsum_fully_annotated_test_splits.json", "r") as f:
             shuffled_test_splits = json.load(f)
@@ -83,8 +85,8 @@ def load_shuffled_test_split(xsum_test, data_subset: str, N: Union[int, Literal[
         (sum_id, xsum_test[sum_id]) for sum_id in shuffled_test_splits[data_subset]
     ]
 
-    slice_arg = None if N == 'all' else N
-    return {k: v["document"] for (k, v) in summaries[:slice_arg]}
+    slice_arg = len(summaries) if N == "all" else N
+    return {k: v["document"] for (k, v) in summaries[slice_offset:(slice_arg + slice_offset)]}
 
 
 def split_batches(lst, size):
