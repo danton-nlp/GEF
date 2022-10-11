@@ -29,6 +29,10 @@ def load_model_results_for_subset(data_subset: str, beam_suffix: str = ""):
         }
     else:
         results = {}
+        if "bart" in data_subset:
+            data_prefix = "bart-full"
+        else:
+            data_prefix = data_subset
         for (name, loc, max_iterations) in [
             (
                 "gef_oracle",
@@ -37,12 +41,12 @@ def load_model_results_for_subset(data_subset: str, beam_suffix: str = ""):
             ),
             (
                 "gef_classifier",
-                f"results/gef-logs/{data_subset}-classifier-knnv2{beam_suffix}.json",
+                f"results/gef-logs/{data_prefix}-classifier-knnv2{beam_suffix}.json",
                 100,
             ),
             (
                 "gef_classifier_i10",
-                f"results/gef-logs/{data_subset}-classifier-knnv2{beam_suffix}.json",
+                f"results/gef-logs/{data_prefix}-classifier-knnv2{beam_suffix}.json",
                 10,
             ),
         ]:
