@@ -64,6 +64,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--annotate", type=bool, default=False)
     parser.add_argument("--test_size", type=int, default=100)
+    parser.add_argument("--test_set_offset", type=int, default=0)
     parser.add_argument("--entity_label_match", type=str, default="strict_all")
     parser.add_argument(
         "--data_subsets", type=str, default="bart-test-extrinsic,pegasus-test-extrinsic"
@@ -83,7 +84,9 @@ if __name__ == "__main__":
 
     for data_subset in args.data_subsets.split(","):
         test_set_ids = set(
-            load_shuffled_test_split(xsum_test, data_subset, args.test_size).keys()
+            load_shuffled_test_split(
+                xsum_test, data_subset, args.test_size, args.test_set_offset
+            ).keys()
         )
         print(f"Test results for {len(test_set_ids)} summaries")
         MODEL_RESULTS = load_model_results_for_subset(data_subset, beam_suffix)
