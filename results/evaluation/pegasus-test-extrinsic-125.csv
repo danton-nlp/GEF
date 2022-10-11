@@ -1,0 +1,6 @@
+model,total,factual,non_factual,non_factual_extrinsic,non_factual_intrinsic,extrinsic_factuality_ratio,extrinsic_entity_count,unknown,skipped,failed,ents_per_sum,sum_with_extrinsic,sum_with_extrinsic_factual
+gef_oracle,125,0.632,0.168,0.128,0.056,0.939463601532567,180,0.2,0.0,5,3.296,0.912,0.592
+gef_classifier,100,0.65,0.35,0.3,0.11,0.8796296296296295,142,0.0,0.0,11,3.42,0.84,0.54
+gef_classifier_i10,100,0.65,0.35,0.3,0.11,0.8796296296296295,142,0.0,0.0,11,3.42,0.84,0.54
+baseline-pegasus,125,0.464,0.336,0.312,0.048,0.8530651340996169,199,0.2,0.0,0,3.56,1.0,0.488
+gold,125,1.0,0.0,0.0,0.0,1.0,215,0.0,0.0,0,3.64,0.88,0.88
