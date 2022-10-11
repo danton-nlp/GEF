@@ -177,7 +177,9 @@ if __name__ == "__main__":
                         summary_results[sum_id] = {}
                     for metric, value in sum_metrics.items():
                         summary_results[sum_id][f"{model_label}_{metric}"] = value
-
+        
+        if args.test_set_offset != 0:
+            break
         df_aggregated = pd.DataFrame(
             aggregated_results,
             columns=[
