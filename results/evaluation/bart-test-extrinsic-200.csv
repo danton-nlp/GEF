@@ -1,5 +1,5 @@
 model,total,factual,non_factual,non_factual_extrinsic,non_factual_intrinsic,extrinsic_factuality_ratio,extrinsic_entity_count,unknown,skipped,failed,ents_per_sum,sum_with_extrinsic,sum_with_extrinsic_factual
-gef_oracle,200,0.57,0.43,0.33,0.145,0.8904605263157894,311,0.0,0.0,13,3.545,0.925,0.595
+gef_oracle,200,0.64,0.36,0.215,0.18,0.9365131578947368,285,0.0,0.0,31,3.52,0.875,0.66
 gef_classifier,200,0.52,0.48,0.375,0.175,0.8711111111111111,296,0.0,0.0,33,3.58,0.875,0.5
 gef_classifier_i10,200,0.52,0.48,0.375,0.175,0.8711111111111111,296,0.0,0.0,32,3.58,0.875,0.5
 baseline-bart,200,0.44,0.56,0.485,0.14,0.8337807606263982,332,0.0,0.0,0,3.63,0.98,0.495
