@@ -165,7 +165,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--pickled_classifier", type=str, default="")
     parser.add_argument("--classifier_batch_size", type=int, default=4)
-    parser.add_argument("--entity_label_match", type=str, default="strict_all")
+    parser.add_argument("--entity_label_match", type=str, default="strict_extrinsic")
     parser.add_argument(
         "--model_summarization", type=str, default="facebook/bart-large-xsum"
     )
