@@ -59,11 +59,12 @@ def collect_iteration_stats(
         current_iteration_stats = {
             "iteration": iteration_idx,
             "summary": {},
-            "summary_generated": len(summaries),
+            "summary_generated": 0,
         }
         updated_sums_by_id = {}
         for sum_id, data in summaries.items():
             if test_set_ids is None or sum_id in test_set_ids:
+                current_iteration_stats["summary_generated"] += 1
                 if data["summary"] == SUMMARY_FAILED_GENERATION:
                     failed_sums_by_id[sum_id] = iteration_idx
                 else:
@@ -127,7 +128,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--annotate", type=bool, default=False)
     parser.add_argument("--data_subset", type=str, default="bart-test-extrinsic")
-    parser.add_argument("--test_size", type=int, default=100)
+    parser.add_argument("--test_size", type=int, default=200)
     parser.add_argument("--extrinsic_only", action="store_true", default=False)
     args = parser.parse_args()
 
@@ -142,9 +143,14 @@ if __name__ == "__main__":
     )
 
     for model in ["oracle", "classifier-knnv2"]:
-        if os.path.exists(f"results/gef-logs/{args.data_subset}-{model}.json"):
+        log_path = (
+            f"results/gef-logs/{args.data_subset}-{model}.json" 
+            if model == "oracle"
+            else "results/gef-logs/bart-full-classifier-knnv2.json"
+        )
+        if os.path.exists(log_path):
             iteration_stats = collect_iteration_stats(
-                f"results/gef-logs/{args.data_subset}-{model}.json",
+                log_path,
                 xsum_test,
                 test_set_ids,
                 args.extrinsic_only,
