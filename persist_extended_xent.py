@@ -5,7 +5,7 @@ import json
 if __name__ == "__main__":
     xsum_test = load_xsum_dict("test")
     gold_summaries, gold_metadata = get_gold_xsum_data()
-    bart_test_ids = load_shuffled_test_split(xsum_test, "bart-test-extrinsic", 100)
+    bart_test_ids = load_shuffled_test_split(xsum_test, "bart-test-extrinsic", 200)
     pegasus_test_ids = load_shuffled_test_split(
         xsum_test, "pegasus-test-extrinsic", 100
     )
